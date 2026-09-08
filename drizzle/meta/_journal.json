@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1788870168309,
+      "tag": "0000_demonic_doorman",
+      "breakpoints": true
+    }
+  ]
+}
