@@ -1,10 +1,8 @@
-import { Hono } from 'hono'
-import { pool } from './db'
+import { Hono } from "hono"
+import blank from "./features/blank"
 
 const app = new Hono()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+app.route("/api/blank", blank)
 
 export default app
