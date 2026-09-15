@@ -7,7 +7,6 @@ import { fail, ok } from '../lib/response'
 
 export const friends = new Hono<AuthEnv>()
 
-// GET /users/search?q=
 friends.get('/users/search', mockAuth, async (c) => {
   const q = c.req.query('q')?.trim()
   if (!q) return fail(c, 'INVALID_INPUT', 'q 파라미터 필요', 400)
@@ -21,7 +20,6 @@ friends.get('/users/search', mockAuth, async (c) => {
   return ok(c, { items })
 })
 
-// GET /friends
 friends.get('/friends', mockAuth, async (c) => {
   const me = c.get('userId')
 
@@ -39,7 +37,6 @@ friends.get('/friends', mockAuth, async (c) => {
   return ok(c, { items })
 })
 
-// POST /friends  { targetUserId }
 friends.post('/friends', mockAuth, async (c) => {
   const me = c.get('userId')
   const body = (await c.req.json().catch(() => ({}))) as { targetUserId?: number }
@@ -55,7 +52,7 @@ friends.post('/friends', mockAuth, async (c) => {
     .where(eq(user.id, target))
   if (!targetUser) return fail(c, 'NOT_FOUND', '없는 사용자', 404)
 
-  // 방향 무관 중복 체크 (uq는 같은 방향만 막음)
+  // 양방향 체크 (uq는 한쪽만 막음)
   const [dup] = await db
     .select({ id: friend.id })
     .from(friend)
@@ -75,7 +72,6 @@ friends.post('/friends', mockAuth, async (c) => {
   return ok(c, { friendshipId: inserted.id, status: 'pending' }, 201)
 })
 
-// POST /friends/:id/accept
 friends.post('/friends/:id/accept', mockAuth, async (c) => {
   const me = c.get('userId')
   const id = Number(c.req.param('id'))
@@ -93,7 +89,7 @@ friends.post('/friends/:id/accept', mockAuth, async (c) => {
   return ok(c, { friendshipId: id, status: 'accepted' })
 })
 
-// DELETE /friends/:id  - pending이면 거절, accepted면 삭제
+// pending=거절, accepted=삭제
 friends.delete('/friends/:id', mockAuth, async (c) => {
   const me = c.get('userId')
   const id = Number(c.req.param('id'))
@@ -104,5 +100,7 @@ friends.delete('/friends/:id', mockAuth, async (c) => {
     return fail(c, 'FORBIDDEN', '내 관계 아님', 403)
 
   await db.delete(friend).where(eq(friend.id, id))
-  return c.body(null, 204)
+
+  const message = f.status === 'accepted' ? '친구 삭제됨' : '친구 요청 거절됨'
+  return ok(c, { friendshipId: id, message })
 })

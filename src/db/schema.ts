@@ -29,7 +29,6 @@ const NOTIFICATION_TYPES = [
   'system',
 ] as const
 
-// user
 export const user = mysqlTable(
   'user',
   {
@@ -60,7 +59,7 @@ export const user = mysqlTable(
   }),
 )
 
-// submission - problemId는 문제 json 파일 id (fk 아님)
+// problemId는 문제 파일 id (fk 아님)
 export const submission = mysqlTable(
   'submission',
   {
@@ -84,7 +83,6 @@ export const submission = mysqlTable(
   }),
 )
 
-// exp_log
 export const expLog = mysqlTable(
   'exp_log',
   {
@@ -100,12 +98,11 @@ export const expLog = mysqlTable(
     createdAt: createdAt(),
   },
   (t) => ({
-    uqSolve: unique('uq_explog_solve').on(t.userId, t.problemId, t.reason), // 문제당 solve 1번
+    uqSolve: unique('uq_explog_solve').on(t.userId, t.problemId, t.reason), // solve 1번
     idxUser: index('idx_explog_user').on(t.userId, t.createdAt),
   }),
 )
 
-// friend
 export const friend = mysqlTable(
   'friend',
   {
@@ -129,7 +126,6 @@ export const friend = mysqlTable(
   }),
 )
 
-// study_group
 export const studyGroup = mysqlTable(
   'study_group',
   {
@@ -147,7 +143,6 @@ export const studyGroup = mysqlTable(
   }),
 )
 
-// group_member
 export const groupMember = mysqlTable(
   'group_member',
   {
@@ -166,7 +161,6 @@ export const groupMember = mysqlTable(
   }),
 )
 
-// notification
 export const notification = mysqlTable(
   'notification',
   {
@@ -184,7 +178,6 @@ export const notification = mysqlTable(
   }),
 )
 
-// notification_setting
 export const notificationSetting = mysqlTable(
   'notification_setting',
   {

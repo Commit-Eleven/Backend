@@ -24,7 +24,13 @@ const HTML = /* html */ `<!doctype html>
 </style>
 </head>
 <body>
-<h1>friends API 테스트</h1>
+<h1>codegram API 테스트</h1>
+<p style="font-size:13px"><a href="/db">=> DB 뷰어 열기</a></p>
+
+<fieldset>
+  <legend>서버 상태</legend>
+  <button onclick="call('GET', '/health')">GET /health</button>
+</fieldset>
 
 <fieldset>
   <legend>현재 로그인 유저 (x-user-id 헤더)</legend>
@@ -33,7 +39,7 @@ const HTML = /* html */ `<!doctype html>
 </fieldset>
 
 <fieldset>
-  <legend>친구 검색 · 신청 · 목록</legend>
+  <legend>친구 검색 - 신청 - 목록</legend>
   <label>검색어 <input id="q" value="원" /></label>
   <button onclick="call('GET', '/users/search?q=' + enc(v('q')))">GET /users/search</button>
   <br />
@@ -44,13 +50,13 @@ const HTML = /* html */ `<!doctype html>
 </fieldset>
 
 <fieldset>
-  <legend>수락 · 거절/삭제</legend>
+  <legend>수락 - 거절/삭제</legend>
   <label>friendship id <input id="fid" type="number" value="1" /></label>
   <button onclick="call('POST', '/friends/' + v('fid') + '/accept')">POST /friends/:id/accept</button>
   <button onclick="call('DELETE', '/friends/' + v('fid'))">DELETE /friends/:id</button>
 </fieldset>
 
-<div class="status" id="status">—</div>
+<div class="status" id="status"></div>
 <pre id="out">여기에 응답이 나옵니다.</pre>
 
 <script>
