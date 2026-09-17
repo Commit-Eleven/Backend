@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
+import blank from './features/blank'
 import { fail } from './lib/response'
 import { dbview } from './routes/dbview'
 import { friends } from './routes/friends'
@@ -15,6 +16,7 @@ app.route('/', health)
 app.route('/', friends)
 app.route('/', testpage)
 app.route('/', dbview)
+app.route('/api/blank', blank)
 
 app.notFound((c) => fail(c, 'NOT_FOUND', '없는 경로', 404))
 
