@@ -94,7 +94,7 @@ const HTML = /* html */ `<!doctype html>
       tbody.innerHTML = rows
         .map((r) => '<tr>' + columns.map((c) => '<td>' + esc(r[c]) + '</td>').join('') + '</tr>')
         .join('')
-      statusEl.textContent = name + ' — ' + rows.length + '개 행 (최대 200개)'
+      statusEl.textContent = name + ' - ' + rows.length + '개 행 (최대 200개)'
     } catch (e) {
       statusEl.textContent = '요청 실패: ' + e
     }

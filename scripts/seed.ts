@@ -9,10 +9,10 @@ await db.execute(sql`ALTER TABLE friend AUTO_INCREMENT = 1`)
 await db.execute(sql`ALTER TABLE user AUTO_INCREMENT = 1`)
 
 await db.insert(user).values([
-  { email: 'jongeun@x.com', nickname: '종은', totalExp: 120 },
-  { email: 'siwon@x.com', nickname: '시원', totalExp: 340 },
-  { email: 'minjun@x.com', nickname: '민준', totalExp: 50 },
-])
+  {email: 'jongeun@x.com', nickname: '종은', totalExp: 120},
+  {email: 'siwon@x.com', nickname: '시원', totalExp: 340},
+  {email: 'minjun@x.com', nickname: '민준', totalExp: 50},
+]);
 
 const rows = await db.select({ id: user.id, nickname: user.nickname }).from(user)
 console.log('seeded:', rows)
