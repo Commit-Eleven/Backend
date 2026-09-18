@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 
-// 친구 API 수동 테스트 페이지. GET /test
+// API 수동 테스트 페이지. GET /test
 export const testpage = new Hono()
 
 const HTML = /* html */ `<!doctype html>
@@ -8,7 +8,7 @@ const HTML = /* html */ `<!doctype html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>friends API 테스트</title>
+<title>codegram API 테스트</title>
 <style>
   body { font-family: ui-sans-serif, system-ui, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 16px; }
   h1 { font-size: 18px; }
@@ -21,6 +21,7 @@ const HTML = /* html */ `<!doctype html>
   pre { background: #111; color: #0f0; padding: 12px; border-radius: 8px; font-size: 12px;
         white-space: pre-wrap; word-break: break-all; min-height: 40px; }
   .status { font-weight: 700; }
+  #token-box { font-size: 12px; color: #888; word-break: break-all; }
 </style>
 </head>
 <body>
@@ -33,9 +34,12 @@ const HTML = /* html */ `<!doctype html>
 </fieldset>
 
 <fieldset>
-  <legend>현재 로그인 유저 (x-user-id 헤더)</legend>
-  <label>내 유저 id <input id="me" type="number" value="1" /></label>
+  <legend>로그인 (개발용, 구글 OAuth 없이)</legend>
+  <label>유저 id <input id="me" type="number" value="1" /></label>
   <span style="font-size:12px;color:#888">시드: 1=종은 2=시원 3=민준</span>
+  <br />
+  <button onclick="devLogin()">POST /auth/dev-login</button>
+  <div id="token-box">로그인 전</div>
 </fieldset>
 
 <fieldset>
@@ -60,10 +64,29 @@ const HTML = /* html */ `<!doctype html>
 <pre id="out">여기에 응답이 나옵니다.</pre>
 
 <script>
+  let token = null
   const v = (id) => document.getElementById(id).value
   const enc = encodeURIComponent
+
+  async function devLogin() {
+    const res = await fetch('/auth/dev-login', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ userId: Number(v('me')) }),
+    })
+    const body = await res.json()
+    if (!body.success) {
+      document.getElementById('token-box').textContent = '로그인 실패: ' + body.error.message
+      return
+    }
+    token = body.data.token
+    document.getElementById('token-box').textContent =
+      body.data.user.nickname + '#' + body.data.user.tag + ' 로 로그인됨'
+  }
+
   async function call(method, path, body) {
-    const opt = { method, headers: { 'x-user-id': v('me') } }
+    const opt = { method, headers: {} }
+    if (token) opt.headers.authorization = 'Bearer ' + token
     if (body !== undefined) {
       opt.headers['content-type'] = 'application/json'
       opt.body = JSON.stringify(body)
