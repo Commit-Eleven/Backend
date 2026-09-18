@@ -24,7 +24,10 @@ dbview.get('/db/tables/:name', async (c) => {
   if (!table) return fail(c, 'NOT_FOUND', '없는 테이블', 404)
 
   const columns = Object.keys(getTableColumns(table))
-  const rows = await db.select().from(table as any).limit(200)
+  const rows = await db
+    .select()
+    .from(table as any)
+    .limit(200)
 
   return ok(c, { table: name, columns, rows })
 })
