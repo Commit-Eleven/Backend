@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "2d397055-c3b3-42a7-8fe6-0c96377d63b1",
+  "id": "0ab72a45-f01e-4756-b96b-843e45d66018",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "exp_log": {
@@ -55,10 +55,7 @@
       "indexes": {
         "idx_explog_user": {
           "name": "idx_explog_user",
-          "columns": [
-            "user_id",
-            "created_at"
-          ],
+          "columns": ["user_id", "created_at"],
           "isUnique": false
         }
       },
@@ -67,12 +64,8 @@
           "name": "exp_log_user_id_user_id_fk",
           "tableFrom": "exp_log",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -80,19 +73,13 @@
       "compositePrimaryKeys": {
         "exp_log_id": {
           "name": "exp_log_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {
         "uq_explog_solve": {
           "name": "uq_explog_solve",
-          "columns": [
-            "user_id",
-            "problem_id",
-            "reason"
-          ]
+          "columns": ["user_id", "problem_id", "reason"]
         }
       },
       "checkConstraint": {}
@@ -148,10 +135,7 @@
       "indexes": {
         "idx_friend_addressee": {
           "name": "idx_friend_addressee",
-          "columns": [
-            "addressee_id",
-            "status"
-          ],
+          "columns": ["addressee_id", "status"],
           "isUnique": false
         }
       },
@@ -160,12 +144,8 @@
           "name": "friend_requester_id_user_id_fk",
           "tableFrom": "friend",
           "tableTo": "user",
-          "columnsFrom": [
-            "requester_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["requester_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -173,12 +153,8 @@
           "name": "friend_addressee_id_user_id_fk",
           "tableFrom": "friend",
           "tableTo": "user",
-          "columnsFrom": [
-            "addressee_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["addressee_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -186,18 +162,13 @@
       "compositePrimaryKeys": {
         "friend_id": {
           "name": "friend_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {
         "uq_friend_pair": {
           "name": "uq_friend_pair",
-          "columns": [
-            "requester_id",
-            "addressee_id"
-          ]
+          "columns": ["requester_id", "addressee_id"]
         }
       },
       "checkConstraint": {
@@ -244,9 +215,7 @@
       "indexes": {
         "idx_gm_user": {
           "name": "idx_gm_user",
-          "columns": [
-            "user_id"
-          ],
+          "columns": ["user_id"],
           "isUnique": false
         }
       },
@@ -255,12 +224,8 @@
           "name": "group_member_group_id_study_group_id_fk",
           "tableFrom": "group_member",
           "tableTo": "study_group",
-          "columnsFrom": [
-            "group_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["group_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -268,12 +233,8 @@
           "name": "group_member_user_id_user_id_fk",
           "tableFrom": "group_member",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -281,10 +242,7 @@
       "compositePrimaryKeys": {
         "pk_group_member": {
           "name": "pk_group_member",
-          "columns": [
-            "group_id",
-            "user_id"
-          ]
+          "columns": ["group_id", "user_id"]
         }
       },
       "uniqueConstraints": {},
@@ -341,11 +299,7 @@
       "indexes": {
         "idx_noti_user": {
           "name": "idx_noti_user",
-          "columns": [
-            "user_id",
-            "is_read",
-            "created_at"
-          ],
+          "columns": ["user_id", "is_read", "created_at"],
           "isUnique": false
         }
       },
@@ -354,12 +308,8 @@
           "name": "notification_user_id_user_id_fk",
           "tableFrom": "notification",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -367,9 +317,7 @@
       "compositePrimaryKeys": {
         "notification_id": {
           "name": "notification_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -407,12 +355,8 @@
           "name": "notification_setting_user_id_user_id_fk",
           "tableFrom": "notification_setting",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -420,10 +364,7 @@
       "compositePrimaryKeys": {
         "pk_noti_setting": {
           "name": "pk_noti_setting",
-          "columns": [
-            "user_id",
-            "type"
-          ]
+          "columns": ["user_id", "type"]
         }
       },
       "uniqueConstraints": {},
@@ -480,9 +421,7 @@
       "indexes": {
         "idx_group_owner": {
           "name": "idx_group_owner",
-          "columns": [
-            "owner_id"
-          ],
+          "columns": ["owner_id"],
           "isUnique": false
         }
       },
@@ -491,12 +430,8 @@
           "name": "study_group_owner_id_user_id_fk",
           "tableFrom": "study_group",
           "tableTo": "user",
-          "columnsFrom": [
-            "owner_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["owner_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -504,9 +439,7 @@
       "compositePrimaryKeys": {
         "study_group_id": {
           "name": "study_group_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -569,19 +502,12 @@
       "indexes": {
         "idx_sub_user_problem": {
           "name": "idx_sub_user_problem",
-          "columns": [
-            "user_id",
-            "problem_id",
-            "created_at"
-          ],
+          "columns": ["user_id", "problem_id", "created_at"],
           "isUnique": false
         },
         "idx_sub_user_correct": {
           "name": "idx_sub_user_correct",
-          "columns": [
-            "user_id",
-            "is_correct"
-          ],
+          "columns": ["user_id", "is_correct"],
           "isUnique": false
         }
       },
@@ -590,12 +516,8 @@
           "name": "submission_user_id_user_id_fk",
           "tableFrom": "submission",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -603,9 +525,7 @@
       "compositePrimaryKeys": {
         "submission_id": {
           "name": "submission_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -628,16 +548,16 @@
           "notNull": true,
           "autoincrement": false
         },
-        "password_hash": {
-          "name": "password_hash",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "nickname": {
           "name": "nickname",
           "type": "varchar(30)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "tag": {
+          "name": "tag",
+          "type": "char(4)",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
@@ -658,19 +578,11 @@
           "autoincrement": false,
           "default": 0
         },
-        "provider": {
-          "name": "provider",
-          "type": "enum('local','google')",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": "'local'"
-        },
         "provider_id": {
           "name": "provider_id",
           "type": "varchar(128)",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false
         },
         "study_unit_id": {
@@ -709,9 +621,7 @@
       "indexes": {
         "idx_user_exp": {
           "name": "idx_user_exp",
-          "columns": [
-            "total_exp"
-          ],
+          "columns": ["total_exp"],
           "isUnique": false
         }
       },
@@ -719,30 +629,21 @@
       "compositePrimaryKeys": {
         "user_id": {
           "name": "user_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {
         "uq_user_email": {
           "name": "uq_user_email",
-          "columns": [
-            "email"
-          ]
+          "columns": ["email"]
         },
-        "uq_user_nickname": {
-          "name": "uq_user_nickname",
-          "columns": [
-            "nickname"
-          ]
+        "uq_user_nickname_tag": {
+          "name": "uq_user_nickname_tag",
+          "columns": ["nickname", "tag"]
         },
-        "uq_user_provider": {
-          "name": "uq_user_provider",
-          "columns": [
-            "provider",
-            "provider_id"
-          ]
+        "uq_user_provider_id": {
+          "name": "uq_user_provider_id",
+          "columns": ["provider_id"]
         }
       },
       "checkConstraint": {}

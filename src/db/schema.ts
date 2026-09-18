@@ -2,6 +2,7 @@ import { sql } from 'drizzle-orm'
 import {
   bigint,
   boolean,
+  char,
   check,
   index,
   int,
@@ -15,46 +16,44 @@ import {
   unique,
   varchar,
 } from 'drizzle-orm/mysql-core'
+import {
+  DEFAULT_GROUP_CAPACITY,
+  DEFAULT_STUDY_LANGUAGE,
+  EXP_REASON,
+  FRIEND_STATUS,
+  GROUP_ROLE,
+  NICKNAME_TAG_LENGTH,
+  NOTIFICATION_TYPE,
+  USER_TIER,
+} from '../constants'
 
 const pk = () => bigint('id', { mode: 'number' }).autoincrement().primaryKey()
 const createdAt = () => timestamp('created_at').defaultNow().notNull()
-const updatedAt = () =>
-  timestamp('updated_at').defaultNow().onUpdateNow().notNull()
+const updatedAt = () => timestamp('updated_at').defaultNow().onUpdateNow().notNull()
 
-const NOTIFICATION_TYPES = [
-  'friend_request',
-  'friend_accepted',
-  'group_invite',
-  'group_joined',
-  'system',
-] as const
-
+// user — 로그인은 구글 OAuth만. 비밀번호 없음.
+// 닉네임은 디스코드식: nickname 자체는 중복 가능, (nickname, tag) 조합으로만 유일.
 export const user = mysqlTable(
   'user',
   {
     id: pk(),
     email: varchar('email', { length: 255 }).notNull(),
-    passwordHash: varchar('password_hash', { length: 255 }), // 소셜은 null
     nickname: varchar('nickname', { length: 30 }).notNull(),
-    tier: mysqlEnum('tier', ['normal', 'creator', 'admin'])
-      .default('normal')
-      .notNull(),
-    totalExp: int('total_exp').default(0).notNull(), // 레벨은 클라에서 계산
-    provider: mysqlEnum('provider', ['local', 'google'])
-      .default('local')
-      .notNull(),
-    providerId: varchar('provider_id', { length: 128 }),
+    tag: char('tag', { length: NICKNAME_TAG_LENGTH }).notNull(), // 랜덤 4자리, 예: "3231"
+    tier: mysqlEnum('tier', USER_TIER).default('normal').notNull(),
+    totalExp: int('total_exp').default(0).notNull(),
+    providerId: varchar('provider_id', { length: 128 }).notNull(), // 구글 sub
     studyUnitId: varchar('study_unit_id', { length: 64 }),
     studyLanguage: varchar('study_language', { length: 20 })
-      .default('python')
+      .default(DEFAULT_STUDY_LANGUAGE)
       .notNull(),
     createdAt: createdAt(),
     updatedAt: updatedAt(),
   },
   (t) => ({
     uqEmail: unique('uq_user_email').on(t.email),
-    uqNickname: unique('uq_user_nickname').on(t.nickname),
-    uqProvider: unique('uq_user_provider').on(t.provider, t.providerId),
+    uqNicknameTag: unique('uq_user_nickname_tag').on(t.nickname, t.tag),
+    uqProviderId: unique('uq_user_provider_id').on(t.providerId),
     idxExp: index('idx_user_exp').on(t.totalExp),
   }),
 )
@@ -74,11 +73,7 @@ export const submission = mysqlTable(
     createdAt: createdAt(),
   },
   (t) => ({
-    idxUserProblem: index('idx_sub_user_problem').on(
-      t.userId,
-      t.problemId,
-      t.createdAt,
-    ),
+    idxUserProblem: index('idx_sub_user_problem').on(t.userId, t.problemId, t.createdAt),
     idxUserCorrect: index('idx_sub_user_correct').on(t.userId, t.isCorrect),
   }),
 )
@@ -92,9 +87,7 @@ export const expLog = mysqlTable(
       .references(() => user.id, { onDelete: 'cascade' }),
     problemId: varchar('problem_id', { length: 64 }),
     amount: int('amount').notNull(),
-    reason: mysqlEnum('reason', ['solve', 'bonus', 'event'])
-      .default('solve')
-      .notNull(),
+    reason: mysqlEnum('reason', EXP_REASON).default('solve').notNull(),
     createdAt: createdAt(),
   },
   (t) => ({
@@ -113,9 +106,7 @@ export const friend = mysqlTable(
     addresseeId: bigint('addressee_id', { mode: 'number' })
       .notNull()
       .references(() => user.id, { onDelete: 'cascade' }),
-    status: mysqlEnum('status', ['pending', 'accepted'])
-      .default('pending')
-      .notNull(),
+    status: mysqlEnum('status', FRIEND_STATUS).default('pending').notNull(),
     createdAt: createdAt(),
     respondedAt: timestamp('responded_at'),
   },
@@ -135,7 +126,7 @@ export const studyGroup = mysqlTable(
     ownerId: bigint('owner_id', { mode: 'number' })
       .notNull()
       .references(() => user.id, { onDelete: 'cascade' }),
-    capacity: smallint('capacity').default(10).notNull(),
+    capacity: smallint('capacity').default(DEFAULT_GROUP_CAPACITY).notNull(),
     createdAt: createdAt(),
   },
   (t) => ({
@@ -152,7 +143,7 @@ export const groupMember = mysqlTable(
     userId: bigint('user_id', { mode: 'number' })
       .notNull()
       .references(() => user.id, { onDelete: 'cascade' }),
-    role: mysqlEnum('role', ['owner', 'member']).default('member').notNull(),
+    role: mysqlEnum('role', GROUP_ROLE).default('member').notNull(),
     joinedAt: timestamp('joined_at').defaultNow().notNull(),
   },
   (t) => ({
@@ -168,7 +159,7 @@ export const notification = mysqlTable(
     userId: bigint('user_id', { mode: 'number' })
       .notNull()
       .references(() => user.id, { onDelete: 'cascade' }),
-    type: mysqlEnum('type', NOTIFICATION_TYPES).notNull(),
+    type: mysqlEnum('type', NOTIFICATION_TYPE).notNull(),
     payload: json('payload'),
     isRead: boolean('is_read').default(false).notNull(),
     createdAt: createdAt(),
@@ -184,7 +175,7 @@ export const notificationSetting = mysqlTable(
     userId: bigint('user_id', { mode: 'number' })
       .notNull()
       .references(() => user.id, { onDelete: 'cascade' }),
-    type: mysqlEnum('type', NOTIFICATION_TYPES).notNull(),
+    type: mysqlEnum('type', NOTIFICATION_TYPE).notNull(),
     enabled: boolean('enabled').default(true).notNull(),
   },
   (t) => ({

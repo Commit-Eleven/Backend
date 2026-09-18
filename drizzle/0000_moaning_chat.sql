@@ -70,20 +70,19 @@ CREATE TABLE `submission` (
 CREATE TABLE `user` (
 	`id` bigint AUTO_INCREMENT NOT NULL,
 	`email` varchar(255) NOT NULL,
-	`password_hash` varchar(255),
 	`nickname` varchar(30) NOT NULL,
+	`tag` char(4) NOT NULL,
 	`tier` enum('normal','creator','admin') NOT NULL DEFAULT 'normal',
 	`total_exp` int NOT NULL DEFAULT 0,
-	`provider` enum('local','google') NOT NULL DEFAULT 'local',
-	`provider_id` varchar(128),
+	`provider_id` varchar(128) NOT NULL,
 	`study_unit_id` varchar(64),
 	`study_language` varchar(20) NOT NULL DEFAULT 'python',
 	`created_at` timestamp NOT NULL DEFAULT (now()),
 	`updated_at` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
 	CONSTRAINT `user_id` PRIMARY KEY(`id`),
 	CONSTRAINT `uq_user_email` UNIQUE(`email`),
-	CONSTRAINT `uq_user_nickname` UNIQUE(`nickname`),
-	CONSTRAINT `uq_user_provider` UNIQUE(`provider`,`provider_id`)
+	CONSTRAINT `uq_user_nickname_tag` UNIQUE(`nickname`,`tag`),
+	CONSTRAINT `uq_user_provider_id` UNIQUE(`provider_id`)
 );
 --> statement-breakpoint
 ALTER TABLE `exp_log` ADD CONSTRAINT `exp_log_user_id_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user`(`id`) ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
