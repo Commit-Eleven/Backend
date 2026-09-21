@@ -1,8 +1,11 @@
 import { Hono } from "hono"
-import blank from "./features/blank"
+import { initializeTable } from "./schema"
+import mcq from "./features/problems/mcq"
+
+initializeTable()
 
 const app = new Hono()
 
-app.route("/api/blank", blank)
+app.route("/api/problems/mcq", mcq)
 
 export default app
