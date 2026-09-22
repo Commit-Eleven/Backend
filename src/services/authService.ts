@@ -14,7 +14,15 @@ const MAX_TAG_RETRY = 20
 const sha256 = async (s: string) =>
   Buffer.from(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s))).toString('hex')
 
-const isDup = (e: unknown) => (e as { code?: string }).code === 'ER_DUP_ENTRY'
+type DbError = { code?: string; sqlMessage?: string; cause?: DbError }
+const dbError = (e: unknown): DbError => {
+  const err = e as DbError
+  return err?.code ? err : (err?.cause ?? {})
+}
+const isDup = (e: unknown) => dbError(e).code === 'ER_DUP_ENTRY'
+// 닉네임#태그 unique 에 걸린 경우만. 이때만 태그 다시 뽑음
+const isTagDup = (e: unknown) =>
+  isDup(e) && (dbError(e).sqlMessage ?? '').includes('uq_user_nickname_tag')
 
 // 안 쓰인 태그 하나 뽑아서 fn 에 넘김. 넣는 사이에 누가 먼저 가져가면 다시 뽑음
 async function withFreeTag<T>(fn: (tag: string) => Promise<T>): Promise<T> {
@@ -24,7 +32,7 @@ async function withFreeTag<T>(fn: (tag: string) => Promise<T>): Promise<T> {
     try {
       return await fn(tag)
     } catch (e) {
-      if (isDup(e)) continue
+      if (isTagDup(e)) continue
       throw e
     }
   }
@@ -36,14 +44,23 @@ async function withFreeTag<T>(fn: (tag: string) => Promise<T>): Promise<T> {
 async function findOrCreateUser(profile: GoogleProfile): Promise<UserRow> {
   const existing = await userRepository.findByProviderId(profile.sub)
   if (existing) return existing
-  return withFreeTag((tag) =>
-    userRepository.create({
-      email: profile.email.toLowerCase(),
-      nickname: randomNickname(),
-      tag,
-      providerId: profile.sub,
-    }),
-  )
+  try {
+    return await withFreeTag((tag) =>
+      userRepository.create({
+        email: profile.email.toLowerCase(),
+        nickname: randomNickname(),
+        tag,
+        providerId: profile.sub,
+      }),
+    )
+  } catch (e) {
+    // 같은 계정 첫 로그인이 동시에 들어오면 한쪽이 provider_id 중복으로 실패함. 먼저 만든 걸 씀
+    if (isDup(e)) {
+      const created = await userRepository.findByProviderId(profile.sub)
+      if (created) return created
+    }
+    throw e
+  }
 }
 
 // 액세스 토큰. sub=유저 id, 15분 만료
@@ -74,7 +91,8 @@ async function rotate(raw: string) {
   const invalid = () => Errors.unauthorized('리프레시 토큰 만료 또는 무효')
   const row = await refreshTokenRepository.findByHash(await sha256(raw))
   if (!row) throw invalid()
-  await refreshTokenRepository.remove(row.id)
+  // 같은 토큰으로 동시에 들어오면 먼저 지운 쪽만 통과
+  if (!(await refreshTokenRepository.remove(row.id))) throw invalid()
   if (row.expiresAt.getTime() < Date.now()) throw invalid()
 
   const u = await userRepository.findById(row.userId)

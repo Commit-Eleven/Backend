@@ -14,8 +14,10 @@ export const refreshTokenRepository = {
     return rows[0]
   },
 
-  async remove(id: number): Promise<void> {
-    await db.delete(refreshToken).where(eq(refreshToken.id, id))
+  // 실제로 지웠으면 true. 동시 요청이 먼저 지웠으면 false
+  async remove(id: number): Promise<boolean> {
+    const [res] = await db.delete(refreshToken).where(eq(refreshToken.id, id))
+    return res.affectedRows > 0
   },
 
   async removeAllByUser(userId: number): Promise<void> {
