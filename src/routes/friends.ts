@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { type AuthEnv, requireAuth } from '../lib/auth'
+import { toCamelCase } from '../lib/caseConvert'
 import { fail, ok } from '../lib/response'
 import { friendService } from '../services/friendService'
 
@@ -16,7 +17,9 @@ friends.get('/friends', requireAuth, async (c) => {
 })
 
 friends.post('/friends', requireAuth, async (c) => {
-  const body = (await c.req.json().catch(() => ({}))) as { targetUserId?: number }
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    targetUserId?: number
+  }
   const result = await friendService.sendRequest(c.get('userId'), Number(body.targetUserId))
   return ok(c, result, 201)
 })

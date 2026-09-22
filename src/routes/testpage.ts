@@ -48,7 +48,7 @@ const HTML = /* html */ `<!doctype html>
   <button onclick="call('GET', '/users/search?q=' + enc(v('q')))">GET /users/search</button>
   <br />
   <label>대상 유저 id <input id="target" type="number" value="2" /></label>
-  <button onclick="call('POST', '/friends', { targetUserId: Number(v('target')) })">POST /friends</button>
+  <button onclick="call('POST', '/friends', { target_user_id: Number(v('target')) })">POST /friends</button>
   <br />
   <button onclick="call('GET', '/friends')">GET /friends</button>
 </fieldset>
@@ -72,7 +72,7 @@ const HTML = /* html */ `<!doctype html>
     const res = await fetch('/auth/dev-login', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ userId: Number(v('me')) }),
+      body: JSON.stringify({ user_id: Number(v('me')) }),
     })
     const body = await res.json()
     if (!body.success) {

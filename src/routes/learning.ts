@@ -10,7 +10,7 @@ learning.get('/me/stats', requireAuth, async (c) => {
   return ok(c, stats)
 })
 
-learning.get('/units/:unitId', requireAuth, async (c) => {
-  const detail = await learningService.getUnitDetail(c.get('userId'), c.req.param('unitId'))
+learning.get('/units/:unit_id', requireAuth, async (c) => {
+  const detail = await learningService.getUnitDetail(c.get('userId'), c.req.param('unit_id'))
   return ok(c, detail)
 })

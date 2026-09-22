@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { toCamelCase } from '../lib/caseConvert'
 import { env } from '../lib/env'
 import { Errors } from '../lib/errors'
 import { fail, ok } from '../lib/response'
@@ -37,7 +38,9 @@ auth.get('/auth/google/callback', async (c) => {
 auth.post('/auth/dev-login', async (c) => {
   if (!env.allowDevLogin) throw Errors.notFound()
 
-  const body = (await c.req.json().catch(() => ({}))) as { userId?: number }
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    userId?: number
+  }
   if (!body.userId) return fail(c, 'INVALID_INPUT', 'userId 필요', 400)
 
   const user = await userRepository.findById(body.userId)
