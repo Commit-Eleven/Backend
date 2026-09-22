@@ -86,7 +86,35 @@ describe('getUnitDetail', () => {
     expect(detail.wrong).toBe(1)
     expect(detail.remaining).toBe(8)
     expect(detail.completePercent).toBe(10)
-    expect(detail.nextUnit).toEqual({ unitId: 'conditionals', title: '조건문' })
+    expect(detail.nextUnit).toEqual({
+      unitId: 'conditionals',
+      title: '조건문',
+      order: 2,
+      total: 0,
+      solved: 1, // conditionals는 problemId가 없어 total=0이라 completePercent엔 안 잡힘
+      completePercent: 0,
+      unlocked: false,
+    })
+  })
+
+  test('현재 단원을 100% 완료하면 다음 단원이 잠금 해제 상태로 나온다', async () => {
+    const unitProblemIds = [
+      'fill_blank-001',
+      'fill_blank-002',
+      'mc-001',
+      'parsons-001',
+      'mc-002',
+      'fill_blank-003',
+      'short_answer-001',
+      'parsons-002',
+      'mc-003',
+      'spaghetti-001',
+    ]
+    const latest = unitProblemIds.map((problemId) => ({ problemId, isCorrect: true }))
+    const service = createLearningService(makeFakeRepo({ latest }))
+    const detail = await service.getUnitDetail(1, 'vars-types')
+    expect(detail.completePercent).toBe(100)
+    expect(detail.nextUnit?.unlocked).toBe(true)
   })
 
   test('마지막 단원이면 nextUnit은 null', async () => {

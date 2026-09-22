@@ -1,4 +1,4 @@
-import { findUnit, nextUnitOf } from '../lib/curriculum'
+import { findUnit, nextUnitOf, type Unit } from '../lib/curriculum'
 import { Errors } from '../lib/errors'
 import { getProblemSummary } from '../lib/problems'
 import type { LatestSubmission, SubmissionCounts } from '../repositories/submissionRepository'
@@ -14,6 +14,10 @@ type SubmissionRepo = {
 }
 
 type ProblemStatus = 'correct' | 'wrong' | 'todo'
+
+function completePercentOf(solved: number, total: number): number {
+  return total === 0 ? 0 : Math.round((solved / total) * 100)
+}
 
 /** submission.created_at의 날짜들이 오늘부터 며칠 연속인지 (테이블 명세서 16장) */
 function countStreakDays(submissionDates: string[]): number {
@@ -44,6 +48,23 @@ export function createLearningService(repo: SubmissionRepo) {
     }
   }
 
+  // 커리큘럼 조회 API(/curriculum)와 같은 단원 요약 모양. nextUnit에도 그대로 쓴다.
+  async function summarizeUnit(userId: number, unit: Unit, unlocked: boolean) {
+    const latest = await repo.latestByProblemIds(userId, unit.problemIds)
+    const solved = latest.filter((s) => s.isCorrect).length
+    const total = unit.problemIds.length
+
+    return {
+      unitId: unit.unitId,
+      title: unit.title,
+      order: unit.order,
+      total,
+      solved,
+      completePercent: completePercentOf(solved, total),
+      unlocked,
+    }
+  }
+
   async function getUnitDetail(userId: number, unitId: string) {
     const found = findUnit(unitId)
     if (!found) throw Errors.notFound('없는 단원')
@@ -67,17 +88,20 @@ export function createLearningService(repo: SubmissionRepo) {
 
     const solved = problems.filter((p) => p.status === 'correct').length
     const wrong = problems.filter((p) => p.status === 'wrong').length
+    const completePercent = completePercentOf(solved, problems.length)
     const next = nextUnitOf(course, unit)
+    // 다음 단원 잠금 해제 조건(테이블 명세서 15.2): 직전 단원 완료율 100%
+    const nextUnit = next ? await summarizeUnit(userId, next, completePercent === 100) : null
 
     return {
       unitId: unit.unitId,
       title: unit.title,
-      completePercent: problems.length === 0 ? 0 : Math.round((solved / problems.length) * 100),
+      completePercent,
       solved,
       wrong,
       remaining: problems.length - solved - wrong,
       problems,
-      nextUnit: next ? { unitId: next.unitId, title: next.title } : null,
+      nextUnit,
     }
   }
 
