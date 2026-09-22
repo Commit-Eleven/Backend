@@ -5,6 +5,7 @@ import { type AuthEnv, requireAuth } from '../lib/auth'
 import { env } from '../lib/env'
 import { authUrl, exchangeCode, googleReady, verifyIdToken } from '../lib/google'
 import { fail, ok } from '../lib/response'
+import { userRepository } from '../repositories/userRepository'
 import { authService, REFRESH_TOKEN_TTL } from '../services/authService'
 
 // 가입/로그인은 구글로만. 이메일·비밀번호 계정 없음
@@ -84,4 +85,24 @@ auth.post('/auth/logout', requireAuth, async (c) => {
   await authService.logout(c.get('userId'))
   deleteCookie(c, REFRESH_COOKIE, { path: '/auth' })
   return c.body(null, 204)
+})
+
+// 테스트용. 구글 없이 주소만 쳐서 토큰 받기. ENABLE_DEV_TOKEN="true" 일 때만 열림
+// ?user_id=1 이면 그 유저, 없으면 테스트 계정(dev-user) 하나 만들어서 씀
+auth.get('/auth/dev-token', async (c) => {
+  if (!env.devTokenEnabled) return fail(c, 'NOT_FOUND', '없는 경로', 404)
+
+  const userId = c.req.query('user_id')
+  const u = userId
+    ? await userRepository.findById(Number(userId))
+    : await authService.findOrCreateUser({
+        sub: 'dev-user',
+        email: 'dev-user@codegram.local',
+        emailVerified: true,
+      })
+  if (!u) return fail(c, 'NOT_FOUND', '없는 사용자', 404)
+
+  const { token, refreshToken, user } = await authService.issueTokens(u)
+  setRefreshCookie(c, refreshToken)
+  return ok(c, { token, refreshToken, user })
 })
