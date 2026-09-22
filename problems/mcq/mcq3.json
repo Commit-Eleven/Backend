@@ -1,0 +1,8 @@
+{
+  "id": 3,
+  "type": "mcq",
+  "title": "다음 중 프론트엔드 프레임워크가 아닌 것은?",
+  "choices": ["React", "Vue", "Svelte", "Express", "Angular"],
+  "answer": 3,
+  "exp": 10
+}

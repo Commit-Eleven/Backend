@@ -1,10 +1,11 @@
 import { createRoute, z, OpenAPIHono } from "@hono/zod-openapi"
+import { getMcqProblems, getProblem, type McqProblem } from "../../problems"
 
 const McqProblemSchema = z
     .object({
-        id: z.number().int().openapi({ example: 20 }),
-        title: z.string().openapi({ example: "김시원의 키는 몇 센티미터일까요?" }),
-        choices: z.array(z.string()).openapi({ example: ["160", "164", "169", "170", "171"] }),
+        id: z.number().int().openapi({ example: 1 }),
+        title: z.string().openapi({ example: "1 + 1은 무엇일까요?" }),
+        choices: z.array(z.string()).openapi({ example: ["1", "2", "3", "4", "5"] }),
     })
     .openapi("McqProblem")
 
@@ -21,6 +22,12 @@ const AnswerResponseSchema = z
     })
     .openapi("AnswerResponse")
 
+const ErrorResponseSchema = z
+    .object({
+        message: z.string(),
+    })
+    .openapi("ErrorResponse")
+
 const getMcqRoute = createRoute({
     method: "get",
     path: "/",
@@ -31,7 +38,15 @@ const getMcqRoute = createRoute({
                     schema: McqProblemSchema,
                 },
             },
-            description: "랜덤 객관식 문제를 반환한다",
+            description: "문제 풀에서 무작위 객관식 문제를 반환한다",
+        },
+        404: {
+            content: {
+                "application/json": {
+                    schema: ErrorResponseSchema,
+                },
+            },
+            description: "문제 풀이 비어 있음",
         },
     },
 })
@@ -57,24 +72,38 @@ const answerMcqRoute = createRoute({
             },
             description: "정답 여부를 반환한다",
         },
+        404: {
+            content: {
+                "application/json": {
+                    schema: ErrorResponseSchema,
+                },
+            },
+            description: "존재하지 않는 문제 id",
+        },
     },
 })
 
 const mcq = new OpenAPIHono()
 
 mcq.openapi(getMcqRoute, (c) => {
-    return c.json({
-        id: 20,
-        title: "김시원의 키는 몇 센티미터일까요?",
-        choices: ["160", "164", "169", "170", "171"],
-    })
+    const pool = getMcqProblems()
+    if (pool.length === 0) {
+        return c.json({ message: "문제 풀이 비어 있습니다" }, 404)
+    }
+
+    const problem = pool[Math.floor(Math.random() * pool.length)]
+    return c.json({ id: problem.id, title: problem.title, choices: problem.choices }, 200)
 })
 
-mcq.openapi(answerMcqRoute, async (c) => {
+mcq.openapi(answerMcqRoute, (c) => {
     const body = c.req.valid("json")
-    const answer = 0
+    const problem = getProblem(body.id) as McqProblem | undefined
 
-    return c.json({ result: body.choice == answer })
+    if (!problem) {
+        return c.json({ message: `존재하지 않는 문제입니다: ${body.id}` }, 404)
+    }
+
+    return c.json({ result: body.choice === problem.answer }, 200)
 })
 
 export default mcq
