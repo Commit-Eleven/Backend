@@ -1,18 +1,31 @@
 {
   "name": "codegram",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "bun run scripts/seed.ts"
   },
   "dependencies": {
     "@hono/swagger-ui": "^0.6.1",
     "@hono/zod-openapi": "^1.6.3",
+    "drizzle-orm": "^0.36.4",
     "hono": "^4.13.7",
     "mysql2": "^3.24.4",
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.14",
     "@types/bun": "latest",
     "@types/swagger-ui-dist": "^3.30.6",
-    "swagger-ui-dist": "^5.33.0"
+    "drizzle-kit": "^0.28.1",
+    "swagger-ui-dist": "^5.33.0",
+    "typescript": "^5.7.0"
   }
 }

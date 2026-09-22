@@ -1,0 +1,47 @@
+[
+  {
+    "id": "fill_blank-001",
+    "type": "fill_blank",
+    "title": "for 반복문",
+    "description": "0부터 9까지 출력하도록 빈칸을 채우세요.",
+    "difficulty": 2,
+    "language": "python",
+    "exp_reward": 30,
+    "hint": "0부터 n까지 순회하는 내장 함수를 떠올려보세요.",
+    "unitId": "vars-types",
+    "content": {
+      "template": "for i in {{1}}(10):\n    print(i)",
+      "blanks": [{ "no": 1, "answers": ["range"], "hint": "내장 함수" }]
+    }
+  },
+  {
+    "id": "fill_blank-002",
+    "type": "fill_blank",
+    "title": "변수 타입 확인",
+    "description": "변수 x의 타입을 출력하도록 빈칸을 채우세요.",
+    "difficulty": 1,
+    "language": "python",
+    "exp_reward": 20,
+    "hint": "객체의 타입을 반환하는 내장 함수입니다.",
+    "unitId": "vars-types",
+    "content": {
+      "template": "x = 10\nprint({{1}}(x))",
+      "blanks": [{ "no": 1, "answers": ["type"], "hint": "내장 함수" }]
+    }
+  },
+  {
+    "id": "fill_blank-003",
+    "type": "fill_blank",
+    "title": "문자열 포맷팅",
+    "description": "이름과 나이를 출력하도록 빈칸을 채우세요.",
+    "difficulty": 2,
+    "language": "python",
+    "exp_reward": 30,
+    "hint": "f-string 문법을 사용하세요.",
+    "unitId": "vars-types",
+    "content": {
+      "template": "name = \"종은\"\nage = 20\nprint({{1}}\"{name}은 {age}살\")",
+      "blanks": [{ "no": 1, "answers": ["f"], "hint": "포맷 문자열 접두사" }]
+    }
+  }
+]
