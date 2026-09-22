@@ -8,6 +8,7 @@ import { auth } from './routes/auth'
 import { dbview } from './routes/dbview'
 import { friends } from './routes/friends'
 import { health } from './routes/health'
+import { learning } from './routes/learning'
 import { testpage } from './routes/testpage'
 
 const app = new Hono()
@@ -18,6 +19,7 @@ app.get('/', (c) => c.redirect('/test'))
 app.route('/', health)
 app.route('/', auth)
 app.route('/', friends)
+app.route('/', learning)
 app.route('/', testpage)
 app.route('/', dbview)
 app.route('/api/blank', blank)
