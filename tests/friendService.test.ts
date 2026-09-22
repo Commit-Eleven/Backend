@@ -86,7 +86,7 @@ describe('sendRequest', () => {
     await expect(service.sendRequest(1, 999)).rejects.toMatchObject({ code: 'NOT_FOUND' })
   })
 
-  test('정상 신청 → pending', async () => {
+  test('정상 신청하면 pending', async () => {
     const { friendRepo, userRepo } = makeFakeRepos()
     const service = createFriendService(friendRepo, userRepo)
     const result = await service.sendRequest(1, 2)

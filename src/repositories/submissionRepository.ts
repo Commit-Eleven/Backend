@@ -33,7 +33,7 @@ export const submissionRepository = {
     return rows.map((r) => r.date)
   },
 
-  /** 문제별 최신 제출 하나씩만. 넘긴 problemIds에 없는 문제는 결과에서 빠진다(=시도 안 함). */
+  /** 문제별 최신 제출만 */
   async latestByProblemIds(userId: number, problemIds: string[]): Promise<LatestSubmission[]> {
     if (problemIds.length === 0) return []
 

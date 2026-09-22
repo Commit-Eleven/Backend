@@ -1,7 +1,6 @@
 import type { ContentfulStatusCode } from 'hono/utils/http-status'
 
-// 서비스 계층에서 던지는 에러. app.onError에서 잡아서 { code, message }로 응답한다.
-// 라우터마다 try/catch를 반복하지 않기 위한 것 — 실패 케이스는 여기로 통일.
+// app.onError에서 처리하는 서비스 에러
 export class AppError extends Error {
   code: string
   status: ContentfulStatusCode

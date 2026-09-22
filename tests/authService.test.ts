@@ -41,7 +41,7 @@ describe('assignUniqueTag', () => {
       },
       async existsByNicknameAndTag() {
         attempts++
-        return true // 항상 이미 있다고 응답 → 재시도 소진돼야 함
+        return true // 항상 이미 있다고 응답, 재시도 소진돼야 함
       },
       async create(data: NewUser): Promise<FakeUser> {
         return { id: 1, totalExp: 0, tier: 'normal', ...data }

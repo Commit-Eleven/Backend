@@ -1,4 +1,4 @@
-// 환경변수는 여기서만 읽는다. 다른 파일에서 Bun.env 직접 참조 금지.
+// 환경변수는 여기서만
 export const env = {
   port: Number(Bun.env.PORT ?? 3000),
   db: {
@@ -14,6 +14,6 @@ export const env = {
     clientSecret: Bun.env.GOOGLE_CLIENT_SECRET ?? '',
     redirectUri: Bun.env.GOOGLE_REDIRECT_URI ?? '',
   },
-  // 구글 OAuth 없이 로컬에서 토큰 발급받는 /auth/dev-login 활성화 여부. 운영에선 false.
+  // 개발용 로그인 스위치
   allowDevLogin: Bun.env.ALLOW_DEV_LOGIN === 'true',
 } as const

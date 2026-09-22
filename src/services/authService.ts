@@ -25,8 +25,7 @@ export type AuthUser = {
   providerId: string
 }
 
-// 서비스가 실제로 필요로 하는 최소 모양만 요구한다.
-// 그래야 테스트에서 진짜 DB 로우와 무관한 fake를 그대로 넣을 수 있다.
+// 테스트 fake 주입을 위한 최소 의존 타입
 type UserRepo = {
   findByProviderId(providerId: string): Promise<AuthUser | undefined>
   existsByNicknameAndTag(nickname: string, tag: string): Promise<boolean>

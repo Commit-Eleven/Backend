@@ -31,8 +31,7 @@ const pk = () => bigint('id', { mode: 'number' }).autoincrement().primaryKey()
 const createdAt = () => timestamp('created_at').defaultNow().notNull()
 const updatedAt = () => timestamp('updated_at').defaultNow().onUpdateNow().notNull()
 
-// user — 로그인은 구글 OAuth만. 비밀번호 없음.
-// 닉네임은 디스코드식: nickname 자체는 중복 가능, (nickname, tag) 조합으로만 유일.
+// 구글 로그인 전용, 닉네임은 태그 조합으로만 유일
 export const user = mysqlTable(
   'user',
   {

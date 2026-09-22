@@ -3,8 +3,7 @@ import { Errors } from '../lib/errors'
 import { type FriendRow, friendRepository } from '../repositories/friendRepository'
 import { type UserSummary, userRepository } from '../repositories/userRepository'
 
-// 정확한 리포지토리 타입 대신 서비스가 실제로 필요로 하는 최소 모양만 요구한다.
-// 그래야 테스트에서 진짜 DB 로우와 무관한 fake를 그대로 넣을 수 있다.
+// 테스트 fake 주입을 위한 최소 의존 타입
 type FriendRepo = {
   findById(id: number): Promise<FriendRow | undefined>
   findBetween(a: number, b: number): Promise<FriendRow | undefined>
@@ -38,7 +37,7 @@ export function createFriendService(friendRepo: FriendRepo, userRepo: UserRepo) 
         friendshipId: r.id,
         status: r.status,
         direction: r.requesterId === userId ? ('outgoing' as const) : ('incoming' as const),
-        // 정상적으론 항상 있어야 함(FK로 보장). 방어적으로만 처리.
+        // 방어 처리
         user: otherById.get(otherId) ?? {
           id: otherId,
           nickname: '(알 수 없음)',

@@ -30,7 +30,7 @@ async function loadCurriculum(): Promise<Course[]> {
   return courses
 }
 
-// 서버 부팅 시 한 번만 로드. problemIds가 문제 파일에 실제로 있는지도 여기서 검증한다.
+// 부팅 시 1회 로드 + 검증
 const courses = await loadCurriculum()
 
 export function findUnit(unitId: string): { course: Course; unit: Unit } | undefined {

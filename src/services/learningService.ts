@@ -4,8 +4,7 @@ import { getProblemSummary } from '../lib/problems'
 import type { LatestSubmission, SubmissionCounts } from '../repositories/submissionRepository'
 import { submissionRepository } from '../repositories/submissionRepository'
 
-// 서비스가 실제로 필요로 하는 최소 모양만 요구한다.
-// 그래야 테스트에서 진짜 DB 로우와 무관한 fake를 그대로 넣을 수 있다.
+// 테스트 fake 주입을 위한 최소 의존 타입
 type SubmissionRepo = {
   countTotalAndCorrect(userId: number): Promise<SubmissionCounts>
   countDistinctCorrectProblems(userId: number): Promise<number>
@@ -19,7 +18,7 @@ function completePercentOf(solved: number, total: number): number {
   return total === 0 ? 0 : Math.round((solved / total) * 100)
 }
 
-/** submission.created_at의 날짜들이 오늘부터 며칠 연속인지 (테이블 명세서 16장) */
+/** 연속 제출일수 */
 function countStreakDays(submissionDates: string[]): number {
   const daySet = new Set(submissionDates)
   const cursor = new Date()
@@ -48,7 +47,7 @@ export function createLearningService(repo: SubmissionRepo) {
     }
   }
 
-  // 커리큘럼 조회 API(/curriculum)와 같은 단원 요약 모양. nextUnit에도 그대로 쓴다.
+  // 커리큘럼 조회와 같은 단원 요약 모양
   async function summarizeUnit(userId: number, unit: Unit, unlocked: boolean) {
     const latest = await repo.latestByProblemIds(userId, unit.problemIds)
     const solved = latest.filter((s) => s.isCorrect).length
@@ -90,7 +89,7 @@ export function createLearningService(repo: SubmissionRepo) {
     const wrong = problems.filter((p) => p.status === 'wrong').length
     const completePercent = completePercentOf(solved, problems.length)
     const next = nextUnitOf(course, unit)
-    // 다음 단원 잠금 해제 조건(테이블 명세서 15.2): 직전 단원 완료율 100%
+    // 다음 단원 잠금 해제: 직전 단원 완료율 100%
     const nextUnit = next ? await summarizeUnit(userId, next, completePercent === 100) : null
 
     return {

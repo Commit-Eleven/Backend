@@ -28,7 +28,7 @@ async function loadProblems(): Promise<Map<string, ProblemSummary>> {
   return byId
 }
 
-// 서버 부팅 시 한 번만 로드해서 메모리에 들고 있는다 (요청마다 파일을 읽지 않음).
+// 부팅 시 1회만 로드
 const problemsById = await loadProblems()
 
 export function getProblemSummary(id: string): ProblemSummary | undefined {

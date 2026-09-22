@@ -1,6 +1,3 @@
-// 여러 파일에서 재입력하지 않도록 ENUM/매직값을 한 곳에 모은다.
-// drizzle mysqlEnum과 서비스 코드가 이 배열을 같이 참조한다.
-
 export const USER_TIER = ['normal', 'creator', 'admin'] as const
 export type UserTier = (typeof USER_TIER)[number]
 
@@ -33,7 +30,7 @@ export const SEARCH_RESULT_LIMIT = 20
 
 export const JWT_EXPIRES_IN_SECONDS = 60 * 60 * 24 * 7 // 7일
 
-// 문제는 DB가 아니라 problems/*.json 파일로 관리한다 (테이블 명세서 2장)
+// 문제는 DB가 아니라 파일로 관리
 export const PROBLEM_TYPE = [
   'fill_blank',
   'parsons',
