@@ -20,4 +20,6 @@ export const env = {
   // 있으면 구글 콜백이 여기로 토큰 실어서 리다이렉트, 없으면 JSON 응답
   frontendUrl: Bun.env.FRONTEND_URL || undefined,
   isProd: Bun.env.NODE_ENV === 'production',
+  // 테스트용 토큰 발급(/auth/dev-token). "true" 로 켠 곳에서만 열림, production 에선 무조건 닫힘
+  devTokenEnabled: Bun.env.ENABLE_DEV_TOKEN === 'true' && Bun.env.NODE_ENV !== 'production',
 } as const
