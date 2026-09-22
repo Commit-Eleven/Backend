@@ -16,7 +16,17 @@ const NOUNS = [
 
 const pick = <T>(arr: readonly T[]) => arr[Math.floor(Math.random() * arr.length)]!
 
-export const randomNickname = () => `${pick(ADJECTIVES)} ${pick(NOUNS)}`
+// 자동 생성은 띄어쓰기 없이. 예: 호기심많은기린
+export const randomNickname = () => `${pick(ADJECTIVES)}${pick(NOUNS)}`
+
+// 사용자가 직접 바꾸는 닉네임. 띄어쓰기 허용, 앞뒤 공백은 자르고 연속 공백은 하나로. 2~20자
+export const NICKNAME_MIN = 2
+export const NICKNAME_MAX = 20
+export function normalizeNickname(v: unknown): string | null {
+    if (typeof v !== "string") return null
+    const s = v.trim().replace(/\s+/g, " ")
+    return s.length >= NICKNAME_MIN && s.length <= NICKNAME_MAX ? s : null
+}
 
 // 0000 ~ 9999
 export const randomTag = () => String(Math.floor(Math.random() * 10000)).padStart(4, "0")
