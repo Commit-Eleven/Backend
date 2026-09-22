@@ -2,7 +2,7 @@
 
 export $(cat ../.env | xargs)
 
-docker exec -i mariadb mysql -u root -p"$DB_ROOT_PASSWORD" <<EOF
+docker exec -i mariadb mariadb -u root -p"$DB_ROOT_PASSWORD" <<EOF
 CREATE DATABASE IF NOT EXISTS $DB_DATABASE;
 CREATE USER IF NOT EXISTS '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD';
 GRANT ALL PRIVILEGES ON $DB_DATABASE.* TO '$DB_USER'@'%';

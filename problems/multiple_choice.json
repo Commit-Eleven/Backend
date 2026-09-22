@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mc-001",
+    "type": "multiple_choice",
+    "title": "리스트 컴프리헨션",
+    "description": "리스트를 만드는 올바른 표현은?",
+    "difficulty": 1,
+    "language": "python",
+    "exp_reward": 15,
+    "tags": ["자료형"],
+    "unitId": "vars-types",
+    "content": {
+      "choices": ["[x for x in range(10)]", "{x for x in range(10)}", "(x for x in range(10))"],
+      "answer_index": 0,
+      "explanation": "대괄호가 리스트 컴프리헨션이다."
+    }
+  },
+  {
+    "id": "mc-002",
+    "type": "multiple_choice",
+    "title": "가변 타입",
+    "description": "다음 중 파이썬에서 가변(mutable) 타입은?",
+    "difficulty": 2,
+    "language": "python",
+    "exp_reward": 20,
+    "tags": ["자료형"],
+    "unitId": "vars-types",
+    "content": {
+      "choices": ["tuple", "str", "list"],
+      "answer_index": 2,
+      "explanation": "list는 값을 바꿀 수 있는 가변 타입이다."
+    }
+  },
+  {
+    "id": "mc-003",
+    "type": "multiple_choice",
+    "title": "정수 나눗셈",
+    "description": "7 // 2 의 결과는?",
+    "difficulty": 1,
+    "language": "python",
+    "exp_reward": 15,
+    "tags": ["연산자"],
+    "unitId": "vars-types",
+    "content": {
+      "choices": ["3", "3.5", "4"],
+      "answer_index": 0,
+      "explanation": "//는 몫만 반환하는 정수 나눗셈 연산자다."
+    }
+  }
+]
