@@ -6,10 +6,12 @@ import { env } from './lib/env'
 import { AppError } from './lib/errors'
 import { fail } from './lib/response'
 import { loadProblems } from './problems'
+import { auth } from './routes/auth'
 import { dbview } from './routes/dbview'
 import { friends } from './routes/friends'
 import { health } from './routes/health'
 import { learning } from './routes/learning'
+import { me } from './routes/me'
 
 loadProblems()
 
@@ -18,6 +20,8 @@ const app = new OpenAPIHono()
 app.use('*', logger())
 
 app.route('/', health)
+app.route('/', auth)
+app.route('/', me)
 app.route('/', friends)
 app.route('/', learning)
 app.route('/', dbview)

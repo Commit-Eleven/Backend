@@ -40,6 +40,11 @@ export const userRepository = {
     return rows.length > 0
   },
 
+  async existsByTag(tag: string): Promise<boolean> {
+    const rows = await db.select({ id: user.id }).from(user).where(eq(user.tag, tag))
+    return rows.length > 0
+  },
+
   async create(data: NewUser): Promise<UserRow> {
     const [inserted] = await db.insert(user).values(data).$returningId()
     const rows = await db.select().from(user).where(eq(user.id, inserted.id))

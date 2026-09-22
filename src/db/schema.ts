@@ -57,6 +57,24 @@ export const user = mysqlTable(
   }),
 )
 
+// 원문은 쿠키로만 주고 DB에는 sha256 해시만
+export const refreshToken = mysqlTable(
+  'refresh_token',
+  {
+    id: pk(),
+    userId: bigint('user_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    tokenHash: char('token_hash', { length: 64 }).notNull(),
+    expiresAt: timestamp('expires_at').notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => ({
+    uqHash: unique('uq_refresh_hash').on(t.tokenHash),
+    idxUser: index('idx_refresh_user').on(t.userId),
+  }),
+)
+
 // problemId는 문제 파일 id (fk 아님)
 export const submission = mysqlTable(
   'submission',
