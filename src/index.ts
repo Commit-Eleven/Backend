@@ -1,9 +1,11 @@
-import { Hono } from 'hono'
+import { swaggerUI } from '@hono/swagger-ui'
+import { OpenAPIHono } from '@hono/zod-openapi'
 import { logger } from 'hono/logger'
-import blank from './features/blank'
+import mcq from './features/problems/mcq'
 import { env } from './lib/env'
 import { AppError } from './lib/errors'
 import { fail } from './lib/response'
+import { loadProblems } from './problems'
 import { auth } from './routes/auth'
 import { dbview } from './routes/dbview'
 import { friends } from './routes/friends'
@@ -11,7 +13,9 @@ import { health } from './routes/health'
 import { learning } from './routes/learning'
 import { testpage } from './routes/testpage'
 
-const app = new Hono()
+loadProblems()
+
+const app = new OpenAPIHono()
 
 app.use('*', logger())
 
@@ -22,7 +26,10 @@ app.route('/', friends)
 app.route('/', learning)
 app.route('/', testpage)
 app.route('/', dbview)
-app.route('/api/blank', blank)
+app.route('/api/problems/mcq', mcq)
+
+app.doc('/doc', { openapi: '3.0.0', info: { title: 'Codegram API', version: '0.1.0' } })
+app.get('/swagger', swaggerUI({ url: '/doc' }))
 
 app.notFound((c) => fail(c, 'NOT_FOUND', '없는 경로', 404))
 
