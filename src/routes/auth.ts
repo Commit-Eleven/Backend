@@ -44,5 +44,8 @@ auth.post('/auth/dev-login', async (c) => {
   if (!user) return fail(c, 'NOT_FOUND', '없는 유저', 404)
 
   const token = await authService.issueToken(user.id)
-  return ok(c, { token, user: { id: user.id, nickname: user.nickname, tag: user.tag } })
+  return ok(c, {
+    token,
+    user: { id: user.id, nickname: user.nickname, tag: user.tag, totalExp: user.totalExp },
+  })
 })
