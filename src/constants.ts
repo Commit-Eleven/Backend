@@ -32,3 +32,23 @@ export const DEFAULT_GROUP_CAPACITY = 10
 export const SEARCH_RESULT_LIMIT = 20
 
 export const JWT_EXPIRES_IN_SECONDS = 60 * 60 * 24 * 7 // 7일
+
+// 문제는 DB가 아니라 problems/*.json 파일로 관리한다 (테이블 명세서 2장)
+export const PROBLEM_TYPE = [
+  'fill_blank',
+  'parsons',
+  'multiple_choice',
+  'short_answer',
+  'spaghetti',
+] as const
+export type ProblemType = (typeof PROBLEM_TYPE)[number]
+
+export const PROBLEM_FILE_PATHS: Record<ProblemType, string> = {
+  fill_blank: 'problems/fill_blank.json',
+  parsons: 'problems/parsons.json',
+  multiple_choice: 'problems/multiple_choice.json',
+  short_answer: 'problems/short_answer.json',
+  spaghetti: 'problems/spaghetti.json',
+}
+
+export const CURRICULUM_FILE_PATH = '커리큘럼/curriculum.json'

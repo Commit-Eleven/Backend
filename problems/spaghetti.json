@@ -1,0 +1,20 @@
+[
+  {
+    "id": "spaghetti-001",
+    "type": "spaghetti",
+    "title": "짝수 필터 정리",
+    "description": "동작은 유지하고 가독성을 개선하세요.",
+    "difficulty": 3,
+    "language": "python",
+    "exp_reward": 45,
+    "unitId": "vars-types",
+    "content": {
+      "original_code": "def f(a):\n b=[]\n for i in a:\n  if i%2==0:b.append(i)\n return b",
+      "runtime": "python:3.11",
+      "time_limit_ms": 2000,
+      "testcases": [{ "input": "[1,2,3,4]", "expected": "[2, 4]" }],
+      "answer_code": "def filter_even(numbers):\n    return [n for n in numbers if n % 2 == 0]",
+      "explanation": "리스트 컴프리헨션으로 조건 필터링을 한 줄로 표현할 수 있다."
+    }
+  }
+]

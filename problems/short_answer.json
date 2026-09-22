@@ -1,0 +1,22 @@
+[
+  {
+    "id": "short_answer-001",
+    "type": "short_answer",
+    "title": "짝수의 합",
+    "description": "0부터 n-1까지 짝수의 합을 반환하는 solve(n)을 작성하세요.",
+    "difficulty": 3,
+    "language": "python",
+    "exp_reward": 50,
+    "unitId": "vars-types",
+    "content": {
+      "starter_code": "def solve(n):\n    pass",
+      "runtime": "python:3.11",
+      "time_limit_ms": 2000,
+      "conditions": ["0부터 n-1까지의 짝수만 더한다", "n이 0이면 0을 반환한다"],
+      "testcases": [
+        { "input": "10", "expected": "20", "visible": true },
+        { "input": "1", "expected": "0", "visible": false }
+      ]
+    }
+  }
+]

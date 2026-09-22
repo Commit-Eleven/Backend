@@ -1,0 +1,43 @@
+[
+  {
+    "id": "parsons-001",
+    "type": "parsons",
+    "title": "누적합 함수",
+    "description": "조각을 올바른 순서로 배치하세요.",
+    "difficulty": 3,
+    "language": "python",
+    "exp_reward": 40,
+    "unitId": "vars-types",
+    "content": {
+      "fragments": [
+        "def solve(n):",
+        "    total = 0",
+        "    for i in range(n):",
+        "        total += i",
+        "    return total"
+      ],
+      "answer_order": [0, 1, 2, 3, 4]
+    }
+  },
+  {
+    "id": "parsons-002",
+    "type": "parsons",
+    "title": "최댓값 찾기",
+    "description": "조각을 올바른 순서로 배치하세요.",
+    "difficulty": 3,
+    "language": "python",
+    "exp_reward": 40,
+    "unitId": "vars-types",
+    "content": {
+      "fragments": [
+        "def find_max(nums):",
+        "    result = nums[0]",
+        "    for n in nums[1:]:",
+        "        if n > result:",
+        "            result = n",
+        "    return result"
+      ],
+      "answer_order": [0, 1, 2, 3, 4, 5]
+    }
+  }
+]
