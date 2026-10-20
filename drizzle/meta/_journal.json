@@ -15,6 +15,13 @@
       "when": 1790067570746,
       "tag": "0001_great_grim_reaper",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1792485780107,
+      "tag": "0002_right_tarot",
+      "breakpoints": true
     }
   ]
 }

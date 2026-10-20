@@ -9,6 +9,7 @@ import mcq from './problems/mcq'
 import { login } from './social/login'
 import { friends } from './users/friends'
 import { me } from './users/me'
+import { onboarding } from './users/onboarding'
 
 const app = new OpenAPIHono()
 
@@ -17,6 +18,7 @@ app.use('*', logger())
 app.route('/api/health', health)
 app.route('/api/social/login', login)
 app.route('/api/users/me', me)
+app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)
 app.route('/api/problems/learning', learning)
 app.route('/api/problems/mcq', mcq)
