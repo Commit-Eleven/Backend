@@ -14,8 +14,6 @@ export const NOTIFICATION_TYPE = [
   'system',
 ] as const
 
-export const NICKNAME_TAG_LENGTH = 4
-
 export const DEFAULT_STUDY_LANGUAGE = 'python'
 export const DEFAULT_GROUP_CAPACITY = 10
 export const SEARCH_RESULT_LIMIT = 20

@@ -1,80 +1,83 @@
 [
   {
-    "id": "mc-001",
-    "type": "multiple_choice",
+    "id": "mcq1",
+    "type": "mcq",
     "title": "리스트 컴프리헨션",
+    "reward": 15,
+    "content": {
+      "choices": ["[x for x in range(10)]", "{x for x in range(10)}", "(x for x in range(10))"],
+      "answer": 0,
+      "explanation": "대괄호가 리스트 컴프리헨션이다."
+    },
+
     "description": "리스트를 만드는 올바른 표현은?",
     "difficulty": 1,
     "language": "python",
-    "exp_reward": 15,
     "tags": ["자료형"],
-    "unitId": "vars-types",
-    "content": {
-      "choices": ["[x for x in range(10)]", "{x for x in range(10)}", "(x for x in range(10))"],
-      "answer_index": 0,
-      "explanation": "대괄호가 리스트 컴프리헨션이다."
-    }
+    "unitId": "vars-types"
   },
   {
-    "id": "mc-002",
-    "type": "multiple_choice",
+    "id": "mcq2",
+    "type": "mcq",
     "title": "가변 타입",
+    "reward": 20,
+    "content": {
+      "choices": ["tuple", "str", "list"],
+      "answer": 2,
+      "explanation": "list는 값을 바꿀 수 있는 가변 타입이다."
+    },
+
     "description": "다음 중 파이썬에서 가변(mutable) 타입은?",
     "difficulty": 2,
     "language": "python",
-    "exp_reward": 20,
     "tags": ["자료형"],
-    "unitId": "vars-types",
-    "content": {
-      "choices": ["tuple", "str", "list"],
-      "answer_index": 2,
-      "explanation": "list는 값을 바꿀 수 있는 가변 타입이다."
-    }
+    "unitId": "vars-types"
   },
   {
-    "id": "mc-003",
-    "type": "multiple_choice",
+    "id": "mcq3",
+    "type": "mcq",
     "title": "정수 나눗셈",
+    "reward": 15,
+    "content": {
+      "choices": ["3", "3.5", "4"],
+      "answer": 0,
+      "explanation": "//는 몫만 반환하는 정수 나눗셈 연산자다."
+    },
+
     "description": "7 // 2 의 결과는?",
     "difficulty": 1,
     "language": "python",
-    "exp_reward": 15,
     "tags": ["연산자"],
-    "unitId": "vars-types",
-    "content": {
-      "choices": ["3", "3.5", "4"],
-      "answer_index": 0,
-      "explanation": "//는 몫만 반환하는 정수 나눗셈 연산자다."
-    }
+    "unitId": "vars-types"
   },
   {
-    "id": "mc-004",
-    "type": "multiple_choice",
+    "id": "mcq4",
+    "type": "mcq",
     "title": "1 + 1은 무엇일까요?",
-    "exp_reward": 10,
+    "reward": 10,
     "content": {
       "choices": ["1", "2", "3", "4", "5"],
-      "answer_index": 1
+      "answer": 1
     }
   },
   {
-    "id": "mc-005",
-    "type": "multiple_choice",
+    "id": "mcq5",
+    "type": "mcq",
     "title": "HTTP 상태 코드 404는 무엇을 뜻할까요?",
-    "exp_reward": 10,
+    "reward": 10,
     "content": {
       "choices": ["정상 응답", "리다이렉트", "찾을 수 없음", "서버 오류", "잘못된 요청"],
-      "answer_index": 2
+      "answer": 2
     }
   },
   {
-    "id": "mc-006",
-    "type": "multiple_choice",
+    "id": "mcq6",
+    "type": "mcq",
     "title": "다음 중 프론트엔드 프레임워크가 아닌 것은?",
-    "exp_reward": 10,
+    "reward": 10,
     "content": {
       "choices": ["React", "Vue", "Svelte", "Express", "Angular"],
-      "answer_index": 3
+      "answer": 3
     }
   }
 ]

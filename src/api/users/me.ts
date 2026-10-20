@@ -2,11 +2,10 @@ import { Hono } from 'hono'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { Errors, ok } from '../../util/http/response'
-import { withFreeTag } from '../social/sign'
+import { withFreeTag } from '../../util/sign'
 
 export const me = new Hono<AuthEnv>()
 
-// 띄어쓰기 허용, 2~20자. 바꾸면 태그도 새로 뽑힘
 me.patch('/nickname', requireAuth, async (c) => {
   const body = (await c.req.json().catch(() => ({}))) as { nickname?: unknown }
   const userId = c.get('userId')

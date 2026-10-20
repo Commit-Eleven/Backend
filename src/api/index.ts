@@ -15,21 +15,24 @@ const app = new OpenAPIHono()
 app.use('*', logger())
 
 app.route('/api/health', health)
+
 app.route('/api/social/login', login)
+
 app.route('/api/users/me', me)
 app.route('/api/users/friends', friends)
+
 app.route('/api/problems/learning', learning)
 app.route('/api/problems/mcq', mcq)
 
-app.doc('/doc', { openapi: '3.0.0', info: { title: 'Codegram API', version: '0.1.0' } })
-app.get('/swagger', swaggerUI({ url: '/doc' }))
+app.doc('/docs', { openapi: '3.0.0', info: { title: 'Codegram API', version: '0.0.1' } })
+app.get('/swagger', swaggerUI({ url: '/docs' }))
 
-app.notFound((c) => fail(c, 'NOT_FOUND', '없는 경로', 404))
+app.notFound((c) => fail(c, 'NotFound', '존재하지 않는 경로', 404))
 
 app.onError((err, c) => {
   if (err instanceof AppError) return fail(c, err.code, err.message, err.status)
   console.error(err)
-  return fail(c, 'INTERNAL', '서버 오류', 500)
+  return fail(c, 'Internal', '내부 서버 오류', 500)
 })
 
 export default {

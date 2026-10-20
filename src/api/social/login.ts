@@ -8,7 +8,7 @@ import { refreshToken as refreshTokenTable } from '../../util/db/schema'
 import { type UserRow, users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { Errors, fail, ok } from '../../util/http/response'
-import { findOrCreateUser } from './sign'
+import { findOrCreateUser } from '../../util/sign'
 
 // 구글 OAuth: 동의 화면 URL 만들기 → code 를 토큰으로 교환 → id_token 검증
 

@@ -106,15 +106,14 @@ friends.post('/', requireAuth, async (c) => {
 
 friends.post('/:id/accept', requireAuth, async (c) => {
   const id = Number(c.req.param('id'))
-  if (Number.isNaN(id)) return fail(c, 'INVALID_INPUT', '잘못된 id', 400)
+  if (Number.isNaN(id)) return fail(c, 'InvalidInput', '잘못된 id', 400)
   const result = await acceptRequest(c.get('userId'), id)
   return ok(c, result)
 })
 
-// pending=거절, accepted=삭제
 friends.delete('/:id', requireAuth, async (c) => {
   const id = Number(c.req.param('id'))
-  if (Number.isNaN(id)) return fail(c, 'INVALID_INPUT', '잘못된 id', 400)
+  if (Number.isNaN(id)) return fail(c, 'InvalidInput', '잘못된 id', 400)
   const result = await removeFriendship(c.get('userId'), id)
   return ok(c, result)
 })

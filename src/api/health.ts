@@ -8,8 +8,8 @@ export const health = new Hono()
 health.get('/', async (c) => {
   try {
     await db.execute(sql`SELECT 1`)
-    return ok(c, { status: 'up', db: 'up' })
+    return ok(c, { status: 'Success', db: 'Online' })
   } catch {
-    return fail(c, 'INTERNAL', 'db 연결 실패', 503)
+    return fail(c, 'Internal', '데이터베이스 연결 실패', 503)
   }
 })

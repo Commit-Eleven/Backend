@@ -1,8 +1,8 @@
-import { NICKNAME_TAG_LENGTH } from '../../util/config/constants'
-import { type UserRow, users } from '../../util/db/users'
-import { Errors } from '../../util/http/response'
+import { type UserRow, users } from './db/users'
+import { Errors } from './http/response'
 
-// 가입 때 랜덤 이름 + 4자리 태그로 닉네임 자동 생성
+const NICKNAME_TAG_LENGTH = 4
+const MAX_TAG_RETRY = 16
 
 const ADJECTIVES = [
   '명랑한',
@@ -76,16 +76,11 @@ const NOUNS = [
 
 const pick = <T>(arr: readonly T[]) => arr[Math.floor(Math.random() * arr.length)] as T
 
-// 자동 생성은 띄어쓰기 없이. 예: 호기심많은기린
 const randomNickname = () => `${pick(ADJECTIVES)}${pick(NOUNS)}`
 
-// 0000 ~ 9999
 const randomTag = () =>
   String(Math.floor(Math.random() * 10 ** NICKNAME_TAG_LENGTH)).padStart(NICKNAME_TAG_LENGTH, '0')
 
-const MAX_TAG_RETRY = 20
-
-// 안 쓰인 태그 하나 뽑아서 fn 에 넘김. 넣는 사이에 누가 먼저 가져가면 다시 뽑음
 export async function withFreeTag<T>(fn: (tag: string) => Promise<T>): Promise<T> {
   for (let i = 0; i < MAX_TAG_RETRY; i++) {
     const tag = randomTag()
@@ -97,11 +92,9 @@ export async function withFreeTag<T>(fn: (tag: string) => Promise<T>): Promise<T
       throw e
     }
   }
-  throw Errors.internal('태그 생성 실패')
+  throw Errors.internal('태그를 생성하는데 실패했습니다 (중복)')
 }
 
-// provider_id(구글 sub)로만 식별. 처음 오면 닉네임#태그 랜덤으로 만들어서 가입
-// 닉네임은 중복 허용, 태그는 중복 불가
 export async function findOrCreateUser(profile: { sub: string; email: string }): Promise<UserRow> {
   const existing = await users.findByProviderId(profile.sub)
   if (existing) return existing
