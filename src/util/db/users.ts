@@ -1,4 +1,5 @@
 import { and, eq, inArray, like, ne } from 'drizzle-orm'
+import type { STUDY_LEVEL } from '../config/constants'
 import { SEARCH_RESULT_LIMIT } from '../config/constants'
 import { db } from './connection'
 import { user } from './schema'
@@ -41,6 +42,17 @@ export const users = {
     const [inserted] = await db.insert(user).values(data).$returningId()
     const rows = await db.select().from(user).where(eq(user.id, inserted.id))
     return rows[0]
+  },
+
+  async completeOnboarding(
+    id: number,
+    studyLanguage: string,
+    studyLevel: (typeof STUDY_LEVEL)[number],
+  ): Promise<void> {
+    await db
+      .update(user)
+      .set({ studyLanguage, studyLevel, onboardedAt: new Date() })
+      .where(eq(user.id, id))
   },
 
   async updateNickname(id: number, nickname: string, tag: string): Promise<void> {
