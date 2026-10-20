@@ -2,6 +2,7 @@ import { swaggerUI } from '@hono/swagger-ui'
 import { OpenAPIHono } from '@hono/zod-openapi'
 import { logger } from 'hono/logger'
 import { env } from '../util/config/env'
+import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
 import { health } from './health'
 import { blank } from './problems/blank'
@@ -12,6 +13,8 @@ import { login } from './social/login'
 import { friends } from './users/friends'
 import { me } from './users/me'
 import { onboarding } from './users/onboarding'
+
+await runMigrations()
 
 const app = new OpenAPIHono()
 
