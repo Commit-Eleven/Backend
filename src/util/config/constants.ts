@@ -16,6 +16,10 @@ export const NOTIFICATION_TYPE = [
 
 export const NICKNAME_TAG_LENGTH = 4
 
+// 첫 로그인 온보딩에서 고르는 값
+export const STUDY_LANGUAGE = ['html_css', 'javascript', 'java', 'python'] as const
+export const STUDY_LEVEL = ['beginner', 'intermediate', 'advanced'] as const
+
 export const DEFAULT_STUDY_LANGUAGE = 'python'
 export const DEFAULT_GROUP_CAPACITY = 10
 export const SEARCH_RESULT_LIMIT = 20
