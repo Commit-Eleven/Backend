@@ -7,12 +7,12 @@ type BlankProblem = {
   title: string
   reward: number
   content: {
-    choices: string[]
-    answer: number
+    template: string
+    blanks: { no: number; answers: string[]; hint?: string }[]
   }
 }
 
-export const blankProblems = await Bun.file('static/problems/blank.json').json() as BlankProblem[]
+export const blankProblems = (await Bun.file('static/problems/blank.json').json()) as BlankProblem[]
 
 export const blank = new Hono<AuthEnv>()
 
@@ -25,6 +25,23 @@ blank.get('', requireAuth, (c) => {
   return c.json({ problem }, 200)
 })
 
+function submittedByNo(answer: unknown, blanks: { no: number }[]): Record<number, string> {
+  const map = Object.fromEntries(blanks.map((blank) => [blank.no, ''])) as Record<number, string>
+
+  if (Array.isArray(answer)) {
+    blanks.forEach((blank, i) => {
+      if (typeof answer[i] === 'string') map[blank.no] = answer[i]
+    })
+  } else if (answer && typeof answer === 'object') {
+    blanks.forEach((blank) => {
+      const value = (answer as Record<string, unknown>)[String(blank.no)]
+      if (typeof value === 'string') map[blank.no] = value
+    })
+  }
+
+  return map
+}
+
 blank.post('', requireAuth, async (c) => {
   const body = await c.req.json()
   const { id, answer } = body
@@ -32,16 +49,19 @@ blank.post('', requireAuth, async (c) => {
   const problem = blankProblems.find((problem) => problem.id === id)
 
   if (!problem) {
-    return c.json({ message: "문제를 찾을 수 없습니다" }, 404)
+    return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
   }
 
-  const isAnswer = problem.content.answer === answer
+  const submitted = submittedByNo(answer, problem.content.blanks)
+  const isAnswer = problem.content.blanks.every((blank) =>
+    blank.answers.includes(submitted[blank.no].trim()),
+  )
 
   if (isAnswer) {
     return c.json({ isAnswer }, 200)
 
     // problem.reward를 사용자의 총 경험치에 추가할 것
   } else {
-    return c.json({ answer: problem.content.answer }, 200)
+    return c.json({ answer: problem.content.blanks }, 200)
   }
 })

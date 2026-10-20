@@ -4,8 +4,10 @@ import { logger } from 'hono/logger'
 import { env } from '../util/config/env'
 import { AppError, fail } from '../util/http/response'
 import { health } from './health'
-import { learning } from './problems/learning'
-import mcq from './problems/mcq'
+import { blank } from './problems/blank'
+import { mcq } from './problems/mcq'
+import { parsons } from './problems/parsons'
+import { short } from './problems/short'
 import { login } from './social/login'
 import { friends } from './users/friends'
 import { me } from './users/me'
@@ -21,8 +23,10 @@ app.route('/api/social/login', login)
 app.route('/api/users/me', me)
 app.route('/api/users/friends', friends)
 
-app.route('/api/problems/learning', learning)
+app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)
+app.route('/api/problems/parsons', parsons)
+app.route('/api/problems/short', short)
 
 app.doc('/docs', { openapi: '3.0.0', info: { title: 'Codegram API', version: '0.0.1' } })
 app.get('/swagger', swaggerUI({ url: '/docs' }))

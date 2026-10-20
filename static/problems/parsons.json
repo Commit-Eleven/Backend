@@ -1,13 +1,9 @@
 [
   {
-    "id": "parsons-001",
+    "id": "parsons1",
     "type": "parsons",
     "title": "누적합 함수",
-    "description": "조각을 올바른 순서로 배치하세요.",
-    "difficulty": 3,
-    "language": "python",
-    "exp_reward": 40,
-    "unitId": "vars-types",
+    "reward": 40,
     "content": {
       "fragments": [
         "def solve(n):",
@@ -17,17 +13,18 @@
         "    return total"
       ],
       "answer_order": [0, 1, 2, 3, 4]
-    }
-  },
-  {
-    "id": "parsons-002",
-    "type": "parsons",
-    "title": "최댓값 찾기",
+    },
+
     "description": "조각을 올바른 순서로 배치하세요.",
     "difficulty": 3,
     "language": "python",
-    "exp_reward": 40,
-    "unitId": "vars-types",
+    "unitId": "vars-types"
+  },
+  {
+    "id": "parsons2",
+    "type": "parsons",
+    "title": "최댓값 찾기",
+    "reward": 40,
     "content": {
       "fragments": [
         "def find_max(nums):",
@@ -38,6 +35,11 @@
         "    return result"
       ],
       "answer_order": [0, 1, 2, 3, 4, 5]
-    }
+    },
+
+    "description": "조각을 올바른 순서로 배치하세요.",
+    "difficulty": 3,
+    "language": "python",
+    "unitId": "vars-types"
   }
 ]

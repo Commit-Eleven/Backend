@@ -8,16 +8,16 @@
         "title": "변수와 자료형",
         "order": 1,
         "problemIds": [
-          "fill_blank-001",
-          "fill_blank-002",
-          "mc-001",
-          "parsons-001",
-          "mc-002",
-          "fill_blank-003",
-          "short_answer-001",
-          "parsons-002",
-          "mc-003",
-          "spaghetti-001"
+          "blank1",
+          "blank2",
+          "mcq1",
+          "parsons1",
+          "mcq2",
+          "blank3",
+          "short1",
+          "parsons2",
+          "mcq3",
+          "spaghetti1"
         ]
       },
       {

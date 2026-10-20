@@ -22,10 +22,11 @@ import {
   EXP_REASON,
   FRIEND_STATUS,
   GROUP_ROLE,
-  NICKNAME_TAG_LENGTH,
   NOTIFICATION_TYPE,
   USER_TIER,
 } from '../config/constants'
+
+const NICKNAME_TAG_LENGTH = 4
 
 const pk = () => bigint('id', { mode: 'number' }).autoincrement().primaryKey()
 const createdAt = () => timestamp('created_at').defaultNow().notNull()

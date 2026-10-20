@@ -1,47 +1,60 @@
 import { Hono } from 'hono'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 
-type McqProblem = {
+type ShortProblem = {
   id: string
-  type: 'mcq'
+  type: 'short'
   title: string
   reward: number
   content: {
-    choices: string[]
-    answer: number
+    starter_code: string
+    runtime: string
+    time_limit_ms: number
+    conditions: string[]
+    testcases: { input: string; expected: string; visible?: boolean }[]
   }
 }
 
-export const mcqProblems = await Bun.file('static/problems/mcq.json').json() as McqProblem[]
+export const shortProblems = (await Bun.file('static/problems/short.json').json()) as ShortProblem[]
 
-export const mcq = new Hono<AuthEnv>()
+export const short = new Hono<AuthEnv>()
 
-mcq.get('', requireAuth, (c) => {
-  if (mcqProblems.length === 0) {
+short.get('', requireAuth, (c) => {
+  if (shortProblems.length === 0) {
     return c.json({ message: '문제 풀이 비어있습니다' }, 404)
   }
 
-  const problem = mcqProblems[Math.floor(Math.random() * mcqProblems.length)]
+  const problem = shortProblems[Math.floor(Math.random() * shortProblems.length)]
   return c.json({ problem }, 200)
 })
 
-mcq.post('', requireAuth, async (c) => {
+short.post('', requireAuth, async (c) => {
   const body = await c.req.json()
-  const { id, answer } = body
+  const { id, code } = body
 
-  const problem = mcqProblems.find((problem) => problem.id === id)
+  const problem = shortProblems.find((problem) => problem.id === id)
 
   if (!problem) {
-    return c.json({ message: "문제를 찾을 수 없습니다" }, 404)
+    return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
   }
 
-  const isAnswer = problem.content.answer === answer
+  if (typeof code !== 'string') {
+    return c.json({ message: '코드를 입력해주세요' }, 400)
+  }
 
-  if (isAnswer) {
-    return c.json({ isAnswer }, 200)
+  const { passed, results } = await runCode({
+    code,
+    runtime: problem.content.runtime,
+    timeLimitMs: problem.content.time_limit_ms,
+    testcases: problem.content.testcases,
+  })
+
+  if (passed) {
+    return c.json({ isAnswer: true }, 200)
 
     // problem.reward를 사용자의 총 경험치에 추가할 것
   } else {
-    return c.json({ answer: problem.content.answer }, 200)
+    const visibleResults = results.filter((_, i) => problem.content.testcases[i]?.visible !== false)
+    return c.json({ isAnswer: false, results: visibleResults }, 200)
   }
 })

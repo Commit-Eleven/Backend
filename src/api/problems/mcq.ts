@@ -12,7 +12,7 @@ type McqProblem = {
   }
 }
 
-export const mcqProblems = await Bun.file('static/problems/mcq.json').json() as McqProblem[]
+export const mcqProblems = (await Bun.file('static/problems/mcq.json').json()) as McqProblem[]
 
 export const mcq = new Hono<AuthEnv>()
 
@@ -32,7 +32,7 @@ mcq.post('', requireAuth, async (c) => {
   const problem = mcqProblems.find((problem) => problem.id === id)
 
   if (!problem) {
-    return c.json({ message: "문제를 찾을 수 없습니다" }, 404)
+    return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
   }
 
   const isAnswer = problem.content.answer === answer
