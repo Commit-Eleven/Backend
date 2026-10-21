@@ -1,5 +1,4 @@
-import { swaggerUI } from '@hono/swagger-ui'
-import { OpenAPIHono } from '@hono/zod-openapi'
+import { Hono } from 'hono'
 import { logger } from 'hono/logger'
 import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
@@ -16,7 +15,7 @@ import { onboarding } from './users/onboarding'
 
 await runMigrations()
 
-const app = new OpenAPIHono()
+const app = new Hono()
 
 app.use('*', logger())
 
@@ -32,9 +31,6 @@ app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)
 app.route('/api/problems/parsons', parsons)
 app.route('/api/problems/short', short)
-
-app.doc('/docs', { openapi: '3.0.0', info: { title: 'Codegram API', version: '0.0.1' } })
-app.get('/swagger', swaggerUI({ url: '/docs' }))
 
 app.notFound((c) => fail(c, 'NotFound', '존재하지 않는 경로', 404))
 
