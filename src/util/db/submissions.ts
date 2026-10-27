@@ -23,6 +23,25 @@ export const submissions = {
     })
   },
 
+  // 맞춘 문제 id 목록(중복 제거)
+  async findSolvedProblemIds(userId: number): Promise<string[]> {
+    const rows = await db
+      .selectDistinct({ problemId: submission.problemId })
+      .from(submission)
+      .where(and(eq(submission.userId, userId), eq(submission.isCorrect, true)))
+
+    return rows.map((row) => row.problemId)
+  },
+
+  // 전체 제출 수와 맞은 제출 수
+  async countByUser(userId: number): Promise<{ total: number; correct: number }> {
+    const [total, correct] = await Promise.all([
+      db.$count(submission, eq(submission.userId, userId)),
+      db.$count(submission, and(eq(submission.userId, userId), eq(submission.isCorrect, true))),
+    ])
+    return { total, correct }
+  },
+
   // id(≈제출 시각) 내림차순으로 최신 제출부터 최대 limit개 조회.
   // cursor를 주면 해당 id보다 오래된(작은 id) 제출만 가져온다.
   async findHistoryByUser(

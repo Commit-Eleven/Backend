@@ -4,7 +4,7 @@ import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { Errors, ok } from '../../util/http/response'
-import { problemMetaById } from '../../util/problems'
+import { problemMetaById, problems } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
 
 export const me = new Hono<AuthEnv>()
@@ -21,6 +21,40 @@ me.patch('/nickname', requireAuth, async (c) => {
     return { nickname, tag }
   })
   return ok(c, result)
+})
+
+// 학습 통계. submission에 쌓인 제출 기록을 그때그때 집계한다
+me.get('/stats', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  const user = await users.findById(userId)
+  if (!user) throw Errors.notFound('없는 사용자')
+
+  const { total, correct } = await submissions.countByUser(userId)
+  const solvedIds = new Set(await submissions.findSolvedProblemIds(userId))
+
+  // 유형별로 전체 문제 수와 그중 맞춘 문제 수
+  const byType = new Map<string, { type: string; solved: number; total: number }>()
+  for (const problem of problems) {
+    const row = byType.get(problem.type) ?? { type: problem.type, solved: 0, total: 0 }
+    row.total += 1
+    if (solvedIds.has(problem.id)) row.solved += 1
+    byType.set(problem.type, row)
+  }
+
+  return ok(c, {
+    totalExp: user.totalExp,
+    tier: user.tier,
+    studyLanguage: user.studyLanguage,
+    studyLevel: user.studyLevel,
+    submissionCount: total,
+    correctCount: correct,
+    wrongCount: total - correct,
+    // 정답률(%), 소수 첫째 자리까지. 제출이 없으면 0
+    accuracy: total === 0 ? 0 : Math.round((correct / total) * 1000) / 10,
+    solvedProblemCount: solvedIds.size,
+    totalProblemCount: problems.length,
+    byType: [...byType.values()],
+  })
 })
 
 // 내 제출 이력. 최신순(id 내림차순)이며 cursor는 다음 페이지 조회용 마지막 제출 id
