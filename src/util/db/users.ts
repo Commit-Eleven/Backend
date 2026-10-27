@@ -20,6 +20,16 @@ export const users = {
     return rows[0]
   },
 
+  // Public projection intentionally excludes email and providerId.
+  async findPublicProfileById(id: number): Promise<UserSummary | undefined> {
+    const rows = await db
+      .select({ id: user.id, nickname: user.nickname, tag: user.tag, totalExp: user.totalExp })
+      .from(user)
+      .where(eq(user.id, id))
+      .limit(1)
+    return rows[0]
+  },
+
   async findByIds(ids: number[]): Promise<UserSummary[]> {
     if (ids.length === 0) return []
     return db
