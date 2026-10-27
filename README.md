@@ -10,6 +10,10 @@ bun run dev
 
 기본 서버 주소는 http://localhost:3000 이며, API 문서는 `/swagger`에서 확인합니다.
 구글 로그인과 DB 연결 설정은 `.env.example`을 참고해 `.env`에 지정합니다.
+구글 로그인이 끝나면 백엔드는 `FRONTEND_URL/auth/callback`으로 토큰을 전달합니다. 로컬 개발은
+`http://127.0.0.1:5173`, 운영은 프론트엔드 배포 주소(기본값 `https://codegram.me`)를 사용하세요.
+Google OAuth의 승인된 리디렉션 URI에는 프론트 주소가 아니라
+`https://codegram.me/api/social/login/google/callback` 같은 백엔드 콜백 주소를 등록해야 합니다.
 
 ```text
 src/

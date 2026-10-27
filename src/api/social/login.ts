@@ -176,14 +176,10 @@ login.get('/google/callback', async (c) => {
   if (!profile.emailVerified) return fail(c, 'FORBIDDEN', '인증 안 된 구글 이메일', 403)
 
   const u = await findOrCreateUser(profile)
-  const { token, refreshToken, user } = await issueTokens(u)
+  const { token, refreshToken } = await issueTokens(u)
   setRefreshCookie(c, refreshToken)
 
-  // 프론트 주소 있으면 토큰 실어서 넘기고, 없으면 그냥 JSON
-  if (env.frontendUrl) {
-    return c.redirect(`${env.frontendUrl}/auth/callback?token=${encodeURIComponent(token)}`, 302)
-  }
-  return ok(c, { token, user })
+  return c.redirect(`${env.frontendUrl}/auth/callback?token=${encodeURIComponent(token)}`, 302)
 })
 
 // body에 refreshToken(refresh_token) 없으면 쿠키에서
