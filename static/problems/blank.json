@@ -6,7 +6,7 @@
     "reward": 30,
     "content": {
       "template": "for i in {{1}}(10):\n    print(i)",
-      "blanks": [{ "no": 1, "answers": ["range"], "hint": "내장 함수" }]
+      "blanks": [{ "no": 1, "answer": ["range"], "hint": "내장 함수" }]
     },
 
     "description": "0부터 9까지 출력하도록 빈칸을 채우세요.",
@@ -22,7 +22,7 @@
     "reward": 20,
     "content": {
       "template": "x = 10\nprint({{1}}(x))",
-      "blanks": [{ "no": 1, "answers": ["type"], "hint": "내장 함수" }]
+      "blanks": [{ "no": 1, "answer": ["type"], "hint": "내장 함수" }]
     },
 
     "description": "변수 x의 타입을 출력하도록 빈칸을 채우세요.",
@@ -38,7 +38,7 @@
     "reward": 30,
     "content": {
       "template": "name = \"종은\"\nage = 20\nprint({{1}}\"{name}은 {age}살\")",
-      "blanks": [{ "no": 1, "answers": ["f"], "hint": "포맷 문자열 접두사" }]
+      "blanks": [{ "no": 1, "answer": ["f"], "hint": "포맷 문자열 접두사" }]
     },
 
     "description": "이름과 나이를 출력하도록 빈칸을 채우세요.",

@@ -16,6 +16,7 @@ src/
 ├── api/
 │   ├── index.ts              # 서버 진입점, 라우트 등록
 │   ├── health.ts             # DB 연결 상태
+│   ├── curriculum.ts         # 커리큘럼 조회
 │   ├── social/
 │   │   ├── login.ts          # 소셜 로그인, 토큰, 로그아웃
 │   │   └── sign.ts           # 최초 가입, 닉네임·태그 생성
@@ -37,7 +38,8 @@ src/
     ├── db/
     │   ├── connection.ts     # DB 연결
     │   ├── schema.ts         # DB 스키마
-    │   └── users.ts          # 공통 사용자 조회·저장
+    │   ├── users.ts          # 공통 사용자 조회·저장
+    │   └── submissions.ts    # 제출 기록 저장·조회
     └── http/
         ├── auth.ts           # JWT 인증 미들웨어
         ├── case.ts           # 요청·응답 필드명 변환
@@ -62,12 +64,14 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 기능 | 요청 |
 |---|---|
 | 서버 상태 | `GET /api/health` |
+| 커리큘럼 조회 | `GET /api/curriculum` |
 | 구글 로그인·자동 가입 | `GET /api/social/login/google` |
 | 구글 콜백 | `GET /api/social/login/google/callback` |
 | 토큰 갱신 | `POST /api/social/login/refresh` |
 | 로그아웃 | `POST /api/social/login/logout` |
 | 개발용 토큰 | `GET /api/social/login/dev-token` |
 | 닉네임 변경 | `PATCH /api/users/me/nickname` |
+| 제출 이력 조회 | `GET /api/users/me/submissions?limit=20&cursor=123` |
 | 사용자 검색 | `GET /api/users/friends/search?q=검색어` |
 | 친구 목록·신청 | `GET /api/users/friends`, `POST /api/users/friends` |
 | 친구 수락·삭제 | `POST /api/users/friends/:id/accept`, `DELETE /api/users/friends/:id` |

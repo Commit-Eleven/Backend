@@ -20,3 +20,7 @@ export const STUDY_LEVEL = ['beginner', 'intermediate', 'advanced'] as const
 export const DEFAULT_STUDY_LANGUAGE = 'python'
 export const DEFAULT_GROUP_CAPACITY = 10
 export const SEARCH_RESULT_LIMIT = 20
+
+// 제출 이력 페이지 크기
+export const SUBMISSION_PAGE_LIMIT = 20
+export const SUBMISSION_PAGE_LIMIT_MAX = 50

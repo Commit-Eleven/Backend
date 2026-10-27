@@ -1,0 +1,38 @@
+import { and, desc, eq, lt } from 'drizzle-orm'
+import { db } from './connection'
+import { submission } from './schema'
+
+export type SubmissionRow = typeof submission.$inferSelect
+
+type NewSubmission = {
+  userId: number
+  problemId: string
+  isCorrect: boolean
+  answer?: unknown
+  runOutput?: string
+}
+
+export const submissions = {
+  async create(data: NewSubmission): Promise<void> {
+    await db.insert(submission).values({
+      userId: data.userId,
+      problemId: data.problemId,
+      isCorrect: data.isCorrect,
+      answer: data.answer,
+      runOutput: data.runOutput,
+    })
+  },
+
+  // id(≈제출 시각) 내림차순으로 최신 제출부터 최대 limit개 조회.
+  // cursor를 주면 해당 id보다 오래된(작은 id) 제출만 가져온다.
+  async findHistoryByUser(
+    userId: number,
+    opts: { cursor?: number; limit: number },
+  ): Promise<SubmissionRow[]> {
+    const where = opts.cursor
+      ? and(eq(submission.userId, userId), lt(submission.id, opts.cursor))
+      : eq(submission.userId, userId)
+
+    return db.select().from(submission).where(where).orderBy(desc(submission.id)).limit(opts.limit)
+  },
+}

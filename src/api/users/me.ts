@@ -1,7 +1,10 @@
 import { Hono } from 'hono'
+import { SUBMISSION_PAGE_LIMIT, SUBMISSION_PAGE_LIMIT_MAX } from '../../util/config/constants'
+import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { Errors, ok } from '../../util/http/response'
+import { problemMetaById } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
 
 export const me = new Hono<AuthEnv>()
@@ -19,3 +22,47 @@ me.patch('/nickname', requireAuth, async (c) => {
   })
   return ok(c, result)
 })
+
+// 내 제출 이력. 최신순(id 내림차순)이며 cursor는 다음 페이지 조회용 마지막 제출 id
+me.get('/submissions', requireAuth, async (c) => {
+  const userId = c.get('userId')
+
+  const limit = parseLimit(c.req.query('limit'), SUBMISSION_PAGE_LIMIT, SUBMISSION_PAGE_LIMIT_MAX)
+  const cursor = parseCursor(c.req.query('cursor'))
+
+  // 다음 페이지 존재 여부를 위해 1개 더 조회
+  const rows = await submissions.findHistoryByUser(userId, { cursor, limit: limit + 1 })
+  const items = rows.slice(0, limit)
+  const nextCursor = rows.length > limit ? items[items.length - 1].id : null
+
+  return ok(c, {
+    submissions: items.map((row) => {
+      const meta = problemMetaById.get(row.problemId)
+      return {
+        id: row.id,
+        problemId: row.problemId,
+        type: meta?.type ?? null,
+        title: meta?.title ?? null,
+        difficulty: meta?.difficulty ?? null,
+        language: meta?.language ?? null,
+        unitId: meta?.unitId ?? null,
+        isCorrect: row.isCorrect,
+        answer: row.answer,
+        runOutput: row.runOutput,
+        createdAt: row.createdAt,
+      }
+    }),
+    nextCursor,
+  })
+})
+
+function parseLimit(raw: string | undefined, fallback: number, max: number): number {
+  const n = Number(raw)
+  if (Number.isInteger(n) && n > 0) return Math.min(n, max)
+  return fallback
+}
+
+function parseCursor(raw: string | undefined): number | undefined {
+  if (!raw || !/^\d+$/.test(raw)) return undefined
+  return Number(raw)
+}

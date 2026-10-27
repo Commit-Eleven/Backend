@@ -1,4 +1,6 @@
 import { Hono } from 'hono'
+import { awardSolveExp } from '../../util/db/exp'
+import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 
 type ParsonsProblem = {
@@ -16,6 +18,12 @@ export const parsonsProblems = (await Bun.file(
   'static/problems/parsons.json',
 ).json()) as ParsonsProblem[]
 
+// 조회할 때 정답 순서(answer_order)는 빼고 내려준다
+function toQuestion(p: ParsonsProblem) {
+  const { answer_order, ...content } = p.content
+  return { id: p.id, type: p.type, title: p.title, reward: p.reward, content }
+}
+
 export const parsons = new Hono<AuthEnv>()
 
 parsons.get('', requireAuth, (c) => {
@@ -23,7 +31,7 @@ parsons.get('', requireAuth, (c) => {
     return c.json({ message: '문제 풀이 비어있습니다' }, 404)
   }
 
-  const problem = parsonsProblems[Math.floor(Math.random() * parsonsProblems.length)]
+  const problem = toQuestion(parsonsProblems[Math.floor(Math.random() * parsonsProblems.length)])
   return c.json({ problem }, 200)
 })
 
@@ -48,10 +56,11 @@ parsons.post('', requireAuth, async (c) => {
     }
   }
 
-  if (isAnswer) {
-    return c.json({ isAnswer }, 200)
+  await submissions.create({ userId: c.get('userId'), problemId: id, isCorrect: isAnswer, answer })
 
-    // problem.reward를 사용자의 총 경험치에 추가할 것
+  if (isAnswer) {
+    await awardSolveExp(c.get('userId'), problem.id, problem.reward)
+    return c.json({ isAnswer }, 200)
   } else {
     return c.json({ answer: answerOrder }, 200)
   }

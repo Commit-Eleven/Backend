@@ -3,6 +3,7 @@ import { logger } from 'hono/logger'
 import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
+import { curriculum } from './curriculum'
 import { health } from './health'
 import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
@@ -20,6 +21,8 @@ const app = new Hono()
 app.use('*', logger())
 
 app.route('/api/health', health)
+
+app.route('/api/curriculum', curriculum)
 
 app.route('/api/social/login', login)
 
