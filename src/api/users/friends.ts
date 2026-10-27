@@ -6,7 +6,7 @@ import { friend } from '../../util/db/schema'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { toCamelCase } from '../../util/http/case'
-import { Errors, fail, ok } from '../../util/http/response'
+import { Errors, ok } from '../../util/http/response'
 
 type FriendStatus = 'pending' | 'accepted'
 type SearchRelationship = 'none' | 'pending_outgoing' | 'pending_incoming' | 'friends'
@@ -80,7 +80,6 @@ async function relationshipByUserId(
 }
 
 async function sendRequest(requesterId: number, addresseeId: number) {
-  if (!addresseeId) throw Errors.invalidInput('targetUserId 필요')
   if (addresseeId === requesterId) throw Errors.invalidInput('자기 자신 X')
 
   const target = await users.findById(addresseeId)
@@ -111,7 +110,13 @@ async function acceptRequest(userId: number, friendshipId: number) {
   await db
     .update(friend)
     .set({ status: 'accepted', respondedAt: new Date() })
-    .where(eq(friend.id, friendshipId))
+    .where(
+      and(
+        eq(friend.id, friendshipId),
+        eq(friend.addresseeId, userId),
+        eq(friend.status, 'pending'),
+      ),
+    )
   return { friendshipId, status: 'accepted' as const }
 }
 
@@ -122,7 +127,14 @@ async function removeFriendship(userId: number, friendshipId: number) {
     throw Errors.forbidden('내 관계 아님')
   }
 
-  await db.delete(friend).where(eq(friend.id, friendshipId))
+  await db
+    .delete(friend)
+    .where(
+      and(
+        eq(friend.id, friendshipId),
+        or(eq(friend.requesterId, userId), eq(friend.addresseeId, userId)),
+      ),
+    )
   const message = f.status === 'accepted' ? '친구 삭제됨' : '친구 요청 거절됨'
   return { friendshipId, message }
 }
@@ -161,22 +173,38 @@ friends.get('/', requireAuth, async (c) => {
 
 friends.post('/', requireAuth, async (c) => {
   const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
-    targetUserId?: number
+    targetUserId?: unknown
   }
-  const result = await sendRequest(c.get('userId'), Number(body.targetUserId))
+  if (body.targetUserId === undefined || body.targetUserId === null) {
+    throw Errors.invalidInput('targetUserId 필요')
+  }
+
+  const targetUserId = parsePositiveId(body.targetUserId, 'targetUserId')
+  const result = await sendRequest(c.get('userId'), targetUserId)
   return ok(c, result, 201)
 })
 
 friends.post('/:id/accept', requireAuth, async (c) => {
-  const id = Number(c.req.param('id'))
-  if (Number.isNaN(id)) return fail(c, 'InvalidInput', '잘못된 id', 400)
+  const id = parsePositiveId(c.req.param('id'), 'id')
   const result = await acceptRequest(c.get('userId'), id)
   return ok(c, result)
 })
 
 friends.delete('/:id', requireAuth, async (c) => {
-  const id = Number(c.req.param('id'))
-  if (Number.isNaN(id)) return fail(c, 'InvalidInput', '잘못된 id', 400)
+  const id = parsePositiveId(c.req.param('id'), 'id')
   const result = await removeFriendship(c.get('userId'), id)
   return ok(c, result)
 })
+
+function parsePositiveId(value: unknown, field: string): number {
+  const input =
+    typeof value === 'number' && Number.isSafeInteger(value) ? String(value) : value
+  if (typeof input !== 'string' || !/^[1-9]\d*$/.test(input)) {
+    throw Errors.invalidInput(`${field}는 양의 정수여야 합니다`)
+  }
+
+  const id = Number(input)
+  if (!Number.isSafeInteger(id)) throw Errors.invalidInput(`${field}가 너무 큽니다`)
+
+  return id
+}
