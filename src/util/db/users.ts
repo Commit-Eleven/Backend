@@ -71,7 +71,7 @@ export const users = {
     excludeId: number,
     limit = SEARCH_RESULT_LIMIT,
   ): Promise<UserSummary[]> {
-    const exactMatch = query.match(/^(.+)#(\\d{4})$/)
+    const exactMatch = query.match(/^(.+)#(\d{4})$/)
     const condition = exactMatch
       ? and(
           eq(user.nickname, exactMatch[1].trim()),
