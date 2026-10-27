@@ -1,4 +1,4 @@
-import { and, eq, or } from 'drizzle-orm'
+import { and, desc, eq, inArray, or } from 'drizzle-orm'
 import { Hono } from 'hono'
 import { SEARCH_RESULT_LIMIT } from '../../util/config/constants'
 import { db } from '../../util/db/connection'
@@ -8,11 +8,22 @@ import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { toCamelCase } from '../../util/http/case'
 import { Errors, fail, ok } from '../../util/http/response'
 
-async function listFriends(userId: number) {
+type FriendStatus = 'pending' | 'accepted'
+type SearchRelationship = 'none' | 'pending_outgoing' | 'pending_incoming' | 'friends'
+
+async function listFriends(userId: number, status?: FriendStatus) {
+  const relationshipFilter = or(
+    eq(friend.requesterId, userId),
+    eq(friend.addresseeId, userId),
+  )
+  const where = status
+    ? and(relationshipFilter, eq(friend.status, status))
+    : relationshipFilter
   const rows = await db
     .select()
     .from(friend)
-    .where(or(eq(friend.requesterId, userId), eq(friend.addresseeId, userId)))
+    .where(where)
+    .orderBy(desc(friend.createdAt), desc(friend.id))
   const otherIds = rows.map((r) => (r.requesterId === userId ? r.addresseeId : r.requesterId))
   const others = await users.findByIds(otherIds)
   const otherById = new Map(others.map((u) => [u.id, u]))
@@ -32,6 +43,40 @@ async function listFriends(userId: number) {
       },
     }
   })
+}
+
+async function relationshipByUserId(
+  userId: number,
+  userIds: number[],
+): Promise<Map<number, SearchRelationship>> {
+  const relationships = new Map<number, SearchRelationship>()
+  if (userIds.length === 0) return relationships
+
+  const rows = await db
+    .select()
+    .from(friend)
+    .where(
+      or(
+        and(eq(friend.requesterId, userId), inArray(friend.addresseeId, userIds)),
+        and(eq(friend.addresseeId, userId), inArray(friend.requesterId, userIds)),
+      ),
+    )
+
+  for (const row of rows) {
+    const otherId = row.requesterId === userId ? row.addresseeId : row.requesterId
+    const relationship: SearchRelationship =
+      row.status === 'accepted'
+        ? 'friends'
+        : row.requesterId === userId
+          ? 'pending_outgoing'
+          : 'pending_incoming'
+
+    if (relationship === 'friends' || !relationships.has(otherId)) {
+      relationships.set(otherId, relationship)
+    }
+  }
+
+  return relationships
 }
 
 async function sendRequest(requesterId: number, addresseeId: number) {
@@ -87,12 +132,30 @@ export const friends = new Hono<AuthEnv>()
 friends.get('/search', requireAuth, async (c) => {
   const query = (c.req.query('q') ?? '').trim()
   if (!query) throw Errors.invalidInput('q 파라미터 필요')
-  const items = await users.search(query, c.get('userId'), SEARCH_RESULT_LIMIT)
-  return ok(c, { items })
+  if (query.length > 35) throw Errors.invalidInput('검색어는 35자 이하')
+
+  const userId = c.get('userId')
+  const items = await users.search(query, userId, SEARCH_RESULT_LIMIT)
+  const relationships = await relationshipByUserId(
+    userId,
+    items.map((item) => item.id),
+  )
+
+  return ok(c, {
+    items: items.map((item) => ({
+      ...item,
+      relationship: relationships.get(item.id) ?? 'none',
+    })),
+  })
 })
 
 friends.get('/', requireAuth, async (c) => {
-  const items = await listFriends(c.get('userId'))
+  const rawStatus = c.req.query('status')
+  if (rawStatus !== undefined && rawStatus !== 'pending' && rawStatus !== 'accepted') {
+    throw Errors.invalidInput('status는 pending 또는 accepted')
+  }
+
+  const items = await listFriends(c.get('userId'), rawStatus)
   return ok(c, { items })
 })
 
