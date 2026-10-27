@@ -24,6 +24,3 @@ export const SEARCH_RESULT_LIMIT = 20
 // 제출 이력 페이지 크기
 export const SUBMISSION_PAGE_LIMIT = 20
 export const SUBMISSION_PAGE_LIMIT_MAX = 50
-
-// 문제 태그. 추가할 때 프론트 필터 목록도 같이 늘어난다
-export const PROBLEM_TAG = ['html', 'js', 'java', 'css'] as const
