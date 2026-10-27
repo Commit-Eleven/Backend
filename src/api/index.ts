@@ -10,6 +10,7 @@ import { mcq } from './problems/mcq'
 import { parsons } from './problems/parsons'
 import { short } from './problems/short'
 import { login } from './social/login'
+import { tags } from './tags'
 import { friends } from './users/friends'
 import { me } from './users/me'
 import { onboarding } from './users/onboarding'
@@ -23,6 +24,7 @@ app.use('*', logger())
 app.route('/api/health', health)
 
 app.route('/api/curriculum', curriculum)
+app.route('/api/tags', tags)
 
 app.route('/api/social/login', login)
 
