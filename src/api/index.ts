@@ -14,7 +14,7 @@ import { tags } from './tags'
 import { friends } from './users/friends'
 import { me } from './users/me'
 import { onboarding } from './users/onboarding'
-import { profile } from './users/profile'
+import { userProfile } from './users/profile'
 
 await runMigrations()
 
@@ -32,8 +32,7 @@ app.route('/api/social/login', login)
 app.route('/api/users/me', me)
 app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)
-// /:id 라 맨 뒤에 둔다
-app.route('/api/users', profile)
+app.route('/api/users', userProfile)
 
 app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)

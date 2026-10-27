@@ -14,7 +14,9 @@ export const env = {
     clientSecret: Bun.env.GOOGLE_CLIENT_SECRET,
     redirectUri: Bun.env.GOOGLE_REDIRECT_URI,
   },
-  frontendUrl: Bun.env.FRONTEND_URL || undefined,
+  // OAuth callback must return the browser to the app instead of rendering the token JSON.
+  // Local development can override this with http://127.0.0.1:5173.
+  frontendUrl: (Bun.env.FRONTEND_URL || 'https://codegram.me').replace(/\/+$/, ''),
   isProd: Bun.env.NODE_ENV === 'production',
   devTokenEnabled: Bun.env.ENABLE_DEV_TOKEN === 'true' && Bun.env.NODE_ENV !== 'production',
 } as const
