@@ -56,6 +56,38 @@ me.get('/submissions', requireAuth, async (c) => {
   })
 })
 
+// 오답노트. 아직 못 맞춘 문제만, 문제별 최근 오답 1건씩 최신순
+me.get('/wrong-notes', requireAuth, async (c) => {
+  const userId = c.get('userId')
+
+  const limit = parseLimit(c.req.query('limit'), SUBMISSION_PAGE_LIMIT, SUBMISSION_PAGE_LIMIT_MAX)
+  const cursor = parseCursor(c.req.query('cursor'))
+
+  // 다음 페이지 존재 여부를 위해 1개 더 조회
+  const rows = await submissions.findWrongNotesByUser(userId, { cursor, limit: limit + 1 })
+  const items = rows.slice(0, limit)
+  const nextCursor = rows.length > limit ? items[items.length - 1].id : null
+
+  return ok(c, {
+    wrongNotes: items.map((row) => {
+      const meta = problemMetaById.get(row.problemId)
+      return {
+        submissionId: row.id,
+        problemId: row.problemId,
+        type: meta?.type ?? null,
+        title: meta?.title ?? null,
+        difficulty: meta?.difficulty ?? null,
+        language: meta?.language ?? null,
+        unitId: meta?.unitId ?? null,
+        myAnswer: row.answer,
+        runOutput: row.runOutput,
+        wrongAt: row.createdAt,
+      }
+    }),
+    nextCursor,
+  })
+})
+
 function parseLimit(raw: string | undefined, fallback: number, max: number): number {
   const n = Number(raw)
   if (Number.isInteger(n) && n > 0) return Math.min(n, max)
