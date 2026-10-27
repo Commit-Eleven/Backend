@@ -71,10 +71,19 @@ export const users = {
     excludeId: number,
     limit = SEARCH_RESULT_LIMIT,
   ): Promise<UserSummary[]> {
+    const exactMatch = query.match(/^(.+)#(\\d{4})$/)
+    const condition = exactMatch
+      ? and(
+          eq(user.nickname, exactMatch[1].trim()),
+          eq(user.tag, exactMatch[2]),
+          ne(user.id, excludeId),
+        )
+      : and(like(user.nickname, `%${query}%`), ne(user.id, excludeId))
+
     return db
       .select({ id: user.id, nickname: user.nickname, tag: user.tag, totalExp: user.totalExp })
       .from(user)
-      .where(and(like(user.nickname, `%${query}%`), ne(user.id, excludeId)))
+      .where(condition)
       .limit(limit)
   },
 }
