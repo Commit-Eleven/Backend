@@ -27,3 +27,11 @@ groupInvites.post('/:id{[0-9]+}/accept', requireAuth, async (c) => {
 
   return ok(c, { inviteId: invite.id, groupId: invite.groupId, status: 'accepted' })
 })
+
+// 그룹 초대 거절. 초대만 지운다
+groupInvites.post('/:id{[0-9]+}/reject', requireAuth, async (c) => {
+  const invite = await findMyInvite(Number(c.req.param('id')), c.get('userId'))
+
+  await groups.deleteInvite(invite.id)
+  return ok(c, { inviteId: invite.id, groupId: invite.groupId, status: 'rejected' })
+})
