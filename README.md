@@ -77,6 +77,7 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 닉네임 변경 | `PATCH /api/users/me/nickname` |
 | 내 그룹 목록 | `GET /api/me/groups` |
 | 그룹 목록·참여·방장 위임 | `GET /api/groups`, `POST /api/groups/join`, `POST /api/groups/:id/owner` |
+| 알림 생성·목록·설정 조회·변경 | `POST /api/notifications`, `GET /api/notifications`, `GET/PATCH /api/notifications/settings` |
 | 제출 이력 조회 | `GET /api/users/me/submissions?limit=20&cursor=123` |
 | 사용자 검색 | `GET /api/users/friends/search?q=검색어` |
 | 친구 목록·신청 | `GET /api/users/friends`, `POST /api/users/friends` |
