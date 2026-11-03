@@ -1,4 +1,4 @@
-import { eq, sql } from 'drizzle-orm'
+import { desc, eq, sql } from 'drizzle-orm'
 import { db } from './connection'
 import { expLog, user } from './schema'
 
@@ -26,4 +26,14 @@ function isDuplicateKey(err: unknown): boolean {
   return (
     typeof err === 'object' && err !== null && (err as { code?: string }).code === 'ER_DUP_ENTRY'
   )
+}
+
+// 최근에 경험치를 얻은 기록. 최신순
+export async function findRecentExp(userId: number, limit: number) {
+  return db
+    .select()
+    .from(expLog)
+    .where(eq(expLog.userId, userId))
+    .orderBy(desc(expLog.id))
+    .limit(limit)
 }

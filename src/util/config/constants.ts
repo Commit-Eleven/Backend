@@ -26,3 +26,6 @@ export const SEARCH_RESULT_LIMIT = 20
 // 제출 이력 페이지 크기
 export const SUBMISSION_PAGE_LIMIT = 20
 export const SUBMISSION_PAGE_LIMIT_MAX = 50
+
+// 내 경험치에서 보여줄 최근 획득 기록 수
+export const EXP_HISTORY_LIMIT = 20

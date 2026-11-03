@@ -8,6 +8,7 @@ type BlankProblem = {
   type: 'blank'
   title: string
   reward: number
+  description?: string
   content: {
     template: string
     blanks: { no: number; answer: string[]; hint?: string }[]
@@ -23,6 +24,7 @@ function toQuestion(p: BlankProblem) {
     id: p.id,
     type: p.type,
     title: p.title,
+    description: p.description,
     reward: p.reward,
     content: { ...p.content, blanks },
   }
@@ -44,12 +46,14 @@ function submittedByNo(answer: unknown, blanks: { no: number }[]): Record<number
 
   if (Array.isArray(answer)) {
     blanks.forEach((blank, i) => {
-      if (typeof answer[i] === 'string') map[blank.no] = answer[i]
+      if (typeof answer[i] === 'string' || typeof answer[i] === 'number') {
+        map[blank.no] = String(answer[i])
+      }
     })
   } else if (answer && typeof answer === 'object') {
     blanks.forEach((blank) => {
       const value = (answer as Record<string, unknown>)[String(blank.no)]
-      if (typeof value === 'string') map[blank.no] = value
+      if (typeof value === 'string' || typeof value === 'number') map[blank.no] = String(value)
     })
   }
 
@@ -57,7 +61,7 @@ function submittedByNo(answer: unknown, blanks: { no: number }[]): Record<number
 }
 
 blank.post('', requireAuth, async (c) => {
-  const body = await c.req.json()
+  const body = await c.req.json().catch(() => ({}))
   const { id, answer } = body
 
   const problem = blankProblems.find((problem) => problem.id === id)
@@ -81,6 +85,6 @@ blank.post('', requireAuth, async (c) => {
     await awardSolveExp(c.get('userId'), problem.id, problem.reward)
     return c.json({ isAnswer }, 200)
   } else {
-    return c.json({ answer: problem.content.blanks }, 200)
+    return c.json({ isAnswer, answer: problem.content.blanks }, 200)
   }
 })

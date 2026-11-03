@@ -8,6 +8,7 @@ type ShortProblem = {
   type: 'short'
   title: string
   reward: number
+  description?: string
   content: {
     code: string
     answer: string[]
@@ -19,7 +20,14 @@ export const shortProblems = (await Bun.file('static/problems/short.json').json(
 // 조회할 때 정답(answer)은 빼고 내려준다
 function toQuestion(p: ShortProblem) {
   const { answer, ...content } = p.content
-  return { id: p.id, type: p.type, title: p.title, reward: p.reward, content }
+  return {
+    id: p.id,
+    type: p.type,
+    title: p.title,
+    description: p.description,
+    reward: p.reward,
+    content,
+  }
 }
 
 export const short = new Hono<AuthEnv>()
@@ -34,8 +42,10 @@ short.get('', requireAuth, (c) => {
 })
 
 short.post('', requireAuth, async (c) => {
-  const body = await c.req.json()
-  const { id, answer } = body
+  const body = await c.req.json().catch(() => ({}))
+  const { id } = body
+  // 출력값이 숫자라 20 처럼 숫자로 보내도 글자로 바꿔서 비교한다
+  const answer = typeof body.answer === 'number' ? String(body.answer) : body.answer
 
   const problem = shortProblems.find((problem) => problem.id === id)
 
@@ -56,6 +66,6 @@ short.post('', requireAuth, async (c) => {
     await awardSolveExp(userId, problem.id, problem.reward)
     return c.json({ isAnswer }, 200)
   } else {
-    return c.json({ answer: problem.content.answer }, 200)
+    return c.json({ isAnswer, answer: problem.content.answer }, 200)
   }
 })
