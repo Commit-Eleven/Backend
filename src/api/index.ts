@@ -7,6 +7,7 @@ import { curriculum } from './curriculum'
 import { groupInvites } from './group-invites'
 import { groups, myGroups } from './groups'
 import { health } from './health'
+import { notifications } from './notifications'
 import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
 import { parsons } from './problems/parsons'
@@ -39,6 +40,7 @@ app.route('/api/users', userProfile)
 
 app.route('/api/groups', groups)
 app.route('/api/group-invites', groupInvites)
+app.route('/api/notifications', notifications)
 
 app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)
