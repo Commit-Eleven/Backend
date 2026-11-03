@@ -17,7 +17,7 @@ export type InviteResult =
   | { status: 'invited'; inviteId: number }
   | { status: 'no_group' | 'not_member' | 'already_member' | 'already_invited' | 'full' }
 
-export const groups = {
+export const invites = {
   async findInvite(id: number): Promise<GroupInvite | undefined> {
     const [row] = await db
       .select()
