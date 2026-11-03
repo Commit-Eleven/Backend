@@ -79,6 +79,8 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 사용자 검색 | `GET /api/users/friends/search?q=검색어` |
 | 친구 목록·신청 | `GET /api/users/friends`, `POST /api/users/friends` |
 | 친구 수락·삭제 | `POST /api/users/friends/:id/accept`, `DELETE /api/users/friends/:id` |
+| 그룹 랭킹 | `GET /api/groups/:id/ranking` |
+| 그룹 삭제 | `DELETE /api/groups/:id` |
 | 학습 통계 | `GET /api/problems/learning/stats` |
 | 단원 진행률 | `GET /api/problems/learning/units/:unit_id` |
 | 객관식 조회·채점 | `GET /api/problems/mcq`, `POST /api/problems/mcq/answer` |

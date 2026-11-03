@@ -13,7 +13,7 @@ type Level = (typeof STUDY_LEVEL)[number]
 
 // 화면에 뿌릴 선택지. 이미지는 프론트가 가진 걸 씀
 const LANGUAGES: { id: Language; label: string }[] = [
-  { id: 'html_css', label: 'HTML/CSS' },
+  { id: 'html', label: 'HTML/CSS' },
   { id: 'javascript', label: 'JavaScript' },
   { id: 'java', label: 'Java' },
   { id: 'python', label: 'Python' },
