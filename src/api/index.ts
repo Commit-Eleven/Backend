@@ -32,6 +32,7 @@ app.route('/api/tags', tags)
 app.route('/api/social/login', login)
 
 app.route('/api/users/me', me)
+app.route('/api/me', myGroups)
 app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)
 app.route('/api/users', userProfile)
