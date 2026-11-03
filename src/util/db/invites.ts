@@ -1,6 +1,6 @@
-import { and, count, eq, sql } from 'drizzle-orm'
+import { and, count, desc, eq, inArray, sql } from 'drizzle-orm'
 import { db } from './connection'
-import { groupMember, notification, studyGroup } from './schema'
+import { groupMember, notification, studyGroup, user } from './schema'
 
 // 그룹 초대는 따로 테이블 없이 notification(type=group_invite) 한 줄로 저장한다.
 // payload 에 groupId, inviterId 가 들어 있고, 초대 id 는 그 알림 id 다
@@ -18,6 +18,52 @@ export type InviteResult =
   | { status: 'no_group' | 'not_member' | 'already_member' | 'already_invited' | 'full' }
 
 export const invites = {
+  // 내가 받은 초대 목록. 그룹이 없어진 초대는 뺀다
+  async listForUser(userId: number) {
+    const rows = await db
+      .select()
+      .from(notification)
+      .where(and(eq(notification.userId, userId), eq(notification.type, 'group_invite')))
+      .orderBy(desc(notification.id))
+    if (rows.length === 0) return []
+
+    const parsed = rows.map((row) => {
+      const payload = (row.payload ?? {}) as { groupId?: unknown; inviterId?: unknown }
+      return {
+        id: row.id,
+        groupId: Number(payload.groupId),
+        inviterId: Number(payload.inviterId),
+        createdAt: row.createdAt,
+      }
+    })
+    const groupIds = [...new Set(parsed.map((p) => p.groupId).filter(Number.isSafeInteger))]
+    const inviterIds = [...new Set(parsed.map((p) => p.inviterId).filter(Number.isSafeInteger))]
+
+    const groupRows = groupIds.length
+      ? await db
+          .select({ id: studyGroup.id, name: studyGroup.name })
+          .from(studyGroup)
+          .where(inArray(studyGroup.id, groupIds))
+      : []
+    const inviterRows = inviterIds.length
+      ? await db
+          .select({ id: user.id, nickname: user.nickname, tag: user.tag })
+          .from(user)
+          .where(inArray(user.id, inviterIds))
+      : []
+    const groupById = new Map(groupRows.map((g) => [g.id, g]))
+    const inviterById = new Map(inviterRows.map((u) => [u.id, u]))
+
+    return parsed
+      .filter((p) => groupById.has(p.groupId))
+      .map((p) => ({
+        id: p.id,
+        group: groupById.get(p.groupId),
+        inviter: inviterById.get(p.inviterId) ?? null,
+        createdAt: p.createdAt,
+      }))
+  },
+
   async findInvite(id: number): Promise<GroupInvite | undefined> {
     const [row] = await db
       .select()

@@ -29,3 +29,10 @@ export const SUBMISSION_PAGE_LIMIT_MAX = 50
 
 // 내 경험치에서 보여줄 최근 획득 기록 수
 export const EXP_HISTORY_LIMIT = 20
+
+// 랭킹 페이지 크기
+export const RANKING_PAGE_SIZE = 20
+export const RANKING_PAGE_SIZE_MAX = 50
+
+// 메인페이지에 보여줄 추천 문제 수
+export const HOME_RECOMMEND_LIMIT = 3

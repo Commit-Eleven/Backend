@@ -3,12 +3,21 @@
 
 const FILES = ['mcq', 'blank', 'parsons', 'short'] as const
 
+// 화면에 보여줄 유형 이름
+export const TYPE_LABEL: Record<(typeof FILES)[number], string> = {
+  mcq: '객관식',
+  blank: '빈칸 채우기',
+  parsons: '순서 맞추기',
+  short: '주관식',
+}
+
 type ProblemMeta = {
   id: string
   type: (typeof FILES)[number]
   title: string
   description?: string
   difficulty?: number
+  reward?: number
   language?: string
   unitId?: string
 }
