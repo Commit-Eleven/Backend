@@ -20,3 +20,14 @@ for (const file of FILES) {
 }
 
 export const problemMetaById = new Map(problems.map((problem) => [problem.id, problem]))
+
+// 프론트가 GET /api/problems/<유형>?language=java 처럼 보내는 언어로 문제를 거른다.
+// language 칸이 비어 있는 문제는 공통 문제로 보고 어느 언어에나 낸다
+export function filterByLanguage<T extends { language?: string }>(
+  list: T[],
+  language?: string,
+): T[] {
+  if (!language) return list
+  const lang = language.trim().toLowerCase() === 'js' ? 'javascript' : language.trim().toLowerCase()
+  return list.filter((problem) => !problem.language || problem.language === lang)
+}

@@ -1,13 +1,107 @@
 import { Hono } from 'hono'
-import { SUBMISSION_PAGE_LIMIT, SUBMISSION_PAGE_LIMIT_MAX } from '../../util/config/constants'
+import {
+  EXP_HISTORY_LIMIT,
+  STUDY_LANGUAGE,
+  STUDY_LEVEL,
+  SUBMISSION_PAGE_LIMIT,
+  SUBMISSION_PAGE_LIMIT_MAX,
+} from '../../util/config/constants'
+import { findRecentExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { toCamelCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
 import { problemMetaById, problems } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
 
 export const me = new Hono<AuthEnv>()
+
+type Language = (typeof STUDY_LANGUAGE)[number]
+type Level = (typeof STUDY_LEVEL)[number]
+const isLanguage = (v: unknown): v is Language => STUDY_LANGUAGE.includes(v as Language)
+const isLevel = (v: unknown): v is Level => STUDY_LEVEL.includes(v as Level)
+
+async function findMe(userId: number) {
+  const user = await users.findById(userId)
+  if (!user) throw Errors.notFound('없는 사용자')
+  return user
+}
+
+// 내 프로필 및 설정. 내 거라 이메일까지 준다 (구글 id 는 빼고)
+me.get('/', requireAuth, async (c) => {
+  const user = await findMe(c.get('userId'))
+  return ok(c, {
+    id: user.id,
+    nickname: user.nickname,
+    tag: user.tag,
+    email: user.email,
+    tier: user.tier,
+    totalExp: user.totalExp,
+    studyLanguage: user.studyLanguage,
+    studyLevel: user.studyLevel,
+    onboarded: user.studyLevel !== null,
+    createdAt: user.createdAt,
+  })
+})
+
+// 내 경험치. 총합과 최근에 얻은 기록
+me.get('/exp', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  const user = await findMe(userId)
+  const rows = await findRecentExp(userId, EXP_HISTORY_LIMIT)
+
+  return ok(c, {
+    totalExp: user.totalExp,
+    tier: user.tier,
+    recent: rows.map((row) => ({
+      amount: row.amount,
+      reason: row.reason,
+      problemId: row.problemId,
+      problemTitle: row.problemId ? (problemMetaById.get(row.problemId)?.title ?? null) : null,
+      createdAt: row.createdAt,
+    })),
+  })
+})
+
+// 언어 및 등급 조회. 설정 화면에서 쓰라고 고를 수 있는 목록도 같이 준다
+me.get('/learning', requireAuth, async (c) => {
+  const user = await findMe(c.get('userId'))
+  return ok(c, {
+    studyLanguage: user.studyLanguage,
+    studyLevel: user.studyLevel,
+    tier: user.tier,
+    languages: STUDY_LANGUAGE,
+    levels: STUDY_LEVEL,
+  })
+})
+
+// 학습설정 변경. language, level 중 보낸 것만 바꾼다
+me.patch('/learning', requireAuth, async (c) => {
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    language?: unknown
+    level?: unknown
+  }
+  if (body.language === undefined && body.level === undefined) {
+    throw Errors.invalidInput('language 나 level 중 하나는 보내야 함')
+  }
+  if (body.language !== undefined && !isLanguage(body.language)) {
+    throw Errors.invalidInput(`language 는 ${STUDY_LANGUAGE.join(', ')} 중 하나`)
+  }
+  if (body.level !== undefined && !isLevel(body.level)) {
+    throw Errors.invalidInput(`level 은 ${STUDY_LEVEL.join(', ')} 중 하나`)
+  }
+
+  const userId = c.get('userId')
+  await findMe(userId)
+  await users.updateLearning(userId, {
+    studyLanguage: body.language as Language | undefined,
+    studyLevel: body.level as Level | undefined,
+  })
+
+  const user = await findMe(userId)
+  return ok(c, { studyLanguage: user.studyLanguage, studyLevel: user.studyLevel })
+})
 
 me.patch('/nickname', requireAuth, async (c) => {
   const body = (await c.req.json().catch(() => ({}))) as { nickname?: unknown }

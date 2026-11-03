@@ -72,6 +72,17 @@ export const users = {
     await db.update(user).set({ studyLanguage }).where(eq(user.id, id))
   },
 
+  // 학습설정 변경. 넘어온 값만 바꾼다
+  async updateLearning(
+    id: number,
+    data: {
+      studyLanguage?: (typeof STUDY_LANGUAGE)[number]
+      studyLevel?: (typeof STUDY_LEVEL)[number]
+    },
+  ): Promise<void> {
+    await db.update(user).set(data).where(eq(user.id, id))
+  },
+
   async updateNickname(id: number, nickname: string, tag: string): Promise<void> {
     await db.update(user).set({ nickname, tag }).where(eq(user.id, id))
   },
