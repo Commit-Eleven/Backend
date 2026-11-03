@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { filterByLanguage } from '../../util/problems'
 
 type ShortProblem = {
   id: string
@@ -9,6 +10,7 @@ type ShortProblem = {
   title: string
   reward: number
   description?: string
+  language?: string
   content: {
     code: string
     answer: string[]
@@ -33,11 +35,14 @@ function toQuestion(p: ShortProblem) {
 export const short = new Hono<AuthEnv>()
 
 short.get('', requireAuth, (c) => {
-  if (shortProblems.length === 0) {
-    return c.json({ message: '문제 풀이 비어있습니다' }, 404)
+  const language = c.req.query('language')
+  const pool = filterByLanguage(shortProblems, language)
+  if (pool.length === 0) {
+    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    return c.json({ message }, 404)
   }
 
-  const problem = toQuestion(shortProblems[Math.floor(Math.random() * shortProblems.length)])
+  const problem = toQuestion(pool[Math.floor(Math.random() * pool.length)])
   return c.json({ problem }, 200)
 })
 
@@ -66,6 +71,10 @@ short.post('', requireAuth, async (c) => {
     await awardSolveExp(userId, problem.id, problem.reward)
     return c.json({ isAnswer }, 200)
   } else {
-    return c.json({ isAnswer, answer: problem.content.answer }, 200)
+    // 프론트는 answer 를 문자열 하나로 보여 준다. 인정되는 답 전체는 answers 로
+    return c.json(
+      { isAnswer, answer: problem.content.answer[0], answers: problem.content.answer },
+      200,
+    )
   }
 })

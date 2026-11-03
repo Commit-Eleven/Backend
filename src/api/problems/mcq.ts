@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { filterByLanguage } from '../../util/problems'
 
 type McqProblem = {
   id: string
@@ -9,6 +10,7 @@ type McqProblem = {
   title: string
   reward: number
   description?: string
+  language?: string
   content: {
     choices: string[]
     answer: number
@@ -33,11 +35,14 @@ function toQuestion(p: McqProblem) {
 export const mcq = new Hono<AuthEnv>()
 
 mcq.get('', requireAuth, (c) => {
-  if (mcqProblems.length === 0) {
-    return c.json({ message: '문제 풀이 비어있습니다' }, 404)
+  const language = c.req.query('language')
+  const pool = filterByLanguage(mcqProblems, language)
+  if (pool.length === 0) {
+    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    return c.json({ message }, 404)
   }
 
-  const problem = toQuestion(mcqProblems[Math.floor(Math.random() * mcqProblems.length)])
+  const problem = toQuestion(pool[Math.floor(Math.random() * pool.length)])
   return c.json({ problem }, 200)
 })
 

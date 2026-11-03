@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { filterByLanguage } from '../../util/problems'
 
 type ParsonsProblem = {
   id: string
@@ -9,6 +10,7 @@ type ParsonsProblem = {
   title: string
   reward: number
   description?: string
+  language?: string
   content: {
     fragments: string[]
     answer_order: number[]
@@ -35,11 +37,14 @@ function toQuestion(p: ParsonsProblem) {
 export const parsons = new Hono<AuthEnv>()
 
 parsons.get('', requireAuth, (c) => {
-  if (parsonsProblems.length === 0) {
-    return c.json({ message: '문제 풀이 비어있습니다' }, 404)
+  const language = c.req.query('language')
+  const pool = filterByLanguage(parsonsProblems, language)
+  if (pool.length === 0) {
+    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    return c.json({ message }, 404)
   }
 
-  const problem = toQuestion(parsonsProblems[Math.floor(Math.random() * parsonsProblems.length)])
+  const problem = toQuestion(pool[Math.floor(Math.random() * pool.length)])
   return c.json({ problem }, 200)
 })
 

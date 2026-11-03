@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { filterByLanguage } from '../../util/problems'
 
 type BlankProblem = {
   id: string
@@ -9,6 +10,7 @@ type BlankProblem = {
   title: string
   reward: number
   description?: string
+  language?: string
   content: {
     template: string
     blanks: { no: number; answer: string[]; hint?: string }[]
@@ -33,18 +35,27 @@ function toQuestion(p: BlankProblem) {
 export const blank = new Hono<AuthEnv>()
 
 blank.get('', requireAuth, (c) => {
-  if (blankProblems.length === 0) {
-    return c.json({ message: '문제 풀이 비어있습니다' }, 404)
+  const language = c.req.query('language')
+  const pool = filterByLanguage(blankProblems, language)
+  if (pool.length === 0) {
+    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    return c.json({ message }, 404)
   }
 
-  const problem = toQuestion(blankProblems[Math.floor(Math.random() * blankProblems.length)])
+  const problem = toQuestion(pool[Math.floor(Math.random() * pool.length)])
   return c.json({ problem }, 200)
 })
 
 function submittedByNo(answer: unknown, blanks: { no: number }[]): Record<number, string> {
   const map = Object.fromEntries(blanks.map((blank) => [blank.no, ''])) as Record<number, string>
 
-  if (Array.isArray(answer)) {
+  // 프론트는 빈칸 답을 문자열 하나로 보낸다. 빈칸이 여러 개면 쉼표로 나눠서 순서대로 넣는다
+  if (typeof answer === 'string') {
+    const parts = blanks.length === 1 ? [answer] : answer.split(',')
+    blanks.forEach((blank, i) => {
+      if (parts[i] !== undefined) map[blank.no] = parts[i]
+    })
+  } else if (Array.isArray(answer)) {
     blanks.forEach((blank, i) => {
       if (typeof answer[i] === 'string' || typeof answer[i] === 'number') {
         map[blank.no] = String(answer[i])
@@ -85,6 +96,8 @@ blank.post('', requireAuth, async (c) => {
     await awardSolveExp(c.get('userId'), problem.id, problem.reward)
     return c.json({ isAnswer }, 200)
   } else {
-    return c.json({ isAnswer, answer: problem.content.blanks }, 200)
+    // 프론트는 정답을 answers 로 읽어서 같은 값을 answers 로도 준다
+    const answer = problem.content.blanks.map((blank) => ({ ...blank, answers: blank.answer }))
+    return c.json({ isAnswer, answer }, 200)
   }
 })
