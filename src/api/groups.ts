@@ -298,6 +298,112 @@ groups.get('/:id', requireAuth, async (c) => {
   return ok(c, { ...result, myRole: me.role })
 })
 
+// 팀 미리보기. 팀 찾기에서 참여하기 전에 보는 용도라 멤버가 아니어도 볼 수 있다
+groups.get('/:id/preview', requireAuth, async (c) => {
+  const rawId = c.req.param('id')
+  if (!/^[1-9]\d*$/.test(rawId)) throw Errors.invalidInput('id는 양의 정수여야 합니다')
+
+  const id = Number(rawId)
+  if (!Number.isSafeInteger(id)) throw Errors.invalidInput('잘못된 id')
+
+  const result = await findGroupDetail(id)
+  if (!result) throw Errors.notFound('없는 그룹')
+
+  const { group, members } = result
+  const owner = members.find((m) => m.role === 'owner')
+  const me = members.find((m) => m.id === c.get('userId'))
+
+  // 상세와 달리 경험치·참여 시각은 빼고 닉네임·태그·역할만 보여준다
+  return ok(c, {
+    group: {
+      id: group.id,
+      name: group.name,
+      description: group.description,
+      capacity: group.capacity,
+      memberCount: group.memberCount,
+      isFull: group.memberCount >= group.capacity,
+      createdAt: group.createdAt,
+    },
+    owner: owner ? { id: owner.id, nickname: owner.nickname, tag: owner.tag } : null,
+    members: members.map((m) => ({ id: m.id, nickname: m.nickname, tag: m.tag, role: m.role })),
+    isMember: me !== undefined,
+    myRole: me?.role ?? null,
+  })
+})
+
+// 팀 수정. 방장만 할 수 있다. name, description, capacity 중 보낸 것만 바꾼다
+groups.patch('/:id', requireAuth, async (c) => {
+  const rawId = c.req.param('id')
+  if (!/^[1-9]\d*$/.test(rawId)) throw Errors.invalidInput('id는 양의 정수여야 합니다')
+
+  const id = Number(rawId)
+  if (!Number.isSafeInteger(id)) throw Errors.invalidInput('잘못된 id')
+
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    name?: unknown
+    description?: unknown
+    capacity?: unknown
+  }
+  if (body.name === undefined && body.description === undefined && body.capacity === undefined) {
+    throw Errors.invalidInput('name, description, capacity 중 하나는 보내야 함')
+  }
+
+  // 검사 규칙은 그룹 생성과 같다
+  const changes: { name?: string; description?: string | null; capacity?: number } = {}
+  if (body.name !== undefined) {
+    if (typeof body.name !== 'string' || !body.name.trim()) throw Errors.invalidInput('name 필요')
+    changes.name = body.name.trim()
+    if (changes.name.length > NAME_MAX) throw Errors.invalidInput(`name은 ${NAME_MAX}자 이하`)
+  }
+  if (body.description !== undefined) {
+    if (body.description !== null && typeof body.description !== 'string') {
+      throw Errors.invalidInput('description은 문자열')
+    }
+    // 빈 문자열이나 null 을 보내면 설명을 지운다
+    changes.description =
+      typeof body.description === 'string' ? body.description.trim() || null : null
+    if (changes.description && changes.description.length > DESCRIPTION_MAX) {
+      throw Errors.invalidInput(`description은 ${DESCRIPTION_MAX}자 이하`)
+    }
+  }
+  if (body.capacity !== undefined) {
+    const capacity = body.capacity
+    if (
+      typeof capacity !== 'number' ||
+      !Number.isInteger(capacity) ||
+      capacity < GROUP_CAPACITY_MIN ||
+      capacity > GROUP_CAPACITY_MAX
+    ) {
+      throw Errors.invalidInput(`capacity는 ${GROUP_CAPACITY_MIN}~${GROUP_CAPACITY_MAX} 사이 정수`)
+    }
+    changes.capacity = capacity
+  }
+
+  const userId = c.get('userId')
+  // 그룹 행을 잠가서 수정하는 동안 누가 참여해 정원이 바뀌지 않게 한다
+  await db.transaction(async (tx) => {
+    const [group] = await tx.select().from(studyGroup).where(eq(studyGroup.id, id)).for('update')
+    if (!group) throw Errors.notFound('없는 그룹')
+    if (group.ownerId !== userId) throw Errors.forbidden('방장만 팀을 수정할 수 있습니다')
+
+    if (changes.capacity !== undefined) {
+      const [members] = await tx
+        .select({ value: count() })
+        .from(groupMember)
+        .where(eq(groupMember.groupId, id))
+      if (changes.capacity < members.value) {
+        throw Errors.duplicate(`지금 팀원 수(${members.value}명)보다 정원을 줄일 수 없습니다`)
+      }
+    }
+
+    await tx.update(studyGroup).set(changes).where(eq(studyGroup.id, id))
+  })
+
+  const result = await findGroupDetail(id)
+  if (!result) throw Errors.notFound('없는 그룹')
+  return ok(c, { ...result, myRole: 'owner' })
+})
+
 function parsePositiveQuery(raw: string | undefined, fallback: number, field: string): number {
   if (raw === undefined) return fallback
   if (!/^[1-9]\d*$/.test(raw)) throw Errors.invalidInput(`${field}는 양의 정수여야 합니다`)
