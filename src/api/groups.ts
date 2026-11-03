@@ -1,4 +1,4 @@
-import { asc, eq } from 'drizzle-orm'
+import { and, asc, count, eq } from 'drizzle-orm'
 import { Hono } from 'hono'
 import {
   DEFAULT_GROUP_CAPACITY,
@@ -59,6 +59,82 @@ async function findGroupDetail(groupId: number) {
 }
 
 export const groups = new Hono<AuthEnv>()
+
+export const myGroups = new Hono<AuthEnv>()
+
+myGroups.get('/groups', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  const memberships = await db
+    .select({
+      id: studyGroup.id,
+      name: studyGroup.name,
+      description: studyGroup.description,
+      ownerId: studyGroup.ownerId,
+      capacity: studyGroup.capacity,
+      createdAt: studyGroup.createdAt,
+      role: groupMember.role,
+      joinedAt: groupMember.joinedAt,
+    })
+    .from(groupMember)
+    .innerJoin(studyGroup, eq(studyGroup.id, groupMember.groupId))
+    .where(eq(groupMember.userId, userId))
+    .orderBy(asc(groupMember.joinedAt))
+
+  const items = await Promise.all(
+    memberships.map(async (group) => {
+      const [members] = await db
+        .select({ value: count() })
+        .from(groupMember)
+        .where(eq(groupMember.groupId, group.id))
+      return { ...group, memberCount: members.value }
+    }),
+  )
+
+  return ok(c, { items })
+})
+
+// 그룹 참여. 이미 참여한 경우와 정원이 찬 경우는 충돌로 응답함.
+groups.post('/join', requireAuth, async (c) => {
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    groupId?: unknown
+  }
+  const rawId = body.groupId
+  const groupId =
+    typeof rawId === 'number' && Number.isSafeInteger(rawId)
+      ? rawId
+      : typeof rawId === 'string' && /^[1-9]\d*$/.test(rawId)
+        ? Number(rawId)
+        : NaN
+  if (!Number.isSafeInteger(groupId) || groupId <= 0) {
+    throw Errors.invalidInput('groupId는 양의 정수여야 합니다')
+  }
+
+  const userId = c.get('userId')
+  await db.transaction(async (tx) => {
+    // 같은 그룹에 대한 동시 참여 요청도 정원 검사를 순차 처리
+    const [group] = await tx
+      .select()
+      .from(studyGroup)
+      .where(eq(studyGroup.id, groupId))
+      .for('update')
+    if (!group) throw Errors.notFound('없는 그룹')
+
+    const [existing] = await tx
+      .select({ userId: groupMember.userId })
+      .from(groupMember)
+      .where(and(eq(groupMember.groupId, groupId), eq(groupMember.userId, userId)))
+    if (existing) throw Errors.duplicate('이미 참여한 그룹')
+
+    const [memberCount] = await tx
+      .select({ value: count() })
+      .from(groupMember)
+      .where(eq(groupMember.groupId, groupId))
+    if (memberCount.value >= group.capacity) throw Errors.duplicate('그룹 정원이 가득 참')
+
+    await tx.insert(groupMember).values({ groupId, userId, role: 'member' })
+  })
+  return ok(c, { groupId, userId, role: 'member' }, 201)
+})
 
 // 그룹 생성. 만든 사람이 방장으로 바로 들어감
 groups.post('', requireAuth, async (c) => {

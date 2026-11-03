@@ -4,7 +4,7 @@ import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
 import { curriculum } from './curriculum'
-import { groups } from './groups'
+import { groups, myGroups } from './groups'
 import { health } from './health'
 import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
@@ -31,6 +31,7 @@ app.route('/api/tags', tags)
 app.route('/api/social/login', login)
 
 app.route('/api/users/me', me)
+app.route('/api/me', myGroups)
 app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)
 app.route('/api/users', userProfile)
