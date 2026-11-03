@@ -1,4 +1,4 @@
-import { and, desc, eq, inArray, lt, notInArray, sql } from 'drizzle-orm'
+import { and, desc, eq, gte, inArray, lt, notInArray, sql } from 'drizzle-orm'
 import { db } from './connection'
 import { submission } from './schema'
 
@@ -21,6 +21,30 @@ export const submissions = {
       answer: data.answer,
       runOutput: data.runOutput,
     })
+  },
+
+  // 문제별로 맞힌 적 있는지. 제출한 문제만 들어 있다 (true 맞힘, false 틀리기만 함)
+  async solvedMapByUser(userId: number): Promise<Map<string, boolean>> {
+    const rows = await db
+      .select({
+        problemId: submission.problemId,
+        solved: sql<number>`max(${submission.isCorrect})`,
+      })
+      .from(submission)
+      .where(eq(submission.userId, userId))
+      .groupBy(submission.problemId)
+
+    return new Map(rows.map((row) => [row.problemId, Number(row.solved) === 1]))
+  },
+
+  // 연속 학습 계산용. since 이후 제출 시각
+  async submittedAtSince(userId: number, since: Date): Promise<Date[]> {
+    const rows = await db
+      .select({ at: submission.createdAt })
+      .from(submission)
+      .where(and(eq(submission.userId, userId), gte(submission.createdAt, since)))
+
+    return rows.map((row) => new Date(row.at))
   },
 
   // 맞춘 문제 id 목록(중복 제거)

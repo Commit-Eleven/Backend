@@ -1,4 +1,4 @@
-import { and, eq, inArray, like, ne } from 'drizzle-orm'
+import { and, asc, desc, eq, gt, inArray, like, ne, sql } from 'drizzle-orm'
 import type { STUDY_LANGUAGE, STUDY_LEVEL } from '../config/constants'
 import { SEARCH_RESULT_LIMIT } from '../config/constants'
 import { db } from './connection'
@@ -28,6 +28,31 @@ export const users = {
       .where(eq(user.id, id))
       .limit(1)
     return rows[0]
+  },
+
+  // 경험치 랭킹. 경험치가 같으면 같은 순위 (1, 1, 3 ...)
+  async ranking(offset: number, limit: number) {
+    return db
+      .select({
+        rank: sql<number>`rank() over (order by ${user.totalExp} desc)`,
+        id: user.id,
+        nickname: user.nickname,
+        tag: user.tag,
+        totalExp: user.totalExp,
+      })
+      .from(user)
+      .orderBy(desc(user.totalExp), asc(user.id))
+      .limit(limit)
+      .offset(offset)
+  },
+
+  async count(): Promise<number> {
+    return db.$count(user)
+  },
+
+  // 내 순위 = 나보다 경험치 많은 사람 수 + 1
+  async rankOf(totalExp: number): Promise<number> {
+    return (await db.$count(user, gt(user.totalExp, totalExp))) + 1
   },
 
   async findByIds(ids: number[]): Promise<UserSummary[]> {

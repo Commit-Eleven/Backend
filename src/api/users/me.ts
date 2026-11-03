@@ -1,17 +1,20 @@
 import { Hono } from 'hono'
 import {
   EXP_HISTORY_LIMIT,
+  HOME_RECOMMEND_LIMIT,
   STUDY_LANGUAGE,
   STUDY_LEVEL,
   SUBMISSION_PAGE_LIMIT,
   SUBMISSION_PAGE_LIMIT_MAX,
 } from '../../util/config/constants'
 import { findRecentExp } from '../../util/db/exp'
+import { invites } from '../../util/db/invites'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { toCamelCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
+import { currentUnitId, findUnit, streakDays, unitProgress } from '../../util/learning'
 import { problemMetaById, problems } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
 
@@ -101,6 +104,76 @@ me.patch('/learning', requireAuth, async (c) => {
 
   const user = await findMe(userId)
   return ok(c, { studyLanguage: user.studyLanguage, studyLevel: user.studyLevel })
+})
+
+// 연속 학습은 최근 1년 남짓만 본다
+const STREAK_WINDOW_MS = 400 * 24 * 60 * 60 * 1000
+
+// 메인페이지. 학습 통계 + 지금 공부 중인 단원 + 추천 문제를 한 번에 준다
+me.get('/home', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  const user = await findMe(userId)
+
+  const [{ total, correct }, solved, submittedAt] = await Promise.all([
+    submissions.countByUser(userId),
+    submissions.solvedMapByUser(userId),
+    submissions.submittedAtSince(userId, new Date(Date.now() - STREAK_WINDOW_MS)),
+  ])
+
+  const unitId = currentUnitId(user.studyUnitId, solved)
+  const found = unitId ? findUnit(unitId) : undefined
+
+  let currentUnit = null
+  let recommendations: unknown[] = []
+  if (found) {
+    const progress = unitProgress(found.unit, solved)
+    currentUnit = {
+      unitId: found.unit.unitId,
+      title: found.unit.title,
+      courseTitle: found.course.title,
+      solved: progress.solved,
+      total: progress.total,
+      // 다음 단원이 열리려면 남은 문제 수
+      remainingToUnlock: progress.remaining,
+      nextStageTitle: found.next?.unit.title ?? null,
+    }
+
+    // 지금 단원에서 아직 못 맞힌 문제부터. progress 는 그 유형을 단원에서 몇 개 맞혔는지
+    recommendations = progress.problems
+      .filter((p) => p.status !== 'correct')
+      .slice(0, HOME_RECOMMEND_LIMIT)
+      .map((p) => {
+        const sameType = progress.problems.filter((q) => q.type === p.type)
+        return {
+          problemId: p.id,
+          title: p.title,
+          type: p.type,
+          typeLabel: p.typeLabel,
+          xp: p.reward,
+          progress: {
+            solved: sameType.filter((q) => q.status === 'correct').length,
+            total: sameType.length,
+          },
+        }
+      })
+  }
+
+  return ok(c, {
+    stats: {
+      solvedCount: [...solved.values()].filter(Boolean).length,
+      accuracy: total === 0 ? 0 : Math.round((correct / total) * 1000) / 10,
+      streakDays: streakDays(submittedAt),
+      totalExp: user.totalExp,
+    },
+    currentUnit,
+    recommendations,
+  })
+})
+
+// 받은 그룹 초대 목록. id 가 수락/거절 API 의 {id}
+me.get('/group-invites', requireAuth, async (c) => {
+  const items = await invites.listForUser(c.get('userId'))
+  return ok(c, { items })
 })
 
 me.patch('/nickname', requireAuth, async (c) => {

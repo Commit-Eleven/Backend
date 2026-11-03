@@ -12,8 +12,10 @@ import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
 import { parsons } from './problems/parsons'
 import { short } from './problems/short'
+import { ranking } from './ranking'
 import { login } from './social/login'
 import { tags } from './tags'
+import { units } from './units'
 import { friends } from './users/friends'
 import { me } from './users/me'
 import { onboarding } from './users/onboarding'
@@ -28,6 +30,8 @@ app.use('*', logger())
 app.route('/api/health', health)
 
 app.route('/api/curriculum', curriculum)
+app.route('/api/units', units)
+app.route('/api/ranking', ranking)
 app.route('/api/tags', tags)
 
 app.route('/api/social/login', login)
