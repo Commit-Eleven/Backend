@@ -5,6 +5,7 @@ import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
 import { curriculum } from './curriculum'
 import { groupInvites } from './group-invites'
+import { studyGroups } from './groups'
 import { health } from './health'
 import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
@@ -28,6 +29,7 @@ app.route('/api/health', health)
 app.route('/api/curriculum', curriculum)
 app.route('/api/tags', tags)
 app.route('/api/group-invites', groupInvites)
+app.route('/api/groups', studyGroups)
 
 app.route('/api/social/login', login)
 
