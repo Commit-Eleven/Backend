@@ -1,4 +1,4 @@
-import { and, asc, count, eq } from 'drizzle-orm'
+import { and, asc, count, desc, eq, inArray, like } from 'drizzle-orm'
 import { Hono } from 'hono'
 import {
   DEFAULT_GROUP_CAPACITY,
@@ -95,6 +95,57 @@ myGroups.get('/groups', requireAuth, async (c) => {
   return ok(c, { items })
 })
 
+// 참여할 수 있는 그룹 탐색. 목록에서 받은 id를 /join에 전달한다.
+groups.get('', requireAuth, async (c) => {
+  const query = (c.req.query('q') ?? '').trim()
+  if (query.length > 50) throw Errors.invalidInput('q는 50자 이하')
+
+  const page = parsePositiveQuery(c.req.query('page'), 1, 'page')
+  const limit = parsePositiveQuery(c.req.query('limit'), 20, 'limit')
+  if (limit > 50) throw Errors.invalidInput('limit은 50 이하')
+  const offset = (page - 1) * limit
+  if (!Number.isSafeInteger(offset)) throw Errors.invalidInput('page가 너무 큽니다')
+
+  const where = query ? like(studyGroup.name, `%${query}%`) : undefined
+  const [totalRow] = await db.select({ value: count() }).from(studyGroup).where(where)
+  const rows = await db
+    .select({
+      id: studyGroup.id,
+      name: studyGroup.name,
+      description: studyGroup.description,
+      ownerId: studyGroup.ownerId,
+      capacity: studyGroup.capacity,
+      createdAt: studyGroup.createdAt,
+    })
+    .from(studyGroup)
+    .where(where)
+    .orderBy(desc(studyGroup.id))
+    .limit(limit)
+    .offset(offset)
+
+  const ids = rows.map((group) => group.id)
+  const memberCounts = ids.length
+    ? await db
+        .select({ groupId: groupMember.groupId, value: count() })
+        .from(groupMember)
+        .where(inArray(groupMember.groupId, ids))
+        .groupBy(groupMember.groupId)
+    : []
+  const memberCountByGroupId = new Map(memberCounts.map((item) => [item.groupId, item.value]))
+
+  return ok(c, {
+    items: rows.map((group) => {
+      const memberCount = memberCountByGroupId.get(group.id) ?? 0
+      return {
+        ...group,
+        memberCount,
+        isFull: memberCount >= group.capacity,
+      }
+    }),
+    pagination: { page, limit, total: totalRow.value },
+  })
+})
+
 // 그룹 참여. 이미 참여한 경우와 정원이 찬 경우는 충돌로 응답함.
 groups.post('/join', requireAuth, async (c) => {
   const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
@@ -112,6 +163,8 @@ groups.post('/join', requireAuth, async (c) => {
   }
 
   const userId = c.get('userId')
+  if (!(await users.findById(userId))) throw Errors.notFound('없는 사용자')
+
   await db.transaction(async (tx) => {
     // 같은 그룹에 대한 동시 참여 요청도 정원 검사를 순차 처리
     const [group] = await tx
@@ -244,6 +297,14 @@ groups.get('/:id', requireAuth, async (c) => {
 
   return ok(c, { ...result, myRole: me.role })
 })
+
+function parsePositiveQuery(raw: string | undefined, fallback: number, field: string): number {
+  if (raw === undefined) return fallback
+  if (!/^[1-9]\d*$/.test(raw)) throw Errors.invalidInput(`${field}는 양의 정수여야 합니다`)
+  const value = Number(raw)
+  if (!Number.isSafeInteger(value)) throw Errors.invalidInput(`${field}가 너무 큽니다`)
+  return value
+}
 
 // 초대가 안 됐을 때 이유별 에러
 const INVITE_ERRORS = {
