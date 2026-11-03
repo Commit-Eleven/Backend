@@ -5,6 +5,7 @@ import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
 import { curriculum } from './curriculum'
 import { groupInvites } from './group-invites'
+import { groups } from './groups'
 import { health } from './health'
 import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
@@ -27,7 +28,6 @@ app.route('/api/health', health)
 
 app.route('/api/curriculum', curriculum)
 app.route('/api/tags', tags)
-app.route('/api/group-invites', groupInvites)
 
 app.route('/api/social/login', login)
 
@@ -35,6 +35,9 @@ app.route('/api/users/me', me)
 app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)
 app.route('/api/users', userProfile)
+
+app.route('/api/groups', groups)
+app.route('/api/group-invites', groupInvites)
 
 app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)

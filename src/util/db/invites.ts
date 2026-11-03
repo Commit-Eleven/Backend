@@ -13,7 +13,7 @@ export type GroupInvite = {
 
 export type AcceptResult = 'joined' | 'no_group' | 'already_member' | 'full'
 
-export const groups = {
+export const invites = {
   async findInvite(id: number): Promise<GroupInvite | undefined> {
     const [row] = await db
       .select()
