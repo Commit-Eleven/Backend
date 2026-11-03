@@ -138,6 +138,61 @@ groups.post('/join', requireAuth, async (c) => {
   return ok(c, { groupId, userId, role: 'member' }, 201)
 })
 
+// 방장이 기존 멤버에게 방장 권한을 위임함
+groups.post('/:id/owner', requireAuth, async (c) => {
+  const rawGroupId = c.req.param('id')
+  if (!/^[1-9]\d*$/.test(rawGroupId)) {
+    throw Errors.invalidInput('id는 양의 정수여야 합니다')
+  }
+  const groupId = Number(rawGroupId)
+  if (!Number.isSafeInteger(groupId)) throw Errors.invalidInput('잘못된 id')
+
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    targetUserId?: unknown
+  }
+  const rawTargetId = body.targetUserId
+  const targetUserId =
+    typeof rawTargetId === 'number' && Number.isSafeInteger(rawTargetId)
+      ? rawTargetId
+      : typeof rawTargetId === 'string' && /^[1-9]\d*$/.test(rawTargetId)
+        ? Number(rawTargetId)
+        : NaN
+  if (!Number.isSafeInteger(targetUserId) || targetUserId <= 0) {
+    throw Errors.invalidInput('targetUserId는 양의 정수여야 합니다')
+  }
+
+  const currentUserId = c.get('userId')
+  if (targetUserId === currentUserId) throw Errors.duplicate('이미 방장입니다')
+
+  await db.transaction(async (tx) => {
+    const [group] = await tx
+      .select()
+      .from(studyGroup)
+      .where(eq(studyGroup.id, groupId))
+      .for('update')
+    if (!group) throw Errors.notFound('없는 그룹')
+    if (group.ownerId !== currentUserId) throw Errors.forbidden('방장만 위임할 수 있습니다')
+
+    const [targetMembership] = await tx
+      .select({ userId: groupMember.userId })
+      .from(groupMember)
+      .where(and(eq(groupMember.groupId, groupId), eq(groupMember.userId, targetUserId)))
+    if (!targetMembership) throw Errors.invalidInput('위임 대상은 그룹 멤버여야 합니다')
+
+    await tx
+      .update(groupMember)
+      .set({ role: 'member' })
+      .where(and(eq(groupMember.groupId, groupId), eq(groupMember.userId, currentUserId)))
+    await tx
+      .update(groupMember)
+      .set({ role: 'owner' })
+      .where(and(eq(groupMember.groupId, groupId), eq(groupMember.userId, targetUserId)))
+    await tx.update(studyGroup).set({ ownerId: targetUserId }).where(eq(studyGroup.id, groupId))
+  })
+
+  return ok(c, { groupId, ownerId: targetUserId })
+})
+
 // 그룹 생성. 만든 사람이 방장으로 바로 들어감
 groups.post('', requireAuth, async (c) => {
   const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
