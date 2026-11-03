@@ -4,6 +4,7 @@ import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
 import { curriculum } from './curriculum'
+import { groupInvites } from './group-invites'
 import { health } from './health'
 import { blank } from './problems/blank'
 import { mcq } from './problems/mcq'
@@ -26,6 +27,7 @@ app.route('/api/health', health)
 
 app.route('/api/curriculum', curriculum)
 app.route('/api/tags', tags)
+app.route('/api/group-invites', groupInvites)
 
 app.route('/api/social/login', login)
 
