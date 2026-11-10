@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import {
   EXP_HISTORY_LIMIT,
   HOME_RECOMMEND_LIMIT,
+  PROFILE_VISIBILITY,
   STUDY_LANGUAGE,
   STUDY_LEVEL,
   SUBMISSION_PAGE_LIMIT,
@@ -52,6 +53,8 @@ me.get('/', requireAuth, async (c) => {
     studyLanguage: user.studyLanguage,
     studyLevel: user.studyLevel,
     onboarded: user.studyLevel !== null,
+    allowFriendRequests: user.allowFriendRequests,
+    profileVisibility: user.profileVisibility,
     createdAt: user.createdAt,
   })
 })
@@ -175,6 +178,49 @@ me.get('/home', requireAuth, async (c) => {
     },
     currentUnit,
     recommendations,
+  })
+})
+
+// 친구 요청 허용과 프로필 공개 범위 조회. 설정 화면에서 고를 수 있는 공개 범위 목록도 같이 준다
+me.get('/privacy', requireAuth, async (c) => {
+  const user = await findMe(c.get('userId'))
+  return ok(c, {
+    allowFriendRequests: user.allowFriendRequests,
+    profileVisibility: user.profileVisibility,
+    visibilityOptions: PROFILE_VISIBILITY,
+  })
+})
+
+// 개인정보 설정 변경. allow_friend_requests, profile_visibility 중 보낸 것만 바꾼다
+me.patch('/privacy', requireAuth, async (c) => {
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    allowFriendRequests?: unknown
+    profileVisibility?: unknown
+  }
+  if (body.allowFriendRequests === undefined && body.profileVisibility === undefined) {
+    throw Errors.invalidInput('allow_friend_requests 나 profile_visibility 중 하나는 보내야 함')
+  }
+  if (body.allowFriendRequests !== undefined && typeof body.allowFriendRequests !== 'boolean') {
+    throw Errors.invalidInput('allow_friend_requests 는 true 또는 false')
+  }
+  if (
+    body.profileVisibility !== undefined &&
+    !PROFILE_VISIBILITY.includes(body.profileVisibility as (typeof PROFILE_VISIBILITY)[number])
+  ) {
+    throw Errors.invalidInput(`profile_visibility 는 ${PROFILE_VISIBILITY.join(', ')} 중 하나`)
+  }
+
+  const userId = c.get('userId')
+  await findMe(userId)
+  await users.updatePrivacy(userId, {
+    allowFriendRequests: body.allowFriendRequests as boolean | undefined,
+    profileVisibility: body.profileVisibility as (typeof PROFILE_VISIBILITY)[number] | undefined,
+  })
+
+  const user = await findMe(userId)
+  return ok(c, {
+    allowFriendRequests: user.allowFriendRequests,
+    profileVisibility: user.profileVisibility,
   })
 })
 

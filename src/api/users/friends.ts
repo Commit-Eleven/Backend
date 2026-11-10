@@ -84,6 +84,7 @@ async function sendRequest(requesterId: number, addresseeId: number) {
 
   const target = await users.findById(addresseeId)
   if (!target) throw Errors.notFound('없는 사용자')
+  if (!target.allowFriendRequests) throw Errors.forbidden('친구 요청을 받지 않는 사용자입니다')
 
   const [existing] = await db
     .select()

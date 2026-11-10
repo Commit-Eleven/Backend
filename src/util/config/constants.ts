@@ -17,6 +17,9 @@ export const NOTIFICATION_TYPE = [
 export const STUDY_LANGUAGE = ['html', 'javascript', 'java', 'python'] as const
 export const STUDY_LEVEL = ['beginner', 'intermediate', 'advanced'] as const
 
+// 프로필을 볼 수 있는 범위
+export const PROFILE_VISIBILITY = ['public', 'friends', 'private'] as const
+
 export const DEFAULT_STUDY_LANGUAGE = 'python'
 export const DEFAULT_GROUP_CAPACITY = 10
 export const GROUP_CAPACITY_MIN = 2

@@ -23,6 +23,7 @@ import {
   FRIEND_STATUS,
   GROUP_ROLE,
   NOTIFICATION_TYPE,
+  PROFILE_VISIBILITY,
   STUDY_LEVEL,
   USER_TIER,
 } from '../config/constants'
@@ -50,6 +51,10 @@ export const user = mysqlTable(
       .notNull(),
     studyLevel: mysqlEnum('study_level', STUDY_LEVEL), // 온보딩 전에는 null
     onboardedAt: timestamp('onboarded_at'), // 온보딩 끝낸 시각. null 이면 아직 안 함
+    allowFriendRequests: boolean('allow_friend_requests').default(true).notNull(), // 친구 요청 받기
+    profileVisibility: mysqlEnum('profile_visibility', PROFILE_VISIBILITY)
+      .default('public')
+      .notNull(),
     createdAt: createdAt(),
     updatedAt: updatedAt(),
   },
