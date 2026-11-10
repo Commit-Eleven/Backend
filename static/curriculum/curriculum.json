@@ -17,7 +17,8 @@
           "short1",
           "parsons2",
           "mcq3",
-          "spaghetti1"
+          "spaghetti1",
+          "python-vars-types-code-1"
         ]
       },
       {
@@ -29,7 +30,8 @@
           "conditionals-mcq-2",
           "conditionals-blank-1",
           "conditionals-parsons-1",
-          "conditionals-short-1"
+          "conditionals-short-1",
+          "python-conditionals-code-1"
         ]
       }
     ],
@@ -49,7 +51,8 @@
           "html-structure-mcq-2",
           "html-structure-blank-1",
           "html-structure-parsons-1",
-          "html-structure-short-1"
+          "html-structure-short-1",
+          "html-code-1"
         ]
       },
       {
@@ -61,7 +64,8 @@
           "html-text-links-mcq-2",
           "html-text-links-blank-1",
           "html-text-links-parsons-1",
-          "html-text-links-short-1"
+          "html-text-links-short-1",
+          "html-text-links-code-1"
         ]
       },
       {
@@ -73,7 +77,8 @@
           "html-lists-images-mcq-2",
           "html-lists-images-blank-1",
           "html-lists-images-parsons-1",
-          "html-lists-images-short-1"
+          "html-lists-images-short-1",
+          "html-lists-images-code-1"
         ]
       }
     ]
@@ -92,7 +97,8 @@
           "js-basics-mcq-2",
           "js-basics-blank-1",
           "js-basics-parsons-1",
-          "js-basics-short-1"
+          "js-basics-short-1",
+          "js-basics-code-1"
         ]
       },
       {
@@ -104,7 +110,8 @@
           "js-functions-conditions-mcq-2",
           "js-functions-conditions-blank-1",
           "js-functions-conditions-parsons-1",
-          "js-functions-conditions-short-1"
+          "js-functions-conditions-short-1",
+          "javascript-code-1"
         ]
       }
     ]
@@ -123,7 +130,8 @@
           "java-basics-mcq-2",
           "java-basics-blank-1",
           "java-basics-parsons-1",
-          "java-basics-short-1"
+          "java-basics-short-1",
+          "java-code-1"
         ]
       },
       {
@@ -135,7 +143,8 @@
           "java-control-mcq-2",
           "java-control-blank-1",
           "java-control-parsons-1",
-          "java-control-short-1"
+          "java-control-short-1",
+          "java-control-code-1"
         ]
       }
     ]

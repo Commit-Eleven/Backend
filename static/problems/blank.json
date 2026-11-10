@@ -52,6 +52,7 @@
     "reward": 20,
     "difficulty": 1,
     "language": "html",
+    "caseSensitive": false,
     "unitId": "html-structure",
     "content": {
       "template": "<!DOCTYPE html>\n<html lang=\"ko\">\n<{{1}}>\n  <meta charset=\"UTF-8\">\n  <title>내 페이지</title>\n</head>",
@@ -72,6 +73,7 @@
     "reward": 20,
     "difficulty": 1,
     "language": "html",
+    "caseSensitive": false,
     "unitId": "html-text-links",
     "content": {
       "template": "<a href=\"https://example.com\" {{1}}=\"_blank\">새 탭에서 열기</a>",
@@ -92,6 +94,7 @@
     "reward": 20,
     "difficulty": 1,
     "language": "html",
+    "caseSensitive": false,
     "unitId": "html-lists-images",
     "content": {
       "template": "<ol>\n  <li>첫째</li>\n  <li>둘째</li>\n</{{1}}>",

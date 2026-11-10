@@ -1,11 +1,10 @@
 import { Hono } from 'hono'
+import { type CodeCheck, compileChecks, gradeCode } from '../../util/code-grader'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
 import { filterByLanguage } from '../../util/problems'
-
-type CodeCheck = { pattern: string; flags?: string; message: string }
 
 type CodeProblem = {
   id: string
@@ -20,19 +19,14 @@ type CodeProblem = {
   }
 }
 
-// 사용자 코드는 실행하지 않고, 문제마다 정해 둔 규칙(정규식)에 맞는지만 본다
+// 사용자 코드는 실행하지 않는다. 문법 검사 후, 주석·문자열을 뺀 코드가 문제별 규칙(정규식)에 맞는지 본다
 export const codeProblems = (await Bun.file('static/problems/code.json').json()) as CodeProblem[]
-const compiled = new Map(
-  codeProblems.map((p) => [
-    p.id,
-    p.content.checks.map((check) => ({ ...check, regex: new RegExp(check.pattern, check.flags) })),
-  ]),
-)
+const compiled = new Map(codeProblems.map((p) => [p.id, compileChecks(p.content.checks)]))
 
 const MAX_CODE_LENGTH = 10_000
 
 // 조회할 때 채점 규칙(checks)은 빼고 내려준다
-function toQuestion(p: CodeProblem) {
+export function toQuestion(p: CodeProblem) {
   return {
     id: p.id,
     type: p.type,
@@ -80,11 +74,8 @@ code.post('', requireAuth, async (c) => {
     return c.json({ message: `코드는 ${MAX_CODE_LENGTH}자 이하로 보내주세요` }, 400)
   }
 
-  const checks = compiled.get(problem.id) ?? []
-  const failed = checks
-    .filter((check) => !check.regex.test(submitted))
-    .map((check) => check.message)
-  const isAnswer = failed.length === 0
+  const result = gradeCode(submitted, problem.language, compiled.get(problem.id) ?? [])
+  const { isAnswer, passed, total, failed, syntaxError } = result
 
   const userId = c.get('userId')
   await submissions.create({
@@ -96,11 +87,8 @@ code.post('', requireAuth, async (c) => {
   })
 
   if (isAnswer) {
-    await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, passed: checks.length, total: checks.length }, 200)
+    const exp = await awardSolveExp(userId, problem.id, problem.reward)
+    return c.json({ isAnswer, passed, total, ...exp }, 200)
   }
-  return c.json(
-    { isAnswer, passed: checks.length - failed.length, total: checks.length, failed },
-    200,
-  )
+  return c.json({ isAnswer, passed, total, failed, ...(syntaxError ? { syntaxError } : {}) }, 200)
 })

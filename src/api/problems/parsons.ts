@@ -23,7 +23,7 @@ export const parsonsProblems = (await Bun.file(
 ).json()) as ParsonsProblem[]
 
 // 조회할 때 정답 순서(answer_order)는 빼고 내려준다
-function toQuestion(p: ParsonsProblem) {
+export function toQuestion(p: ParsonsProblem) {
   const { answer_order, ...content } = p.content
   return {
     id: p.id,
@@ -31,13 +31,22 @@ function toQuestion(p: ParsonsProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
     content,
   }
 }
 
 export const parsons = new Hono<AuthEnv>()
 
+// id 를 주면 그 문제, 안 주면 language 로 거른 문제 중 하나
 parsons.get('', requireAuth, (c) => {
+  const id = c.req.query('id')
+  if (id) {
+    const found = parsonsProblems.find((problem) => problem.id === id)
+    if (!found) return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
+    return c.json({ problem: toQuestion(found) }, 200)
+  }
+
   const language = c.req.query('language')
   const pool = filterByLanguage(parsonsProblems, language)
   if (pool.length === 0) {
@@ -70,11 +79,16 @@ parsons.post('', requireAuth, async (c) => {
     }
   }
 
-  await submissions.create({ userId: c.get('userId'), problemId: problem.id, isCorrect: isAnswer, answer })
+  await submissions.create({
+    userId: c.get('userId'),
+    problemId: problem.id,
+    isCorrect: isAnswer,
+    answer,
+  })
 
   if (isAnswer) {
-    await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     return c.json({ isAnswer, answer: answerOrder }, 200)
   }
