@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { filterByLanguage } from '../../util/problems'
 
 type BlankProblem = {
@@ -72,7 +73,7 @@ function submittedByNo(answer: unknown, blanks: { no: number }[]): Record<number
 }
 
 blank.post('', requireAuth, async (c) => {
-  const body = await c.req.json().catch(() => ({}))
+  const body = await readJsonBody(c)
   const { id, answer } = body
 
   const problem = blankProblems.find((problem) => problem.id === id)
@@ -87,7 +88,7 @@ blank.post('', requireAuth, async (c) => {
   )
   await submissions.create({
     userId: c.get('userId'),
-    problemId: id,
+    problemId: problem.id,
     isCorrect: isAnswer,
     answer: submitted,
   })

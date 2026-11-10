@@ -5,6 +5,7 @@ import { db } from '../../util/db/connection'
 import { friend } from '../../util/db/schema'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { toCamelCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
 
@@ -168,7 +169,7 @@ friends.get('/', requireAuth, async (c) => {
 })
 
 friends.post('/', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     targetUserId?: unknown
   }
   if (body.targetUserId === undefined || body.targetUserId === null) {

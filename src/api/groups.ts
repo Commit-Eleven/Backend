@@ -10,6 +10,7 @@ import { invites } from '../util/db/invites'
 import { groupMember, studyGroup, user } from '../util/db/schema'
 import { users } from '../util/db/users'
 import { type AuthEnv, requireAuth } from '../util/http/auth'
+import { readJsonBody } from '../util/http/body'
 import { toCamelCase } from '../util/http/case'
 import { Errors, ok } from '../util/http/response'
 
@@ -148,7 +149,7 @@ groups.get('', requireAuth, async (c) => {
 
 // 그룹 참여. 이미 참여한 경우와 정원이 찬 경우는 충돌로 응답함.
 groups.post('/join', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     groupId?: unknown
   }
   const rawId = body.groupId
@@ -200,7 +201,7 @@ groups.post('/:id/owner', requireAuth, async (c) => {
   const groupId = Number(rawGroupId)
   if (!Number.isSafeInteger(groupId)) throw Errors.invalidInput('잘못된 id')
 
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     targetUserId?: unknown
   }
   const rawTargetId = body.targetUserId
@@ -248,7 +249,7 @@ groups.post('/:id/owner', requireAuth, async (c) => {
 
 // 그룹 생성. 만든 사람이 방장으로 바로 들어감
 groups.post('', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     name?: unknown
     description?: unknown
     capacity?: unknown
@@ -339,7 +340,7 @@ groups.patch('/:id', requireAuth, async (c) => {
   const id = Number(rawId)
   if (!Number.isSafeInteger(id)) throw Errors.invalidInput('잘못된 id')
 
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     name?: unknown
     description?: unknown
     capacity?: unknown
@@ -430,7 +431,7 @@ groups.post('/:id/invites', requireAuth, async (c) => {
   if (!Number.isSafeInteger(groupId)) throw Errors.invalidInput('잘못된 id')
 
   const inviterId = c.get('userId')
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     targetUserId?: unknown
   }
 

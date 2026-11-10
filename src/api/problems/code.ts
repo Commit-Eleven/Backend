@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { filterByLanguage } from '../../util/problems'
 
 type CodeCheck = { pattern: string; flags?: string; message: string }
@@ -65,7 +66,7 @@ code.get('', requireAuth, (c) => {
 })
 
 code.post('', requireAuth, async (c) => {
-  const body = await c.req.json().catch(() => ({}))
+  const body = await readJsonBody(c)
   const { id, code: submitted } = body
 
   const problem = codeProblems.find((problem) => problem.id === id)

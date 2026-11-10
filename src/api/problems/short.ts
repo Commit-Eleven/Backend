@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { filterByLanguage } from '../../util/problems'
 
 type ShortProblem = {
@@ -47,7 +48,7 @@ short.get('', requireAuth, (c) => {
 })
 
 short.post('', requireAuth, async (c) => {
-  const body = await c.req.json().catch(() => ({}))
+  const body = await readJsonBody(c)
   const { id } = body
   // 출력값이 숫자라 20 처럼 숫자로 보내도 글자로 바꿔서 비교한다
   const answer = typeof body.answer === 'number' ? String(body.answer) : body.answer
@@ -65,7 +66,7 @@ short.post('', requireAuth, async (c) => {
   const userId = c.get('userId')
   const trimmed = answer.trim()
   const isAnswer = problem.content.answer.includes(trimmed)
-  await submissions.create({ userId, problemId: id, isCorrect: isAnswer, answer: trimmed })
+  await submissions.create({ userId, problemId: problem.id, isCorrect: isAnswer, answer: trimmed })
 
   if (isAnswer) {
     await awardSolveExp(userId, problem.id, problem.reward)

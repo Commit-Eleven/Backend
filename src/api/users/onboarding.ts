@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { STUDY_LANGUAGE, STUDY_LEVEL } from '../../util/config/constants'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { toCamelCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
 
@@ -46,7 +47,7 @@ onboarding.get('/', requireAuth, async (c) => {
 
 // 고른 값 저장. 이미 한 사람은 409
 onboarding.post('/', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     language?: unknown
     level?: unknown
   }

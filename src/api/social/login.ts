@@ -7,6 +7,7 @@ import { db } from '../../util/db/connection'
 import { refreshToken as refreshTokenTable } from '../../util/db/schema'
 import { type UserRow, users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { Errors, fail, ok } from '../../util/http/response'
 import { findOrCreateUser } from '../../util/sign'
 
@@ -186,7 +187,7 @@ login.get('/google/callback', async (c) => {
 
 // body에 refreshToken(refresh_token) 없으면 쿠키에서
 login.post('/refresh', async (c) => {
-  const body = (await c.req.json().catch(() => ({}))) as Record<string, unknown>
+  const body = await readJsonBody(c)
   const fromBody = body.refreshToken ?? body.refresh_token
   const raw = typeof fromBody === 'string' && fromBody ? fromBody : getCookie(c, REFRESH_COOKIE)
   if (!raw) return fail(c, 'UNAUTHORIZED', '리프레시 토큰 만료 또는 무효', 401)

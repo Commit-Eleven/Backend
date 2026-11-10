@@ -5,6 +5,7 @@ import { db } from '../util/db/connection'
 import { notification, notificationSetting } from '../util/db/schema'
 import { users } from '../util/db/users'
 import { type AuthEnv, requireAuth } from '../util/http/auth'
+import { readJsonBody } from '../util/http/body'
 import { toCamelCase } from '../util/http/case'
 import { Errors, ok } from '../util/http/response'
 
@@ -21,7 +22,7 @@ notifications.post('/', requireAuth, async (c) => {
   if (!sender) throw Errors.notFound('없는 사용자')
   if (sender.tier !== 'admin') throw Errors.forbidden('관리자만 시스템 알림을 보낼 수 있습니다')
 
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     userId?: unknown
     title?: unknown
     message?: unknown
@@ -109,7 +110,7 @@ notifications.get('/unread-count', requireAuth, async (c) => {
 
 // 알림 설정 변경. body에 포함된 종류만 변경한다.
 notifications.patch('/settings', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     settings?: unknown
   }
   if (!Array.isArray(body.settings) || body.settings.length === 0) {
@@ -167,7 +168,7 @@ notifications.get('/settings', requireAuth, async (c) => {
 // 알림 읽음 처리. 내 알림만 바꿀 수 있고, is_read 에 true/false 를 보낸다
 notifications.patch('/:id', requireAuth, async (c) => {
   const id = parsePositiveId(c.req.param('id'), 'id')
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     isRead?: unknown
   }
   if (typeof body.isRead !== 'boolean') throw Errors.invalidInput('is_read 는 true 또는 false')
