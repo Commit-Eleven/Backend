@@ -17,6 +17,7 @@ import {
   varchar,
 } from 'drizzle-orm/mysql-core'
 import {
+  AVATAR_URL_MAX_LENGTH,
   DEFAULT_GROUP_CAPACITY,
   DEFAULT_STUDY_LANGUAGE,
   EXP_REASON,
@@ -41,6 +42,7 @@ export const user = mysqlTable(
     id: pk(),
     email: varchar('email', { length: 255 }).notNull(),
     nickname: varchar('nickname', { length: 30 }).notNull(),
+    avatarUrl: varchar('avatar_url', { length: AVATAR_URL_MAX_LENGTH }), // 프로필 사진 주소. null 이면 기본 사진
     tag: char('tag', { length: NICKNAME_TAG_LENGTH }).notNull(), // 랜덤 4자리, 예: "3231"
     tier: mysqlEnum('tier', USER_TIER).default('normal').notNull(),
     totalExp: int('total_exp').default(0).notNull(),

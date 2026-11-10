@@ -20,6 +20,7 @@ import { ranking } from './ranking'
 import { login } from './social/login'
 import { tags } from './tags'
 import { units } from './units'
+import { avatar } from './users/avatar'
 import { friends } from './users/friends'
 import { me } from './users/me'
 import { onboarding } from './users/onboarding'
@@ -48,7 +49,10 @@ app.route('/api/tags', tags)
 
 app.route('/api/social/login', login)
 
+app.route('/api/users/me/avatar', avatar)
 app.route('/api/users/me', me)
+// 프론트가 /api/me/avatar 로 부르고 있어서 같은 기능을 여기에도 붙인다
+app.route('/api/me/avatar', avatar)
 app.route('/api/me', myGroups)
 app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)

@@ -21,9 +21,17 @@ export const users = {
   },
 
   // Public projection intentionally excludes email and providerId.
-  async findPublicProfileById(id: number): Promise<UserSummary | undefined> {
+  async findPublicProfileById(
+    id: number,
+  ): Promise<(UserSummary & Pick<UserRow, 'avatarUrl'>) | undefined> {
     const rows = await db
-      .select({ id: user.id, nickname: user.nickname, tag: user.tag, totalExp: user.totalExp })
+      .select({
+        id: user.id,
+        nickname: user.nickname,
+        tag: user.tag,
+        totalExp: user.totalExp,
+        avatarUrl: user.avatarUrl,
+      })
       .from(user)
       .where(eq(user.id, id))
       .limit(1)
@@ -146,6 +154,11 @@ export const users = {
     },
   ): Promise<void> {
     await db.update(user).set(data).where(eq(user.id, id))
+  },
+
+  // 프로필 사진 변경. null 이면 기본 사진으로 돌린다
+  async updateAvatar(id: number, avatarUrl: string | null): Promise<void> {
+    await db.update(user).set({ avatarUrl }).where(eq(user.id, id))
   },
 
   async updateNickname(id: number, nickname: string, tag: string): Promise<void> {

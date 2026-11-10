@@ -18,6 +18,9 @@ export const STUDY_LANGUAGE = ['html', 'javascript', 'java', 'python'] as const
 export const STUDY_LEVEL = ['beginner', 'intermediate', 'advanced'] as const
 
 // 프로필을 볼 수 있는 범위
+// 프로필 사진 주소 최대 길이
+export const AVATAR_URL_MAX_LENGTH = 512
+
 export const PROFILE_VISIBILITY = ['public', 'friends', 'private'] as const
 
 export const DEFAULT_STUDY_LANGUAGE = 'python'
