@@ -47,6 +47,7 @@ me.get('/', requireAuth, async (c) => {
     id: user.id,
     nickname: user.nickname,
     tag: user.tag,
+    avatarUrl: user.avatarUrl,
     email: user.email,
     tier: user.tier,
     totalExp: user.totalExp,
