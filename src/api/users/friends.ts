@@ -12,13 +12,8 @@ type FriendStatus = 'pending' | 'accepted'
 type SearchRelationship = 'none' | 'pending_outgoing' | 'pending_incoming' | 'friends'
 
 async function listFriends(userId: number, status?: FriendStatus) {
-  const relationshipFilter = or(
-    eq(friend.requesterId, userId),
-    eq(friend.addresseeId, userId),
-  )
-  const where = status
-    ? and(relationshipFilter, eq(friend.status, status))
-    : relationshipFilter
+  const relationshipFilter = or(eq(friend.requesterId, userId), eq(friend.addresseeId, userId))
+  const where = status ? and(relationshipFilter, eq(friend.status, status)) : relationshipFilter
   const rows = await db
     .select()
     .from(friend)
@@ -84,6 +79,7 @@ async function sendRequest(requesterId: number, addresseeId: number) {
 
   const target = await users.findById(addresseeId)
   if (!target) throw Errors.notFound('없는 사용자')
+  if (!target.allowFriendRequests) throw Errors.forbidden('친구 요청을 받지 않는 사용자입니다')
 
   const [existing] = await db
     .select()
@@ -197,8 +193,7 @@ friends.delete('/:id', requireAuth, async (c) => {
 })
 
 function parsePositiveId(value: unknown, field: string): number {
-  const input =
-    typeof value === 'number' && Number.isSafeInteger(value) ? String(value) : value
+  const input = typeof value === 'number' && Number.isSafeInteger(value) ? String(value) : value
   if (typeof input !== 'string' || !/^[1-9]\d*$/.test(input)) {
     throw Errors.invalidInput(`${field}는 양의 정수여야 합니다`)
   }

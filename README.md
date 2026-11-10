@@ -87,10 +87,27 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 학습 통계 | `GET /api/problems/learning/stats` |
 | 단원 진행률 | `GET /api/problems/learning/units/:unit_id` |
 | 객관식 조회·채점 | `GET /api/problems/mcq`, `POST /api/problems/mcq/answer` |
+| 코스를 언어로 거르기 | `GET /api/curriculum?language=html` |
+| 레슨 완료 저장 | `POST /api/lessons/:lessonId/complete` (body `{ language }`) |
+| 언어별 학습 진행 | `GET /api/users/me/progress?language=html` |
+| 코드 작성 문제 조회·제출 | `GET /api/problems/code?id=`, `POST /api/problems/code` (body `{ id, code }`) |
+| 알림 읽음 처리 | `PATCH /api/notifications/:id` (body `{ is_read }`) |
+| 안 읽은 알림 개수 | `GET /api/notifications/unread-count` |
+| 회원 탈퇴 | `DELETE /api/users/me` |
+| 친구 요청 허용·프로필 공개 범위 | `GET·PATCH /api/users/me/privacy` |
+| 오답노트 복습 완료 | `GET /api/users/me/wrong-notes/reviewed` |
 
 기존 `/auth/*`, `/friends`, `/me/*`, `/units/*`, `/users/search`, `/health` 주소는 새 경로로 변경했습니다.
 프론트엔드의 호출 주소와 구글 OAuth의 승인된 리디렉션 URI도 새 콜백 주소로 맞춰야 합니다.
 API 문서 주소 `/swagger`, `/doc`와 프론트엔드 로그인 완료 주소 `/auth/callback`은 유지합니다.
+
+## 프론트 요청 반영 메모
+
+- 커리큘럼은 `html-basic`, `javascript-basic`, `java-basic`, `python-basic` 코스가 있고, 코스마다 `language`가 있습니다. 다음 단원은 같은 언어 코스 안에서만 이어집니다.
+- 레슨 완료는 `lesson_progress`에 저장합니다. `lessonId`는 프론트가 정한 문자열(영문·숫자·`_`·`.`·`-`, 64자 이하)이며 서버의 단원·문제 id와는 따로 관리합니다. 문제가 있는 단원의 진행률은 제출 기록으로 계산하고, 문제가 없는 설명 레슨은 완료 API로 기록합니다.
+- 코드 작성 문제는 서버에서 코드를 실행하지 않고 `static/problems/code.json`의 `checks`(정규식)에 맞는지만 검사합니다. 틀리면 부족한 조건을 `failed`로 돌려줍니다.
+- 회원 탈퇴 시 제출 기록, 경험치, 친구, 알림, 레슨 기록은 함께 삭제됩니다. 다른 멤버가 남은 그룹의 방장이면 `409 OWNS_GROUPS`와 그룹 목록을 돌려주니 방장을 먼저 넘겨야 합니다. 나 혼자 남은 그룹은 계정과 함께 삭제됩니다.
+- 프로필 공개 범위는 `public`(기본), `friends`, `private`입니다. 본인은 항상 볼 수 있고, 아니면 `403`입니다.
 
 ```sh
 bun run typecheck

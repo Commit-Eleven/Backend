@@ -142,6 +142,8 @@ const oauthCookieOpts = {
 }
 
 const REFRESH_COOKIE = 'refreshToken'
+export const clearRefreshCookie = (c: Context) =>
+  deleteCookie(c, REFRESH_COOKIE, { path: '/api/social/login' })
 const setRefreshCookie = (c: Context, raw: string) =>
   setCookie(c, REFRESH_COOKIE, raw, {
     path: '/api/social/login',
@@ -196,7 +198,7 @@ login.post('/refresh', async (c) => {
 
 login.post('/logout', requireAuth, async (c) => {
   await db.delete(refreshTokenTable).where(eq(refreshTokenTable.userId, c.get('userId')))
-  deleteCookie(c, REFRESH_COOKIE, { path: '/api/social/login' })
+  clearRefreshCookie(c)
   return c.body(null, 204)
 })
 

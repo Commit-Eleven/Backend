@@ -23,6 +23,7 @@ import {
   FRIEND_STATUS,
   GROUP_ROLE,
   NOTIFICATION_TYPE,
+  PROFILE_VISIBILITY,
   STUDY_LEVEL,
   USER_TIER,
 } from '../config/constants'
@@ -50,6 +51,10 @@ export const user = mysqlTable(
       .notNull(),
     studyLevel: mysqlEnum('study_level', STUDY_LEVEL), // 온보딩 전에는 null
     onboardedAt: timestamp('onboarded_at'), // 온보딩 끝낸 시각. null 이면 아직 안 함
+    allowFriendRequests: boolean('allow_friend_requests').default(true).notNull(), // 친구 요청 받기
+    profileVisibility: mysqlEnum('profile_visibility', PROFILE_VISIBILITY)
+      .default('public')
+      .notNull(),
     createdAt: createdAt(),
     updatedAt: updatedAt(),
   },
@@ -76,6 +81,23 @@ export const refreshToken = mysqlTable(
   (t) => ({
     uqHash: unique('uq_refresh_hash').on(t.tokenHash),
     idxUser: index('idx_refresh_user').on(t.userId),
+  }),
+)
+
+// 레슨 완료 기록. lessonId 는 프론트가 정한 문자열이라 서버의 문제·단원 id 와 별개
+export const lessonProgress = mysqlTable(
+  'lesson_progress',
+  {
+    userId: bigint('user_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    lessonId: varchar('lesson_id', { length: 64 }).notNull(),
+    language: varchar('language', { length: 20 }).notNull(),
+    completedAt: timestamp('completed_at').defaultNow().notNull(),
+  },
+  (t) => ({
+    pk: primaryKey({ name: 'pk_lesson_progress', columns: [t.userId, t.lessonId] }),
+    idxUserLanguage: index('idx_lesson_user_language').on(t.userId, t.language),
   }),
 )
 

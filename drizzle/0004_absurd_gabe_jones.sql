@@ -1,0 +1,2 @@
+ALTER TABLE `user` ADD `allow_friend_requests` boolean DEFAULT true NOT NULL;--> statement-breakpoint
+ALTER TABLE `user` ADD `profile_visibility` enum('public','friends','private') DEFAULT 'public' NOT NULL;

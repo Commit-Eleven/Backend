@@ -1,7 +1,7 @@
 // 문제 원본(static/problems/*.json)의 공통 메타데이터 모음.
 // 제출 이력 등에서 problemId로 title/type 같은 정보를 붙여줄 때 쓴다.
 
-const FILES = ['mcq', 'blank', 'parsons', 'short'] as const
+const FILES = ['mcq', 'blank', 'parsons', 'short', 'code'] as const
 
 // 화면에 보여줄 유형 이름
 export const TYPE_LABEL: Record<(typeof FILES)[number], string> = {
@@ -9,6 +9,7 @@ export const TYPE_LABEL: Record<(typeof FILES)[number], string> = {
   blank: '빈칸 채우기',
   parsons: '순서 맞추기',
   short: '주관식',
+  code: '코드 작성',
 }
 
 type ProblemMeta = {

@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import {
   EXP_HISTORY_LIMIT,
   HOME_RECOMMEND_LIMIT,
+  PROFILE_VISIBILITY,
   STUDY_LANGUAGE,
   STUDY_LEVEL,
   SUBMISSION_PAGE_LIMIT,
@@ -9,14 +10,22 @@ import {
 } from '../../util/config/constants'
 import { findRecentExp } from '../../util/db/exp'
 import { invites } from '../../util/db/invites'
+import { lessons } from '../../util/db/lessons'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
-import { toCamelCase } from '../../util/http/case'
+import { toCamelCase, toSnakeCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
-import { currentUnitId, findUnit, streakDays, unitProgress } from '../../util/learning'
+import {
+  currentUnitId,
+  findUnit,
+  streakDays,
+  unitProgress,
+  unitsOfLanguage,
+} from '../../util/learning'
 import { problemMetaById, problems } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
+import { clearRefreshCookie } from '../social/login'
 
 export const me = new Hono<AuthEnv>()
 
@@ -44,6 +53,8 @@ me.get('/', requireAuth, async (c) => {
     studyLanguage: user.studyLanguage,
     studyLevel: user.studyLevel,
     onboarded: user.studyLevel !== null,
+    allowFriendRequests: user.allowFriendRequests,
+    profileVisibility: user.profileVisibility,
     createdAt: user.createdAt,
   })
 })
@@ -120,7 +131,7 @@ me.get('/home', requireAuth, async (c) => {
     submissions.submittedAtSince(userId, new Date(Date.now() - STREAK_WINDOW_MS)),
   ])
 
-  const unitId = currentUnitId(user.studyUnitId, solved)
+  const unitId = currentUnitId(user.studyUnitId, solved, user.studyLanguage)
   const found = unitId ? findUnit(unitId) : undefined
 
   let currentUnit = null
@@ -167,6 +178,85 @@ me.get('/home', requireAuth, async (c) => {
     },
     currentUnit,
     recommendations,
+  })
+})
+
+// 친구 요청 허용과 프로필 공개 범위 조회. 설정 화면에서 고를 수 있는 공개 범위 목록도 같이 준다
+me.get('/privacy', requireAuth, async (c) => {
+  const user = await findMe(c.get('userId'))
+  return ok(c, {
+    allowFriendRequests: user.allowFriendRequests,
+    profileVisibility: user.profileVisibility,
+    visibilityOptions: PROFILE_VISIBILITY,
+  })
+})
+
+// 개인정보 설정 변경. allow_friend_requests, profile_visibility 중 보낸 것만 바꾼다
+me.patch('/privacy', requireAuth, async (c) => {
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    allowFriendRequests?: unknown
+    profileVisibility?: unknown
+  }
+  if (body.allowFriendRequests === undefined && body.profileVisibility === undefined) {
+    throw Errors.invalidInput('allow_friend_requests 나 profile_visibility 중 하나는 보내야 함')
+  }
+  if (body.allowFriendRequests !== undefined && typeof body.allowFriendRequests !== 'boolean') {
+    throw Errors.invalidInput('allow_friend_requests 는 true 또는 false')
+  }
+  if (
+    body.profileVisibility !== undefined &&
+    !PROFILE_VISIBILITY.includes(body.profileVisibility as (typeof PROFILE_VISIBILITY)[number])
+  ) {
+    throw Errors.invalidInput(`profile_visibility 는 ${PROFILE_VISIBILITY.join(', ')} 중 하나`)
+  }
+
+  const userId = c.get('userId')
+  await findMe(userId)
+  await users.updatePrivacy(userId, {
+    allowFriendRequests: body.allowFriendRequests as boolean | undefined,
+    profileVisibility: body.profileVisibility as (typeof PROFILE_VISIBILITY)[number] | undefined,
+  })
+
+  const user = await findMe(userId)
+  return ok(c, {
+    allowFriendRequests: user.allowFriendRequests,
+    profileVisibility: user.profileVisibility,
+  })
+})
+
+// 언어별 학습 진행. 완료한 레슨 목록과 단원별 문제 풀이 진행률을 같이 준다.
+// language 를 안 보내면 내 학습 언어
+me.get('/progress', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  const user = await findMe(userId)
+
+  const language = c.req.query('language') ?? user.studyLanguage
+  if (!isLanguage(language)) {
+    throw Errors.invalidInput(`language 는 ${STUDY_LANGUAGE.join(', ')} 중 하나`)
+  }
+
+  const [done, solved] = await Promise.all([
+    lessons.listByUser(userId, language),
+    submissions.solvedMapByUser(userId),
+  ])
+
+  return ok(c, {
+    language,
+    lessons: done.map((row) => ({ lessonId: row.lessonId, completedAt: row.completedAt })),
+    completedLessonCount: done.length,
+    units: unitsOfLanguage(language).map(({ course, unit }) => {
+      const progress = unitProgress(unit, solved)
+      return {
+        unitId: unit.unitId,
+        title: unit.title,
+        courseId: course.courseId,
+        courseTitle: course.title,
+        order: unit.order,
+        total: progress.total,
+        solved: progress.solved,
+        completePercent: progress.completePercent,
+      }
+    }),
   })
 })
 
@@ -287,6 +377,64 @@ me.get('/wrong-notes', requireAuth, async (c) => {
     }),
     nextCursor,
   })
+})
+
+// 오답노트 복습 완료. 틀렸다가 다시 맞힌 문제를 다시 맞힌 순서대로 최신순으로 준다
+me.get('/wrong-notes/reviewed', requireAuth, async (c) => {
+  const userId = c.get('userId')
+
+  const limit = parseLimit(c.req.query('limit'), SUBMISSION_PAGE_LIMIT, SUBMISSION_PAGE_LIMIT_MAX)
+  const cursor = parseCursor(c.req.query('cursor'))
+
+  // 다음 페이지 존재 여부를 위해 1개 더 조회
+  const rows = await submissions.findReviewedByUser(userId, { cursor, limit: limit + 1 })
+  const items = rows.slice(0, limit)
+  const nextCursor = rows.length > limit ? items[items.length - 1].id : null
+
+  return ok(c, {
+    reviewed: items.map((row) => {
+      const meta = problemMetaById.get(row.problemId)
+      return {
+        submissionId: row.id,
+        problemId: row.problemId,
+        type: meta?.type ?? null,
+        title: meta?.title ?? null,
+        difficulty: meta?.difficulty ?? null,
+        language: meta?.language ?? null,
+        unitId: meta?.unitId ?? null,
+        myAnswer: row.answer,
+        reviewedAt: row.createdAt,
+      }
+    }),
+    nextCursor,
+  })
+})
+
+// 회원 탈퇴. 내 기록은 모두 함께 지워진다.
+// 다른 멤버가 있는 그룹의 방장이면 막고, 먼저 방장을 넘겨야 할 그룹 목록을 알려준다.
+// 나 혼자 남은 그룹은 계정과 같이 사라진다
+me.delete('/', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  await findMe(userId)
+
+  const groups = await users.ownedGroupsWithOtherMembers(userId)
+  if (groups.length > 0) {
+    return c.json(
+      toSnakeCase({
+        success: false,
+        error: {
+          code: 'OWNS_GROUPS',
+          message: '방장인 그룹의 방장을 먼저 다른 멤버에게 넘겨주세요',
+          groups,
+        },
+      }),
+      409,
+    )
+  }
+
+  await users.remove(userId)
+  clearRefreshCookie(c)
+  return c.body(null, 204)
 })
 
 function parseLimit(raw: string | undefined, fallback: number, max: number): number {

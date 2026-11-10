@@ -1,8 +1,8 @@
 import { and, asc, desc, eq, gt, inArray, like, ne, sql } from 'drizzle-orm'
-import type { STUDY_LANGUAGE, STUDY_LEVEL } from '../config/constants'
+import type { PROFILE_VISIBILITY, STUDY_LANGUAGE, STUDY_LEVEL } from '../config/constants'
 import { SEARCH_RESULT_LIMIT } from '../config/constants'
 import { db } from './connection'
-import { user } from './schema'
+import { groupMember, studyGroup, user } from './schema'
 
 export type UserRow = typeof user.$inferSelect
 export type UserSummary = Pick<UserRow, 'id' | 'nickname' | 'tag' | 'totalExp'>
@@ -103,6 +103,46 @@ export const users = {
     data: {
       studyLanguage?: (typeof STUDY_LANGUAGE)[number]
       studyLevel?: (typeof STUDY_LEVEL)[number]
+    },
+  ): Promise<void> {
+    await db.update(user).set(data).where(eq(user.id, id))
+  },
+
+  // 내가 방장인 그룹 중 다른 멤버가 남아 있는 그룹. 탈퇴 전에 방장을 넘겨야 하는 그룹이다
+  async ownedGroupsWithOtherMembers(userId: number) {
+    const members = sql<number>`count(${groupMember.userId})`
+    const rows = await db
+      .select({ id: studyGroup.id, name: studyGroup.name, memberCount: members })
+      .from(studyGroup)
+      .leftJoin(groupMember, eq(groupMember.groupId, studyGroup.id))
+      .where(eq(studyGroup.ownerId, userId))
+      .groupBy(studyGroup.id, studyGroup.name)
+      .having(sql`${members} > 1`)
+      .orderBy(asc(studyGroup.id))
+    return rows.map((row) => ({ ...row, memberCount: Number(row.memberCount) }))
+  },
+
+  // 계정 삭제. 제출 기록, 경험치, 친구, 알림, 토큰, 혼자 남은 내 그룹은 FK cascade 로 같이 지워진다
+  async remove(id: number): Promise<void> {
+    await db.delete(user).where(eq(user.id, id))
+  },
+
+  async findProfileVisibility(
+    id: number,
+  ): Promise<(typeof PROFILE_VISIBILITY)[number] | undefined> {
+    const [row] = await db
+      .select({ profileVisibility: user.profileVisibility })
+      .from(user)
+      .where(eq(user.id, id))
+    return row?.profileVisibility
+  },
+
+  // 개인정보 설정. 넘어온 값만 바꾼다
+  async updatePrivacy(
+    id: number,
+    data: {
+      allowFriendRequests?: boolean
+      profileVisibility?: (typeof PROFILE_VISIBILITY)[number]
     },
   ): Promise<void> {
     await db.update(user).set(data).where(eq(user.id, id))

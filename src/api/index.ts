@@ -7,8 +7,10 @@ import { curriculum } from './curriculum'
 import { groupInvites } from './group-invites'
 import { groups, myGroups } from './groups'
 import { health } from './health'
+import { lessonsApi } from './lessons'
 import { notifications } from './notifications'
 import { blank } from './problems/blank'
+import { code } from './problems/code'
 import { mcq } from './problems/mcq'
 import { parsons } from './problems/parsons'
 import { short } from './problems/short'
@@ -31,6 +33,7 @@ app.route('/api/health', health)
 
 app.route('/api/curriculum', curriculum)
 app.route('/api/units', units)
+app.route('/api/lessons', lessonsApi)
 app.route('/api/ranking', ranking)
 app.route('/api/tags', tags)
 
@@ -50,6 +53,7 @@ app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)
 app.route('/api/problems/parsons', parsons)
 app.route('/api/problems/short', short)
+app.route('/api/problems/code', code)
 
 app.notFound((c) => fail(c, 'NotFound', '존재하지 않는 경로', 404))
 

@@ -40,5 +40,117 @@
     "difficulty": 1,
     "language": "python",
     "unitId": "vars-types"
+  },
+  {
+    "id": "html-structure-short-1",
+    "type": "short",
+    "title": "문서 제목 태그",
+    "description": "브라우저 탭에 표시되는 문서 제목을 정하는 태그 이름은? (꺾쇠 없이 입력)",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-structure",
+    "content": {
+      "code": "<title>내 첫 페이지</title>",
+      "answer": ["title", "<title>"]
+    }
+  },
+  {
+    "id": "html-text-links-short-1",
+    "type": "short",
+    "title": "줄바꿈 태그",
+    "description": "줄을 바꾸는 태그의 이름은? (꺾쇠 없이 입력)",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-text-links",
+    "content": {
+      "code": "첫째 줄<br>둘째 줄",
+      "answer": ["br", "<br>", "<br/>", "<br />"]
+    }
+  },
+  {
+    "id": "html-lists-images-short-1",
+    "type": "short",
+    "title": "대체 텍스트 속성",
+    "description": "img 태그에서 이미지를 못 불러올 때 보여 줄 설명을 정하는 속성 이름은?",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-lists-images",
+    "content": {
+      "code": "<img src=\"cat.png\" alt=\"고양이 사진\">",
+      "answer": ["alt"]
+    }
+  },
+  {
+    "id": "js-basics-short-1",
+    "type": "short",
+    "title": "연산자 우선순위",
+    "description": "다음 코드의 출력값은?",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "javascript",
+    "unitId": "js-basics",
+    "content": {
+      "code": "console.log(2 + 3 * 4)",
+      "answer": ["14"]
+    }
+  },
+  {
+    "id": "js-functions-conditions-short-1",
+    "type": "short",
+    "title": "삼항 연산자",
+    "description": "다음 코드의 출력값은?",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "javascript",
+    "unitId": "js-functions-conditions",
+    "content": {
+      "code": "const n = 7\nconsole.log(n % 2 === 0 ? \"짝수\" : \"홀수\")",
+      "answer": ["홀수"]
+    }
+  },
+  {
+    "id": "java-basics-short-1",
+    "type": "short",
+    "title": "정수 나눗셈",
+    "description": "다음 코드의 출력값은?",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "java",
+    "unitId": "java-basics",
+    "content": {
+      "code": "int a = 7;\nint b = 2;\nSystem.out.println(a / b);",
+      "answer": ["3"]
+    }
+  },
+  {
+    "id": "java-control-short-1",
+    "type": "short",
+    "title": "반복문 합계",
+    "description": "다음 코드의 출력값은?",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "java",
+    "unitId": "java-control",
+    "content": {
+      "code": "int sum = 0;\nfor (int i = 1; i <= 4; i++) {\n  sum += i;\n}\nSystem.out.println(sum);",
+      "answer": ["10"]
+    }
+  },
+  {
+    "id": "conditionals-short-1",
+    "type": "short",
+    "title": "조건문 결과",
+    "description": "다음 코드의 출력값은?",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "python",
+    "unitId": "conditionals",
+    "content": {
+      "code": "x = 15\nif x > 10:\n    print(\"큼\")\nelse:\n    print(\"작음\")",
+      "answer": ["큼"]
+    }
   }
 ]

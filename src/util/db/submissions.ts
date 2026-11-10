@@ -1,4 +1,5 @@
-import { and, desc, eq, gte, inArray, lt, notInArray, sql } from 'drizzle-orm'
+import { and, desc, eq, gt, gte, inArray, lt, min, notInArray, sql } from 'drizzle-orm'
+import { alias } from 'drizzle-orm/mysql-core'
 import { db } from './connection'
 import { submission } from './schema'
 
@@ -107,6 +108,40 @@ export const submissions = {
       .limit(opts.limit)
 
     const ids = latest.map((row) => Number(row.lastId))
+    if (ids.length === 0) return []
+
+    const rows = await db.select().from(submission).where(inArray(submission.id, ids))
+    return rows.sort((a, b) => b.id - a.id)
+  },
+
+  // 오답노트 복습 완료. 한 번 틀린 뒤에 맞힌 적이 있는 문제를, 처음 다시 맞힌 제출 기준으로 최신순.
+  // 돌려주는 건 그 '다시 맞힌' 제출이고, cursor 는 그 제출 id 보다 오래된 것만 가져온다
+  async findReviewedByUser(
+    userId: number,
+    opts: { cursor?: number; limit: number },
+  ): Promise<SubmissionRow[]> {
+    const correct = alias(submission, 'correct')
+    const reviewedId = min(correct.id)
+
+    const reviewed = await db
+      .select({ reviewedId })
+      .from(submission)
+      .innerJoin(
+        correct,
+        and(
+          eq(correct.userId, submission.userId),
+          eq(correct.problemId, submission.problemId),
+          eq(correct.isCorrect, true),
+          gt(correct.id, submission.id),
+        ),
+      )
+      .where(and(eq(submission.userId, userId), eq(submission.isCorrect, false)))
+      .groupBy(submission.problemId)
+      .having(opts.cursor ? lt(reviewedId, opts.cursor) : undefined)
+      .orderBy(desc(reviewedId))
+      .limit(opts.limit)
+
+    const ids = reviewed.map((row) => Number(row.reviewedId))
     if (ids.length === 0) return []
 
     const rows = await db.select().from(submission).where(inArray(submission.id, ids))

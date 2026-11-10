@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { friendships } from '../../util/db/friends'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { Errors, ok } from '../../util/http/response'
@@ -15,6 +16,16 @@ userProfile.get('/:id', requireAuth, async (c) => {
 
   const user = await users.findPublicProfileById(id)
   if (!user) throw Errors.notFound('없는 사용자')
+
+  // 내 프로필은 항상 볼 수 있고, 남의 프로필은 공개 범위를 따른다
+  const viewerId = c.get('userId')
+  if (viewerId !== id) {
+    const visibility = await users.findProfileVisibility(id)
+    if (visibility === 'private') throw Errors.forbidden('비공개 프로필입니다')
+    if (visibility === 'friends' && !(await friendships.areFriends(viewerId, id))) {
+      throw Errors.forbidden('친구에게만 공개된 프로필입니다')
+    }
+  }
 
   return ok(c, { user })
 })

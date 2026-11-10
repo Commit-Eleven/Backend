@@ -14,7 +14,6 @@
       ],
       "answer_order": [0, 1, 2, 3, 4]
     },
-
     "description": "조각을 올바른 순서로 배치하세요.",
     "difficulty": 3,
     "language": "python",
@@ -36,10 +35,133 @@
       ],
       "answer_order": [0, 1, 2, 3, 4, 5]
     },
-
     "description": "조각을 올바른 순서로 배치하세요.",
     "difficulty": 3,
     "language": "python",
     "unitId": "vars-types"
+  },
+  {
+    "id": "html-structure-parsons-1",
+    "type": "parsons",
+    "title": "HTML 문서 뼈대",
+    "description": "조각을 올바른 순서로 배치해 HTML 문서의 뼈대를 만드세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-structure",
+    "content": {
+      "fragments": ["<body>", "</html>", "<!DOCTYPE html>", "</body>", "<html>"],
+      "answer_order": [2, 4, 0, 3, 1]
+    }
+  },
+  {
+    "id": "html-text-links-parsons-1",
+    "type": "parsons",
+    "title": "문단 안의 강조",
+    "description": "조각을 올바른 순서로 배치해 강조가 들어간 문단을 만드세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-text-links",
+    "content": {
+      "fragments": ["</p>", "  글자를 <strong>강조</strong>합니다.", "<p>"],
+      "answer_order": [2, 1, 0]
+    }
+  },
+  {
+    "id": "html-lists-images-parsons-1",
+    "type": "parsons",
+    "title": "단계 목록 만들기",
+    "description": "조각을 올바른 순서로 배치해 1단계, 2단계 목록을 만드세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-lists-images",
+    "content": {
+      "fragments": ["  <li>2단계</li>", "</ol>", "<ol>", "  <li>1단계</li>"],
+      "answer_order": [2, 3, 0, 1]
+    }
+  },
+  {
+    "id": "js-basics-parsons-1",
+    "type": "parsons",
+    "title": "합계 출력",
+    "description": "조각을 올바른 순서로 배치해 합계를 출력하세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "javascript",
+    "unitId": "js-basics",
+    "content": {
+      "fragments": ["console.log(sum)", "let sum = 0", "sum = sum + 5"],
+      "answer_order": [1, 2, 0]
+    }
+  },
+  {
+    "id": "js-functions-conditions-parsons-1",
+    "type": "parsons",
+    "title": "짝수 홀수 판별",
+    "description": "조각을 올바른 순서로 배치해 짝수와 홀수를 판별하세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "javascript",
+    "unitId": "js-functions-conditions",
+    "content": {
+      "fragments": [
+        "  console.log(\"홀수\")",
+        "}",
+        "if (n % 2 === 0) {",
+        "} else {",
+        "  console.log(\"짝수\")"
+      ],
+      "answer_order": [2, 4, 3, 0, 1]
+    }
+  },
+  {
+    "id": "java-basics-parsons-1",
+    "type": "parsons",
+    "title": "값 더해 출력하기",
+    "description": "조각을 올바른 순서로 배치해 x에 5를 더한 값을 출력하세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "java",
+    "unitId": "java-basics",
+    "content": {
+      "fragments": ["System.out.println(x);", "int x = 10;", "x = x + 5;"],
+      "answer_order": [1, 2, 0]
+    }
+  },
+  {
+    "id": "java-control-parsons-1",
+    "type": "parsons",
+    "title": "1부터 3까지 합",
+    "description": "조각을 올바른 순서로 배치해 1부터 3까지의 합을 출력하세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "java",
+    "unitId": "java-control",
+    "content": {
+      "fragments": [
+        "}",
+        "System.out.println(sum);",
+        "  sum += i;",
+        "int sum = 0;",
+        "for (int i = 1; i <= 3; i++) {"
+      ],
+      "answer_order": [3, 4, 2, 0, 1]
+    }
+  },
+  {
+    "id": "conditionals-parsons-1",
+    "type": "parsons",
+    "title": "짝수 홀수 판별",
+    "description": "조각을 올바른 순서로 배치해 짝수와 홀수를 판별하세요.",
+    "reward": 30,
+    "difficulty": 2,
+    "language": "python",
+    "unitId": "conditionals",
+    "content": {
+      "fragments": ["    print(\"홀수\")", "else:", "if x % 2 == 0:", "    print(\"짝수\")"],
+      "answer_order": [2, 3, 1, 0]
+    }
   }
 ]

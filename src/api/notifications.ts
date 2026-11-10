@@ -95,7 +95,16 @@ notifications.get('/', requireAuth, async (c) => {
     .limit(limit)
     .offset(offset)
 
-  return ok(c, { items, pagination: { page, limit, total: totalRow.value } })
+  return ok(c, {
+    items,
+    pagination: { page, limit, total: totalRow.value },
+    unreadCount: await countUnread(userId),
+  })
+})
+
+// 안 읽은 알림 개수. 사이드바 배지처럼 목록 없이 숫자만 필요할 때
+notifications.get('/unread-count', requireAuth, async (c) => {
+  return ok(c, { unreadCount: await countUnread(c.get('userId')) })
 })
 
 // 알림 설정 변경. body에 포함된 종류만 변경한다.
@@ -154,6 +163,30 @@ notifications.get('/settings', requireAuth, async (c) => {
     })),
   })
 })
+
+// 알림 읽음 처리. 내 알림만 바꿀 수 있고, is_read 에 true/false 를 보낸다
+notifications.patch('/:id', requireAuth, async (c) => {
+  const id = parsePositiveId(c.req.param('id'), 'id')
+  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+    isRead?: unknown
+  }
+  if (typeof body.isRead !== 'boolean') throw Errors.invalidInput('is_read 는 true 또는 false')
+
+  const mine = and(eq(notification.id, id), eq(notification.userId, c.get('userId')))
+  const [found] = await db.select({ id: notification.id }).from(notification).where(mine)
+  if (!found) throw Errors.notFound('없는 알림')
+
+  await db.update(notification).set({ isRead: body.isRead }).where(mine)
+  return ok(c, { id, isRead: body.isRead })
+})
+
+async function countUnread(userId: number): Promise<number> {
+  const [row] = await db
+    .select({ value: count() })
+    .from(notification)
+    .where(and(eq(notification.userId, userId), eq(notification.isRead, false)))
+  return row.value
+}
 
 function parsePositiveQuery(raw: string | undefined, fallback: number, field: string): number {
   if (raw === undefined) return fallback
