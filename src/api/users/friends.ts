@@ -12,13 +12,8 @@ type FriendStatus = 'pending' | 'accepted'
 type SearchRelationship = 'none' | 'pending_outgoing' | 'pending_incoming' | 'friends'
 
 async function listFriends(userId: number, status?: FriendStatus) {
-  const relationshipFilter = or(
-    eq(friend.requesterId, userId),
-    eq(friend.addresseeId, userId),
-  )
-  const where = status
-    ? and(relationshipFilter, eq(friend.status, status))
-    : relationshipFilter
+  const relationshipFilter = or(eq(friend.requesterId, userId), eq(friend.addresseeId, userId))
+  const where = status ? and(relationshipFilter, eq(friend.status, status)) : relationshipFilter
   const rows = await db
     .select()
     .from(friend)
@@ -198,8 +193,7 @@ friends.delete('/:id', requireAuth, async (c) => {
 })
 
 function parsePositiveId(value: unknown, field: string): number {
-  const input =
-    typeof value === 'number' && Number.isSafeInteger(value) ? String(value) : value
+  const input = typeof value === 'number' && Number.isSafeInteger(value) ? String(value) : value
   if (typeof input !== 'string' || !/^[1-9]\d*$/.test(input)) {
     throw Errors.invalidInput(`${field}는 양의 정수여야 합니다`)
   }
