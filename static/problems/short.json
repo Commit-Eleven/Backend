@@ -49,6 +49,7 @@
     "reward": 30,
     "difficulty": 2,
     "language": "html",
+    "caseSensitive": false,
     "unitId": "html-structure",
     "content": {
       "code": "<title>내 첫 페이지</title>",
@@ -63,6 +64,7 @@
     "reward": 30,
     "difficulty": 2,
     "language": "html",
+    "caseSensitive": false,
     "unitId": "html-text-links",
     "content": {
       "code": "첫째 줄<br>둘째 줄",
@@ -77,6 +79,7 @@
     "reward": 30,
     "difficulty": 2,
     "language": "html",
+    "caseSensitive": false,
     "unitId": "html-lists-images",
     "content": {
       "code": "<img src=\"cat.png\" alt=\"고양이 사진\">",

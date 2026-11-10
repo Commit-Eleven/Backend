@@ -26,7 +26,7 @@ const compiled = new Map(codeProblems.map((p) => [p.id, compileChecks(p.content.
 const MAX_CODE_LENGTH = 10_000
 
 // 조회할 때 채점 규칙(checks)은 빼고 내려준다
-function toQuestion(p: CodeProblem) {
+export function toQuestion(p: CodeProblem) {
   return {
     id: p.id,
     type: p.type,
@@ -87,8 +87,8 @@ code.post('', requireAuth, async (c) => {
   })
 
   if (isAnswer) {
-    await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, passed, total }, 200)
+    const exp = await awardSolveExp(userId, problem.id, problem.reward)
+    return c.json({ isAnswer, passed, total, ...exp }, 200)
   }
   return c.json({ isAnswer, passed, total, failed, ...(syntaxError ? { syntaxError } : {}) }, 200)
 })

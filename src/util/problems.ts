@@ -41,3 +41,15 @@ export function filterByLanguage<T extends { language?: string }>(
   const lang = language.trim().toLowerCase() === 'js' ? 'javascript' : language.trim().toLowerCase()
   return list.filter((problem) => !problem.language || problem.language === lang)
 }
+
+// 제출한 답이 인정되는 답 중 하나와 같은지. 코드는 대소문자가 의미가 있어서 기본은 구분한다.
+// HTML 태그처럼 대소문자가 상관없는 문제는 문제 파일에 "caseSensitive": false 를 넣는다
+export function matchesAnswer(
+  submitted: string,
+  accepted: string[],
+  caseSensitive = true,
+): boolean {
+  const normalize = (value: string) => (caseSensitive ? value.trim() : value.trim().toLowerCase())
+  const target = normalize(submitted)
+  return accepted.some((answer) => normalize(answer) === target)
+}

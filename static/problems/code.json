@@ -21,7 +21,8 @@
           "message": "body 안에 내용이 있는 p 문단이 필요해요"
         }
       ]
-    }
+    },
+    "unitId": "html-structure"
   },
   {
     "id": "javascript-code-1",
@@ -43,7 +44,8 @@
           "message": "a + b 를 돌려줘요"
         }
       ]
-    }
+    },
+    "unitId": "js-functions-conditions"
   },
   {
     "id": "java-code-1",
@@ -68,6 +70,185 @@
           "pattern": "System\\.out\\.println\\s*\\(\\s*\"Hello\"\\s*\\)\\s*;",
           "message": "System.out.println(\"Hello\"); 로 출력해요",
           "in": "source"
+        }
+      ]
+    },
+    "unitId": "java-basics"
+  },
+  {
+    "id": "python-vars-types-code-1",
+    "type": "code",
+    "title": "변수 만들고 출력하기",
+    "description": "name 변수에 이름(문자열), age 변수에 나이(숫자)를 넣고 print 로 두 변수를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "language": "python",
+    "unitId": "vars-types",
+    "content": {
+      "starter_code": "# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "(^|\\n)\\s*name\\s*=\\s*(\"|')",
+          "message": "name 변수에 문자열을 넣어요"
+        },
+        {
+          "pattern": "(^|\\n)\\s*name\\s*=\\s*(\"[^\"\\n]+\"|'[^'\\n]+')",
+          "message": "name 에 빈 문자열이 아닌 이름을 넣어요",
+          "in": "source"
+        },
+        {
+          "pattern": "(^|\\n)\\s*age\\s*=\\s*\\d+\\s*(\\n|$)",
+          "message": "age 변수에 숫자를 넣어요"
+        },
+        {
+          "pattern": "print\\s*\\([^)]*\\bname\\b",
+          "message": "print 로 name 을 출력해요"
+        },
+        {
+          "pattern": "print\\s*\\([^)]*\\bage\\b",
+          "message": "print 로 age 를 출력해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "python-conditionals-code-1",
+    "type": "code",
+    "title": "점수로 합격 판단하기",
+    "description": "score 가 60 이상이면 \"합격\", 아니면 \"불합격\" 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 2,
+    "language": "python",
+    "unitId": "conditionals",
+    "content": {
+      "starter_code": "score = 75\n# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bif\\s+\\(?\\s*(score\\s*>=\\s*60|60\\s*<=\\s*score)\\s*\\)?\\s*:",
+          "message": "if score >= 60: 으로 조건을 써요"
+        },
+        {
+          "pattern": "(^|\\n)\\s*else\\s*:",
+          "message": "else: 로 아닌 경우를 처리해요"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*(\"합격\"|'합격')\\s*\\)",
+          "message": "print(\"합격\") 을 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*(\"불합격\"|'불합격')\\s*\\)",
+          "message": "print(\"불합격\") 을 출력해요",
+          "in": "source"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-text-links-code-1",
+    "type": "code",
+    "title": "링크 만들기",
+    "description": "body 안에 https://codegram.me 로 가는 링크를 만들고, 링크 글자도 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-text-links",
+    "content": {
+      "starter_code": "<!DOCTYPE html>\n<html>\n<body>\n  <!-- 여기에 작성하세요 -->\n</body>\n</html>",
+      "checks": [
+        {
+          "pattern": "<body\\b[^>]*>[\\s\\S]*<a\\b[^>]*\\bhref\\s*=\\s*(\"https://codegram\\.me/?\"|'https://codegram\\.me/?')[^>]*>[\\s\\S]*</body\\s*>",
+          "flags": "i",
+          "message": "body 안에 href=\"https://codegram.me\" 인 a 태그가 필요해요"
+        },
+        {
+          "pattern": "<a\\b[^>]*>(?:\\s|<(?!/a\\b)[^>]*>)*[^<\\s][\\s\\S]*?</a\\s*>",
+          "flags": "i",
+          "message": "a 태그 안에 링크 글자를 넣어요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-lists-images-code-1",
+    "type": "code",
+    "title": "목록과 이미지 만들기",
+    "description": "ul 안에 내용이 있는 li 를 3개 이상 만들고, src 와 alt 가 있는 img 를 하나 넣으세요.",
+    "reward": 40,
+    "difficulty": 2,
+    "language": "html",
+    "unitId": "html-lists-images",
+    "content": {
+      "starter_code": "<!DOCTYPE html>\n<html>\n<body>\n  <!-- 여기에 작성하세요 -->\n</body>\n</html>",
+      "checks": [
+        {
+          "pattern": "<ul\\b[^>]*>\\s*(?:<li\\b[^>]*>[^<]*[^<\\s][^<]*</li\\s*>\\s*){3,}</ul\\s*>",
+          "flags": "i",
+          "message": "ul 안에 내용이 있는 li 가 3개 이상 필요해요"
+        },
+        {
+          "pattern": "<img\\b(?=[^>]*\\bsrc\\s*=\\s*(\"[^\"]+\"|'[^']+'))(?=[^>]*\\balt\\s*=\\s*(\"[^\"]+\"|'[^']+'))[^>]*>",
+          "flags": "i",
+          "message": "src 와 alt 가 있는 img 가 필요해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-basics-code-1",
+    "type": "code",
+    "title": "변수 만들고 출력하기",
+    "description": "let 이나 const 로 name 변수를 만들어 이름(문자열)을 넣고 console.log 로 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "language": "javascript",
+    "unitId": "js-basics",
+    "content": {
+      "starter_code": "// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const)\\s+name\\s*=\\s*(\"|'|`)",
+          "message": "let 이나 const 로 name 변수에 문자열을 넣어요"
+        },
+        {
+          "pattern": "\\b(let|const)\\s+name\\s*=\\s*(\"[^\"\\n]+\"|'[^'\\n]+'|`[^`]+`)",
+          "message": "name 에 빈 문자열이 아닌 이름을 넣어요",
+          "in": "source"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*name\\s*\\)",
+          "message": "console.log(name) 으로 출력해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-control-code-1",
+    "type": "code",
+    "title": "1부터 5까지 출력하기",
+    "description": "for 문으로 1부터 5까지 한 줄에 하나씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 2,
+    "language": "java",
+    "unitId": "java-control",
+    "content": {
+      "starter_code": "public class Main {\n  public static void main(String[] args) {\n    // 여기에 작성하세요\n  }\n}",
+      "checks": [
+        {
+          "pattern": "class\\s+\\w+\\s*\\{",
+          "message": "class 를 선언해요"
+        },
+        {
+          "pattern": "public\\s+static\\s+void\\s+main\\s*\\(\\s*String\\s*(\\[\\s*\\]\\s*\\w+|\\.\\.\\.\\s*\\w+|\\w+\\s*\\[\\s*\\])\\s*\\)\\s*\\{",
+          "message": "public static void main(String[] args) 메서드가 필요해요"
+        },
+        {
+          "pattern": "for\\s*\\(\\s*int\\s+i\\s*=\\s*1\\s*;\\s*i\\s*(<=\\s*5|<\\s*6)\\s*;\\s*(i\\s*\\+\\+|\\+\\+\\s*i|i\\s*\\+=\\s*1|i\\s*=\\s*i\\s*\\+\\s*1)\\s*\\)",
+          "message": "for (int i = 1; i <= 5; i++) 로 반복해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*i\\s*\\)\\s*;",
+          "message": "System.out.println(i); 로 출력해요"
         }
       ]
     }

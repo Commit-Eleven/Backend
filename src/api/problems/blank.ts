@@ -3,7 +3,7 @@ import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
-import { filterByLanguage } from '../../util/problems'
+import { filterByLanguage, matchesAnswer } from '../../util/problems'
 
 type BlankProblem = {
   id: string
@@ -12,6 +12,7 @@ type BlankProblem = {
   reward: number
   description?: string
   language?: string
+  caseSensitive?: boolean
   content: {
     template: string
     blanks: { no: number; answer: string[]; hint?: string }[]
@@ -21,7 +22,7 @@ type BlankProblem = {
 export const blankProblems = (await Bun.file('static/problems/blank.json').json()) as BlankProblem[]
 
 // 조회할 때 빈칸 답안은 빼고 내려준다
-function toQuestion(p: BlankProblem) {
+export function toQuestion(p: BlankProblem) {
   const blanks = p.content.blanks.map(({ answer, ...blank }) => blank)
   return {
     id: p.id,
@@ -29,13 +30,22 @@ function toQuestion(p: BlankProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
     content: { ...p.content, blanks },
   }
 }
 
 export const blank = new Hono<AuthEnv>()
 
+// id 를 주면 그 문제, 안 주면 language 로 거른 문제 중 하나
 blank.get('', requireAuth, (c) => {
+  const id = c.req.query('id')
+  if (id) {
+    const found = blankProblems.find((problem) => problem.id === id)
+    if (!found) return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
+    return c.json({ problem: toQuestion(found) }, 200)
+  }
+
   const language = c.req.query('language')
   const pool = filterByLanguage(blankProblems, language)
   if (pool.length === 0) {
@@ -84,7 +94,7 @@ blank.post('', requireAuth, async (c) => {
 
   const submitted = submittedByNo(answer, problem.content.blanks)
   const isAnswer = problem.content.blanks.every((blank) =>
-    blank.answer.includes(submitted[blank.no].trim()),
+    matchesAnswer(submitted[blank.no], blank.answer, problem.caseSensitive),
   )
   await submissions.create({
     userId: c.get('userId'),
@@ -94,8 +104,8 @@ blank.post('', requireAuth, async (c) => {
   })
 
   if (isAnswer) {
-    await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     // 프론트는 정답을 answers 로 읽어서 같은 값을 answers 로도 준다
     const answer = problem.content.blanks.map((blank) => ({ ...blank, answers: blank.answer }))

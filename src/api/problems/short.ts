@@ -3,7 +3,7 @@ import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
-import { filterByLanguage } from '../../util/problems'
+import { filterByLanguage, matchesAnswer } from '../../util/problems'
 
 type ShortProblem = {
   id: string
@@ -12,6 +12,7 @@ type ShortProblem = {
   reward: number
   description?: string
   language?: string
+  caseSensitive?: boolean
   content: {
     code: string
     answer: string[]
@@ -21,7 +22,7 @@ type ShortProblem = {
 export const shortProblems = (await Bun.file('static/problems/short.json').json()) as ShortProblem[]
 
 // 조회할 때 정답(answer)은 빼고 내려준다
-function toQuestion(p: ShortProblem) {
+export function toQuestion(p: ShortProblem) {
   const { answer, ...content } = p.content
   return {
     id: p.id,
@@ -29,13 +30,22 @@ function toQuestion(p: ShortProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
     content,
   }
 }
 
 export const short = new Hono<AuthEnv>()
 
+// id 를 주면 그 문제, 안 주면 language 로 거른 문제 중 하나
 short.get('', requireAuth, (c) => {
+  const id = c.req.query('id')
+  if (id) {
+    const found = shortProblems.find((problem) => problem.id === id)
+    if (!found) return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
+    return c.json({ problem: toQuestion(found) }, 200)
+  }
+
   const language = c.req.query('language')
   const pool = filterByLanguage(shortProblems, language)
   if (pool.length === 0) {
@@ -65,12 +75,12 @@ short.post('', requireAuth, async (c) => {
 
   const userId = c.get('userId')
   const trimmed = answer.trim()
-  const isAnswer = problem.content.answer.includes(trimmed)
+  const isAnswer = matchesAnswer(trimmed, problem.content.answer, problem.caseSensitive)
   await submissions.create({ userId, problemId: problem.id, isCorrect: isAnswer, answer: trimmed })
 
   if (isAnswer) {
-    await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(userId, problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     // 프론트는 answer 를 문자열 하나로 보여 준다. 인정되는 답 전체는 answers 로
     return c.json(
