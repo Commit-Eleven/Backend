@@ -1,0 +1,58 @@
+[
+  {
+    "id": "html-code-1",
+    "type": "code",
+    "title": "제목과 문단 만들기",
+    "description": "body 안에 내용이 있는 h1 제목과 p 문단을 하나씩 작성하세요.",
+    "reward": 40,
+    "difficulty": 2,
+    "language": "html",
+    "content": {
+      "starter_code": "<!DOCTYPE html>\n<html>\n<body>\n  <!-- 여기에 작성하세요 -->\n</body>\n</html>",
+      "checks": [
+        { "pattern": "<h1[^>]*>\\s*\\S[^<]*</h1>", "message": "내용이 있는 h1 제목이 필요해요" },
+        { "pattern": "<p[^>]*>\\s*\\S[^<]*</p>", "message": "내용이 있는 p 문단이 필요해요" }
+      ]
+    }
+  },
+  {
+    "id": "javascript-code-1",
+    "type": "code",
+    "title": "두 수를 더하는 함수",
+    "description": "add(a, b) 함수를 만들어 두 수의 합을 돌려주세요.",
+    "reward": 40,
+    "difficulty": 2,
+    "language": "javascript",
+    "content": {
+      "starter_code": "function add(a, b) {\n  // 여기에 작성하세요\n}",
+      "checks": [
+        {
+          "pattern": "(function\\s+add\\s*\\(\\s*a\\s*,\\s*b\\s*\\)|(const|let|var)\\s+add\\s*=\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>)",
+          "message": "add(a, b) 함수를 선언해요"
+        },
+        {
+          "pattern": "(return\\s+[^;\\n]*\\+|=>\\s*[^;\\n{]*\\+)",
+          "message": "+ 연산으로 더한 값을 돌려줘요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-code-1",
+    "type": "code",
+    "title": "Hello 출력하기",
+    "description": "main 메서드에서 Hello 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 2,
+    "language": "java",
+    "content": {
+      "starter_code": "public class Main {\n  public static void main(String[] args) {\n    // 여기에 작성하세요\n  }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*\"Hello\"\\s*\\)\\s*;",
+          "message": "System.out.println(\"Hello\"); 로 출력해요"
+        }
+      ]
+    }
+  }
+]
