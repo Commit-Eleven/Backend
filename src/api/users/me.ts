@@ -379,6 +379,37 @@ me.get('/wrong-notes', requireAuth, async (c) => {
   })
 })
 
+// 오답노트 복습 완료. 틀렸다가 다시 맞힌 문제를 다시 맞힌 순서대로 최신순으로 준다
+me.get('/wrong-notes/reviewed', requireAuth, async (c) => {
+  const userId = c.get('userId')
+
+  const limit = parseLimit(c.req.query('limit'), SUBMISSION_PAGE_LIMIT, SUBMISSION_PAGE_LIMIT_MAX)
+  const cursor = parseCursor(c.req.query('cursor'))
+
+  // 다음 페이지 존재 여부를 위해 1개 더 조회
+  const rows = await submissions.findReviewedByUser(userId, { cursor, limit: limit + 1 })
+  const items = rows.slice(0, limit)
+  const nextCursor = rows.length > limit ? items[items.length - 1].id : null
+
+  return ok(c, {
+    reviewed: items.map((row) => {
+      const meta = problemMetaById.get(row.problemId)
+      return {
+        submissionId: row.id,
+        problemId: row.problemId,
+        type: meta?.type ?? null,
+        title: meta?.title ?? null,
+        difficulty: meta?.difficulty ?? null,
+        language: meta?.language ?? null,
+        unitId: meta?.unitId ?? null,
+        myAnswer: row.answer,
+        reviewedAt: row.createdAt,
+      }
+    }),
+    nextCursor,
+  })
+})
+
 // 회원 탈퇴. 내 기록은 모두 함께 지워진다.
 // 다른 멤버가 있는 그룹의 방장이면 막고, 먼저 방장을 넘겨야 할 그룹 목록을 알려준다.
 // 나 혼자 남은 그룹은 계정과 같이 사라진다
