@@ -10,8 +10,16 @@
     "content": {
       "starter_code": "<!DOCTYPE html>\n<html>\n<body>\n  <!-- 여기에 작성하세요 -->\n</body>\n</html>",
       "checks": [
-        { "pattern": "<h1[^>]*>\\s*\\S[^<]*</h1>", "message": "내용이 있는 h1 제목이 필요해요" },
-        { "pattern": "<p[^>]*>\\s*\\S[^<]*</p>", "message": "내용이 있는 p 문단이 필요해요" }
+        {
+          "pattern": "<body\\b[^>]*>[\\s\\S]*<h1\\b[^>]*>(?:\\s|<(?!/h1\\b)[^>]*>)*[^<\\s][\\s\\S]*?</h1\\s*>[\\s\\S]*</body\\s*>",
+          "flags": "i",
+          "message": "body 안에 내용이 있는 h1 제목이 필요해요"
+        },
+        {
+          "pattern": "<body\\b[^>]*>[\\s\\S]*<p\\b[^>]*>(?:\\s|<(?!/p\\b)[^>]*>)*[^<\\s][\\s\\S]*?</p\\s*>[\\s\\S]*</body\\s*>",
+          "flags": "i",
+          "message": "body 안에 내용이 있는 p 문단이 필요해요"
+        }
       ]
     }
   },
@@ -27,12 +35,12 @@
       "starter_code": "function add(a, b) {\n  // 여기에 작성하세요\n}",
       "checks": [
         {
-          "pattern": "(function\\s+add\\s*\\(\\s*a\\s*,\\s*b\\s*\\)|(const|let|var)\\s+add\\s*=\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>)",
+          "pattern": "(function\\s+add\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*\\{|(const|let|var)\\s+add\\s*=\\s*(function\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*\\{|\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>))",
           "message": "add(a, b) 함수를 선언해요"
         },
         {
-          "pattern": "(return\\s+[^;\\n]*\\+|=>\\s*[^;\\n{]*\\+)",
-          "message": "+ 연산으로 더한 값을 돌려줘요"
+          "pattern": "(return\\s*\\(?\\s*(a\\s*\\+\\s*b|b\\s*\\+\\s*a)\\s*\\)?\\s*(;|\\n|\\}|$)|=>\\s*\\(?\\s*(a\\s*\\+\\s*b|b\\s*\\+\\s*a)\\s*\\)?\\s*(;|\\n|$))",
+          "message": "a + b 를 돌려줘요"
         }
       ]
     }
@@ -49,8 +57,17 @@
       "starter_code": "public class Main {\n  public static void main(String[] args) {\n    // 여기에 작성하세요\n  }\n}",
       "checks": [
         {
+          "pattern": "class\\s+\\w+\\s*\\{",
+          "message": "class 를 선언해요"
+        },
+        {
+          "pattern": "public\\s+static\\s+void\\s+main\\s*\\(\\s*String\\s*(\\[\\s*\\]\\s*\\w+|\\.\\.\\.\\s*\\w+|\\w+\\s*\\[\\s*\\])\\s*\\)\\s*\\{",
+          "message": "public static void main(String[] args) 메서드가 필요해요"
+        },
+        {
           "pattern": "System\\.out\\.println\\s*\\(\\s*\"Hello\"\\s*\\)\\s*;",
-          "message": "System.out.println(\"Hello\"); 로 출력해요"
+          "message": "System.out.println(\"Hello\"); 로 출력해요",
+          "in": "source"
         }
       ]
     }
