@@ -24,7 +24,119 @@
         "unitId": "conditionals",
         "title": "조건문",
         "order": 2,
-        "problemIds": []
+        "problemIds": [
+          "conditionals-mcq-1",
+          "conditionals-mcq-2",
+          "conditionals-blank-1",
+          "conditionals-parsons-1",
+          "conditionals-short-1"
+        ]
+      }
+    ],
+    "language": "python"
+  },
+  {
+    "courseId": "html-basic",
+    "title": "HTML 기초",
+    "language": "html",
+    "units": [
+      {
+        "unitId": "html-structure",
+        "title": "HTML 기본 구조",
+        "order": 1,
+        "problemIds": [
+          "html-structure-mcq-1",
+          "html-structure-mcq-2",
+          "html-structure-blank-1",
+          "html-structure-parsons-1",
+          "html-structure-short-1"
+        ]
+      },
+      {
+        "unitId": "html-text-links",
+        "title": "텍스트와 링크",
+        "order": 2,
+        "problemIds": [
+          "html-text-links-mcq-1",
+          "html-text-links-mcq-2",
+          "html-text-links-blank-1",
+          "html-text-links-parsons-1",
+          "html-text-links-short-1"
+        ]
+      },
+      {
+        "unitId": "html-lists-images",
+        "title": "목록과 이미지",
+        "order": 3,
+        "problemIds": [
+          "html-lists-images-mcq-1",
+          "html-lists-images-mcq-2",
+          "html-lists-images-blank-1",
+          "html-lists-images-parsons-1",
+          "html-lists-images-short-1"
+        ]
+      }
+    ]
+  },
+  {
+    "courseId": "javascript-basic",
+    "title": "JavaScript 기초",
+    "language": "javascript",
+    "units": [
+      {
+        "unitId": "js-basics",
+        "title": "변수와 출력",
+        "order": 1,
+        "problemIds": [
+          "js-basics-mcq-1",
+          "js-basics-mcq-2",
+          "js-basics-blank-1",
+          "js-basics-parsons-1",
+          "js-basics-short-1"
+        ]
+      },
+      {
+        "unitId": "js-functions-conditions",
+        "title": "함수와 조건문",
+        "order": 2,
+        "problemIds": [
+          "js-functions-conditions-mcq-1",
+          "js-functions-conditions-mcq-2",
+          "js-functions-conditions-blank-1",
+          "js-functions-conditions-parsons-1",
+          "js-functions-conditions-short-1"
+        ]
+      }
+    ]
+  },
+  {
+    "courseId": "java-basic",
+    "title": "Java 기초",
+    "language": "java",
+    "units": [
+      {
+        "unitId": "java-basics",
+        "title": "자바 기본",
+        "order": 1,
+        "problemIds": [
+          "java-basics-mcq-1",
+          "java-basics-mcq-2",
+          "java-basics-blank-1",
+          "java-basics-parsons-1",
+          "java-basics-short-1"
+        ]
+      },
+      {
+        "unitId": "java-control",
+        "title": "조건문과 반복문",
+        "order": 2,
+        "problemIds": [
+          "java-control-mcq-1",
+          "java-control-mcq-2",
+          "java-control-blank-1",
+          "java-control-parsons-1",
+          "java-control-short-1"
+        ]
       }
     ]
   }

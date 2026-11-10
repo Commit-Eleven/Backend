@@ -3,13 +3,13 @@ import { problemMetaById, TYPE_LABEL } from './problems'
 // 커리큘럼(static/curriculum/curriculum.json)과 제출 기록으로 단원 진행 상황을 계산한다.
 
 type Unit = { unitId: string; title: string; order: number; problemIds: string[] }
-type Course = { courseId: string; title: string; units: Unit[] }
+type Course = { courseId: string; title: string; language: string; units: Unit[] }
 
 const courses = (await Bun.file('static/curriculum/curriculum.json').json()) as Course[]
 
 export type ProblemStatus = 'correct' | 'wrong' | 'todo'
 
-// 과정 순서 → 단원 순서로 한 줄로 편다. 다음 단원은 다음 과정의 첫 단원까지 이어진다
+// 과정 순서 → 단원 순서로 한 줄로 편다. 다음 단원은 같은 언어의 다음 과정 첫 단원까지 이어진다
 const flatUnits = courses.flatMap((course) =>
   [...course.units].sort((a, b) => a.order - b.order).map((unit) => ({ course, unit })),
 )
@@ -17,7 +17,10 @@ const flatUnits = courses.flatMap((course) =>
 export function findUnit(unitId: string) {
   const index = flatUnits.findIndex((u) => u.unit.unitId === unitId)
   if (index < 0) return undefined
-  return { ...flatUnits[index], next: flatUnits[index + 1] }
+  const current = flatUnits[index]
+  // 다른 언어 코스로 넘어가지 않게 같은 언어 안에서만 다음 단원을 찾는다
+  const next = flatUnits.slice(index + 1).find((u) => u.course.language === current.course.language)
+  return { ...current, next }
 }
 
 export function firstUnitId(): string | undefined {
@@ -25,10 +28,15 @@ export function firstUnitId(): string | undefined {
 }
 
 // 진행률을 보여줄 단원을 고른다. 고른 단원이 있으면 그것, 없으면 아직 다 못 푼 첫 단원
-export function currentUnitId(studyUnitId: string | null, solved: Map<string, boolean>) {
+export function currentUnitId(
+  studyUnitId: string | null,
+  solved: Map<string, boolean>,
+  language?: string,
+) {
   if (studyUnitId && findUnit(studyUnitId)) return studyUnitId
-  const notDone = flatUnits.find((u) => unitProgress(u.unit, solved).completePercent < 100)
-  return (notDone ?? flatUnits[0])?.unit.unitId
+  const candidates = language ? flatUnits.filter((u) => u.course.language === language) : flatUnits
+  const notDone = candidates.find((u) => unitProgress(u.unit, solved).completePercent < 100)
+  return (notDone ?? candidates[0])?.unit.unitId
 }
 
 // 단원 안 문제별 상태와 합계. 문제 파일에 없는 id(아직 없는 유형)는 빼고 센다

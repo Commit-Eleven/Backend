@@ -120,7 +120,7 @@ me.get('/home', requireAuth, async (c) => {
     submissions.submittedAtSince(userId, new Date(Date.now() - STREAK_WINDOW_MS)),
   ])
 
-  const unitId = currentUnitId(user.studyUnitId, solved)
+  const unitId = currentUnitId(user.studyUnitId, solved, user.studyLanguage)
   const found = unitId ? findUnit(unitId) : undefined
 
   let currentUnit = null

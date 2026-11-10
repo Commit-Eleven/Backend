@@ -9,7 +9,6 @@
       "answer": 0,
       "explanation": "대괄호가 리스트 컴프리헨션이다."
     },
-
     "description": "리스트를 만드는 올바른 표현은?",
     "difficulty": 1,
     "language": "python",
@@ -26,7 +25,6 @@
       "answer": 2,
       "explanation": "list는 값을 바꿀 수 있는 가변 타입이다."
     },
-
     "description": "다음 중 파이썬에서 가변(mutable) 타입은?",
     "difficulty": 2,
     "language": "python",
@@ -43,7 +41,6 @@
       "answer": 0,
       "explanation": "//는 몫만 반환하는 정수 나눗셈 연산자다."
     },
-
     "description": "7 // 2 의 결과는?",
     "difficulty": 1,
     "language": "python",
@@ -78,6 +75,230 @@
     "content": {
       "choices": ["React", "Vue", "Svelte", "Express", "Angular"],
       "answer": 3
+    }
+  },
+  {
+    "id": "html-structure-mcq-1",
+    "type": "mcq",
+    "title": "문서 선언",
+    "description": "웹 문서가 HTML5 문서임을 브라우저에 알려 주는 선언은?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-structure",
+    "content": {
+      "choices": ["<!DOCTYPE html>", "<html5>", "<doctype>", "<!HTML>"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-structure-mcq-2",
+    "type": "mcq",
+    "title": "본문 태그",
+    "description": "화면에 직접 보이는 내용을 담는 태그는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-structure",
+    "content": {
+      "choices": ["<head>", "<body>", "<title>", "<meta>"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-text-links-mcq-1",
+    "type": "mcq",
+    "title": "가장 큰 제목",
+    "description": "가장 큰 제목을 나타내는 태그는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-text-links",
+    "content": {
+      "choices": ["<h6>", "<h1>", "<head>", "<title>"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-text-links-mcq-2",
+    "type": "mcq",
+    "title": "링크 주소 속성",
+    "description": "링크를 만들 때 이동할 주소를 지정하는 속성은?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-text-links",
+    "content": {
+      "choices": ["src", "href", "link", "url"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-lists-images-mcq-1",
+    "type": "mcq",
+    "title": "순서 없는 목록",
+    "description": "점으로 표시되는 순서 없는 목록을 만드는 태그는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-lists-images",
+    "content": {
+      "choices": ["<ol>", "<ul>", "<li>", "<dl>"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-lists-images-mcq-2",
+    "type": "mcq",
+    "title": "이미지 태그",
+    "description": "이미지를 넣을 때 쓰는 태그는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "html",
+    "unitId": "html-lists-images",
+    "content": {
+      "choices": ["<image>", "<img>", "<picture>", "<src>"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-basics-mcq-1",
+    "type": "mcq",
+    "title": "상수 선언",
+    "description": "값을 다시 바꿀 수 없는 상수를 선언하는 키워드는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "javascript",
+    "unitId": "js-basics",
+    "content": {
+      "choices": ["var", "let", "const", "static"],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-basics-mcq-2",
+    "type": "mcq",
+    "title": "typeof 결과",
+    "description": "console.log(typeof 42) 의 출력은?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "javascript",
+    "unitId": "js-basics",
+    "content": {
+      "choices": ["number", "integer", "int", "undefined"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-functions-conditions-mcq-1",
+    "type": "mcq",
+    "title": "함수 선언 키워드",
+    "description": "함수를 만드는 키워드는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "javascript",
+    "unitId": "js-functions-conditions",
+    "content": {
+      "choices": ["func", "function", "def", "fn"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-functions-conditions-mcq-2",
+    "type": "mcq",
+    "title": "엄격한 비교",
+    "description": "값과 타입이 모두 같은지 비교하는 연산자는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "javascript",
+    "unitId": "js-functions-conditions",
+    "content": {
+      "choices": ["==", "=", "===", "!="],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-basics-mcq-1",
+    "type": "mcq",
+    "title": "시작 메서드",
+    "description": "자바 프로그램이 시작되는 메서드는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "java",
+    "unitId": "java-basics",
+    "content": {
+      "choices": ["start()", "main()", "run()", "init()"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-basics-mcq-2",
+    "type": "mcq",
+    "title": "정수 자료형",
+    "description": "정수를 저장하는 자료형은?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "java",
+    "unitId": "java-basics",
+    "content": {
+      "choices": ["String", "boolean", "int", "char"],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-control-mcq-1",
+    "type": "mcq",
+    "title": "반복문 고르기",
+    "description": "반복 횟수가 정해져 있을 때 주로 쓰는 반복문은?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "java",
+    "unitId": "java-control",
+    "content": {
+      "choices": ["for", "if", "switch", "goto"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-control-mcq-2",
+    "type": "mcq",
+    "title": "논리 AND",
+    "description": "두 조건이 모두 참인지 검사하는 논리 연산자는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "java",
+    "unitId": "java-control",
+    "content": {
+      "choices": ["||", "&&", "!", "=="],
+      "answer": 1
+    }
+  },
+  {
+    "id": "conditionals-mcq-1",
+    "type": "mcq",
+    "title": "elif 키워드",
+    "description": "앞의 조건이 거짓일 때 다른 조건을 검사하는 키워드는?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "python",
+    "unitId": "conditionals",
+    "content": {
+      "choices": ["elseif", "elif", "else if", "elsif"],
+      "answer": 1
+    }
+  },
+  {
+    "id": "conditionals-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산",
+    "description": "x가 5보다 크고 10보다 작은지 올바르게 쓴 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "language": "python",
+    "unitId": "conditionals",
+    "content": {
+      "choices": ["x > 5 && x < 10", "x > 5 and x < 10", "x > 5 & < 10", "x > 5 or < 10"],
+      "answer": 1
     }
   }
 ]
