@@ -14,6 +14,7 @@ import { lessons } from '../../util/db/lessons'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { toCamelCase, toSnakeCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
 import {
@@ -92,7 +93,7 @@ me.get('/learning', requireAuth, async (c) => {
 
 // 학습설정 변경. language, level 중 보낸 것만 바꾼다
 me.patch('/learning', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     language?: unknown
     level?: unknown
   }
@@ -193,7 +194,7 @@ me.get('/privacy', requireAuth, async (c) => {
 
 // 개인정보 설정 변경. allow_friend_requests, profile_visibility 중 보낸 것만 바꾼다
 me.patch('/privacy', requireAuth, async (c) => {
-  const body = toCamelCase((await c.req.json().catch(() => ({}))) as Record<string, unknown>) as {
+  const body = toCamelCase(await readJsonBody(c)) as {
     allowFriendRequests?: unknown
     profileVisibility?: unknown
   }
@@ -267,7 +268,7 @@ me.get('/group-invites', requireAuth, async (c) => {
 })
 
 me.patch('/nickname', requireAuth, async (c) => {
-  const body = (await c.req.json().catch(() => ({}))) as { nickname?: unknown }
+  const body = (await readJsonBody(c)) as { nickname?: unknown }
   const userId = c.get('userId')
   const input = body.nickname
   const nickname = typeof input === 'string' ? input.trim().replace(/\s+/g, ' ') : ''

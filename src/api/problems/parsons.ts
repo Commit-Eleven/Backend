@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
+import { readJsonBody } from '../../util/http/body'
 import { filterByLanguage } from '../../util/problems'
 
 type ParsonsProblem = {
@@ -49,7 +50,7 @@ parsons.get('', requireAuth, (c) => {
 })
 
 parsons.post('', requireAuth, async (c) => {
-  const body = await c.req.json().catch(() => ({}))
+  const body = await readJsonBody(c)
   const { id, answer } = body
 
   const problem = parsonsProblems.find((problem) => problem.id === id)
@@ -69,7 +70,7 @@ parsons.post('', requireAuth, async (c) => {
     }
   }
 
-  await submissions.create({ userId: c.get('userId'), problemId: id, isCorrect: isAnswer, answer })
+  await submissions.create({ userId: c.get('userId'), problemId: problem.id, isCorrect: isAnswer, answer })
 
   if (isAnswer) {
     await awardSolveExp(c.get('userId'), problem.id, problem.reward)

@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { STUDY_LANGUAGE } from '../util/config/constants'
 import { lessons } from '../util/db/lessons'
 import { type AuthEnv, requireAuth } from '../util/http/auth'
+import { readJsonBody } from '../util/http/body'
 import { Errors, ok } from '../util/http/response'
 
 export const lessonsApi = new Hono<AuthEnv>()
@@ -15,7 +16,7 @@ lessonsApi.post('/:lessonId/complete', requireAuth, async (c) => {
     throw Errors.invalidInput('lessonId 는 영문·숫자·_ . - 로 64자 이하')
   }
 
-  const body = (await c.req.json().catch(() => ({}))) as { language?: unknown }
+  const body = (await readJsonBody(c)) as { language?: unknown }
   if (!STUDY_LANGUAGE.includes(body.language as (typeof STUDY_LANGUAGE)[number])) {
     throw Errors.invalidInput(`language 는 ${STUDY_LANGUAGE.join(', ')} 중 하나`)
   }

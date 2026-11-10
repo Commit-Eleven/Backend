@@ -39,3 +39,7 @@ export const RANKING_PAGE_SIZE_MAX = 50
 
 // 메인페이지에 보여줄 추천 문제 수
 export const HOME_RECOMMEND_LIMIT = 3
+
+// 요청 본문 한도
+export const MAX_BODY_BYTES = 100 * 1024
+export const MAX_JSON_DEPTH = 8

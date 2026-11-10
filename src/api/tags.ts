@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { STUDY_LANGUAGE } from '../util/config/constants'
 import { users } from '../util/db/users'
 import { type AuthEnv, requireAuth } from '../util/http/auth'
+import { readJsonBody } from '../util/http/body'
 import { Errors, ok } from '../util/http/response'
 
 export const tags = new Hono<AuthEnv>()
@@ -17,7 +18,7 @@ const isStudyLanguage = (v: unknown): v is StudyLanguage =>
 
 // 내 학습 언어를 body의 tag 키 값으로 설정한다
 tags.patch('', requireAuth, async (c) => {
-  const body = (await c.req.json().catch(() => ({}))) as { tag?: unknown }
+  const body = (await readJsonBody(c)) as { tag?: unknown }
   if (!isStudyLanguage(body.tag)) throw Errors.invalidInput('tag 값이 잘못됨')
 
   const userId = c.get('userId')

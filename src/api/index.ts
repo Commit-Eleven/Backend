@@ -1,5 +1,7 @@
 import { Hono } from 'hono'
+import { bodyLimit } from 'hono/body-limit'
 import { logger } from 'hono/logger'
+import { MAX_BODY_BYTES } from '../util/config/constants'
 import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
@@ -28,6 +30,13 @@ await runMigrations()
 const app = new Hono()
 
 app.use('*', logger())
+app.use(
+  '/api/*',
+  bodyLimit({
+    maxSize: MAX_BODY_BYTES,
+    onError: (c) => fail(c, 'PAYLOAD_TOO_LARGE', '요청 본문이 너무 큽니다', 413),
+  }),
+)
 
 app.route('/api/health', health)
 
