@@ -13,7 +13,7 @@ import { lessons } from '../../util/db/lessons'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
-import { toCamelCase } from '../../util/http/case'
+import { toCamelCase, toSnakeCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
 import {
   currentUnitId,
@@ -24,6 +24,7 @@ import {
 } from '../../util/learning'
 import { problemMetaById, problems } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
+import { clearRefreshCookie } from '../social/login'
 
 export const me = new Hono<AuthEnv>()
 
@@ -330,6 +331,33 @@ me.get('/wrong-notes', requireAuth, async (c) => {
     }),
     nextCursor,
   })
+})
+
+// 회원 탈퇴. 내 기록은 모두 함께 지워진다.
+// 다른 멤버가 있는 그룹의 방장이면 막고, 먼저 방장을 넘겨야 할 그룹 목록을 알려준다.
+// 나 혼자 남은 그룹은 계정과 같이 사라진다
+me.delete('/', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  await findMe(userId)
+
+  const groups = await users.ownedGroupsWithOtherMembers(userId)
+  if (groups.length > 0) {
+    return c.json(
+      toSnakeCase({
+        success: false,
+        error: {
+          code: 'OWNS_GROUPS',
+          message: '방장인 그룹의 방장을 먼저 다른 멤버에게 넘겨주세요',
+          groups,
+        },
+      }),
+      409,
+    )
+  }
+
+  await users.remove(userId)
+  clearRefreshCookie(c)
+  return c.body(null, 204)
 })
 
 function parseLimit(raw: string | undefined, fallback: number, max: number): number {
