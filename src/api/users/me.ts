@@ -9,12 +9,19 @@ import {
 } from '../../util/config/constants'
 import { findRecentExp } from '../../util/db/exp'
 import { invites } from '../../util/db/invites'
+import { lessons } from '../../util/db/lessons'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { toCamelCase } from '../../util/http/case'
 import { Errors, ok } from '../../util/http/response'
-import { currentUnitId, findUnit, streakDays, unitProgress } from '../../util/learning'
+import {
+  currentUnitId,
+  findUnit,
+  streakDays,
+  unitProgress,
+  unitsOfLanguage,
+} from '../../util/learning'
 import { problemMetaById, problems } from '../../util/problems'
 import { withFreeTag } from '../../util/sign'
 
@@ -167,6 +174,42 @@ me.get('/home', requireAuth, async (c) => {
     },
     currentUnit,
     recommendations,
+  })
+})
+
+// 언어별 학습 진행. 완료한 레슨 목록과 단원별 문제 풀이 진행률을 같이 준다.
+// language 를 안 보내면 내 학습 언어
+me.get('/progress', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  const user = await findMe(userId)
+
+  const language = c.req.query('language') ?? user.studyLanguage
+  if (!isLanguage(language)) {
+    throw Errors.invalidInput(`language 는 ${STUDY_LANGUAGE.join(', ')} 중 하나`)
+  }
+
+  const [done, solved] = await Promise.all([
+    lessons.listByUser(userId, language),
+    submissions.solvedMapByUser(userId),
+  ])
+
+  return ok(c, {
+    language,
+    lessons: done.map((row) => ({ lessonId: row.lessonId, completedAt: row.completedAt })),
+    completedLessonCount: done.length,
+    units: unitsOfLanguage(language).map(({ course, unit }) => {
+      const progress = unitProgress(unit, solved)
+      return {
+        unitId: unit.unitId,
+        title: unit.title,
+        courseId: course.courseId,
+        courseTitle: course.title,
+        order: unit.order,
+        total: progress.total,
+        solved: progress.solved,
+        completePercent: progress.completePercent,
+      }
+    }),
   })
 })
 

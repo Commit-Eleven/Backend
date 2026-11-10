@@ -23,6 +23,11 @@ export function findUnit(unitId: string) {
   return { ...current, next }
 }
 
+// 한 언어의 단원을 코스 순서대로
+export function unitsOfLanguage(language: string) {
+  return flatUnits.filter((u) => u.course.language === language)
+}
+
 export function firstUnitId(): string | undefined {
   return flatUnits[0]?.unit.unitId
 }

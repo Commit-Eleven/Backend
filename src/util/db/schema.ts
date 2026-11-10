@@ -79,6 +79,23 @@ export const refreshToken = mysqlTable(
   }),
 )
 
+// 레슨 완료 기록. lessonId 는 프론트가 정한 문자열이라 서버의 문제·단원 id 와 별개
+export const lessonProgress = mysqlTable(
+  'lesson_progress',
+  {
+    userId: bigint('user_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    lessonId: varchar('lesson_id', { length: 64 }).notNull(),
+    language: varchar('language', { length: 20 }).notNull(),
+    completedAt: timestamp('completed_at').defaultNow().notNull(),
+  },
+  (t) => ({
+    pk: primaryKey({ name: 'pk_lesson_progress', columns: [t.userId, t.lessonId] }),
+    idxUserLanguage: index('idx_lesson_user_language').on(t.userId, t.language),
+  }),
+)
+
 // problemId는 문제 파일 id (fk 아님)
 export const submission = mysqlTable(
   'submission',
