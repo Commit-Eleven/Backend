@@ -14,6 +14,8 @@ export const env = {
     clientSecret: Bun.env.GOOGLE_CLIENT_SECRET,
     redirectUri: Bun.env.GOOGLE_REDIRECT_URI,
   },
+  anthropicApiKey: Bun.env.ANTHROPIC_API_KEY ?? '',
+  anthropicModel: Bun.env.ANTHROPIC_MODEL ?? 'claude-3-5-haiku-latest',
   // OAuth callback must return the browser to the app instead of rendering the token JSON.
   // Local development can override this with http://127.0.0.1:5173.
   frontendUrl: (Bun.env.FRONTEND_URL || 'https://codegram.me').replace(/\/+$/, ''),
