@@ -1,0 +1,2214 @@
+[
+  {
+    "id": "html-11-1-mcq-1",
+    "type": "mcq",
+    "title": "프로젝트 개요 만들 페이지",
+    "description": "이번 프로젝트에서 만드는 이벤트 등록 페이지에 들어가는 내용으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "choices": [
+        "행사 안내와 참가 등록 폼",
+        "게임 점수와 순위표",
+        "사진을 고치는 편집 도구",
+        "음악을 틀어 주는 재생 목록"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-11-1-mcq-2",
+    "type": "mcq",
+    "title": "프로젝트 개요 올바른 제목 코드",
+    "description": "행사 이름 Tech Meetup 을 h1 제목으로 바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "choices": [
+        "<h1>Tech Meetup<h1>",
+        "<h1>Tech Meetup</h1>",
+        "<h1 Tech Meetup</h1>",
+        "</h1>Tech Meetup<h1>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-11-1-mcq-3",
+    "type": "mcq",
+    "title": "프로젝트 개요 제목 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>Tech Meetup</h1>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "choices": [
+        "<h1>Tech Meetup</h1> 글자가 그대로 보인다",
+        "Tech Meetup 이 작은 기울임 글씨로 보인다",
+        "Tech Meetup 이 크고 굵은 제목으로 보인다",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-11-1-parsons-1",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Tech Meetup 제목을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "fragments": [
+        "Tech Meetup",
+        "</h1>",
+        "<h1>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-11-1-parsons-2",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 이어 붙여 Tech Meetup 제목을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "fragments": [
+        "</h1>",
+        "Meetup",
+        "Tech ",
+        "<h1>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-11-1-parsons-3",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 이어 붙여 <h1>Tech Meetup</h1> 을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "fragments": [
+        ">",
+        "Meetup",
+        "Tech ",
+        "<h1",
+        "</h1>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-11-1-blank-1",
+    "type": "blank",
+    "title": "프로젝트 개요 제목 여는 태그",
+    "description": "Tech Meetup 이 가장 큰 제목으로 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Tech Meetup</h1>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-1-blank-2",
+    "type": "blank",
+    "title": "프로젝트 개요 행사 이름 넣기",
+    "description": "제목에 행사 이름 Tech Meetup 이 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>{{1}}</h1>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Tech Meetup"
+          ],
+          "hint": "행사 이름 (영어 두 단어)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-1-short-3",
+    "type": "short",
+    "title": "프로젝트 개요 제목 태그 이름",
+    "description": "밑줄에 들어갈, 가장 큰 제목을 만드는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>Tech Meetup</___>",
+      "answer": [
+        "h1",
+        "<h1>"
+      ]
+    }
+  },
+  {
+    "id": "html-11-1-code-1",
+    "type": "code",
+    "title": "프로젝트 개요 h1 제목 작성",
+    "description": "h1 태그로 \"Tech Meetup\" 제목을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-1",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1\\b[^>]*>",
+          "message": "h1 태그를 사용해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<h1\\b[^>]*>\\s*Tech Meetup\\s*</h1\\s*>",
+          "message": "h1 안에 Tech Meetup 을 쓰고 </h1> 로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Tech Meetup</h1>"
+    }
+  },
+  {
+    "id": "html-11-2-mcq-1",
+    "type": "mcq",
+    "title": "헤더 섹션 상단 태그 고르기",
+    "description": "페이지 상단(머리 부분)을 묶어서 구성할 때 쓰는 태그는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "choices": [
+        "<head>",
+        "<title>",
+        "<p>",
+        "<header>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-11-2-mcq-2",
+    "type": "mcq",
+    "title": "헤더 섹션 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "choices": [
+        "<header>\n  <h1>Tech Meetup</h1>\n</header>",
+        "<header>\n  <h1>Tech Meetup</h1>\n<header>",
+        "<head>\n  <h1>Tech Meetup</h1>\n</header>",
+        "<header>\n  <h1>Tech Meetup</header>\n</h1>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-11-2-mcq-3",
+    "type": "mcq",
+    "title": "헤더 섹션 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<header>\n  <h1>Tech Meetup</h1>\n  <p>3월 15일 (토)</p>\n</header>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "choices": [
+        "3월 15일 (토) 가 위에, Tech Meetup 이 아래에 보인다",
+        "큰 제목 Tech Meetup 아래에 3월 15일 (토) 가 보통 글씨로 보인다",
+        "header 라는 글자가 화면 맨 위에 보인다",
+        "header 안의 내용은 화면에 보이지 않는다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-11-2-parsons-1",
+    "type": "parsons",
+    "title": "헤더 섹션 순서 맞추기 1",
+    "description": "제목 다음에 날짜가 오도록 조각을 올바른 순서로 놓아 header 를 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "fragments": [
+        "  <p>3월 15일 (토)</p>",
+        "<header>",
+        "</header>",
+        "  <h1>Tech Meetup</h1>"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-11-2-parsons-2",
+    "type": "parsons",
+    "title": "헤더 섹션 순서 맞추기 2",
+    "description": "제목, 소개, 날짜 순서가 되도록 조각을 놓아 header 를 완성하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "fragments": [
+        "  <p>개발자들의 작은 모임</p>",
+        "  <h1>Tech Meetup</h1>",
+        "<header>",
+        "</header>",
+        "  <p>3월 15일 (토)</p>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-11-2-parsons-3",
+    "type": "parsons",
+    "title": "헤더 섹션 순서 맞추기 3",
+    "description": "body 안에 header 를 넣고, 제목, 소개, 날짜 순서가 되도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "fragments": [
+        "    <h1>Tech Meetup</h1>",
+        "<body>",
+        "  <header>",
+        "</body>",
+        "    <p>개발자들의 작은 모임</p>",
+        "    <p>3월 15일 (토)</p>",
+        "  </header>"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        4,
+        5,
+        6,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-11-2-blank-1",
+    "type": "blank",
+    "title": "헤더 섹션 header 여는 태그",
+    "description": "페이지 상단을 묶도록 빈칸에 알맞은 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <h1>Tech Meetup</h1>\n  <p>3월 15일 (토)</p>\n</header>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<header>"
+          ],
+          "hint": "머리 부분을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-2-blank-2",
+    "type": "blank",
+    "title": "헤더 섹션 제목 여는 태그",
+    "description": "header 안의 Tech Meetup 이 가장 큰 제목이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>\n  {{1}}Tech Meetup</h1>\n  <p>3월 15일 (토)</p>\n</header>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-2-short-3",
+    "type": "short",
+    "title": "헤더 섹션 태그 이름 쓰기",
+    "description": "밑줄에 들어갈, 페이지 머리 부분을 묶는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>\n  <h1>Tech Meetup</h1>\n  <p>3월 15일 (토)</p>\n</___>",
+      "answer": [
+        "header",
+        "<header>"
+      ]
+    }
+  },
+  {
+    "id": "html-11-2-code-1",
+    "type": "code",
+    "title": "헤더 섹션 제목과 날짜 넣기",
+    "description": "header 안에 h1 제목과 날짜(p)를 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-2",
+    "content": {
+      "starter_code": "<header>\n  <!-- 제목과 날짜를 넣으세요 -->\n</header>\n",
+      "checks": [
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*</header\\s*>",
+          "message": "header 태그로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*<h1\\b[^>]*>[^<]+</h1\\s*>[\\s\\S]*</header\\s*>",
+          "message": "header 안에 h1 제목을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*<(p|time)\\b[^>]*>[^<]*\\d[^<]*</(p|time)\\s*>[\\s\\S]*</header\\s*>",
+          "message": "header 안에 날짜를 p 로 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<header>\n  <h1>Tech Meetup</h1>\n  <p>3월 15일 (토)</p>\n</header>"
+    }
+  },
+  {
+    "id": "html-11-3-mcq-1",
+    "type": "mcq",
+    "title": "이벤트 상세 섹션 목록 태그",
+    "description": "일시, 장소 같은 행사 정보를 점(•)이 붙은 목록으로 정리할 때 쓰는 태그 짝은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "choices": [
+        "<h1> 과 <h2>",
+        "<p> 와 <br>",
+        "<ul> 과 <li>",
+        "<img> 와 <a>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-11-3-mcq-2",
+    "type": "mcq",
+    "title": "이벤트 상세 섹션 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "choices": [
+        "<li>\n  <ul>일시: 3월 15일</ul>\n  <ul>장소: 코엑스</ul>\n</li>",
+        "<ul>\n  <li>일시: 3월 15일<li>\n  <li>장소: 코엑스<li>\n</ul>",
+        "<ul>\n  <li>일시: 3월 15일</li>\n  <li>장소: 코엑스</li>\n<ul>",
+        "<ul>\n  <li>일시: 3월 15일</li>\n  <li>장소: 코엑스</li>\n</ul>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-11-3-mcq-3",
+    "type": "mcq",
+    "title": "이벤트 상세 섹션 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<section>\n  <h2>행사 정보</h2>\n  <ul>\n    <li>일시: 3월 15일</li>\n    <li>장소: 코엑스</li>\n  </ul>\n</section>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "choices": [
+        "행사 정보 소제목 아래에 일시와 장소가 점(•)이 붙은 목록으로 보인다",
+        "일시와 장소가 1, 2 번호가 붙은 목록으로 보인다",
+        "일시와 장소가 한 줄에 붙어서 보인다",
+        "section 이라는 글자가 제목으로 보인다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-11-3-parsons-1",
+    "type": "parsons",
+    "title": "이벤트 상세 섹션 순서 맞추기 1",
+    "description": "일시 다음에 장소가 오도록 조각을 놓아 목록을 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "fragments": [
+        "  <li>장소: 서울 코엑스</li>",
+        "</ul>",
+        "<ul>",
+        "  <li>일시: 3월 15일 오후 2시</li>"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-11-3-parsons-2",
+    "type": "parsons",
+    "title": "이벤트 상세 섹션 순서 맞추기 2",
+    "description": "section 안에 소제목, 목록(일시, 장소 순서)이 오도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "fragments": [
+        "  <h2>행사 정보</h2>",
+        "  </ul>",
+        "<section>",
+        "</section>",
+        "  <ul>",
+        "    <li>일시: 3월 15일 오후 2시</li>",
+        "    <li>장소: 서울 코엑스</li>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        4,
+        5,
+        6,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-11-3-parsons-3",
+    "type": "parsons",
+    "title": "이벤트 상세 섹션 순서 맞추기 3",
+    "description": "section 안에 소제목, 목록(일시, 장소, 참가비 순서)이 오도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "fragments": [
+        "<section>",
+        "</section>",
+        "  <ul>",
+        "    <li>장소: 서울 코엑스</li>",
+        "    <li>참가비: 무료</li>",
+        "    <li>일시: 3월 15일 오후 2시</li>",
+        "  <h2>행사 정보</h2>",
+        "  </ul>"
+      ],
+      "answer_order": [
+        0,
+        6,
+        2,
+        5,
+        3,
+        4,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-11-3-blank-1",
+    "type": "blank",
+    "title": "이벤트 상세 섹션 section 태그",
+    "description": "행사 정보 부분을 하나의 구역으로 묶도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <h2>행사 정보</h2>\n  <ul>\n    <li>일시: 3월 15일 오후 2시</li>\n    <li>장소: 서울 코엑스</li>\n  </ul>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<section>"
+          ],
+          "hint": "구역을 묶는 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-3-blank-2",
+    "type": "blank",
+    "title": "이벤트 상세 섹션 ul 태그",
+    "description": "점(•)이 붙은 목록이 되도록 빈칸에 목록 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<section>\n  <h2>행사 정보</h2>\n  {{1}}\n    <li>일시: 3월 15일 오후 2시</li>\n    <li>장소: 서울 코엑스</li>\n  </ul>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "순서 없는 목록의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-3-blank-3",
+    "type": "blank",
+    "title": "이벤트 상세 섹션 li 태그",
+    "description": "일시가 목록의 한 항목이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<section>\n  <h2>행사 정보</h2>\n  <ul>\n    {{1}}일시: 3월 15일 오후 2시</li>\n    <li>장소: 서울 코엑스</li>\n  </ul>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-3-code-1",
+    "type": "code",
+    "title": "이벤트 상세 섹션 일시와 장소 목록",
+    "description": "section 안에 일시와 장소를 ul/li 목록으로 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-3",
+    "content": {
+      "starter_code": "<section>\n  <h2>행사 정보</h2>\n  <!-- 일시와 장소를 목록으로 넣으세요 -->\n</section>\n",
+      "checks": [
+        {
+          "pattern": "<section\\b[^>]*>[\\s\\S]*</section\\s*>",
+          "message": "section 태그로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<section\\b[^>]*>[\\s\\S]*<ul\\b[^>]*>[\\s\\S]*</ul\\s*>[\\s\\S]*</section\\s*>",
+          "message": "section 안에 ul 목록을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ul\\b[^>]*>[\\s\\S]*<li\\b[^>]*>[^<]*일시[\\s\\S]*</ul\\s*>",
+          "message": "li 항목에 일시를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ul\\b[^>]*>[\\s\\S]*<li\\b[^>]*>[^<]*장소[\\s\\S]*</ul\\s*>",
+          "message": "li 항목에 장소를 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<section>\n  <h2>행사 정보</h2>\n  <ul>\n    <li>일시: 3월 15일 오후 2시</li>\n    <li>장소: 서울 코엑스</li>\n  </ul>\n</section>"
+    }
+  },
+  {
+    "id": "html-11-4-mcq-1",
+    "type": "mcq",
+    "title": "등록 폼 감싸는 태그 고르기",
+    "description": "참가자가 이름과 이메일을 입력해 제출하는 참가 신청 폼 전체를 감싸는 태그는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "choices": [
+        "<ul>",
+        "<form>",
+        "<header>",
+        "<h2>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-11-4-mcq-2",
+    "type": "mcq",
+    "title": "등록 폼 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "choices": [
+        "<form>\n  <input type=\"text\">\n  <button type=\"submit\">신청하기</button>\n<form>",
+        "<form>\n  <input type=\"text\"\n  <button type=\"submit\">신청하기</button>\n</form>",
+        "<form>\n  <input type=\"text\">\n  <button type=\"submit\">신청하기</button>\n</form>",
+        "<form>\n  <input type=\"text\">\n  <button type=\"submit\">신청하기\n</form>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-11-4-mcq-3",
+    "type": "mcq",
+    "title": "등록 폼 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<form>\n  <label for=\"name\">이름</label>\n  <input type=\"text\" id=\"name\">\n  <button type=\"submit\">신청하기</button>\n</form>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "choices": [
+        "이름 글자만 보이고 입력 칸은 없다",
+        "input 이라는 글자가 화면에 보인다",
+        "신청하기 가 밑줄 친 링크 글씨로 보인다",
+        "이름 글자 옆에 글을 입력하는 칸과 신청하기 버튼이 보인다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-11-4-parsons-1",
+    "type": "parsons",
+    "title": "등록 폼 순서 맞추기 1",
+    "description": "form 안에 이름 글자(label) 다음 입력 칸(input)이 오도록 조각을 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "fragments": [
+        "  <input type=\"text\" id=\"name\">",
+        "<form>",
+        "  <label for=\"name\">이름</label>",
+        "</form>"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-11-4-parsons-2",
+    "type": "parsons",
+    "title": "등록 폼 순서 맞추기 2",
+    "description": "form 안에 이름 label, 이름 input, 신청 버튼 순서가 되도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "fragments": [
+        "  <button type=\"submit\">신청하기</button>",
+        "<form>",
+        "  <label for=\"name\">이름</label>",
+        "</form>",
+        "  <input type=\"text\" id=\"name\">"
+      ],
+      "answer_order": [
+        1,
+        2,
+        4,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-11-4-parsons-3",
+    "type": "parsons",
+    "title": "등록 폼 순서 맞추기 3",
+    "description": "이름(label, input), 이메일(label, input), 신청 버튼 순서가 되도록 조각을 놓아 form 을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "fragments": [
+        "  <input type=\"text\" id=\"name\">",
+        "  <button type=\"submit\">신청하기</button>",
+        "  <label for=\"email\">이메일</label>",
+        "</form>",
+        "  <input type=\"email\" id=\"email\">",
+        "<form>",
+        "  <label for=\"name\">이름</label>"
+      ],
+      "answer_order": [
+        5,
+        6,
+        0,
+        2,
+        4,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-11-4-blank-1",
+    "type": "blank",
+    "title": "등록 폼 form 여는 태그",
+    "description": "입력 칸과 버튼을 하나의 신청 폼으로 묶도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <label for=\"name\">이름</label>\n  <input type=\"text\" id=\"name\">\n  <label for=\"email\">이메일</label>\n  <input type=\"email\" id=\"email\">\n  <button type=\"submit\">신청하기</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<form>"
+          ],
+          "hint": "폼을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-4-blank-2",
+    "type": "blank",
+    "title": "등록 폼 label 여는 부분",
+    "description": "입력 칸의 이름표가 되도록 빈칸에 태그를 여는 부분을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  {{1}} for=\"name\">이름</label>\n  <input type=\"text\" id=\"name\">\n  <label for=\"email\">이메일</label>\n  <input type=\"email\" id=\"email\">\n  <button type=\"submit\">신청하기</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<label"
+          ],
+          "hint": "이름표 태그를 여는 부분 (> 는 이미 있어요)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-4-blank-3",
+    "type": "blank",
+    "title": "등록 폼 input 여는 부분",
+    "description": "이메일을 입력하는 칸이 되도록 빈칸에 태그를 여는 부분을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <label for=\"name\">이름</label>\n  <input type=\"text\" id=\"name\">\n  <label for=\"email\">이메일</label>\n  {{1}} type=\"email\" id=\"email\">\n  <button type=\"submit\">신청하기</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<input"
+          ],
+          "hint": "입력 칸 태그를 여는 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-4-code-1",
+    "type": "code",
+    "title": "등록 폼 이름 이메일 신청 폼",
+    "description": "이름 input, 이메일 input, 제출 버튼이 있는 form 을 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-4",
+    "content": {
+      "starter_code": "<form>\n  <!-- 이름, 이메일 입력 칸과 제출 버튼을 넣으세요 -->\n</form>\n",
+      "checks": [
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*</form\\s*>",
+          "message": "form 태그로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<input\\b[^>]*>[\\s\\S]*<input\\b[^>]*>[\\s\\S]*</form\\s*>",
+          "message": "form 안에 input 칸을 2개 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<input\\b[^>]*\\btype\\s*=\\s*[\\\"']?email",
+          "message": "이메일 칸은 type=\"email\" 로 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<button\\b[^>]*>[^<]+</button\\s*>[\\s\\S]*</form\\s*>",
+          "message": "form 안에 button 으로 제출 버튼을 만들어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<form>\n  <label for=\"name\">이름</label>\n  <input type=\"text\" id=\"name\">\n  <label for=\"email\">이메일</label>\n  <input type=\"email\" id=\"email\">\n  <button type=\"submit\">신청하기</button>\n</form>"
+    }
+  },
+  {
+    "id": "html-11-5-mcq-1",
+    "type": "mcq",
+    "title": "푸터 섹션 하단 태그 고르기",
+    "description": "페이지 맨 아래(하단)를 연락처 같은 정보로 마무리할 때 쓰는 태그는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "choices": [
+        "<footer>",
+        "<header>",
+        "<head>",
+        "<h1>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-11-5-mcq-2",
+    "type": "mcq",
+    "title": "푸터 섹션 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "choices": [
+        "<footer>\n  <p>문의: event@techmeetup.com</p>\n<footer>",
+        "<footer>\n  <p>문의: event@techmeetup.com</p>\n</footer>",
+        "<footer\n  <p>문의: event@techmeetup.com</p>\n</footer>",
+        "</footer>\n  <p>문의: event@techmeetup.com</p>\n<footer>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-11-5-mcq-3",
+    "type": "mcq",
+    "title": "푸터 섹션 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<footer>\n  <p>문의: event@techmeetup.com</p>\n</footer>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "choices": [
+        "footer 라는 글자가 함께 보인다",
+        "글자가 아주 큰 제목으로 보인다",
+        "문의: event@techmeetup.com 이 보통 글씨로 보인다",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-11-5-parsons-1",
+    "type": "parsons",
+    "title": "푸터 섹션 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 연락처가 있는 footer 를 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "fragments": [
+        "<footer>",
+        "</footer>",
+        "  <p>문의: event@techmeetup.com</p>"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-11-5-parsons-2",
+    "type": "parsons",
+    "title": "푸터 섹션 순서 맞추기 2",
+    "description": "이메일 문의 다음에 저작권 문구가 오도록 조각을 놓아 footer 를 완성하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "fragments": [
+        "  <p>문의: event@techmeetup.com</p>",
+        "</footer>",
+        "  <p>© 2025 Tech Meetup</p>",
+        "<footer>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-11-5-parsons-3",
+    "type": "parsons",
+    "title": "푸터 섹션 순서 맞추기 3",
+    "description": "이메일, 전화번호, 저작권 문구 순서가 되도록 조각을 놓아 footer 를 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "fragments": [
+        "  <p>전화: 02-123-4567</p>",
+        "</footer>",
+        "<footer>",
+        "  <p>© 2025 Tech Meetup</p>",
+        "  <p>문의: event@techmeetup.com</p>"
+      ],
+      "answer_order": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-11-5-blank-1",
+    "type": "blank",
+    "title": "푸터 섹션 footer 여는 태그",
+    "description": "페이지 하단을 묶도록 빈칸에 알맞은 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <p>문의: event@techmeetup.com</p>\n</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<footer>"
+          ],
+          "hint": "바닥 부분을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-11-5-short-2",
+    "type": "short",
+    "title": "푸터 섹션 보이는 글자 쓰기",
+    "description": "다음 코드를 브라우저에서 열었을 때 화면에 보이는 글자를 그대로 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "caseSensitive": false,
+    "content": {
+      "code": "<footer>\n  <p>문의: 02-123-4567</p>\n</footer>",
+      "answer": [
+        "문의: 02-123-4567",
+        "문의:02-123-4567"
+      ]
+    }
+  },
+  {
+    "id": "html-11-5-short-3",
+    "type": "short",
+    "title": "푸터 섹션 태그 이름 쓰기",
+    "description": "밑줄에 들어갈, 페이지 하단을 묶는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>\n  <p>문의: event@techmeetup.com</p>\n</___>",
+      "answer": [
+        "footer",
+        "<footer>"
+      ]
+    }
+  },
+  {
+    "id": "html-11-5-code-1",
+    "type": "code",
+    "title": "푸터 섹션 연락처 넣기",
+    "description": "footer 안에 연락처(이메일이나 전화번호)를 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-11-5",
+    "content": {
+      "starter_code": "<footer>\n  <!-- 연락처를 넣으세요 -->\n</footer>\n",
+      "checks": [
+        {
+          "pattern": "<footer\\b[^>]*>[\\s\\S]*</footer\\s*>",
+          "message": "footer 태그로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<footer\\b[^>]*>[\\s\\S]*([\\w.-]+@[\\w-]+\\.[\\w.]+|\\d{2,4}-\\d{3,4}-\\d{4})[\\s\\S]*</footer\\s*>",
+          "message": "footer 안에 이메일이나 전화번호를 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<footer>\n  <p>문의: event@techmeetup.com</p>\n</footer>"
+    }
+  },
+  {
+    "id": "html-12-1-mcq-1",
+    "type": "mcq",
+    "title": "간단한 프로필 카드 태그 짝",
+    "description": "프로필 카드에 사진, 이름, 링크를 넣을 때 쓰는 태그를 바르게 짝지은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "choices": [
+        "사진 <a>, 이름 <img>, 링크 <h2>",
+        "사진 <p>, 이름 <a>, 링크 <img>",
+        "사진 <h2>, 이름 <p>, 링크 <img>",
+        "사진 <img>, 이름 <h2>, 링크 <a>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-12-1-mcq-2",
+    "type": "mcq",
+    "title": "간단한 프로필 카드 올바른 사진 코드",
+    "description": "프로필 사진 profile.jpg 를 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "choices": [
+        "<img src=\"profile.jpg\" alt=\"프로필 사진\">",
+        "<img href=\"profile.jpg\" alt=\"프로필 사진\">",
+        "<img>profile.jpg</img>",
+        "<a src=\"profile.jpg\">프로필 사진</a>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-12-1-mcq-3",
+    "type": "mcq",
+    "title": "간단한 프로필 카드 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h2>김코딩</h2>\n<a href=\"https://github.com\">GitHub</a>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "choices": [
+        "https://github.com 주소가 글자로 보인다",
+        "김코딩 이 굵은 소제목으로 보이고, 그 아래 GitHub 가 누를 수 있는 링크로 보인다",
+        "GitHub 가 큰 제목으로 보인다",
+        "김코딩 이 링크로 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-12-1-parsons-1",
+    "type": "parsons",
+    "title": "간단한 프로필 카드 순서 맞추기 1",
+    "description": "카드 안에 이름 다음 링크가 오도록 조각을 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "fragments": [
+        "  <h2>김코딩</h2>",
+        "<div class=\"card\">",
+        "</div>",
+        "  <a href=\"https://github.com\">GitHub</a>"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-12-1-parsons-2",
+    "type": "parsons",
+    "title": "간단한 프로필 카드 순서 맞추기 2",
+    "description": "카드 안에 사진, 이름, 소개, 링크 순서가 되도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "fragments": [
+        "</div>",
+        "  <img src=\"profile.jpg\" alt=\"프로필 사진\">",
+        "<div class=\"card\">",
+        "  <a href=\"https://github.com\">GitHub</a>",
+        "  <p>웹 개발을 공부하는 학생입니다.</p>",
+        "  <h2>김코딩</h2>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        5,
+        4,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-12-1-parsons-3",
+    "type": "parsons",
+    "title": "간단한 프로필 카드 순서 맞추기 3",
+    "description": "카드 안에 사진, 이름, 소개, 사는 곳, 링크 순서가 되도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "fragments": [
+        "  <a href=\"https://github.com\">GitHub</a>",
+        "  <h2>김코딩</h2>",
+        "  <p>웹 개발을 공부하는 학생입니다.</p>",
+        "<div class=\"card\">",
+        "  <img src=\"profile.jpg\" alt=\"프로필 사진\">",
+        "</div>",
+        "  <p>사는 곳: 서울</p>"
+      ],
+      "answer_order": [
+        3,
+        4,
+        1,
+        2,
+        6,
+        0,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-12-1-blank-1",
+    "type": "blank",
+    "title": "간단한 프로필 카드 img 여는 부분",
+    "description": "카드에 프로필 사진이 보이도록 빈칸에 태그를 여는 부분을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<div class=\"card\">\n  {{1}} src=\"profile.jpg\" alt=\"프로필 사진\">\n  <h2>김코딩</h2>\n  <p>웹 개발을 공부하는 학생입니다.</p>\n  <a href=\"https://github.com\">GitHub</a>\n</div>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<img"
+          ],
+          "hint": "이미지 태그를 여는 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-1-blank-2",
+    "type": "blank",
+    "title": "간단한 프로필 카드 이름 소제목",
+    "description": "이름 김코딩 이 h2 소제목으로 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<div class=\"card\">\n  <img src=\"profile.jpg\" alt=\"프로필 사진\">\n  {{1}}김코딩</h2>\n  <p>웹 개발을 공부하는 학생입니다.</p>\n  <a href=\"https://github.com\">GitHub</a>\n</div>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h2>"
+          ],
+          "hint": "두 번째로 큰 제목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-1-blank-3",
+    "type": "blank",
+    "title": "간단한 프로필 카드 링크 여는 부분",
+    "description": "GitHub 를 누르면 이동하는 링크가 되도록 빈칸에 태그를 여는 부분을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<div class=\"card\">\n  <img src=\"profile.jpg\" alt=\"프로필 사진\">\n  <h2>김코딩</h2>\n  <p>웹 개발을 공부하는 학생입니다.</p>\n  {{1}} href=\"https://github.com\">GitHub</a>\n</div>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<a"
+          ],
+          "hint": "링크 태그를 여는 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-1-code-1",
+    "type": "code",
+    "title": "간단한 프로필 카드 만들기",
+    "description": "img, 이름, 소개, 링크가 있는 프로필 카드를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-1",
+    "content": {
+      "starter_code": "<div class=\"card\">\n  <!-- 사진, 이름, 소개, 링크를 넣으세요 -->\n</div>\n",
+      "checks": [
+        {
+          "pattern": "<img\\b[^>]*\\bsrc\\s*=",
+          "message": "img 의 src 로 사진을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<h[1-6]\\b[^>]*>[^<]+</h[1-6]\\s*>",
+          "message": "이름을 제목 태그(h2 등)로 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p\\b[^>]*>[^<]+</p\\s*>",
+          "message": "소개를 p 로 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<a\\b[^>]*\\bhref\\s*=[^>]*>[^<]+</a\\s*>",
+          "message": "a 와 href 로 링크를 만들어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<div class=\"card\">\n  <img src=\"profile.jpg\" alt=\"프로필 사진\">\n  <h2>김코딩</h2>\n  <p>웹 개발을 공부하는 학생입니다.</p>\n  <a href=\"https://github.com\">GitHub</a>\n</div>"
+    }
+  },
+  {
+    "id": "html-12-2-mcq-1",
+    "type": "mcq",
+    "title": "이벤트 초대장 버튼 태그 고르기",
+    "description": "초대장에 누를 수 있는 참가하기 버튼을 넣을 때 쓰는 폼 요소는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "choices": [
+        "<li>",
+        "<h1>",
+        "<button>",
+        "<ul>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-12-2-mcq-2",
+    "type": "mcq",
+    "title": "이벤트 초대장 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "choices": [
+        "<h1>코딩 파티</h1>\n<li>\n  <ul>날짜: 5월 10일</ul>\n</li>\n<button>참가하기</button>",
+        "<h1>코딩 파티</h1>\n<ul>\n  <li>날짜: 5월 10일</li>\n</ul>\n<button>참가하기<button>",
+        "<h1>코딩 파티<h1>\n<ul>\n  <li>날짜: 5월 10일</li>\n</ul>\n<button>참가하기</button>",
+        "<h1>코딩 파티</h1>\n<ul>\n  <li>날짜: 5월 10일</li>\n</ul>\n<button>참가하기</button>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-12-2-mcq-3",
+    "type": "mcq",
+    "title": "이벤트 초대장 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>코딩 파티 초대장</h1>\n<button>참가하기</button>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "choices": [
+        "큰 제목 코딩 파티 초대장 아래에 누를 수 있는 참가하기 버튼이 보인다",
+        "참가하기 가 밑줄 친 링크 글씨로 보인다",
+        "<button>참가하기</button> 글자가 그대로 보인다",
+        "버튼만 보이고 제목은 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-12-2-parsons-1",
+    "type": "parsons",
+    "title": "이벤트 초대장 순서 맞추기 1",
+    "description": "제목, 안내 문장, 참가 버튼 순서가 되도록 조각을 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "fragments": [
+        "<button>참가하기</button>",
+        "<h1>코딩 파티 초대장</h1>",
+        "<p>함께 코딩하며 놀아요!</p>"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-12-2-parsons-2",
+    "type": "parsons",
+    "title": "이벤트 초대장 순서 맞추기 2",
+    "description": "제목, 정보 목록(날짜, 장소 순서), 참가 버튼 순서가 되도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "fragments": [
+        "<h1>코딩 파티 초대장</h1>",
+        "<ul>",
+        "<button>참가하기</button>",
+        "  <li>날짜: 5월 10일</li>",
+        "  <li>장소: 학교 강당</li>",
+        "</ul>"
+      ],
+      "answer_order": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-12-2-parsons-3",
+    "type": "parsons",
+    "title": "이벤트 초대장 순서 맞추기 3",
+    "description": "제목, 안내 문장, 정보 목록(날짜, 시간, 장소 순서), 참가 버튼 순서가 되도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "fragments": [
+        "  <li>장소: 학교 강당</li>",
+        "<ul>",
+        "<p>함께 코딩하며 놀아요!</p>",
+        "  <li>날짜: 5월 10일</li>",
+        "</ul>",
+        "<h1>코딩 파티 초대장</h1>",
+        "<button>참가하기</button>",
+        "  <li>시간: 오후 3시</li>"
+      ],
+      "answer_order": [
+        5,
+        2,
+        1,
+        3,
+        7,
+        0,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "id": "html-12-2-blank-1",
+    "type": "blank",
+    "title": "이벤트 초대장 제목 여는 태그",
+    "description": "코딩 파티 초대장 이 가장 큰 제목으로 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}코딩 파티 초대장</h1>\n<ul>\n  <li>날짜: 5월 10일</li>\n  <li>장소: 학교 강당</li>\n</ul>\n<button>참가하기</button>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-2-blank-2",
+    "type": "blank",
+    "title": "이벤트 초대장 목록 여는 태그",
+    "description": "날짜와 장소가 점(•)이 붙은 목록이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>코딩 파티 초대장</h1>\n{{1}}\n  <li>날짜: 5월 10일</li>\n  <li>장소: 학교 강당</li>\n</ul>\n<button>참가하기</button>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "순서 없는 목록의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-2-blank-3",
+    "type": "blank",
+    "title": "이벤트 초대장 버튼 여는 태그",
+    "description": "참가하기 가 누를 수 있는 버튼이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>코딩 파티 초대장</h1>\n<ul>\n  <li>날짜: 5월 10일</li>\n  <li>장소: 학교 강당</li>\n</ul>\n{{1}}참가하기</button>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<button>"
+          ],
+          "hint": "버튼의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-2-code-1",
+    "type": "code",
+    "title": "이벤트 초대장 만들기",
+    "description": "행사 제목(h1), 정보 목록(ul/li), 참가 버튼(button)이 있는 초대장을 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-2",
+    "content": {
+      "starter_code": "<!-- 행사 제목, 정보 목록, 참가 버튼을 만드세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1\\b[^>]*>[^<]+</h1\\s*>",
+          "message": "행사 제목을 h1 으로 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ul\\b[^>]*>[\\s\\S]*<li\\b[^>]*>[^<]+</li\\s*>[\\s\\S]*</ul\\s*>",
+          "message": "행사 정보를 ul/li 목록으로 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<button\\b[^>]*>[^<]+</button\\s*>",
+          "message": "button 으로 참가 버튼을 만들어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>코딩 파티 초대장</h1>\n<ul>\n  <li>날짜: 5월 10일</li>\n  <li>장소: 학교 강당</li>\n</ul>\n<button>참가하기</button>"
+    }
+  },
+  {
+    "id": "html-12-3-mcq-1",
+    "type": "mcq",
+    "title": "간단한 기사 페이지 시맨틱 요소",
+    "description": "기사 페이지에서 기사 본문 하나를 독립된 글로 묶을 때 쓰는 시맨틱 요소는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "choices": [
+        "<span>",
+        "<article>",
+        "<b>",
+        "<br>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-12-3-mcq-2",
+    "type": "mcq",
+    "title": "간단한 기사 페이지 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "choices": [
+        "<article>\n  <h2>코딩 대회 열려</h2>\n  <p>대회가 열렸습니다.</p>\n<article>",
+        "<article>\n  <h2>코딩 대회 열려</p>\n  <p>대회가 열렸습니다.</h2>\n</article>",
+        "<article>\n  <h2>코딩 대회 열려</h2>\n  <p>대회가 열렸습니다.</p>\n</article>",
+        "<article\n  <h2>코딩 대회 열려</h2>\n  <p>대회가 열렸습니다.</p>\n</article>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-12-3-mcq-3",
+    "type": "mcq",
+    "title": "간단한 기사 페이지 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<header><h1>학교 신문</h1></header>\n<article>\n  <h2>코딩 대회 열려</h2>\n  <p>어제 코딩 대회가 열렸습니다.</p>\n</article>\n<footer>기자: 김코딩</footer>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "choices": [
+        "header, article, footer 라는 글자가 화면에 보인다",
+        "기자: 김코딩 이 맨 위에 보인다",
+        "article 안의 내용은 화면에 보이지 않는다",
+        "위에서부터 학교 신문 제목, 코딩 대회 열려 소제목과 본문, 기자: 김코딩 이 차례대로 보인다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-12-3-parsons-1",
+    "type": "parsons",
+    "title": "간단한 기사 페이지 순서 맞추기 1",
+    "description": "머리(header), 기사(article), 바닥(footer) 순서가 되도록 조각을 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "fragments": [
+        "<article><p>어제 학교에서 코딩 대회가 열렸습니다.</p></article>",
+        "<footer>기자: 김코딩</footer>",
+        "<header><h1>학교 신문</h1></header>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-12-3-parsons-2",
+    "type": "parsons",
+    "title": "간단한 기사 페이지 순서 맞추기 2",
+    "description": "header, article(소제목, 본문 순서), footer 순서가 되도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "fragments": [
+        "<footer>기자: 김코딩</footer>",
+        "<article>",
+        "<header><h1>학교 신문</h1></header>",
+        "  <p>어제 학교에서 코딩 대회가 열렸습니다.</p>",
+        "</article>",
+        "  <h2>코딩 대회 열려</h2>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        5,
+        3,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-12-3-parsons-3",
+    "type": "parsons",
+    "title": "간단한 기사 페이지 순서 맞추기 3",
+    "description": "header(제목), article(소제목, 본문 순서), footer 순서가 되도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "fragments": [
+        "</header>",
+        "  <p>어제 학교에서 코딩 대회가 열렸습니다.</p>",
+        "  <h1>학교 신문</h1>",
+        "  <h2>코딩 대회 열려</h2>",
+        "<article>",
+        "<header>",
+        "<footer>기자: 김코딩</footer>",
+        "</article>"
+      ],
+      "answer_order": [
+        5,
+        2,
+        0,
+        4,
+        3,
+        1,
+        7,
+        6
+      ]
+    }
+  },
+  {
+    "id": "html-12-3-blank-1",
+    "type": "blank",
+    "title": "간단한 기사 페이지 header 태그",
+    "description": "페이지 머리 부분을 묶도록 빈칸에 알맞은 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}<h1>학교 신문</h1></header>\n<article>\n  <h2>코딩 대회 열려</h2>\n  <p>어제 학교에서 코딩 대회가 열렸습니다.</p>\n</article>\n<footer>기자: 김코딩</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<header>"
+          ],
+          "hint": "머리 부분을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-3-blank-2",
+    "type": "blank",
+    "title": "간단한 기사 페이지 article 태그",
+    "description": "기사 본문을 독립된 글로 묶도록 빈칸에 알맞은 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header><h1>학교 신문</h1></header>\n{{1}}\n  <h2>코딩 대회 열려</h2>\n  <p>어제 학교에서 코딩 대회가 열렸습니다.</p>\n</article>\n<footer>기자: 김코딩</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<article>"
+          ],
+          "hint": "기사 글을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-3-blank-3",
+    "type": "blank",
+    "title": "간단한 기사 페이지 footer 태그",
+    "description": "페이지 바닥 부분을 묶도록 빈칸에 알맞은 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header><h1>학교 신문</h1></header>\n<article>\n  <h2>코딩 대회 열려</h2>\n  <p>어제 학교에서 코딩 대회가 열렸습니다.</p>\n</article>\n{{1}}기자: 김코딩</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<footer>"
+          ],
+          "hint": "바닥 부분을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-3-code-1",
+    "type": "code",
+    "title": "간단한 기사 페이지 만들기",
+    "description": "header, article, footer 를 차례대로 써서 기사 페이지를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-3",
+    "content": {
+      "starter_code": "<!-- header, article, footer 로 기사 페이지를 만드세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*?</header\\s*>",
+          "message": "header 로 머리 부분을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<article\\b[^>]*>[\\s\\S]*<(h[1-6]|p)\\b[\\s\\S]*</article\\s*>",
+          "message": "article 안에 기사 제목이나 본문을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<footer\\b[^>]*>[\\s\\S]*?</footer\\s*>",
+          "message": "footer 로 바닥 부분을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</header\\s*>[\\s\\S]*<article\\b[\\s\\S]*</article\\s*>[\\s\\S]*<footer\\b",
+          "message": "header, article, footer 순서로 놓아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<header><h1>학교 신문</h1></header>\n<article>\n  <h2>코딩 대회 열려</h2>\n  <p>어제 학교에서 코딩 대회가 열렸습니다.</p>\n</article>\n<footer>기자: 김코딩</footer>"
+    }
+  },
+  {
+    "id": "html-12-4-mcq-1",
+    "type": "mcq",
+    "title": "좋아하는 도서 목록 링크 조합",
+    "description": "도서 목록의 각 책 제목을 누르면 책 소개 페이지로 가게 하려면 어떻게 해야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "choices": [
+        "<li> 안에 <a href=\"...\"> 링크를 넣는다",
+        "<li> 에 src 속성을 넣는다",
+        "<ol> 대신 <img> 를 쓴다",
+        "책 제목을 <h1> 으로 감싼다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-12-4-mcq-2",
+    "type": "mcq",
+    "title": "좋아하는 도서 목록 올바른 코드",
+    "description": "다음 중 올바르게 작성한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "choices": [
+        "<ol>\n  <li><a src=\"book1.html\">어린 왕자</a></li>\n</ol>",
+        "<ol>\n  <li><a href=\"book1.html\">어린 왕자</a></li>\n</ol>",
+        "<ol>\n  <li><a href=\"book1.html\">어린 왕자</li></a>\n</ol>",
+        "<ol>\n  <li><a href=\"book1.html\">어린 왕자</a><li>\n</ol>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-12-4-mcq-3",
+    "type": "mcq",
+    "title": "좋아하는 도서 목록 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<ol>\n  <li><a href=\"book1.html\">어린 왕자</a></li>\n  <li><a href=\"book2.html\">해리 포터</a></li>\n</ol>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "choices": [
+        "점(•)이 붙은 목록으로 보이고 링크는 없다",
+        "book1.html, book2.html 주소가 글자로 보인다",
+        "1. 어린 왕자, 2. 해리 포터 처럼 번호가 붙고, 각 제목은 누를 수 있는 링크로 보인다",
+        "번호 없이 두 제목이 한 줄에 붙어 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-12-4-parsons-1",
+    "type": "parsons",
+    "title": "좋아하는 도서 목록 순서 맞추기 1",
+    "description": "어린 왕자가 1번, 해리 포터가 2번이 되도록 조각을 놓아 ol 목록을 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "fragments": [
+        "  <li><a href=\"book2.html\">해리 포터</a></li>",
+        "</ol>",
+        "<ol>",
+        "  <li><a href=\"book1.html\">어린 왕자</a></li>"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-12-4-parsons-2",
+    "type": "parsons",
+    "title": "좋아하는 도서 목록 순서 맞추기 2",
+    "description": "소제목 아래에 어린 왕자, 해리 포터 순서의 번호 목록이 오도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "fragments": [
+        "  <li><a href=\"book2.html\">해리 포터</a></li>",
+        "  <li><a href=\"book1.html\">어린 왕자</a></li>",
+        "<ol>",
+        "<h2>내가 좋아하는 책</h2>",
+        "</ol>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-12-4-parsons-3",
+    "type": "parsons",
+    "title": "좋아하는 도서 목록 순서 맞추기 3",
+    "description": "소제목 아래에 어린 왕자, 해리 포터, 나니아 연대기 순서의 번호 목록이 오도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "fragments": [
+        "  <li><a href=\"book3.html\">나니아 연대기</a></li>",
+        "<h2>내가 좋아하는 책</h2>",
+        "  <li><a href=\"book1.html\">어린 왕자</a></li>",
+        "</ol>",
+        "<ol>",
+        "  <li><a href=\"book2.html\">해리 포터</a></li>"
+      ],
+      "answer_order": [
+        1,
+        4,
+        2,
+        5,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-12-4-blank-1",
+    "type": "blank",
+    "title": "좋아하는 도서 목록 ol 여는 태그",
+    "description": "책 목록에 1, 2 번호가 붙도록 빈칸에 목록 여는 태그를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <li><a href=\"book1.html\">어린 왕자</a></li>\n  <li><a href=\"book2.html\">해리 포터</a></li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ol>"
+          ],
+          "hint": "번호 목록의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-4-blank-2",
+    "type": "blank",
+    "title": "좋아하는 도서 목록 li 여는 태그",
+    "description": "어린 왕자가 목록의 한 항목이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ol>\n  {{1}}<a href=\"book1.html\">어린 왕자</a></li>\n  <li><a href=\"book2.html\">해리 포터</a></li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-4-blank-3",
+    "type": "blank",
+    "title": "좋아하는 도서 목록 링크 여는 부분",
+    "description": "어린 왕자를 누르면 book1.html 로 가도록 빈칸에 태그를 여는 부분을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ol>\n  <li>{{1}} href=\"book1.html\">어린 왕자</a></li>\n  <li><a href=\"book2.html\">해리 포터</a></li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<a"
+          ],
+          "hint": "링크 태그를 여는 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-12-4-code-1",
+    "type": "code",
+    "title": "좋아하는 도서 목록 링크 걸기",
+    "description": "좋아하는 도서 2권 이상을 ol 로 나열하고, 각 책에 a 링크를 거세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-12-4",
+    "content": {
+      "starter_code": "<ol>\n  <!-- 좋아하는 도서를 링크와 함께 나열하세요 -->\n</ol>\n",
+      "checks": [
+        {
+          "pattern": "<ol\\b[^>]*>[\\s\\S]*</ol\\s*>",
+          "message": "ol 로 번호 목록을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li\\b[^>]*>\\s*<a\\b[^>]*\\bhref\\s*=[^>]*>[^<]+</a\\s*>\\s*</li\\s*>",
+          "message": "li 안에 a href 링크를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "(<li\\b[^>]*>\\s*<a\\b[^>]*\\bhref\\s*=[^>]*>[^<]+</a\\s*>\\s*</li\\s*>[\\s\\S]*){2,}",
+          "message": "도서를 2권 이상 링크와 함께 나열해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*<li\\b[^>]*>(?!\\s*<a\\b))[\\s\\S]*$",
+          "message": "모든 li 안에 링크(a)를 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<ol>\n  <li><a href=\"book1.html\">어린 왕자</a></li>\n  <li><a href=\"book2.html\">해리 포터</a></li>\n</ol>"
+    }
+  }
+]
