@@ -1,15 +1,27 @@
 import { Hono } from 'hono'
+import { STUDY_LEVEL } from '../../util/config/constants'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
-import { filterByLanguage, matchesAnswer } from '../../util/problems'
+import {
+  filterByLanguage,
+  filterByLevel,
+  isStudyLevel,
+  levelOf,
+  loadProblems,
+  matchesAnswer,
+  type StudyLevel,
+} from '../../util/problems'
 
 type BlankProblem = {
   id: string
   type: 'blank'
   title: string
   reward: number
+  difficulty?: number
+  level?: StudyLevel
+  lessonId?: string
   description?: string
   language?: string
   caseSensitive?: boolean
@@ -19,7 +31,7 @@ type BlankProblem = {
   }
 }
 
-export const blankProblems = (await Bun.file('static/problems/blank.json').json()) as BlankProblem[]
+export const blankProblems = await loadProblems<BlankProblem>('blank')
 
 // 조회할 때 빈칸 답안은 빼고 내려준다
 export function toQuestion(p: BlankProblem) {
@@ -31,13 +43,15 @@ export function toQuestion(p: BlankProblem) {
     description: p.description,
     reward: p.reward,
     language: p.language,
+    level: levelOf(p),
+    lessonId: p.lessonId,
     content: { ...p.content, blanks },
   }
 }
 
 export const blank = new Hono<AuthEnv>()
 
-// id 를 주면 그 문제, 안 주면 language 로 거른 문제 중 하나
+// id 를 주면 그 문제, 안 주면 language, level 로 거른 문제 중 하나
 blank.get('', requireAuth, (c) => {
   const id = c.req.query('id')
   if (id) {
@@ -47,9 +61,14 @@ blank.get('', requireAuth, (c) => {
   }
 
   const language = c.req.query('language')
-  const pool = filterByLanguage(blankProblems, language)
+  const level = c.req.query('level')
+  if (level !== undefined && !isStudyLevel(level)) {
+    return c.json({ message: `level 은 ${STUDY_LEVEL.join(', ')} 중 하나` }, 400)
+  }
+  const pool = filterByLevel(filterByLanguage(blankProblems, language), level)
   if (pool.length === 0) {
-    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    const label = [language, level].filter(Boolean).join(' ')
+    const message = label ? `${label} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
     return c.json({ message }, 404)
   }
 
