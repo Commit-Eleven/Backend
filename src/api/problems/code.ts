@@ -1,18 +1,30 @@
 import { Hono } from 'hono'
 import { type CodeCheck, compileChecks, gradeCode } from '../../util/code-grader'
+import { STUDY_LEVEL } from '../../util/config/constants'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
-import { excludeSolved, filterByLanguage } from '../../util/problems'
+import {
+  excludeSolved,
+  filterByLanguage,
+  filterByLevel,
+  isStudyLevel,
+  levelOf,
+  loadProblems,
+  type StudyLevel,
+} from '../../util/problems'
 
 type CodeProblem = {
   id: string
   type: 'code'
   title: string
   reward: number
+  difficulty?: number
+  level?: StudyLevel
+  lessonId?: string
   description?: string
   language?: string
   content: {
@@ -22,7 +34,7 @@ type CodeProblem = {
 }
 
 // 사용자 코드는 실행하지 않는다. 문법 검사 후, 주석·문자열을 뺀 코드가 문제별 규칙(정규식)에 맞는지 본다
-export const codeProblems = (await Bun.file('static/problems/code.json').json()) as CodeProblem[]
+export const codeProblems = await loadProblems<CodeProblem>('code')
 const compiled = new Map(codeProblems.map((p) => [p.id, compileChecks(p.content.checks)]))
 
 const MAX_CODE_LENGTH = 10_000
@@ -36,6 +48,8 @@ export function toQuestion(p: CodeProblem) {
     description: p.description,
     reward: p.reward,
     language: p.language,
+    level: levelOf(p),
+    lessonId: p.lessonId,
     content: { starter_code: p.content.starter_code },
   }
 }
@@ -52,9 +66,14 @@ code.get('', requireAuth, async (c) => {
   }
 
   const language = c.req.query('language')
-  const pool = filterByLanguage(codeProblems, language)
+  const level = c.req.query('level')
+  if (level !== undefined && !isStudyLevel(level)) {
+    return c.json({ message: `level 은 ${STUDY_LEVEL.join(', ')} 중 하나` }, 400)
+  }
+  const pool = filterByLevel(filterByLanguage(codeProblems, language), level)
   if (pool.length === 0) {
-    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    const label = [language, level].filter(Boolean).join(' ')
+    const message = label ? `${label} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
     return c.json({ message }, 404)
   }
 

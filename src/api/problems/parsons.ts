@@ -1,17 +1,29 @@
 import { Hono } from 'hono'
+import { STUDY_LEVEL } from '../../util/config/constants'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
-import { excludeSolved, filterByLanguage } from '../../util/problems'
+import {
+  excludeSolved,
+  filterByLanguage,
+  filterByLevel,
+  isStudyLevel,
+  levelOf,
+  loadProblems,
+  type StudyLevel,
+} from '../../util/problems'
 
 type ParsonsProblem = {
   id: string
   type: 'parsons'
   title: string
   reward: number
+  difficulty?: number
+  level?: StudyLevel
+  lessonId?: string
   description?: string
   language?: string
   content: {
@@ -20,9 +32,7 @@ type ParsonsProblem = {
   }
 }
 
-export const parsonsProblems = (await Bun.file(
-  'static/problems/parsons.json',
-).json()) as ParsonsProblem[]
+export const parsonsProblems = await loadProblems<ParsonsProblem>('parsons')
 
 // 조회할 때 정답 순서(answer_order)는 빼고 내려준다
 export function toQuestion(p: ParsonsProblem) {
@@ -34,6 +44,8 @@ export function toQuestion(p: ParsonsProblem) {
     description: p.description,
     reward: p.reward,
     language: p.language,
+    level: levelOf(p),
+    lessonId: p.lessonId,
     content,
   }
 }
@@ -50,9 +62,14 @@ parsons.get('', requireAuth, async (c) => {
   }
 
   const language = c.req.query('language')
-  const pool = filterByLanguage(parsonsProblems, language)
+  const level = c.req.query('level')
+  if (level !== undefined && !isStudyLevel(level)) {
+    return c.json({ message: `level 은 ${STUDY_LEVEL.join(', ')} 중 하나` }, 400)
+  }
+  const pool = filterByLevel(filterByLanguage(parsonsProblems, language), level)
   if (pool.length === 0) {
-    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    const label = [language, level].filter(Boolean).join(' ')
+    const message = label ? `${label} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
     return c.json({ message }, 404)
   }
 
