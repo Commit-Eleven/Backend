@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { gradeSubmittedCode } from '../../util/ai/code-grader'
 import { type CodeCheck, compileChecks, gradeCode } from '../../util/code-grader'
 import { STUDY_LEVEL } from '../../util/config/constants'
 import { awardSolveExp } from '../../util/db/exp'
@@ -106,7 +107,27 @@ code.post('', requireAuth, async (c) => {
   }
 
   const result = gradeCode(submitted, problem.language, compiled.get(problem.id) ?? [])
-  const { isAnswer, passed, total, failed, syntaxError } = result
+  let isAnswer = result.isAnswer
+  let passed = result.passed
+  const total = result.total
+  let failed = result.failed
+  const syntaxError = result.syntaxError
+
+  // 정적 검사에서 놓친 의미상 정답만 AI로 보완한다. 문법 오류는 AI로 통과시키지 않는다.
+  if (!isAnswer && !syntaxError) {
+    const aiGrade = await gradeSubmittedCode({
+      title: problem.title,
+      description: problem.description,
+      language: problem.language,
+      code: submitted,
+      failedChecks: failed,
+    })
+    if (aiGrade === true) {
+      isAnswer = true
+      passed = total
+      failed = []
+    }
+  }
 
   const userId = c.get('userId')
   await submissions.create({
