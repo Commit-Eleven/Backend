@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { removeAvatarFile } from '../../util/avatar'
 import {
   EXP_HISTORY_LIMIT,
   HOME_RECOMMEND_LIMIT,
@@ -417,7 +418,7 @@ me.get('/wrong-notes/reviewed', requireAuth, async (c) => {
 // 나 혼자 남은 그룹은 계정과 같이 사라진다
 me.delete('/', requireAuth, async (c) => {
   const userId = c.get('userId')
-  await findMe(userId)
+  const user = await findMe(userId)
 
   const groups = await users.ownedGroupsWithOtherMembers(userId)
   if (groups.length > 0) {
@@ -435,6 +436,7 @@ me.delete('/', requireAuth, async (c) => {
   }
 
   await users.remove(userId)
+  await removeAvatarFile(user.avatarUrl)
   clearRefreshCookie(c)
   return c.body(null, 204)
 })

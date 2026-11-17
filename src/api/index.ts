@@ -20,7 +20,7 @@ import { ranking } from './ranking'
 import { login } from './social/login'
 import { tags } from './tags'
 import { units } from './units'
-import { avatar } from './users/avatar'
+import { AVATAR_REQUEST_MAX_BYTES, avatar, avatars } from './users/avatar'
 import { friends } from './users/friends'
 import { me } from './users/me'
 import { onboarding } from './users/onboarding'
@@ -35,12 +35,20 @@ if (env.devTokenEnabled) {
 const app = new Hono()
 
 app.use('*', logger())
-app.use(
-  '/api/*',
-  bodyLimit({
-    maxSize: MAX_BODY_BYTES,
-    onError: (c) => fail(c, 'PAYLOAD_TOO_LARGE', '요청 본문이 너무 큽니다', 413),
-  }),
+
+// 프로필 사진 업로드만 multipart 본문을 받으므로 한도를 따로 둔다
+const jsonBodyLimit = bodyLimit({
+  maxSize: MAX_BODY_BYTES,
+  onError: (c) => fail(c, 'PAYLOAD_TOO_LARGE', '요청 본문이 너무 큽니다', 413),
+})
+const avatarBodyLimit = bodyLimit({
+  maxSize: AVATAR_REQUEST_MAX_BYTES,
+  onError: (c) => fail(c, 'PAYLOAD_TOO_LARGE', '프로필 사진은 2MB 이하여야 합니다', 413),
+})
+const AVATAR_PATHS = new Set(['/api/users/me/avatar', '/api/me/avatar'])
+const isAvatarPath = (path: string) => AVATAR_PATHS.has(path.replace(/\/+$/, ''))
+app.use('/api/*', (c, next) =>
+  (isAvatarPath(c.req.path) ? avatarBodyLimit : jsonBodyLimit)(c, next),
 )
 
 app.route('/api/health', health)
@@ -58,6 +66,7 @@ app.route('/api/users/me', me)
 // 프론트가 /api/me/avatar 로 부르고 있어서 같은 기능을 여기에도 붙인다
 app.route('/api/me/avatar', avatar)
 app.route('/api/me', myGroups)
+app.route('/api/avatars', avatars)
 app.route('/api/users/onboarding', onboarding)
 app.route('/api/users/friends', friends)
 app.route('/api/users', userProfile)
@@ -83,4 +92,6 @@ app.onError((err, c) => {
 export default {
   port: env.port,
   fetch: app.fetch,
+  // 본문을 메모리에 통째로 올리기 전에 서버 차원에서도 한 번 더 막는다
+  maxRequestBodySize: AVATAR_REQUEST_MAX_BYTES,
 }

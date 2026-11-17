@@ -21,6 +21,12 @@ export const STUDY_LEVEL = ['beginner', 'intermediate', 'advanced'] as const
 // 프로필 사진 주소 최대 길이
 export const AVATAR_URL_MAX_LENGTH = 512
 
+// 프로필 사진 업로드 한도. 파일 한 개 기준이고 multipart 경계 등 부가 바이트는 따로 둔다
+export const AVATAR_UPLOAD_MAX_BYTES = 2 * 1024 * 1024
+export const AVATAR_MULTIPART_OVERHEAD_BYTES = 64 * 1024
+// 압축 폭탄(작은 파일이 디코딩될 때 커지는 이미지)을 막기 위한 가로·세로 한도
+export const AVATAR_MAX_DIMENSION = 4096
+
 export const PROFILE_VISIBILITY = ['public', 'friends', 'private'] as const
 
 export const DEFAULT_STUDY_LANGUAGE = 'python'

@@ -24,6 +24,8 @@ export const env = {
   },
   anthropicApiKey: Bun.env.ANTHROPIC_API_KEY ?? '',
   anthropicModel: Bun.env.ANTHROPIC_MODEL ?? 'claude-3-5-haiku-latest',
+  // 업로드한 프로필 사진을 두는 폴더. 웹에서 바로 접근하지 않고 /api/avatars/:file 로만 내보낸다
+  avatarDir: Bun.env.AVATAR_DIR || 'data/avatars',
   // OAuth callback must return the browser to the app instead of rendering the token JSON.
   // Local development can override this with http://127.0.0.1:5173.
   frontendUrl: (Bun.env.FRONTEND_URL || 'https://codegram.me').replace(/\/+$/, ''),

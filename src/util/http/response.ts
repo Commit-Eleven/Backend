@@ -29,6 +29,8 @@ export const Errors = {
   forbidden: (message = '권한 없음') => new AppError('FORBIDDEN', message, 403),
   notFound: (message = '없는 리소스') => new AppError('NOT_FOUND', message, 404),
   invalidInput: (message: string) => new AppError('INVALID_INPUT', message, 400),
+  tooLarge: (message = '요청 본문이 너무 큽니다') =>
+    new AppError('PAYLOAD_TOO_LARGE', message, 413),
   duplicate: (message: string) => new AppError('DUPLICATE', message, 409),
   internal: (message = '서버 오류') => new AppError('INTERNAL', message, 500),
 }

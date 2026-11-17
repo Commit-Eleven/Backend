@@ -35,7 +35,7 @@ src/
 │   ├── users/
 │   │   ├── me.ts             # 내 정보·학습 설정·통계·제출·오답노트
 │   │   ├── onboarding.ts     # 온보딩
-│   │   ├── avatar.ts         # 프로필 사진 변경
+│   │   ├── avatar.ts         # 프로필 사진 업로드·제공
 │   │   ├── profile.ts        # 다른 사용자 프로필
 │   │   └── friends.ts        # 사용자 검색, 친구 신청·수락·삭제
 │   └── problems/
@@ -92,6 +92,8 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 로그아웃 | `POST /api/social/login/logout` |
 | 개발용 토큰 | `GET /api/social/login/dev-token` (`NODE_ENV=development` + `ENABLE_DEV_TOKEN=true` 일 때만) |
 | 닉네임 변경 | `PATCH /api/users/me/nickname` |
+| 프로필 사진 변경 | `PATCH /api/users/me/avatar` (multipart/form-data `image`, JSON `{ image_url }` 호환) |
+| 프로필 사진 제공 | `GET /api/avatars/:file` |
 | 내 그룹 목록 | `GET /api/me/groups` |
 | 그룹 목록·참여·방장 위임 | `GET /api/groups`, `POST /api/groups/join`, `POST /api/groups/:id/owner` |
 | 알림 생성·목록·설정 조회·변경 | `POST /api/notifications`, `GET /api/notifications`, `GET/PATCH /api/notifications/settings` |
@@ -126,11 +128,12 @@ API 문서(`/swagger`, `/doc`)는 제공하지 않으며, 프론트엔드 로그
 - 코드 작성 문제는 서버에서 코드를 실행하지 않고 `static/problems/code.json`의 `checks`(정규식)에 맞는지만 검사합니다. 틀리면 부족한 조건을 `failed`로 돌려줍니다.
 - 회원 탈퇴 시 제출 기록, 경험치, 친구, 알림, 레슨 기록은 함께 삭제됩니다. 다른 멤버가 남은 그룹의 방장이면 `409 OWNS_GROUPS`와 그룹 목록을 돌려주니 방장을 먼저 넘겨야 합니다. 나 혼자 남은 그룹은 계정과 함께 삭제됩니다.
 - 프로필 공개 범위는 `public`(기본), `friends`, `private`입니다. 본인은 항상 볼 수 있고, 아니면 `403`입니다.
+- 프로필 사진은 `PATCH /api/users/me/avatar`에 `multipart/form-data`의 `image` 필드로 보냅니다. PNG·JPEG·WebP만 받고(파일 내용의 시그니처로 판별, SVG 제외), 파일 2MB·가로세로 4096px까지입니다. 서버는 원본 파일 이름 대신 무작위 이름으로 `AVATAR_DIR`(기본 `data/avatars`)에 저장하고 `/api/avatars/<파일>` 주소를 DB에 기록합니다. 기존처럼 JSON `{ "image_url": null }`을 보내 기본 사진으로 되돌릴 수 있고, 외부 주소를 보내는 방식도 호환을 위해 남아 있습니다. 사진을 바꾸면 이전에 업로드한 파일은 지웁니다.
 
 ## 요청 본문 규칙
 
 - 본문이 있는 API는 JSON 객체만 받습니다. `null`, 배열, 숫자, 문자열을 보내면 `400`입니다. 본문이 없으면 빈 객체로 봅니다.
-- 본문은 100KB까지이고 넘으면 `413 PAYLOAD_TOO_LARGE`입니다.
+- 본문은 100KB까지이고 넘으면 `413 PAYLOAD_TOO_LARGE`입니다. 프로필 사진 업로드만 예외로 2MB(+multipart 여유 64KB)까지 받습니다. 서버는 `Content-Length`를 믿지 않고 실제로 읽은 바이트로 한도를 검사합니다.
 - 중첩은 8단계까지이고, 짝이 없는 서러게이트 같은 깨진 유니코드가 있으면 `400`입니다.
 
 ```sh
