@@ -1,0 +1,5452 @@
+[
+  {
+    "id": "py-5-1-mcq-1",
+    "type": "mcq",
+    "title": "if문 개념 확인",
+    "description": "if 조건: 아래에 들여쓴 코드는 언제 실행될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "choices": [
+        "조건이 True일 때만 실행된다",
+        "조건이 False일 때만 실행된다",
+        "조건과 상관없이 항상 실행된다",
+        "프로그램이 끝날 때 한 번 실행된다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-5-1-mcq-2",
+    "type": "mcq",
+    "title": "if문 올바른 코드",
+    "description": "x가 10보다 클 때 \"big\"을 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "choices": [
+        "if x > 10:\n    print(\"big\")",
+        "if x > 10\n    print(\"big\")",
+        "if x > 10:\nprint(\"big\")",
+        "If x > 10:\n    print(\"big\")"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-5-1-mcq-3",
+    "type": "mcq",
+    "title": "if문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nx = 2\nif x > 3:\n    print(\"A\")\nprint(\"B\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "choices": [
+        "B",
+        "A",
+        "A와 B가 한 줄씩 출력된다",
+        "아무것도 출력되지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-5-1-parsons-1",
+    "type": "parsons",
+    "title": "if문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 score가 90 이상일 때 Great 가 출력되게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "fragments": [
+        "    print(\"Great\")",
+        "if score >= 90:",
+        "score = 95"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-5-1-parsons-2",
+    "type": "parsons",
+    "title": "if문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 score가 90 이상이면 Great 를 출력하고, 마지막에 Done 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "fragments": [
+        "    print(\"Great\")",
+        "print(\"Done\")",
+        "if score >= 90:",
+        "score = 95"
+      ],
+      "answer_order": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-5-1-parsons-3",
+    "type": "parsons",
+    "title": "if문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 Great, You passed, Score:, 95 가 한 줄씩 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "fragments": [
+        "print(\"Score:\")",
+        "    print(\"Great\")",
+        "score = 95",
+        "print(score)",
+        "if score >= 90:",
+        "    print(\"You passed\")"
+      ],
+      "answer_order": [
+        2,
+        4,
+        1,
+        5,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-5-1-blank-1",
+    "type": "blank",
+    "title": "if문 빈칸 - 키워드",
+    "description": "score가 90 이상일 때 Great 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "template": "score = 95\n{{1}} score >= 90:\n    print(\"Great\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if"
+          ],
+          "hint": "조건을 검사하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-1-blank-2",
+    "type": "blank",
+    "title": "if문 빈칸 - 콜론",
+    "description": "if 조건 줄이 올바르게 끝나도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "template": "age = 15\nif age >= 13{{1}}\n    print(\"Teen\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ":"
+          ],
+          "hint": "조건 줄 끝에 붙는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-1-blank-3",
+    "type": "blank",
+    "title": "if문 빈칸 - 출력 함수",
+    "description": "조건이 True일 때 Great 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "template": "score = 92\nif score >= 90:\n    {{1}}\"Great\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-1-code-1",
+    "type": "code",
+    "title": "if문으로 Great 출력하기",
+    "description": "score가 90 이상이면 \"Great\"를 출력하는 if문을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-1",
+    "content": {
+      "starter_code": "score = 95\n# 여기에 if문을 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bif\\s*\\(?\\s*(score\\s*>=\\s*90|90\\s*<=\\s*score)\\s*\\)?\\s*:",
+          "message": "if score >= 90: 으로 조건을 써요"
+        },
+        {
+          "pattern": ":\\s*\\n[ \\t]+print\\s*\\(\\s*(\"Great\"|\\'Great\\')\\s*\\)",
+          "message": "if 아래 들여쓴 줄에서 print(\"Great\") 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "score = 95\nif score >= 90:\n    print(\"Great\")"
+    }
+  },
+  {
+    "id": "py-5-2-mcq-1",
+    "type": "mcq",
+    "title": "if-else문 개념 확인",
+    "description": "if-else문에서 else: 아래의 코드는 언제 실행될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "choices": [
+        "if 조건이 True일 때",
+        "if 조건이 False일 때",
+        "조건과 상관없이 항상",
+        "if 아래 코드가 실행된 바로 다음에"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-5-2-mcq-2",
+    "type": "mcq",
+    "title": "if-else문 올바른 코드",
+    "description": "n이 0보다 크면 \"plus\", 아니면 \"minus\"를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "choices": [
+        "if n > 0:\n    print(\"plus\")\nelse n <= 0:\n    print(\"minus\")",
+        "if n > 0:\n    print(\"plus\")\nelse\n    print(\"minus\")",
+        "if n > 0:\n    print(\"plus\")\nelse:\nprint(\"minus\")",
+        "if n > 0:\n    print(\"plus\")\nelse:\n    print(\"minus\")"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-5-2-mcq-3",
+    "type": "mcq",
+    "title": "if-else문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nx = 7\nif x % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "choices": [
+        "even",
+        "odd",
+        "even과 odd가 모두 출력된다",
+        "오류가 난다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-5-2-parsons-1",
+    "type": "parsons",
+    "title": "if-else문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 age가 13 이상이면 Teen, 아니면 Child 를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "fragments": [
+        "if age >= 13:",
+        "    print(\"Teen\")",
+        "else:",
+        "age = 12",
+        "    print(\"Child\")"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-5-2-parsons-2",
+    "type": "parsons",
+    "title": "if-else문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 age가 13 이상이면 Teen, 아니면 Child 를 출력하고 마지막에 Bye 를 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "fragments": [
+        "    print(\"Child\")",
+        "if age >= 13:",
+        "print(\"Bye\")",
+        "age = 12",
+        "else:",
+        "    print(\"Teen\")"
+      ],
+      "answer_order": [
+        3,
+        1,
+        5,
+        4,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-5-2-parsons-3",
+    "type": "parsons",
+    "title": "if-else문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 age에 2를 더한 뒤 13 이상이면 Teen, 아니면 Child 를 출력하고 마지막에 age 를 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "fragments": [
+        "age = 12",
+        "    print(\"Teen\")",
+        "    print(\"Child\")",
+        "print(age)",
+        "else:",
+        "age += 2",
+        "if age >= 13:"
+      ],
+      "answer_order": [
+        0,
+        5,
+        6,
+        1,
+        4,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-5-2-blank-1",
+    "type": "blank",
+    "title": "if-else문 빈칸 - if",
+    "description": "temp가 25보다 크면 Hot, 아니면 Cool 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "template": "temp = 30\n{{1}} temp > 25:\n    print(\"Hot\")\nelse:\n    print(\"Cool\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if"
+          ],
+          "hint": "조건을 검사하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-2-blank-2",
+    "type": "blank",
+    "title": "if-else문 빈칸 - else",
+    "description": "temp가 25보다 크지 않을 때 Cool 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "template": "temp = 18\nif temp > 25:\n    print(\"Hot\")\n{{1}}\n    print(\"Cool\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else:"
+          ],
+          "hint": "조건이 False일 때를 뜻하는 키워드와 콜론"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-2-blank-3",
+    "type": "blank",
+    "title": "if-else문 빈칸 - 출력 함수",
+    "description": "n이 짝수일 때 even 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "template": "n = 4\nif n % 2 == 0:\n    {{1}}\"even\")\nelse:\n    print(\"odd\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-2-code-1",
+    "type": "code",
+    "title": "짝수 홀수 판별하기",
+    "description": "n이 짝수면 \"even\", 아니면 \"odd\"를 출력하는 if-else문을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-2",
+    "content": {
+      "starter_code": "n = 7\n# 여기에 if-else문을 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bif\\s*\\(?\\s*n\\s*%\\s*2\\s*==\\s*0\\s*\\)?\\s*:",
+          "message": "if n % 2 == 0: 으로 짝수인지 검사해요"
+        },
+        {
+          "pattern": "\\n\\s*else\\s*:",
+          "message": "else: 를 써요"
+        },
+        {
+          "pattern": "if[^\\n]*:\\s*\\n[ \\t]+print\\s*\\(\\s*(\"even\"|\\'even\\')\\s*\\)",
+          "message": "짝수일 때 print(\"even\") 을 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "else\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*(\"odd\"|\\'odd\\')\\s*\\)",
+          "message": "else 아래에서 print(\"odd\") 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "n = 7\nif n % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")"
+    }
+  },
+  {
+    "id": "py-5-3-mcq-1",
+    "type": "mcq",
+    "title": "간단한 계산기 개념 확인",
+    "description": "간단한 계산기에서 if-else문은 어떤 역할을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "choices": [
+        "같은 계산을 여러 번 반복한다",
+        "숫자를 문자열로 바꾼다",
+        "선택한 기호(op)에 따라 서로 다른 계산을 하게 한다",
+        "코드에 설명을 적어 둔다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-5-3-mcq-2",
+    "type": "mcq",
+    "title": "간단한 계산기 올바른 코드",
+    "description": "op가 \"+\"일 때 a + b 를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "choices": [
+        "if op == \"+\":\n    print(a + b)",
+        "if op = \"+\":\n    print(a + b)",
+        "if op == +:\n    print(a + b)",
+        "if \"op\" == \"+\":\n    print(a + b)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-5-3-mcq-3",
+    "type": "mcq",
+    "title": "간단한 계산기 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\na = 8\nb = 2\nop = \"-\"\nif op == \"+\":\n    print(a + b)\nelse:\n    print(a - b)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "choices": [
+        "10",
+        "16",
+        "6",
+        "오류가 난다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-5-3-parsons-1",
+    "type": "parsons",
+    "title": "간단한 계산기 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 op가 \"+\"이면 7 + 3, 아니면 7 - 3 을 출력하는 계산기를 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "fragments": [
+        "else:",
+        "    print(7 - 3)",
+        "    print(7 + 3)",
+        "op = \"+\"",
+        "if op == \"+\":"
+      ],
+      "answer_order": [
+        3,
+        4,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-5-3-parsons-2",
+    "type": "parsons",
+    "title": "간단한 계산기 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 op가 \"+\"이면 7 + 3, 아니면 7 - 3 을 result에 저장한 뒤 result를 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "fragments": [
+        "print(result)",
+        "    result = 7 + 3",
+        "    result = 7 - 3",
+        "if op == \"+\":",
+        "op = \"-\"",
+        "else:"
+      ],
+      "answer_order": [
+        4,
+        3,
+        1,
+        5,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-5-3-parsons-3",
+    "type": "parsons",
+    "title": "간단한 계산기 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 op에 따라 result를 계산해 출력하고, 마지막에 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "fragments": [
+        "    result = 7 - 3",
+        "    result = 7 + 3",
+        "else:",
+        "print(\"Done\")",
+        "print(result)",
+        "if op == \"+\":",
+        "op = \"-\""
+      ],
+      "answer_order": [
+        6,
+        5,
+        1,
+        2,
+        0,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-5-3-blank-1",
+    "type": "blank",
+    "title": "간단한 계산기 빈칸 - 조건",
+    "description": "op가 \"+\"인지 검사하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "template": "op = \"+\"\n{{1}} \"+\":\n    print(5 + 2)\nelse:\n    print(5 - 2)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if op ==",
+            "if op=="
+          ],
+          "hint": "if, 변수 이름, 같은지 비교하는 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-3-blank-2",
+    "type": "blank",
+    "title": "간단한 계산기 빈칸 - else",
+    "description": "op가 \"+\"가 아닐 때 5 - 2 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "template": "op = \"-\"\nif op == \"+\":\n    print(5 + 2)\n{{1}}\n    print(5 - 2)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else:"
+          ],
+          "hint": "그 밖의 경우를 뜻하는 키워드와 콜론"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-3-blank-3",
+    "type": "blank",
+    "title": "간단한 계산기 빈칸 - 출력",
+    "description": "op가 \"+\"일 때 a + b 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "template": "a = 6\nb = 3\nop = \"+\"\nif op == \"+\":\n    {{1}}a + b)\nelse:\n    print(a - b)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-3-code-1",
+    "type": "code",
+    "title": "더하기 빼기 계산기 만들기",
+    "description": "op가 \"+\"이면 a + b, 아니면 a - b를 출력하는 코드를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-3",
+    "content": {
+      "starter_code": "a = 10\nb = 3\nop = \"+\"\n# 여기에 코드를 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bif\\s*\\(?\\s*op\\s*==\\s*(\"\\+\"|\\'\\+\\')\\s*\\)?\\s*:",
+          "message": "if op == \"+\": 로 기호를 검사해요",
+          "in": "source"
+        },
+        {
+          "pattern": "if[^\\n]*:\\s*\\n[ \\t]+print\\s*\\(\\s*a\\s*\\+\\s*b\\s*\\)",
+          "message": "if 아래에서 print(a + b) 를 출력해요"
+        },
+        {
+          "pattern": "\\n\\s*else\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*a\\s*-\\s*b\\s*\\)",
+          "message": "else 아래에서 print(a - b) 를 출력해요"
+        }
+      ],
+      "solution": "a = 10\nb = 3\nop = \"+\"\nif op == \"+\":\n    print(a + b)\nelse:\n    print(a - b)"
+    }
+  },
+  {
+    "id": "py-5-4-mcq-1",
+    "type": "mcq",
+    "title": "중첩 if-else문 개념 확인",
+    "description": "elif와 중첩 if에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "choices": [
+        "elif는 if 없이 혼자 쓸 수 있다",
+        "if 안에는 다른 if를 넣을 수 없다",
+        "else는 항상 elif보다 앞에 써야 한다",
+        "elif로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계로 판단할 수 있다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-5-4-mcq-2",
+    "type": "mcq",
+    "title": "중첩 if-else문 올바른 코드",
+    "description": "n이 0보다 크면 \"plus\", 0이면 \"zero\", 0보다 작으면 \"minus\"를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "choices": [
+        "if n > 0:\n    print(\"plus\")\nelse if n == 0:\n    print(\"zero\")\nelse:\n    print(\"minus\")",
+        "if n > 0:\n    print(\"plus\")\nelif n == 0:\n    print(\"zero\")\nelse:\n    print(\"minus\")",
+        "if n > 0:\n    print(\"plus\")\nelse:\n    print(\"minus\")\nelif n == 0:\n    print(\"zero\")",
+        "if n > 0:\n    print(\"plus\")\nelif n = 0:\n    print(\"zero\")\nelse:\n    print(\"minus\")"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-5-4-mcq-3",
+    "type": "mcq",
+    "title": "중첩 if-else문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nage = 15\nif age >= 13:\n    if age >= 18:\n        print(\"Adult\")\n    else:\n        print(\"Teen\")\nelse:\n    print(\"Child\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "choices": [
+        "Teen",
+        "Adult",
+        "Child",
+        "아무것도 출력되지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-5-4-parsons-1",
+    "type": "parsons",
+    "title": "중첩 if-else문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 score가 90 이상이면 A, 80 이상이면 B 를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "fragments": [
+        "elif score >= 80:",
+        "if score >= 90:",
+        "score = 85",
+        "    print(\"B\")",
+        "    print(\"A\")"
+      ],
+      "answer_order": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-5-4-parsons-2",
+    "type": "parsons",
+    "title": "중첩 if-else문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 score가 90 이상이면 A, 80 이상이면 B, 아니면 C 를 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "fragments": [
+        "score = 85",
+        "elif score >= 80:",
+        "    print(\"C\")",
+        "if score >= 90:",
+        "    print(\"A\")",
+        "    print(\"B\")",
+        "else:"
+      ],
+      "answer_order": [
+        0,
+        3,
+        4,
+        1,
+        5,
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-5-4-parsons-3",
+    "type": "parsons",
+    "title": "중첩 if-else문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 age가 18 이상이면 Adult, 13 이상이면 Teen, 아니면 Child 를 출력하고 마지막에 Done 을 출력하는 중첩 if-else문을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "fragments": [
+        "print(\"Done\")",
+        "age = 15",
+        "        print(\"Adult\")",
+        "        print(\"Teen\")",
+        "else:",
+        "    print(\"Child\")",
+        "if age >= 13:",
+        "    if age >= 18:",
+        "    else:"
+      ],
+      "answer_order": [
+        1,
+        6,
+        7,
+        2,
+        8,
+        3,
+        4,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-5-4-blank-1",
+    "type": "blank",
+    "title": "중첩 if-else문 빈칸 - if",
+    "description": "score가 90 이상일 때 A 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "template": "score = 95\n{{1}} score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if"
+          ],
+          "hint": "첫 번째 조건을 검사하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-4-blank-2",
+    "type": "blank",
+    "title": "중첩 if-else문 빈칸 - elif",
+    "description": "score가 80 이상 90 미만일 때 B 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "template": "score = 85\nif score >= 90:\n    print(\"A\")\n{{1}} score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "elif"
+          ],
+          "hint": "조건을 이어 붙이는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-4-blank-3",
+    "type": "blank",
+    "title": "중첩 if-else문 빈칸 - else",
+    "description": "앞의 조건이 모두 False일 때 C 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "template": "score = 70\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\n{{1}}\n    print(\"C\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else:"
+          ],
+          "hint": "나머지 경우를 뜻하는 키워드와 콜론"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-5-4-code-1",
+    "type": "code",
+    "title": "점수로 등급 출력하기",
+    "description": "score가 90 이상이면 \"A\", 80 이상이면 \"B\", 아니면 \"C\"를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-5-4",
+    "content": {
+      "starter_code": "score = 85\n# 여기에 코드를 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bif\\s*\\(?\\s*score\\s*>=\\s*90\\s*\\)?\\s*:",
+          "message": "if score >= 90: 으로 먼저 검사해요"
+        },
+        {
+          "pattern": "(\\belif\\s*|\\belse\\s*:\\s*\\n[ \\t]+if\\s*)\\(?\\s*score\\s*>=\\s*80\\s*\\)?\\s*:",
+          "message": "elif score >= 80: 으로 이어서 검사해요"
+        },
+        {
+          "pattern": "90\\s*\\)?\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*(\"A\"|\\'A\\')\\s*\\)",
+          "message": "90 이상일 때 print(\"A\") 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "80\\s*\\)?\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*(\"B\"|\\'B\\')\\s*\\)",
+          "message": "80 이상일 때 print(\"B\") 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "else\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*(\"C\"|\\'C\\')\\s*\\)",
+          "message": "else 아래에서 print(\"C\") 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "score = 85\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")"
+    }
+  },
+  {
+    "id": "py-6-1-mcq-1",
+    "type": "mcq",
+    "title": "출력 개념 확인",
+    "description": "print()가 값을 출력한 뒤에 자동으로 하는 일은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "choices": [
+        "프로그램을 끝낸다",
+        "줄을 바꾼다",
+        "출력한 값을 지운다",
+        "다음 출력을 같은 줄에 이어 붙인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-6-1-mcq-2",
+    "type": "mcq",
+    "title": "출력 여러 줄 확인",
+    "description": "다음 코드를 실행하면 모두 몇 줄이 출력될까요?\nprint(\"a\")\nprint(\"b\")\nprint(\"c\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "choices": [
+        "1줄",
+        "3줄",
+        "2줄",
+        "4줄"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-6-1-mcq-3",
+    "type": "mcq",
+    "title": "출력 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nprint(\"Hi\")\nprint(\"Python\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "choices": [
+        "HiPython",
+        "Hi Python",
+        "Python\nHi",
+        "Hi\nPython"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-6-1-parsons-1",
+    "type": "parsons",
+    "title": "출력 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 Hello, World, Python 이 한 줄씩 차례로 출력되게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "fragments": [
+        "print(\"Python\")",
+        "print(\"Hello\")",
+        "print(\"World\")"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-6-1-parsons-2",
+    "type": "parsons",
+    "title": "출력 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 1번부터 4번까지 아침 일과가 한 줄씩 차례로 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "fragments": [
+        "print(\"2. Wash\")",
+        "print(\"4. Go to school\")",
+        "print(\"3. Eat\")",
+        "print(\"1. Wake up\")"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-1-parsons-3",
+    "type": "parsons",
+    "title": "출력 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 Name: Kim, Age: 15, City: Seoul, 빈 줄, Hobby: Coding, Bye! 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "fragments": [
+        "print()",
+        "print(\"City: Seoul\")",
+        "print(\"Age: 15\")",
+        "print(\"Hobby: Coding\")",
+        "print(\"Name: Kim\")",
+        "print(\"Bye!\")"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        0,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "py-6-1-blank-1",
+    "type": "blank",
+    "title": "출력 빈칸 - 첫째 줄",
+    "description": "Hello 와 World 가 한 줄씩 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "template": "{{1}}\"Hello\")\nprint(\"World\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-1-blank-2",
+    "type": "blank",
+    "title": "출력 빈칸 - 둘째 줄",
+    "description": "Line 1 다음 줄에 Line 2 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "template": "print(\"Line 1\")\n{{1}}\"Line 2\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-1-short-3",
+    "type": "short",
+    "title": "출력 함수 이름 쓰기",
+    "description": "빈칸(___)에 들어갈, 화면에 값을 출력하는 함수 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "code": "___(\"Hello\")\n___(\"World\")",
+      "answer": [
+        "print"
+      ]
+    }
+  },
+  {
+    "id": "py-6-1-code-1",
+    "type": "code",
+    "title": "두 줄 출력하기",
+    "description": "print()를 두 번 사용해 \"Hello\"와 \"Python\"을 한 줄씩 차례로 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-1",
+    "content": {
+      "starter_code": "# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "print\\s*\\(\\s*(\"Hello\"|\\'Hello\\')\\s*\\)",
+          "message": "print(\"Hello\") 로 첫 줄을 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*(\"Python\"|\\'Python\\')\\s*\\)",
+          "message": "print(\"Python\") 으로 둘째 줄을 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "[\"\\']Hello[\"\\'][\\s\\S]*[\"\\']Python[\"\\']",
+          "message": "Hello 를 먼저, Python 을 나중에 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "print(\"Hello\")\nprint(\"Python\")"
+    }
+  },
+  {
+    "id": "py-6-2-mcq-1",
+    "type": "mcq",
+    "title": "f-문자열 개념 확인",
+    "description": "f\"...\" 문자열 안에 {name} 이라고 쓰면 어떻게 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "choices": [
+        "{name} 글자가 그대로 출력된다",
+        "{name} 자리가 name 변수의 값으로 바뀐다",
+        "name 이라는 글자로 바뀐다",
+        "항상 오류가 난다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-6-2-mcq-2",
+    "type": "mcq",
+    "title": "f-문자열 올바른 코드",
+    "description": "age = 15 일 때 \"I am 15\"를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "choices": [
+        "print(f\"I am {age}\")",
+        "print(\"I am {age}\")",
+        "print(f\"I am age\")",
+        "print(f\"I am (age)\")"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-6-2-mcq-3",
+    "type": "mcq",
+    "title": "f-문자열 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ncity = \"Seoul\"\nprint(f\"I live in {city}\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "choices": [
+        "I live in {city}",
+        "I live in city",
+        "f\"I live in Seoul\"",
+        "I live in Seoul"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-6-2-parsons-1",
+    "type": "parsons",
+    "title": "f-문자열 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 Hello, Kim! 다음 줄에 Nice to meet you 가 출력되게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "fragments": [
+        "print(\"Nice to meet you\")",
+        "print(f\"Hello, {name}!\")",
+        "name = \"Kim\""
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-6-2-parsons-2",
+    "type": "parsons",
+    "title": "f-문자열 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 Hello, Lee! 와 Bye, Park! 가 차례로 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "fragments": [
+        "name = \"Lee\"",
+        "print(f\"Bye, {name}!\")",
+        "name = \"Park\"",
+        "print(f\"Hello, {name}!\")"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-2-parsons-3",
+    "type": "parsons",
+    "title": "f-문자열 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 Age: 15, Next year: 16, In 3 years: 18 이 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "fragments": [
+        "age += 1",
+        "print(f\"Next year: {age}\")",
+        "age = 15",
+        "print(f\"Age: {age}\")",
+        "print(f\"In 3 years: {age}\")",
+        "age += 2"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-6-2-blank-1",
+    "type": "blank",
+    "title": "f-문자열 빈칸 - 변수 만들기",
+    "description": "name 변수에 \"Kim\"을 저장해 Hello, Kim! 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "template": "{{1}} \"Kim\"\nprint(f\"Hello, {name}!\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "name =",
+            "name="
+          ],
+          "hint": "변수 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-2-blank-2",
+    "type": "blank",
+    "title": "f-문자열 빈칸 - f 접두사",
+    "description": "{name}이 값으로 바뀌어 Hello, Kim! 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "template": "name = \"Kim\"\nprint({{1}}Hello, {name}!\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "f\"",
+            "F\""
+          ],
+          "hint": "f와 여는 큰따옴표"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-2-blank-3",
+    "type": "blank",
+    "title": "f-문자열 빈칸 - 중괄호",
+    "description": "name 변수의 값이 들어가 Hi, Lee! 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "template": "name = \"Lee\"\nprint(f\"Hi, {{1}}!\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "{name}",
+            "{ name }"
+          ],
+          "hint": "중괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-2-code-1",
+    "type": "code",
+    "title": "f-문자열로 인사하기",
+    "description": "name 변수를 만들어 f-문자열로 \"Hello, 이름!\"을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-2",
+    "content": {
+      "starter_code": "# name 변수를 만들고 f-문자열로 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bname\\s*=\\s*[\"\\']",
+          "message": "name 변수에 문자열을 저장해요"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*[fF][\"\\']",
+          "message": "print() 안에 f-문자열을 써요"
+        },
+        {
+          "pattern": "[fF][\"\\']Hello, \\{\\s*name\\s*\\}![\"\\']",
+          "message": "f\"Hello, {name}!\" 형태로 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "name = \"Kim\"\nprint(f\"Hello, {name}!\")"
+    }
+  },
+  {
+    "id": "py-6-3-mcq-1",
+    "type": "mcq",
+    "title": "입력 개념 확인",
+    "description": "input() 함수에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "choices": [
+        "사용자가 입력한 글자를 문자열로 돌려준다",
+        "값을 화면에 출력만 한다",
+        "입력한 숫자를 자동으로 정수로 바꿔 준다",
+        "코드에 설명을 적는 기능이다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-6-3-mcq-2",
+    "type": "mcq",
+    "title": "입력 올바른 코드",
+    "description": "사용자에게 입력을 받아 food 변수에 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "choices": [
+        "input() = food",
+        "food = input",
+        "food == input()",
+        "food = input()"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-6-3-mcq-3",
+    "type": "mcq",
+    "title": "입력 실행 결과",
+    "description": "사용자가 Mina 를 입력했을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nname = input()\nprint(f\"Hi, {name}\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "choices": [
+        "Hi, {name}",
+        "Hi, name",
+        "Mina",
+        "Hi, Mina"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-6-3-parsons-1",
+    "type": "parsons",
+    "title": "입력 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 입력받은 이름을 출력한 다음 Bye 를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "fragments": [
+        "print(\"Bye\")",
+        "name = input()",
+        "print(name)"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-6-3-parsons-2",
+    "type": "parsons",
+    "title": "입력 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 입력받은 이름으로 인사말 msg를 만들어 출력한 다음 Bye 를 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "fragments": [
+        "print(msg)",
+        "print(\"Bye\")",
+        "name = input()",
+        "msg = f\"Hi, {name}!\""
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-3-parsons-3",
+    "type": "parsons",
+    "title": "입력 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 인사말, \"이름 likes Python\", Bye 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "fragments": [
+        "print(f\"{name} likes Python\")",
+        "name = input()",
+        "print(\"Bye\")",
+        "print(msg)",
+        "msg = f\"Hi, {name}!\""
+      ],
+      "answer_order": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-6-3-blank-1",
+    "type": "blank",
+    "title": "입력 빈칸 - input",
+    "description": "입력받은 값이 name에 저장되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "template": "name = {{1}})\nprint(name)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "input("
+          ],
+          "hint": "입력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-3-blank-2",
+    "type": "blank",
+    "title": "입력 빈칸 - 출력",
+    "description": "입력받은 name을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "template": "name = input()\n{{1}}name)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-3-short-3",
+    "type": "short",
+    "title": "입력 함수 이름 쓰기",
+    "description": "빈칸(___)에 들어갈, 사용자에게 값을 입력받는 함수 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "code": "name = ___()\nprint(name)",
+      "answer": [
+        "input"
+      ]
+    }
+  },
+  {
+    "id": "py-6-3-code-1",
+    "type": "code",
+    "title": "이름 입력받아 출력하기",
+    "description": "input()으로 값을 받아 name 변수에 저장하고 print(name)으로 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-3",
+    "content": {
+      "starter_code": "# input()으로 받은 값을 name에 저장하고 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bname\\s*=\\s*input\\s*\\(",
+          "message": "name = input() 으로 입력을 받아요"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*name\\s*\\)",
+          "message": "print(name) 으로 출력해요"
+        },
+        {
+          "pattern": "name\\s*=\\s*input\\s*\\([^\\n]*\\)[\\s\\S]*print\\s*\\(\\s*name\\s*\\)",
+          "message": "입력을 먼저 받고 그다음에 출력해요"
+        }
+      ],
+      "solution": "name = input()\nprint(name)"
+    }
+  },
+  {
+    "id": "py-6-4-mcq-1",
+    "type": "mcq",
+    "title": "형 변환 함수 고르기",
+    "description": "문자열 \"3.5\"를 실수(소수가 있는 숫자)로 바꾸는 함수는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "choices": [
+        "int()",
+        "float()",
+        "str()",
+        "print()"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-6-4-mcq-2",
+    "type": "mcq",
+    "title": "input() 자료형 확인",
+    "description": "사용자가 7 을 입력했을 때, x = input() 에서 x 에 저장되는 값은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "choices": [
+        "정수 7",
+        "문자열 \"7\"",
+        "실수 7.0",
+        "불리언 True"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-6-4-mcq-3",
+    "type": "mcq",
+    "title": "형 변환 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\na = \"5\"\nb = int(a)\nprint(b + 3)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "choices": [
+        "53",
+        "5 + 3",
+        "오류가 난다",
+        "8"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-6-4-parsons-1",
+    "type": "parsons",
+    "title": "형 변환 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 입력받은 값을 정수로 바꾼 뒤 2배를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "fragments": [
+        "number = int(text)",
+        "print(number * 2)",
+        "text = input()"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-4-parsons-2",
+    "type": "parsons",
+    "title": "형 변환 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 입력받은 값을 정수로 바꾸고, 2배 한 값을 double에 저장해 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "fragments": [
+        "double = number * 2",
+        "text = input()",
+        "number = int(text)",
+        "print(double)"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-6-4-parsons-3",
+    "type": "parsons",
+    "title": "형 변환 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 입력받은 수의 2배를 문자열로 바꾸고 끝에 ! 를 붙여 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "fragments": [
+        "print(result + \"!\")",
+        "number = int(text)",
+        "double = number * 2",
+        "result = str(double)",
+        "text = input()"
+      ],
+      "answer_order": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-6-4-blank-1",
+    "type": "blank",
+    "title": "형 변환 빈칸 - int",
+    "description": "입력받은 값을 정수로 바꿔 2배가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "template": "number = {{1}}input())\nprint(number * 2)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int("
+          ],
+          "hint": "정수로 바꾸는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-4-blank-2",
+    "type": "blank",
+    "title": "형 변환 빈칸 - input",
+    "description": "사용자에게 값을 입력받아 정수로 바꾸도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "template": "number = int({{1}}))\nprint(number + 10)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "input("
+          ],
+          "hint": "입력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-4-blank-3",
+    "type": "blank",
+    "title": "형 변환 빈칸 - 2배",
+    "description": "입력받은 수의 2배가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "template": "number = int(input())\nprint(number {{1}})",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "* 2",
+            "*2"
+          ],
+          "hint": "곱하기 기호와 숫자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-4-code-1",
+    "type": "code",
+    "title": "입력값 2배 출력하기",
+    "description": "input()으로 받은 값을 int()로 바꿔 number에 저장하고 2배를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-4",
+    "content": {
+      "starter_code": "# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bnumber\\s*=\\s*int\\s*\\(",
+          "message": "number = int(...) 로 정수로 바꿔 저장해요"
+        },
+        {
+          "pattern": "\\binput\\s*\\(",
+          "message": "input() 으로 값을 입력받아요"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*(number\\s*\\*\\s*2|2\\s*\\*\\s*number)\\s*\\)",
+          "message": "print(number * 2) 로 2배를 출력해요"
+        }
+      ],
+      "solution": "number = int(input())\nprint(number * 2)"
+    }
+  },
+  {
+    "id": "py-6-5-mcq-1",
+    "type": "mcq",
+    "title": "합 공식 개념 확인",
+    "description": "반복문 없이 1부터 n까지의 합을 한 번에 구하는 공식은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "choices": [
+        "n * (n + 1) // 2",
+        "n * n // 2",
+        "(n + 1) // 2",
+        "n * (n - 1)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-6-5-mcq-2",
+    "type": "mcq",
+    "title": "120까지 합 올바른 코드",
+    "description": "1부터 120까지의 합을 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "choices": [
+        "n = 120\nprint(n * (n + 1) // 2)",
+        "n = 120\nprint(n * n + 1 // 2)",
+        "n = 120\nprint(\"n * (n + 1) // 2\")",
+        "n = 120\nprint(n + (n + 1) // 2)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-6-5-mcq-3",
+    "type": "mcq",
+    "title": "합 공식 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nn = 10\nprint(n * (n + 1) // 2)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "choices": [
+        "110",
+        "50",
+        "55",
+        "10"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-6-5-parsons-1",
+    "type": "parsons",
+    "title": "120까지 합 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 1부터 120까지의 합 7260 을 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "fragments": [
+        "n = 120",
+        "print(total)",
+        "total = n * (n + 1) // 2"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-5-parsons-2",
+    "type": "parsons",
+    "title": "120까지 합 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 n * (n + 1) 을 먼저 구하고 2로 나눈 몫을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "fragments": [
+        "total = total // 2",
+        "total = n * (n + 1)",
+        "n = 120",
+        "print(total)"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-6-5-parsons-3",
+    "type": "parsons",
+    "title": "120까지 합 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 합 공식을 한 단계씩 계산해 7260 을 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "fragments": [
+        "total = product // 2",
+        "print(\"Done\")",
+        "product = n * big",
+        "n = 120",
+        "print(total)",
+        "big = n + 1"
+      ],
+      "answer_order": [
+        3,
+        5,
+        2,
+        0,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-5-blank-1",
+    "type": "blank",
+    "title": "120까지 합 빈칸 - 출력",
+    "description": "1부터 120까지의 합이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "template": "n = 120\n{{1}}n * (n + 1) // 2)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-5-blank-2",
+    "type": "blank",
+    "title": "120까지 합 빈칸 - 숫자",
+    "description": "1부터 120까지의 합 7260 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "template": "n = {{1}}\nprint(n * (n + 1) // 2)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "120"
+          ],
+          "hint": "합을 구할 마지막 숫자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-5-short-3",
+    "type": "short",
+    "title": "몫 연산자 쓰기",
+    "description": "빈칸(___)에 들어갈, 나눗셈의 몫(정수 부분)을 구하는 연산자 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "code": "n = 120\nprint(n * (n + 1) ___ 2)",
+      "answer": [
+        "//"
+      ]
+    }
+  },
+  {
+    "id": "py-6-5-code-1",
+    "type": "code",
+    "title": "1부터 120까지 합 구하기",
+    "description": "합 공식 n * (n + 1) // 2 를 사용해 1부터 120까지(120 포함) 숫자의 합을 구해 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-5",
+    "content": {
+      "starter_code": "n = 120\n# 합을 구해 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bn\\s*=\\s*120\\b",
+          "message": "n = 120 을 사용해요"
+        },
+        {
+          "pattern": "(\\bn\\s*\\*\\s*\\(\\s*n\\s*\\+\\s*1\\s*\\)|\\(\\s*n\\s*\\+\\s*1\\s*\\)\\s*\\*\\s*n\\b)",
+          "message": "n * (n + 1) 을 계산해요"
+        },
+        {
+          "pattern": "//\\s*2\\b",
+          "message": "// 2 로 2로 나눈 몫을 구해요"
+        },
+        {
+          "pattern": "\\bprint\\s*\\(",
+          "message": "print() 로 합을 출력해요"
+        }
+      ],
+      "solution": "n = 120\nprint(n * (n + 1) // 2)"
+    }
+  },
+  {
+    "id": "py-6-6-mcq-1",
+    "type": "mcq",
+    "title": "비교 결과 자료형 확인",
+    "description": "5 > 3 처럼 비교한 결과는 어떤 값일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "choices": [
+        "문자열 \"yes\" 또는 \"no\"",
+        "True 또는 False 같은 불리언 값",
+        "숫자 1 또는 2",
+        "항상 None"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-6-6-mcq-2",
+    "type": "mcq",
+    "title": "참 또는 거짓 올바른 코드",
+    "description": "입력값이 \"yes\"인지 비교한 결과(True 또는 False)를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "choices": [
+        "answer = input()\nprint(answer = \"yes\")",
+        "answer = input()\nprint(\"answer == yes\")",
+        "answer = input()\nprint(answer == \"yes\")",
+        "answer = input()\nprint(answer == yes)"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-6-6-mcq-3",
+    "type": "mcq",
+    "title": "참 또는 거짓 실행 결과",
+    "description": "사용자가 no 를 입력했을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nanswer = input()\nprint(answer == \"yes\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "choices": [
+        "True",
+        "yes",
+        "no",
+        "False"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-6-6-parsons-1",
+    "type": "parsons",
+    "title": "참 또는 거짓 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 입력값이 \"yes\"인지 비교한 결과를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "fragments": [
+        "answer = input()",
+        "print(result)",
+        "result = answer == \"yes\""
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-6-parsons-2",
+    "type": "parsons",
+    "title": "참 또는 거짓 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 입력받은 수가 10보다 큰지 비교한 결과를 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "fragments": [
+        "number = int(text)",
+        "result = number > 10",
+        "print(result)",
+        "text = input()"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-6-6-parsons-3",
+    "type": "parsons",
+    "title": "참 또는 거짓 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 입력받은 수가 짝수인지 출력한 다음, 그 반대 값을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "fragments": [
+        "text = input()",
+        "print(not is_even)",
+        "number = int(text)",
+        "is_even = number % 2 == 0",
+        "print(is_even)"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-6-6-blank-1",
+    "type": "blank",
+    "title": "참 또는 거짓 빈칸 - 입력",
+    "description": "사용자에게 값을 입력받아 \"yes\"와 비교하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "template": "answer = {{1}})\nprint(answer == \"yes\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "input("
+          ],
+          "hint": "입력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-6-blank-2",
+    "type": "blank",
+    "title": "참 또는 거짓 빈칸 - 비교",
+    "description": "입력값이 \"yes\"와 같은지 비교한 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "template": "answer = input()\nprint(answer {{1}} \"yes\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "=="
+          ],
+          "hint": "같은지 비교하는 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-6-blank-3",
+    "type": "blank",
+    "title": "참 또는 거짓 빈칸 - 출력",
+    "description": "비교 결과(True 또는 False)가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "template": "answer = input()\n{{1}}answer == \"yes\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-6-6-code-1",
+    "type": "code",
+    "title": "yes 입력 확인하기",
+    "description": "input()으로 받은 값이 \"yes\"이면 True, 아니면 False를 출력하세요. (== 비교 결과를 그대로 출력)",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-6-6",
+    "content": {
+      "starter_code": "# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\binput\\s*\\(",
+          "message": "input() 으로 값을 입력받아요"
+        },
+        {
+          "pattern": "(==\\s*(\"yes\"|\\'yes\\')|(\"yes\"|\\'yes\\')\\s*==)",
+          "message": "== \"yes\" 로 비교해요",
+          "in": "source"
+        },
+        {
+          "pattern": "(print\\s*\\([^\\n]*==|\\b(\\w+)\\s*=[^=\\n][^\\n]*==[\\s\\S]*print\\s*\\(\\s*\\3\\s*\\))",
+          "message": "비교 결과를 print() 로 출력해요"
+        }
+      ],
+      "solution": "answer = input()\nprint(answer == \"yes\")"
+    }
+  },
+  {
+    "id": "py-7-1-mcq-1",
+    "type": "mcq",
+    "title": "환영 메시지 개념 확인",
+    "description": "청구서 나누기 계산기에서 환영 메시지는 언제 보여 주는 것이 알맞을까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "choices": [
+        "계산이 모두 끝난 뒤",
+        "사용자가 잘못 입력했을 때만",
+        "프로그램이 시작할 때 맨 처음",
+        "코드에 쓰지 않아도 자동으로 나온다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-7-1-mcq-2",
+    "type": "mcq",
+    "title": "환영 메시지 올바른 코드",
+    "description": "\"Bill Splitter\"를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "choices": [
+        "print(Bill Splitter)",
+        "Print(\"Bill Splitter\")",
+        "print \"Bill Splitter\"",
+        "print(\"Bill Splitter\")"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-1-mcq-3",
+    "type": "mcq",
+    "title": "환영 메시지 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nprint(\"Welcome to \" + \"Bill Splitter\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "choices": [
+        "Welcome to + Bill Splitter",
+        "\"Welcome to \" + \"Bill Splitter\"",
+        "Welcome toBill Splitter",
+        "Welcome to Bill Splitter"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-1-parsons-1",
+    "type": "parsons",
+    "title": "환영 메시지 순서 맞추기 1",
+    "description": "조각을 이어 붙여 Bill Splitter 를 출력하는 한 줄 코드를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "fragments": [
+        "print(",
+        ")",
+        "\"Bill Splitter\""
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-7-1-parsons-2",
+    "type": "parsons",
+    "title": "환영 메시지 순서 맞추기 2",
+    "description": "더 잘게 나뉜 조각을 이어 붙여 Bill Splitter 를 출력하는 한 줄 코드를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "fragments": [
+        "(",
+        "print",
+        ")",
+        "\"Bill Splitter\""
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-7-1-parsons-3",
+    "type": "parsons",
+    "title": "환영 메시지 순서 맞추기 3",
+    "description": "조각을 이어 붙여 두 문자열을 + 로 합쳐 Welcome to Bill Splitter 를 출력하는 한 줄 코드를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "fragments": [
+        "+",
+        "print",
+        ")",
+        "(",
+        "\"Bill Splitter\"",
+        "\"Welcome to \""
+      ],
+      "answer_order": [
+        1,
+        3,
+        5,
+        0,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-7-1-blank-1",
+    "type": "blank",
+    "title": "환영 메시지 빈칸 - 출력",
+    "description": "환영 메시지 Bill Splitter 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "template": "{{1}}\"Bill Splitter\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-1-blank-2",
+    "type": "blank",
+    "title": "환영 메시지 빈칸 - 이름",
+    "description": "프로그램 이름 Bill Splitter 가 환영 메시지로 출력되도록 빈칸에 들어갈 글자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "template": "print(\"{{1}}\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Bill Splitter"
+          ],
+          "hint": "프로그램 이름 (대소문자와 띄어쓰기 주의)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-1-short-3",
+    "type": "short",
+    "title": "문자열 따옴표 쓰기",
+    "description": "빈칸(_) 두 곳에 똑같이 들어가, 글자를 문자열로 만들어 주는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "code": "print(_Bill Splitter_)",
+      "answer": [
+        "\"",
+        "'"
+      ]
+    }
+  },
+  {
+    "id": "py-7-1-code-1",
+    "type": "code",
+    "title": "환영 메시지 출력하기",
+    "description": "print()로 환영 메시지 \"Bill Splitter\"를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-1",
+    "content": {
+      "starter_code": "# 환영 메시지를 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bprint\\s*\\(",
+          "message": "print() 를 사용해요"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*(\"Bill Splitter\"|\\'Bill Splitter\\')\\s*\\)",
+          "message": "print(\"Bill Splitter\") 로 정확히 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "print(\"Bill Splitter\")"
+    }
+  },
+  {
+    "id": "py-7-2-mcq-1",
+    "type": "mcq",
+    "title": "float() 사용 이유",
+    "description": "청구 금액 \"12.5\"처럼 소수점이 있는 값을 숫자로 바꿀 때 int() 대신 float()를 쓰는 이유는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "choices": [
+        "float()가 출력을 더 빨리 하기 때문",
+        "float()는 문자열을 그대로 두기 때문",
+        "int()는 input()과 함께 쓸 수 없기 때문",
+        "int()는 \"12.5\" 같은 소수점 글자를 바꾸지 못해 오류가 나기 때문"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-2-mcq-2",
+    "type": "mcq",
+    "title": "입력받기 올바른 코드",
+    "description": "청구 금액을 입력받아 소수로 바꿔 bill에 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "choices": [
+        "bill = input(float())",
+        "bill = float(input)",
+        "float(input()) = bill",
+        "bill = float(input())"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-2-mcq-3",
+    "type": "mcq",
+    "title": "입력받기 실행 결과",
+    "description": "사용자가 12.5 를 입력했을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nbill = float(input())\nprint(bill * 2)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "choices": [
+        "25",
+        "12.512.5",
+        "25.0",
+        "오류가 난다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-7-2-parsons-1",
+    "type": "parsons",
+    "title": "입력받기 순서 맞추기 1",
+    "description": "조각을 이어 붙여 입력한 청구 금액을 실수로 바꿔 bill 에 저장하는 한 줄 코드를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "fragments": [
+        ")",
+        "input()",
+        "bill = ",
+        "float("
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-7-2-parsons-2",
+    "type": "parsons",
+    "title": "입력받기 순서 맞추기 2",
+    "description": "더 잘게 나뉜 조각을 이어 붙여 입력한 청구 금액을 실수로 바꿔 bill 에 저장하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "fragments": [
+        "))",
+        "input(",
+        "bill",
+        "float(",
+        " = "
+      ],
+      "answer_order": [
+        2,
+        4,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-7-2-parsons-3",
+    "type": "parsons",
+    "title": "입력받기 순서 맞추기 3",
+    "description": "조각을 이어 붙여 \"Bill: \" 안내 문구를 보여 주며 입력받은 금액을 실수로 바꿔 bill 에 저장하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "fragments": [
+        "\"Bill: \"",
+        "input(",
+        "float(",
+        "bill",
+        " = ",
+        "))"
+      ],
+      "answer_order": [
+        3,
+        4,
+        2,
+        1,
+        0,
+        5
+      ]
+    }
+  },
+  {
+    "id": "py-7-2-blank-1",
+    "type": "blank",
+    "title": "입력받기 빈칸 - 변수",
+    "description": "입력받은 청구 금액이 bill 변수에 저장되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "template": "{{1}} float(input())\nprint(bill)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "bill =",
+            "bill="
+          ],
+          "hint": "변수 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-2-blank-2",
+    "type": "blank",
+    "title": "입력받기 빈칸 - float",
+    "description": "입력받은 값을 소수가 있는 숫자로 바꾸도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "template": "bill = {{1}}input())\nprint(bill)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "float("
+          ],
+          "hint": "실수로 바꾸는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-2-blank-3",
+    "type": "blank",
+    "title": "입력받기 빈칸 - input",
+    "description": "사용자에게 청구 금액을 입력받도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "template": "bill = float({{1}}))\nprint(bill)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "input("
+          ],
+          "hint": "입력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-2-code-1",
+    "type": "code",
+    "title": "청구 금액 입력받기",
+    "description": "input()으로 청구 금액을 받아 float()로 변환해 bill에 저장하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-2",
+    "content": {
+      "starter_code": "# 청구 금액을 입력받아 bill에 저장하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bbill\\s*=\\s*float\\s*\\(",
+          "message": "bill = float(...) 로 실수로 바꿔 저장해요"
+        },
+        {
+          "pattern": "\\binput\\s*\\(",
+          "message": "input() 으로 금액을 입력받아요"
+        }
+      ],
+      "solution": "bill = float(input())\nprint(bill)"
+    }
+  },
+  {
+    "id": "py-7-3-mcq-1",
+    "type": "mcq",
+    "title": "퍼센트 계산 방법",
+    "description": "금액의 10%를 계산하는 방법으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "choices": [
+        "금액 * 0.1",
+        "금액 + 10",
+        "금액 / 0.1",
+        "금액 - 10"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-7-3-mcq-2",
+    "type": "mcq",
+    "title": "15% 소수로 나타내기",
+    "description": "15%를 소수로 바르게 나타낸 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "choices": [
+        "1.5",
+        "15.0",
+        "0.015",
+        "0.15"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-3-mcq-3",
+    "type": "mcq",
+    "title": "팁과 총액 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nbill = 20\ntip = bill * 0.15\ntotal = bill + tip\nprint(total)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "choices": [
+        "23.0",
+        "3.0",
+        "20.15",
+        "35.0"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-7-3-parsons-1",
+    "type": "parsons",
+    "title": "팁과 총액 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 bill의 15% 팁을 더한 총액을 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "fragments": [
+        "total = bill + tip",
+        "print(total)",
+        "bill = 40",
+        "tip = bill * 0.15"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-7-3-parsons-2",
+    "type": "parsons",
+    "title": "팁과 총액 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 Total: 46.0 과 Tip: 6.0 이 차례로 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "fragments": [
+        "total = bill + tip",
+        "tip = bill * 0.15",
+        "print(f\"Tip: {tip}\")",
+        "print(f\"Total: {total}\")",
+        "bill = 40"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-7-3-parsons-3",
+    "type": "parsons",
+    "title": "팁과 총액 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 입력받은 금액으로 팁과 총액을 계산해 Total, Tip, Thank you! 를 차례로 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "fragments": [
+        "tip = bill * 0.15",
+        "print(\"Thank you!\")",
+        "print(f\"Tip: {tip}\")",
+        "text = input()",
+        "total = bill + tip",
+        "print(f\"Total: {total}\")",
+        "bill = float(text)"
+      ],
+      "answer_order": [
+        3,
+        6,
+        0,
+        4,
+        5,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-7-3-blank-1",
+    "type": "blank",
+    "title": "팁과 총액 빈칸 - tip",
+    "description": "bill의 15%가 tip에 저장되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "template": "bill = 40\n{{1}} bill * 0.15\nprint(tip)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "tip =",
+            "tip="
+          ],
+          "hint": "팁을 저장할 변수 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-3-blank-2",
+    "type": "blank",
+    "title": "팁과 총액 빈칸 - 비율",
+    "description": "bill의 15% 팁이 계산되도록 빈칸에 알맞은 소수를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "template": "bill = 20\ntip = bill * {{1}}\nprint(tip)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "0.15",
+            ".15"
+          ],
+          "hint": "15%를 소수로 바꾼 값"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-3-blank-3",
+    "type": "blank",
+    "title": "팁과 총액 빈칸 - total",
+    "description": "bill과 tip을 더한 값이 total에 저장되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "template": "bill = 40\ntip = bill * 0.15\n{{1}} bill + tip\nprint(total)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "total =",
+            "total="
+          ],
+          "hint": "총액을 저장할 변수 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-3-code-1",
+    "type": "code",
+    "title": "팁과 총액 계산하기",
+    "description": "bill의 15%를 tip에 저장하고 total = bill + tip 을 계산하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-3",
+    "content": {
+      "starter_code": "bill = 40\n# tip과 total을 계산하세요\n",
+      "checks": [
+        {
+          "pattern": "\\btip\\s*=\\s*(bill\\s*\\*\\s*0?\\.15\\b|0?\\.15\\s*\\*\\s*bill\\b|bill\\s*\\*\\s*15\\s*/\\s*100\\b)",
+          "message": "tip = bill * 0.15 로 팁을 계산해요"
+        },
+        {
+          "pattern": "\\btotal\\s*=\\s*(bill\\s*\\+\\s*tip|tip\\s*\\+\\s*bill)\\b",
+          "message": "total = bill + tip 으로 총액을 계산해요"
+        }
+      ],
+      "solution": "bill = 40\ntip = bill * 0.15\ntotal = bill + tip\nprint(total)"
+    }
+  },
+  {
+    "id": "py-7-4-mcq-1",
+    "type": "mcq",
+    "title": "/ 연산자 개념 확인",
+    "description": "파이썬의 / 연산자에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "choices": [
+        "나누어떨어져도 항상 소수 결과를 돌려준다 (10 / 2 → 5.0)",
+        "항상 정수 결과를 돌려준다 (10 / 2 → 5)",
+        "나눗셈의 나머지를 돌려준다",
+        "숫자를 문자열로 바꿔 준다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-7-4-mcq-2",
+    "type": "mcq",
+    "title": "청구서 나누기 올바른 코드",
+    "description": "total을 people명이 똑같이 나눈 금액을 per_person에 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "choices": [
+        "per_person = people / total",
+        "per_person = total % people",
+        "per_person = total / people",
+        "total / people = per_person"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-7-4-mcq-3",
+    "type": "mcq",
+    "title": "청구서 나누기 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ntotal = 46.0\npeople = 4\nper_person = total / people\nprint(per_person)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "choices": [
+        "11",
+        "11.5",
+        "184.0",
+        "2.0"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-7-4-parsons-1",
+    "type": "parsons",
+    "title": "청구서 나누기 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 입력받은 사람 수로 60을 나눈 금액을 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "fragments": [
+        "people = int(input())",
+        "print(per_person)",
+        "per_person = 60 / people"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-7-4-parsons-2",
+    "type": "parsons",
+    "title": "청구서 나누기 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 총액과 사람 수를 차례로 입력받아 1인당 금액을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "fragments": [
+        "per_person = total / people",
+        "total = float(input())",
+        "people = int(input())",
+        "print(per_person)"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-7-4-parsons-3",
+    "type": "parsons",
+    "title": "청구서 나누기 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 총액과 사람 수를 차례로 입력받아 1인당 금액을 출력한 뒤 Split done! 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "fragments": [
+        "people = int(text)",
+        "per_person = total / people",
+        "print(\"Split done!\")",
+        "print(per_person)",
+        "text = input()",
+        "total = float(input())"
+      ],
+      "answer_order": [
+        5,
+        4,
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-7-4-blank-1",
+    "type": "blank",
+    "title": "청구서 나누기 빈칸 - people",
+    "description": "입력받은 사람 수가 people에 저장되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "template": "{{1}} int(input())\nprint(60 / people)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "people =",
+            "people="
+          ],
+          "hint": "사람 수를 저장할 변수 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-4-blank-2",
+    "type": "blank",
+    "title": "청구서 나누기 빈칸 - int",
+    "description": "입력받은 사람 수를 정수로 바꾸도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "template": "people = {{1}}input())\nprint(100 / people)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int("
+          ],
+          "hint": "정수로 바꾸는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-4-blank-3",
+    "type": "blank",
+    "title": "청구서 나누기 빈칸 - per_person",
+    "description": "1인당 금액이 per_person에 저장되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "template": "total = 90.0\npeople = 4\n{{1}} total / people\nprint(per_person)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "per_person =",
+            "per_person="
+          ],
+          "hint": "1인당 금액 변수 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-4-code-1",
+    "type": "code",
+    "title": "1인당 금액 계산하기",
+    "description": "people을 입력받아 정수로 바꾸고 per_person = total / people 을 계산하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-4",
+    "content": {
+      "starter_code": "total = 60.0\n# people을 입력받고 per_person을 계산하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bpeople\\s*=\\s*int\\s*\\(\\s*input\\s*\\(",
+          "message": "people = int(input()) 으로 사람 수를 입력받아요"
+        },
+        {
+          "pattern": "\\bper_person\\s*=\\s*total\\s*/\\s*people\\b",
+          "message": "per_person = total / people 로 나눠요"
+        }
+      ],
+      "solution": "total = 60.0\npeople = int(input())\nper_person = total / people\nprint(per_person)"
+    }
+  },
+  {
+    "id": "py-7-5-mcq-1",
+    "type": "mcq",
+    "title": "round() 개념 확인",
+    "description": "round(3.14159, 2) 에서 2는 무엇을 뜻할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "choices": [
+        "값에 2를 곱한다",
+        "2번 반복해서 출력한다",
+        "정수 2로 바꾼다",
+        "소수 둘째 자리까지 반올림한다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-5-mcq-2",
+    "type": "mcq",
+    "title": "형식 맞춰 출력 올바른 코드",
+    "description": "per_person을 소수 둘째 자리까지 반올림해 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "choices": [
+        "print(round(2, per_person))",
+        "print(round(per_person), 2)",
+        "print(round(\"per_person\", 2))",
+        "print(round(per_person, 2))"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-7-5-mcq-3",
+    "type": "mcq",
+    "title": "형식 맞춰 출력 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ntotal = 46.0\npeople = 3\nper_person = total / people\nprint(round(per_person, 2))",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "choices": [
+        "15.333333333333334",
+        "15.33",
+        "15",
+        "15.3"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-7-5-parsons-1",
+    "type": "parsons",
+    "title": "형식 맞춰 출력 순서 맞추기 1",
+    "description": "조각을 이어 붙여 15.3333 을 소수 둘째 자리까지 반올림해 출력하는 한 줄 코드를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "fragments": [
+        "round(",
+        "15.3333, 2",
+        "))",
+        "print("
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-7-5-parsons-2",
+    "type": "parsons",
+    "title": "형식 맞춰 출력 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 총액과 사람 수를 차례로 입력받아 1인당 금액을 소수 둘째 자리까지 반올림해 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "fragments": [
+        "print(rounded)",
+        "total = float(input())",
+        "rounded = round(per_person, 2)",
+        "people = int(input())",
+        "per_person = total / people"
+      ],
+      "answer_order": [
+        1,
+        3,
+        4,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-7-5-parsons-3",
+    "type": "parsons",
+    "title": "형식 맞춰 출력 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 반올림한 1인당 금액을 \"Each person pays 금액\" 으로 출력한 뒤 Thank you! 를 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "fragments": [
+        "total = float(input())",
+        "rounded = round(per_person, 2)",
+        "print(\"Thank you!\")",
+        "per_person = total / people",
+        "people = int(input())",
+        "print(f\"Each person pays {rounded}\")"
+      ],
+      "answer_order": [
+        0,
+        4,
+        3,
+        1,
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-7-5-blank-1",
+    "type": "blank",
+    "title": "형식 맞춰 출력 빈칸 - round",
+    "description": "per_person이 소수 둘째 자리까지 반올림되어 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "template": "per_person = 15.3333\nprint({{1}}per_person, 2))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "round("
+          ],
+          "hint": "반올림 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-5-blank-2",
+    "type": "blank",
+    "title": "형식 맞춰 출력 빈칸 - 출력",
+    "description": "반올림한 1인당 금액이 화면에 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "template": "per_person = 46.0 / 3\n{{1}}round(per_person, 2))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-7-5-short-3",
+    "type": "short",
+    "title": "반올림 자릿수 쓰기",
+    "description": "소수 둘째 자리까지 반올림하려면 빈칸(___)에 어떤 숫자를 써야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "code": "print(round(per_person, ___))",
+      "answer": [
+        "2"
+      ]
+    }
+  },
+  {
+    "id": "py-7-5-code-1",
+    "type": "code",
+    "title": "1인당 금액 반올림 출력",
+    "description": "round()로 소수 둘째 자리까지 반올림해 per_person을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-7-5",
+    "content": {
+      "starter_code": "per_person = 46.0 / 3\n# 소수 둘째 자리까지 반올림해 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "round\\s*\\(\\s*per_person\\s*,\\s*2\\s*\\)",
+          "message": "round(per_person, 2) 로 반올림해요"
+        },
+        {
+          "pattern": "\\bprint\\s*\\(",
+          "message": "print() 로 출력해요"
+        }
+      ],
+      "solution": "per_person = 46.0 / 3\nprint(round(per_person, 2))"
+    }
+  },
+  {
+    "id": "py-8-1-mcq-1",
+    "type": "mcq",
+    "title": "for 반복문 개념 확인",
+    "description": "for i in range(4): 에서 i가 차례로 갖는 값은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "choices": [
+        "1, 2, 3, 4",
+        "0, 1, 2, 3",
+        "0, 1, 2, 3, 4",
+        "4 하나만"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-8-1-mcq-2",
+    "type": "mcq",
+    "title": "for 반복문 올바른 코드",
+    "description": "for와 range()로 \"Hi\"를 3번 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "choices": [
+        "for i in range(3):\n    print(\"Hi\")",
+        "for i in range(3)\n    print(\"Hi\")",
+        "for i = range(3):\n    print(\"Hi\")",
+        "for i in range(3):\nprint(\"Hi\")"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-8-1-mcq-3",
+    "type": "mcq",
+    "title": "for 반복문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ntotal = 0\nfor i in range(4):\n    total += i\nprint(total)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "choices": [
+        "10",
+        "6",
+        "4",
+        "3"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-8-1-parsons-1",
+    "type": "parsons",
+    "title": "for 반복문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 0, 1, 2 를 한 줄씩 출력한 뒤 End 를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "fragments": [
+        "    print(i)",
+        "print(\"End\")",
+        "for i in range(3):"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-8-1-parsons-2",
+    "type": "parsons",
+    "title": "for 반복문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 0부터 4까지 더한 합 10 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "fragments": [
+        "print(total)",
+        "    total += i",
+        "total = 0",
+        "for i in range(5):"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-1-parsons-3",
+    "type": "parsons",
+    "title": "for 반복문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 0부터 4까지 더해 가며 중간 합 0, 1, 3, 6, 10 을 한 줄씩 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "fragments": [
+        "for i in range(5):",
+        "    print(total)",
+        "    total += i",
+        "print(\"Done\")",
+        "total = 0"
+      ],
+      "answer_order": [
+        4,
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-8-1-blank-1",
+    "type": "blank",
+    "title": "for 반복문 빈칸 - for",
+    "description": "0, 1, 2 가 한 줄씩 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "template": "{{1}} i in range(3):\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "반복을 시작하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-1-blank-2",
+    "type": "blank",
+    "title": "for 반복문 빈칸 - range",
+    "description": "0부터 3까지 한 줄씩 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "template": "for i in {{1}}4):\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "range("
+          ],
+          "hint": "숫자 범위를 만드는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-1-blank-3",
+    "type": "blank",
+    "title": "for 반복문 빈칸 - 출력",
+    "description": "Hi 가 2번 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "template": "for i in range(2):\n    {{1}}\"Hi\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-1-code-1",
+    "type": "code",
+    "title": "0부터 4까지 출력하기",
+    "description": "for와 range()로 0부터 4까지 한 줄씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-1",
+    "content": {
+      "starter_code": "# for와 range()로 0부터 4까지 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s+\\w+\\s+in\\s+range\\s*\\(\\s*(0\\s*,\\s*)?5\\s*\\)\\s*:",
+          "message": "for i in range(5): 로 반복해요"
+        },
+        {
+          "pattern": "\\bfor\\s+(\\w+)\\s+in\\s+range\\s*\\([^\\n]*\\)\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*\\1\\s*\\)",
+          "message": "반복문 안에서 print(i) 로 출력해요"
+        }
+      ],
+      "solution": "for i in range(5):\n    print(i)"
+    }
+  },
+  {
+    "id": "py-8-2-mcq-1",
+    "type": "mcq",
+    "title": "while 반복문 개념 확인",
+    "description": "while 조건: 아래의 코드는 언제까지 반복될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "choices": [
+        "딱 한 번만",
+        "조건이 False인 동안 계속",
+        "항상 10번",
+        "조건이 True인 동안 계속"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-8-2-mcq-2",
+    "type": "mcq",
+    "title": "무한 반복 이해하기",
+    "description": "다음 코드를 실행하면 어떻게 될까요?\ncount = 0\nwhile count < 3:\n    print(count)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "choices": [
+        "0, 1, 2가 출력되고 끝난다",
+        "아무것도 출력되지 않는다",
+        "count가 바뀌지 않아 0이 끝없이 출력된다 (무한 반복)",
+        "0이 3번 출력되고 끝난다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-2-mcq-3",
+    "type": "mcq",
+    "title": "while 반복문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nn = 1\nwhile n < 20:\n    n *= 2\nprint(n)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "choices": [
+        "16",
+        "32",
+        "20",
+        "64"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-8-2-parsons-1",
+    "type": "parsons",
+    "title": "while 반복문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 0, 1, 2 가 한 줄씩 출력되게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "fragments": [
+        "    count += 1",
+        "count = 0",
+        "while count < 3:",
+        "    print(count)"
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-2-parsons-2",
+    "type": "parsons",
+    "title": "while 반복문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 0, 1, 2 를 한 줄씩 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "fragments": [
+        "    count += 1",
+        "count = 0",
+        "while count < 3:",
+        "    print(count)",
+        "print(\"Done\")"
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-8-2-parsons-3",
+    "type": "parsons",
+    "title": "while 반복문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 0부터 4까지 중 짝수 0, 2, 4 만 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "fragments": [
+        "count = 0",
+        "    if count % 2 == 0:",
+        "print(\"Done\")",
+        "        print(count)",
+        "    count += 1",
+        "while count < 5:"
+      ],
+      "answer_order": [
+        0,
+        5,
+        1,
+        3,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-8-2-blank-1",
+    "type": "blank",
+    "title": "while 반복문 빈칸 - while",
+    "description": "count가 3보다 작은 동안 반복하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "template": "count = 0\n{{1}} count < 3:\n    print(count)\n    count += 1",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "while"
+          ],
+          "hint": "조건이 True인 동안 반복하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-2-blank-2",
+    "type": "blank",
+    "title": "while 반복문 빈칸 - 1 늘리기",
+    "description": "count가 1씩 늘어나 0, 1, 2 가 출력되고 반복이 끝나도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "template": "count = 0\nwhile count < 3:\n    print(count)\n    {{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "count += 1",
+            "count+=1",
+            "count = count + 1"
+          ],
+          "hint": "count에 1을 더해 저장하는 줄임 표현"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-2-blank-3",
+    "type": "blank",
+    "title": "while 반복문 빈칸 - 출력",
+    "description": "1, 2, 3 이 한 줄씩 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "template": "count = 1\nwhile count <= 3:\n    {{1}}count)\n    count += 1",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-2-code-1",
+    "type": "code",
+    "title": "while로 0부터 2까지 출력",
+    "description": "count가 3보다 작은 동안 count를 출력하고 1씩 늘리세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-2",
+    "content": {
+      "starter_code": "count = 0\n# while 반복문을 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bcount\\s*=\\s*0\\b",
+          "message": "count = 0 에서 시작해요"
+        },
+        {
+          "pattern": "\\bwhile\\s*\\(?\\s*count\\s*<\\s*3\\s*\\)?\\s*:",
+          "message": "while count < 3: 으로 반복해요"
+        },
+        {
+          "pattern": "\\n[ \\t]+print\\s*\\(\\s*count\\s*\\)\\s*\\n[ \\t]+count\\s*(\\+=\\s*1\\b|=\\s*count\\s*\\+\\s*1\\b)",
+          "message": "반복문 안에서 print(count) 다음에 count += 1 을 해요"
+        }
+      ],
+      "solution": "count = 0\nwhile count < 3:\n    print(count)\n    count += 1"
+    }
+  },
+  {
+    "id": "py-8-3-mcq-1",
+    "type": "mcq",
+    "title": "break문 개념 확인",
+    "description": "반복문 안에서 break 를 만나면 어떻게 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "choices": [
+        "이번 반복만 건너뛴다",
+        "처음부터 다시 반복한다",
+        "프로그램 전체가 오류로 멈춘다",
+        "반복문을 바로 끝내고 빠져나온다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-8-3-mcq-2",
+    "type": "mcq",
+    "title": "break문 올바른 코드",
+    "description": "i가 5가 되면 반복을 멈추는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "choices": [
+        "for i in range(10):\n    if i == 5:\n        break\n    print(i)",
+        "for i in range(10):\n    if i == 5:\n        break()\n    print(i)",
+        "for i in range(10):\n    if i = 5:\n        break\n    print(i)",
+        "for i in range(10):\n    if i == 5:\n        stop\n    print(i)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-8-3-mcq-3",
+    "type": "mcq",
+    "title": "break문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ntotal = 0\nfor i in range(10):\n    if i == 4:\n        break\n    total += i\nprint(total)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "choices": [
+        "10",
+        "6",
+        "45",
+        "4"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-8-3-parsons-1",
+    "type": "parsons",
+    "title": "break문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 0, 1, 2 를 출력하고 i가 3이 되면 반복을 멈추게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "fragments": [
+        "    print(i)",
+        "        break",
+        "    if i == 3:",
+        "for i in range(10):"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-3-parsons-2",
+    "type": "parsons",
+    "title": "break문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 0, 1, 2 를 출력하고 i가 3이 되면 멈춘 뒤 Stop 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "fragments": [
+        "for i in range(10):",
+        "print(\"Stop\")",
+        "    print(i)",
+        "        break",
+        "    if i == 3:"
+      ],
+      "answer_order": [
+        0,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-8-3-parsons-3",
+    "type": "parsons",
+    "title": "break문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 n을 1씩 늘리며 1, 2, 3 을 출력하고 n이 4가 되면 반복을 멈추게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "fragments": [
+        "    n += 1",
+        "n = 0",
+        "    print(n)",
+        "        break",
+        "    if n == 4:",
+        "while n < 10:"
+      ],
+      "answer_order": [
+        1,
+        5,
+        0,
+        4,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-8-3-blank-1",
+    "type": "blank",
+    "title": "break문 빈칸 - for",
+    "description": "0, 1, 2 를 출력하고 i가 3이 되면 멈추도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "template": "{{1}} i in range(10):\n    if i == 3:\n        break\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "반복을 시작하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-3-blank-2",
+    "type": "blank",
+    "title": "break문 빈칸 - break",
+    "description": "i가 2가 되면 반복을 바로 끝내도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "template": "for i in range(10):\n    if i == 2:\n        {{1}}\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "break"
+          ],
+          "hint": "반복문을 즉시 끝내는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-3-blank-3",
+    "type": "blank",
+    "title": "break문 빈칸 - if",
+    "description": "i가 4인지 검사해 반복을 멈추도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "template": "for i in range(10):\n    {{1}} i == 4:\n        break\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if"
+          ],
+          "hint": "조건을 검사하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-3-code-1",
+    "type": "code",
+    "title": "break로 반복 멈추기",
+    "description": "for i in range(10) 으로 0부터 i를 출력하다가, i가 3이 되면 break로 반복을 멈추세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-3",
+    "content": {
+      "starter_code": "# for와 break를 사용하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s+i\\s+in\\s+range\\s*\\(",
+          "message": "for i in range(10): 으로 반복해요"
+        },
+        {
+          "pattern": "\\bif\\s*\\(?\\s*i\\s*==\\s*3\\s*\\)?\\s*:\\s*\\n[ \\t]+break\\b",
+          "message": "if i == 3: 아래에서 break 해요"
+        },
+        {
+          "pattern": "\\n[ \\t]+print\\s*\\(\\s*i\\s*\\)",
+          "message": "반복문 안에서 print(i) 로 출력해요"
+        }
+      ],
+      "solution": "for i in range(10):\n    if i == 3:\n        break\n    print(i)"
+    }
+  },
+  {
+    "id": "py-8-4-mcq-1",
+    "type": "mcq",
+    "title": "continue문 개념 확인",
+    "description": "반복문 안에서 continue 를 만나면 어떻게 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "choices": [
+        "반복문을 완전히 끝낸다",
+        "프로그램을 처음부터 다시 실행한다",
+        "이번 반복의 남은 코드를 건너뛰고 다음 반복으로 넘어간다",
+        "같은 반복을 한 번 더 실행한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-4-mcq-2",
+    "type": "mcq",
+    "title": "continue문 올바른 코드",
+    "description": "0부터 4까지 중 3만 빼고 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "choices": [
+        "for i in range(5):\n    if i == 3:\n        break\n    print(i)",
+        "for i in range(5):\n    if i == 3:\n        continue\n        print(i)",
+        "for i in range(5):\n    print(i)\n    if i == 3:\n        continue",
+        "for i in range(5):\n    if i == 3:\n        continue\n    print(i)"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-8-4-mcq-3",
+    "type": "mcq",
+    "title": "continue문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ntotal = 0\nfor i in range(5):\n    if i == 1:\n        continue\n    total += i\nprint(total)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "choices": [
+        "10",
+        "1",
+        "9",
+        "0"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-4-parsons-1",
+    "type": "parsons",
+    "title": "continue문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 0부터 4까지 중 2만 건너뛰고 0, 1, 3, 4 를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "fragments": [
+        "        continue",
+        "for i in range(5):",
+        "    print(i)",
+        "    if i == 2:"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-8-4-parsons-2",
+    "type": "parsons",
+    "title": "continue문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 0, 1, 3, 4 를 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "fragments": [
+        "    if i == 2:",
+        "for i in range(5):",
+        "print(\"Done\")",
+        "        continue",
+        "    print(i)"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-8-4-parsons-3",
+    "type": "parsons",
+    "title": "continue문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 0부터 5까지 중 짝수는 건너뛰고 홀수의 개수 3 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "fragments": [
+        "    if i % 2 == 0:",
+        "for i in range(6):",
+        "    count += 1",
+        "print(count)",
+        "count = 0",
+        "        continue"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        5,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-8-4-blank-1",
+    "type": "blank",
+    "title": "continue문 빈칸 - for",
+    "description": "0부터 4까지 중 2를 건너뛰고 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "template": "{{1}} i in range(5):\n    if i == 2:\n        continue\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "반복을 시작하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-4-blank-2",
+    "type": "blank",
+    "title": "continue문 빈칸 - continue",
+    "description": "i가 1일 때만 건너뛰고 0, 2, 3, 4 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "template": "for i in range(5):\n    if i == 1:\n        {{1}}\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "continue"
+          ],
+          "hint": "이번 반복을 건너뛰는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-4-blank-3",
+    "type": "blank",
+    "title": "continue문 빈칸 - 출력",
+    "description": "0을 건너뛰고 1, 2, 3 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "template": "for i in range(4):\n    if i == 0:\n        continue\n    {{1}}i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-4-code-1",
+    "type": "code",
+    "title": "continue로 2 건너뛰기",
+    "description": "0~4 중 2는 건너뛰고 출력하도록 continue를 사용하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-4",
+    "content": {
+      "starter_code": "# for와 continue를 사용하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s+\\w+\\s+in\\s+range\\s*\\(\\s*(0\\s*,\\s*)?5\\s*\\)\\s*:",
+          "message": "for i in range(5): 로 반복해요"
+        },
+        {
+          "pattern": "\\bif\\s*\\(?\\s*\\w+\\s*==\\s*2\\s*\\)?\\s*:\\s*\\n[ \\t]+continue\\b",
+          "message": "if i == 2: 아래에서 continue 해요"
+        },
+        {
+          "pattern": "continue\\b[\\s\\S]*\\n[ \\t]+print\\s*\\(\\s*\\w+\\s*\\)",
+          "message": "continue 다음 줄에서 print(i) 로 출력해요"
+        }
+      ],
+      "solution": "for i in range(5):\n    if i == 2:\n        continue\n    print(i)"
+    }
+  },
+  {
+    "id": "py-8-5-mcq-1",
+    "type": "mcq",
+    "title": "팩토리얼 개념 확인",
+    "description": "4! (4 팩토리얼)의 값은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "choices": [
+        "10 (1 + 2 + 3 + 4)",
+        "16 (4 × 4)",
+        "24 (1 × 2 × 3 × 4)",
+        "4"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-5-mcq-2",
+    "type": "mcq",
+    "title": "곱 누적 변수 시작값",
+    "description": "팩토리얼을 구할 때 곱을 쌓는 변수 factorial 을 0이 아니라 1로 시작하는 이유는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "choices": [
+        "1이 가장 작은 숫자이기 때문",
+        "파이썬은 변수를 0으로 만들 수 없기 때문",
+        "0에 무엇을 곱해도 0이 되기 때문",
+        "1로 시작하면 반복이 더 빨라지기 때문"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-5-mcq-3",
+    "type": "mcq",
+    "title": "팩토리얼 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfactorial = 1\nfor i in range(4):\n    factorial *= i + 1\nprint(factorial)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "choices": [
+        "0",
+        "10",
+        "24",
+        "6"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-5-parsons-1",
+    "type": "parsons",
+    "title": "팩토리얼 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 5! 의 값 120 을 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "fragments": [
+        "    factorial *= i + 1",
+        "factorial = 1",
+        "print(factorial)",
+        "for i in range(5):"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-8-5-parsons-2",
+    "type": "parsons",
+    "title": "팩토리얼 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 1, 2, 6, 24, 120 을 한 줄씩 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "fragments": [
+        "print(\"Done\")",
+        "for i in range(5):",
+        "    factorial *= i + 1",
+        "factorial = 1",
+        "    print(factorial)"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-5-parsons-3",
+    "type": "parsons",
+    "title": "팩토리얼 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 number에 i + 1 을 저장해 곱해 가며 1, 2, 6, 24, 120 을 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "fragments": [
+        "    factorial *= number",
+        "    print(factorial)",
+        "print(\"Done\")",
+        "for i in range(5):",
+        "    number = i + 1",
+        "factorial = 1"
+      ],
+      "answer_order": [
+        5,
+        3,
+        4,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-8-5-blank-1",
+    "type": "blank",
+    "title": "팩토리얼 빈칸 - 시작값",
+    "description": "곱을 쌓을 변수를 알맞게 시작해 5! 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "template": "{{1}}\nfor i in range(5):\n    factorial *= i + 1\nprint(factorial)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "factorial = 1",
+            "factorial=1"
+          ],
+          "hint": "곱 누적 변수와 시작값"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-5-blank-2",
+    "type": "blank",
+    "title": "팩토리얼 빈칸 - for",
+    "description": "4! 이 계산되어 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "template": "factorial = 1\n{{1}} i in range(4):\n    factorial *= i + 1\nprint(factorial)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "반복을 시작하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-5-blank-3",
+    "type": "blank",
+    "title": "팩토리얼 빈칸 - 곱하기",
+    "description": "factorial에 i + 1 을 곱해 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "template": "factorial = 1\nfor i in range(3):\n    factorial {{1}} i + 1\nprint(factorial)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "*="
+          ],
+          "hint": "곱한 뒤 다시 저장하는 줄임 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-5-code-1",
+    "type": "code",
+    "title": "5! 계산하기",
+    "description": "5!을 for 반복문으로 계산해 factorial에 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-5",
+    "content": {
+      "starter_code": "factorial = 1\n# for 반복문으로 5!을 계산하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfactorial\\s*=\\s*1\\b",
+          "message": "factorial = 1 에서 시작해요"
+        },
+        {
+          "pattern": "\\bfor\\s+\\w+\\s+in\\s+range\\s*\\(",
+          "message": "for 와 range() 로 반복해요"
+        },
+        {
+          "pattern": "\\n[ \\t]+factorial\\s*(\\*=|=\\s*factorial\\s*\\*)",
+          "message": "반복문 안에서 factorial 에 곱해 저장해요"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*factorial\\s*\\)",
+          "message": "print(factorial) 로 출력해요"
+        }
+      ],
+      "solution": "factorial = 1\nfor i in range(5):\n    factorial *= i + 1\nprint(factorial)"
+    }
+  },
+  {
+    "id": "py-8-6-mcq-1",
+    "type": "mcq",
+    "title": "range 끝 값 확인",
+    "description": "range(1, 5) 가 만드는 수를 바르게 나타낸 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "choices": [
+        "1, 2, 3, 4, 5",
+        "0, 1, 2, 3, 4",
+        "1, 2, 3, 4",
+        "2, 3, 4, 5"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-6-mcq-2",
+    "type": "mcq",
+    "title": "range 함수 올바른 코드",
+    "description": "1부터 9까지의 홀수(1, 3, 5, 7, 9)를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "choices": [
+        "for i in range(1, 9, 2):\n    print(i)",
+        "for i in range(1, 10, 2):\n    print(i)",
+        "for i in range(0, 10, 2):\n    print(i)",
+        "for i in range(1, 10):\n    print(i)"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-8-6-mcq-3",
+    "type": "mcq",
+    "title": "range 함수 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ntotal = 0\nfor i in range(2, 9, 3):\n    total += i\nprint(total)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "choices": [
+        "15",
+        "26",
+        "7",
+        "10"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-8-6-parsons-1",
+    "type": "parsons",
+    "title": "range 함수 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 0, 2, 4, 6, 8 을 한 줄씩 출력한 뒤 End 를 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "fragments": [
+        "for i in range(0, 10, 2):",
+        "print(\"End\")",
+        "    print(i)"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-8-6-parsons-2",
+    "type": "parsons",
+    "title": "range 함수 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 1부터 5까지 더한 합 15 를 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "fragments": [
+        "total = 0",
+        "print(total)",
+        "for i in range(1, 6):",
+        "    total += i"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-8-6-parsons-3",
+    "type": "parsons",
+    "title": "range 함수 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 0, 2, 4, 6, 8 을 더해 가며 중간 합 0, 2, 6, 12, 20 을 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "fragments": [
+        "print(\"Done\")",
+        "    total += i",
+        "for i in range(0, 10, 2):",
+        "total = 0",
+        "    print(total)"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-6-blank-1",
+    "type": "blank",
+    "title": "range 함수 빈칸 - 시작",
+    "description": "0부터 2씩 늘어나는 0, 2, 4, 6, 8 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "template": "for i in {{1}}, 10, 2):\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "range(0",
+            "range( 0"
+          ],
+          "hint": "range 함수와 시작 값"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-6-blank-2",
+    "type": "blank",
+    "title": "range 함수 빈칸 - 간격",
+    "description": "0, 2, 4, 6, 8 처럼 2씩 늘어나도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "template": "for i in range(0, 10{{1}}:\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ", 2)",
+            ",2)"
+          ],
+          "hint": "쉼표, 간격 값, 닫는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-6-blank-3",
+    "type": "blank",
+    "title": "range 함수 빈칸 - 출력",
+    "description": "1, 4, 7 이 한 줄씩 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "template": "for i in range(1, 10, 3):\n    {{1}}i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-6-code-1",
+    "type": "code",
+    "title": "2씩 늘려 출력하기",
+    "description": "range(start, stop, step)으로 0부터 10까지(10 포함) 2씩 늘려 0, 2, 4, 6, 8, 10 을 한 줄씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-6",
+    "content": {
+      "starter_code": "# range(start, stop, step)을 사용하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s+\\w+\\s+in\\s+range\\s*\\(\\s*0\\s*,\\s*1[12]\\s*,\\s*2\\s*\\)\\s*:",
+          "message": "range(0, 11, 2) 처럼 시작, 끝, 간격을 써요 (끝 값은 포함되지 않아요)"
+        },
+        {
+          "pattern": "\\bfor\\s+(\\w+)\\s+in\\s+range\\s*\\([^\\n]*\\)\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*\\1\\s*\\)",
+          "message": "반복문 안에서 print(i) 로 출력해요"
+        }
+      ],
+      "solution": "for i in range(0, 11, 2):\n    print(i)"
+    }
+  },
+  {
+    "id": "py-8-7-mcq-1",
+    "type": "mcq",
+    "title": "중첩 반복문 개념 확인",
+    "description": "바깥 반복이 2번, 안쪽 반복이 3번인 중첩 반복문에서 안쪽 코드는 모두 몇 번 실행될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "choices": [
+        "6번",
+        "5번",
+        "3번",
+        "2번"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-8-7-mcq-2",
+    "type": "mcq",
+    "title": "중첩 반복문 올바른 코드",
+    "description": "\"*\"를 모두 6번 출력하는 올바른 중첩 반복문은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "choices": [
+        "for i in range(2):\nfor j in range(3):\n    print(\"*\")",
+        "for i in range(2):\n    for j in range(3):\n    print(\"*\")",
+        "for i in range(2):\n    for j in range(3):\n        print(\"*\")",
+        "for i in range(2)\n    for j in range(3)\n        print(\"*\")"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-7-mcq-3",
+    "type": "mcq",
+    "title": "중첩 반복문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ncount = 0\nfor i in range(3):\n    for j in range(4):\n        count += 1\nprint(count)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "choices": [
+        "12",
+        "7",
+        "4",
+        "3"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-8-7-parsons-1",
+    "type": "parsons",
+    "title": "중첩 반복문 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 바깥 2번, 안쪽 3번 반복하며 * 를 6번 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "fragments": [
+        "for i in range(2):",
+        "        print(\"*\")",
+        "    for j in range(3):"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-8-7-parsons-2",
+    "type": "parsons",
+    "title": "중첩 반복문 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 * 를 3번 출력할 때마다 - 를 한 번 출력하는 것을 2번 반복하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "fragments": [
+        "    print(\"-\")",
+        "        print(\"*\")",
+        "for i in range(2):",
+        "    for j in range(3):"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-7-parsons-3",
+    "type": "parsons",
+    "title": "중첩 반복문 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 *, **, *** 를 한 줄씩 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "fragments": [
+        "    line = \"\"",
+        "        line += \"*\"",
+        "    for j in range(i + 1):",
+        "print(\"Done\")",
+        "    print(line)",
+        "for i in range(3):"
+      ],
+      "answer_order": [
+        5,
+        0,
+        2,
+        1,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-8-7-blank-1",
+    "type": "blank",
+    "title": "중첩 반복문 빈칸 - 바깥 for",
+    "description": "바깥 반복문이 2번 반복되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "template": "{{1}} i in range(2):\n    for j in range(2):\n        print(\"*\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "반복을 시작하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-7-blank-2",
+    "type": "blank",
+    "title": "중첩 반복문 빈칸 - 안쪽 for",
+    "description": "바깥 반복마다 안쪽 반복이 2번 실행되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "template": "for i in range(3):\n    {{1}} j in range(2):\n        print(\"*\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "안쪽 반복을 시작하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-7-blank-3",
+    "type": "blank",
+    "title": "중첩 반복문 빈칸 - 출력",
+    "description": "안쪽 반복에서 * 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "template": "for i in range(2):\n    for j in range(3):\n        {{1}}\"*\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-7-code-1",
+    "type": "code",
+    "title": "중첩 반복으로 별 출력하기",
+    "description": "바깥 반복 2번, 안쪽 반복 3번으로 \"*\"를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-7",
+    "content": {
+      "starter_code": "# 중첩 반복문을 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s+\\w+\\s+in\\s+range\\s*\\(\\s*(0\\s*,\\s*)?2\\s*\\)\\s*:",
+          "message": "바깥 반복은 range(2) 로 2번 반복해요"
+        },
+        {
+          "pattern": "\\n[ \\t]+for\\s+\\w+\\s+in\\s+range\\s*\\(\\s*(0\\s*,\\s*)?3\\s*\\)\\s*:",
+          "message": "들여쓴 안쪽 반복은 range(3) 으로 3번 반복해요"
+        },
+        {
+          "pattern": "\\n([ \\t]+)for\\s[^\\n]*:\\s*\\n\\1[ \\t]+print\\s*\\(\\s*(\"\\*\"|\\'\\*\\')\\s*\\)",
+          "message": "안쪽 반복문 안에서 print(\"*\") 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "for i in range(2):\n    for j in range(3):\n        print(\"*\")"
+    }
+  },
+  {
+    "id": "py-8-8-mcq-1",
+    "type": "mcq",
+    "title": "동적 입력 개념 확인",
+    "description": "n = int(input()) 다음에 for i in range(n): 을 쓰면 반복 횟수는 어떻게 정해질까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "choices": [
+        "입력과 상관없이 항상 10번 반복한다",
+        "입력과 상관없이 1번만 반복한다",
+        "사용자가 입력한 숫자 n번만큼 반복한다",
+        "입력한 글자 수만큼 반복한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-8-mcq-2",
+    "type": "mcq",
+    "title": "동적 입력 올바른 코드",
+    "description": "입력받은 n번만큼 \"Hi\"를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "choices": [
+        "n = input()\nfor i in range(n):\n    print(\"Hi\")",
+        "n = int(input())\nfor i in range(n):\n    print(\"Hi\")",
+        "n = int(input())\nfor i in range(\"n\"):\n    print(\"Hi\")",
+        "n = int(input())\nfor i in range(n)\n    print(\"Hi\")"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-8-8-mcq-3",
+    "type": "mcq",
+    "title": "동적 입력 실행 결과",
+    "description": "사용자가 4 를 입력했을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nn = int(input())\ntotal = 0\nfor i in range(1, n + 1):\n    total += i\nprint(total)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "choices": [
+        "6",
+        "4",
+        "10",
+        "15"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-8-8-parsons-1",
+    "type": "parsons",
+    "title": "동적 입력 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 n을 입력받아 1부터 n까지 한 줄씩 출력하게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "fragments": [
+        "    print(i)",
+        "n = int(input())",
+        "for i in range(1, n + 1):"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-8-8-parsons-2",
+    "type": "parsons",
+    "title": "동적 입력 순서 맞추기 2",
+    "description": "조각을 순서대로 놓아 n을 입력받아 1부터 n까지 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "fragments": [
+        "n = int(input())",
+        "print(\"Done\")",
+        "for i in range(1, n + 1):",
+        "    print(i)"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-8-8-parsons-3",
+    "type": "parsons",
+    "title": "동적 입력 순서 맞추기 3",
+    "description": "조각을 순서대로 놓아 시작 수와 끝 수를 차례로 입력받아 그 사이의 짝수만 출력한 뒤 Done 을 출력하게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "fragments": [
+        "    if i % 2 == 0:",
+        "for i in range(start, end + 1):",
+        "end = int(input())",
+        "        print(i)",
+        "start = int(input())",
+        "print(\"Done\")"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        0,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "py-8-8-blank-1",
+    "type": "blank",
+    "title": "동적 입력 빈칸 - 입력",
+    "description": "입력받은 값을 정수로 바꿔 n에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "template": "n = {{1}}))\nfor i in range(1, n + 1):\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int(input("
+          ],
+          "hint": "정수 변환 함수와 입력 함수"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-8-blank-2",
+    "type": "blank",
+    "title": "동적 입력 빈칸 - range",
+    "description": "1부터 n까지 반복하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "template": "n = int(input())\nfor i in {{1}}1, n + 1):\n    print(i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "range("
+          ],
+          "hint": "숫자 범위를 만드는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-8-blank-3",
+    "type": "blank",
+    "title": "동적 입력 빈칸 - 출력",
+    "description": "1부터 n까지의 수가 한 줄씩 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "template": "n = int(input())\nfor i in range(1, n + 1):\n    {{1}}i)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-8-8-code-1",
+    "type": "code",
+    "title": "입력한 수까지 출력하기",
+    "description": "n을 입력받아 range(1, n + 1)로 1부터 n까지 한 줄씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-8-8",
+    "content": {
+      "starter_code": "# n을 입력받아 1부터 n까지 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bn\\s*=\\s*int\\s*\\(\\s*input\\s*\\(",
+          "message": "n = int(input()) 으로 입력받아요"
+        },
+        {
+          "pattern": "\\bfor\\s+\\w+\\s+in\\s+range\\s*\\(\\s*1\\s*,\\s*n\\s*\\+\\s*1\\s*\\)\\s*:",
+          "message": "for i in range(1, n + 1): 로 반복해요"
+        },
+        {
+          "pattern": "\\bfor\\s+(\\w+)\\s+in\\s+range\\s*\\([^\\n]*\\)\\s*:\\s*\\n[ \\t]+print\\s*\\(\\s*\\1\\s*\\)",
+          "message": "반복문 안에서 print(i) 로 출력해요"
+        }
+      ],
+      "solution": "n = int(input())\nfor i in range(1, n + 1):\n    print(i)"
+    }
+  }
+]
