@@ -25,7 +25,7 @@ export const parsonsProblems = (await Bun.file(
 ).json()) as ParsonsProblem[]
 
 // 조회할 때 정답 순서(answer_order)는 빼고 내려준다
-function toQuestion(p: ParsonsProblem) {
+export function toQuestion(p: ParsonsProblem) {
   const { answer_order, ...content } = p.content
   return {
     id: p.id,
@@ -33,6 +33,7 @@ function toQuestion(p: ParsonsProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
     content,
   }
 }
@@ -97,8 +98,8 @@ parsons.post('', requireAuth, async (c) => {
   })
 
   if (isAnswer) {
-    await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     return c.json({ isAnswer, answer: answerOrder }, 200)
   }

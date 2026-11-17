@@ -12,7 +12,8 @@
         "java-basics-mcq-2",
         "java-basics-blank-1",
         "java-basics-parsons-1",
-        "java-basics-short-1"
+        "java-basics-short-1",
+        "java-code-1"
       ]
     },
     {
@@ -24,7 +25,8 @@
         "java-control-mcq-2",
         "java-control-blank-1",
         "java-control-parsons-1",
-        "java-control-short-1"
+        "java-control-short-1",
+        "java-control-code-1"
       ]
     }
   ]

@@ -23,7 +23,7 @@ type McqProblem = {
 export const mcqProblems = (await Bun.file('static/problems/mcq.json').json()) as McqProblem[]
 
 // 조회할 때 정답(answer)은 빼고 내려준다
-function toQuestion(p: McqProblem) {
+export function toQuestion(p: McqProblem) {
   const { answer, ...content } = p.content
   return {
     id: p.id,
@@ -31,6 +31,7 @@ function toQuestion(p: McqProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
     content,
   }
 }
@@ -83,8 +84,8 @@ mcq.post('', requireAuth, async (c) => {
   await submissions.create({ userId, problemId: problem.id, isCorrect: isAnswer, answer: picked })
 
   if (isAnswer) {
-    await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(userId, problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     const { answer: correct, choices } = problem.content
     return c.json({ isAnswer, answer: correct, answerText: choices[correct] }, 200)
