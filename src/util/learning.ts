@@ -1,16 +1,12 @@
-import { problemMetaById, TYPE_LABEL } from './problems'
+import { curriculumData, type Unit } from './curriculum'
+import { filterByLanguage, problemMetaById, problems, TYPE_LABEL } from './problems'
 
-// 커리큘럼(static/curriculum/curriculum.json)과 제출 기록으로 단원 진행 상황을 계산한다.
-
-type Unit = { unitId: string; title: string; order: number; problemIds: string[] }
-type Course = { courseId: string; title: string; language: string; units: Unit[] }
-
-const courses = (await Bun.file('static/curriculum/curriculum.json').json()) as Course[]
+// 커리큘럼(static/curriculum/<language>.json)과 제출 기록으로 단원 진행 상황을 계산한다.
 
 export type ProblemStatus = 'correct' | 'wrong' | 'todo'
 
 // 과정 순서 → 단원 순서로 한 줄로 편다. 다음 단원은 같은 언어의 다음 과정 첫 단원까지 이어진다
-const flatUnits = courses.flatMap((course) =>
+const flatUnits = curriculumData.flatMap((course) =>
   [...course.units].sort((a, b) => a.order - b.order).map((unit) => ({ course, unit })),
 )
 
@@ -76,6 +72,61 @@ export function unitProgress(unit: Unit, solved: Map<string, boolean>) {
     completePercent: total === 0 ? 0 : Math.round((correct / total) * 100),
     problems,
   }
+}
+
+// 온보딩 수준에 맞는 목표 난이도. 문제 difficulty 는 1(쉬움)~3(어려움)
+const LEVEL_DIFFICULTY: Record<string, number> = {
+  beginner: 1,
+  intermediate: 2,
+  advanced: 3,
+}
+
+// 목표 난이도와 가장 가까운 문제 하나. 거리가 같으면 커리큘럼에서 앞선 문제를 쓴다.
+// 난이도가 비어 있는 문제는 목표 난이도로 본다
+function nearestByLevel<T extends { id: string }>(candidates: T[], level?: string | null): T {
+  const target = LEVEL_DIFFICULTY[level ?? ''] ?? 1
+  const distance = (id: string) =>
+    Math.abs((problemMetaById.get(id)?.difficulty ?? target) - target)
+
+  return candidates.reduce((best, candidate) =>
+    distance(candidate.id) < distance(best.id) ? candidate : best,
+  )
+}
+
+// 언어별 커리큘럼의 problemIds 순서대로 아직 안 푼 문제를 고른다.
+// 한 단원에 후보가 여럿이면 사용자 수준에 가장 가까운 난이도를 먼저 낸다.
+// 커리큘럼에 아예 없는 유형(코드 작성)은 전체 문제에서 같은 기준으로 고른다
+export function pickProblemId(opts: {
+  type: string
+  language?: string
+  level?: string | null
+  solved: Set<string>
+}): string | undefined {
+  const language = opts.language?.trim().toLowerCase()
+  const lang = language === 'js' ? 'javascript' : language
+  const units = lang ? unitsOfLanguage(lang) : flatUnits
+
+  let inCurriculum = false
+  for (const { unit } of units) {
+    const candidates = unit.problemIds.flatMap((id) => {
+      const problem = problemMetaById.get(id)
+      if (!problem || problem.type !== opts.type) return []
+      return [problem]
+    })
+    if (candidates.length === 0) continue
+    inCurriculum = true
+
+    const unsolved = candidates.filter((problem) => !opts.solved.has(problem.id))
+    if (unsolved.length > 0) return nearestByLevel(unsolved, opts.level).id
+  }
+
+  // 커리큘럼에 이 유형이 있을 때는 거기서 다 푼 것이므로 더 내지 않는다
+  if (inCurriculum) return undefined
+
+  const fallback = filterByLanguage(problems, lang).filter(
+    (problem) => problem.type === opts.type && !opts.solved.has(problem.id),
+  )
+  return fallback.length > 0 ? nearestByLevel(fallback, opts.level).id : undefined
 }
 
 const DAY_MS = 24 * 60 * 60 * 1000

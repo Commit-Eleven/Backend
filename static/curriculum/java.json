@@ -1,0 +1,31 @@
+{
+  "courseId": "java-basic",
+  "title": "Java 기초",
+  "language": "java",
+  "units": [
+    {
+      "unitId": "java-basics",
+      "title": "자바 기본",
+      "order": 1,
+      "problemIds": [
+        "java-basics-mcq-1",
+        "java-basics-mcq-2",
+        "java-basics-blank-1",
+        "java-basics-parsons-1",
+        "java-basics-short-1"
+      ]
+    },
+    {
+      "unitId": "java-control",
+      "title": "조건문과 반복문",
+      "order": 2,
+      "problemIds": [
+        "java-control-mcq-1",
+        "java-control-mcq-2",
+        "java-control-blank-1",
+        "java-control-parsons-1",
+        "java-control-short-1"
+      ]
+    }
+  ]
+}
