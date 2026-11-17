@@ -1,0 +1,5062 @@
+[
+  {
+    "id": "js-1-1-mcq-1",
+    "type": "mcq",
+    "title": "언어 소개: JavaScript의 역할",
+    "description": "JavaScript 에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "choices": [
+        "웹 페이지의 글자 색만 정하는 언어이다",
+        "웹에서 동작(움직임, 반응)을 만드는 프로그래밍 언어이다",
+        "사진을 편집하는 프로그램 이름이다",
+        "컴퓨터를 켜고 끄는 버튼 이름이다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-1-1-mcq-2",
+    "type": "mcq",
+    "title": "언어 소개: console.log()의 뜻",
+    "description": "console.log() 는 어떤 일을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "choices": [
+        "괄호 안의 값을 지운다",
+        "괄호 안의 값을 입력받는다",
+        "프로그램을 바로 끝낸다",
+        "괄호 안의 값을 콘솔에 출력한다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-1-1-mcq-3",
+    "type": "mcq",
+    "title": "언어 소개: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(\"I love JavaScript\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "choices": [
+        "I love JavaScript",
+        "\"I love JavaScript\"",
+        "console.log(\"I love JavaScript\");",
+        "오류가 난다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-1-1-parsons-1",
+    "type": "parsons",
+    "title": "언어 소개 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 JavaScript 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "fragments": [
+        "console.log(",
+        ");",
+        "\"JavaScript\""
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-1-1-parsons-2",
+    "type": "parsons",
+    "title": "언어 소개 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Hello, JavaScript 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "fragments": [
+        ");",
+        "\"Hello, JavaScript\"",
+        "(",
+        "console",
+        ".log"
+      ],
+      "answer_order": [
+        3,
+        4,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-1-1-parsons-3",
+    "type": "parsons",
+    "title": "언어 소개 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 I love JavaScript 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "fragments": [
+        "\"I love JavaScript\"",
+        ")",
+        "(",
+        ".",
+        ";",
+        "console",
+        "log"
+      ],
+      "answer_order": [
+        5,
+        3,
+        6,
+        2,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-1-1-blank-1",
+    "type": "blank",
+    "title": "언어 소개: 출력 함수 빈칸",
+    "description": "JavaScript 를 콘솔에 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "template": "{{1}}\"JavaScript\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-1-blank-2",
+    "type": "blank",
+    "title": "언어 소개: 출력할 글자 빈칸",
+    "description": "콘솔에 JavaScript 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "template": "console.log(\"{{1}}\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "JavaScript"
+          ],
+          "hint": "출력할 언어 이름 (대소문자 주의)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-1-short-3",
+    "type": "short",
+    "title": "언어 소개: 출력 함수 이름 쓰기",
+    "description": "콘솔에 값을 출력하는 console.___() 의 빈칸에 들어갈 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "code": "console.___(\"JavaScript\");",
+      "answer": [
+        "log"
+      ]
+    }
+  },
+  {
+    "id": "js-1-1-code-1",
+    "type": "code",
+    "title": "언어 소개: JavaScript 출력하기",
+    "description": "console.log() 로 \"JavaScript\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-1",
+    "content": {
+      "starter_code": "// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*([\"'`])JavaScript\\1\\s*\\)",
+          "message": "console.log(\"JavaScript\") 로 JavaScript 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "console.log(\"JavaScript\");"
+    }
+  },
+  {
+    "id": "js-1-2-mcq-1",
+    "type": "mcq",
+    "title": "Hello World!: 문자열과 세미콜론",
+    "description": "문자열과 문장 끝에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "choices": [
+        "문자열은 괄호로 감싸고, 문장 끝에는 마침표(.)를 붙인다",
+        "문자열은 그냥 쓰고, 문장 끝에는 콜론(:)을 붙인다",
+        "문자열은 따옴표로 감싸고, 문장 끝에는 세미콜론(;)을 붙인다",
+        "문자열은 중괄호로 감싸고, 문장 끝에는 쉼표(,)를 붙인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-1-2-mcq-2",
+    "type": "mcq",
+    "title": "Hello World!: 올바른 코드",
+    "description": "Hello, World! 를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "choices": [
+        "console.log(Hello, World!);",
+        "Console.log(\"Hello, World!\");",
+        "console.log(\"Hello, World!\");",
+        "console.log(\"Hello, World!\";"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-1-2-mcq-3",
+    "type": "mcq",
+    "title": "Hello World!: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(\"Hello, World!\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "choices": [
+        "Hello, World!",
+        "\"Hello, World!\"",
+        "console.log(\"Hello, World!\")",
+        "Hello World"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-1-2-parsons-1",
+    "type": "parsons",
+    "title": "Hello World! 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Hello, World! 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "fragments": [
+        "\"Hello, World!\"",
+        ");",
+        "console.log("
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-1-2-parsons-2",
+    "type": "parsons",
+    "title": "Hello World! 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Hello, World! 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "fragments": [
+        ")",
+        ";",
+        "\"Hello, World!\"",
+        "console",
+        ".log("
+      ],
+      "answer_order": [
+        3,
+        4,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-1-2-parsons-3",
+    "type": "parsons",
+    "title": "Hello World! 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Hello, World! 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "fragments": [
+        ";",
+        "\"Hello, World!\"",
+        "console",
+        ")",
+        "log",
+        "(",
+        "."
+      ],
+      "answer_order": [
+        2,
+        6,
+        4,
+        5,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-1-2-blank-1",
+    "type": "blank",
+    "title": "Hello World!: 출력 함수 빈칸",
+    "description": "Hello, World! 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "template": "{{1}}\"Hello, World!\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-2-blank-2",
+    "type": "blank",
+    "title": "Hello World!: 인사말 빈칸",
+    "description": "콘솔에 Hello, World! 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "template": "console.log(\"{{1}}\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Hello, World!"
+          ],
+          "hint": "쉼표와 느낌표까지 정확히 써요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-2-short-3",
+    "type": "short",
+    "title": "Hello World!: 따옴표 기호 쓰기",
+    "description": "문자열 Hello, World! 를 감싸는 따옴표 기호 하나를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "code": "console.log(___Hello, World!___);",
+      "answer": [
+        "\"",
+        "'",
+        "`"
+      ]
+    }
+  },
+  {
+    "id": "js-1-2-code-1",
+    "type": "code",
+    "title": "Hello World!: 인사 출력하기",
+    "description": "console.log() 로 \"Hello, World!\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-2",
+    "content": {
+      "starter_code": "// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*([\"'`])Hello, World!\\1\\s*\\)",
+          "message": "console.log(\"Hello, World!\") 로 정확히 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "console.log(\"Hello, World!\");"
+    }
+  },
+  {
+    "id": "js-1-3-mcq-1",
+    "type": "mcq",
+    "title": "주석: 주석 기호",
+    "description": "JavaScript 주석에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "choices": [
+        "# 는 한 줄 주석, \"\"\" \"\"\" 는 여러 줄 주석이다",
+        "<!-- --> 만 주석으로 쓸 수 있다",
+        "주석도 실행되어 콘솔에 출력된다",
+        "// 는 한 줄 주석, /* */ 는 여러 줄 주석이다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-1-3-mcq-2",
+    "type": "mcq",
+    "title": "주석: 올바른 코드",
+    "description": "한 줄 주석을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "choices": [
+        "/ 인사를 출력해요\nconsole.log(\"Hi\");",
+        "// 인사를 출력해요\nconsole.log(\"Hi\");",
+        "# 인사를 출력해요\nconsole.log(\"Hi\");",
+        "<! 인사를 출력해요\nconsole.log(\"Hi\");"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-1-3-mcq-3",
+    "type": "mcq",
+    "title": "주석: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(\"A\");\n// console.log(\"B\");\nconsole.log(\"C\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "choices": [
+        "A\nB\nC",
+        "A\nC",
+        "B",
+        "A"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-1-3-parsons-1",
+    "type": "parsons",
+    "title": "주석 순서 맞추기 1",
+    "description": "한 줄 주석을 맨 위에 쓰고, Hi 다음에 Bye 가 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "fragments": [
+        "console.log(\"Bye\");",
+        "// 인사를 출력해요",
+        "console.log(\"Hi\");"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-1-3-parsons-2",
+    "type": "parsons",
+    "title": "주석 순서 맞추기 2",
+    "description": "여러 줄 주석을 먼저 쓰고, 그 아래에서 Hi 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "fragments": [
+        "*/",
+        "  인사 프로그램",
+        "/*",
+        "console.log(\"Hi\");"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-1-3-parsons-3",
+    "type": "parsons",
+    "title": "주석 순서 맞추기 3",
+    "description": "여러 줄 주석(/* */) → 한 줄 주석(//) → Hi 출력 순서로 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "fragments": [
+        "/*",
+        "*/",
+        "console.log(\"Hi\");",
+        "// Hi 를 출력해요",
+        "  인사 프로그램"
+      ],
+      "answer_order": [
+        0,
+        4,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-1-3-blank-1",
+    "type": "blank",
+    "title": "주석: 한 줄 주석 빈칸",
+    "description": "첫 줄이 실행되지 않는 주석이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "template": "{{1}} 이 줄은 실행되지 않아요\nconsole.log(\"Hi\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "//"
+          ],
+          "hint": "한 줄 주석 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-3-blank-2",
+    "type": "blank",
+    "title": "주석: 출력 함수 빈칸",
+    "description": "주석 아래에서 Hi 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "template": "// Hi 를 출력해요\n{{1}}\"Hi\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-3-short-3",
+    "type": "short",
+    "title": "주석: 여러 줄 주석 닫기 쓰기",
+    "description": "여러 줄 주석을 닫는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "code": "/* 여러 줄\n   주석입니다 ___\nconsole.log(\"Hi\");",
+      "answer": [
+        "*/"
+      ]
+    }
+  },
+  {
+    "id": "js-1-3-code-1",
+    "type": "code",
+    "title": "주석: 주석 쓰고 Hi 출력하기",
+    "description": "첫 줄에 // 주석을 쓰고, 그 아래 줄에서 \"Hi\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-3",
+    "content": {
+      "starter_code": "// 아래에 코드를 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "^[ \\t]*\\n[\\s\\S]*console\\.log",
+          "message": "첫 줄에 // 주석을 쓰고 그 아래 줄에서 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*([\"'`])Hi\\1\\s*\\)",
+          "message": "console.log(\"Hi\") 로 Hi 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "// 인사를 출력해요\nconsole.log(\"Hi\");"
+    }
+  },
+  {
+    "id": "js-1-4-mcq-1",
+    "type": "mcq",
+    "title": "코드 구조: 실행 순서",
+    "description": "JavaScript 코드가 실행되는 방식으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "choices": [
+        "아래에서 위로 한 문장씩 실행된다",
+        "모든 문장이 한꺼번에 동시에 실행된다",
+        "가장 긴 문장부터 먼저 실행된다",
+        "위에서 아래로 한 문장씩 실행되고, 문장 끝에 세미콜론(;)을 쓴다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-1-4-mcq-2",
+    "type": "mcq",
+    "title": "코드 구조: 올바른 코드",
+    "description": "두 문장을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "choices": [
+        "console.log(\"하나\");\nconsole.log(\"둘\");",
+        "console.log(\"하나\") console.log(\"둘\")",
+        "console.log(\"하나\"):\nconsole.log(\"둘\"):",
+        "console.log(\"하나\";)\nconsole.log(\"둘\";)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-1-4-mcq-3",
+    "type": "mcq",
+    "title": "코드 구조: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(\"첫째\");\nconsole.log(\"둘째\");\nconsole.log(\"셋째\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "choices": [
+        "셋째\n둘째\n첫째",
+        "첫째 둘째 셋째",
+        "첫째\n둘째\n셋째",
+        "첫째"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-1-4-parsons-1",
+    "type": "parsons",
+    "title": "코드 구조 순서 맞추기 1",
+    "description": "1번, 2번, 3번 문장이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "fragments": [
+        "console.log(\"3번 문장\");",
+        "console.log(\"2번 문장\");",
+        "console.log(\"1번 문장\");"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-1-4-parsons-2",
+    "type": "parsons",
+    "title": "코드 구조 순서 맞추기 2",
+    "description": "아침 → 점심 → 저녁 → 잘 자요 순서로 출력되도록 순서를 맞추세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "fragments": [
+        "console.log(\"저녁\");",
+        "console.log(\"잘 자요\");",
+        "console.log(\"아침\");",
+        "console.log(\"점심\");"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-1-4-parsons-3",
+    "type": "parsons",
+    "title": "코드 구조 순서 맞추기 3",
+    "description": "물 끓이기 → 면 넣기 → 스프 넣기 → 기다리기 → 먹기 순서로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "fragments": [
+        "console.log(\"스프를 넣어요\");",
+        "console.log(\"맛있게 먹어요\");",
+        "console.log(\"3분 기다려요\");",
+        "console.log(\"물을 끓여요\");",
+        "console.log(\"면을 넣어요\");"
+      ],
+      "answer_order": [
+        3,
+        4,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-1-4-blank-1",
+    "type": "blank",
+    "title": "코드 구조: 두 번째 출력 빈칸",
+    "description": "두 번째 문장도 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "template": "console.log(\"첫째\");\n{{1}}\"둘째\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-4-blank-2",
+    "type": "blank",
+    "title": "코드 구조: 문장 끝 기호 빈칸",
+    "description": "첫 번째 문장을 마무리하는 기호를 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "template": "console.log(\"첫째\"){{1}}\nconsole.log(\"둘째\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ";"
+          ],
+          "hint": "문장 끝에 붙이는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-1-4-short-3",
+    "type": "short",
+    "title": "코드 구조: 문장 나누는 기호 쓰기",
+    "description": "한 줄에 두 문장을 쓸 때 두 문장 사이를 나누는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "code": "console.log(\"하나\")___ console.log(\"둘\");",
+      "answer": [
+        ";"
+      ]
+    }
+  },
+  {
+    "id": "js-1-4-code-1",
+    "type": "code",
+    "title": "코드 구조: 두 문장 출력하기",
+    "description": "console.log() 문장 두 개를 쓰고, 각 문장 끝을 세미콜론(;)으로 끝내 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-1-4",
+    "content": {
+      "starter_code": "// 문장 두 개를 써 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\([^;]*\\)\\s*;[\\s\\S]*console\\.log\\s*\\([^;]*\\)\\s*;",
+          "message": "console.log(...); 문장을 두 개 써요"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*console\\.log\\s*\\([^;\\n]*\\)[ \\t]*(\\n|$))",
+          "message": "모든 문장 끝에 세미콜론(;)을 붙여요"
+        }
+      ],
+      "solution": "console.log(\"첫째\");\nconsole.log(\"둘째\");"
+    }
+  },
+  {
+    "id": "js-2-1-mcq-1",
+    "type": "mcq",
+    "title": "숫자: let 변수",
+    "description": "let 에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "choices": [
+        "let 으로 만든 변수는 값을 바꿀 수 없다",
+        "let 은 값을 출력하는 함수이다",
+        "let 으로 값을 바꿀 수 있는 변수를 만든다",
+        "let 은 주석을 만드는 기호이다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-2-1-mcq-2",
+    "type": "mcq",
+    "title": "숫자: number 자료형",
+    "description": "25 와 3.14 의 자료형에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "choices": [
+        "둘 다 number 이다",
+        "25 는 number, 3.14 는 string 이다",
+        "25 는 integer, 3.14 는 float 이다",
+        "둘 다 string 이다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-2-1-mcq-3",
+    "type": "mcq",
+    "title": "숫자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet age = 25;\nage = 26;\nconsole.log(age);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "choices": [
+        "25",
+        "age",
+        "오류가 난다",
+        "26"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-2-1-parsons-1",
+    "type": "parsons",
+    "title": "숫자 순서 맞추기 1",
+    "description": "age 를 25 로 만든 뒤 26 으로 바꾸고, 26 이 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "fragments": [
+        "console.log(age);",
+        "age = 26;",
+        "let age = 25;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-1-parsons-2",
+    "type": "parsons",
+    "title": "숫자 순서 맞추기 2",
+    "description": "price 를 출력한 뒤 1500 으로 바꾸고 \"바뀐 가격:\" 과 함께 다시 출력하세요. (출력: 1000, 바뀐 가격: 1500)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "fragments": [
+        "price = 1500;",
+        "let price = 1000;",
+        "console.log(\"바뀐 가격:\", price);",
+        "console.log(price);"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-2-1-parsons-3",
+    "type": "parsons",
+    "title": "숫자 순서 맞추기 3",
+    "description": "첫째: 1, 둘째: 2, 셋째: 3.5 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "fragments": [
+        "count = 2;",
+        "console.log(\"둘째:\", count);",
+        "console.log(\"셋째:\", count);",
+        "console.log(\"첫째:\", count);",
+        "count = 3.5;",
+        "let count = 1;"
+      ],
+      "answer_order": [
+        5,
+        3,
+        0,
+        1,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-2-1-blank-1",
+    "type": "blank",
+    "title": "숫자: age 변수 만들기 빈칸",
+    "description": "age 변수를 만들어 25 를 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "template": "{{1}};\nconsole.log(age);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let age = 25",
+            "let age=25"
+          ],
+          "hint": "let 변수이름 = 값"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-1-blank-2",
+    "type": "blank",
+    "title": "숫자: age 출력 빈칸",
+    "description": "age 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "template": "let age = 25;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(age)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-1-short-3",
+    "type": "short",
+    "title": "숫자: 변수 키워드 쓰기",
+    "description": "값을 바꿀 수 있는 변수를 만들 때 쓰는 키워드를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "code": "___ age = 25;\nconsole.log(age);",
+      "answer": [
+        "let"
+      ]
+    }
+  },
+  {
+    "id": "js-2-1-code-1",
+    "type": "code",
+    "title": "숫자: age 저장하고 출력하기",
+    "description": "let 으로 age 에 25 를 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-1",
+    "content": {
+      "starter_code": "// let 으로 age 를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\blet\\s+age\\s*=\\s*25\\b",
+          "message": "let age = 25 로 저장해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*age\\s*\\)",
+          "message": "console.log(age) 로 출력해요"
+        }
+      ],
+      "solution": "let age = 25;\nconsole.log(age);"
+    }
+  },
+  {
+    "id": "js-2-2-mcq-1",
+    "type": "mcq",
+    "title": "문자열: 감싸는 기호",
+    "description": "문자열을 감쌀 수 있는 기호로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "choices": [
+        "괄호 ( ) 만",
+        "큰따옴표 \" \", 작은따옴표 ' ', 백틱 ` `",
+        "중괄호 { } 와 대괄호 [ ]",
+        "슬래시 / / 만"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-2-2-mcq-2",
+    "type": "mcq",
+    "title": "문자열: 올바른 코드",
+    "description": "name 에 문자열 Coddy 를 올바르게 저장한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "choices": [
+        "let name = Coddy;",
+        "let name = 'Coddy';",
+        "let name = \"Coddy';",
+        "let name = (Coddy);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-2-2-mcq-3",
+    "type": "mcq",
+    "title": "문자열: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet name = \"Coddy\";\nconsole.log(name);\nconsole.log(\"name\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "choices": [
+        "Coddy\nCoddy",
+        "name\nCoddy",
+        "name\nname",
+        "Coddy\nname"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-2-2-parsons-1",
+    "type": "parsons",
+    "title": "문자열 순서 맞추기 1",
+    "description": "name 을 출력한 다음 줄에 반가워요! 를 출력하세요. (출력: Coddy, 반가워요!)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "fragments": [
+        "console.log(\"반가워요!\");",
+        "let name = \"Coddy\";",
+        "console.log(name);"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-2-parsons-2",
+    "type": "parsons",
+    "title": "문자열 순서 맞추기 2",
+    "description": "greeting 을 출력한 뒤 Hello 로 바꾸고 다시 출력하세요. (출력: 안녕, 바뀐 인사: Hello)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "fragments": [
+        "greeting = 'Hello';",
+        "console.log(greeting);",
+        "let greeting = \"안녕\";",
+        "console.log(\"바뀐 인사:\", greeting);"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-2-2-parsons-3",
+    "type": "parsons",
+    "title": "문자열 순서 맞추기 3",
+    "description": "1: 하나, 2: 둘, 3: 셋 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "fragments": [
+        "let word = \"하나\";",
+        "word = '둘';",
+        "console.log(\"2:\", word);",
+        "console.log(\"3:\", word);",
+        "word = `셋`;",
+        "console.log(\"1:\", word);"
+      ],
+      "answer_order": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-2-2-blank-1",
+    "type": "blank",
+    "title": "문자열: name 선언 빈칸",
+    "description": "name 변수를 만들어 Coddy 를 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "template": "{{1}} = \"Coddy\";\nconsole.log(name);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let name"
+          ],
+          "hint": "let 과 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-2-blank-2",
+    "type": "blank",
+    "title": "문자열: name 출력 빈칸",
+    "description": "name 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "template": "let name = \"Coddy\";\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(name)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-2-short-3",
+    "type": "short",
+    "title": "문자열: 백틱 기호 쓰기",
+    "description": "문자열을 감싸는 기호 중 백틱 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "code": "let name = ___Coddy___;",
+      "answer": [
+        "`"
+      ]
+    }
+  },
+  {
+    "id": "js-2-2-code-1",
+    "type": "code",
+    "title": "문자열: name 저장하고 출력하기",
+    "description": "name 에 \"Coddy\" 를 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-2",
+    "content": {
+      "starter_code": "// name 변수를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const|var)\\s+name\\s*=",
+          "message": "let name = ... 으로 변수를 만들어요"
+        },
+        {
+          "pattern": "\\bname\\s*=\\s*([\"'`])Coddy\\1",
+          "message": "name 에 \"Coddy\" 를 저장해요",
+          "in": "source"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*name\\s*\\)",
+          "message": "console.log(name) 로 출력해요"
+        }
+      ],
+      "solution": "let name = \"Coddy\";\nconsole.log(name);"
+    }
+  },
+  {
+    "id": "js-2-3-mcq-1",
+    "type": "mcq",
+    "title": "불리언: true 와 false",
+    "description": "boolean 값을 올바르게 설명한 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "choices": [
+        "true 또는 false 두 가지 값이며 소문자로 쓴다",
+        "True 또는 False 처럼 첫 글자를 대문자로 쓴다",
+        "\"true\" 처럼 반드시 따옴표로 감싸야 한다",
+        "0 부터 9 까지의 숫자이다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-2-3-mcq-2",
+    "type": "mcq",
+    "title": "불리언: 올바른 코드",
+    "description": "isReady 에 boolean 값 true 를 올바르게 저장한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "choices": [
+        "let isReady = True;",
+        "let isReady = \"true\";",
+        "let isReady = true;",
+        "let isReady = TRUE;"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-2-3-mcq-3",
+    "type": "mcq",
+    "title": "불리언: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet isOpen = false;\nisOpen = true;\nconsole.log(isOpen);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "choices": [
+        "false",
+        "isOpen",
+        "true",
+        "True"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-2-3-parsons-1",
+    "type": "parsons",
+    "title": "불리언 순서 맞추기 1",
+    "description": "isReady 를 false 로 만든 뒤 true 로 바꾸고, true 가 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "fragments": [
+        "isReady = true;",
+        "console.log(isReady);",
+        "let isReady = false;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-2-3-parsons-2",
+    "type": "parsons",
+    "title": "불리언 순서 맞추기 2",
+    "description": "isLogin 을 출력한 뒤 true 로 바꾸고 다시 출력하세요. (출력: false, 로그인: true)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "fragments": [
+        "console.log(\"로그인:\", isLogin);",
+        "console.log(isLogin);",
+        "isLogin = true;",
+        "let isLogin = false;"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-3-parsons-3",
+    "type": "parsons",
+    "title": "불리언 순서 맞추기 3",
+    "description": "처음: false, 켬: true, 끔: false 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "fragments": [
+        "console.log(\"끔:\", isOn);",
+        "let isOn = false;",
+        "isOn = true;",
+        "console.log(\"켬:\", isOn);",
+        "isOn = false;",
+        "console.log(\"처음:\", isOn);"
+      ],
+      "answer_order": [
+        1,
+        5,
+        2,
+        3,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-3-blank-1",
+    "type": "blank",
+    "title": "불리언: isReady 선언 빈칸",
+    "description": "isReady 변수를 만들어 true 를 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "template": "{{1}};\nconsole.log(isReady);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let isReady = true",
+            "let isReady=true"
+          ],
+          "hint": "let 변수이름 = true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-3-blank-2",
+    "type": "blank",
+    "title": "불리언: isReady 출력 빈칸",
+    "description": "isReady 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "template": "let isReady = true;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(isReady)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-3-short-3",
+    "type": "short",
+    "title": "불리언: 거짓 값 쓰기",
+    "description": "거짓을 뜻하는 boolean 값을 소문자로 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "code": "let isRaining = ___; // 비가 오지 않아요",
+      "answer": [
+        "false"
+      ]
+    }
+  },
+  {
+    "id": "js-2-3-code-1",
+    "type": "code",
+    "title": "불리언: isReady 저장하고 출력하기",
+    "description": "isReady 에 true 를 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-3",
+    "content": {
+      "starter_code": "// isReady 변수를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const|var)\\s+isReady\\s*=\\s*true\\b",
+          "message": "let isReady = true 로 저장해요 (따옴표 없이)"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*isReady\\s*\\)",
+          "message": "console.log(isReady) 로 출력해요"
+        }
+      ],
+      "solution": "let isReady = true;\nconsole.log(isReady);"
+    }
+  },
+  {
+    "id": "js-2-4-mcq-1",
+    "type": "mcq",
+    "title": "명명 규칙: camelCase",
+    "description": "camelCase 로 올바르게 지은 변수 이름은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "choices": [
+        "userName",
+        "UserName",
+        "user_name",
+        "USERNAME"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-2-4-mcq-2",
+    "type": "mcq",
+    "title": "명명 규칙: 쓸 수 없는 이름",
+    "description": "변수 이름으로 쓸 수 없는 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "choices": [
+        "score1",
+        "myScore",
+        "_score",
+        "1score"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-2-4-mcq-3",
+    "type": "mcq",
+    "title": "명명 규칙: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet userName = \"kim\";\nlet username = \"lee\";\nconsole.log(userName);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "choices": [
+        "lee",
+        "kim",
+        "userName",
+        "오류가 난다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-2-4-parsons-1",
+    "type": "parsons",
+    "title": "명명 규칙 순서 맞추기 1",
+    "description": "userName 을 kim 으로 만든 뒤 lee 로 바꾸고, lee 가 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "fragments": [
+        "console.log(userName);",
+        "let userName = \"kim\";",
+        "userName = \"lee\";"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-4-parsons-2",
+    "type": "parsons",
+    "title": "명명 규칙 순서 맞추기 2",
+    "description": "favoriteFood 를 출력한 뒤 치킨으로 바꾸고 다시 출력하세요. (출력: 피자, 바뀐 음식: 치킨)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "fragments": [
+        "console.log(\"바뀐 음식:\", favoriteFood);",
+        "favoriteFood = \"치킨\";",
+        "let favoriteFood = \"피자\";",
+        "console.log(favoriteFood);"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-4-parsons-3",
+    "type": "parsons",
+    "title": "명명 규칙 순서 맞추기 3",
+    "description": "bestScore 에 처음 점수를 담아 두고 myScore 를 바꾸세요. (출력: 새 점수: 90, 이전 점수: 70)",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "fragments": [
+        "myScore = 90;",
+        "let bestScore = myScore;",
+        "console.log(\"이전 점수:\", bestScore);",
+        "console.log(\"새 점수:\", myScore);",
+        "let myScore = 70;"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-2-4-blank-1",
+    "type": "blank",
+    "title": "명명 규칙: userName 선언 빈칸",
+    "description": "camelCase 이름 userName 으로 변수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "template": "{{1}} = \"kim\";\nconsole.log(userName);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let userName"
+          ],
+          "hint": "let 과 camelCase 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-4-blank-2",
+    "type": "blank",
+    "title": "명명 규칙: userName 출력 빈칸",
+    "description": "userName 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "template": "let userName = \"kim\";\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(userName)"
+          ],
+          "hint": "console.log() 안에 변수 이름 (대소문자 주의)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-4-short-3",
+    "type": "short",
+    "title": "명명 규칙: camelCase 이름 쓰기",
+    "description": "user 와 age 두 단어를 camelCase 로 이어 만든 변수 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "code": "let ___ = 15;",
+      "answer": [
+        "userAge"
+      ]
+    }
+  },
+  {
+    "id": "js-2-4-code-1",
+    "type": "code",
+    "title": "명명 규칙: userName 저장하고 출력하기",
+    "description": "userName 변수에 \"kim\" 을 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-4",
+    "content": {
+      "starter_code": "// userName 변수를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const|var)\\s+userName\\s*=",
+          "message": "let userName = ... 으로 변수를 만들어요"
+        },
+        {
+          "pattern": "\\buserName\\s*=\\s*([\"'`])kim\\1",
+          "message": "userName 에 \"kim\" 을 저장해요",
+          "in": "source"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*userName\\s*\\)",
+          "message": "console.log(userName) 로 출력해요"
+        }
+      ],
+      "solution": "let userName = \"kim\";\nconsole.log(userName);"
+    }
+  },
+  {
+    "id": "js-2-5-mcq-1",
+    "type": "mcq",
+    "title": "빈 변수: undefined",
+    "description": "let result; 처럼 값 없이 선언한 변수의 값은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "choices": [
+        "0",
+        "undefined",
+        "null",
+        "false"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-2-5-mcq-2",
+    "type": "mcq",
+    "title": "빈 변수: 올바른 코드",
+    "description": "값 없이 result 변수를 선언한 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "choices": [
+        "let result = ;",
+        "let = result;",
+        "result let;",
+        "let result;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-2-5-mcq-3",
+    "type": "mcq",
+    "title": "빈 변수: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet result;\nconsole.log(result);\nresult = 10;\nconsole.log(result);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "choices": [
+        "undefined\n10",
+        "0\n10",
+        "10\n10",
+        "오류가 난다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-2-5-parsons-1",
+    "type": "parsons",
+    "title": "빈 변수 순서 맞추기 1",
+    "description": "result 를 값 없이 만들어 출력한 뒤, 값이 아직 없어요 를 출력하세요. (출력: undefined, 값이 아직 없어요)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "fragments": [
+        "console.log(result);",
+        "let result;",
+        "console.log(\"값이 아직 없어요\");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-2-5-parsons-2",
+    "type": "parsons",
+    "title": "빈 변수 순서 맞추기 2",
+    "description": "result 를 값 없이 출력한 뒤 10 을 넣고 다시 출력하세요. (출력: undefined, 새 값: 10)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "fragments": [
+        "console.log(result);",
+        "result = 10;",
+        "let result;",
+        "console.log(\"새 값:\", result);"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-2-5-parsons-3",
+    "type": "parsons",
+    "title": "빈 변수 순서 맞추기 3",
+    "description": "처음: undefined, 나중: 정답, 끝! 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "fragments": [
+        "answer = \"정답\";",
+        "console.log(\"처음:\", answer);",
+        "console.log(\"나중:\", answer);",
+        "console.log(\"끝!\");",
+        "let answer;"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-2-5-blank-1",
+    "type": "blank",
+    "title": "빈 변수: result 선언 빈칸",
+    "description": "result 변수를 값 없이 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "template": "{{1}};\nconsole.log(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let result"
+          ],
+          "hint": "let 과 변수 이름만 (값 없이)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-5-blank-2",
+    "type": "blank",
+    "title": "빈 변수: result 출력 빈칸",
+    "description": "result 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "template": "let result;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(result)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-5-short-3",
+    "type": "short",
+    "title": "빈 변수: 값 없는 변수의 값 쓰기",
+    "description": "값 없이 선언한 변수를 출력하면 나오는 값(키워드)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "code": "let result;\nconsole.log(result); // ___",
+      "answer": [
+        "undefined"
+      ]
+    }
+  },
+  {
+    "id": "js-2-5-code-1",
+    "type": "code",
+    "title": "빈 변수: result 선언하고 출력하기",
+    "description": "result 를 값 없이 선언하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-5",
+    "content": {
+      "starter_code": "// result 를 값 없이 선언해 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|var)\\s+result\\s*(;|\\n|$)",
+          "message": "let result; 처럼 값 없이 선언해요"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*\\bresult\\s*=[^=])",
+          "message": "result 에 값을 넣지 않아요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*result\\s*\\)",
+          "message": "console.log(result) 로 출력해요"
+        }
+      ],
+      "solution": "let result;\nconsole.log(result);"
+    }
+  },
+  {
+    "id": "js-2-6-mcq-1",
+    "type": "mcq",
+    "title": "변수 초기화: 선언과 사용",
+    "description": "변수를 선언하고 사용하는 방법으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "choices": [
+        "변수는 선언하기 전에 먼저 출력해야 한다",
+        "변수 이름은 반드시 따옴표로 감싸서 쓴다",
+        "let x = 10; 처럼 선언하며 값을 넣고, 변수 이름으로 값을 꺼내 쓴다",
+        "let 으로 만든 변수의 값은 바꿀 수 없다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-2-6-mcq-2",
+    "type": "mcq",
+    "title": "변수 초기화: 올바른 코드",
+    "description": "x 에 10 을 저장하고 그 값을 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "choices": [
+        "let x = 10;\nconsole.log(\"x\");",
+        "console.log(x);\nlet x = 10;",
+        "let x = 10;\nconsole.log(x);",
+        "let 10 = x;\nconsole.log(x);"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-2-6-mcq-3",
+    "type": "mcq",
+    "title": "변수 초기화: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet x = 10;\nlet y = 20;\nx = y;\nconsole.log(x);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "choices": [
+        "20",
+        "10",
+        "30",
+        "x"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-2-6-parsons-1",
+    "type": "parsons",
+    "title": "변수 초기화 순서 맞추기 1",
+    "description": "x 를 출력한 뒤 20 으로 바꾸고 다시 출력하세요. (출력: x: 10, 새 x: 20)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "fragments": [
+        "x = 20;",
+        "let x = 10;",
+        "console.log(\"새 x:\", x);",
+        "console.log(\"x:\", x);"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-2-6-parsons-2",
+    "type": "parsons",
+    "title": "변수 초기화 순서 맞추기 2",
+    "description": "y 에 x 의 처음 값을 담고 x 를 바꾸세요. (출력: x: 30, y: 10)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "fragments": [
+        "let x = 10;",
+        "let y = x;",
+        "console.log(\"x:\", x);",
+        "console.log(\"y:\", y);",
+        "x = 30;"
+      ],
+      "answer_order": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-2-6-parsons-3",
+    "type": "parsons",
+    "title": "변수 초기화 순서 맞추기 3",
+    "description": "출력이 처음 x: undefined, x: 20, y: 10 이 되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "fragments": [
+        "console.log(\"처음 x:\", x);",
+        "console.log(\"y:\", y);",
+        "let x;",
+        "x = 20;",
+        "console.log(\"x:\", x);",
+        "let y = x;",
+        "x = 10;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        6,
+        5,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-2-6-blank-1",
+    "type": "blank",
+    "title": "변수 초기화: x 선언 빈칸",
+    "description": "x 에 10 을 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "template": "{{1}};\nlet y = 20;\nconsole.log(x);\nconsole.log(y);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let x = 10",
+            "let x=10"
+          ],
+          "hint": "let 으로 x 에 10 저장"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-6-blank-2",
+    "type": "blank",
+    "title": "변수 초기화: y 선언 빈칸",
+    "description": "y 에 20 을 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "template": "let x = 10;\n{{1}};\nconsole.log(x);\nconsole.log(y);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let y = 20",
+            "let y=20"
+          ],
+          "hint": "let 으로 y 에 20 저장"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-6-blank-3",
+    "type": "blank",
+    "title": "변수 초기화: x 출력 빈칸",
+    "description": "x 의 값을 먼저 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "template": "let x = 10;\nlet y = 20;\n{{1}};\nconsole.log(y);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(x)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-6-code-1",
+    "type": "code",
+    "title": "변수 초기화: x 와 y 출력하기",
+    "description": "x 에 10, y 에 20 을 저장하고 각각 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-6",
+    "content": {
+      "starter_code": "// x 와 y 를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const|var)\\s+x\\s*=\\s*10\\b",
+          "message": "let x = 10 으로 저장해요"
+        },
+        {
+          "pattern": "\\b(let|const|var)\\s+y\\s*=\\s*20\\b",
+          "message": "let y = 20 으로 저장해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*x\\s*\\)",
+          "message": "console.log(x) 로 x 를 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*y\\s*\\)",
+          "message": "console.log(y) 로 y 를 출력해요"
+        }
+      ],
+      "solution": "let x = 10;\nlet y = 20;\nconsole.log(x);\nconsole.log(y);"
+    }
+  },
+  {
+    "id": "js-2-7-mcq-1",
+    "type": "mcq",
+    "title": "상수: const 의 뜻",
+    "description": "const 로 만든 상수에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "choices": [
+        "언제든지 새 값을 다시 대입할 수 있다",
+        "값 없이 선언하는 것이 기본이다",
+        "숫자만 저장할 수 있다",
+        "한 번 값을 넣으면 다시 대입할 수 없다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-2-7-mcq-2",
+    "type": "mcq",
+    "title": "상수: 올바른 코드",
+    "description": "PI 상수에 3.14 를 저장하고 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "choices": [
+        "const PI = 3.14;\nPI = 3.15;\nconsole.log(PI);",
+        "const PI = 3.14;\nconsole.log(PI);",
+        "const PI;\nPI = 3.14;\nconsole.log(PI);",
+        "constant PI = 3.14;\nconsole.log(PI);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-2-7-mcq-3",
+    "type": "mcq",
+    "title": "상수: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst MAX = 100;\nlet score = 90;\nscore = 95;\nconsole.log(MAX);\nconsole.log(score);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "choices": [
+        "100\n90",
+        "100\n95",
+        "95\n100",
+        "95\n95"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-2-7-parsons-1",
+    "type": "parsons",
+    "title": "상수 순서 맞추기 1",
+    "description": "PI 를 출력한 다음 줄에 PI 는 바꿀 수 없어요 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "fragments": [
+        "console.log(\"PI 는 바꿀 수 없어요\");",
+        "const PI = 3.14;",
+        "console.log(PI);"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-7-parsons-2",
+    "type": "parsons",
+    "title": "상수 순서 맞추기 2",
+    "description": "myPi 에 PI 를 담은 뒤 myPi 만 3 으로 바꿔 출력하세요. (출력: 3.14 3)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "fragments": [
+        "let myPi = PI;",
+        "console.log(PI, myPi);",
+        "const PI = 3.14;",
+        "myPi = 3;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-2-7-parsons-3",
+    "type": "parsons",
+    "title": "상수 순서 맞추기 3",
+    "description": "출력이 안녕 / 잘 가 안녕 / 상수는 그대로: 안녕 이 되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "fragments": [
+        "console.log(\"상수는 그대로:\", GREETING);",
+        "console.log(message);",
+        "let message = GREETING;",
+        "console.log(message, GREETING);",
+        "message = \"잘 가\";",
+        "const GREETING = \"안녕\";"
+      ],
+      "answer_order": [
+        5,
+        2,
+        1,
+        4,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-2-7-blank-1",
+    "type": "blank",
+    "title": "상수: PI 선언 빈칸",
+    "description": "const 로 PI 에 3.14 를 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "template": "{{1}};\nconsole.log(PI);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "const PI = 3.14",
+            "const PI=3.14"
+          ],
+          "hint": "const 상수이름 = 값"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-7-blank-2",
+    "type": "blank",
+    "title": "상수: PI 출력 빈칸",
+    "description": "PI 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "template": "const PI = 3.14;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(PI)"
+          ],
+          "hint": "console.log() 안에 상수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-2-7-short-3",
+    "type": "short",
+    "title": "상수: 상수 키워드 쓰기",
+    "description": "다시 대입할 수 없는 상수를 만들 때 쓰는 키워드를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "code": "___ PI = 3.14;\nconsole.log(PI);",
+      "answer": [
+        "const"
+      ]
+    }
+  },
+  {
+    "id": "js-2-7-code-1",
+    "type": "code",
+    "title": "상수: PI 저장하고 출력하기",
+    "description": "const 로 PI 에 3.14 를 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-2-7",
+    "content": {
+      "starter_code": "// const 로 PI 를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\bconst\\s+PI\\s*=\\s*3\\.14\\b",
+          "message": "const PI = 3.14 로 저장해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*PI\\s*\\)",
+          "message": "console.log(PI) 로 출력해요"
+        }
+      ],
+      "solution": "const PI = 3.14;\nconsole.log(PI);"
+    }
+  },
+  {
+    "id": "js-3-1-mcq-1",
+    "type": "mcq",
+    "title": "산술 연산자: 연산자의 뜻",
+    "description": "산술 연산자에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "choices": [
+        "+, -, x, ÷ 기호로 계산한다",
+        "** 는 곱하기를 잘못 두 번 쓴 오타이다",
+        "/ 는 나눗셈의 나머지를 구한다",
+        "+, -, *, /, ** 는 각각 더하기, 빼기, 곱하기, 나누기, 거듭제곱이다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-3-1-mcq-2",
+    "type": "mcq",
+    "title": "산술 연산자: 올바른 코드",
+    "description": "2 의 3 제곱(8)을 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "choices": [
+        "console.log(2 ** 3);",
+        "console.log(2 ^ 3);",
+        "console.log(2 x 3);",
+        "console.log(2 * * 3);"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-3-1-mcq-3",
+    "type": "mcq",
+    "title": "산술 연산자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(10 / 4);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "choices": [
+        "2",
+        "3",
+        "2.5",
+        "2.0"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-3-1-parsons-1",
+    "type": "parsons",
+    "title": "산술 연산자 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 7 과 3 을 더한 값을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "fragments": [
+        "7 + 3",
+        "console.log(",
+        ");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-3-1-parsons-2",
+    "type": "parsons",
+    "title": "산술 연산자 순서 맞추기 2",
+    "description": "n 에 5 를 곱한 다음 3 을 빼서 7 이 출력되도록 순서를 맞추세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "fragments": [
+        "console.log(n);",
+        "n = n - 3;",
+        "n = n * 5;",
+        "let n = 2;"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-3-1-parsons-3",
+    "type": "parsons",
+    "title": "산술 연산자 순서 맞추기 3",
+    "description": "거듭제곱: 8, 나누기: 2, 빼기: 1 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "fragments": [
+        "console.log(\"거듭제곱:\", n);",
+        "n = n - 1;",
+        "let n = 2;",
+        "console.log(\"나누기:\", n);",
+        "console.log(\"빼기:\", n);",
+        "n = n ** 3;",
+        "n = n / 4;"
+      ],
+      "answer_order": [
+        2,
+        5,
+        0,
+        6,
+        3,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-3-1-blank-1",
+    "type": "blank",
+    "title": "산술 연산자: 출력 함수 빈칸",
+    "description": "7 + 3 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "template": "{{1}}7 + 3);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-1-blank-2",
+    "type": "blank",
+    "title": "산술 연산자: 더하기 기호 빈칸",
+    "description": "7 과 3 을 더해 10 이 출력되도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "template": "console.log(7 {{1}} 3); // 10",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "+"
+          ],
+          "hint": "더하기 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-1-short-3",
+    "type": "short",
+    "title": "산술 연산자: 거듭제곱 연산자 쓰기",
+    "description": "2 의 3 제곱을 계산하는 거듭제곱 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "code": "console.log(2 ___ 3); // 8",
+      "answer": [
+        "**"
+      ]
+    }
+  },
+  {
+    "id": "js-3-1-code-1",
+    "type": "code",
+    "title": "산술 연산자: 7 더하기 3 출력하기",
+    "description": "+ 연산자로 7 과 3 을 더한 값을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-1",
+    "content": {
+      "starter_code": "// 7 과 3 을 더해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*(7\\s*\\+\\s*3|3\\s*\\+\\s*7)\\s*\\)",
+          "message": "console.log(7 + 3) 으로 더한 값을 출력해요"
+        }
+      ],
+      "solution": "console.log(7 + 3);"
+    }
+  },
+  {
+    "id": "js-3-2-mcq-1",
+    "type": "mcq",
+    "title": "나머지 연산자: % 의 뜻",
+    "description": "% 연산자는 무엇을 구할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "choices": [
+        "나눗셈의 몫",
+        "백분율(퍼센트) 값",
+        "나눗셈의 나머지",
+        "거듭제곱"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-3-2-mcq-2",
+    "type": "mcq",
+    "title": "나머지 연산자: 올바른 코드",
+    "description": "10 을 3 으로 나눈 나머지를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "choices": [
+        "console.log(10 % 3);",
+        "console.log(10 / 3);",
+        "console.log(10 mod 3);",
+        "console.log(10 %% 3);"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-3-2-mcq-3",
+    "type": "mcq",
+    "title": "나머지 연산자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(17 % 5);\nconsole.log(8 % 2);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "choices": [
+        "3\n4",
+        "2\n4",
+        "3.4\n0",
+        "2\n0"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-3-2-parsons-1",
+    "type": "parsons",
+    "title": "나머지 연산자 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 17 을 5 로 나눈 나머지를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "fragments": [
+        "console.log(",
+        ");",
+        "17 % 5"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-3-2-parsons-2",
+    "type": "parsons",
+    "title": "나머지 연산자 순서 맞추기 2",
+    "description": "n 을 일의 자리 숫자로 바꾼 뒤 출력하세요. (출력: 일의 자리: 9, 2로 나눈 나머지: 1)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "fragments": [
+        "console.log(\"2로 나눈 나머지:\", n % 2);",
+        "let n = 29;",
+        "n = n % 10;",
+        "console.log(\"일의 자리:\", n);"
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-3-2-parsons-3",
+    "type": "parsons",
+    "title": "나머지 연산자 순서 맞추기 3",
+    "description": "처음 수: 47, 일의 자리: 7, 4로 나눈 나머지: 3 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "fragments": [
+        "n = n % 10;",
+        "console.log(\"4로 나눈 나머지:\", n);",
+        "n = n % 4;",
+        "console.log(\"처음 수:\", n);",
+        "let n = 47;",
+        "console.log(\"일의 자리:\", n);"
+      ],
+      "answer_order": [
+        4,
+        3,
+        0,
+        5,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-3-2-blank-1",
+    "type": "blank",
+    "title": "나머지 연산자: % 기호 빈칸",
+    "description": "17 을 5 로 나눈 나머지 2 가 출력되도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "template": "console.log(17 {{1}} 5); // 2",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "%"
+          ],
+          "hint": "나머지 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-2-blank-2",
+    "type": "blank",
+    "title": "나머지 연산자: 출력 함수 빈칸",
+    "description": "17 % 5 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "template": "{{1}}17 % 5);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-2-short-3",
+    "type": "short",
+    "title": "나머지 연산자: 짝수 검사 연산자 쓰기",
+    "description": "짝수인지 알아보려면 2 로 나눈 나머지를 봅니다. 빈칸에 들어갈 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "code": "let n = 8;\nconsole.log(n ___ 2); // 0 이면 짝수",
+      "answer": [
+        "%"
+      ]
+    }
+  },
+  {
+    "id": "js-3-2-code-1",
+    "type": "code",
+    "title": "나머지 연산자: 17 을 5 로 나눈 나머지",
+    "description": "% 연산자로 17 을 5 로 나눈 나머지를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-2",
+    "content": {
+      "starter_code": "// 17 을 5 로 나눈 나머지를 구해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*17\\s*%\\s*5\\s*\\)",
+          "message": "console.log(17 % 5) 로 나머지를 출력해요"
+        }
+      ],
+      "solution": "console.log(17 % 5);"
+    }
+  },
+  {
+    "id": "js-3-3-mcq-1",
+    "type": "mcq",
+    "title": "단축 표기: 줄임 표기의 뜻",
+    "description": "줄임 표기에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "choices": [
+        "x++ 는 x 를 2 늘린다",
+        "x += 2 는 x = x + 2 와 같다",
+        "x -= 3 은 x 를 3 으로 바꾼다",
+        "x-- 는 x 를 0 으로 만든다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-3-3-mcq-2",
+    "type": "mcq",
+    "title": "단축 표기: 올바른 코드",
+    "description": "count 를 1 늘리는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "choices": [
+        "count + 1;",
+        "count++;",
+        "count =+ 1;",
+        "count ++ 1;"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-3-3-mcq-3",
+    "type": "mcq",
+    "title": "단축 표기: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet count = 10;\ncount += 5;\ncount -= 3;\ncount++;\nconsole.log(count);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "choices": [
+        "12",
+        "14",
+        "15",
+        "13"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-3-3-parsons-1",
+    "type": "parsons",
+    "title": "단축 표기 순서 맞추기 1",
+    "description": "count 에 5 를 더해 5 가 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "fragments": [
+        "console.log(count);",
+        "count += 5;",
+        "let count = 0;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-3-3-parsons-2",
+    "type": "parsons",
+    "title": "단축 표기 순서 맞추기 2",
+    "description": "더한 뒤: 5, 뺀 뒤: 3 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "fragments": [
+        "console.log(\"뺀 뒤:\", count);",
+        "count += 5;",
+        "console.log(\"더한 뒤:\", count);",
+        "let count = 0;",
+        "count -= 2;"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-3-3-parsons-3",
+    "type": "parsons",
+    "title": "단축 표기 순서 맞추기 3",
+    "description": "+= 10: 10, ++: 11, -= 4: 7 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "fragments": [
+        "console.log(\"++:\", count);",
+        "let count = 0;",
+        "console.log(\"-= 4:\", count);",
+        "console.log(\"+= 10:\", count);",
+        "count += 10;",
+        "count -= 4;",
+        "count++;"
+      ],
+      "answer_order": [
+        1,
+        4,
+        3,
+        6,
+        0,
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-3-3-blank-1",
+    "type": "blank",
+    "title": "단축 표기: count 선언 빈칸",
+    "description": "count 를 0 으로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "template": "{{1}};\ncount += 5;\nconsole.log(count);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let count = 0",
+            "let count=0"
+          ],
+          "hint": "let 으로 count 를 0 으로"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-3-blank-2",
+    "type": "blank",
+    "title": "단축 표기: += 빈칸",
+    "description": "count 에 5 를 더해 다시 넣도록 빈칸에 줄임 표기를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "template": "let count = 0;\ncount {{1}} 5;\nconsole.log(count); // 5",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "+="
+          ],
+          "hint": "더해서 다시 넣는 줄임 표기"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-3-blank-3",
+    "type": "blank",
+    "title": "단축 표기: count 출력 빈칸",
+    "description": "count 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "template": "let count = 0;\ncount += 5;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(count)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-3-code-1",
+    "type": "code",
+    "title": "단축 표기: count 에 5 더하기",
+    "description": "count 를 0 으로 만들고 += 로 5 를 더한 뒤 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-3",
+    "content": {
+      "starter_code": "// count 를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|var)\\s+count\\s*=\\s*0\\b",
+          "message": "let count = 0 으로 만들어요"
+        },
+        {
+          "pattern": "\\bcount\\s*\\+=\\s*5\\b",
+          "message": "count += 5 로 더해요"
+        },
+        {
+          "pattern": "count\\s*\\+=\\s*5[\\s\\S]*console\\.log\\s*\\(\\s*count\\s*\\)",
+          "message": "더한 다음에 console.log(count) 로 출력해요"
+        }
+      ],
+      "solution": "let count = 0;\ncount += 5;\nconsole.log(count);"
+    }
+  },
+  {
+    "id": "js-3-4-mcq-1",
+    "type": "mcq",
+    "title": "비교 연산자: 비교 결과",
+    "description": "10 > 5 처럼 비교 연산자를 쓰면 결과는 어떤 값이 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "choices": [
+        "true 또는 false (boolean)",
+        "숫자 10",
+        "문자열 \"10 > 5\"",
+        "undefined"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-3-4-mcq-2",
+    "type": "mcq",
+    "title": "비교 연산자: 올바른 코드",
+    "description": "a 가 b 보다 크거나 같은지 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "choices": [
+        "console.log(a =< b);",
+        "console.log(a > = b);",
+        "console.log(a >= b);",
+        "console.log(a ≥ b);"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-3-4-mcq-3",
+    "type": "mcq",
+    "title": "비교 연산자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(3 < 2);\nconsole.log(5 <= 5);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "choices": [
+        "true\ntrue",
+        "false\nfalse",
+        "false\ntrue",
+        "true\nfalse"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-3-4-parsons-1",
+    "type": "parsons",
+    "title": "비교 연산자 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 10 이 5 보다 큰지 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "fragments": [
+        "10 > 5",
+        "console.log(",
+        ");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-3-4-parsons-2",
+    "type": "parsons",
+    "title": "비교 연산자 순서 맞추기 2",
+    "description": "score 가 60 이상인지 출력한 뒤 50 으로 바꿔 다시 출력하세요. (출력: true, 다시: false)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "fragments": [
+        "console.log(\"다시:\", score >= 60);",
+        "let score = 75;",
+        "score = 50;",
+        "console.log(score >= 60);"
+      ],
+      "answer_order": [
+        1,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-3-4-parsons-3",
+    "type": "parsons",
+    "title": "비교 연산자 순서 맞추기 3",
+    "description": "3 < 5: true, 5 <= 5: true, 8 > 5: true 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "fragments": [
+        "console.log(x, \"<= 5:\", x <= 5);",
+        "console.log(x, \"< 5:\", x < 5);",
+        "let x = 3;",
+        "console.log(x, \"> 5:\", x > 5);",
+        "x = 8;",
+        "x = 5;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        5,
+        0,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-3-4-blank-1",
+    "type": "blank",
+    "title": "비교 연산자: 출력 함수 빈칸",
+    "description": "10 > 5 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "template": "{{1}}10 > 5);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-4-blank-2",
+    "type": "blank",
+    "title": "비교 연산자: 크다 기호 빈칸",
+    "description": "10 이 5 보다 큰지 비교하도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "template": "console.log(10 {{1}} 5); // true",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ">"
+          ],
+          "hint": "크다 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-4-short-3",
+    "type": "short",
+    "title": "비교 연산자: 크거나 같다 연산자 쓰기",
+    "description": "‘크거나 같다’를 뜻하는 비교 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "code": "let age = 18;\nconsole.log(age ___ 18); // true",
+      "answer": [
+        ">="
+      ]
+    }
+  },
+  {
+    "id": "js-3-4-code-1",
+    "type": "code",
+    "title": "비교 연산자: 10 이 5 보다 큰지 출력",
+    "description": "비교 연산자로 10 이 5 보다 큰지 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-4",
+    "content": {
+      "starter_code": "// 10 과 5 를 비교해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*(10\\s*>\\s*5|5\\s*<\\s*10)\\s*\\)",
+          "message": "console.log(10 > 5) 로 비교 결과를 출력해요"
+        }
+      ],
+      "solution": "console.log(10 > 5);"
+    }
+  },
+  {
+    "id": "js-3-5-mcq-1",
+    "type": "mcq",
+    "title": "엄격한 비교: === 와 == 의 차이",
+    "description": "=== 와 == 의 차이로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "choices": [
+        "=== 는 자료형까지 같아야 true 이고, == 는 자료형을 바꿔서 비교한다",
+        "=== 는 값만 비교하고, == 는 자료형까지 비교한다",
+        "=== 와 == 는 완전히 같다",
+        "=== 는 값을 대입하는 연산자이다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-3-5-mcq-2",
+    "type": "mcq",
+    "title": "엄격한 비교: 보통 쓰는 연산자",
+    "description": "두 값이 같은지 비교할 때 보통 어떤 연산자를 쓸까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "choices": [
+        "=",
+        "==",
+        "=>",
+        "==="
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-3-5-mcq-3",
+    "type": "mcq",
+    "title": "엄격한 비교: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(1 === \"1\");\nconsole.log(1 == \"1\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "choices": [
+        "true\ntrue",
+        "false\ntrue",
+        "true\nfalse",
+        "false\nfalse"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-3-5-parsons-1",
+    "type": "parsons",
+    "title": "엄격한 비교 순서 맞추기 1",
+    "description": "n 을 문자열 \"5\" 와 === 로 먼저, == 로 나중에 비교해 출력하세요. (출력: false, true)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "fragments": [
+        "console.log(n === \"5\");",
+        "let n = 5;",
+        "console.log(n == \"5\");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-3-5-parsons-2",
+    "type": "parsons",
+    "title": "엄격한 비교 순서 맞추기 2",
+    "description": "=== : false, == : true, 숫자끼리 === : true 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "fragments": [
+        "let num = 10;",
+        "console.log(\"== :\", num == \"10\");",
+        "console.log(\"숫자끼리 === :\", num === 10);",
+        "console.log(\"=== :\", num === \"10\");"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-3-5-parsons-3",
+    "type": "parsons",
+    "title": "엄격한 비교 순서 맞추기 3",
+    "description": "출력이 숫자 1 과 같다: true / 문자 1 과 같다: false / 바뀐 뒤 숫자 1 과 같다: false / 느슨하게 같다: true 가 되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "fragments": [
+        "console.log(\"느슨하게 같다:\", value == 1);",
+        "value = \"1\";",
+        "let value = 1;",
+        "console.log(\"바뀐 뒤 숫자 1 과 같다:\", value === 1);",
+        "console.log(\"문자 1 과 같다:\", value === \"1\");",
+        "console.log(\"숫자 1 과 같다:\", value === 1);"
+      ],
+      "answer_order": [
+        2,
+        5,
+        4,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-3-5-blank-1",
+    "type": "blank",
+    "title": "엄격한 비교: === 빈칸",
+    "description": "자료형까지 같아야 true 가 되도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "template": "console.log(5 {{1}} \"5\"); // false",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "==="
+          ],
+          "hint": "엄격한 비교 (= 세 개)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-5-blank-2",
+    "type": "blank",
+    "title": "엄격한 비교: == 빈칸",
+    "description": "자료형을 바꿔 비교해서 true 가 나오도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "template": "console.log(5 {{1}} \"5\"); // true",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "=="
+          ],
+          "hint": "느슨한 비교 (= 두 개)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-5-blank-3",
+    "type": "blank",
+    "title": "엄격한 비교: 출력 함수 빈칸",
+    "description": "5 === \"5\" 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "template": "{{1}}5 === \"5\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-5-code-1",
+    "type": "code",
+    "title": "엄격한 비교: === 와 == 결과 출력",
+    "description": "5 === \"5\" 와 5 == \"5\" 의 결과를 각각 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-5",
+    "content": {
+      "starter_code": "// 두 비교 결과를 출력해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(\\s*5\\s*===\\s*([\"'`])5\\1\\s*\\)",
+          "message": "console.log(5 === \"5\") 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*5\\s*==\\s*([\"'`])5\\1\\s*\\)",
+          "message": "console.log(5 == \"5\") 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "console.log(5 === \"5\");\nconsole.log(5 == \"5\");"
+    }
+  },
+  {
+    "id": "js-3-6-mcq-1",
+    "type": "mcq",
+    "title": "간단한 수학: 계산 순서",
+    "description": "8 - 2 * 3 을 계산하는 순서로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "choices": [
+        "8 - 2 를 먼저 계산해서 답은 18 이 된다",
+        "2 * 3 을 먼저 계산해서 답은 2 가 된다",
+        "왼쪽부터 차례로 계산해서 답은 18 이 된다",
+        "곱셈과 뺄셈은 함께 쓸 수 없다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-3-6-mcq-2",
+    "type": "mcq",
+    "title": "간단한 수학: 올바른 코드",
+    "description": "(8 더하기 2) 에 3 을 곱한 값 30 을 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "choices": [
+        "console.log(8 + 2 * 3);",
+        "console.log(8 + (2 * 3));",
+        "console.log((8 + 2) x 3);",
+        "console.log((8 + 2) * 3);"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-3-6-mcq-3",
+    "type": "mcq",
+    "title": "간단한 수학: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet a = 10;\nlet b = 4;\nconsole.log(a - b * 2);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "choices": [
+        "2",
+        "12",
+        "8",
+        "6"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-3-6-parsons-1",
+    "type": "parsons",
+    "title": "간단한 수학 순서 맞추기 1",
+    "description": "a * b - 4 의 결과 20 이 출력되도록 순서를 맞추세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "fragments": [
+        "let result = a * b - 4;",
+        "console.log(result);",
+        "let b = a - 5;",
+        "let a = 8;"
+      ],
+      "answer_order": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-3-6-parsons-2",
+    "type": "parsons",
+    "title": "간단한 수학 순서 맞추기 2",
+    "description": "결과: 20, 두 배: 40 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "fragments": [
+        "console.log(\"결과:\", result);",
+        "console.log(\"두 배:\", result * 2);",
+        "let b = a - 5;",
+        "let a = 8;",
+        "let result = a * b - 4;"
+      ],
+      "answer_order": [
+        3,
+        2,
+        4,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-3-6-parsons-3",
+    "type": "parsons",
+    "title": "간단한 수학 순서 맞추기 3",
+    "description": "결과: 20, 괄호 먼저: 10, 나머지: 1 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "fragments": [
+        "result = (a - b) * 2;",
+        "console.log(\"나머지:\", result % 3);",
+        "let b = a - 5;",
+        "let result = a * b - 4;",
+        "console.log(\"결과:\", result);",
+        "console.log(\"괄호 먼저:\", result);",
+        "let a = 8;"
+      ],
+      "answer_order": [
+        6,
+        2,
+        3,
+        4,
+        0,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-3-6-blank-1",
+    "type": "blank",
+    "title": "간단한 수학: result 선언 빈칸",
+    "description": "계산 결과를 담을 result 변수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "template": "let a = 8;\nlet b = 3;\n{{1}} = a * b - 4;\nconsole.log(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let result"
+          ],
+          "hint": "let 과 결과를 담을 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-6-blank-2",
+    "type": "blank",
+    "title": "간단한 수학: 곱하기 기호 빈칸",
+    "description": "a 와 b 를 곱한 뒤 4 를 빼서 20 이 되도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "template": "let a = 8;\nlet b = 3;\nlet result = a {{1}} b - 4;\nconsole.log(result); // 20",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "*"
+          ],
+          "hint": "곱하기 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-6-blank-3",
+    "type": "blank",
+    "title": "간단한 수학: result 출력 빈칸",
+    "description": "result 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "template": "let a = 8;\nlet b = 3;\nlet result = a * b - 4;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log(result)"
+          ],
+          "hint": "console.log() 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-3-6-code-1",
+    "type": "code",
+    "title": "간단한 수학: a * b - 4 계산하기",
+    "description": "a 에 8, b 에 3 을 저장하고 a * b - 4 를 result 에 저장한 뒤 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-3-6",
+    "content": {
+      "starter_code": "// a, b, result 를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const|var)\\s+a\\s*=\\s*8\\b",
+          "message": "let a = 8 로 저장해요"
+        },
+        {
+          "pattern": "\\b(let|const|var)\\s+b\\s*=\\s*3\\b",
+          "message": "let b = 3 으로 저장해요"
+        },
+        {
+          "pattern": "\\b(let|const|var)\\s+result\\s*=\\s*a\\s*\\*\\s*b\\s*-\\s*4\\b",
+          "message": "let result = a * b - 4 로 계산해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*result\\s*\\)",
+          "message": "console.log(result) 로 출력해요"
+        }
+      ],
+      "solution": "let a = 8;\nlet b = 3;\nlet result = a * b - 4;\nconsole.log(result);"
+    }
+  },
+  {
+    "id": "js-4-1-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 1: && 의 뜻",
+    "description": "&& 연산자의 결과가 true 가 되는 경우는 언제일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "choices": [
+        "양쪽 중 하나만 true 일 때",
+        "양쪽이 모두 false 일 때",
+        "양쪽이 모두 true 일 때만",
+        "언제나 true 이다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-4-1-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 1: 올바른 코드",
+    "description": "age 가 10 보다 크고 20 보다 작은지 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "choices": [
+        "console.log(age > 10 and age < 20);",
+        "console.log(age > 10 & & age < 20);",
+        "console.log(age > 10 && age < 20);",
+        "console.log(age > 10 || age < 20);"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-4-1-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 1: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(true && true);\nconsole.log(true && false);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "choices": [
+        "true\nfalse",
+        "true\ntrue",
+        "false\nfalse",
+        "false\ntrue"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-4-1-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 1 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 true && false 의 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "fragments": [
+        "true && false",
+        "console.log(",
+        ");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-4-1-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 1 순서 맞추기 2",
+    "description": "age 가 10 초과 20 미만인지 출력한 뒤 25 로 바꿔 다시 출력하세요. (출력: true, 다시: false)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "fragments": [
+        "console.log(\"다시:\", age > 10 && age < 20);",
+        "age = 25;",
+        "let age = 15;",
+        "console.log(age > 10 && age < 20);"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-4-1-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 1 순서 맞추기 3",
+    "description": "합격: true, 다시 합격: false 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "fragments": [
+        "console.log(\"합격:\", passed);",
+        "let score = 85;",
+        "passed = score >= 60 && score <= 100;",
+        "console.log(\"다시 합격:\", passed);",
+        "let passed = score >= 60 && score <= 100;",
+        "score = 40;"
+      ],
+      "answer_order": [
+        1,
+        4,
+        0,
+        5,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-4-1-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 1: && 빈칸",
+    "description": "true 와 false 가 모두 참인지 확인해 false 가 나오도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "template": "console.log(true {{1}} false); // false",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "&&"
+          ],
+          "hint": "그리고(AND) 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-1-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 1: 출력 함수 빈칸",
+    "description": "true && false 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "template": "{{1}}true && false);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-1-short-3",
+    "type": "short",
+    "title": "논리 연산자 1: 그리고 연산자 쓰기",
+    "description": "두 조건이 모두 참인지 확인하는 논리 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "code": "let age = 15;\nconsole.log(age > 10 ___ age < 20); // true",
+      "answer": [
+        "&&"
+      ]
+    }
+  },
+  {
+    "id": "js-4-1-code-1",
+    "type": "code",
+    "title": "논리 연산자 1: true && false 출력",
+    "description": "true && false 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-1",
+    "content": {
+      "starter_code": "// && 연산 결과를 출력해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*true\\s*&&\\s*false\\s*\\)",
+          "message": "console.log(true && false) 로 출력해요"
+        }
+      ],
+      "solution": "console.log(true && false);"
+    }
+  },
+  {
+    "id": "js-4-2-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 2: || 의 뜻",
+    "description": "|| 연산자의 결과가 true 가 되는 경우는 언제일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "choices": [
+        "양쪽이 모두 true 일 때만",
+        "양쪽이 모두 false 일 때",
+        "절대 true 가 되지 않는다",
+        "양쪽 중 하나라도 true 일 때"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-4-2-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 2: 올바른 코드",
+    "description": "isWeekend 이거나 isHoliday 인지 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "choices": [
+        "console.log(isWeekend or isHoliday);",
+        "console.log(isWeekend || isHoliday);",
+        "console.log(isWeekend | | isHoliday);",
+        "console.log(isWeekend && isHoliday);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-4-2-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 2: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(false || true);\nconsole.log(false || false);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "choices": [
+        "true\ntrue",
+        "true\nfalse",
+        "false\nfalse",
+        "false\ntrue"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-4-2-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 2 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 true || false 의 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "fragments": [
+        ");",
+        "true || false",
+        "console.log("
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-4-2-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 2 순서 맞추기 2",
+    "description": "day 가 토요일이나 일요일인지 출력한 뒤 월로 바꿔 다시 출력하세요. (출력: true, 다시: false)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "fragments": [
+        "let day = \"토\";",
+        "console.log(day === \"토\" || day === \"일\");",
+        "console.log(\"다시:\", day === \"토\" || day === \"일\");",
+        "day = \"월\";"
+      ],
+      "answer_order": [
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-4-2-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 2 순서 맞추기 3",
+    "description": "7시 문 닫음: true, 12시 문 닫음: false 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "fragments": [
+        "let isClosed = hour < 9 || hour > 18;",
+        "hour = 12;",
+        "isClosed = hour < 9 || hour > 18;",
+        "let hour = 7;",
+        "console.log(\"12시 문 닫음:\", isClosed);",
+        "console.log(\"7시 문 닫음:\", isClosed);"
+      ],
+      "answer_order": [
+        3,
+        0,
+        5,
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-4-2-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 2: || 빈칸",
+    "description": "둘 중 하나라도 참이면 true 가 나오도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "template": "console.log(true {{1}} false); // true",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "||"
+          ],
+          "hint": "또는(OR) 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-2-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 2: 출력 함수 빈칸",
+    "description": "true || false 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "template": "{{1}}true || false);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-2-short-3",
+    "type": "short",
+    "title": "논리 연산자 2: 또는 연산자 쓰기",
+    "description": "두 조건 중 하나라도 참인지 확인하는 논리 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "code": "let day = \"일\";\nconsole.log(day === \"토\" ___ day === \"일\"); // true",
+      "answer": [
+        "||"
+      ]
+    }
+  },
+  {
+    "id": "js-4-2-code-1",
+    "type": "code",
+    "title": "논리 연산자 2: true || false 출력",
+    "description": "true || false 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-2",
+    "content": {
+      "starter_code": "// || 연산 결과를 출력해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*true\\s*\\|\\|\\s*false\\s*\\)",
+          "message": "console.log(true || false) 로 출력해요"
+        }
+      ],
+      "solution": "console.log(true || false);"
+    }
+  },
+  {
+    "id": "js-4-3-mcq-1",
+    "type": "mcq",
+    "title": "간단한 논리: 범위 검사",
+    "description": "age 가 18 이상이고 30 미만인지 검사하는 식으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "choices": [
+        "age >= 18 || age < 30",
+        "18 <= age < 30",
+        "age > 18 && age <= 30",
+        "age >= 18 && age < 30"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-4-3-mcq-2",
+    "type": "mcq",
+    "title": "간단한 논리: 올바른 코드",
+    "description": "score 가 0 이상 100 이하인지 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "choices": [
+        "console.log(score >= 0 && score <= 100);",
+        "console.log(score >= 0 || score <= 100);",
+        "console.log(score >= 0 && score =< 100);",
+        "console.log(0 <= score <= 100);"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-4-3-mcq-3",
+    "type": "mcq",
+    "title": "간단한 논리: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet age = 35;\nconsole.log(age >= 18 && age < 30);\nconsole.log(age < 18 || age >= 30);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "choices": [
+        "true\nfalse",
+        "true\ntrue",
+        "false\ntrue",
+        "false\nfalse"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-4-3-parsons-1",
+    "type": "parsons",
+    "title": "간단한 논리 순서 맞추기 1",
+    "description": "age 가 18 이상 30 미만인지 inRange 에 담아 출력하세요. (출력: true)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "fragments": [
+        "let inRange = age >= 18 && age < 30;",
+        "console.log(inRange);",
+        "let age = 20;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-4-3-parsons-2",
+    "type": "parsons",
+    "title": "간단한 논리 순서 맞추기 2",
+    "description": "age 범위를 출력한 뒤 40 으로 바꿔 다시 출력하세요. (출력: true, 40살: false)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "fragments": [
+        "console.log(age >= 18 && age < 30);",
+        "let age = 20;",
+        "console.log(\"40살:\", age >= 18 && age < 30);",
+        "age = 40;"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-4-3-parsons-3",
+    "type": "parsons",
+    "title": "간단한 논리 순서 맞추기 3",
+    "description": "25도 좋음: true, 30도 좋음: false 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "fragments": [
+        "let isGood = temp >= 20 && temp <= 26;",
+        "isGood = temp >= 20 && temp <= 26;",
+        "temp = 30;",
+        "let temp = 25;",
+        "console.log(\"25도 좋음:\", isGood);",
+        "console.log(\"30도 좋음:\", isGood);"
+      ],
+      "answer_order": [
+        3,
+        0,
+        4,
+        2,
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "id": "js-4-3-blank-1",
+    "type": "blank",
+    "title": "간단한 논리: age 선언 빈칸",
+    "description": "age 를 20 으로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "template": "{{1}};\nconsole.log(age >= 18 && age < 30);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let age = 20",
+            "let age=20"
+          ],
+          "hint": "let 으로 age 를 20 으로"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-3-blank-2",
+    "type": "blank",
+    "title": "간단한 논리: && 빈칸",
+    "description": "18 이상이면서 30 미만인지 검사하도록 빈칸에 연산자를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "template": "let age = 20;\nconsole.log(age >= 18 {{1}} age < 30); // true",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "&&"
+          ],
+          "hint": "두 조건이 모두 참이어야 해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-3-blank-3",
+    "type": "blank",
+    "title": "간단한 논리: 출력 함수 빈칸",
+    "description": "범위 검사 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "template": "let age = 20;\n{{1}}age >= 18 && age < 30);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-3-code-1",
+    "type": "code",
+    "title": "간단한 논리: age 범위 검사하기",
+    "description": "age 를 20 으로 만들고 age >= 18 && age < 30 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-3",
+    "content": {
+      "starter_code": "// age 를 만들어 보세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(let|const|var)\\s+age\\s*=\\s*20\\b",
+          "message": "let age = 20 으로 만들어요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*age\\s*>=\\s*18\\s*&&\\s*age\\s*<\\s*30\\s*\\)",
+          "message": "console.log(age >= 18 && age < 30) 로 출력해요"
+        }
+      ],
+      "solution": "let age = 20;\nconsole.log(age >= 18 && age < 30);"
+    }
+  },
+  {
+    "id": "js-4-4-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 3: NOT 연산자",
+    "description": "boolean 값을 반대로 뒤집는 논리 연산자(NOT)는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "choices": [
+        "&&",
+        "||",
+        "!",
+        "?"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-4-4-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 3: ! 의 뜻",
+    "description": "! 연산자에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "choices": [
+        "boolean 값을 반대로 뒤집는다 (true 는 false, false 는 true)",
+        "숫자를 음수로 바꾼다",
+        "문장 끝을 강조하는 기호이다",
+        "두 값이 같은지 비교한다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-4-4-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 3: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(!false);\nconsole.log(!(5 > 3));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "choices": [
+        "false\ntrue",
+        "true\ntrue",
+        "false\nfalse",
+        "true\nfalse"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-4-4-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 3 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 !true 의 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "fragments": [
+        "console.log(",
+        ");",
+        "!true"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-4-4-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 3 순서 맞추기 2",
+    "description": "isOn 을 출력한 뒤 ! 로 뒤집어 다시 출력하세요. (출력: 처음: true, 뒤집은 뒤: false)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "fragments": [
+        "console.log(\"처음:\", isOn);",
+        "console.log(\"뒤집은 뒤:\", isOn);",
+        "isOn = !isOn;",
+        "let isOn = true;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-4-4-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 3 순서 맞추기 3",
+    "description": "처음: false, 뒤집기: true, !(3 > 1): false 가 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "fragments": [
+        "console.log(\"처음:\", isOn);",
+        "console.log(\"뒤집기:\", isOn);",
+        "isOn = !isOn;",
+        "let isOn = false;",
+        "isOn = !(3 > 1);",
+        "console.log(\"!(3 > 1):\", isOn);"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "js-4-4-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 3: !true 빈칸",
+    "description": "true 를 반대로 뒤집은 값이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "template": "console.log({{1}}); // false",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "!true"
+          ],
+          "hint": "! 와 true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-4-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 3: 출력 함수 빈칸",
+    "description": "!true 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "template": "{{1}}!true);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-4-short-3",
+    "type": "short",
+    "title": "논리 연산자 3: 뒤집기 기호 쓰기",
+    "description": "boolean 값을 반대로 뒤집는 연산자 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "code": "let isOn = true;\nisOn = ___isOn;\nconsole.log(isOn); // false",
+      "answer": [
+        "!"
+      ]
+    }
+  },
+  {
+    "id": "js-4-4-code-1",
+    "type": "code",
+    "title": "논리 연산자 3: !true 출력",
+    "description": "! 연산자로 !true 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-4",
+    "content": {
+      "starter_code": "// ! 연산 결과를 출력해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*!\\s*true\\s*\\)",
+          "message": "console.log(!true) 로 출력해요"
+        }
+      ],
+      "solution": "console.log(!true);"
+    }
+  },
+  {
+    "id": "js-4-5-mcq-1",
+    "type": "mcq",
+    "title": "타입 강제 변환: 자동 변환",
+    "description": "타입 강제 변환에 대한 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "choices": [
+        "자료형은 절대 저절로 바뀌지 않는다",
+        "연산자에 따라 자료형이 자동으로 바뀔 수 있다",
+        "문자열과 숫자를 함께 쓰면 항상 오류가 난다",
+        "모든 값은 자동으로 boolean 이 된다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-4-5-mcq-2",
+    "type": "mcq",
+    "title": "타입 강제 변환: * 와 + 의 차이",
+    "description": "문자열 \"5\" 와 숫자 2 를 계산할 때의 설명으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "choices": [
+        "* 와 + 모두 숫자로 바꿔 계산한다",
+        "* 는 숫자로 바꿔 계산하고, + 는 문자열로 이어 붙인다",
+        "* 는 문자열로 이어 붙이고, + 는 숫자로 계산한다",
+        "* 와 + 모두 오류가 난다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-4-5-mcq-3",
+    "type": "mcq",
+    "title": "타입 강제 변환: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(\"3\" * 4);\nconsole.log(\"3\" + 4);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "choices": [
+        "12\n7",
+        "34\n12",
+        "7\n7",
+        "12\n34"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-4-5-parsons-1",
+    "type": "parsons",
+    "title": "타입 강제 변환 순서 맞추기 1",
+    "description": "text 에 곱하기를 먼저, 더하기를 나중에 해서 출력하세요. (출력: 10, 52)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "fragments": [
+        "let text = \"5\";",
+        "console.log(text + 2);",
+        "console.log(text * 2);"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-4-5-parsons-2",
+    "type": "parsons",
+    "title": "타입 강제 변환 순서 맞추기 2",
+    "description": "num 에 text * 2 를 담아 출력한 뒤 text + 2 를 출력하세요. (출력: 10, 52)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "fragments": [
+        "console.log(num);",
+        "let num = text * 2;",
+        "console.log(text + 2);",
+        "let text = \"5\";"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-4-5-parsons-3",
+    "type": "parsons",
+    "title": "타입 강제 변환 순서 맞추기 3",
+    "description": "처음: 81, 곱한 뒤: 16, 붙인 뒤: 161 이 차례대로 출력되도록 순서를 맞추세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "fragments": [
+        "console.log(\"곱한 뒤:\", value);",
+        "console.log(\"붙인 뒤:\", value);",
+        "value = value + \"1\";",
+        "console.log(\"처음:\", value + 1);",
+        "value = value * 2;",
+        "let value = \"8\";"
+      ],
+      "answer_order": [
+        5,
+        3,
+        4,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-4-5-blank-1",
+    "type": "blank",
+    "title": "타입 강제 변환: 곱하기 식 빈칸",
+    "description": "문자열 \"5\" 에 2 를 곱해 10 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "template": "console.log({{1}}); // 10",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "\"5\" * 2",
+            "'5' * 2",
+            "\"5\"*2",
+            "'5'*2"
+          ],
+          "hint": "문자열 \"5\" 와 곱하기 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-5-blank-2",
+    "type": "blank",
+    "title": "타입 강제 변환: 더하기 식 빈칸",
+    "description": "문자열 \"5\" 와 2 를 이어 붙여 52 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "template": "console.log({{1}}); // 52",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "\"5\" + 2",
+            "'5' + 2",
+            "\"5\"+2",
+            "'5'+2"
+          ],
+          "hint": "문자열 \"5\" 와 더하기 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-5-blank-3",
+    "type": "blank",
+    "title": "타입 강제 변환: 출력 함수 빈칸",
+    "description": "\"5\" * 2 의 결과가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "template": "{{1}}\"5\" * 2);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "콘솔에 출력하는 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-4-5-code-1",
+    "type": "code",
+    "title": "타입 강제 변환: * 와 + 결과 출력",
+    "description": "\"5\" * 2 와 \"5\" + 2 의 결과를 각각 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-4-5",
+    "content": {
+      "starter_code": "// 두 계산 결과를 출력해 보세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(\\s*([\"'`])5\\1\\s*\\*\\s*2\\s*\\)",
+          "message": "console.log(\"5\" * 2) 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*([\"'`])5\\1\\s*\\+\\s*2\\s*\\)",
+          "message": "console.log(\"5\" + 2) 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "console.log(\"5\" * 2);\nconsole.log(\"5\" + 2);"
+    }
+  }
+]
