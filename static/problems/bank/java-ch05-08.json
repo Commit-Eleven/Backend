@@ -1,0 +1,4717 @@
+[
+  {
+    "id": "java-5-1-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 1부 && 의 뜻",
+    "description": "&& 연산자에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "choices": [
+        "양쪽이 모두 true일 때만 true가 된다",
+        "하나라도 true이면 true가 된다",
+        "항상 false가 된다",
+        "true와 false를 서로 바꾼다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-5-1-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 1부 올바른 코드",
+    "description": "a와 b가 모두 true인지 검사하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "choices": [
+        "boolean r = a & & b;",
+        "boolean r = a and b;",
+        "boolean r = a && b;",
+        "boolean r = a &&& b;"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-5-1-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 1부 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nboolean a = true;\nboolean b = false;\nSystem.out.println(a && b);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "choices": [
+        "true",
+        "false",
+        "a && b",
+        "오류가 난다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-5-1-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 1부 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 a && false 의 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "fragments": [
+        "System.out.println(r);",
+        "boolean a = true;",
+        "boolean r = a && false;"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-5-1-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 1부 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 age 가 13 이상이고 20 미만인지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "fragments": [
+        "boolean r = teen && age < 20;",
+        "System.out.println(r);",
+        "int age = 15;",
+        "boolean teen = age >= 13;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-5-1-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 1부 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 && 를 여러 번 이어 쓴 결과 c 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "fragments": [
+        "boolean b = a && x < 10;",
+        "int x = 7;",
+        "boolean c = b && x != 8;",
+        "System.out.println(c);",
+        "boolean a = x > 5;"
+      ],
+      "answer_order": [
+        1,
+        4,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-5-1-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 1부 && 빈칸",
+    "description": "a와 b가 모두 true인지 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "template": "boolean a = true;\nboolean b = true;\nSystem.out.println(a {{1}} b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "&&"
+          ],
+          "hint": "둘 다 true일 때만 true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-1-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 1부 출력 메서드 빈칸",
+    "description": "논리 연산 결과 r 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "template": "boolean r = true && false;\n{{1}}r);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-1-short-3",
+    "type": "short",
+    "title": "논리 연산자 1부 문법 요소 쓰기",
+    "description": "'그리고(AND)'를 뜻하는 논리 연산자 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "code": "boolean r = (3 > 1) ___ (5 > 2);",
+      "answer": [
+        "&&"
+      ]
+    }
+  },
+  {
+    "id": "java-5-1-code-1",
+    "type": "code",
+    "title": "논리 연산자 1부 true && false 출력",
+    "description": "System.out.println() 으로 true && false 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*true\\s*&&\\s*false\\s*\\)",
+          "message": "괄호 안에 true && false 를 넣어요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(true && false);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-5-2-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 2부 || 의 뜻",
+    "description": "|| 연산자에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "choices": [
+        "양쪽이 모두 false일 때만 true가 된다",
+        "하나라도 true이면 true가 된다",
+        "양쪽이 모두 true일 때만 true가 된다",
+        "항상 true가 된다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-5-2-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 2부 올바른 코드",
+    "description": "a 또는 b 중 하나라도 true인지 검사하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "choices": [
+        "boolean r = a or b;",
+        "boolean r = a | | b;",
+        "boolean r = a || b",
+        "boolean r = a || b;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-5-2-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 2부 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nboolean a = false;\nboolean b = true;\nSystem.out.println(a || b);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "choices": [
+        "false",
+        "오류가 난다",
+        "true",
+        "a || b"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-5-2-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 2부 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 a || true 의 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "fragments": [
+        "boolean r = a || true;",
+        "System.out.println(r);",
+        "boolean a = false;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-5-2-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 2부 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 day 가 6 또는 7 인지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "fragments": [
+        "boolean r = sat || day == 7;",
+        "System.out.println(r);",
+        "int day = 6;",
+        "boolean sat = day == 6;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-5-2-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 2부 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 || 를 여러 번 이어 쓴 결과 show 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "fragments": [
+        "boolean low = score < 50;",
+        "boolean show = r || score == 100;",
+        "System.out.println(show);",
+        "int score = 40;",
+        "boolean r = low || score > 90;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        4,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-5-2-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 2부 || 빈칸",
+    "description": "a와 b 중 하나라도 true인지 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "template": "boolean a = false;\nboolean b = true;\nSystem.out.println(a {{1}} b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "||"
+          ],
+          "hint": "하나라도 true면 true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-2-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 2부 출력 메서드 빈칸",
+    "description": "논리 연산 결과 r 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "template": "boolean r = false || true;\n{{1}}r);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-2-short-3",
+    "type": "short",
+    "title": "논리 연산자 2부 문법 요소 쓰기",
+    "description": "'또는(OR)'을 뜻하는 논리 연산자 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "code": "boolean r = (3 > 5) ___ (2 > 1);",
+      "answer": [
+        "||"
+      ]
+    }
+  },
+  {
+    "id": "java-5-2-code-1",
+    "type": "code",
+    "title": "논리 연산자 2부 true || false 출력",
+    "description": "System.out.println() 으로 true || false 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*true\\s*\\|\\|\\s*false\\s*\\)",
+          "message": "괄호 안에 true || false 를 넣어요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(true || false);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-5-3-mcq-1",
+    "type": "mcq",
+    "title": "복습 - 간단한 논리 식의 뜻",
+    "description": "age >= 18 && age < 30 은 어떤 뜻일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "choices": [
+        "age가 18 이상이고 30 미만이다",
+        "age가 18 이상이거나 30 미만이다",
+        "age가 18 초과이고 30 이하이다",
+        "age가 18이거나 30이다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-5-3-mcq-2",
+    "type": "mcq",
+    "title": "복습 - 간단한 논리 올바른 코드",
+    "description": "x가 10보다 크고 20보다 작은지 저장하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "choices": [
+        "boolean r = 10 < x < 20;",
+        "boolean r = x > 10 && < 20;",
+        "boolean r = x > 10 || x < 20;",
+        "boolean r = x > 10 && x < 20;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-5-3-mcq-3",
+    "type": "mcq",
+    "title": "복습 - 간단한 논리 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint age = 25;\nSystem.out.println(age >= 18 && age < 20);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "choices": [
+        "true",
+        "false",
+        "25",
+        "오류가 난다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-5-3-parsons-1",
+    "type": "parsons",
+    "title": "복습 - 간단한 논리 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 age 가 18 이상이고 30 미만인지 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "fragments": [
+        "System.out.println(ok);",
+        "boolean ok = age >= 18 && age < 30;",
+        "int age = 20;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-5-3-parsons-2",
+    "type": "parsons",
+    "title": "복습 - 간단한 논리 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 성인이면서 30 미만인지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "fragments": [
+        "System.out.println(ok);",
+        "boolean ok = adult && age < 30;",
+        "int age = 20;",
+        "boolean adult = age >= 18;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-5-3-parsons-3",
+    "type": "parsons",
+    "title": "복습 - 간단한 논리 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 비교와 논리 연산을 이어 계산한 ok 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "fragments": [
+        "boolean young = adult && age < 30;",
+        "boolean adult = age >= 18;",
+        "boolean ok = young || age == 65;",
+        "System.out.println(ok);",
+        "int age = 20;"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-5-3-blank-1",
+    "type": "blank",
+    "title": "복습 - 간단한 논리 변수 선언 빈칸",
+    "description": "정수 변수 age 를 20 으로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "template": "{{1}};\nSystem.out.println(age >= 18 && age < 30);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int age = 20",
+            "int age=20"
+          ],
+          "hint": "정수 변수 age 에 20 저장"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-3-blank-2",
+    "type": "blank",
+    "title": "복습 - 간단한 논리 논리 연산자 빈칸",
+    "description": "age 가 18 이상이고 30 미만인지 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "template": "int age = 20;\nSystem.out.println(age >= 18 {{1}} age < 30);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "&&"
+          ],
+          "hint": "둘 다 맞아야 true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-3-blank-3",
+    "type": "blank",
+    "title": "복습 - 간단한 논리 출력 메서드 빈칸",
+    "description": "비교와 논리 연산 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "template": "int age = 20;\n{{1}}age >= 18 && age < 30);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-3-code-1",
+    "type": "code",
+    "title": "복습 - 간단한 논리 나이 범위 출력",
+    "description": "age 를 20 으로 만들고 age >= 18 && age < 30 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "int\\s+age\\s*=\\s*20\\s*;",
+          "message": "int age = 20; 으로 변수를 만들어요"
+        },
+        {
+          "pattern": "age\\s*>=\\s*18\\s*&&\\s*age\\s*<\\s*30",
+          "message": "age >= 18 && age < 30 을 써요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int age = 20;\n        System.out.println(age >= 18 && age < 30);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-5-4-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 3부 ! 연산자 찾기",
+    "description": "Java에서 boolean 값을 반대로 바꾸는 논리 연산자는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "choices": [
+        "&&",
+        "||",
+        "!",
+        "?"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-5-4-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 3부 ! 의 뜻",
+    "description": "! 연산자에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "choices": [
+        "두 값이 모두 true일 때만 true가 된다",
+        "true는 false로, false는 true로 뒤집는다",
+        "숫자를 음수로 바꾼다",
+        "값을 두 번 출력한다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-5-4-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 3부 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nboolean light = false;\nSystem.out.println(!light);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "choices": [
+        "false",
+        "!light",
+        "오류가 난다",
+        "true"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-5-4-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 3부 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 on 을 뒤집은 값을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "fragments": [
+        "boolean on = true;",
+        "System.out.println(off);",
+        "boolean off = !on;"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-5-4-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 3부 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 x 가 5 보다 크지 않은지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "fragments": [
+        "boolean big = x > 5;",
+        "boolean small = !big;",
+        "System.out.println(small);",
+        "int x = 3;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-5-4-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 3부 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 ! 로 두 번 뒤집은 값 back 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "fragments": [
+        "boolean even = !odd;",
+        "boolean back = !even;",
+        "int n = 4;",
+        "System.out.println(back);",
+        "boolean odd = n % 2 == 1;"
+      ],
+      "answer_order": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-5-4-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 3부 !true 빈칸",
+    "description": "true 를 뒤집은 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "template": "System.out.println({{1}});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "!true",
+            "! true"
+          ],
+          "hint": "true 앞에 뒤집는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-4-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 3부 출력 메서드 빈칸",
+    "description": "뒤집은 값 r 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "template": "boolean r = !false;\n{{1}}r);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-4-short-3",
+    "type": "short",
+    "title": "논리 연산자 3부 문법 요소 쓰기",
+    "description": "boolean 값을 반대로 뒤집는 논리 연산자 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "code": "boolean on = true;\nboolean off = ___on;",
+      "answer": [
+        "!"
+      ]
+    }
+  },
+  {
+    "id": "java-5-4-code-1",
+    "type": "code",
+    "title": "논리 연산자 3부 !true 출력",
+    "description": "System.out.println() 으로 !true 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*!\\s*true\\s*\\)",
+          "message": "괄호 안에 !true 를 넣어요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(!true);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-5-5-mcq-1",
+    "type": "mcq",
+    "title": "논리 연산자 4부 먼저 계산되는 부분",
+    "description": "!a || b 에서 가장 먼저 계산되는 부분은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "choices": [
+        "!a",
+        "a || b",
+        "b",
+        "모두 동시에 계산된다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-5-5-mcq-2",
+    "type": "mcq",
+    "title": "논리 연산자 4부 계산 순서",
+    "description": "논리 연산자의 계산 순서에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "choices": [
+        "|| 가 가장 먼저 계산된다",
+        "! 가 &&, || 보다 먼저 계산된다",
+        "! 는 가장 나중에 계산된다",
+        "&& 와 || 가 ! 보다 먼저 계산된다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-5-5-mcq-3",
+    "type": "mcq",
+    "title": "논리 연산자 4부 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nboolean a = false;\nboolean b = false;\nSystem.out.println(!a && b);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "choices": [
+        "true",
+        "!a && b",
+        "false",
+        "오류가 난다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-5-5-parsons-1",
+    "type": "parsons",
+    "title": "논리 연산자 4부 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 !a || a 의 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "fragments": [
+        "boolean r = !a || a;",
+        "boolean a = true;",
+        "System.out.println(r);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-5-5-parsons-2",
+    "type": "parsons",
+    "title": "논리 연산자 4부 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 b = !a 를 만든 뒤 b || a 의 결과를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "fragments": [
+        "boolean a = true;",
+        "System.out.println(r);",
+        "boolean b = !a;",
+        "boolean r = b || a;"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-5-5-parsons-3",
+    "type": "parsons",
+    "title": "논리 연산자 4부 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 r 과 !r 을 차례로 출력하세요. (출력: false, true)",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "fragments": [
+        "boolean b = !a;",
+        "System.out.println(!r);",
+        "boolean c = !b && a;",
+        "boolean a = true;",
+        "boolean r = !c || b;",
+        "System.out.println(r);"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        4,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-5-5-blank-1",
+    "type": "blank",
+    "title": "논리 연산자 4부 !a 빈칸",
+    "description": "a 를 뒤집은 값과 b 를 || 로 계산해 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "template": "boolean a = true;\nboolean b = false;\nSystem.out.println({{1}} || b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "!a",
+            "! a"
+          ],
+          "hint": "a 를 뒤집기"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-5-blank-2",
+    "type": "blank",
+    "title": "논리 연산자 4부 || 빈칸",
+    "description": "!a 또는 b 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "template": "boolean a = true;\nboolean b = false;\nSystem.out.println(!a {{1}} b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "||"
+          ],
+          "hint": "또는(OR) 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-5-blank-3",
+    "type": "blank",
+    "title": "논리 연산자 4부 출력 메서드 빈칸",
+    "description": "!a || b 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "template": "boolean a = true;\nboolean b = false;\n{{1}}!a || b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-5-5-code-1",
+    "type": "code",
+    "title": "논리 연산자 4부 !a || b 출력",
+    "description": "a = true, b = false 로 변수를 만들고 !a || b 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-5-5",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "boolean\\s+a\\s*=\\s*true\\s*;",
+          "message": "boolean a = true; 로 변수를 만들어요"
+        },
+        {
+          "pattern": "boolean\\s+b\\s*=\\s*false\\s*;",
+          "message": "boolean b = false; 로 변수를 만들어요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*!\\s*a\\s*\\|\\|\\s*b\\s*\\)",
+          "message": "System.out.println(!a || b) 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        boolean a = true;\n        boolean b = false;\n        System.out.println(!a || b);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-6-1-mcq-1",
+    "type": "mcq",
+    "title": "if 문 실행 조건",
+    "description": "if (조건) { } 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "choices": [
+        "조건이 false일 때만 실행된다",
+        "조건과 상관없이 항상 실행된다",
+        "조건이 true일 때 중괄호 안이 실행된다",
+        "조건을 두 번 검사한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-6-1-mcq-2",
+    "type": "mcq",
+    "title": "if 문 올바른 코드",
+    "description": "score 가 90 이상일 때 Great 를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "choices": [
+        "if score >= 90 {\n    System.out.println(\"Great\");\n}",
+        "if (score >= 90); {\n    System.out.println(\"Great\");\n}",
+        "if (score => 90) {\n    System.out.println(\"Great\");\n}",
+        "if (score >= 90) {\n    System.out.println(\"Great\");\n}"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-6-1-mcq-3",
+    "type": "mcq",
+    "title": "if 문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint score = 75;\nif (score >= 60) {\n    System.out.println(\"Pass\");\n}\nSystem.out.println(\"End\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "choices": [
+        "Pass\nEnd",
+        "End",
+        "Pass",
+        "아무것도 출력되지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-6-1-parsons-1",
+    "type": "parsons",
+    "title": "if 문 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 score 가 90 이상이면 Great 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "fragments": [
+        "int score = 95;",
+        "    System.out.println(\"Great\");",
+        "if (score >= 90) {",
+        "}"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-6-1-parsons-2",
+    "type": "parsons",
+    "title": "if 문 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 score 에 10 을 더한 뒤 90 이상이면 Great 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "fragments": [
+        "score = score + 10;",
+        "if (score >= 90) {",
+        "    System.out.println(\"Great\");",
+        "}",
+        "int score = 85;"
+      ],
+      "answer_order": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-6-1-parsons-3",
+    "type": "parsons",
+    "title": "if 문 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 보너스를 더한 점수가 90 이상이면 Great 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "fragments": [
+        "int score = 85 + bonus;",
+        "if (great) {",
+        "int bonus = 10;",
+        "    System.out.println(\"Great\");",
+        "}",
+        "boolean great = score >= 90;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        5,
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-6-1-blank-1",
+    "type": "blank",
+    "title": "if 문 if 빈칸",
+    "description": "score 가 90 이상일 때 Great 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "template": "int score = 95;\n{{1}}score >= 90) {\n    System.out.println(\"Great\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if (",
+            "if("
+          ],
+          "hint": "조건문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-1-blank-2",
+    "type": "blank",
+    "title": "if 문 비교 연산자 빈칸",
+    "description": "score 가 90 이상일 때 Great 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "template": "int score = 90;\nif (score {{1}} 90) {\n    System.out.println(\"Great\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ">="
+          ],
+          "hint": "~보다 크거나 같다(이상)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-1-blank-3",
+    "type": "blank",
+    "title": "if 문 출력 메서드 빈칸",
+    "description": "if 블록 안에서 Great 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "template": "int score = 95;\nif (score >= 90) {\n    {{1}}\"Great\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-1-code-1",
+    "type": "code",
+    "title": "if 문 Great 출력하기",
+    "description": "score 가 90 이상이면 \"Great\" 를 출력하는 if 문을 쓰세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int score = 95;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "if\\s*\\(\\s*(score\\s*>=\\s*90|90\\s*<=\\s*score)\\s*\\)\\s*\\{",
+          "message": "if (score >= 90) { 로 조건을 써요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*\"Great\"\\s*\\)",
+          "message": "System.out.println(\"Great\") 로 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int score = 95;\n        if (score >= 90) {\n            System.out.println(\"Great\");\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-6-2-mcq-1",
+    "type": "mcq",
+    "title": "if-else문 else 실행 조건",
+    "description": "if-else 문에서 else 블록은 언제 실행될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "choices": [
+        "조건이 true일 때",
+        "조건이 false일 때",
+        "항상 실행된다",
+        "if 블록과 함께 두 번 실행된다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-6-2-mcq-2",
+    "type": "mcq",
+    "title": "if-else문 올바른 코드",
+    "description": "n 이 짝수면 even, 아니면 odd 를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "choices": [
+        "if (n % 2 == 0) {\n    System.out.println(\"even\");\n} else (n % 2 == 1) {\n    System.out.println(\"odd\");\n}",
+        "if (n % 2 = 0) {\n    System.out.println(\"even\");\n} else {\n    System.out.println(\"odd\");\n}",
+        "if (n % 2 == 0) {\n    System.out.println(\"even\");\n} else {\n    System.out.println(\"odd\");\n}",
+        "if (n % 2 == 0) {\n    System.out.println(\"even\");\n} otherwise {\n    System.out.println(\"odd\");\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-6-2-mcq-3",
+    "type": "mcq",
+    "title": "if-else문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint n = 7;\nif (n > 10) {\n    System.out.println(\"big\");\n} else {\n    System.out.println(\"small\");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "choices": [
+        "big",
+        "big\nsmall",
+        "오류가 난다",
+        "small"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-6-2-parsons-1",
+    "type": "parsons",
+    "title": "if-else문 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 n 이 짝수면 even, 아니면 odd 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "fragments": [
+        "if (n % 2 == 0) {\n    System.out.println(\"even\");",
+        "}",
+        "} else {\n    System.out.println(\"odd\");",
+        "int n = 4;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-6-2-parsons-2",
+    "type": "parsons",
+    "title": "if-else문 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 n 이 짝수면 even, 아니면 odd 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "fragments": [
+        "if (n % 2 == 0) {",
+        "} else {",
+        "int n = 4;",
+        "    System.out.println(\"even\");",
+        "}",
+        "    System.out.println(\"odd\");"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-6-2-parsons-3",
+    "type": "parsons",
+    "title": "if-else문 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 n 에 1 을 더한 뒤, 짝수면 even, 아니면 odd 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "fragments": [
+        "int n = 4;",
+        "if (n % 2 == 0) {",
+        "    System.out.println(\"even\");",
+        "n = n + 1;",
+        "}",
+        "    System.out.println(\"odd\");",
+        "} else {"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2,
+        6,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-6-2-blank-1",
+    "type": "blank",
+    "title": "if-else문 if 빈칸",
+    "description": "n 이 짝수인지 검사하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "template": "int n = 4;\n{{1}}n % 2 == 0) {\n    System.out.println(\"even\");\n} else {\n    System.out.println(\"odd\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if (",
+            "if("
+          ],
+          "hint": "조건문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-2-blank-2",
+    "type": "blank",
+    "title": "if-else문 else 빈칸",
+    "description": "조건이 false일 때 odd 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "template": "int n = 3;\nif (n % 2 == 0) {\n    System.out.println(\"even\");\n} {{1}} {\n    System.out.println(\"odd\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else"
+          ],
+          "hint": "조건이 거짓일 때 실행되는 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-2-blank-3",
+    "type": "blank",
+    "title": "if-else문 출력 메서드 빈칸",
+    "description": "else 블록에서 odd 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "template": "int n = 3;\nif (n % 2 == 0) {\n    System.out.println(\"even\");\n} else {\n    {{1}}\"odd\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-2-code-1",
+    "type": "code",
+    "title": "if-else문 짝수 홀수 출력",
+    "description": "n 이 짝수면 \"even\", 아니면 \"odd\" 를 출력하는 if-else 문을 쓰세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int n = 7;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "if\\s*\\(\\s*n\\s*%\\s*2\\s*(==|!=)\\s*[01]\\s*\\)",
+          "message": "if (n % 2 == 0) 으로 짝수인지 검사해요"
+        },
+        {
+          "pattern": "\\}\\s*else\\s*\\{",
+          "message": "else { } 블록을 써요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*\"even\"\\s*\\)",
+          "message": "\"even\" 을 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*\"odd\"\\s*\\)",
+          "message": "\"odd\" 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int n = 7;\n        if (n % 2 == 0) {\n            System.out.println(\"even\");\n        } else {\n            System.out.println(\"odd\");\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-6-3-mcq-1",
+    "type": "mcq",
+    "title": "switch 문 하는 일",
+    "description": "switch 문에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "choices": [
+        "한 값을 여러 case 와 비교해 맞는 곳을 실행한다",
+        "조건이 true인 동안 계속 반복한다",
+        "두 값을 더한다",
+        "boolean 값을 뒤집는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-6-3-mcq-2",
+    "type": "mcq",
+    "title": "switch 문 break 의 역할",
+    "description": "switch 문에서 각 case 끝에 break 를 두는 까닭은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "choices": [
+        "프로그램을 완전히 끝내려고",
+        "다음 case 로 넘어가 계속 실행되는 것을 막으려고",
+        "case 를 한 번 더 실행하려고",
+        "값을 출력하려고"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-6-3-mcq-3",
+    "type": "mcq",
+    "title": "switch 문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Mon\");\n        break;\n    case 2:\n        System.out.println(\"Tue\");\n        break;\n    default:\n        System.out.println(\"Other\");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "choices": [
+        "Mon",
+        "Other",
+        "Tue",
+        "Tue\nOther"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-6-3-parsons-1",
+    "type": "parsons",
+    "title": "switch 문 순서 맞추기 1",
+    "description": "day 가 1이면 Mon, 2이면 Tue, 그 외는 Other 를 출력하는 switch 문을 case 1, case 2, default 순서로 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "fragments": [
+        "int day = 2;\nswitch (day) {",
+        "    default:\n        System.out.println(\"Other\");\n}",
+        "    case 2:\n        System.out.println(\"Tue\");\n        break;",
+        "    case 1:\n        System.out.println(\"Mon\");\n        break;"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-6-3-parsons-2",
+    "type": "parsons",
+    "title": "switch 문 순서 맞추기 2",
+    "description": "day 가 1이면 Mon, 2이면 Tue, 그 외는 Other 를 출력하는 switch 문을 case 1, case 2, default 순서로 완성하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "fragments": [
+        "    default:\n        System.out.println(\"Other\");\n}",
+        "    case 2:",
+        "switch (day) {",
+        "        System.out.println(\"Tue\");\n        break;",
+        "int day = 2;",
+        "        System.out.println(\"Mon\");\n        break;",
+        "    case 1:"
+      ],
+      "answer_order": [
+        4,
+        2,
+        6,
+        5,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-6-3-parsons-3",
+    "type": "parsons",
+    "title": "switch 문 순서 맞추기 3",
+    "description": "day 가 1이면 Mon, 2이면 Tue, 3이면 Wed, 그 외는 Other 를 출력하는 switch 문을 case 1, 2, 3, default 순서로 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "fragments": [
+        "        System.out.println(\"Mon\");\n        break;",
+        "    case 1:",
+        "}",
+        "    default:",
+        "int day = 3;",
+        "    case 3:",
+        "        System.out.println(\"Other\");",
+        "        System.out.println(\"Tue\");\n        break;",
+        "switch (day) {",
+        "    case 2:",
+        "        System.out.println(\"Wed\");\n        break;"
+      ],
+      "answer_order": [
+        4,
+        8,
+        1,
+        0,
+        9,
+        7,
+        5,
+        10,
+        3,
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-6-3-blank-1",
+    "type": "blank",
+    "title": "switch 문 switch 빈칸",
+    "description": "day 값을 case 와 비교하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "template": "int day = 1;\n{{1}}day) {\n    case 1:\n        System.out.println(\"Mon\");\n        break;\n    default:\n        System.out.println(\"Other\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "switch (",
+            "switch("
+          ],
+          "hint": "여러 case 와 비교하는 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-3-blank-2",
+    "type": "blank",
+    "title": "switch 문 case 빈칸",
+    "description": "day 가 1일 때 Mon 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "template": "int day = 1;\nswitch (day) {\n    {{1}}:\n        System.out.println(\"Mon\");\n        break;\n    default:\n        System.out.println(\"Other\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "case 1"
+          ],
+          "hint": "case 와 비교할 값 1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-3-blank-3",
+    "type": "blank",
+    "title": "switch 문 break 빈칸",
+    "description": "Mon 을 출력한 뒤 switch 를 빠져나가도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "template": "int day = 1;\nswitch (day) {\n    case 1:\n        System.out.println(\"Mon\");\n        {{1}};\n    default:\n        System.out.println(\"Other\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "break"
+          ],
+          "hint": "switch 를 빠져나가는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-3-code-1",
+    "type": "code",
+    "title": "switch 문 요일 출력하기",
+    "description": "switch 문으로 day 가 1이면 \"Mon\", 2이면 \"Tue\", 그 외는 \"Other\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int day = 2;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "switch\\s*\\(\\s*day\\s*\\)",
+          "message": "switch (day) 로 시작해요"
+        },
+        {
+          "pattern": "case\\s+1\\s*:\\s*System\\.out\\.println\\s*\\(\\s*\"Mon\"\\s*\\)\\s*;",
+          "message": "case 1: 에서 \"Mon\" 을 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "case\\s+2\\s*:\\s*System\\.out\\.println\\s*\\(\\s*\"Tue\"\\s*\\)\\s*;",
+          "message": "case 2: 에서 \"Tue\" 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "default\\s*:\\s*System\\.out\\.println\\s*\\(\\s*\"Other\"\\s*\\)",
+          "message": "default: 에서 \"Other\" 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "break\\s*;",
+          "message": "case 끝에 break; 를 써요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int day = 2;\n        switch (day) {\n            case 1:\n                System.out.println(\"Mon\");\n                break;\n            case 2:\n                System.out.println(\"Tue\");\n                break;\n            default:\n                System.out.println(\"Other\");\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-6-4-mcq-1",
+    "type": "mcq",
+    "title": "삼항 연산자 조건 뒤 기호",
+    "description": "삼항 연산자에서 조건 바로 뒤에 오는 기호는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "choices": [
+        ":",
+        "?",
+        "!",
+        "&&"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-6-4-mcq-2",
+    "type": "mcq",
+    "title": "삼항 연산자 식의 뜻",
+    "description": "조건 ? 참일때 : 거짓일때 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "choices": [
+        "반복문을 한 줄로 줄인 식이다",
+        "조건이 true면 : 뒤의 값을 고른다",
+        "항상 ? 뒤의 값만 고른다",
+        "if-else 를 한 줄로 줄인 식이다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-6-4-mcq-3",
+    "type": "mcq",
+    "title": "삼항 연산자 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint n = 5;\nString r = n > 3 ? \"big\" : \"small\";\nSystem.out.println(r);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "choices": [
+        "big",
+        "small",
+        "true",
+        "오류가 난다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-6-4-parsons-1",
+    "type": "parsons",
+    "title": "삼항 연산자 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 삼항 연산자로 n 이 짝수인지 홀수인지 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "fragments": [
+        "String result = n % 2 == 0 ? \"even\" : \"odd\";",
+        "int n = 4;",
+        "System.out.println(result);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-6-4-parsons-2",
+    "type": "parsons",
+    "title": "삼항 연산자 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 n 에 1 을 더한 뒤 삼항 연산자로 짝수/홀수를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "fragments": [
+        "n = n + 1;",
+        "System.out.println(result);",
+        "int n = 7;",
+        "String result = n % 2 == 0 ? \"even\" : \"odd\";"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-6-4-parsons-3",
+    "type": "parsons",
+    "title": "삼항 연산자 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 여러 줄로 나눈 삼항 연산자를 완성하고 result 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "fragments": [
+        "String result = n % 2 == 0",
+        "System.out.println(result);",
+        "int n = 7;",
+        "    ? \"even\"",
+        "    : \"odd\";",
+        "n = n + 1;"
+      ],
+      "answer_order": [
+        2,
+        5,
+        0,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-6-4-blank-1",
+    "type": "blank",
+    "title": "삼항 연산자 ? 빈칸",
+    "description": "조건 뒤에 알맞은 기호를 넣어 삼항 연산자를 완성하세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "template": "int n = 4;\nString result = n % 2 == 0 {{1}} \"even\" : \"odd\";\nSystem.out.println(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "?"
+          ],
+          "hint": "조건 바로 뒤에 오는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-4-blank-2",
+    "type": "blank",
+    "title": "삼항 연산자 : 빈칸",
+    "description": "참일 때 값과 거짓일 때 값 사이에 알맞은 기호를 넣으세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "template": "int n = 3;\nString result = n % 2 == 0 ? \"even\" {{1}} \"odd\";\nSystem.out.println(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ":"
+          ],
+          "hint": "두 값을 나누는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-4-blank-3",
+    "type": "blank",
+    "title": "삼항 연산자 결과 변수 빈칸",
+    "description": "삼항 연산자의 결과를 문자열 변수 result 에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "template": "int n = 4;\n{{1}} = n % 2 == 0 ? \"even\" : \"odd\";\nSystem.out.println(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "String result"
+          ],
+          "hint": "문자열 변수 result 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-4-code-1",
+    "type": "code",
+    "title": "삼항 연산자 result 에 저장하기",
+    "description": "삼항 연산자로 n 이 짝수면 \"even\", 아니면 \"odd\" 를 String result 에 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int n = 6;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "String\\s+result\\s*=",
+          "message": "String result = 로 변수를 만들어요"
+        },
+        {
+          "pattern": "=\\s*\\(?\\s*n\\s*%\\s*2\\s*==\\s*0\\s*\\)?\\s*\\?",
+          "message": "n % 2 == 0 ? 으로 조건을 써요"
+        },
+        {
+          "pattern": "\\?\\s*\"even\"\\s*:\\s*\"odd\"",
+          "message": "? \"even\" : \"odd\" 로 값을 골라요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int n = 6;\n        String result = n % 2 == 0 ? \"even\" : \"odd\";\n        System.out.println(result);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-6-5-mcq-1",
+    "type": "mcq",
+    "title": "복습 - if-else문 두 갈래 판단",
+    "description": "if-else 문으로 할 수 있는 일로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "choices": [
+        "두 블록을 모두 항상 실행한다",
+        "같은 코드를 여러 번 반복한다",
+        "조건에 따라 두 갈래 중 한 쪽만 실행한다",
+        "값을 입력받는다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-6-5-mcq-2",
+    "type": "mcq",
+    "title": "복습 - if-else문 올바른 코드",
+    "description": "age 가 18 이상이면 Adult, 아니면 Minor 를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "choices": [
+        "if (age >= 18) {\n    System.out.println(\"Minor\");\n} else {\n    System.out.println(\"Adult\");\n}",
+        "if (age >= 18) {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}",
+        "if age >= 18 {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}",
+        "if (age >= 18) {\n    System.out.println(\"Adult\");\n} else (age < 18) {\n    System.out.println(\"Minor\");\n}"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-6-5-mcq-3",
+    "type": "mcq",
+    "title": "복습 - if-else문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint age = 16;\nif (age >= 18) {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "choices": [
+        "Adult",
+        "Adult\nMinor",
+        "오류가 난다",
+        "Minor"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-6-5-parsons-1",
+    "type": "parsons",
+    "title": "복습 - if-else문 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 age 가 18 이상이면 Adult, 아니면 Minor 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "fragments": [
+        "int age = 20;",
+        "} else {\n    System.out.println(\"Minor\");",
+        "}",
+        "if (age >= 18) {\n    System.out.println(\"Adult\");"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-6-5-parsons-2",
+    "type": "parsons",
+    "title": "복습 - if-else문 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 age 가 18 이상이면 Adult, 아니면 Minor 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "fragments": [
+        "}",
+        "if (age >= 18) {",
+        "    System.out.println(\"Adult\");",
+        "int age = 20;",
+        "    System.out.println(\"Minor\");",
+        "} else {"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        5,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-6-5-parsons-3",
+    "type": "parsons",
+    "title": "복습 - if-else문 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 age 에 3 을 더한 뒤, 18 이상이면 Adult, 아니면 Minor 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "fragments": [
+        "} else {",
+        "int age = 15;",
+        "age = age + 3;",
+        "    System.out.println(\"Adult\");",
+        "if (age >= 18) {",
+        "}",
+        "    System.out.println(\"Minor\");"
+      ],
+      "answer_order": [
+        1,
+        2,
+        4,
+        3,
+        0,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "id": "java-6-5-blank-1",
+    "type": "blank",
+    "title": "복습 - if-else문 조건 빈칸",
+    "description": "age 가 18 이상인지 검사하는 if 조건을 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "template": "int age = 20;\n{{1}} {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if (age >= 18)",
+            "if(age >= 18)",
+            "if (age>=18)",
+            "if(age>=18)"
+          ],
+          "hint": "if (나이 >= 18)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-5-blank-2",
+    "type": "blank",
+    "title": "복습 - if-else문 else 빈칸",
+    "description": "조건이 false일 때 Minor 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "template": "int age = 12;\nif (age >= 18) {\n    System.out.println(\"Adult\");\n} {{1}} {\n    System.out.println(\"Minor\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else"
+          ],
+          "hint": "조건이 거짓일 때 실행되는 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-5-blank-3",
+    "type": "blank",
+    "title": "복습 - if-else문 출력 메서드 빈칸",
+    "description": "else 블록에서 Minor 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "template": "int age = 12;\nif (age >= 18) {\n    System.out.println(\"Adult\");\n} else {\n    {{1}}\"Minor\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-5-code-1",
+    "type": "code",
+    "title": "복습 - if-else문 성인 판별 출력",
+    "description": "age 가 18 이상이면 \"Adult\", 아니면 \"Minor\" 를 출력하는 if-else 문을 쓰세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-5",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int age = 20;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "if\\s*\\(\\s*(age\\s*>=\\s*18|18\\s*<=\\s*age)\\s*\\)",
+          "message": "if (age >= 18) 로 조건을 써요"
+        },
+        {
+          "pattern": "\\}\\s*else\\s*\\{",
+          "message": "else { } 블록을 써요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*\"Adult\"\\s*\\)",
+          "message": "\"Adult\" 를 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*\"Minor\"\\s*\\)",
+          "message": "\"Minor\" 를 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int age = 20;\n        if (age >= 18) {\n            System.out.println(\"Adult\");\n        } else {\n            System.out.println(\"Minor\");\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-6-6-mcq-1",
+    "type": "mcq",
+    "title": "중첩 if-else문 else if 의 뜻",
+    "description": "else if 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "choices": [
+        "앞의 조건과 상관없이 항상 검사한다",
+        "앞의 조건이 false일 때 다음 조건을 이어서 검사한다",
+        "조건 없이 마지막에 실행된다",
+        "반복문을 만든다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-6-6-mcq-2",
+    "type": "mcq",
+    "title": "중첩 if-else문 올바른 코드",
+    "description": "score 가 90 이상이면 A, 80 이상이면 B, 나머지는 C 를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "choices": [
+        "if (score >= 80) {\n    System.out.println(\"B\");\n} else if (score >= 90) {\n    System.out.println(\"A\");\n} else {\n    System.out.println(\"C\");\n}",
+        "if (score >= 90) {\n    System.out.println(\"A\");\n} elif (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}",
+        "if (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}",
+        "if (score >= 90) {\n    System.out.println(\"A\");\n} else (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-6-6-mcq-3",
+    "type": "mcq",
+    "title": "중첩 if-else문 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint score = 85;\nif (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "B\nC"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-6-6-parsons-1",
+    "type": "parsons",
+    "title": "중첩 if-else문 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 90 이상 A, 80 이상 B, 나머지 C 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "fragments": [
+        "} else {\n    System.out.println(\"C\");\n}",
+        "int score = 85;",
+        "if (score >= 90) {\n    System.out.println(\"A\");",
+        "} else if (score >= 80) {\n    System.out.println(\"B\");"
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-6-6-parsons-2",
+    "type": "parsons",
+    "title": "중첩 if-else문 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 90 이상 A, 80 이상 B, 나머지 C 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "fragments": [
+        "if (score >= 90) {",
+        "} else {\n    System.out.println(\"C\");\n}",
+        "    System.out.println(\"B\");",
+        "    System.out.println(\"A\");",
+        "int score = 85;",
+        "} else if (score >= 80) {"
+      ],
+      "answer_order": [
+        4,
+        0,
+        3,
+        5,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-6-6-parsons-3",
+    "type": "parsons",
+    "title": "중첩 if-else문 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 90 이상 A, 80 이상 B, 나머지 C 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "fragments": [
+        "if (score >= 90) {",
+        "int score = 75;",
+        "} else if (score >= 80) {",
+        "}",
+        "    System.out.println(\"C\");",
+        "    System.out.println(\"A\");",
+        "} else {",
+        "    System.out.println(\"B\");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        5,
+        2,
+        7,
+        6,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-6-6-blank-1",
+    "type": "blank",
+    "title": "중첩 if-else문 if 빈칸",
+    "description": "첫 번째 조건을 검사하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "template": "int score = 95;\n{{1}}score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "if (",
+            "if("
+          ],
+          "hint": "조건문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-6-blank-2",
+    "type": "blank",
+    "title": "중첩 if-else문 else if 빈칸",
+    "description": "앞 조건이 false일 때 다음 조건을 검사하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "template": "int score = 85;\nif (score >= 90) {\n    System.out.println(\"A\");\n} {{1}} (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else if"
+          ],
+          "hint": "앞 조건이 거짓일 때 이어서 검사"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-6-blank-3",
+    "type": "blank",
+    "title": "중첩 if-else문 else 빈칸",
+    "description": "모든 조건이 false일 때 C 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "template": "int score = 70;\nif (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} {{1}} {\n    System.out.println(\"C\");\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "else"
+          ],
+          "hint": "나머지 모든 경우"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-6-6-code-1",
+    "type": "code",
+    "title": "중첩 if-else문 학점 출력하기",
+    "description": "score 가 90 이상이면 \"A\", 80 이상이면 \"B\", 나머지는 \"C\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-6-6",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int score = 85;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "if\\s*\\(\\s*score\\s*>=\\s*90\\s*\\)",
+          "message": "if (score >= 90) 으로 먼저 검사해요"
+        },
+        {
+          "pattern": "else\\s+if\\s*\\(\\s*score\\s*>=\\s*80\\s*\\)",
+          "message": "else if (score >= 80) 으로 이어서 검사해요"
+        },
+        {
+          "pattern": "\\}\\s*else\\s*\\{",
+          "message": "나머지는 else { } 로 처리해요"
+        },
+        {
+          "pattern": "\"A\"[\\s\\S]*\"B\"[\\s\\S]*\"C\"",
+          "message": "\"A\", \"B\", \"C\" 를 차례로 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int score = 85;\n        if (score >= 90) {\n            System.out.println(\"A\");\n        } else if (score >= 80) {\n            System.out.println(\"B\");\n        } else {\n            System.out.println(\"C\");\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-7-1-mcq-1",
+    "type": "mcq",
+    "title": "System.out 메서드 print 와 println",
+    "description": "print() 와 println() 의 차이로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "choices": [
+        "print() 는 출력 후 줄을 바꾸고, println() 은 바꾸지 않는다",
+        "print() 는 줄을 바꾸지 않고, println() 은 출력 후 줄을 바꾼다",
+        "둘 다 줄을 바꾸지 않는다",
+        "둘은 완전히 같다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-7-1-mcq-2",
+    "type": "mcq",
+    "title": "System.out 메서드 올바른 코드",
+    "description": "Hi 를 출력하고 줄을 바꾸는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "choices": [
+        "System.out.printline(\"Hi\");",
+        "system.out.println(\"Hi\");",
+        "System.out.println(Hi);",
+        "System.out.println(\"Hi\");"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-7-1-mcq-3",
+    "type": "mcq",
+    "title": "System.out 메서드 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nSystem.out.print(\"A\");\nSystem.out.print(\"B\");\nSystem.out.println(\"C\");\nSystem.out.println(\"D\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "choices": [
+        "ABC\nD",
+        "ABCD",
+        "A\nB\nC\nD",
+        "AB\nC\nD"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-7-1-parsons-1",
+    "type": "parsons",
+    "title": "System.out 메서드 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 첫 줄에 Hello, Java! 를, 둘째 줄에 Bye 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "fragments": [
+        "System.out.print(\"Hello, \");",
+        "System.out.println(\"Bye\");",
+        "System.out.println(\"Java!\");"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-7-1-parsons-2",
+    "type": "parsons",
+    "title": "System.out 메서드 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 첫 줄에 123 을, 둘째 줄에 end 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "fragments": [
+        "System.out.print(\"1\");",
+        "System.out.println(\"3\");",
+        "System.out.print(\"2\");",
+        "System.out.println(\"end\");"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-7-1-parsons-3",
+    "type": "parsons",
+    "title": "System.out 메서드 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 I like Java, Me too, ! 를 세 줄로 차례로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "fragments": [
+        "System.out.println(\"too\");",
+        "System.out.println(\"Java\");",
+        "System.out.print(\"I \");",
+        "System.out.println(\"!\");",
+        "System.out.print(\"Me \");",
+        "System.out.print(\"like \");"
+      ],
+      "answer_order": [
+        2,
+        5,
+        1,
+        4,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-7-1-blank-1",
+    "type": "blank",
+    "title": "System.out 메서드 print 빈칸",
+    "description": "줄을 바꾸지 않고 출력해서 Hello, Java 가 한 줄에 나오도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "template": "{{1}}\"Hello, \");\nSystem.out.println(\"Java\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.print("
+          ],
+          "hint": "줄을 바꾸지 않는 출력 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-1-blank-2",
+    "type": "blank",
+    "title": "System.out 메서드 println 빈칸",
+    "description": "Java 를 출력한 뒤 줄을 바꿔서 Bye 가 다음 줄에 나오도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "template": "System.out.print(\"Hello, \");\n{{1}}\"Java\");\nSystem.out.println(\"Bye\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력 후 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-1-short-3",
+    "type": "short",
+    "title": "System.out 메서드 문법 요소 쓰기",
+    "description": "출력한 뒤 줄을 바꾸는 System.out 의 메서드 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "code": "System.out.___(\"Hi\");",
+      "answer": [
+        "println"
+      ]
+    }
+  },
+  {
+    "id": "java-7-1-code-1",
+    "type": "code",
+    "title": "System.out 메서드 print 와 println 쓰기",
+    "description": "System.out.print() 와 System.out.println() 을 한 번씩 사용해 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.print\\s*\\(",
+          "message": "System.out.print() 를 한 번 써요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 을 한 번 써요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.print(\"Hello, \");\n        System.out.println(\"Java\");\n    }\n}"
+    }
+  },
+  {
+    "id": "java-7-2-mcq-1",
+    "type": "mcq",
+    "title": "출력 형식 지정 형식 지정자",
+    "description": "printf 의 형식 지정자에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "choices": [
+        "%d 는 문자열, %s 는 정수 자리이다",
+        "%d 는 정수, %.2f 는 소수 둘째 자리, %s 는 문자열 자리이다",
+        "%.2f 는 정수 두 개를 뜻한다",
+        "%s 는 소수 자리이다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-7-2-mcq-2",
+    "type": "mcq",
+    "title": "출력 형식 지정 올바른 코드",
+    "description": "String name = \"Mina\", int age = 15 일 때 이름과 나이를 printf 로 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "choices": [
+        "System.out.printf(\"%d는 %s살\\n\", name, age);",
+        "System.out.printf(\"%s는 %d살\\n\" name, age);",
+        "System.out.printf(\"%s는 %d살\\n\", name, age);",
+        "System.out.printf(%s는 %d살, name, age);"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-7-2-mcq-3",
+    "type": "mcq",
+    "title": "출력 형식 지정 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndouble pi = 3.14159;\nSystem.out.printf(\"%.2f\", pi);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "choices": [
+        "3.14159",
+        "3.1",
+        "3.142",
+        "3.14"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-7-2-parsons-1",
+    "type": "parsons",
+    "title": "출력 형식 지정 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 pi * 2 를 소수 둘째 자리까지 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "fragments": [
+        "double pi = 3.14159;",
+        "System.out.printf(\"%.2f\\n\", r);",
+        "double r = pi * 2;"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-7-2-parsons-2",
+    "type": "parsons",
+    "title": "출력 형식 지정 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 a, b 와 평균을 printf 로 한 줄에 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "fragments": [
+        "int b = a * 2;",
+        "System.out.printf(\"%d %d %.2f\\n\", a, b, avg);",
+        "int a = 7;",
+        "double avg = (a + b) / 2.0;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-7-2-parsons-3",
+    "type": "parsons",
+    "title": "출력 형식 지정 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 b, 합계, 평균을 printf 로 한 줄에 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "fragments": [
+        "int b = a * 2;",
+        "System.out.printf(\"%d %d %.2f\\n\", b, sum, avg);",
+        "double avg = sum / 2.0;",
+        "int a = 7;",
+        "int sum = a + b;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        4,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-7-2-blank-1",
+    "type": "blank",
+    "title": "출력 형식 지정 printf 빈칸",
+    "description": "형식을 정해서 pi 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "template": "double pi = 3.14159;\n{{1}}\"%.2f\\n\", pi);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.printf("
+          ],
+          "hint": "형식을 지정해 출력하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-2-blank-2",
+    "type": "blank",
+    "title": "출력 형식 지정 소수 형식 빈칸",
+    "description": "pi 를 소수 둘째 자리까지 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "template": "double pi = 3.14159;\nSystem.out.printf(\"{{1}}\\n\", pi);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "%.2f"
+          ],
+          "hint": "소수 둘째 자리 형식 지정자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-2-short-3",
+    "type": "short",
+    "title": "출력 형식 지정 문법 요소 쓰기",
+    "description": "printf 에서 문자열이 들어갈 자리를 나타내는 형식 지정자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "code": "String name = \"Mina\";\nSystem.out.printf(\"이름: ___\\n\", name);",
+      "answer": [
+        "%s"
+      ]
+    }
+  },
+  {
+    "id": "java-7-2-code-1",
+    "type": "code",
+    "title": "출력 형식 지정 소수 둘째 자리 출력",
+    "description": "printf 로 3.14159 를 소수 둘째 자리까지 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.printf\\s*\\(",
+          "message": "System.out.printf() 로 출력해요"
+        },
+        {
+          "pattern": "printf\\s*\\(\\s*\"[^\"]*%\\.2f[^\"]*\"\\s*,",
+          "message": "형식 문자열에 %.2f 를 써요",
+          "in": "source"
+        },
+        {
+          "pattern": "3\\.14159",
+          "message": "3.14159 를 출력할 값으로 써요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.printf(\"%.2f\\n\", 3.14159);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-7-3-mcq-1",
+    "type": "mcq",
+    "title": "Scanner 클래스 정수 입력 방법",
+    "description": "Scanner 로 정수를 입력받는 방법으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "choices": [
+        "import 없이 readInt() 로 읽는다",
+        "System.out.nextInt() 로 읽는다",
+        "java.util.Scanner 를 import 하고 nextInt() 로 정수를 읽는다",
+        "java.io.Scanner 를 import 하고 getInt() 로 읽는다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-7-3-mcq-2",
+    "type": "mcq",
+    "title": "Scanner 클래스 올바른 코드",
+    "description": "Scanner 를 만드는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "choices": [
+        "Scanner sc = Scanner(System.in);",
+        "Scanner sc = new Scanner(System.in);",
+        "Scanner sc = new Scanner(System.out);",
+        "scanner sc = new scanner(System.in);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-7-3-mcq-3",
+    "type": "mcq",
+    "title": "Scanner 클래스 실행 결과",
+    "description": "입력으로 5 를 넣었을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.println(n * 2);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "choices": [
+        "5",
+        "52",
+        "n * 2",
+        "10"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-7-3-parsons-1",
+    "type": "parsons",
+    "title": "Scanner 클래스 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 정수 하나를 입력받아 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "fragments": [
+        "int n = sc.nextInt();",
+        "Scanner sc = new Scanner(System.in);",
+        "System.out.println(n);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-7-3-parsons-2",
+    "type": "parsons",
+    "title": "Scanner 클래스 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 정수 하나를 입력받아 두 배 한 값을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "fragments": [
+        "int n = sc.nextInt();",
+        "Scanner sc = new Scanner(System.in);",
+        "System.out.println(doubled);",
+        "int doubled = n * 2;"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-7-3-parsons-3",
+    "type": "parsons",
+    "title": "Scanner 클래스 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Scanner 를 import 하고 정수 하나를 입력받아 출력하는 프로그램을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "fragments": [
+        "    public static void main(String[] args) {",
+        "    }",
+        "        System.out.println(n);",
+        "import java.util.Scanner;",
+        "}",
+        "        int n = sc.nextInt();",
+        "        Scanner sc = new Scanner(System.in);",
+        "public class Main {"
+      ],
+      "answer_order": [
+        3,
+        7,
+        0,
+        6,
+        5,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-7-3-blank-1",
+    "type": "blank",
+    "title": "Scanner 클래스 클래스 이름 빈칸",
+    "description": "입력을 읽는 객체를 만들도록 빈칸에 클래스 이름을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "template": "{{1}} sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.println(n);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Scanner"
+          ],
+          "hint": "입력을 읽는 클래스 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-3-blank-2",
+    "type": "blank",
+    "title": "Scanner 클래스 객체 생성 빈칸",
+    "description": "키보드 입력을 읽는 Scanner 를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "template": "Scanner sc = {{1}};\nint n = sc.nextInt();\nSystem.out.println(n);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "new Scanner(System.in)"
+          ],
+          "hint": "new 와 System.in 사용"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-3-blank-3",
+    "type": "blank",
+    "title": "Scanner 클래스 nextInt 빈칸",
+    "description": "정수 하나를 읽도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "template": "Scanner sc = new Scanner(System.in);\nint n = sc.{{1}};\nSystem.out.println(n);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "nextInt()"
+          ],
+          "hint": "정수를 읽는 메서드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-3-code-1",
+    "type": "code",
+    "title": "Scanner 클래스 정수 입력받아 출력",
+    "description": "Scanner 로 정수 하나를 입력받아 그대로 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-3",
+    "content": {
+      "starter_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "import\\s+java\\.util\\.(Scanner|\\*)\\s*;",
+          "message": "import java.util.Scanner; 를 써요"
+        },
+        {
+          "pattern": "new\\s+Scanner\\s*\\(\\s*System\\.in\\s*\\)",
+          "message": "new Scanner(System.in) 으로 Scanner 를 만들어요"
+        },
+        {
+          "pattern": "int\\s+\\w+\\s*=\\s*\\w+\\.nextInt\\s*\\(\\s*\\)",
+          "message": "nextInt() 로 정수를 읽어 변수에 저장해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*\\w+\\s*\\)",
+          "message": "읽은 변수를 System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        System.out.println(n);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-7-4-mcq-1",
+    "type": "mcq",
+    "title": "복습 - 120까지 합 공식",
+    "description": "1부터 n 까지의 합을 구하는 공식으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "choices": [
+        "n * n / 2",
+        "(n + 1) / 2",
+        "n * (n + 1) / 2",
+        "n * (n - 1)"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-7-4-mcq-2",
+    "type": "mcq",
+    "title": "복습 - 120까지 올바른 코드",
+    "description": "int n = 120; 일 때 1부터 n 까지의 합을 공식으로 계산하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "choices": [
+        "int sum = n * n + 1 / 2;",
+        "int sum = n * (n + 1) / 2;",
+        "int sum = n * (n + 1) / 2",
+        "int sum = (n * n + 1) / 2;"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-7-4-mcq-3",
+    "type": "mcq",
+    "title": "복습 - 120까지 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint n = 120;\nint sum = n * (n + 1) / 2;\nSystem.out.println(sum);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "choices": [
+        "7260",
+        "14520",
+        "7200",
+        "120"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-7-4-parsons-1",
+    "type": "parsons",
+    "title": "복습 - 120까지 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 1부터 120까지의 합을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "fragments": [
+        "System.out.println(sum);",
+        "int sum = n * (n + 1) / 2;",
+        "int n = 120;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-7-4-parsons-2",
+    "type": "parsons",
+    "title": "복습 - 120까지 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 n + 1 을 먼저 구한 뒤 1부터 120까지의 합을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "fragments": [
+        "System.out.println(sum);",
+        "int sum = n * next / 2;",
+        "int n = 120;",
+        "int next = n + 1;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-7-4-parsons-3",
+    "type": "parsons",
+    "title": "복습 - 120까지 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 공식을 나누어 계산한 뒤 \"합: 7260\" 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "fragments": [
+        "int total = n * next;",
+        "int sum = total / 2;",
+        "int next = n + 1;",
+        "System.out.println(\"합: \" + sum);",
+        "int n = 120;"
+      ],
+      "answer_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-7-4-blank-1",
+    "type": "blank",
+    "title": "복습 - 120까지 출력 메서드 빈칸",
+    "description": "계산한 합 sum 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "template": "int n = 120;\nint sum = n * (n + 1) / 2;\n{{1}}sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-4-blank-2",
+    "type": "blank",
+    "title": "복습 - 120까지 끝 수 빈칸",
+    "description": "1부터 120까지의 합을 구하도록 빈칸에 끝 수를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "template": "int n = {{1}};\nint sum = n * (n + 1) / 2;\nSystem.out.println(sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "120"
+          ],
+          "hint": "어디까지 더할지"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-4-short-3",
+    "type": "short",
+    "title": "복습 - 120까지 문법 요소 쓰기",
+    "description": "1부터 n 까지의 합 공식 n * (n + 1) ___ 2 에서 빈 자리에 들어갈 연산자 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "code": "int n = 120;\nint sum = n * (n + 1) ___ 2;",
+      "answer": [
+        "/"
+      ]
+    }
+  },
+  {
+    "id": "java-7-4-code-1",
+    "type": "code",
+    "title": "복습 - 120까지 합 계산해 출력",
+    "description": "1부터 120까지의 합을 계산해서 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\b120\\b",
+          "message": "끝 수 120 을 써요"
+        },
+        {
+          "pattern": "(\\w+)\\s*\\*\\s*\\(\\s*\\1\\s*\\+\\s*1\\s*\\)\\s*/\\s*2|for\\s*\\(",
+          "message": "n * (n + 1) / 2 공식으로 계산해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int n = 120;\n        int sum = n * (n + 1) / 2;\n        System.out.println(sum);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-7-5-mcq-1",
+    "type": "mcq",
+    "title": "복습 - 참 또는 거짓 문자열 비교",
+    "description": "Java 에서 두 문자열의 내용이 같은지 비교할 때 쓰는 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "choices": [
+        "=",
+        "equals()",
+        "compare",
+        "!"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-7-5-mcq-2",
+    "type": "mcq",
+    "title": "복습 - 참 또는 거짓 올바른 코드",
+    "description": "answer 가 \"yes\" 인지 비교하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "choices": [
+        "boolean r = answer.equal(\"yes\");",
+        "boolean r = answer = \"yes\";",
+        "boolean r = answer.equals(\"yes\");",
+        "boolean r = answer.equals(yes);"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-7-5-mcq-3",
+    "type": "mcq",
+    "title": "복습 - 참 또는 거짓 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString answer = \"no\";\nSystem.out.println(answer.equals(\"yes\"));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "choices": [
+        "false",
+        "true",
+        "no",
+        "yes"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-7-5-parsons-1",
+    "type": "parsons",
+    "title": "복습 - 참 또는 거짓 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 answer 가 \"yes\" 인지 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "fragments": [
+        "System.out.println(ok);",
+        "boolean ok = answer.equals(\"yes\");",
+        "String answer = \"yes\";"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-7-5-parsons-2",
+    "type": "parsons",
+    "title": "복습 - 참 또는 거짓 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 answer 가 \"yes\" 가 아닌지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "fragments": [
+        "boolean notOk = !ok;",
+        "String answer = \"no\";",
+        "boolean ok = answer.equals(\"yes\");",
+        "System.out.println(notOk);"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-7-5-parsons-3",
+    "type": "parsons",
+    "title": "복습 - 참 또는 거짓 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 equals 로 비교한 결과를 \"결과: true\" 형식으로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "fragments": [
+        "String word = \"Java\";",
+        "boolean same = word.equals(\"Java\");",
+        "System.out.println(msg);",
+        "boolean r = same && !word.equals(\"java\");",
+        "String msg = \"결과: \" + r;"
+      ],
+      "answer_order": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-7-5-blank-1",
+    "type": "blank",
+    "title": "복습 - 참 또는 거짓 equals 빈칸",
+    "description": "answer 가 \"yes\" 와 같은지 비교하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "template": "String answer = \"yes\";\nSystem.out.println(answer.{{1}}\"yes\"));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "equals("
+          ],
+          "hint": "문자열 내용 비교 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-5-blank-2",
+    "type": "blank",
+    "title": "복습 - 참 또는 거짓 출력 메서드 빈칸",
+    "description": "비교 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "template": "String answer = \"yes\";\n{{1}}answer.equals(\"yes\"));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-7-5-short-3",
+    "type": "short",
+    "title": "복습 - 참 또는 거짓 문법 요소 쓰기",
+    "description": "두 문자열의 내용이 같은지 비교하는 메서드 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "code": "String answer = \"yes\";\nboolean r = answer.___(\"yes\");",
+      "answer": [
+        "equals"
+      ]
+    }
+  },
+  {
+    "id": "java-7-5-code-1",
+    "type": "code",
+    "title": "복습 - 참 또는 거짓 yes 비교 결과 출력",
+    "description": "answer 가 \"yes\" 인지 equals 로 비교한 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-7-5",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String answer = \"yes\";\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "answer\\s*\\.\\s*equals\\s*\\(\\s*\"yes\"\\s*\\)|\"yes\"\\s*\\.\\s*equals\\s*\\(\\s*answer\\s*\\)",
+          "message": "answer.equals(\"yes\") 로 비교해요",
+          "in": "source"
+        },
+        {
+          "pattern": "\\.equals\\s*\\(",
+          "message": "equals() 메서드를 써요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String answer = \"yes\";\n        System.out.println(answer.equals(\"yes\"));\n    }\n}"
+    }
+  },
+  {
+    "id": "java-8-1-mcq-1",
+    "type": "mcq",
+    "title": "환영 메시지 출력하는 까닭",
+    "description": "계산기 프로그램을 시작할 때 환영 메시지를 출력하는 까닭으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "choices": [
+        "계산 결과를 저장하려고",
+        "프로그램이 시작되었음을 사용자에게 알리려고",
+        "숫자를 입력받으려고",
+        "프로그램을 끝내려고"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-8-1-mcq-2",
+    "type": "mcq",
+    "title": "환영 메시지 올바른 코드",
+    "description": "Calculator 를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "choices": [
+        "System.out.println(\"Calculator\");",
+        "System.out.println(Calculator);",
+        "System.out.println(\"Calculator\")",
+        "System.Out.println(\"Calculator\");"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-8-1-mcq-3",
+    "type": "mcq",
+    "title": "환영 메시지 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nSystem.out.println(\"=== Calculator ===\");\nSystem.out.println(\"Welcome!\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "choices": [
+        "=== Calculator === Welcome!",
+        "Welcome!\n=== Calculator ===",
+        "=== Calculator ===\nWelcome!",
+        "Calculator\nWelcome!"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-8-1-parsons-1",
+    "type": "parsons",
+    "title": "환영 메시지 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 === Calculator ===, Welcome!, Let's calculate. 를 차례로 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "fragments": [
+        "System.out.println(\"Welcome!\");",
+        "System.out.println(\"=== Calculator ===\");",
+        "System.out.println(\"Let's calculate.\");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-8-1-parsons-2",
+    "type": "parsons",
+    "title": "환영 메시지 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 **********, Calculator, Welcome!, ---------- 를 차례로 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "fragments": [
+        "System.out.println(\"Calculator\");",
+        "System.out.println(\"----------\");",
+        "System.out.println(\"**********\");",
+        "System.out.println(\"Welcome!\");"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-8-1-parsons-3",
+    "type": "parsons",
+    "title": "환영 메시지 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 == Calculator ==, Welcome!, Version 1.0 을 차례로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "fragments": [
+        "System.out.println(line);",
+        "String title = \"Calculator\";",
+        "System.out.println(\"Version 1.0\");",
+        "String line = \"== \" + title + \" ==\";",
+        "System.out.println(\"Welcome!\");"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-8-1-blank-1",
+    "type": "blank",
+    "title": "환영 메시지 출력 메서드 빈칸",
+    "description": "환영 메시지 Calculator 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "template": "{{1}}\"Calculator\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-1-blank-2",
+    "type": "blank",
+    "title": "환영 메시지 메시지 빈칸",
+    "description": "계산기 이름 Calculator 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "template": "System.out.println(\"{{1}}\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Calculator"
+          ],
+          "hint": "계산기를 뜻하는 영어 단어"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-1-short-3",
+    "type": "short",
+    "title": "환영 메시지 문법 요소 쓰기",
+    "description": "System 다음에 오는, 화면 출력을 맡는 부분의 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "code": "System.___.println(\"Calculator\");",
+      "answer": [
+        "out"
+      ]
+    }
+  },
+  {
+    "id": "java-8-1-code-1",
+    "type": "code",
+    "title": "환영 메시지 Calculator 출력",
+    "description": "System.out.println() 으로 \"Calculator\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        },
+        {
+          "pattern": "println\\s*\\(\\s*\"Calculator\"\\s*\\)",
+          "message": "\"Calculator\" 를 정확히 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Calculator\");\n    }\n}"
+    }
+  },
+  {
+    "id": "java-8-2-mcq-1",
+    "type": "mcq",
+    "title": "숫자 입력받기 nextInt 여러 번",
+    "description": "같은 Scanner 로 nextInt() 를 여러 번 호출하면 어떻게 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "choices": [
+        "처음 숫자만 계속 읽는다",
+        "오류가 난다",
+        "Scanner 를 매번 새로 만들어야 한다",
+        "입력한 정수를 차례대로 하나씩 읽는다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-8-2-mcq-2",
+    "type": "mcq",
+    "title": "숫자 입력받기 올바른 코드",
+    "description": "Scanner sc 가 이미 있을 때 두 정수 a, b 를 입력받는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "choices": [
+        "int a = sc.nextInt;\nint b = sc.nextInt;",
+        "int a = sc.nextInt();\nint b = sc.nextInt();",
+        "int a = nextInt();\nint b = nextInt();",
+        "int a = sc.nextint();\nint b = sc.nextint();"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-8-2-mcq-3",
+    "type": "mcq",
+    "title": "숫자 입력받기 실행 결과",
+    "description": "입력으로 3 4 를 넣었을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nSystem.out.println(b);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "choices": [
+        "3",
+        "34",
+        "4",
+        "7"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-8-2-parsons-1",
+    "type": "parsons",
+    "title": "숫자 입력받기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 첫 번째 정수는 a, 두 번째 정수는 b 에 입력받으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "fragments": [
+        "int b = sc.nextInt();",
+        "int a = sc.nextInt();",
+        "Scanner sc = new Scanner(System.in);"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-8-2-parsons-2",
+    "type": "parsons",
+    "title": "숫자 입력받기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 첫 번째 정수는 a, 두 번째 정수는 b 에 입력받고 b 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "fragments": [
+        "System.out.println(b);",
+        "int b = sc.nextInt();",
+        "Scanner sc = new Scanner(System.in);",
+        "int a = sc.nextInt();"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-8-2-parsons-3",
+    "type": "parsons",
+    "title": "숫자 입력받기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 두 정수 a, b 를 차례로 입력받는 프로그램을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "fragments": [
+        "public class Main {",
+        "import java.util.Scanner;",
+        "        int b = sc.nextInt();",
+        "    }",
+        "        Scanner sc = new Scanner(System.in);",
+        "    public static void main(String[] args) {",
+        "}",
+        "        int a = sc.nextInt();"
+      ],
+      "answer_order": [
+        1,
+        0,
+        5,
+        4,
+        7,
+        2,
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "id": "java-8-2-blank-1",
+    "type": "blank",
+    "title": "숫자 입력받기 Scanner 빈칸",
+    "description": "입력을 읽는 객체를 만들도록 빈칸에 클래스 이름을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "template": "{{1}} sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nSystem.out.println(b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Scanner"
+          ],
+          "hint": "입력을 읽는 클래스 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-2-blank-2",
+    "type": "blank",
+    "title": "숫자 입력받기 첫 번째 변수 빈칸",
+    "description": "첫 번째 정수를 정수 변수 a 에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "template": "Scanner sc = new Scanner(System.in);\n{{1}} = sc.nextInt();\nint b = sc.nextInt();\nSystem.out.println(a);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int a"
+          ],
+          "hint": "정수 변수 a 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-2-blank-3",
+    "type": "blank",
+    "title": "숫자 입력받기 두 번째 변수 빈칸",
+    "description": "두 번째 정수를 정수 변수 b 에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "template": "Scanner sc = new Scanner(System.in);\nint a = sc.nextInt();\n{{1}} = sc.nextInt();\nSystem.out.println(b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int b"
+          ],
+          "hint": "정수 변수 b 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-2-code-1",
+    "type": "code",
+    "title": "숫자 입력받기 두 정수 입력받기",
+    "description": "Scanner 로 두 정수를 차례로 입력받아 a, b 에 저장하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-2",
+    "content": {
+      "starter_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "new\\s+Scanner\\s*\\(\\s*System\\.in\\s*\\)",
+          "message": "new Scanner(System.in) 으로 Scanner 를 만들어요"
+        },
+        {
+          "pattern": "int\\s+a\\s*=\\s*\\w+\\.nextInt\\s*\\(\\s*\\)",
+          "message": "int a = sc.nextInt(); 로 첫 번째 수를 읽어요"
+        },
+        {
+          "pattern": "int\\s+b\\s*=\\s*\\w+\\.nextInt\\s*\\(\\s*\\)",
+          "message": "int b = sc.nextInt(); 로 두 번째 수를 읽어요"
+        }
+      ],
+      "solution": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int a = sc.nextInt();\n        int b = sc.nextInt();\n    }\n}"
+    }
+  },
+  {
+    "id": "java-8-3-mcq-1",
+    "type": "mcq",
+    "title": "기본 연산 변수에 저장하는 까닭",
+    "description": "계산 결과를 변수에 저장해 두면 좋은 점은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "choices": [
+        "프로그램이 자동으로 입력을 받는다",
+        "출력할 때 다시 계산하지 않고 재사용할 수 있다",
+        "변수는 한 번만 출력할 수 있다",
+        "계산이 항상 틀리게 된다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-8-3-mcq-2",
+    "type": "mcq",
+    "title": "기본 연산 올바른 코드",
+    "description": "a 와 b 의 합을 sum 에 저장하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "choices": [
+        "a + b = int sum;",
+        "int sum == a + b;",
+        "sum int = a + b;",
+        "int sum = a + b;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-8-3-mcq-3",
+    "type": "mcq",
+    "title": "기본 연산 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint a = 7;\nint b = 3;\nint sum = a + b;\nint diff = a - b;\nint product = a * b;\nSystem.out.println(product);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "choices": [
+        "10",
+        "4",
+        "21",
+        "73"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-8-3-parsons-1",
+    "type": "parsons",
+    "title": "기본 연산 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 합, 차, 곱을 변수에 저장한 뒤 10 4 21 을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "fragments": [
+        "int a = 7;\nint b = 3;",
+        "System.out.println(sum + \" \" + diff + \" \" + product);",
+        "int sum = a + b;\nint diff = a - b;\nint product = a * b;"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-8-3-parsons-2",
+    "type": "parsons",
+    "title": "기본 연산 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 합: 10, 차: 4, 곱: 21 을 세 줄로 차례로 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "fragments": [
+        "System.out.println(\"차: \" + diff);",
+        "System.out.println(\"합: \" + sum);",
+        "int sum = a + b;\nint diff = a - b;\nint product = a * b;",
+        "int a = 7;\nint b = 3;",
+        "System.out.println(\"곱: \" + product);"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-8-3-parsons-3",
+    "type": "parsons",
+    "title": "기본 연산 순서 맞추기 3",
+    "description": "입력이 7 3 일 때, 조각을 올바른 순서로 놓아 첫 수 a, 둘째 수 b 를 읽고 합: 10, 차: 4, 곱: 21 을 차례로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "fragments": [
+        "System.out.println(\"합: \" + sum);",
+        "System.out.println(\"차: \" + diff);",
+        "int sum = a + b;\nint diff = a - b;\nint product = a * b;",
+        "Scanner sc = new Scanner(System.in);",
+        "System.out.println(\"곱: \" + product);",
+        "int a = sc.nextInt();",
+        "int b = sc.nextInt();"
+      ],
+      "answer_order": [
+        3,
+        5,
+        6,
+        2,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-8-3-blank-1",
+    "type": "blank",
+    "title": "기본 연산 합 변수 빈칸",
+    "description": "a 와 b 의 합을 정수 변수 sum 에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "template": "int a = 7;\nint b = 3;\n{{1}} = a + b;\nSystem.out.println(sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int sum"
+          ],
+          "hint": "정수 변수 sum 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-3-blank-2",
+    "type": "blank",
+    "title": "기본 연산 차 변수 빈칸",
+    "description": "a 와 b 의 차를 정수 변수 diff 에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "template": "int a = 7;\nint b = 3;\n{{1}} = a - b;\nSystem.out.println(diff);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int diff"
+          ],
+          "hint": "정수 변수 diff 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-3-blank-3",
+    "type": "blank",
+    "title": "기본 연산 곱 변수 빈칸",
+    "description": "a 와 b 의 곱을 정수 변수 product 에 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "template": "int a = 7;\nint b = 3;\n{{1}} = a * b;\nSystem.out.println(product);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int product"
+          ],
+          "hint": "정수 변수 product 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-3-code-1",
+    "type": "code",
+    "title": "기본 연산 합 차 곱 저장하기",
+    "description": "a 와 b 의 합, 차, 곱을 각각 int 변수 sum, diff, product 에 저장하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int a = 7;\n        int b = 3;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "int\\s+sum\\s*=\\s*(a\\s*\\+\\s*b|b\\s*\\+\\s*a)\\s*;",
+          "message": "int sum = a + b; 로 합을 저장해요"
+        },
+        {
+          "pattern": "int\\s+diff\\s*=\\s*a\\s*-\\s*b\\s*;",
+          "message": "int diff = a - b; 로 차를 저장해요"
+        },
+        {
+          "pattern": "int\\s+product\\s*=\\s*(a\\s*\\*\\s*b|b\\s*\\*\\s*a)\\s*;",
+          "message": "int product = a * b; 로 곱을 저장해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int a = 7;\n        int b = 3;\n        int sum = a + b;\n        int diff = a - b;\n        int product = a * b;\n    }\n}"
+    }
+  },
+  {
+    "id": "java-8-4-mcq-1",
+    "type": "mcq",
+    "title": "형식에 맞춘 출력 %d 자리",
+    "description": "printf(\"합: %d\", sum) 에서 %d 자리에는 무엇이 들어갈까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "choices": [
+        "글자 d",
+        "문자열 \"sum\"",
+        "sum 의 정수 값",
+        "소수점 아래 두 자리"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-8-4-mcq-2",
+    "type": "mcq",
+    "title": "형식에 맞춘 출력 올바른 코드",
+    "description": "sum 의 값을 \"합: 값\" 형식으로 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "choices": [
+        "System.out.printf(\"합: %s\\n\" sum);",
+        "System.out.printf(\"합: %d\\n\", sum);",
+        "System.out.printf(\"합: sum\\n\");",
+        "System.out.printf(\"합: %d\\n\", \"sum\");"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-8-4-mcq-3",
+    "type": "mcq",
+    "title": "형식에 맞춘 출력 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint sum = 12;\nSystem.out.printf(\"합: %d\\n\", sum);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "choices": [
+        "합: 12",
+        "합: %d",
+        "합: sum",
+        "12"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-8-4-parsons-1",
+    "type": "parsons",
+    "title": "형식에 맞춘 출력 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 이어 붙여 printf 로 합: 12 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "fragments": [
+        "\"합: %d\\n\", sum",
+        "int sum = 12;",
+        ");",
+        "System.out.printf("
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-8-4-parsons-2",
+    "type": "parsons",
+    "title": "형식에 맞춘 출력 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 이어 붙여 printf 로 합: 12 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "fragments": [
+        ");",
+        "\"합: %d\\n\"",
+        ", sum",
+        "int sum = 12;",
+        "System.out.printf("
+      ],
+      "answer_order": [
+        3,
+        4,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-8-4-parsons-3",
+    "type": "parsons",
+    "title": "형식에 맞춘 출력 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 이어 붙여 printf 로 합: 12 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "fragments": [
+        "int sum = 12;",
+        ", sum",
+        ");",
+        "\"합: %d\\n\"",
+        "System.out",
+        ".printf("
+      ],
+      "answer_order": [
+        0,
+        4,
+        5,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-8-4-blank-1",
+    "type": "blank",
+    "title": "형식에 맞춘 출력 printf 빈칸",
+    "description": "형식을 정해서 합: 12 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "template": "int sum = 12;\n{{1}}\"합: %d\\n\", sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.printf("
+          ],
+          "hint": "형식을 지정해 출력하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-4-blank-2",
+    "type": "blank",
+    "title": "형식에 맞춘 출력 정수 형식 빈칸",
+    "description": "sum 의 정수 값이 들어갈 자리를 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "template": "int sum = 12;\nSystem.out.printf(\"합: {{1}}\\n\", sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "%d"
+          ],
+          "hint": "정수 형식 지정자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-8-4-short-3",
+    "type": "short",
+    "title": "형식에 맞춘 출력 문법 요소 쓰기",
+    "description": "printf 로 출력한 뒤 줄을 바꾸려면 형식 문자열 끝에 무엇을 쓸까요? (역슬래시로 시작하는 두 글자)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "code": "int sum = 12;\nSystem.out.printf(\"합: %d___\", sum);",
+      "answer": [
+        "\\n",
+        "%n"
+      ]
+    }
+  },
+  {
+    "id": "java-8-4-code-1",
+    "type": "code",
+    "title": "형식에 맞춘 출력 합 형식 출력",
+    "description": "printf 로 sum 의 값을 \"합: 값\" 형식으로 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-8-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int a = 7;\n        int b = 3;\n        int sum = a + b;\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.printf\\s*\\(",
+          "message": "System.out.printf() 로 출력해요"
+        },
+        {
+          "pattern": "printf\\s*\\(\\s*\"합\\s*:\\s*%d(\\\\n|%n)?\"\\s*,\\s*sum\\s*\\)",
+          "message": "printf(\"합: %d\\n\", sum) 형식으로 써요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int a = 7;\n        int b = 3;\n        int sum = a + b;\n        System.out.printf(\"합: %d\\n\", sum);\n    }\n}"
+    }
+  }
+]
