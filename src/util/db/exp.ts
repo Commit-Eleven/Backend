@@ -23,13 +23,9 @@ export async function awardSolveExp(
   } catch (err) {
     // 이미 푼 문제면 경험치를 주지 않는다
     if (!isDuplicateKey(err)) throw err
-    return
+    return { awarded: false, awardedExp: 0 }
   }
-
-  await db
-    .update(user)
-    .set({ totalExp: sql`${user.totalExp} + ${amount}` })
-    .where(eq(user.id, userId))
+  return { awarded: true, awardedExp: amount }
 }
 
 // 최근에 경험치를 얻은 기록. 최신순
