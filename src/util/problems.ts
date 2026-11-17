@@ -1,5 +1,4 @@
-// 문제 원본(static/problems/*.json)의 공통 메타데이터 모음.
-// 제출 이력 등에서 problemId로 title/type 같은 정보를 붙여줄 때 쓴다.
+import { submissions } from './db/submissions'
 
 const FILES = ['mcq', 'blank', 'parsons', 'short', 'code'] as const
 
@@ -52,4 +51,14 @@ export function matchesAnswer(
   const normalize = (value: string) => (caseSensitive ? value.trim() : value.trim().toLowerCase())
   const target = normalize(submitted)
   return accepted.some((answer) => normalize(answer) === target)
+}
+
+// 이미 맞힌(정답으로 푼) 문제는 다시 안 나오게 제외한다.
+// 고른 문제를 수준에 맞추려면 맞힌 id 목록도 같이 필요해서 함께 돌려준다
+export async function excludeSolved<T extends { id: string }>(
+  list: T[],
+  userId: number,
+): Promise<{ unsolved: T[]; solved: Set<string> }> {
+  const solved = new Set(await submissions.findSolvedProblemIds(userId))
+  return { unsolved: list.filter((problem) => !solved.has(problem.id)), solved }
 }

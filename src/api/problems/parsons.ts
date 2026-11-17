@@ -1,9 +1,11 @@
 import { Hono } from 'hono'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
+import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
-import { filterByLanguage } from '../../util/problems'
+import { pickProblemId } from '../../util/learning'
+import { excludeSolved, filterByLanguage } from '../../util/problems'
 
 type ParsonsProblem = {
   id: string
@@ -38,11 +40,11 @@ export function toQuestion(p: ParsonsProblem) {
 
 export const parsons = new Hono<AuthEnv>()
 
-// id 를 주면 그 문제, 안 주면 language 로 거른 문제 중 하나
-parsons.get('', requireAuth, (c) => {
-  const id = c.req.query('id')
-  if (id) {
-    const found = parsonsProblems.find((problem) => problem.id === id)
+// id 를 주면 그 문제, 안 주면 language 로 거른 문제 중 커리큘럼·수준에 맞는 하나
+parsons.get('', requireAuth, async (c) => {
+  const requestedId = c.req.query('id')
+  if (requestedId) {
+    const found = parsonsProblems.find((problem) => problem.id === requestedId)
     if (!found) return c.json({ message: '문제를 찾을 수 없습니다' }, 404)
     return c.json({ problem: toQuestion(found) }, 200)
   }
@@ -54,7 +56,16 @@ parsons.get('', requireAuth, (c) => {
     return c.json({ message }, 404)
   }
 
-  const problem = toQuestion(pool[Math.floor(Math.random() * pool.length)])
+  const userId = c.get('userId')
+  const { unsolved, solved } = await excludeSolved(pool, userId)
+  if (unsolved.length === 0) {
+    const message = language ? `${language} 문제를 모두 풀었습니다` : '문제를 모두 풀었습니다'
+    return c.json({ message }, 404)
+  }
+
+  const user = await users.findById(userId)
+  const id = pickProblemId({ type: 'parsons', language, level: user?.studyLevel, solved })
+  const problem = toQuestion(unsolved.find((p) => p.id === id) ?? unsolved[0])
   return c.json({ problem }, 200)
 })
 

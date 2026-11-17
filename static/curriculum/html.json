@@ -1,0 +1,46 @@
+{
+  "courseId": "html-basic",
+  "title": "HTML 기초",
+  "language": "html",
+  "units": [
+    {
+      "unitId": "html-structure",
+      "title": "HTML 기본 구조",
+      "order": 1,
+      "problemIds": [
+        "html-structure-mcq-1",
+        "html-structure-mcq-2",
+        "html-structure-blank-1",
+        "html-structure-parsons-1",
+        "html-structure-short-1",
+        "html-code-1"
+      ]
+    },
+    {
+      "unitId": "html-text-links",
+      "title": "텍스트와 링크",
+      "order": 2,
+      "problemIds": [
+        "html-text-links-mcq-1",
+        "html-text-links-mcq-2",
+        "html-text-links-blank-1",
+        "html-text-links-parsons-1",
+        "html-text-links-short-1",
+        "html-text-links-code-1"
+      ]
+    },
+    {
+      "unitId": "html-lists-images",
+      "title": "목록과 이미지",
+      "order": 3,
+      "problemIds": [
+        "html-lists-images-mcq-1",
+        "html-lists-images-mcq-2",
+        "html-lists-images-blank-1",
+        "html-lists-images-parsons-1",
+        "html-lists-images-short-1",
+        "html-lists-images-code-1"
+      ]
+    }
+  ]
+}
