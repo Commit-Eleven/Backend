@@ -89,8 +89,6 @@ async function verifyIdToken(idToken: string, nonce: string): Promise<GoogleProf
 
 const ACCESS_TOKEN_TTL = 60 * 15
 const REFRESH_TOKEN_TTL = 60 * 60 * 24 * 14
-// OAuth 콜백에서 프론트로 넘기는 일회용 코드의 수명. 프론트가 바로 교환한다.
-const LOGIN_CODE_TTL = 60
 const tokenHash = async (raw: string) =>
   Buffer.from(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw))).toString('hex')
 
@@ -98,21 +96,6 @@ const tokenHash = async (raw: string) =>
 function accessToken(u: UserRow) {
   const iat = Math.floor(Date.now() / 1000)
   return sign({ sub: u.id, tier: u.tier, iat, exp: iat + ACCESS_TOKEN_TTL }, env.jwtSecret, 'HS256')
-}
-
-// 콜백 URL 에 실을 일회용 코드. 원문은 URL 로만 나가고 DB 에는 해시만 남긴다.
-async function newLoginCode(userId: number) {
-  const raw = Buffer.from(crypto.getRandomValues(new Uint8Array(32))).toString('base64url')
-  const now = new Date()
-  await db
-    .delete(loginCodeTable)
-    .where(and(eq(loginCodeTable.userId, userId), lt(loginCodeTable.expiresAt, now)))
-  await db.insert(loginCodeTable).values({
-    userId,
-    codeHash: await tokenHash(raw),
-    expiresAt: new Date(now.getTime() + LOGIN_CODE_TTL * 1000),
-  })
-  return raw
 }
 
 async function newRefreshToken(userId: number) {
@@ -213,10 +196,11 @@ login.get('/google/callback', async (c) => {
   if (!profile.emailVerified) return fail(c, 'FORBIDDEN', '인증 안 된 구글 이메일', 403)
 
   const u = await findOrCreateUser(profile)
-  // 액세스 토큰을 URL 에 싣지 않는다. 일회용 코드만 넘기고 프론트가 곧바로 교환한다.
-  const loginCode = await newLoginCode(u.id)
+  // 프론트가 /auth/callback?token= 으로 받는다. 리프레시 토큰은 여기서 쿠키로
+  const { token, refreshToken } = await issueTokens(u)
+  setRefreshCookie(c, refreshToken)
 
-  return c.redirect(`${env.frontendUrl}/auth/callback?code=${encodeURIComponent(loginCode)}`, 302)
+  return c.redirect(`${env.frontendUrl}/auth/callback?token=${encodeURIComponent(token)}`, 302)
 })
 
 // 콜백이 넘긴 일회용 코드를 액세스·리프레시 토큰으로 바꾼다.
