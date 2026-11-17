@@ -1,0 +1,4687 @@
+[
+  {
+    "id": "java-1-1-mcq-1",
+    "type": "mcq",
+    "title": "안녕하세요, 세계!: println 의 뜻",
+    "description": "System.out.println() 은 어떤 일을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "choices": [
+        "괄호 안의 값을 저장만 하고 출력하지 않는다",
+        "괄호 안의 값을 화면에 출력하고 줄을 바꾼다",
+        "괄호 안의 값을 출력하지만 줄은 바꾸지 않는다",
+        "프로그램을 바로 끝낸다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-1-1-mcq-2",
+    "type": "mcq",
+    "title": "안녕하세요, 세계!: 문장 끝 기호",
+    "description": "Java 에서 하나의 문장(명령) 끝에는 무엇을 붙일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "choices": [
+        "콜론 :",
+        "마침표 .",
+        "아무것도 붙이지 않는다",
+        "세미콜론 ;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-1-1-mcq-3",
+    "type": "mcq",
+    "title": "안녕하세요, 세계!: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nSystem.out.println(\"Hello, World!\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "choices": [
+        "Hello, World!",
+        "\"Hello, World!\"",
+        "System.out.println(\"Hello, World!\");",
+        "오류가 난다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-1-1-parsons-1",
+    "type": "parsons",
+    "title": "안녕하세요, 세계! 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 이어 붙여 Hello, World! 를 출력하는 한 줄을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "fragments": [
+        "\"Hello, World!\"",
+        ");",
+        "System.out.println("
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-1-1-parsons-2",
+    "type": "parsons",
+    "title": "안녕하세요, 세계! 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Hello, World! 를 출력하는 Java 프로그램을 완성하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "fragments": [
+        "public class Main {",
+        "    }",
+        "        System.out.println(\"Hello, World!\");",
+        "    public static void main(String[] args) {",
+        "}"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-1-1-parsons-3",
+    "type": "parsons",
+    "title": "안녕하세요, 세계! 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Hello, World! 와 Java 시작! 을 차례로 출력하는 프로그램을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "fragments": [
+        "        System.out.println(\"Hello, World!\");",
+        "public class Main {",
+        "    }",
+        "    public static void main(String[] args) {",
+        "}",
+        "        System.out.println(\"Java 시작!\");"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        5,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-1-1-blank-1",
+    "type": "blank",
+    "title": "안녕하세요, 세계!: 출력 명령 빈칸",
+    "description": "Hello, World! 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "template": "{{1}}\"Hello, World!\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-1-1-blank-2",
+    "type": "blank",
+    "title": "안녕하세요, 세계!: 출력할 글자 빈칸",
+    "description": "화면에 Hello, World! 가 출력되도록 따옴표 안의 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "template": "System.out.println(\"{{1}}\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Hello, World!"
+          ],
+          "hint": "쉼표와 느낌표까지 정확히"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-1-1-short-3",
+    "type": "short",
+    "title": "안녕하세요, 세계!: 메서드 이름 쓰기",
+    "description": "값을 출력하고 줄을 바꾸는 메서드 이름을 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "code": "System.out.___(\"Hello, World!\");",
+      "answer": [
+        "println"
+      ]
+    }
+  },
+  {
+    "id": "java-1-1-code-1",
+    "type": "code",
+    "title": "안녕하세요, 세계!: Hello, World! 출력",
+    "description": "System.out.println() 으로 \"Hello, World!\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*\"Hello, World!\"\\s*\\)\\s*;",
+          "message": "System.out.println(\"Hello, World!\"); 로 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "public\\s+static\\s+void\\s+main\\s*\\(",
+          "message": "main 메서드 틀을 지워서는 안 돼요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+    }
+  },
+  {
+    "id": "java-1-2-mcq-1",
+    "type": "mcq",
+    "title": "주석: 여러 줄 주석 기호",
+    "description": "Java 에서 여러 줄을 한꺼번에 주석으로 만들 때 쓰는 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "choices": [
+        "//",
+        "#",
+        "/* */",
+        "<!-- -->"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-1-2-mcq-2",
+    "type": "mcq",
+    "title": "주석: 올바른 코드",
+    "description": "한 줄 주석을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "choices": [
+        "# 인사를 출력해요\nSystem.out.println(\"Hi\");",
+        "/ 인사를 출력해요\nSystem.out.println(\"Hi\");",
+        "/* 인사를 출력해요\nSystem.out.println(\"Hi\");",
+        "// 인사를 출력해요\nSystem.out.println(\"Hi\");"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-1-2-mcq-3",
+    "type": "mcq",
+    "title": "주석: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\n// System.out.println(\"A\");\nSystem.out.println(\"B\");\n/* System.out.println(\"C\"); */",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "choices": [
+        "B",
+        "A\nB\nC",
+        "A\nB",
+        "B\nC"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-1-2-parsons-1",
+    "type": "parsons",
+    "title": "주석 순서 맞추기 1",
+    "description": "각 출력 줄 바로 위에 그 줄을 설명하는 주석이 오도록 조각을 놓아 Hi 와 Bye 를 차례로 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "fragments": [
+        "// 두 번째 인사",
+        "System.out.println(\"Bye\");",
+        "// 첫 번째 인사",
+        "System.out.println(\"Hi\");"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-1-2-parsons-2",
+    "type": "parsons",
+    "title": "주석 순서 맞추기 2",
+    "description": "맨 위에 여러 줄 주석이 오고, 각 출력 줄 바로 위에 설명 주석이 오도록 놓아 Hi 와 Bye 를 차례로 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "fragments": [
+        "// 첫 번째 인사",
+        "System.out.println(\"Hi\");",
+        "// 두 번째 인사",
+        "System.out.println(\"Bye\");",
+        "/* 인사 프로그램",
+        "   두 줄을 출력합니다 */"
+      ],
+      "answer_order": [
+        4,
+        5,
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-1-2-parsons-3",
+    "type": "parsons",
+    "title": "주석 순서 맞추기 3",
+    "description": "맨 위에 여러 줄 주석이 오고, 각 출력 줄 바로 위에 설명 주석이 오도록 놓아 Hi, Hello, Bye 를 차례로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "fragments": [
+        "System.out.println(\"Hi\");",
+        "// 첫 번째 인사",
+        "System.out.println(\"Hello\");",
+        "   세 줄을 출력합니다 */",
+        "System.out.println(\"Bye\");",
+        "/* 인사 프로그램",
+        "// 두 번째 인사",
+        "// 마지막 인사"
+      ],
+      "answer_order": [
+        5,
+        3,
+        1,
+        0,
+        6,
+        2,
+        7,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-1-2-blank-1",
+    "type": "blank",
+    "title": "주석: 한 줄 주석 기호 빈칸",
+    "description": "첫 줄이 한 줄 주석이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "template": "{{1}} 인사를 출력합니다\nSystem.out.println(\"Hi\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "//"
+          ],
+          "hint": "한 줄 주석을 시작하는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-1-2-blank-2",
+    "type": "blank",
+    "title": "주석: 출력 명령 빈칸",
+    "description": "주석 아래 줄에서 Hi 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "template": "// 인사를 출력합니다\n{{1}}\"Hi\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-1-2-short-3",
+    "type": "short",
+    "title": "주석: 여러 줄 주석 닫기",
+    "description": "여러 줄 주석을 닫는 기호를 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "code": "/* 여기는 주석입니다\n   여러 줄을 쓸 수 있어요 ___\nSystem.out.println(\"Hi\");",
+      "answer": [
+        "*/"
+      ]
+    }
+  },
+  {
+    "id": "java-1-2-code-1",
+    "type": "code",
+    "title": "주석: 주석 달고 Hi 출력",
+    "description": "메모: 로 시작하는 줄을 // 주석으로 바꾸고, 그 아래에서 System.out.println() 으로 \"Hi\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        메모: 인사를 출력합니다\n        // 여기에 출력 코드를 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "^(?![\\s\\S]*메모:)",
+          "message": "메모: 줄 앞에 // 를 붙여 주석으로 만들어요",
+          "in": "source"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*\"Hi\"\\s*\\)\\s*;",
+          "message": "System.out.println(\"Hi\"); 로 출력해요",
+          "in": "source"
+        },
+        {
+          "pattern": "public\\s+static\\s+void\\s+main\\s*\\(",
+          "message": "main 메서드 틀을 지워서는 안 돼요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        // 메모: 인사를 출력합니다\n        System.out.println(\"Hi\");\n    }\n}"
+    }
+  },
+  {
+    "id": "java-1-3-mcq-1",
+    "type": "mcq",
+    "title": "기본 프로그램 구조: 시작 위치",
+    "description": "Java 프로그램을 실행하면 어디서부터 시작할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "choices": [
+        "파일의 맨 마지막 줄",
+        "가장 먼저 쓴 주석",
+        "클래스 안의 main 메서드",
+        "클래스 밖에 쓴 아무 문장"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-1-3-mcq-2",
+    "type": "mcq",
+    "title": "기본 프로그램 구조: 올바른 코드",
+    "description": "Start 를 출력하는 올바른 Java 프로그램은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "choices": [
+        "public class Main {\n    System.out.println(\"Start\");\n}",
+        "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Start\");\n    }\n}",
+        "class Main:\n    public static void main(String[] args) {\n        System.out.println(\"Start\");\n    }",
+        "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Start\")\n    }\n}"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-1-3-mcq-3",
+    "type": "mcq",
+    "title": "기본 프로그램 구조: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Start\");\n        System.out.println(\"End\");\n    }\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "choices": [
+        "Start\nEnd",
+        "StartEnd",
+        "End\nStart",
+        "Main"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-1-3-parsons-1",
+    "type": "parsons",
+    "title": "기본 프로그램 구조 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 main 메서드에서 Start 를 출력하는 프로그램을 완성하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "fragments": [
+        "    }",
+        "}",
+        "    public static void main(String[] args) {",
+        "public class Main {",
+        "        System.out.println(\"Start\");"
+      ],
+      "answer_order": [
+        3,
+        2,
+        4,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-1-3-parsons-2",
+    "type": "parsons",
+    "title": "기본 프로그램 구조 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Start 와 End 를 차례로 출력하는 프로그램을 완성하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "fragments": [
+        "    }",
+        "public class Main {",
+        "        System.out.println(\"End\");",
+        "        System.out.println(\"Start\");",
+        "}",
+        "    public static void main(String[] args) {"
+      ],
+      "answer_order": [
+        1,
+        5,
+        3,
+        2,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-1-3-parsons-3",
+    "type": "parsons",
+    "title": "기본 프로그램 구조 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Start, Java, End 를 차례로 출력하는 프로그램을 완성하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "fragments": [
+        "public class Main {",
+        "        System.out.println(\"Java\");",
+        "}",
+        "        System.out.println(\"End\");",
+        "        System.out.println(\"Start\");",
+        "    public static void main(String[] args) {",
+        "    }"
+      ],
+      "answer_order": [
+        0,
+        5,
+        4,
+        1,
+        3,
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-1-3-blank-1",
+    "type": "blank",
+    "title": "기본 프로그램 구조: main 메서드 빈칸",
+    "description": "프로그램이 시작하는 main 메서드가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "template": "public class Main {\n    {{1}}(String[] args) {\n        System.out.println(\"Start\");\n    }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "public static void main"
+          ],
+          "hint": "프로그램이 시작하는 메서드의 머리 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-1-3-blank-2",
+    "type": "blank",
+    "title": "기본 프로그램 구조: 출력 명령 빈칸",
+    "description": "main 메서드 안에서 Start 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "template": "public class Main {\n    public static void main(String[] args) {\n        {{1}}\"Start\");\n    }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-1-3-short-3",
+    "type": "short",
+    "title": "기본 프로그램 구조: 클래스 키워드 쓰기",
+    "description": "프로그램을 담는 틀(클래스)을 만드는 키워드를 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "code": "public ___ Main {\n    public static void main(String[] args) {\n        System.out.println(\"Start\");\n    }\n}",
+      "answer": [
+        "class"
+      ]
+    }
+  },
+  {
+    "id": "java-1-3-code-1",
+    "type": "code",
+    "title": "기본 프로그램 구조: main 에서 Start 출력",
+    "description": "main 메서드 안에서 System.out.println() 으로 \"Start\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-1-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "class\\s+Main\\s*\\{",
+          "message": "class Main 틀을 지워서는 안 돼요"
+        },
+        {
+          "pattern": "public\\s+static\\s+void\\s+main\\s*\\(\\s*String\\s*\\[\\s*\\]\\s*\\w+\\s*\\)",
+          "message": "public static void main(String[] args) 를 그대로 둬요"
+        },
+        {
+          "pattern": "main\\s*\\([^)]*\\)\\s*\\{[\\s\\S]*System\\.out\\.println\\s*\\(\\s*\"Start\"\\s*\\)\\s*;",
+          "message": "main 메서드 안에서 System.out.println(\"Start\"); 로 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Start\");\n    }\n}"
+    }
+  },
+  {
+    "id": "java-2-1-mcq-1",
+    "type": "mcq",
+    "title": "숫자: int 와 double",
+    "description": "int 와 double 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "choices": [
+        "int 는 소수를, double 은 정수만 저장한다",
+        "int 와 double 은 둘 다 글자를 저장한다",
+        "int 는 정수를, double 은 소수를 저장한다",
+        "double 에는 소수점이 있는 수를 넣을 수 없다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-2-1-mcq-2",
+    "type": "mcq",
+    "title": "숫자: 올바른 코드",
+    "description": "소수 1.5 를 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "choices": [
+        "int height = 1.5;",
+        "double height = 1.5;",
+        "double height = 1,5;",
+        "height double = 1.5;"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-2-1-mcq-3",
+    "type": "mcq",
+    "title": "숫자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint score = 90;\ndouble rate = 0.5;\nSystem.out.println(score);\nSystem.out.println(rate);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "choices": [
+        "90.0\n0.5",
+        "90\n.5",
+        "score\nrate",
+        "90\n0.5"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-2-1-parsons-1",
+    "type": "parsons",
+    "title": "숫자 순서 맞추기 1",
+    "description": "age 를 만들어 바로 다음 줄에서 출력하고, 그다음 height 를 만들어 바로 다음 줄에서 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "fragments": [
+        "System.out.println(age);",
+        "int age = 25;",
+        "double height = 1.75;",
+        "System.out.println(height);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-2-1-parsons-2",
+    "type": "parsons",
+    "title": "숫자 순서 맞추기 2",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 25, 1.75, 2025 순서입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "fragments": [
+        "System.out.println(year);",
+        "int age = 25;",
+        "System.out.println(height);",
+        "int year = 2025;",
+        "double height = 1.75;",
+        "System.out.println(age);"
+      ],
+      "answer_order": [
+        1,
+        5,
+        4,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-2-1-parsons-3",
+    "type": "parsons",
+    "title": "숫자 순서 맞추기 3",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 25, 1.75, 2025, 60.5 순서입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "fragments": [
+        "int year = 2025;",
+        "System.out.println(height);",
+        "double weight = 60.5;",
+        "System.out.println(weight);",
+        "System.out.println(age);",
+        "System.out.println(year);",
+        "double height = 1.75;",
+        "int age = 25;"
+      ],
+      "answer_order": [
+        7,
+        4,
+        6,
+        1,
+        0,
+        5,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-2-1-blank-1",
+    "type": "blank",
+    "title": "숫자: 정수 변수 만들기 빈칸",
+    "description": "정수 변수 age 에 25 를 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "template": "{{1}};\nSystem.out.println(age);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int age = 25",
+            "int age=25"
+          ],
+          "hint": "정수 자료형 int, 이름 age, 값 25"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-1-blank-2",
+    "type": "blank",
+    "title": "숫자: 변수 출력 빈칸",
+    "description": "age 에 저장된 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "template": "int age = 25;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(age)",
+            "System.out.println( age )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-1-short-3",
+    "type": "short",
+    "title": "숫자: 소수 자료형 쓰기",
+    "description": "소수를 저장하는 자료형 이름을 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "code": "___ pi = 3.14;\nSystem.out.println(pi);",
+      "answer": [
+        "double"
+      ]
+    }
+  },
+  {
+    "id": "java-2-1-code-1",
+    "type": "code",
+    "title": "숫자: age 만들고 출력",
+    "description": "int age = 25; 를 만들고 System.out.println() 으로 age 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bint\\s+age\\s*=\\s*25\\s*;",
+          "message": "int age = 25; 로 변수를 만들어요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*age\\s*\\)\\s*;",
+          "message": "System.out.println(age); 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int age = 25;\n        System.out.println(age);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-2-2-mcq-1",
+    "type": "mcq",
+    "title": "문자열: 감싸는 기호",
+    "description": "String 값을 감쌀 때 쓰는 기호는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "choices": [
+        "작은따옴표 ' '",
+        "큰따옴표 \" \"",
+        "소괄호 ( )",
+        "중괄호 { }"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-2-2-mcq-2",
+    "type": "mcq",
+    "title": "문자열: 올바른 코드",
+    "description": "문자열 \"Java\" 를 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "choices": [
+        "String lang = 'Java';",
+        "string lang = \"Java\";",
+        "String lang = Java;",
+        "String lang = \"Java\";"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-2-2-mcq-3",
+    "type": "mcq",
+    "title": "문자열: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString name = \"Coddy\";\nSystem.out.println(name);\nSystem.out.println(\"name\");",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "choices": [
+        "Coddy\nname",
+        "Coddy\nCoddy",
+        "name\nCoddy",
+        "name\nname"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-2-2-parsons-1",
+    "type": "parsons",
+    "title": "문자열 순서 맞추기 1",
+    "description": "greeting 을 만들어 출력한 다음, 반가워요 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "fragments": [
+        "String greeting = \"안녕\";",
+        "System.out.println(\"반가워요\");",
+        "System.out.println(greeting);"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-2-2-parsons-2",
+    "type": "parsons",
+    "title": "문자열 순서 맞추기 2",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 Coddy, Seoul 순서입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "fragments": [
+        "System.out.println(city);",
+        "String name = \"Coddy\";",
+        "String city = \"Seoul\";",
+        "System.out.println(name);"
+      ],
+      "answer_order": [
+        1,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-2-2-parsons-3",
+    "type": "parsons",
+    "title": "문자열 순서 맞추기 3",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 Coddy, Seoul, Java 순서입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "fragments": [
+        "System.out.println(name);",
+        "String city = \"Seoul\";",
+        "System.out.println(lang);",
+        "System.out.println(city);",
+        "String lang = \"Java\";",
+        "String name = \"Coddy\";"
+      ],
+      "answer_order": [
+        5,
+        0,
+        1,
+        3,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-2-2-blank-1",
+    "type": "blank",
+    "title": "문자열: 문자열 변수 만들기 빈칸",
+    "description": "문자열 변수 name 을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "template": "{{1}} = \"Coddy\";\nSystem.out.println(name);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "String name"
+          ],
+          "hint": "문자열 자료형과 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-2-blank-2",
+    "type": "blank",
+    "title": "문자열: 변수 출력 빈칸",
+    "description": "name 에 저장된 글자를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "template": "String name = \"Coddy\";\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(name)",
+            "System.out.println( name )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-2-short-3",
+    "type": "short",
+    "title": "문자열: 문자열 자료형 쓰기",
+    "description": "글자들의 나열을 저장하는 자료형 이름을 빈칸(___)에 쓰세요. 대문자에 주의하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "code": "___ city = \"Seoul\";\nSystem.out.println(city);",
+      "answer": [
+        "String"
+      ]
+    }
+  },
+  {
+    "id": "java-2-2-code-1",
+    "type": "code",
+    "title": "문자열: name 만들고 출력",
+    "description": "String name = \"Coddy\"; 를 만들고 System.out.println() 으로 name 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bString\\s+name\\s*=\\s*\"Coddy\"\\s*;",
+          "message": "String name = \"Coddy\"; 로 변수를 만들어요",
+          "in": "source"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*name\\s*\\)\\s*;",
+          "message": "System.out.println(name); 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String name = \"Coddy\";\n        System.out.println(name);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-2-3-mcq-1",
+    "type": "mcq",
+    "title": "불리언: 저장할 수 있는 값",
+    "description": "boolean 변수에 저장할 수 있는 값은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "choices": [
+        "아무 정수나",
+        "아무 글자나",
+        "true 또는 false",
+        "\"yes\" 또는 \"no\""
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-2-3-mcq-2",
+    "type": "mcq",
+    "title": "불리언: 올바른 코드",
+    "description": "boolean 변수를 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "choices": [
+        "boolean isOpen = \"true\";",
+        "boolean isOpen = True;",
+        "bool isOpen = true;",
+        "boolean isOpen = true;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-2-3-mcq-3",
+    "type": "mcq",
+    "title": "불리언: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nboolean isRaining = false;\nSystem.out.println(isRaining);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "choices": [
+        "false",
+        "true",
+        "isRaining",
+        "0"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-2-3-parsons-1",
+    "type": "parsons",
+    "title": "불리언 순서 맞추기 1",
+    "description": "isReady 를 false 로 만든 뒤 true 로 바꾸고, 바뀐 값 true 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "fragments": [
+        "System.out.println(isReady);",
+        "isReady = true;",
+        "boolean isReady = false;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-2-3-parsons-2",
+    "type": "parsons",
+    "title": "불리언 순서 맞추기 2",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 true, false 순서입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "fragments": [
+        "System.out.println(isReady);",
+        "boolean isDone = false;",
+        "boolean isReady = true;",
+        "System.out.println(isDone);"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-2-3-parsons-3",
+    "type": "parsons",
+    "title": "불리언 순서 맞추기 3",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. isReady, isDone, isOpen 순서로 만들고 출력합니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "fragments": [
+        "boolean isDone = false;",
+        "System.out.println(isReady);",
+        "System.out.println(isDone);",
+        "System.out.println(isOpen);",
+        "boolean isReady = true;",
+        "boolean isOpen = true;"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        2,
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-2-3-blank-1",
+    "type": "blank",
+    "title": "불리언: 불리언 변수 만들기 빈칸",
+    "description": "isReady 에 true 를 저장하는 boolean 변수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "template": "{{1}};\nSystem.out.println(isReady);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "boolean isReady = true",
+            "boolean isReady=true"
+          ],
+          "hint": "자료형 boolean, 이름 isReady, 값 true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-3-blank-2",
+    "type": "blank",
+    "title": "불리언: 변수 출력 빈칸",
+    "description": "isReady 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "template": "boolean isReady = true;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(isReady)",
+            "System.out.println( isReady )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-3-short-3",
+    "type": "short",
+    "title": "불리언: 불리언 자료형 쓰기",
+    "description": "참/거짓 값을 저장하는 자료형 이름을 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "code": "___ isOn = false;\nSystem.out.println(isOn);",
+      "answer": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "id": "java-2-3-code-1",
+    "type": "code",
+    "title": "불리언: isReady 만들고 출력",
+    "description": "boolean isReady = true; 를 만들고 System.out.println() 으로 isReady 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bboolean\\s+isReady\\s*=\\s*true\\s*;",
+          "message": "boolean isReady = true; 로 변수를 만들어요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*isReady\\s*\\)\\s*;",
+          "message": "System.out.println(isReady); 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        boolean isReady = true;\n        System.out.println(isReady);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-2-4-mcq-1",
+    "type": "mcq",
+    "title": "char: char 의 뜻",
+    "description": "char 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "choices": [
+        "여러 글자를 큰따옴표로 감싸 저장한다",
+        "한 글자를 큰따옴표 \" \" 로 감싸 저장한다",
+        "한 글자를 작은따옴표 ' ' 로 감싸 저장한다",
+        "true 나 false 만 저장한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-2-4-mcq-2",
+    "type": "mcq",
+    "title": "char: 올바른 코드",
+    "description": "글자 A 를 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "choices": [
+        "char grade = \"A\";",
+        "char grade = 'A';",
+        "char grade = 'AB';",
+        "char grade = A;"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-2-4-mcq-3",
+    "type": "mcq",
+    "title": "char: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nchar first = 'J';\nchar second = 'v';\nSystem.out.println(first);\nSystem.out.println(second);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "choices": [
+        "J\nv",
+        "Jv",
+        "'J'\n'v'",
+        "first\nsecond"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-2-4-parsons-1",
+    "type": "parsons",
+    "title": "char 순서 맞추기 1",
+    "description": "grade 를 'B' 로 만든 뒤 'A' 로 바꾸고, 바뀐 값 A 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "fragments": [
+        "char grade = 'B';",
+        "System.out.println(grade);",
+        "grade = 'A';"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-2-4-parsons-2",
+    "type": "parsons",
+    "title": "char 순서 맞추기 2",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 A, K 순서입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "fragments": [
+        "char initial = 'K';",
+        "System.out.println(initial);",
+        "char grade = 'A';",
+        "System.out.println(grade);"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-2-4-parsons-3",
+    "type": "parsons",
+    "title": "char 순서 맞추기 3",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 C, a, t 순서입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "fragments": [
+        "System.out.println(third);",
+        "char second = 'a';",
+        "char third = 't';",
+        "System.out.println(first);",
+        "char first = 'C';",
+        "System.out.println(second);"
+      ],
+      "answer_order": [
+        4,
+        3,
+        1,
+        5,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-2-4-blank-1",
+    "type": "blank",
+    "title": "char: 글자 변수 만들기 빈칸",
+    "description": "grade 에 글자 A 를 저장하는 char 변수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "template": "{{1}};\nSystem.out.println(grade);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "char grade = 'A'",
+            "char grade='A'"
+          ],
+          "hint": "자료형 char, 이름 grade, 값 'A'"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-4-blank-2",
+    "type": "blank",
+    "title": "char: 변수 출력 빈칸",
+    "description": "grade 에 저장된 글자를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "template": "char grade = 'A';\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(grade)",
+            "System.out.println( grade )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-4-short-3",
+    "type": "short",
+    "title": "char: 한 글자 자료형 쓰기",
+    "description": "한 글자를 저장하는 자료형 이름을 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "code": "___ letter = 'Z';\nSystem.out.println(letter);",
+      "answer": [
+        "char"
+      ]
+    }
+  },
+  {
+    "id": "java-2-4-code-1",
+    "type": "code",
+    "title": "char: grade 만들고 출력",
+    "description": "char grade = 'A'; 를 만들고 System.out.println() 으로 grade 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bchar\\s+grade\\s*=\\s*'A'\\s*;",
+          "message": "char grade = 'A'; 로 변수를 만들어요",
+          "in": "source"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*grade\\s*\\)\\s*;",
+          "message": "System.out.println(grade); 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        char grade = 'A';\n        System.out.println(grade);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-2-5-mcq-1",
+    "type": "mcq",
+    "title": "타입 선언: 자료형은 꼭 적기",
+    "description": "Java 에서 변수를 만들 때 꼭 해야 하는 일은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "choices": [
+        "자료형 없이 이름과 값만 적는다",
+        "자료형은 값 뒤에 적는다",
+        "변수 이름 앞에 자료형을 적는다",
+        "변수 이름을 따옴표로 감싼다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-2-5-mcq-2",
+    "type": "mcq",
+    "title": "타입 선언: long 의 뜻",
+    "description": "long 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "choices": [
+        "소수를 저장하고, 숫자 뒤에 D 를 붙인다",
+        "아주 큰 정수를 저장하고, 숫자 뒤에 L 을 붙인다",
+        "글자를 저장하고, 작은따옴표로 감싼다",
+        "작은 정수만 저장하고, 숫자 앞에 L 을 붙인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-2-5-mcq-3",
+    "type": "mcq",
+    "title": "타입 선언: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndouble price = 9.99;\nlong big = 10000000000L;\nSystem.out.println(price);\nSystem.out.println(big);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "choices": [
+        "9.99\n10000000000L",
+        "9\n10000000000",
+        "price\nbig",
+        "9.99\n10000000000"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-2-5-parsons-1",
+    "type": "parsons",
+    "title": "타입 선언 순서 맞추기 1",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. price 를 먼저, big 을 나중에 만듭니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "fragments": [
+        "System.out.println(price);",
+        "long big = 10000000000L;",
+        "double price = 9.99;",
+        "System.out.println(big);"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-2-5-parsons-2",
+    "type": "parsons",
+    "title": "타입 선언 순서 맞추기 2",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. price, big, count 순서로 만들고 출력합니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "fragments": [
+        "System.out.println(count);",
+        "System.out.println(big);",
+        "int count = 3;",
+        "long big = 10000000000L;",
+        "System.out.println(price);",
+        "double price = 9.99;"
+      ],
+      "answer_order": [
+        5,
+        4,
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-2-5-parsons-3",
+    "type": "parsons",
+    "title": "타입 선언 순서 맞추기 3",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. price, big, count, grade 순서로 만들고 출력합니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "fragments": [
+        "int count = 3;",
+        "System.out.println(price);",
+        "System.out.println(count);",
+        "long big = 10000000000L;",
+        "System.out.println(big);",
+        "char grade = 'A';",
+        "System.out.println(grade);",
+        "double price = 9.99;"
+      ],
+      "answer_order": [
+        7,
+        1,
+        3,
+        4,
+        0,
+        2,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "id": "java-2-5-blank-1",
+    "type": "blank",
+    "title": "타입 선언: double 선언 빈칸",
+    "description": "소수 9.99 를 저장하는 변수 price 를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "template": "{{1}} = 9.99;\nSystem.out.println(price);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "double price"
+          ],
+          "hint": "소수 자료형과 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-5-blank-2",
+    "type": "blank",
+    "title": "타입 선언: long 선언 빈칸",
+    "description": "아주 큰 정수를 저장하는 변수 big 을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "template": "{{1}} = 10000000000L;\nSystem.out.println(big);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "long big"
+          ],
+          "hint": "큰 정수 자료형과 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-5-blank-3",
+    "type": "blank",
+    "title": "타입 선언: 출력 명령 빈칸",
+    "description": "price 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "template": "double price = 9.99;\n{{1}}price);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-2-5-code-1",
+    "type": "code",
+    "title": "타입 선언: price 와 big 출력",
+    "description": "double price = 9.99; 와 long big = 10000000000L; 를 선언하고 둘 다 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-2-5",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bdouble\\s+price\\s*=\\s*9\\.99\\s*;",
+          "message": "double price = 9.99; 로 선언해요"
+        },
+        {
+          "pattern": "\\blong\\s+big\\s*=\\s*10000000000[lL]\\s*;",
+          "message": "long big = 10000000000L; 로 선언해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*price\\s*\\)",
+          "message": "price 를 출력해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*big\\s*\\)",
+          "message": "big 을 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        double price = 9.99;\n        long big = 10000000000L;\n        System.out.println(price);\n        System.out.println(big);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-3-1-mcq-1",
+    "type": "mcq",
+    "title": "상수: final 의 뜻",
+    "description": "final int MAX = 100; 으로 만든 MAX 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "choices": [
+        "MAX 의 값은 언제든 바꿀 수 있다",
+        "MAX 의 값은 다시 바꿀 수 없다",
+        "MAX 는 출력할 수 없다",
+        "MAX 에는 소수만 저장할 수 있다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-3-1-mcq-2",
+    "type": "mcq",
+    "title": "상수: 올바른 코드",
+    "description": "값이 바뀌지 않는 상수 SPEED 를 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "choices": [
+        "int final SPEED = 60;",
+        "const int SPEED = 60;",
+        "final SPEED = 60;",
+        "final int SPEED = 60;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-3-1-mcq-3",
+    "type": "mcq",
+    "title": "상수: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfinal int MAX = 100;\nint score = 80;\nscore = 90;\nSystem.out.println(MAX);\nSystem.out.println(score);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "choices": [
+        "100\n90",
+        "100\n80",
+        "90\n100",
+        "오류가 난다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-3-1-parsons-1",
+    "type": "parsons",
+    "title": "상수 순서 맞추기 1",
+    "description": "상수 MAX 를 만들고, 그 값을 limit 에 넣은 뒤 limit 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "fragments": [
+        "System.out.println(limit);",
+        "final int MAX = 100;",
+        "int limit = MAX;"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-3-1-parsons-2",
+    "type": "parsons",
+    "title": "상수 순서 맞추기 2",
+    "description": "각 상수를 만든 바로 다음 줄에서 출력하세요. 출력은 100, 3.14 순서입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "fragments": [
+        "System.out.println(PI);",
+        "System.out.println(MAX);",
+        "final double PI = 3.14;",
+        "final int MAX = 100;"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-3-1-parsons-3",
+    "type": "parsons",
+    "title": "상수 순서 맞추기 3",
+    "description": "각 상수를 만든 바로 다음 줄에서 출력하세요. 출력은 100, 3.14, Coddy 순서입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "fragments": [
+        "final int MAX = 100;",
+        "System.out.println(MAX);",
+        "System.out.println(PI);",
+        "final String NAME = \"Coddy\";",
+        "System.out.println(NAME);",
+        "final double PI = 3.14;"
+      ],
+      "answer_order": [
+        0,
+        1,
+        5,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-3-1-blank-1",
+    "type": "blank",
+    "title": "상수: 상수 만들기 빈칸",
+    "description": "값을 바꿀 수 없는 정수 상수 MAX 를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "template": "{{1}} = 100;\nSystem.out.println(MAX);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "final int MAX"
+          ],
+          "hint": "바꿀 수 없게 하는 키워드 + 자료형 + 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-1-blank-2",
+    "type": "blank",
+    "title": "상수: 상수 출력 빈칸",
+    "description": "상수 MAX 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "template": "final int MAX = 100;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(MAX)",
+            "System.out.println( MAX )"
+          ],
+          "hint": "println 괄호 안에 상수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-1-short-3",
+    "type": "short",
+    "title": "상수: 상수 키워드 쓰기",
+    "description": "변수를 값을 바꿀 수 없는 상수로 만드는 키워드를 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "code": "___ int MAX = 100;\nSystem.out.println(MAX);",
+      "answer": [
+        "final"
+      ]
+    }
+  },
+  {
+    "id": "java-3-1-code-1",
+    "type": "code",
+    "title": "상수: MAX 만들고 출력",
+    "description": "final int MAX = 100; 을 만들고 System.out.println() 으로 MAX 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bfinal\\s+int\\s+MAX\\s*=\\s*100\\s*;",
+          "message": "final int MAX = 100; 으로 상수를 만들어요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*MAX\\s*\\)\\s*;",
+          "message": "System.out.println(MAX); 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        final int MAX = 100;\n        System.out.println(MAX);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-3-2-mcq-1",
+    "type": "mcq",
+    "title": "명명 규칙: 이름 짓기 규칙",
+    "description": "Java 이름 짓기 규칙에 맞게 짝지은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "choices": [
+        "변수 UserName, 클래스 userInfo, 상수 maxSize",
+        "변수 user_name, 클래스 USERINFO, 상수 MaxSize",
+        "변수 userName, 클래스 UserInfo, 상수 MAX_SIZE",
+        "변수 USERNAME, 클래스 user_info, 상수 maxSize"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-3-2-mcq-2",
+    "type": "mcq",
+    "title": "명명 규칙: 올바른 코드",
+    "description": "명명 규칙(camelCase)에 맞게 학생 수 변수를 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "choices": [
+        "int StudentCount = 30;",
+        "int student_count = 30;",
+        "int STUDENTCOUNT = 30;",
+        "int studentCount = 30;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-3-2-mcq-3",
+    "type": "mcq",
+    "title": "명명 규칙: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString userName = \"kim\";\nfinal int MAX_AGE = 100;\nSystem.out.println(userName);\nSystem.out.println(MAX_AGE);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "choices": [
+        "kim\n100",
+        "userName\nMAX_AGE",
+        "kim\nMAX_AGE",
+        "\"kim\"\n100"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-3-2-parsons-1",
+    "type": "parsons",
+    "title": "명명 규칙 순서 맞추기 1",
+    "description": "userName 을 만들고, 그 값을 nickName 에 넣은 뒤 nickName 을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "fragments": [
+        "String nickName = userName;",
+        "String userName = \"kim\";",
+        "System.out.println(nickName);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-3-2-parsons-2",
+    "type": "parsons",
+    "title": "명명 규칙 순서 맞추기 2",
+    "description": "각 이름을 만든 바로 다음 줄에서 출력하세요. 출력은 kim, 100 순서입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "fragments": [
+        "String userName = \"kim\";",
+        "System.out.println(MAX_AGE);",
+        "final int MAX_AGE = 100;",
+        "System.out.println(userName);"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-3-2-parsons-3",
+    "type": "parsons",
+    "title": "명명 규칙 순서 맞추기 3",
+    "description": "각 이름을 만든 바로 다음 줄에서 출력하세요. 출력은 kim, 15, 100 순서입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "fragments": [
+        "String userName = \"kim\";",
+        "System.out.println(userName);",
+        "System.out.println(userAge);",
+        "final int MAX_AGE = 100;",
+        "int userAge = 15;",
+        "System.out.println(MAX_AGE);"
+      ],
+      "answer_order": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "java-3-2-blank-1",
+    "type": "blank",
+    "title": "명명 규칙: camelCase 변수 빈칸",
+    "description": "camelCase 규칙에 맞는 문자열 변수 userName 을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "template": "{{1}} = \"kim\";\nSystem.out.println(userName);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "String userName"
+          ],
+          "hint": "문자열 자료형과 camelCase 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-2-blank-2",
+    "type": "blank",
+    "title": "명명 규칙: 변수 출력 빈칸",
+    "description": "userName 에 저장된 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "template": "String userName = \"kim\";\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(userName)",
+            "System.out.println( userName )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-2-short-3",
+    "type": "short",
+    "title": "명명 규칙: camelCase 이름 쓰기",
+    "description": "camelCase 규칙에 맞게, 사용자 나이(user age)를 뜻하는 변수 이름을 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "code": "int ___ = 15;",
+      "answer": [
+        "userAge"
+      ]
+    }
+  },
+  {
+    "id": "java-3-2-code-1",
+    "type": "code",
+    "title": "명명 규칙: userName 저장하고 출력",
+    "description": "camelCase 이름 userName 변수에 \"kim\" 을 저장하고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bString\\s+userName\\s*=\\s*\"kim\"\\s*;",
+          "message": "String userName = \"kim\"; 으로 변수를 만들어요",
+          "in": "source"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*userName\\s*\\)\\s*;",
+          "message": "System.out.println(userName); 로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String userName = \"kim\";\n        System.out.println(userName);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-3-3-mcq-1",
+    "type": "mcq",
+    "title": "변수 초기화 복습: 선언의 각 부분",
+    "description": "int x = 10; 에서 각 부분의 뜻으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "choices": [
+        "int 는 변수 이름, x 는 자료형, 10 은 저장할 값",
+        "int 는 저장할 값, x 는 자료형, 10 은 변수 이름",
+        "int 는 자료형, x 는 변수 이름, 10 은 저장할 값",
+        "int 와 x 는 둘 다 변수 이름이다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-3-3-mcq-2",
+    "type": "mcq",
+    "title": "변수 초기화 복습: 올바른 코드",
+    "description": "변수를 올바르게 만들고 그 값을 출력하는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "choices": [
+        "x = 10;\nSystem.out.println(x);",
+        "int x = 10;\nSystem.out.println(x);",
+        "System.out.println(x);\nint x = 10;",
+        "int x == 10;\nSystem.out.println(x);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-3-3-mcq-3",
+    "type": "mcq",
+    "title": "변수 초기화 복습: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint x = 10;\nint y = 20;\nx = y;\nSystem.out.println(x);\nSystem.out.println(y);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "choices": [
+        "20\n20",
+        "10\n20",
+        "20\n10",
+        "10\n10"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-3-3-parsons-1",
+    "type": "parsons",
+    "title": "변수 초기화 복습 순서 맞추기 1",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. x 를 먼저, y 를 나중에 만듭니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "fragments": [
+        "int x = 10;",
+        "System.out.println(y);",
+        "int y = 20;",
+        "System.out.println(x);"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-3-3-parsons-2",
+    "type": "parsons",
+    "title": "변수 초기화 복습 순서 맞추기 2",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. x, y, name 순서로 만들고 출력합니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "fragments": [
+        "System.out.println(name);",
+        "int y = 20;",
+        "String name = \"Coddy\";",
+        "int x = 10;",
+        "System.out.println(y);",
+        "System.out.println(x);"
+      ],
+      "answer_order": [
+        3,
+        5,
+        1,
+        4,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-3-3-parsons-3",
+    "type": "parsons",
+    "title": "변수 초기화 복습 순서 맞추기 3",
+    "description": "각 변수를 만든 바로 다음 줄에서 출력하세요. x, y, name, ok 순서로 만들고 출력합니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "fragments": [
+        "System.out.println(x);",
+        "int x = 10;",
+        "String name = \"Coddy\";",
+        "int y = 20;",
+        "boolean ok = true;",
+        "System.out.println(y);",
+        "System.out.println(name);",
+        "System.out.println(ok);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        5,
+        2,
+        6,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "id": "java-3-3-blank-1",
+    "type": "blank",
+    "title": "변수 초기화 복습: x 만들기 빈칸",
+    "description": "정수 변수 x 에 10 을 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "template": "{{1}};\nint y = 20;\nSystem.out.println(x);\nSystem.out.println(y);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int x = 10",
+            "int x=10"
+          ],
+          "hint": "자료형 int, 이름 x, 값 10"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-3-blank-2",
+    "type": "blank",
+    "title": "변수 초기화 복습: y 만들기 빈칸",
+    "description": "정수 변수 y 에 20 을 저장하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "template": "int x = 10;\n{{1}};\nSystem.out.println(x);\nSystem.out.println(y);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int y = 20",
+            "int y=20"
+          ],
+          "hint": "자료형 int, 이름 y, 값 20"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-3-blank-3",
+    "type": "blank",
+    "title": "변수 초기화 복습: x 출력 빈칸",
+    "description": "x 의 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "template": "int x = 10;\nint y = 20;\n{{1}};\nSystem.out.println(y);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(x)",
+            "System.out.println( x )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-3-code-1",
+    "type": "code",
+    "title": "변수 초기화 복습: x 와 y 출력",
+    "description": "int x = 10; 과 int y = 20; 을 선언하고 x 와 y 를 각각 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bint\\s+x\\s*=\\s*10\\s*;",
+          "message": "int x = 10; 으로 선언해요"
+        },
+        {
+          "pattern": "\\bint\\s+y\\s*=\\s*20\\s*;",
+          "message": "int y = 20; 으로 선언해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*x\\s*\\)",
+          "message": "x 를 출력해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*y\\s*\\)",
+          "message": "y 를 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int x = 10;\n        int y = 20;\n        System.out.println(x);\n        System.out.println(y);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-3-4-mcq-1",
+    "type": "mcq",
+    "title": "형 변환 1부: 자동 형 변환",
+    "description": "자동 형 변환에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "choices": [
+        "double 값을 int 변수에 넣으면 자동으로 int 로 바뀐다",
+        "int 값은 double 변수에 절대 넣을 수 없다",
+        "int 값을 double 변수에 넣으면 자동으로 double 로 바뀐다",
+        "자동으로 변환되면 값이 0 이 된다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-3-4-mcq-2",
+    "type": "mcq",
+    "title": "형 변환 1부: 올바른 코드",
+    "description": "자동 형 변환이 일어나 오류 없이 실행되는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "choices": [
+        "double a = 7.5;\nint b = a;",
+        "int a = 7;\ndouble b = a;",
+        "int a = 7;\nboolean b = a;",
+        "int a = 7;\nString b = a;"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-3-4-mcq-3",
+    "type": "mcq",
+    "title": "형 변환 1부: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint a = 7;\ndouble b = a;\nSystem.out.println(b);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "choices": [
+        "7",
+        "7.00",
+        "오류가 난다",
+        "7.0"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-3-4-parsons-1",
+    "type": "parsons",
+    "title": "형 변환 1부 순서 맞추기 1",
+    "description": "int 변수 a 를 double 변수 b 에 넣어 자동 변환한 뒤 b 를 출력하세요. 출력은 7.0 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "fragments": [
+        "double b = a;",
+        "int a = 7;",
+        "System.out.println(b);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-3-4-parsons-2",
+    "type": "parsons",
+    "title": "형 변환 1부 순서 맞추기 2",
+    "description": "int → long → double 순서로 값을 옮겨 담은 뒤 rate 를 출력하세요. 출력은 90.0 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "fragments": [
+        "long big = score;",
+        "System.out.println(rate);",
+        "double rate = big;",
+        "int score = 90;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-3-4-parsons-3",
+    "type": "parsons",
+    "title": "형 변환 1부 순서 맞추기 3",
+    "description": "a(int), b(long), c(double) 순서로 만들되 각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 7, 7, 7.0 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "fragments": [
+        "System.out.println(c);",
+        "System.out.println(a);",
+        "long b = a;",
+        "double c = b;",
+        "int a = 7;",
+        "System.out.println(b);"
+      ],
+      "answer_order": [
+        4,
+        1,
+        2,
+        5,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-3-4-blank-1",
+    "type": "blank",
+    "title": "형 변환 1부: 자동 변환 대입 빈칸",
+    "description": "int 변수 a 를 double 변수 b 에 넣어 자동 변환하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "template": "int a = 7;\n{{1}};\nSystem.out.println(b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "double b = a",
+            "double b=a"
+          ],
+          "hint": "자료형 double, 이름 b, 넣을 값 a"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-4-blank-2",
+    "type": "blank",
+    "title": "형 변환 1부: 출력 명령 빈칸",
+    "description": "자동 변환된 b 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "template": "int a = 7;\ndouble b = a;\n{{1}}b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-4-short-3",
+    "type": "short",
+    "title": "형 변환 1부: 받을 자료형 쓰기",
+    "description": "int 값 a 가 자동으로 소수 자료형으로 바뀌어 7.0 이 출력되도록, 빈칸(___)에 들어갈 자료형을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "code": "int a = 7;\n___ b = a;\nSystem.out.println(b);  // 7.0",
+      "answer": [
+        "double",
+        "float"
+      ]
+    }
+  },
+  {
+    "id": "java-3-4-code-1",
+    "type": "code",
+    "title": "형 변환 1부: int 7 을 double 로",
+    "description": "int 변수에 7 을 저장하고, 그 변수를 double 변수에 넣어 자동 변환한 뒤 double 변수를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bint\\s+\\w+\\s*=\\s*7\\s*;",
+          "message": "int 변수에 7 을 저장해요"
+        },
+        {
+          "pattern": "\\bint\\s+(\\w+)\\s*=\\s*7\\s*;[\\s\\S]*\\bdouble\\s+\\w+\\s*=\\s*\\1\\s*;",
+          "message": "int 변수를 double 변수에 그대로 넣어 자동 변환해요"
+        },
+        {
+          "pattern": "\\bdouble\\s+(\\w+)\\s*=\\s*\\w+\\s*;[\\s\\S]*System\\.out\\.println\\s*\\(\\s*\\1\\s*\\)",
+          "message": "double 변수를 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int a = 7;\n        double b = a;\n        System.out.println(b);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-3-5-mcq-1",
+    "type": "mcq",
+    "title": "형 변환 2부: 강제 형 변환",
+    "description": "강제 형 변환에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "choices": [
+        "(int) 를 붙이면 소수 부분이 반올림된다",
+        "(int) 처럼 자료형을 괄호에 적어 직접 바꾸고, 소수 부분은 버려진다",
+        "double 을 int 로 바꿀 때는 아무것도 붙이지 않아도 된다",
+        "(int) 를 붙여도 소수 부분이 그대로 남는다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-3-5-mcq-2",
+    "type": "mcq",
+    "title": "형 변환 2부: 올바른 코드",
+    "description": "double 값 3.7 을 int 로 강제 변환하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "choices": [
+        "double d = 3.7;\nint n = d;",
+        "double d = 3.7;\nint n = int(d);",
+        "double d = 3.7;\nint n = (d) int;",
+        "double d = 3.7;\nint n = (int) d;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-3-5-mcq-3",
+    "type": "mcq",
+    "title": "형 변환 2부: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndouble d = 9.8;\nint n = (int) d;\nSystem.out.println(n);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "choices": [
+        "9",
+        "10",
+        "9.8",
+        "9.0"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-3-5-parsons-1",
+    "type": "parsons",
+    "title": "형 변환 2부 순서 맞추기 1",
+    "description": "double 변수 d 를 (int) 로 강제 변환해 n 에 넣고 n 을 출력하세요. 출력은 9 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "fragments": [
+        "int n = (int) d;",
+        "System.out.println(n);",
+        "double d = 9.8;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-3-5-parsons-2",
+    "type": "parsons",
+    "title": "형 변환 2부 순서 맞추기 2",
+    "description": "price 를 (int) 로 바꿔 whole 에 넣고, whole 을 다시 double 변수 back 에 넣은 뒤 back 을 출력하세요. 출력은 5.0 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "fragments": [
+        "double back = whole;",
+        "System.out.println(back);",
+        "double price = 5.99;",
+        "int whole = (int) price;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-3-5-parsons-3",
+    "type": "parsons",
+    "title": "형 변환 2부 순서 맞추기 3",
+    "description": "d, n, big 순서로 만들되 각 변수를 만든 바로 다음 줄에서 출력하세요. 출력은 9.8, 9, 9 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "fragments": [
+        "long big = (long) d;",
+        "double d = 9.8;",
+        "int n = (int) d;",
+        "System.out.println(d);",
+        "System.out.println(big);",
+        "System.out.println(n);"
+      ],
+      "answer_order": [
+        1,
+        3,
+        2,
+        5,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-3-5-blank-1",
+    "type": "blank",
+    "title": "형 변환 2부: 강제 변환 표시 빈칸",
+    "description": "double 값 d 를 int 로 강제 변환하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "template": "double d = 9.8;\nint n = {{1}} d;\nSystem.out.println(n);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "(int)"
+          ],
+          "hint": "바꿀 자료형을 괄호로 감싸요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-5-blank-2",
+    "type": "blank",
+    "title": "형 변환 2부: 출력 명령 빈칸",
+    "description": "강제 변환한 n 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "template": "double d = 9.8;\nint n = (int) d;\n{{1}}n);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-3-5-short-3",
+    "type": "short",
+    "title": "형 변환 2부: long 강제 변환 쓰기",
+    "description": "double 값 d 를 long 으로 강제 변환하도록 빈칸(___)에 들어갈 것을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "code": "double d = 4.5;\nlong n = ___ d;\nSystem.out.println(n);",
+      "answer": [
+        "(long)"
+      ]
+    }
+  },
+  {
+    "id": "java-3-5-code-1",
+    "type": "code",
+    "title": "형 변환 2부: 9.8 을 (int) 로",
+    "description": "double 변수에 9.8 을 저장하고, (int) 로 강제 변환한 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-3-5",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bdouble\\s+\\w+\\s*=\\s*9\\.8\\s*;",
+          "message": "double 변수에 9.8 을 저장해요"
+        },
+        {
+          "pattern": "\\bdouble\\s+(\\w+)\\s*=\\s*9\\.8\\s*;[\\s\\S]*\\(\\s*int\\s*\\)\\s*\\1\\b",
+          "message": "(int) 를 붙여 double 변수를 int 로 바꿔요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*(\\w+|\\(\\s*int\\s*\\)\\s*\\w+)\\s*\\)",
+          "message": "변환한 결과를 System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        double d = 9.8;\n        int n = (int) d;\n        System.out.println(n);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-1-mcq-1",
+    "type": "mcq",
+    "title": "산술 연산자: 곱셈 기호",
+    "description": "Java 에서 곱셈을 할 때 쓰는 연산자는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "choices": [
+        "x",
+        "×",
+        "*",
+        "^"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-4-1-mcq-2",
+    "type": "mcq",
+    "title": "산술 연산자: 정수 나눗셈",
+    "description": "Java 에서 정수끼리 7 / 2 를 계산하면 결과는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "choices": [
+        "3.5",
+        "4",
+        "1",
+        "3"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-4-1-mcq-3",
+    "type": "mcq",
+    "title": "산술 연산자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint a = 10;\nint b = 4;\nSystem.out.println(a + b);\nSystem.out.println(a - b);\nSystem.out.println(a * b);\nSystem.out.println(a / b);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "choices": [
+        "14\n6\n40\n2",
+        "14\n6\n40\n2.5",
+        "14\n-6\n40\n2",
+        "104\n6\n40\n2"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-4-1-parsons-1",
+    "type": "parsons",
+    "title": "산술 연산자 순서 맞추기 1",
+    "description": "a 를 만들고, a 에서 4 를 뺀 b 를 만든 뒤 a + b 를 출력하세요. 출력은 10 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "fragments": [
+        "System.out.println(a + b);",
+        "int a = 7;",
+        "int b = a - 4;"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-1-parsons-2",
+    "type": "parsons",
+    "title": "산술 연산자 순서 맞추기 2",
+    "description": "price 의 3배를 total 에 넣고, total 에서 500 을 뺀 뒤 출력하세요. 출력은 2500 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "fragments": [
+        "int total = price * 3;",
+        "int price = 1000;",
+        "total = total - 500;",
+        "System.out.println(total);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-4-1-parsons-3",
+    "type": "parsons",
+    "title": "산술 연산자 순서 맞추기 3",
+    "description": "앞에서 만든 변수를 이용해 차례로 계산한 뒤 d 를 출력하세요. 출력은 80 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "fragments": [
+        "int a = 20;",
+        "int d = c - a;",
+        "int c = a * b;",
+        "int b = a / 4;",
+        "System.out.println(d);"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-4-1-blank-1",
+    "type": "blank",
+    "title": "산술 연산자: 출력 명령 빈칸",
+    "description": "a + b 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "template": "int a = 7;\nint b = 3;\n{{1}}a + b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-1-blank-2",
+    "type": "blank",
+    "title": "산술 연산자: 더하기 기호 빈칸",
+    "description": "a 와 b 를 더한 10 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "template": "int a = 7;\nint b = 3;\nSystem.out.println(a {{1}} b);  // 10",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "+"
+          ],
+          "hint": "더하기 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-1-short-3",
+    "type": "short",
+    "title": "산술 연산자: 나누기 기호 쓰기",
+    "description": "a 를 b 로 나눈 몫 3 이 출력되도록 빈칸(___)에 들어갈 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "code": "int a = 7;\nint b = 2;\nSystem.out.println(a ___ b);  // 3",
+      "answer": [
+        "/"
+      ]
+    }
+  },
+  {
+    "id": "java-4-1-code-1",
+    "type": "code",
+    "title": "산술 연산자: 7 + 3 출력",
+    "description": "+ 연산자로 7 과 3 을 더한 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\b\\w+\\s*\\+\\s*\\w+",
+          "message": "+ 연산자로 더해요"
+        },
+        {
+          "pattern": "\\b7\\b",
+          "message": "7 을 사용해요"
+        },
+        {
+          "pattern": "\\b3\\b",
+          "message": "3 을 사용해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(7 + 3);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-2-mcq-1",
+    "type": "mcq",
+    "title": "나머지 연산자: % 의 뜻",
+    "description": "Java 에서 % 연산자는 무엇을 구할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "choices": [
+        "나눗셈의 몫",
+        "백분율(퍼센트)",
+        "나눗셈의 나머지",
+        "두 수의 곱"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-4-2-mcq-2",
+    "type": "mcq",
+    "title": "나머지 연산자: 올바른 코드",
+    "description": "10 을 3 으로 나눈 나머지를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "choices": [
+        "System.out.println(10 / 3);",
+        "System.out.println(10 % 3);",
+        "System.out.println(10 mod 3);",
+        "System.out.println(10 // 3);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-4-2-mcq-3",
+    "type": "mcq",
+    "title": "나머지 연산자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nSystem.out.println(17 % 5);\nSystem.out.println(8 % 2);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "choices": [
+        "2\n0",
+        "3\n4",
+        "2\n4",
+        "3.4\n4"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-4-2-parsons-1",
+    "type": "parsons",
+    "title": "나머지 연산자 순서 맞추기 1",
+    "description": "n 을 5 로 나눈 나머지를 r 에 넣고 r 을 출력하세요. 출력은 2 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "fragments": [
+        "System.out.println(r);",
+        "int r = n % 5;",
+        "int n = 17;"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-2-parsons-2",
+    "type": "parsons",
+    "title": "나머지 연산자 순서 맞추기 2",
+    "description": "total 을 7 로 나눈 나머지를 left 에 넣고, left 를 2배로 바꾼 뒤 출력하세요. 출력은 8 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "fragments": [
+        "left = left * 2;",
+        "int total = 25;",
+        "System.out.println(left);",
+        "int left = total % 7;"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-4-2-parsons-3",
+    "type": "parsons",
+    "title": "나머지 연산자 순서 맞추기 3",
+    "description": "앞에서 만든 변수를 이용해 차례로 계산한 뒤 r 을 출력하세요. 출력은 4 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "fragments": [
+        "int last = n % 10;",
+        "int r = twice % 5;",
+        "int n = 47;",
+        "int twice = last * 2;",
+        "System.out.println(r);"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-4-2-blank-1",
+    "type": "blank",
+    "title": "나머지 연산자: 나머지 기호 빈칸",
+    "description": "n 을 5 로 나눈 나머지 2 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "template": "int n = 17;\nSystem.out.println(n {{1}} 5);  // 2",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "%"
+          ],
+          "hint": "나머지를 구하는 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-2-blank-2",
+    "type": "blank",
+    "title": "나머지 연산자: 출력 명령 빈칸",
+    "description": "n % 5 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "template": "int n = 17;\n{{1}}n % 5);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-2-short-3",
+    "type": "short",
+    "title": "나머지 연산자: 짝수 확인 연산자 쓰기",
+    "description": "n 을 2 로 나눈 나머지를 보면 짝수인지 알 수 있어요. 빈칸(___)에 들어갈 연산자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "code": "int n = 8;\nSystem.out.println(n ___ 2);  // 0",
+      "answer": [
+        "%"
+      ]
+    }
+  },
+  {
+    "id": "java-4-2-code-1",
+    "type": "code",
+    "title": "나머지 연산자: 17 % 5 출력",
+    "description": "% 연산자로 17 을 5 로 나눈 나머지를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\w+\\s*%\\s*5\\b",
+          "message": "% 연산자로 5 로 나눈 나머지를 구해요"
+        },
+        {
+          "pattern": "\\b17\\b",
+          "message": "17 을 사용해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(17 % 5);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-3-mcq-1",
+    "type": "mcq",
+    "title": "증가/감소: ++ 와 -- 의 뜻",
+    "description": "++ 와 -- 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "choices": [
+        "++ 는 값을 2배로, -- 는 반으로 만든다",
+        "++ 는 1 줄이고, -- 는 1 늘린다",
+        "++ 는 변수 값을 1 늘리고, -- 는 1 줄인다",
+        "++ 와 -- 는 둘 다 값을 0 으로 만든다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-4-3-mcq-2",
+    "type": "mcq",
+    "title": "증가/감소: 올바른 코드",
+    "description": "score 를 1 증가시키는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "choices": [
+        "score+;",
+        "score++;",
+        "score + 1;",
+        "score =+ 1;"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-4-3-mcq-3",
+    "type": "mcq",
+    "title": "증가/감소: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint count = 3;\ncount++;\ncount++;\ncount--;\nSystem.out.println(count);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "choices": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-4-3-parsons-1",
+    "type": "parsons",
+    "title": "증가/감소 순서 맞추기 1",
+    "description": "count 를 0 으로 만들고 1 늘린 뒤 출력하세요. 출력은 1 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "fragments": [
+        "System.out.println(count);",
+        "int count = 0;",
+        "count++;"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-3-parsons-2",
+    "type": "parsons",
+    "title": "증가/감소 순서 맞추기 2",
+    "description": "count 를 만들어 1 늘리고 출력한 다음, lives 를 만들어 1 줄이고 출력하세요. 출력은 1, 2 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "fragments": [
+        "int count = 0;",
+        "System.out.println(lives);",
+        "int lives = 3;",
+        "count++;",
+        "lives--;",
+        "System.out.println(count);"
+      ],
+      "answer_order": [
+        0,
+        3,
+        5,
+        2,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-4-3-parsons-3",
+    "type": "parsons",
+    "title": "증가/감소 순서 맞추기 3",
+    "description": "count 를 만들어 1 늘리고 출력한 다음, lives 를 만들어 1 줄이고 출력하고, 마지막에 count + lives 를 출력하세요. 출력은 1, 2, 3 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "fragments": [
+        "count++;",
+        "int lives = 3;",
+        "int count = 0;",
+        "lives--;",
+        "System.out.println(count);",
+        "System.out.println(lives);",
+        "System.out.println(count + lives);"
+      ],
+      "answer_order": [
+        2,
+        0,
+        4,
+        1,
+        3,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "id": "java-4-3-blank-1",
+    "type": "blank",
+    "title": "증가/감소: count 만들기 빈칸",
+    "description": "정수 변수 count 를 0 으로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "template": "{{1}};\ncount++;\nSystem.out.println(count);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int count = 0",
+            "int count=0"
+          ],
+          "hint": "자료형 int, 이름 count, 값 0"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-3-blank-2",
+    "type": "blank",
+    "title": "증가/감소: 1 증가 빈칸",
+    "description": "count 를 1 늘려 1 이 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "template": "int count = 0;\n{{1}};\nSystem.out.println(count);  // 1",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "count++",
+            "++count",
+            "count += 1",
+            "count+=1",
+            "count = count + 1"
+          ],
+          "hint": "변수 이름 뒤에 ++"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-3-blank-3",
+    "type": "blank",
+    "title": "증가/감소: count 출력 빈칸",
+    "description": "늘어난 count 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "template": "int count = 0;\ncount++;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(count)",
+            "System.out.println( count )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-3-code-1",
+    "type": "code",
+    "title": "증가/감소: count++ 후 출력",
+    "description": "int count = 0; 을 만들고 count++ 로 1 늘린 뒤 count 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bint\\s+count\\s*=\\s*0\\s*;",
+          "message": "int count = 0; 으로 만들어요"
+        },
+        {
+          "pattern": "\\bcount\\s*\\+\\+\\s*;",
+          "message": "count++; 로 1 늘려요"
+        },
+        {
+          "pattern": "\\bcount\\s*\\+\\+\\s*;[\\s\\S]*System\\.out\\.println\\s*\\(\\s*count\\s*\\)",
+          "message": "count++ 다음에 count 를 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int count = 0;\n        count++;\n        System.out.println(count);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-4-mcq-1",
+    "type": "mcq",
+    "title": "후위 증가/감소: a++ 와 ++a",
+    "description": "int a = 5; int b = a++; 를 실행한 뒤 a 와 b 의 값은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "choices": [
+        "a 는 6, b 는 6",
+        "a 는 6, b 는 5",
+        "a 는 5, b 는 6",
+        "a 는 5, b 는 5"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-4-4-mcq-2",
+    "type": "mcq",
+    "title": "후위 증가/감소: 올바른 코드",
+    "description": "a 를 먼저 1 늘린 다음, 늘어난 값을 b 에 저장하는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "choices": [
+        "int b = a++;",
+        "int b = a+;",
+        "int b = +a;",
+        "int b = ++a;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-4-4-mcq-3",
+    "type": "mcq",
+    "title": "후위 증가/감소: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint a = 5;\nint b = a++;\nint c = ++a;\nSystem.out.println(b);\nSystem.out.println(c);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "choices": [
+        "5\n7",
+        "6\n7",
+        "5\n6",
+        "6\n6"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-4-4-parsons-1",
+    "type": "parsons",
+    "title": "후위 증가/감소 순서 맞추기 1",
+    "description": "a 를 만들고 a++ 의 값을 b 에 저장한 뒤 b 를 출력하세요. 출력은 5 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "fragments": [
+        "int b = a++;",
+        "System.out.println(b);",
+        "int a = 5;"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-4-4-parsons-2",
+    "type": "parsons",
+    "title": "후위 증가/감소 순서 맞추기 2",
+    "description": "a 를 만들고 a++ 의 값을 b 에 저장한 뒤 a 와 b 를 차례로 출력하세요. 출력은 6, 5 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "fragments": [
+        "System.out.println(b);",
+        "int a = 5;",
+        "System.out.println(a);",
+        "int b = a++;"
+      ],
+      "answer_order": [
+        1,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-4-parsons-3",
+    "type": "parsons",
+    "title": "후위 증가/감소 순서 맞추기 3",
+    "description": "a++ 와 ++b 를 써서 출력이 6, 5, 6 이 되도록 조각을 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "fragments": [
+        "System.out.println(c);",
+        "System.out.println(b);",
+        "System.out.println(a);",
+        "int b = a++;",
+        "int a = 5;",
+        "int c = ++b;"
+      ],
+      "answer_order": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-4-blank-1",
+    "type": "blank",
+    "title": "후위 증가/감소: 후위 증가 빈칸",
+    "description": "b 에는 5 가 들어가고 a 는 6 이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "template": "int a = 5;\nint b = {{1}};\nSystem.out.println(a);  // 6\nSystem.out.println(b);  // 5",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "a++"
+          ],
+          "hint": "값을 먼저 쓰고 나중에 1 늘리는 표기"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-4-blank-2",
+    "type": "blank",
+    "title": "후위 증가/감소: a 출력 빈칸",
+    "description": "늘어난 a 의 값 6 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "template": "int a = 5;\nint b = a++;\n{{1}};  // 6\nSystem.out.println(b);  // 5",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(a)",
+            "System.out.println( a )"
+          ],
+          "hint": "println 괄호 안에 변수 a"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-4-blank-3",
+    "type": "blank",
+    "title": "후위 증가/감소: b 출력 빈칸",
+    "description": "b 에 저장된 값 5 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "template": "int a = 5;\nint b = a++;\nSystem.out.println(a);  // 6\n{{1}};  // 5",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(b)",
+            "System.out.println( b )"
+          ],
+          "hint": "println 괄호 안에 변수 b"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-4-code-1",
+    "type": "code",
+    "title": "후위 증가/감소: a++ 값을 b 에",
+    "description": "int a = 5; 를 만들고 a++ 의 값을 b 에 저장한 뒤 a 와 b 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bint\\s+a\\s*=\\s*5\\s*;",
+          "message": "int a = 5; 로 만들어요"
+        },
+        {
+          "pattern": "\\bint\\s+b\\s*=\\s*a\\s*\\+\\+\\s*;",
+          "message": "int b = a++; 로 저장해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*a\\s*\\)",
+          "message": "a 를 출력해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*b\\s*\\)",
+          "message": "b 를 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int a = 5;\n        int b = a++;\n        System.out.println(a);\n        System.out.println(b);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-5-mcq-1",
+    "type": "mcq",
+    "title": "단축 표기: += 의 뜻",
+    "description": "total += 5; 와 같은 뜻의 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "choices": [
+        "total = 5;",
+        "total + 5;",
+        "total = total + 5;",
+        "total = total * 5;"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-4-5-mcq-2",
+    "type": "mcq",
+    "title": "단축 표기: 올바른 코드",
+    "description": "score 를 2배로 만들어 다시 저장하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "choices": [
+        "score =* 2;",
+        "score ** 2;",
+        "score x= 2;",
+        "score *= 2;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-4-5-mcq-3",
+    "type": "mcq",
+    "title": "단축 표기: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint total = 10;\ntotal += 5;\ntotal *= 2;\ntotal -= 4;\nSystem.out.println(total);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "choices": [
+        "26",
+        "11",
+        "30",
+        "22"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-4-5-parsons-1",
+    "type": "parsons",
+    "title": "단축 표기 순서 맞추기 1",
+    "description": "total 을 10 으로 만들고 5 를 더해 저장한 뒤 출력하세요. 출력은 15 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "fragments": [
+        "int total = 10;",
+        "System.out.println(total);",
+        "total += 5;"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-4-5-parsons-2",
+    "type": "parsons",
+    "title": "단축 표기 순서 맞추기 2",
+    "description": "total 에 5 를 더하고 2 를 곱해 저장한 뒤 출력하세요. 출력은 30 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "fragments": [
+        "System.out.println(total);",
+        "total *= 2;",
+        "int total = 10;",
+        "total += 5;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-5-parsons-3",
+    "type": "parsons",
+    "title": "단축 표기 순서 맞추기 3",
+    "description": "단축 표기로 total 을 차례로 바꾼 뒤 출력하세요. 출력은 6 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "fragments": [
+        "int total = 10;",
+        "System.out.println(total);",
+        "total /= 4;",
+        "total -= 6;",
+        "total += 5;",
+        "total *= 2;"
+      ],
+      "answer_order": [
+        0,
+        4,
+        5,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-4-5-blank-1",
+    "type": "blank",
+    "title": "단축 표기: total 만들기 빈칸",
+    "description": "정수 변수 total 을 10 으로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "template": "{{1}};\ntotal += 5;\nSystem.out.println(total);  // 15",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int total = 10",
+            "int total=10"
+          ],
+          "hint": "자료형 int, 이름 total, 값 10"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-5-blank-2",
+    "type": "blank",
+    "title": "단축 표기: 더해서 저장 빈칸",
+    "description": "total 에 5 를 더해 다시 저장하도록 빈칸에 단축 표기를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "template": "int total = 10;\ntotal {{1}} 5;\nSystem.out.println(total);  // 15",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "+="
+          ],
+          "hint": "더하고 다시 저장하는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-5-blank-3",
+    "type": "blank",
+    "title": "단축 표기: total 출력 빈칸",
+    "description": "바뀐 total 을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "template": "int total = 10;\ntotal += 5;\n{{1}};",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println(total)",
+            "System.out.println( total )"
+          ],
+          "hint": "println 괄호 안에 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-5-code-1",
+    "type": "code",
+    "title": "단축 표기: total += 5 후 출력",
+    "description": "int total = 10; 을 만들고 total += 5; 로 5 를 더한 뒤 total 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-5",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\bint\\s+total\\s*=\\s*10\\s*;",
+          "message": "int total = 10; 으로 만들어요"
+        },
+        {
+          "pattern": "\\btotal\\s*\\+=\\s*5\\s*;",
+          "message": "total += 5; 로 더해요"
+        },
+        {
+          "pattern": "\\btotal\\s*\\+=\\s*5\\s*;[\\s\\S]*System\\.out\\.println\\s*\\(\\s*total\\s*\\)",
+          "message": "더한 다음에 total 을 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int total = 10;\n        total += 5;\n        System.out.println(total);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-6-mcq-1",
+    "type": "mcq",
+    "title": "비교 연산자: 결과의 자료형",
+    "description": "비교 연산 5 > 3 의 결과는 어떤 자료형의 값일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "choices": [
+        "int (정수)",
+        "String (문자열)",
+        "boolean (true 또는 false)",
+        "char (한 글자)"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-4-6-mcq-2",
+    "type": "mcq",
+    "title": "비교 연산자: 올바른 코드",
+    "description": "a 와 b 가 같지 않은지 비교하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "choices": [
+        "System.out.println(a <> b);",
+        "System.out.println(a != b);",
+        "System.out.println(a =! b);",
+        "System.out.println(a not b);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-4-6-mcq-3",
+    "type": "mcq",
+    "title": "비교 연산자: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint a = 10;\nint b = 5;\nSystem.out.println(a > b);\nSystem.out.println(a == b);\nSystem.out.println(a <= 10);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "choices": [
+        "true\nfalse\ntrue",
+        "true\ntrue\ntrue",
+        "false\nfalse\ntrue",
+        "true\nfalse\nfalse"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-4-6-parsons-1",
+    "type": "parsons",
+    "title": "비교 연산자 순서 맞추기 1",
+    "description": "a 가 5 보다 큰지 비교한 결과를 result 에 넣고 출력하세요. 출력은 true 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "fragments": [
+        "System.out.println(result);",
+        "int a = 10;",
+        "boolean result = a > 5;"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-4-6-parsons-2",
+    "type": "parsons",
+    "title": "비교 연산자 순서 맞추기 2",
+    "description": "a 에서 5 를 뺀 b 를 만들고, a 와 b 가 같은지 비교해 출력하세요. 출력은 false 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "fragments": [
+        "int b = a - 5;",
+        "boolean same = a == b;",
+        "System.out.println(same);",
+        "int a = 10;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-4-6-parsons-3",
+    "type": "parsons",
+    "title": "비교 연산자 순서 맞추기 3",
+    "description": "score 를 만든 뒤 pass, perfect 순서로 비교 결과를 만들고, 각각 만든 바로 다음 줄에서 출력하세요. 출력은 true, false 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "fragments": [
+        "boolean pass = score >= 60;",
+        "boolean perfect = score == 100;",
+        "System.out.println(pass);",
+        "System.out.println(perfect);",
+        "int score = 80;"
+      ],
+      "answer_order": [
+        4,
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-4-6-blank-1",
+    "type": "blank",
+    "title": "비교 연산자: 크다 기호 빈칸",
+    "description": "10 이 5 보다 큰지 비교해 true 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "template": "System.out.println(10 {{1}} 5);  // true",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            ">"
+          ],
+          "hint": "왼쪽이 더 큰지 묻는 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-6-blank-2",
+    "type": "blank",
+    "title": "비교 연산자: 출력 명령 빈칸",
+    "description": "a > b 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "template": "int a = 10;\nint b = 5;\n{{1}}a > b);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-6-short-3",
+    "type": "short",
+    "title": "비교 연산자: 같다 기호 쓰기",
+    "description": "두 값이 같은지 비교하는 연산자를 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "code": "int a = 3;\nint b = 3;\nSystem.out.println(a ___ b);  // true",
+      "answer": [
+        "=="
+      ]
+    }
+  },
+  {
+    "id": "java-4-6-code-1",
+    "type": "code",
+    "title": "비교 연산자: 10 > 5 출력",
+    "description": "> 연산자로 10 이 5 보다 큰지 비교한 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-6",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\w+\\s*>\\s*\\w+",
+          "message": "> 연산자로 비교해요"
+        },
+        {
+          "pattern": "\\b10\\b",
+          "message": "10 을 사용해요"
+        },
+        {
+          "pattern": "\\b5\\b",
+          "message": "5 를 사용해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(",
+          "message": "System.out.println() 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(10 > 5);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-4-7-mcq-1",
+    "type": "mcq",
+    "title": "문자열 비교: equals() 를 쓰는 이유",
+    "description": "두 문자열의 내용이 같은지 비교할 때 써야 하는 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "choices": [
+        "==",
+        "=",
+        "equals()",
+        "!="
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-4-7-mcq-2",
+    "type": "mcq",
+    "title": "문자열 비교: 올바른 코드",
+    "description": "문자열 a 와 b 의 내용이 같은지 올바르게 비교하는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "choices": [
+        "System.out.println(a = b);",
+        "System.out.println(a.equals(b));",
+        "System.out.println(equals(a, b));",
+        "System.out.println(a.equal(b));"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-4-7-mcq-3",
+    "type": "mcq",
+    "title": "문자열 비교: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString a = \"Java\";\nString b = \"Java\";\nString c = \"java\";\nSystem.out.println(a.equals(b));\nSystem.out.println(a.equals(c));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "choices": [
+        "true\ntrue",
+        "false\nfalse",
+        "false\ntrue",
+        "true\nfalse"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-4-7-parsons-1",
+    "type": "parsons",
+    "title": "문자열 비교 순서 맞추기 1",
+    "description": "a 가 \"hi\" 와 같은지 equals() 로 비교해 same 에 넣고 출력하세요. 출력은 true 입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "fragments": [
+        "boolean same = a.equals(\"hi\");",
+        "String a = \"hi\";",
+        "System.out.println(same);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-4-7-parsons-2",
+    "type": "parsons",
+    "title": "문자열 비교 순서 맞추기 2",
+    "description": "name 을 copy 에 넣고, copy 와 name 이 같은지 비교해 출력하세요. 출력은 true 입니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "fragments": [
+        "boolean same = copy.equals(name);",
+        "System.out.println(same);",
+        "String name = \"Coddy\";",
+        "String copy = name;"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-4-7-parsons-3",
+    "type": "parsons",
+    "title": "문자열 비교 순서 맞추기 3",
+    "description": "a 를 b 에 넣은 뒤 s1, s2 순서로 비교 결과를 만들고, 각각 만든 바로 다음 줄에서 출력하세요. 출력은 true, false 입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "fragments": [
+        "boolean s1 = b.equals(\"apple\");",
+        "System.out.println(s1);",
+        "boolean s2 = b.equals(\"Apple\");",
+        "String a = \"apple\";",
+        "String b = a;",
+        "System.out.println(s2);"
+      ],
+      "answer_order": [
+        3,
+        4,
+        0,
+        1,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "id": "java-4-7-blank-1",
+    "type": "blank",
+    "title": "문자열 비교: equals 빈칸",
+    "description": "a 와 b 의 내용이 같은지 비교하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "template": "String a = \"Java\";\nString b = \"Java\";\nSystem.out.println(a.{{1}}b));  // true",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "equals("
+          ],
+          "hint": "내용을 비교하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-7-blank-2",
+    "type": "blank",
+    "title": "문자열 비교: 출력 명령 빈칸",
+    "description": "비교 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "template": "String a = \"Java\";\nString b = \"Java\";\n{{1}}a.equals(b));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "출력하고 줄을 바꾸는 명령과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-4-7-short-3",
+    "type": "short",
+    "title": "문자열 비교: 비교 메서드 이름 쓰기",
+    "description": "문자열 내용이 같은지 비교하는 메서드 이름을 빈칸(___)에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "code": "String a = \"hi\";\nString b = \"hi\";\nSystem.out.println(a.___(b));  // true",
+      "answer": [
+        "equals"
+      ]
+    }
+  },
+  {
+    "id": "java-4-7-code-1",
+    "type": "code",
+    "title": "문자열 비교: equals() 결과 출력",
+    "description": "equals() 로 a 와 b 의 내용이 같은지 비교한 결과를 출력하세요. == 는 쓰지 마세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-4-7",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String a = \"Java\";\n        String b = \"Java\";\n        // 여기에 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\b\\w+\\s*\\.\\s*equals\\s*\\(\\s*(\\w+|\"[^\"]*\")\\s*\\)",
+          "message": "equals() 로 비교해요"
+        },
+        {
+          "pattern": "System\\.out\\.println\\s*\\(\\s*(\\w+\\s*\\.\\s*equals\\s*\\([^)]*\\)|\\w+)\\s*\\)",
+          "message": "비교한 결과를 System.out.println() 으로 출력해요"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*==)",
+          "message": "문자열은 == 대신 equals() 로 비교해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String a = \"Java\";\n        String b = \"Java\";\n        System.out.println(a.equals(b));\n    }\n}"
+    }
+  }
+]

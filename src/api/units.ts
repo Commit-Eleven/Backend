@@ -3,8 +3,31 @@ import { submissions } from '../util/db/submissions'
 import { type AuthEnv, requireAuth } from '../util/http/auth'
 import { Errors, ok } from '../util/http/response'
 import { findUnit, unitProgress } from '../util/learning'
+import { questionById } from './problems/questions'
 
 export const units = new Hono<AuthEnv>()
+
+// 단원 문제 전체를 커리큘럼 순서대로 한 번에 (정답 제외). 문제마다 내 풀이 상태(status)도 붙인다
+units.get('/:unitId/problems', requireAuth, async (c) => {
+  const found = findUnit(c.req.param('unitId'))
+  if (!found) throw Errors.notFound('없는 단원')
+
+  const solved = await submissions.solvedMapByUser(c.get('userId'))
+  const progress = unitProgress(found.unit, solved)
+
+  return ok(c, {
+    unitId: found.unit.unitId,
+    title: found.unit.title,
+    courseTitle: found.course.title,
+    total: progress.total,
+    problems: progress.problems.map((p) => ({
+      index: p.index,
+      status: p.status,
+      typeLabel: p.typeLabel,
+      ...questionById.get(p.id),
+    })),
+  })
+})
 
 // 단원 상세. 단원 안 문제별 상태(correct / wrong / todo)와 다음 단원 잠금 여부
 units.get('/:unitId', requireAuth, async (c) => {

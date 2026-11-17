@@ -1,29 +1,43 @@
 import { Hono } from 'hono'
+import { STUDY_LEVEL } from '../../util/config/constants'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
-import { excludeSolved, filterByLanguage } from '../../util/problems'
+import {
+  excludeSolved,
+  filterByLanguage,
+  filterByLevel,
+  isStudyLevel,
+  levelOf,
+  loadProblems,
+  matchesAnswer,
+  type StudyLevel,
+} from '../../util/problems'
 
 type BlankProblem = {
   id: string
   type: 'blank'
   title: string
   reward: number
+  difficulty?: number
+  level?: StudyLevel
+  lessonId?: string
   description?: string
   language?: string
+  caseSensitive?: boolean
   content: {
     template: string
     blanks: { no: number; answer: string[]; hint?: string }[]
   }
 }
 
-export const blankProblems = (await Bun.file('static/problems/blank.json').json()) as BlankProblem[]
+export const blankProblems = await loadProblems<BlankProblem>('blank')
 
 // 조회할 때 빈칸 답안은 빼고 내려준다
-function toQuestion(p: BlankProblem) {
+export function toQuestion(p: BlankProblem) {
   const blanks = p.content.blanks.map(({ answer, ...blank }) => blank)
   return {
     id: p.id,
@@ -31,6 +45,9 @@ function toQuestion(p: BlankProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
+    level: levelOf(p),
+    lessonId: p.lessonId,
     content: { ...p.content, blanks },
   }
 }
@@ -47,9 +64,14 @@ blank.get('', requireAuth, async (c) => {
   }
 
   const language = c.req.query('language')
-  const pool = filterByLanguage(blankProblems, language)
+  const level = c.req.query('level')
+  if (level !== undefined && !isStudyLevel(level)) {
+    return c.json({ message: `level 은 ${STUDY_LEVEL.join(', ')} 중 하나` }, 400)
+  }
+  const pool = filterByLevel(filterByLanguage(blankProblems, language), level)
   if (pool.length === 0) {
-    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    const label = [language, level].filter(Boolean).join(' ')
+    const message = label ? `${label} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
     return c.json({ message }, 404)
   }
 
@@ -103,7 +125,7 @@ blank.post('', requireAuth, async (c) => {
 
   const submitted = submittedByNo(answer, problem.content.blanks)
   const isAnswer = problem.content.blanks.every((blank) =>
-    blank.answer.includes(submitted[blank.no].trim()),
+    matchesAnswer(submitted[blank.no], blank.answer, problem.caseSensitive),
   )
   await submissions.create({
     userId: c.get('userId'),
@@ -113,8 +135,8 @@ blank.post('', requireAuth, async (c) => {
   })
 
   if (isAnswer) {
-    await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     // 프론트는 정답을 answers 로 읽어서 같은 값을 answers 로도 준다
     const answer = problem.content.blanks.map((blank) => ({ ...blank, answers: blank.answer }))

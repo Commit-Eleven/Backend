@@ -1,0 +1,2413 @@
+[
+  {
+    "id": "java-12-1-mcq-1",
+    "type": "mcq",
+    "title": "for 루프로 인덱스 접근하기",
+    "description": "for 루프로 배열 numbers 의 모든 요소에 접근할 때, 인덱스 i 는 어떤 범위로 움직일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "choices": [
+        "1부터 numbers.length 까지",
+        "0부터 numbers.length-1 까지",
+        "0부터 numbers.length 까지",
+        "1부터 numbers.length-1 까지"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-12-1-mcq-2",
+    "type": "mcq",
+    "title": "for 루프 사용하기 올바른 코드",
+    "description": "배열 numbers 의 모든 요소를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "choices": [
+        "for (int i = 0; i <= numbers.length; i++) {\n    System.out.println(numbers[i]);\n}",
+        "for (int i = 1; i < numbers.length; i++) {\n    System.out.println(numbers[i]);\n}",
+        "for (int i = 0; i < numbers.length; i++) {\n    System.out.println(numbers[i]);\n}",
+        "for (int i = 0; i < numbers.length(); i++) {\n    System.out.println(numbers[i]);\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-12-1-mcq-3",
+    "type": "mcq",
+    "title": "for 루프 사용하기 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint[] numbers = {5, 10, 15};\nfor (int i = 0; i < numbers.length; i++) {\n    System.out.print(i + \":\" + numbers[i] + \" \");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "choices": [
+        "1:5 2:10 3:15",
+        "5:0 10:1 15:2",
+        "0:5 1:10",
+        "0:5 1:10 2:15"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-12-1-parsons-1",
+    "type": "parsons",
+    "title": "for 루프 사용하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 numbers 의 모든 요소를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "fragments": [
+        "}",
+        "int[] numbers = {10, 20, 30};",
+        "for (int i = 0; i < numbers.length; i++) {",
+        "    System.out.println(numbers[i]);"
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-12-1-parsons-2",
+    "type": "parsons",
+    "title": "for 루프 사용하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 numbers 의 각 요소를 2배 한 값을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "fragments": [
+        "}",
+        "    int doubled = numbers[i] * 2;",
+        "for (int i = 0; i < numbers.length; i++) {",
+        "    System.out.println(doubled);",
+        "int[] numbers = {10, 20, 30};"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-12-1-parsons-3",
+    "type": "parsons",
+    "title": "for 루프 사용하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 2배 한 값이 30보다 클 때만 출력하고, 마지막에 끝 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "fragments": [
+        "    }",
+        "System.out.println(\"끝\");",
+        "int[] numbers = {10, 20, 30};",
+        "for (int i = 0; i < numbers.length; i++) {",
+        "        System.out.println(doubled);",
+        "}",
+        "    int doubled = numbers[i] * 2;",
+        "    if (doubled > 30) {"
+      ],
+      "answer_order": [
+        2,
+        3,
+        6,
+        7,
+        4,
+        0,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-12-1-blank-1",
+    "type": "blank",
+    "title": "for 루프 사용하기 반복문 빈칸",
+    "description": "numbers 의 모든 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "template": "int[] numbers = {10, 20, 30};\n{{1}}int i = 0; i < numbers.length; i++) {\n    System.out.println(numbers[i]);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-1-blank-2",
+    "type": "blank",
+    "title": "for 루프 사용하기 배열 길이 빈칸",
+    "description": "인덱스 i 가 배열 끝까지 돌도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "template": "int[] numbers = {10, 20, 30};\nfor (int i = 0; i < {{1}}; i++) {\n    System.out.println(numbers[i]);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "numbers.length"
+          ],
+          "hint": "배열의 길이"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-1-blank-3",
+    "type": "blank",
+    "title": "for 루프 사용하기 요소 접근 빈칸",
+    "description": "i번째 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "template": "int[] numbers = {10, 20, 30};\nfor (int i = 0; i < numbers.length; i++) {\n    System.out.println({{1}});\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "numbers[i]",
+            "numbers[ i ]"
+          ],
+          "hint": "배열 이름[인덱스]"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-1-code-1",
+    "type": "code",
+    "title": "for 루프로 모든 요소 출력하기",
+    "description": "for 문과 인덱스 i 를 사용해 numbers 의 모든 요소를 한 줄에 하나씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int[] numbers = {3, 6, 9};\n        // 여기에 for 문을 작성하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "for\\s*\\(\\s*int\\s+(\\w+)\\s*=\\s*0\\s*;\\s*\\1\\s*(<\\s*numbers\\s*\\.\\s*length|<=\\s*numbers\\s*\\.\\s*length\\s*-\\s*1)\\s*;\\s*(\\1\\s*\\+\\+|\\+\\+\\s*\\1|\\1\\s*\\+=\\s*1|\\1\\s*=\\s*\\1\\s*\\+\\s*1)\\s*\\)",
+          "message": "for (int i = 0; i < numbers.length; i++) 형태로 반복해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*println\\s*\\(\\s*numbers\\s*\\[\\s*\\w+\\s*\\]\\s*\\)",
+          "message": "System.out.println(numbers[i]) 로 요소를 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int[] numbers = {3, 6, 9};\n        for (int i = 0; i < numbers.length; i++) {\n            System.out.println(numbers[i]);\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-12-2-mcq-1",
+    "type": "mcq",
+    "title": "향상된 for 루프의 변수",
+    "description": "for (int n : numbers) 에서 변수 n 에는 무엇이 차례로 들어갈까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "choices": [
+        "numbers 의 길이",
+        "numbers 의 인덱스 0, 1, 2, …",
+        "numbers 배열 전체",
+        "numbers 의 요소 값이 하나씩"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-12-2-mcq-2",
+    "type": "mcq",
+    "title": "향상된 for 루프 올바른 코드",
+    "description": "배열 numbers 의 모든 요소를 출력하는 올바른 향상된 for 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "choices": [
+        "for (int n in numbers) {\n    System.out.println(n);\n}",
+        "for (numbers : int n) {\n    System.out.println(n);\n}",
+        "for (int n : numbers) {\n    System.out.println(n);\n}",
+        "for (int n : numbers) {\n    System.out.println(numbers[n]);\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-12-2-mcq-3",
+    "type": "mcq",
+    "title": "향상된 for 루프 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString[] names = {\"민수\", \"지아\", \"서준\"};\nfor (String name : names) {\n    System.out.print(name + \" \");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "choices": [
+        "민수 지아 서준",
+        "name name name",
+        "0 1 2",
+        "서준 지아 민수"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-12-2-parsons-1",
+    "type": "parsons",
+    "title": "향상된 for 루프 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 향상된 for 로 numbers 의 요소를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "fragments": [
+        "int[] numbers = {1, 2, 3};",
+        "    System.out.println(n);",
+        "for (int n : numbers) {",
+        "}"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-12-2-parsons-2",
+    "type": "parsons",
+    "title": "향상된 for 루프 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 numbers 의 각 요소를 제곱한 값을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "fragments": [
+        "int[] numbers = {1, 2, 3};",
+        "    System.out.println(square);",
+        "for (int n : numbers) {",
+        "    int square = n * n;",
+        "}"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-12-2-parsons-3",
+    "type": "parsons",
+    "title": "향상된 for 루프 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 80점 이상인 점수만 합격으로 출력하고, 마지막에 확인 끝 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "fragments": [
+        "for (int s : scores) {",
+        "System.out.println(\"확인 끝\");",
+        "        System.out.println(s + \"점 합격\");",
+        "    }",
+        "}",
+        "int[] scores = {80, 95, 70};",
+        "    if (s >= 80) {"
+      ],
+      "answer_order": [
+        5,
+        0,
+        6,
+        2,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-12-2-blank-1",
+    "type": "blank",
+    "title": "향상된 for 루프 머리 빈칸",
+    "description": "향상된 for 로 numbers 의 요소를 꺼내도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "template": "int[] numbers = {4, 5, 6};\n{{1}} numbers) {\n    System.out.println(n);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (int n :",
+            "for(int n:",
+            "for (int n:",
+            "for(int n :"
+          ],
+          "hint": "for (자료형 변수 :"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-2-blank-2",
+    "type": "blank",
+    "title": "향상된 for 루프 출력 빈칸",
+    "description": "꺼낸 요소 n 을 한 줄씩 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "template": "int[] numbers = {4, 5, 6};\nfor (int n : numbers) {\n    {{1}}n);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "한 줄 출력 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-2-short-3",
+    "type": "short",
+    "title": "향상된 for 루프 기호 쓰기",
+    "description": "향상된 for 루프에서 변수와 배열 사이(밑줄 자리)에 들어가는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "code": "int[] numbers = {4, 5, 6};\nfor (int n ___ numbers) {\n    System.out.println(n);\n}",
+      "answer": [
+        ":"
+      ]
+    }
+  },
+  {
+    "id": "java-12-2-code-1",
+    "type": "code",
+    "title": "향상된 for 로 모든 요소 출력하기",
+    "description": "향상된 for 루프로 fruits 의 모든 요소를 한 줄에 하나씩 출력하세요. (인덱스는 쓰지 않아요)",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String[] fruits = {\"사과\", \"바나나\", \"포도\"};\n        // 향상된 for 로 모든 요소를 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "for\\s*\\(\\s*(?:final\\s+)?(?:String|var)\\s+\\w+\\s*:\\s*fruits\\s*\\)",
+          "message": "for (String f : fruits) 형태의 향상된 for 를 써요"
+        },
+        {
+          "pattern": "for\\s*\\(\\s*(?:final\\s+)?(?:String|var)\\s+(\\w+)\\s*:\\s*fruits\\s*\\)[\\s\\S]*System\\s*\\.\\s*out\\s*\\.\\s*println\\s*\\(\\s*\\1\\s*\\)",
+          "message": "꺼낸 변수를 System.out.println 으로 출력해요"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*fruits\\s*\\[)",
+          "message": "인덱스 없이 요소를 바로 꺼내 써요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String[] fruits = {\"사과\", \"바나나\", \"포도\"};\n        for (String fruit : fruits) {\n            System.out.println(fruit);\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-12-3-mcq-1",
+    "type": "mcq",
+    "title": "합과 최댓값 구하는 방법",
+    "description": "배열의 합(sum)과 최댓값(max)을 구할 때, 반복문 안에서 하는 일로 알맞은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "choices": [
+        "sum 을 요소로 바꾸고, max 에 요소를 더한다",
+        "sum 과 max 를 매번 0 으로 되돌린다",
+        "sum 에 요소를 더하고, 요소가 max 보다 크면 max 를 그 요소로 바꾼다",
+        "sum 에 배열의 길이를 더하고, max 는 그대로 둔다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-12-3-mcq-2",
+    "type": "mcq",
+    "title": "일반적인 배열 연산 올바른 코드",
+    "description": "numbers 의 모든 요소의 합을 sum 에 올바르게 구하는 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "choices": [
+        "int sum = 0;\nfor (int n : numbers) {\n    sum = n;\n}",
+        "int sum = 0;\nfor (int n : numbers) {\n    sum += n;\n}",
+        "for (int n : numbers) {\n    int sum = 0;\n    sum += n;\n}",
+        "int sum;\nfor (int n : numbers) {\n    sum += n;\n}"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-12-3-mcq-3",
+    "type": "mcq",
+    "title": "일반적인 배열 연산 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint[] numbers = {3, 8, 5};\nint sum = 0;\nint max = numbers[0];\nfor (int n : numbers) {\n    sum += n;\n    if (n > max) {\n        max = n;\n    }\n}\nSystem.out.println(sum + \" \" + max);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "choices": [
+        "8 16",
+        "16 5",
+        "3 8",
+        "16 8"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-12-3-parsons-1",
+    "type": "parsons",
+    "title": "일반적인 배열 연산 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 합을 출력하세요. numbers 배열을 먼저 만들고, 그다음 sum 을 0 으로 두세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "fragments": [
+        "}",
+        "int[] numbers = {2, 4, 6};",
+        "System.out.println(\"합: \" + sum);",
+        "for (int n : numbers) {",
+        "    sum += n;",
+        "int sum = 0;"
+      ],
+      "answer_order": [
+        1,
+        5,
+        3,
+        4,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-12-3-parsons-2",
+    "type": "parsons",
+    "title": "일반적인 배열 연산 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 numbers 의 최댓값을 구해 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "fragments": [
+        "    if (n > max) {",
+        "int max = numbers[0];",
+        "for (int n : numbers) {",
+        "        max = n;",
+        "}",
+        "System.out.println(\"최댓값: \" + max);",
+        "int[] numbers = {2, 9, 4};",
+        "    }"
+      ],
+      "answer_order": [
+        6,
+        1,
+        2,
+        0,
+        3,
+        7,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "java-12-3-parsons-3",
+    "type": "parsons",
+    "title": "일반적인 배열 연산 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 합과 최댓값을 출력하세요. sum → max 순서로 선언하고, 반복문 안에서는 먼저 합을 더한 뒤 최댓값을 확인하고, 합 → 최댓값 순서로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "fragments": [
+        "System.out.println(\"합: \" + sum);",
+        "    }",
+        "int[] numbers = {2, 9, 4};",
+        "int sum = 0;",
+        "}",
+        "        max = n;",
+        "    if (n > max) {",
+        "    sum += n;",
+        "System.out.println(\"최댓값: \" + max);",
+        "int max = numbers[0];",
+        "for (int n : numbers) {"
+      ],
+      "answer_order": [
+        2,
+        3,
+        9,
+        10,
+        7,
+        6,
+        5,
+        1,
+        4,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "id": "java-12-3-blank-1",
+    "type": "blank",
+    "title": "일반적인 배열 연산 합 변수 빈칸",
+    "description": "합을 담을 변수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "template": "int[] numbers = {2, 4, 6};\n{{1}} = 0;\nfor (int n : numbers) {\n    sum += n;\n}\nSystem.out.println(sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int sum"
+          ],
+          "hint": "합을 담을 정수 변수 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-3-blank-2",
+    "type": "blank",
+    "title": "일반적인 배열 연산 최댓값 변수 빈칸",
+    "description": "최댓값을 담을 변수를 첫 번째 요소로 시작하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "template": "int[] numbers = {2, 9, 4};\n{{1}} = numbers[0];\nfor (int n : numbers) {\n    if (n > max) {\n        max = n;\n    }\n}\nSystem.out.println(max);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int max"
+          ],
+          "hint": "최댓값을 담을 정수 변수 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-3-blank-3",
+    "type": "blank",
+    "title": "일반적인 배열 연산 반복문 빈칸",
+    "description": "인덱스로 모든 요소를 더하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "template": "int[] numbers = {2, 4, 6};\nint sum = 0;\n{{1}}int i = 0; i < numbers.length; i++) {\n    sum += numbers[i];\n}\nSystem.out.println(sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-12-3-code-1",
+    "type": "code",
+    "title": "배열의 합과 최댓값 구하기",
+    "description": "반복문으로 numbers 의 합(sum)과 최댓값(max)을 구해 둘 다 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-12-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int[] numbers = {7, 3, 12, 5};\n        // 합(sum)과 최댓값(max)을 구해 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "int\\s+sum\\s*=\\s*0\\s*;",
+          "message": "int sum = 0; 으로 합을 0 에서 시작해요"
+        },
+        {
+          "pattern": "int\\s+max\\s*=\\s*(numbers\\s*\\[\\s*0\\s*\\]|Integer\\s*\\.\\s*MIN_VALUE)\\s*;",
+          "message": "int max = numbers[0]; 으로 최댓값을 첫 요소에서 시작해요"
+        },
+        {
+          "pattern": "for\\s*\\([^)]*\\)[\\s\\S]*\\bsum\\s*(\\+=|=\\s*sum\\s*\\+)\\s*(\\w+|numbers\\s*\\[\\s*\\w+\\s*\\])",
+          "message": "반복문 안에서 sum 에 요소를 더해요"
+        },
+        {
+          "pattern": "if\\s*\\(\\s*(\\w+|numbers\\s*\\[\\s*\\w+\\s*\\])\\s*>\\s*max\\s*\\)|max\\s*=\\s*Math\\s*\\.\\s*max\\s*\\(",
+          "message": "요소가 max 보다 크면 max 를 바꿔요"
+        },
+        {
+          "pattern": "(?=[\\s\\S]*System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\([^;]*\\bsum\\b)(?=[\\s\\S]*System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\([^;]*\\bmax\\b)",
+          "message": "sum 과 max 를 모두 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int[] numbers = {7, 3, 12, 5};\n        int sum = 0;\n        int max = numbers[0];\n        for (int n : numbers) {\n            sum += n;\n            if (n > max) {\n                max = n;\n            }\n        }\n        System.out.println(\"합: \" + sum);\n        System.out.println(\"최댓값: \" + max);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-13-1-mcq-1",
+    "type": "mcq",
+    "title": "length() 와 charAt() 의 뜻",
+    "description": "문자열 메서드 length() 와 charAt(i) 에 대한 설명으로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "choices": [
+        "length() 는 마지막 글자를, charAt(i) 는 글자 수를 돌려준다",
+        "length() 는 글자 수를, charAt(i) 는 i번째 글자를 돌려준다",
+        "length() 는 글자 수를, charAt(i) 는 i 를 문자열로 바꿔 돌려준다",
+        "length() 는 단어 수를, charAt(i) 는 i번째 단어를 돌려준다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-13-1-mcq-2",
+    "type": "mcq",
+    "title": "문자열 메서드 1부 올바른 코드",
+    "description": "문자열 word 의 첫 글자를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "choices": [
+        "System.out.println(word[0]);",
+        "System.out.println(word.charAt(1));",
+        "System.out.println(word.length(0));",
+        "System.out.println(word.charAt(0));"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-13-1-mcq-3",
+    "type": "mcq",
+    "title": "문자열 메서드 1부 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString word = \"Hello\";\nSystem.out.println(word.length() + \" \" + word.charAt(4));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "choices": [
+        "5 o",
+        "4 o",
+        "5 l",
+        "4 l"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-13-1-parsons-1",
+    "type": "parsons",
+    "title": "문자열 메서드 1부 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 word 의 글자 수를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "fragments": [
+        "String word = \"Coding\";",
+        "System.out.println(len);",
+        "int len = word.length();"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-13-1-parsons-2",
+    "type": "parsons",
+    "title": "문자열 메서드 1부 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 word 의 마지막 글자를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "fragments": [
+        "char last = word.charAt(len - 1);",
+        "int len = word.length();",
+        "System.out.println(\"마지막 글자: \" + last);",
+        "String word = \"Coding\";"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-13-1-parsons-3",
+    "type": "parsons",
+    "title": "문자열 메서드 1부 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 word 를 한 글자씩 번호와 함께 출력한 뒤, 마지막에 글자 수를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "fragments": [
+        "System.out.println(\"글자 수: \" + word.length());",
+        "    System.out.println(i + \": \" + c);",
+        "}",
+        "String word = \"Java\";",
+        "for (int i = 0; i < word.length(); i++) {",
+        "    char c = word.charAt(i);"
+      ],
+      "answer_order": [
+        3,
+        4,
+        5,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-13-1-blank-1",
+    "type": "blank",
+    "title": "문자열 메서드 1부 글자 수 빈칸",
+    "description": "word 의 글자 수를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "template": "String word = \"Coding\";\nSystem.out.println(word.{{1}});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "length()"
+          ],
+          "hint": "글자 수를 돌려주는 메서드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-1-blank-2",
+    "type": "blank",
+    "title": "문자열 메서드 1부 글자 꺼내기 빈칸",
+    "description": "word 의 첫 글자(0번째)를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "template": "String word = \"Coding\";\nSystem.out.println(word.{{1}}0));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "charAt("
+          ],
+          "hint": "i번째 글자를 꺼내는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-1-short-3",
+    "type": "short",
+    "title": "charAt 결과 자료형 쓰기",
+    "description": "charAt() 이 돌려주는 한 글자를 담는 자료형 키워드를 밑줄 자리에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "code": "String word = \"Hello\";\n___ c = word.charAt(1);\nSystem.out.println(c);",
+      "answer": [
+        "char"
+      ]
+    }
+  },
+  {
+    "id": "java-13-1-code-1",
+    "type": "code",
+    "title": "글자 수와 첫 글자 출력하기",
+    "description": "name.length() 로 글자 수를, name.charAt(0) 으로 첫 글자를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String name = \"Coddy\";\n        // name 의 글자 수와 첫 글자를 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\([^;]*\\bname\\s*\\.\\s*length\\s*\\(\\s*\\)",
+          "message": "name.length() 를 출력해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\([^;]*\\bname\\s*\\.\\s*charAt\\s*\\(\\s*0\\s*\\)",
+          "message": "name.charAt(0) 을 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String name = \"Coddy\";\n        System.out.println(name.length());\n        System.out.println(name.charAt(0));\n    }\n}"
+    }
+  },
+  {
+    "id": "java-13-2-mcq-1",
+    "type": "mcq",
+    "title": "toUpperCase() 와 substring() 의 뜻",
+    "description": "toUpperCase() 와 substring(시작, 끝) 에 대한 설명으로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "choices": [
+        "toUpperCase() 는 소문자로 바꾸고, substring 은 글자 수를 센다",
+        "toUpperCase() 는 글자 수를 세고, substring 은 문자열을 뒤집는다",
+        "toUpperCase() 는 대문자로 바꾸고, substring(시작, 끝) 은 문자열의 일부를 잘라 낸다",
+        "toUpperCase() 는 첫 글자만 대문자로 바꾸고, substring 은 마지막 글자를 지운다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-13-2-mcq-2",
+    "type": "mcq",
+    "title": "문자열 메서드 2부 올바른 코드",
+    "description": "String s = \"coding\"; 에서 \"cod\" 만 잘라 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "choices": [
+        "System.out.println(s.substring(1, 3));",
+        "System.out.println(s.substring(0, 3));",
+        "System.out.println(s.substring(0, 2));",
+        "System.out.println(s.substring(3));"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-13-2-mcq-3",
+    "type": "mcq",
+    "title": "문자열 메서드 2부 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString s = \"java\";\nString big = s.toUpperCase();\nSystem.out.println(big + \" \" + s.substring(1, 3));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "choices": [
+        "JAVA ava",
+        "Java av",
+        "java AV",
+        "JAVA av"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-13-2-parsons-1",
+    "type": "parsons",
+    "title": "문자열 메서드 2부 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 word 를 대문자로 바꿔 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "fragments": [
+        "String upper = word.toUpperCase();",
+        "String word = \"hello\";",
+        "System.out.println(upper);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-13-2-parsons-2",
+    "type": "parsons",
+    "title": "문자열 메서드 2부 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 word 의 앞 7글자를 잘라 대문자로 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "fragments": [
+        "System.out.println(upper);",
+        "String part = word.substring(0, 7);",
+        "String upper = part.toUpperCase();",
+        "String word = \"programming\";"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-13-2-parsons-3",
+    "type": "parsons",
+    "title": "문자열 메서드 2부 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 첫 글자만 대문자로 바꾼 result 를 출력한 뒤, result 의 앞 3글자를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "fragments": [
+        "System.out.println(result);",
+        "String result = bigFirst + name.substring(1);",
+        "String first = name.substring(0, 1);",
+        "String name = \"coddy\";",
+        "String bigFirst = first.toUpperCase();",
+        "System.out.println(result.substring(0, 3));"
+      ],
+      "answer_order": [
+        3,
+        2,
+        4,
+        1,
+        0,
+        5
+      ]
+    }
+  },
+  {
+    "id": "java-13-2-blank-1",
+    "type": "blank",
+    "title": "문자열 메서드 2부 대문자 빈칸",
+    "description": "word 를 모두 대문자로 바꿔 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "template": "String word = \"java\";\nSystem.out.println(word.{{1}});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "toUpperCase()"
+          ],
+          "hint": "모든 글자를 대문자로 바꾸는 메서드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-2-blank-2",
+    "type": "blank",
+    "title": "문자열 메서드 2부 자르기 빈칸",
+    "description": "word 의 앞 2글자를 잘라 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "template": "String word = \"java\";\nSystem.out.println(word.{{1}}0, 2));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "substring("
+          ],
+          "hint": "문자열 일부를 잘라 내는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-2-short-3",
+    "type": "short",
+    "title": "소문자로 바꾸는 메서드 쓰기",
+    "description": "대문자를 모두 소문자로 바꾸는 메서드 이름(toUpperCase 의 반대)을 밑줄 자리에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "code": "String s = \"HELLO\";\nSystem.out.println(s.___());  // hello 가 출력돼요",
+      "answer": [
+        "toLowerCase"
+      ]
+    }
+  },
+  {
+    "id": "java-13-2-code-1",
+    "type": "code",
+    "title": "대문자 바꾸기와 앞 2글자 자르기",
+    "description": "word.toUpperCase() 의 결과와 word.substring(0, 2) 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String word = \"coding\";\n        // word 를 대문자로 바꾼 값과 앞 2글자를 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\([^;]*\\bword\\s*\\.\\s*toUpperCase\\s*\\(\\s*\\)",
+          "message": "word.toUpperCase() 를 출력해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\([^;]*\\bword\\s*\\.\\s*substring\\s*\\(\\s*0\\s*,\\s*2\\s*\\)",
+          "message": "word.substring(0, 2) 를 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String word = \"coding\";\n        System.out.println(word.toUpperCase());\n        System.out.println(word.substring(0, 2));\n    }\n}"
+    }
+  },
+  {
+    "id": "java-13-3-mcq-1",
+    "type": "mcq",
+    "title": "String.format 의 뜻",
+    "description": "String.format 에 대한 설명으로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "choices": [
+        "문자열을 바로 화면에 출력하고 아무것도 돌려주지 않는다",
+        "문자열을 숫자로 바꿔 준다",
+        "%s 같은 서식 문자는 쓸 수 없다",
+        "printf 와 같은 서식(%s, %d)으로 문자열을 만들어 돌려준다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-13-3-mcq-2",
+    "type": "mcq",
+    "title": "문자열 포맷팅 올바른 코드",
+    "description": "String name = \"민수\"; int age = 15; 일 때 \"민수는 15살\" 문자열을 만드는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "choices": [
+        "String msg = String.format(\"%s는 %d살\", name, age);",
+        "String msg = String.format(\"%d는 %s살\", name, age);",
+        "String msg = String.format(\"%s는 %d살\");",
+        "String msg = format(\"%s는 %d살\", name, age);"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-13-3-mcq-3",
+    "type": "mcq",
+    "title": "문자열 포맷팅 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString name = \"Coddy\";\nint score = 95;\nString msg = String.format(\"%s: %d점\", name, score);\nSystem.out.println(msg);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "choices": [
+        "%s: %d점",
+        "Coddy: 95점",
+        "Coddy 95",
+        "name: score점"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-13-3-parsons-1",
+    "type": "parsons",
+    "title": "문자열 포맷팅 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 String.format 으로 만든 문자열을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "fragments": [
+        "System.out.println(msg);",
+        "String name = \"Coddy\";",
+        "String msg = String.format(\"이름: %s\", name);"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-13-3-parsons-2",
+    "type": "parsons",
+    "title": "문자열 포맷팅 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 보너스를 더한 점수를 String.format 으로 만들어 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "fragments": [
+        "String msg = String.format(\"점수: %d점\", bonus);",
+        "int score = 90;",
+        "System.out.println(msg);",
+        "int bonus = score + 5;"
+      ],
+      "answer_order": [
+        1,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-13-3-parsons-3",
+    "type": "parsons",
+    "title": "문자열 포맷팅 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 모든 이름에 인사한 뒤, 마지막에 총 인원을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "fragments": [
+        "System.out.println(String.format(\"총 %d명\", names.length));",
+        "String[] names = {\"민수\", \"지아\"};",
+        "    System.out.println(msg);",
+        "}",
+        "    String msg = String.format(\"안녕, %s!\", n);",
+        "for (String n : names) {"
+      ],
+      "answer_order": [
+        1,
+        5,
+        4,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-13-3-blank-1",
+    "type": "blank",
+    "title": "문자열 포맷팅 메서드 빈칸",
+    "description": "서식으로 \"이름: Coddy\" 문자열을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "template": "String name = \"Coddy\";\nString msg = {{1}}\"이름: %s\", name);\nSystem.out.println(msg);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "String.format("
+          ],
+          "hint": "서식으로 문자열을 만드는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-3-blank-2",
+    "type": "blank",
+    "title": "문자열 포맷팅 서식 문자 빈칸",
+    "description": "name 이 들어갈 자리에 알맞은 서식 문자를 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "template": "String name = \"Coddy\";\nString msg = String.format(\"이름: {{1}}\", name);\nSystem.out.println(msg);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "%s"
+          ],
+          "hint": "문자열이 들어갈 자리"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-3-short-3",
+    "type": "short",
+    "title": "정수 서식 문자 쓰기",
+    "description": "String.format 에서 정수가 들어갈 자리를 나타내는 서식 문자를 밑줄 자리에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "code": "int age = 15;\nString msg = String.format(\"나이: ___살\", age);\nSystem.out.println(msg);",
+      "answer": [
+        "%d"
+      ]
+    }
+  },
+  {
+    "id": "java-13-3-code-1",
+    "type": "code",
+    "title": "String.format 으로 이름 만들기",
+    "description": "String.format 으로 \"이름: Coddy\" 문자열을 만들어 출력하세요. (name 변수를 %s 자리에 넣어요)",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String name = \"Coddy\";\n        // String.format 으로 \"이름: Coddy\" 를 만들어 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "String\\s*\\.\\s*format\\s*\\(\\s*\"이름: %s\"\\s*,\\s*name\\s*\\)",
+          "message": "String.format(\"이름: %s\", name) 으로 문자열을 만들어요",
+          "in": "source"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\(",
+          "message": "만든 문자열을 System.out.println 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String name = \"Coddy\";\n        String msg = String.format(\"이름: %s\", name);\n        System.out.println(msg);\n    }\n}"
+    }
+  },
+  {
+    "id": "java-13-4-mcq-1",
+    "type": "mcq",
+    "title": "equalsIgnoreCase 의 뜻",
+    "description": "equalsIgnoreCase 에 대한 설명으로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "choices": [
+        "대소문자를 무시하고 두 문자열이 같은지 비교한다",
+        "대소문자까지 똑같아야만 true 를 돌려준다",
+        "두 문자열의 길이만 비교한다",
+        "문자열을 대문자로 바꿔 돌려준다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-13-4-mcq-2",
+    "type": "mcq",
+    "title": "문자열 비교 올바른 코드",
+    "description": "문자열 answer 가 \"yes\" 와 같은지(대소문자 구분) 올바르게 비교하는 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "choices": [
+        "if (answer == \"yes\")",
+        "if (answer = \"yes\")",
+        "if (answer.equals(\"yes\"))",
+        "if (answer.equals = \"yes\")"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-13-4-mcq-3",
+    "type": "mcq",
+    "title": "문자열 비교 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString a = \"Hello\";\nString b = \"hello\";\nSystem.out.println(a.equals(b) + \" \" + a.equalsIgnoreCase(b));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "choices": [
+        "true true",
+        "false false",
+        "true false",
+        "false true"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-13-4-parsons-1",
+    "type": "parsons",
+    "title": "문자열 비교 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 equals 로 비교한 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "fragments": [
+        "boolean same = a.equals(\"apple\");",
+        "System.out.println(same);",
+        "String a = \"apple\";"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-13-4-parsons-2",
+    "type": "parsons",
+    "title": "문자열 비교 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 대소문자와 상관없이 yes 이면 동의했어요 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "fragments": [
+        "}",
+        "    System.out.println(\"동의했어요\");",
+        "String input = \"YES\";",
+        "if (input.equalsIgnoreCase(\"yes\")) {"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-13-4-parsons-3",
+    "type": "parsons",
+    "title": "문자열 비교 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 완전히 같으면 정확히 같아요, 대소문자만 다르면 대소문자만 달라요, 아니면 달라요 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "fragments": [
+        "    System.out.println(\"대소문자만 달라요\");",
+        "String input = \"Hello\";",
+        "if (input.equals(\"hello\")) {",
+        "}",
+        "    System.out.println(\"달라요\");",
+        "    System.out.println(\"정확히 같아요\");",
+        "} else if (input.equalsIgnoreCase(\"hello\")) {",
+        "} else {"
+      ],
+      "answer_order": [
+        1,
+        2,
+        5,
+        6,
+        0,
+        7,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "java-13-4-blank-1",
+    "type": "blank",
+    "title": "문자열 비교 equals 빈칸",
+    "description": "a 가 \"apple\" 과 같은지 비교하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "template": "String a = \"apple\";\nSystem.out.println(a.{{1}}\"apple\"));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "equals("
+          ],
+          "hint": "두 문자열이 같은지 비교하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-4-blank-2",
+    "type": "blank",
+    "title": "문자열 비교 대소문자 무시 빈칸",
+    "description": "대소문자를 무시하고 a 와 \"APPLE\" 을 비교하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "template": "String a = \"Apple\";\nSystem.out.println(a.{{1}}\"APPLE\"));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "equalsIgnoreCase("
+          ],
+          "hint": "대소문자를 무시하고 비교하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-13-4-short-3",
+    "type": "short",
+    "title": "비교 결과 자료형 쓰기",
+    "description": "equals() 가 돌려주는 true/false 값을 담는 자료형 키워드를 밑줄 자리에 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "code": "String a = \"cat\";\nString b = \"Cat\";\n___ same = a.equals(b);\nSystem.out.println(same);",
+      "answer": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "id": "java-13-4-code-1",
+    "type": "code",
+    "title": "equals 와 equalsIgnoreCase 로 비교하기",
+    "description": "a.equals(b) 와 a.equalsIgnoreCase(b) 의 결과를 각각 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-13-4",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        String a = \"Coddy\";\n        String b = \"coddy\";\n        // equals 와 equalsIgnoreCase 로 a 와 b 를 비교한 결과를 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "\\ba\\s*\\.\\s*equals\\s*\\(\\s*b\\s*\\)|\\bb\\s*\\.\\s*equals\\s*\\(\\s*a\\s*\\)",
+          "message": "a.equals(b) 로 비교해요"
+        },
+        {
+          "pattern": "\\ba\\s*\\.\\s*equalsIgnoreCase\\s*\\(\\s*b\\s*\\)|\\bb\\s*\\.\\s*equalsIgnoreCase\\s*\\(\\s*a\\s*\\)",
+          "message": "a.equalsIgnoreCase(b) 로 비교해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\(",
+          "message": "비교 결과를 System.out.println 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        String a = \"Coddy\";\n        String b = \"coddy\";\n        System.out.println(a.equals(b));\n        System.out.println(a.equalsIgnoreCase(b));\n    }\n}"
+    }
+  },
+  {
+    "id": "java-14-1-mcq-1",
+    "type": "mcq",
+    "title": "중첩 반복의 역할",
+    "description": "중첩 for 로 별 패턴을 출력할 때 바깥 반복과 안쪽 반복의 역할로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "choices": [
+        "바깥 반복은 별의 개수, 안쪽 반복은 줄을 정한다",
+        "바깥 반복은 줄, 안쪽 반복은 한 줄의 별 개수를 정한다",
+        "두 반복 모두 줄 수만 정한다",
+        "안쪽 반복은 줄바꿈만 한다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-14-1-mcq-2",
+    "type": "mcq",
+    "title": "숫자 패턴 올바른 코드",
+    "description": "1줄에 *, 2줄에 **, 3줄에 *** 를 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "choices": [
+        "for (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 3; j++) {\n        System.out.print(\"*\");\n    }\n    System.out.println();\n}",
+        "for (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        System.out.println(\"*\");\n    }\n}",
+        "for (int i = 1; i <= 3; i++) {\n    for (int j = 1; j < i; j++) {\n        System.out.print(\"*\");\n    }\n    System.out.println();\n}",
+        "for (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        System.out.print(\"*\");\n    }\n    System.out.println();\n}"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-14-1-mcq-3",
+    "type": "mcq",
+    "title": "숫자 패턴 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        System.out.print(j);\n    }\n    System.out.println();\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "choices": [
+        "1\n22\n333",
+        "1\n12\n123",
+        "123\n123\n123",
+        "111\n22\n3"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-14-1-parsons-1",
+    "type": "parsons",
+    "title": "숫자 패턴 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 한 줄에 별 5개를 출력하고 줄을 바꾸세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "fragments": [
+        "for (int j = 1; j <= 5; j++) {",
+        "System.out.println();",
+        "    System.out.print(\"*\");",
+        "}"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-14-1-parsons-2",
+    "type": "parsons",
+    "title": "숫자 패턴 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 1줄에 *, 2줄에 **, 3줄에 *** 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "fragments": [
+        "}",
+        "for (int i = 1; i <= 3; i++) {",
+        "    System.out.println();",
+        "        System.out.print(\"*\");",
+        "    }",
+        "    for (int j = 1; j <= i; j++) {"
+      ],
+      "answer_order": [
+        1,
+        5,
+        3,
+        4,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "java-14-1-parsons-3",
+    "type": "parsons",
+    "title": "숫자 패턴 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 높이 4의 숫자 삼각형(1, 12, 123, 1234)을 출력한 뒤 끝 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "fragments": [
+        "for (int i = 1; i <= height; i++) {",
+        "    System.out.println();",
+        "        System.out.print(j);",
+        "int height = 4;",
+        "    }",
+        "    for (int j = 1; j <= i; j++) {",
+        "}",
+        "System.out.println(\"끝\");"
+      ],
+      "answer_order": [
+        3,
+        0,
+        5,
+        2,
+        4,
+        1,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "id": "java-14-1-blank-1",
+    "type": "blank",
+    "title": "숫자 패턴 바깥 반복 빈칸",
+    "description": "줄을 3번 반복하는 바깥 반복문이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "template": "{{1}}int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        System.out.print(\"*\");\n    }\n    System.out.println();\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "바깥 반복(줄)을 만드는 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-1-blank-2",
+    "type": "blank",
+    "title": "숫자 패턴 안쪽 반복 빈칸",
+    "description": "한 줄에 별을 i개 찍는 안쪽 반복문이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "template": "for (int i = 1; i <= 3; i++) {\n    {{1}}int j = 1; j <= i; j++) {\n        System.out.print(\"*\");\n    }\n    System.out.println();\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "안쪽 반복(별 개수)을 만드는 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-1-blank-3",
+    "type": "blank",
+    "title": "숫자 패턴 별 출력 빈칸",
+    "description": "별을 줄바꿈 없이 이어서 찍도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "template": "for (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        {{1}}\"*\");\n    }\n    System.out.println();\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.print("
+          ],
+          "hint": "줄을 바꾸지 않고 출력하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-1-code-1",
+    "type": "code",
+    "title": "중첩 for 로 별 피라미드 만들기",
+    "description": "중첩 for 로 높이 3의 별 피라미드(1줄에 *, 2줄에 **, 3줄에 ***)를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-1",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        // 중첩 for 로 높이 3의 별 피라미드를 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "for\\s*\\([^)]*\\)\\s*\\{?[^}]*\\bfor\\s*\\(",
+          "message": "for 안에 for 를 넣은 중첩 반복을 써요"
+        },
+        {
+          "pattern": "for\\s*\\(\\s*int\\s+\\w+\\s*=\\s*[01]\\s*;\\s*\\w+\\s*(<=\\s*3|<\\s*[34])\\s*;|int\\s+(\\w+)\\s*=\\s*3\\s*;[\\s\\S]*for\\s*\\([^;]*;\\s*\\w+\\s*<=\\s*\\2\\s*;",
+          "message": "바깥 반복이 3줄을 돌게 해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print\\s*\\(\\s*\"\\*\"\\s*\\)",
+          "message": "System.out.print(\"*\") 로 별을 줄바꿈 없이 찍어요",
+          "in": "source"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*println\\s*\\(\\s*(\"\"\\s*)?\\)",
+          "message": "한 줄이 끝나면 System.out.println() 으로 줄을 바꿔요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 3; i++) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-14-2-mcq-1",
+    "type": "mcq",
+    "title": "패턴 찾기는 순회와 조건",
+    "description": "배열에서 짝수만 골라 출력하려면 어떻게 해야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "choices": [
+        "배열의 첫 번째 요소만 확인한다",
+        "if 문만 쓰고 반복문은 쓰지 않는다",
+        "배열의 길이가 짝수인지 확인한다",
+        "배열을 순회하면서 if 로 요소가 짝수인지 확인해 출력한다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-14-2-mcq-2",
+    "type": "mcq",
+    "title": "패턴 찾기 올바른 코드",
+    "description": "numbers 에서 짝수만 출력하는 올바른 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "choices": [
+        "for (int n : numbers) {\n    if (n / 2 == 0) {\n        System.out.println(n);\n    }\n}",
+        "for (int n : numbers) {\n    if (n % 2 == 0) {\n        System.out.println(n);\n    }\n}",
+        "for (int n : numbers) {\n    if (n % 2 == 1) {\n        System.out.println(n);\n    }\n}",
+        "for (int n : numbers) {\n    if (n % 2 = 0) {\n        System.out.println(n);\n    }\n}"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-14-2-mcq-3",
+    "type": "mcq",
+    "title": "패턴 찾기 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint[] numbers = {3, 8, 5, 12, 7};\nint count = 0;\nfor (int n : numbers) {\n    if (n > 6) {\n        count++;\n    }\n}\nSystem.out.println(count);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "choices": [
+        "2",
+        "27",
+        "3",
+        "5"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "java-14-2-parsons-1",
+    "type": "parsons",
+    "title": "패턴 찾기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 numbers 에서 짝수만 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "fragments": [
+        "for (int n : numbers) {",
+        "}",
+        "    if (n % 2 == 0) System.out.println(n);",
+        "int[] numbers = {1, 2, 3, 4};"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-14-2-parsons-2",
+    "type": "parsons",
+    "title": "패턴 찾기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 numbers 에서 짝수만 출력하세요. (if 블록을 중괄호로 감싸요)",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "fragments": [
+        "    }",
+        "    if (n % 2 == 0) {",
+        "        System.out.println(n);",
+        "for (int n : numbers) {",
+        "}",
+        "int[] numbers = {1, 2, 3, 4};"
+      ],
+      "answer_order": [
+        5,
+        3,
+        1,
+        2,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "java-14-2-parsons-3",
+    "type": "parsons",
+    "title": "패턴 찾기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 10의 배수를 출력하고 개수를 세세요. numbers 를 먼저 만들고 count 를 0 으로 둔 뒤, 조건에 맞으면 출력하고 나서 count 를 1 늘리세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "fragments": [
+        "int count = 0;",
+        "        count++;",
+        "        System.out.println(n);",
+        "for (int n : numbers) {",
+        "    }",
+        "System.out.println(\"개수: \" + count);",
+        "    if (n % 10 == 0) {",
+        "int[] numbers = {5, 10, 15, 20};",
+        "}"
+      ],
+      "answer_order": [
+        7,
+        0,
+        3,
+        6,
+        2,
+        1,
+        4,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "id": "java-14-2-blank-1",
+    "type": "blank",
+    "title": "패턴 찾기 반복문 빈칸",
+    "description": "numbers 를 순회하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "template": "int[] numbers = {1, 2, 3, 4};\n{{1}}int n : numbers) {\n    if (n % 2 == 0) {\n        System.out.println(n);\n    }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-2-blank-2",
+    "type": "blank",
+    "title": "패턴 찾기 짝수 조건 빈칸",
+    "description": "n 이 짝수인지 확인하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "template": "int[] numbers = {1, 2, 3, 4};\nfor (int n : numbers) {\n    if (n {{1}} == 0) {\n        System.out.println(n);\n    }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "% 2",
+            "%2"
+          ],
+          "hint": "2로 나눈 나머지"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-2-blank-3",
+    "type": "blank",
+    "title": "패턴 찾기 출력 빈칸",
+    "description": "짝수인 n 을 한 줄씩 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "template": "int[] numbers = {1, 2, 3, 4};\nfor (int n : numbers) {\n    if (n % 2 == 0) {\n        {{1}}n);\n    }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "System.out.println("
+          ],
+          "hint": "한 줄 출력 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-2-code-1",
+    "type": "code",
+    "title": "배열에서 짝수만 출력하기",
+    "description": "반복문과 if 를 사용해 numbers 에서 짝수만 한 줄에 하나씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-2",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int[] numbers = {3, 6, 9, 12, 15, 18};\n        // 짝수만 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "for\\s*\\([^)]*numbers",
+          "message": "for 문으로 numbers 를 순회해요"
+        },
+        {
+          "pattern": "if\\s*\\(\\s*(\\w+|numbers\\s*\\[\\s*\\w+\\s*\\])\\s*%\\s*2\\s*==\\s*0\\s*\\)",
+          "message": "if (n % 2 == 0) 으로 짝수인지 확인해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*println\\s*\\(\\s*(\\w+|numbers\\s*\\[\\s*\\w+\\s*\\])\\s*\\)",
+          "message": "짝수인 요소를 System.out.println 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int[] numbers = {3, 6, 9, 12, 15, 18};\n        for (int n : numbers) {\n            if (n % 2 == 0) {\n                System.out.println(n);\n            }\n        }\n    }\n}"
+    }
+  },
+  {
+    "id": "java-14-3-mcq-1",
+    "type": "mcq",
+    "title": "평균 구하는 방법",
+    "description": "scores 배열에 담긴 점수의 평균을 구하는 방법으로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "choices": [
+        "합계를 2 로 나눈다",
+        "합계를 scores.length 로 나눈다",
+        "가장 큰 점수를 scores.length 로 나눈다",
+        "합계에 scores.length 를 곱한다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "java-14-3-mcq-2",
+    "type": "mcq",
+    "title": "정수 나눗셈 피하기",
+    "description": "int sum = 250; 이고 학생이 3명일 때, 평균을 소수점까지 올바르게 구하는 코드를 고르세요.",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "choices": [
+        "double avg = sum / 3;",
+        "int avg = sum / 3;",
+        "double avg = (double) (sum / 3);",
+        "double avg = (double) sum / 3;"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "java-14-3-mcq-3",
+    "type": "mcq",
+    "title": "학생 성적 계산기 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint[] scores = {80, 85, 90, 92};\nint sum = 0;\nfor (int s : scores) {\n    sum += s;\n}\ndouble avg = (double) sum / scores.length;\nSystem.out.println(avg);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "choices": [
+        "86.75",
+        "86",
+        "86.0",
+        "347.0"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "java-14-3-parsons-1",
+    "type": "parsons",
+    "title": "학생 성적 계산기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 점수의 합계를 출력하세요. scores 배열을 먼저 만들고, 그다음 sum 을 0 으로 두세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "fragments": [
+        "int sum = 0;",
+        "int[] scores = {80, 90, 100};",
+        "System.out.println(sum);",
+        "for (int s : scores) sum += s;"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "java-14-3-parsons-2",
+    "type": "parsons",
+    "title": "학생 성적 계산기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 점수의 평균(정수)을 출력하세요. scores 배열을 먼저 만들고, 그다음 sum 을 0 으로 두세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "fragments": [
+        "    sum += s;",
+        "System.out.println(sum / scores.length);",
+        "int[] scores = {80, 90, 100};",
+        "}",
+        "for (int s : scores) {",
+        "int sum = 0;"
+      ],
+      "answer_order": [
+        2,
+        5,
+        4,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "java-14-3-parsons-3",
+    "type": "parsons",
+    "title": "학생 성적 계산기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 평균을 double 로 구해 출력한 다음, 평균이 85 이상이면 우수 반 을 출력하세요. scores 배열을 먼저 만들고, 그다음 sum 을 0 으로 두세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "fragments": [
+        "int[] scores = {80, 85, 90, 92};",
+        "for (int i = 0; i < scores.length; i++) {",
+        "double avg = (double) sum / scores.length;",
+        "}",
+        "System.out.println(\"평균: \" + avg);",
+        "int sum = 0;",
+        "if (avg >= 85) System.out.println(\"우수 반\");",
+        "    sum += scores[i];"
+      ],
+      "answer_order": [
+        0,
+        5,
+        1,
+        7,
+        3,
+        2,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "id": "java-14-3-blank-1",
+    "type": "blank",
+    "title": "학생 성적 계산기 합계 변수 빈칸",
+    "description": "점수의 합계를 담을 변수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "template": "int[] scores = {80, 90, 100};\n{{1}} = 0;\nfor (int s : scores) {\n    sum += s;\n}\nSystem.out.println(sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "int sum"
+          ],
+          "hint": "합계를 담을 정수 변수 선언"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-3-blank-2",
+    "type": "blank",
+    "title": "학생 성적 계산기 반복문 빈칸",
+    "description": "인덱스로 모든 점수를 더하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "template": "int[] scores = {80, 90, 100};\nint sum = 0;\n{{1}}int i = 0; i < scores.length; i++) {\n    sum += scores[i];\n}\nSystem.out.println(sum);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-3-blank-3",
+    "type": "blank",
+    "title": "학생 성적 계산기 학생 수 빈칸",
+    "description": "합계를 학생 수로 나눠 평균을 구하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "template": "int[] scores = {80, 85, 90, 92};\nint sum = 0;\nfor (int s : scores) {\n    sum += s;\n}\ndouble avg = (double) sum / {{1}};\nSystem.out.println(avg);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "scores.length"
+          ],
+          "hint": "학생 수 = 배열의 길이"
+        }
+      ]
+    }
+  },
+  {
+    "id": "java-14-3-code-1",
+    "type": "code",
+    "title": "점수 평균을 double 로 출력하기",
+    "description": "scores 의 합계를 구한 뒤 scores.length 로 나눠 평균을 double 로 계산해 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "java",
+    "lessonId": "java-14-3",
+    "content": {
+      "starter_code": "public class Main {\n    public static void main(String[] args) {\n        int[] scores = {90, 75, 88, 64};\n        // 평균을 double 로 계산해 출력하세요\n    }\n}",
+      "checks": [
+        {
+          "pattern": "for\\s*\\([^)]*scores",
+          "message": "for 문으로 scores 를 순회해요"
+        },
+        {
+          "pattern": "(\\+=|=\\s*\\w+\\s*\\+)\\s*(\\w+|scores\\s*\\[\\s*\\w+\\s*\\])\\s*;",
+          "message": "반복문 안에서 점수를 합계에 더해요"
+        },
+        {
+          "pattern": "/\\s*(\\(\\s*double\\s*\\)\\s*)?scores\\s*\\.\\s*length",
+          "message": "합계를 scores.length 로 나눠요"
+        },
+        {
+          "pattern": "\\(\\s*double\\s*\\)|double\\s+\\w+\\s*=\\s*0(\\.0)?\\s*;|1\\.0\\s*\\*",
+          "message": "(double) 로 바꿔서 정수 나눗셈을 피해요"
+        },
+        {
+          "pattern": "System\\s*\\.\\s*out\\s*\\.\\s*print(?:ln)?\\s*\\(",
+          "message": "평균을 System.out.println 으로 출력해요"
+        }
+      ],
+      "solution": "public class Main {\n    public static void main(String[] args) {\n        int[] scores = {90, 75, 88, 64};\n        int sum = 0;\n        for (int s : scores) {\n            sum += s;\n        }\n        double avg = (double) sum / scores.length;\n        System.out.println(avg);\n    }\n}"
+    }
+  }
+]

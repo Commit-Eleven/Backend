@@ -1,0 +1,3598 @@
+[
+  {
+    "id": "js-12-1-mcq-1",
+    "type": "mcq",
+    "title": "배열 순회하기: 인덱스 범위",
+    "description": "for 문으로 배열 fruits 의 모든 요소에 접근할 때, 인덱스 i 는 어디부터 어디까지 움직이나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "choices": [
+        "0부터 fruits.length - 1 까지",
+        "1부터 fruits.length 까지",
+        "0부터 fruits.length 까지",
+        "1부터 fruits.length - 1 까지"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-1-mcq-2",
+    "type": "mcq",
+    "title": "배열 순회하기: 올바른 코드",
+    "description": "배열 fruits 의 모든 요소를 하나씩 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "choices": [
+        "for (let i = 1; i < fruits.length; i++) {\n  console.log(fruits[i]);\n}",
+        "for (let i = 0; i <= fruits.length; i++) {\n  console.log(fruits[i]);\n}",
+        "for (let i = 0; i < fruits.length; i++) {\n  console.log(fruits[i]);\n}",
+        "for (let i = 0; i < fruits.length; i++) {\n  console.log(fruits);\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-12-1-mcq-3",
+    "type": "mcq",
+    "title": "배열 순회하기: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [10, 20, 30];\nfor (let i = 0; i < nums.length; i++) {\n  console.log(i);\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "choices": [
+        "0\n1\n2",
+        "10\n20\n30",
+        "1\n2\n3",
+        "0\n1\n2\n3"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-1-parsons-1",
+    "type": "parsons",
+    "title": "배열 순회하기 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 fruits 의 요소를 차례로 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "fragments": [
+        "const fruits = [\"apple\", \"banana\", \"cherry\"];",
+        "  console.log(fruits[i]);",
+        "}",
+        "for (let i = 0; i < fruits.length; i++) {"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-1-parsons-2",
+    "type": "parsons",
+    "title": "배열 순회하기 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 fruits 의 요소를 모두 출력한 뒤 마지막에 \"끝\" 을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "fragments": [
+        "  console.log(fruits[i]);",
+        "console.log(\"끝\");",
+        "}",
+        "const fruits = [\"apple\", \"banana\", \"cherry\"];",
+        "for (let i = 0; i < fruits.length; i++) {"
+      ],
+      "answer_order": [
+        3,
+        4,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-12-1-parsons-3",
+    "type": "parsons",
+    "title": "배열 순회하기 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 \"0: apple\" 처럼 인덱스와 요소를 출력하고, 마지막에 \"끝\" 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "fragments": [
+        "}",
+        "const fruits = [\"apple\", \"banana\", \"cherry\"];",
+        "  const fruit = fruits[i];",
+        "console.log(\"끝\");",
+        "for (let i = 0; i < fruits.length; i++) {",
+        "  console.log(i + \": \" + fruit);"
+      ],
+      "answer_order": [
+        1,
+        4,
+        2,
+        5,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-12-1-blank-1",
+    "type": "blank",
+    "title": "배열 순회하기: 반복문 시작",
+    "description": "fruits 의 요소를 차례로 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\n{{1}}let i = 0; i < fruits.length; i++) {\n  console.log(fruits[i]);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-1-blank-2",
+    "type": "blank",
+    "title": "배열 순회하기: 반복 조건",
+    "description": "i 가 배열의 마지막 인덱스까지 움직이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (let i = 0; i < {{1}}; i++) {\n  console.log(fruits[i]);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fruits.length"
+          ],
+          "hint": "배열의 길이"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-1-blank-3",
+    "type": "blank",
+    "title": "배열 순회하기: 요소 꺼내기",
+    "description": "i 번째 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (let i = 0; i < fruits.length; i++) {\n  console.log({{1}});\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fruits[i]"
+          ],
+          "hint": "배열 이름[인덱스]"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-1-code-1",
+    "type": "code",
+    "title": "for 로 fruits 전부 출력하기",
+    "description": "for 문과 인덱스 i 를 사용해 fruits 의 모든 요소를 하나씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-1",
+    "content": {
+      "starter_code": "const fruits = [\"apple\", \"banana\", \"cherry\"];\n// 여기에 for 문을 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s*\\(\\s*(let|var)\\s+\\w+\\s*=\\s*0\\s*;",
+          "message": "for 문에서 i 를 0 부터 시작해요"
+        },
+        {
+          "pattern": "\\w+\\s*(<\\s*fruits\\s*\\.\\s*length|<=\\s*fruits\\s*\\.\\s*length\\s*-\\s*1)",
+          "message": "조건은 i < fruits.length 로 써요"
+        },
+        {
+          "pattern": "(\\w+\\s*\\+\\+|\\+\\+\\s*\\w+|\\w+\\s*\\+=\\s*1)",
+          "message": "i 를 1 씩 늘려요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*fruits\\s*\\[\\s*\\w+\\s*\\]\\s*\\)",
+          "message": "console.log(fruits[i]) 로 요소를 출력해요"
+        }
+      ],
+      "solution": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (let i = 0; i < fruits.length; i++) {\n  console.log(fruits[i]);\n}"
+    }
+  },
+  {
+    "id": "js-12-2-mcq-1",
+    "type": "mcq",
+    "title": "forEach 메서드: 콜백 실행 횟수",
+    "description": "요소가 3개인 배열에 forEach(콜백) 을 쓰면 콜백 함수는 몇 번 실행될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "choices": [
+        "1번",
+        "2번",
+        "3번",
+        "4번"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-12-2-mcq-2",
+    "type": "mcq",
+    "title": "forEach 메서드: 올바른 코드",
+    "description": "배열 fruits 의 요소를 하나씩 출력하는 올바른 forEach 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "choices": [
+        "fruits.forEach((fruit) => {\n  console.log(fruit);\n});",
+        "fruits.forEach(fruit) => {\n  console.log(fruit);\n};",
+        "forEach(fruits, (fruit) => {\n  console.log(fruit);\n});",
+        "fruits.forEach((fruit) => {\n  console.log(fruits);\n});"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-2-mcq-3",
+    "type": "mcq",
+    "title": "forEach 메서드: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [1, 2, 3];\nnums.forEach((n) => {\n  console.log(n * 10);\n});",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "choices": [
+        "1\n2\n3",
+        "30",
+        "[ 10, 20, 30 ]",
+        "10\n20\n30"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-12-2-parsons-1",
+    "type": "parsons",
+    "title": "forEach 메서드 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 forEach 로 fruits 의 요소를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "fragments": [
+        "const fruits = [\"apple\", \"banana\", \"cherry\"];",
+        "  console.log(fruit);",
+        "fruits.forEach((fruit) => {",
+        "});"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-12-2-parsons-2",
+    "type": "parsons",
+    "title": "forEach 메서드 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 forEach 로 nums 의 각 요소를 두 배로 만들어 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "fragments": [
+        "const nums = [1, 2, 3];",
+        "});",
+        "  console.log(double);",
+        "  const double = n * 2;",
+        "nums.forEach((n) => {"
+      ],
+      "answer_order": [
+        0,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-12-2-parsons-3",
+    "type": "parsons",
+    "title": "forEach 메서드 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 nums 의 각 요소를 두 배로 만들어 출력하고, 마지막에 \"끝\" 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "fragments": [
+        "console.log(\"끝\");",
+        "const nums = [1, 2, 3];",
+        "});",
+        "  console.log(double);",
+        "nums.forEach((n) => {",
+        "  const double = n * 2;"
+      ],
+      "answer_order": [
+        1,
+        4,
+        5,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-12-2-blank-1",
+    "type": "blank",
+    "title": "forEach 메서드: 메서드 이름",
+    "description": "fruits 의 요소마다 콜백이 실행되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfruits.{{1}}(fruit) => {\n  console.log(fruit);\n});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "forEach("
+          ],
+          "hint": "요소마다 한 번씩 실행하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-2-blank-2",
+    "type": "blank",
+    "title": "forEach 메서드: 화살표 함수",
+    "description": "콜백을 화살표 함수로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfruits.forEach((fruit) {{1}} {\n  console.log(fruit);\n});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "=>"
+          ],
+          "hint": "화살표 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-2-blank-3",
+    "type": "blank",
+    "title": "forEach 메서드: 요소 출력",
+    "description": "콜백 안에서 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfruits.forEach((fruit) => {\n  {{1}}fruit);\n});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-2-code-1",
+    "type": "code",
+    "title": "forEach 로 모든 요소 출력하기",
+    "description": "forEach 를 사용해 fruits 의 모든 요소를 하나씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-2",
+    "content": {
+      "starter_code": "const fruits = [\"apple\", \"banana\", \"cherry\"];\n// 여기에 forEach 를 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "fruits\\s*\\.\\s*forEach\\s*\\(",
+          "message": "fruits.forEach( 로 시작해요"
+        },
+        {
+          "pattern": "forEach\\s*\\(\\s*(\\(\\s*\\w+\\s*\\)\\s*=>|\\w+\\s*=>|function\\s*\\(\\s*\\w+\\s*\\))",
+          "message": "콜백 함수에 요소를 받을 매개변수를 써요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*(?!fruits\\s*\\))\\w+\\s*\\)",
+          "message": "콜백 안에서 받은 요소를 console.log 로 출력해요"
+        }
+      ],
+      "solution": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfruits.forEach((fruit) => {\n  console.log(fruit);\n});"
+    }
+  },
+  {
+    "id": "js-12-3-mcq-1",
+    "type": "mcq",
+    "title": "for...of 루프: 꺼내는 값",
+    "description": "for (const x of arr) 에서 x 에는 무엇이 차례로 들어가나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "choices": [
+        "배열의 인덱스(0, 1, 2 …)",
+        "배열의 요소 값",
+        "배열의 길이",
+        "배열 전체"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-12-3-mcq-2",
+    "type": "mcq",
+    "title": "for...of 루프: 올바른 코드",
+    "description": "for...of 로 fruits 의 요소를 하나씩 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "choices": [
+        "for (fruit of const fruits) {\n  console.log(fruit);\n}",
+        "for (const fruit of fruits) {\n  console.log(fruits);\n}",
+        "for const fruit of fruits {\n  console.log(fruit);\n}",
+        "for (const fruit of fruits) {\n  console.log(fruit);\n}"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-12-3-mcq-3",
+    "type": "mcq",
+    "title": "for...of 루프: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst colors = [\"red\", \"blue\"];\nfor (const color of colors) {\n  console.log(color + \"!\");\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "choices": [
+        "red!\nblue!",
+        "red\nblue",
+        "0!\n1!",
+        "red,blue!"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-3-parsons-1",
+    "type": "parsons",
+    "title": "for...of 루프 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 for...of 로 fruits 의 요소를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "fragments": [
+        "const fruits = [\"apple\", \"banana\", \"cherry\"];",
+        "  console.log(fruit);",
+        "}",
+        "for (const fruit of fruits) {"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-3-parsons-2",
+    "type": "parsons",
+    "title": "for...of 루프 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 nums 의 각 요소를 제곱해 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "fragments": [
+        "for (const n of nums) {",
+        "  console.log(square);",
+        "}",
+        "  const square = n * n;",
+        "const nums = [1, 2, 3];"
+      ],
+      "answer_order": [
+        4,
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-3-parsons-3",
+    "type": "parsons",
+    "title": "for...of 루프 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 \"Hi, Kim\", \"Hi, Lee\" 를 출력한 뒤 마지막에 \"Bye\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "fragments": [
+        "for (const name of names) {",
+        "console.log(\"Bye\");",
+        "const names = [\"Kim\", \"Lee\"];",
+        "  const greeting = \"Hi, \" + name;",
+        "  console.log(greeting);",
+        "}"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        4,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-12-3-blank-1",
+    "type": "blank",
+    "title": "for...of 루프: 반복 시작",
+    "description": "for...of 로 fruits 를 순회하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\n{{1}} fruit of fruits) {\n  console.log(fruit);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (const",
+            "for(const"
+          ],
+          "hint": "반복문, 여는 괄호, 변수 선언 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-3-blank-2",
+    "type": "blank",
+    "title": "for...of 루프: 순회할 배열",
+    "description": "fruits 의 요소를 하나씩 꺼내도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (const fruit {{1}}) {\n  console.log(fruit);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "of fruits"
+          ],
+          "hint": "of 다음에 배열 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-3-blank-3",
+    "type": "blank",
+    "title": "for...of 루프: 꺼낸 요소 출력",
+    "description": "꺼낸 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (const fruit of fruits) {\n  {{1}}fruit);\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-3-code-1",
+    "type": "code",
+    "title": "for...of 로 fruits 순회하기",
+    "description": "for...of 를 사용해 fruits 를 순회하며 각 요소를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-3",
+    "content": {
+      "starter_code": "const fruits = [\"apple\", \"banana\", \"cherry\"];\n// 여기에 for...of 를 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s*\\(\\s*(const|let|var)\\s+\\w+\\s+of\\s+fruits\\s*\\)",
+          "message": "for (const fruit of fruits) 형태로 써요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*(?!fruits\\s*\\))\\w+\\s*\\)",
+          "message": "꺼낸 요소를 console.log 로 출력해요"
+        }
+      ],
+      "solution": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (const fruit of fruits) {\n  console.log(fruit);\n}"
+    }
+  },
+  {
+    "id": "js-12-4-mcq-1",
+    "type": "mcq",
+    "title": "P 카운터: 카운터를 올리는 때",
+    "description": "배열을 순회하며 조건에 맞는 요소의 개수를 셀 때, 카운터 count 는 언제 1 늘려야 하나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "choices": [
+        "반복문이 시작하기 전에 한 번",
+        "반복이 모두 끝난 뒤에 한 번",
+        "요소가 조건에 맞을 때마다",
+        "요소가 조건에 맞지 않을 때마다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-12-4-mcq-2",
+    "type": "mcq",
+    "title": "P 카운터: 올바른 코드",
+    "description": "nums 에서 10 보다 큰 수의 개수를 count 에 세는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "choices": [
+        "const count = 0;\nfor (let i = 0; i < nums.length; i++) {\n  if (nums[i] > 10) {\n    count++;\n  }\n}",
+        "let count = 0;\nfor (let i = 0; i < nums.length; i++) {\n  if (nums[i] > 10) {\n    count++;\n  }\n}",
+        "let count = 0;\nfor (let i = 0; i < nums.length; i++) {\n  if (nums[i] > 10) {\n    count = 0;\n  }\n}",
+        "let count = 0;\nfor (let i = 0; i < nums.length; i++) {\n  if (nums > 10) {\n    count++;\n  }\n}"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-12-4-mcq-3",
+    "type": "mcq",
+    "title": "P 카운터: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [3, 8, 12, 5, 9];\nlet count = 0;\nfor (let i = 0; i < nums.length; i++) {\n  if (nums[i] > 6) {\n    count++;\n  }\n}\nconsole.log(count);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-12-4-parsons-1",
+    "type": "parsons",
+    "title": "P 카운터 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 글자 수가 5인 과일의 개수를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "fragments": [
+        "console.log(count);",
+        "  if (fruits[i].length === 5) count++;",
+        "for (let i = 0; i < fruits.length; i++) {",
+        "}",
+        "const fruits = [\"apple\", \"kiwi\", \"grape\"];\nlet count = 0;"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-12-4-parsons-2",
+    "type": "parsons",
+    "title": "P 카운터 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 글자 수가 5인 과일의 개수를 세고 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "fragments": [
+        "  }\n}",
+        "const fruits = [\"apple\", \"peach\", \"kiwi\", \"grape\"];\nlet count = 0;",
+        "    count++;",
+        "  if (fruits[i].length === 5) {",
+        "console.log(count);",
+        "for (let i = 0; i < fruits.length; i++) {"
+      ],
+      "answer_order": [
+        1,
+        5,
+        3,
+        2,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-12-4-parsons-3",
+    "type": "parsons",
+    "title": "P 카운터 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 글자 수가 5인 과일의 개수를 \"개수: 3\" 처럼 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "fragments": [
+        "  }\n}",
+        "    count++;",
+        "console.log(\"개수: \" + count);",
+        "  const fruit = fruits[i];",
+        "for (let i = 0; i < fruits.length; i++) {",
+        "const fruits = [\"apple\", \"peach\", \"kiwi\", \"banana\", \"grape\"];\nlet count = 0;",
+        "  if (fruit.length === 5) {"
+      ],
+      "answer_order": [
+        5,
+        4,
+        3,
+        6,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-4-blank-1",
+    "type": "blank",
+    "title": "P 카운터: 카운터 만들기",
+    "description": "개수를 셀 변수 count 를 0 으로 시작하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "template": "const fruits = [\"apple\", \"kiwi\", \"grape\"];\n{{1}};\nfor (let i = 0; i < fruits.length; i++) {\n  if (fruits[i].length === 5) {\n    count++;\n  }\n}\nconsole.log(count);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "let count = 0",
+            "let count=0"
+          ],
+          "hint": "let 으로 만들고 0 을 넣어요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-4-blank-2",
+    "type": "blank",
+    "title": "P 카운터: 반복문 시작",
+    "description": "fruits 를 처음부터 끝까지 순회하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "template": "const fruits = [\"apple\", \"kiwi\", \"grape\"];\nlet count = 0;\n{{1}}let i = 0; i < fruits.length; i++) {\n  if (fruits[i].length === 5) {\n    count++;\n  }\n}\nconsole.log(count);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-4-blank-3",
+    "type": "blank",
+    "title": "P 카운터: 카운터 올리기",
+    "description": "조건에 맞을 때 count 를 1 늘리도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "template": "const fruits = [\"apple\", \"kiwi\", \"grape\"];\nlet count = 0;\nfor (let i = 0; i < fruits.length; i++) {\n  if (fruits[i].length === 5) {\n    {{1}};\n  }\n}\nconsole.log(count);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "count++",
+            "count += 1",
+            "count = count + 1",
+            "++count"
+          ],
+          "hint": "1 늘리는 연산자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-4-code-1",
+    "type": "code",
+    "title": "P 카운터: 글자 수 5인 과일 세기",
+    "description": "fruits 에서 글자 수가 5인 요소의 개수를 count 변수로 세어 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-4",
+    "content": {
+      "starter_code": "const fruits = [\"apple\", \"kiwi\", \"grape\", \"melon\", \"fig\"];\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\blet\\s+count\\s*=\\s*0",
+          "message": "let count = 0 으로 카운터를 만들어요"
+        },
+        {
+          "pattern": "\\bfor\\s*\\(|\\.forEach\\s*\\(",
+          "message": "반복문으로 fruits 를 순회해요"
+        },
+        {
+          "pattern": "\\bif\\s*\\([^)]*\\.length\\s*===?\\s*5",
+          "message": "if 문에서 .length === 5 인지 확인해요"
+        },
+        {
+          "pattern": "count\\s*(\\+\\+|\\+=\\s*1)|\\+\\+\\s*count|count\\s*=\\s*count\\s*\\+\\s*1",
+          "message": "조건에 맞으면 count 를 1 늘려요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*count\\s*\\)",
+          "message": "마지막에 console.log(count) 로 출력해요"
+        }
+      ],
+      "solution": "const fruits = [\"apple\", \"kiwi\", \"grape\", \"melon\", \"fig\"];\nlet count = 0;\nfor (let i = 0; i < fruits.length; i++) {\n  if (fruits[i].length === 5) {\n    count++;\n  }\n}\nconsole.log(count);"
+    }
+  },
+  {
+    "id": "js-12-5-mcq-1",
+    "type": "mcq",
+    "title": "배열 슬라이싱: 잘리는 범위",
+    "description": "arr.slice(1, 3) 은 어떤 인덱스의 요소를 담은 새 배열을 만드나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "choices": [
+        "인덱스 1, 2, 3",
+        "인덱스 0, 1, 2",
+        "인덱스 2, 3",
+        "인덱스 1, 2"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-12-5-mcq-2",
+    "type": "mcq",
+    "title": "배열 슬라이싱: 올바른 코드",
+    "description": "const fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\"]; 에서 [\"banana\", \"cherry\"] 를 얻는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "choices": [
+        "fruits.slice(1, 2)",
+        "fruits.slice(2, 3)",
+        "fruits.slice(1, 3)",
+        "fruits.slice(0, 3)"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-12-5-mcq-3",
+    "type": "mcq",
+    "title": "배열 슬라이싱: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [10, 20, 30, 40, 50];\nconsole.log(nums.slice(2, 4));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "choices": [
+        "[ 30, 40 ]",
+        "[ 30, 40, 50 ]",
+        "[ 20, 30 ]",
+        "[ 20, 30, 40 ]"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-5-parsons-1",
+    "type": "parsons",
+    "title": "배열 슬라이싱 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 이어 붙여 [10, 20, 30, 40] 의 인덱스 1~2 를 잘라 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "fragments": [
+        ");",
+        "[10, 20, 30, 40].slice(1, 3)",
+        "console.log("
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-12-5-parsons-2",
+    "type": "parsons",
+    "title": "배열 슬라이싱 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 이어 붙여 [ 'c', 'd' ] 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "fragments": [
+        "[\"a\", \"b\", \"c\", \"d\", \"e\"]",
+        "console.log(",
+        ");",
+        ".slice(2, 4)"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-5-parsons-3",
+    "type": "parsons",
+    "title": "배열 슬라이싱 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 이어 붙여 [ 'b', 'c', 'd' ] 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "fragments": [
+        ")",
+        "console.log(",
+        ");",
+        ".slice(",
+        "1, 4",
+        "[\"a\", \"b\", \"c\", \"d\", \"e\"]"
+      ],
+      "answer_order": [
+        1,
+        5,
+        3,
+        4,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-5-blank-1",
+    "type": "blank",
+    "title": "배열 슬라이싱: 메서드 이름",
+    "description": "fruits 의 인덱스 1~2 를 잘라 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\"];\nconsole.log(fruits.{{1}}1, 3));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "slice("
+          ],
+          "hint": "잘라 내는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-5-blank-2",
+    "type": "blank",
+    "title": "배열 슬라이싱: 결과 출력",
+    "description": "잘라 낸 새 배열을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\"];\n{{1}}fruits.slice(1, 3));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-5-short-3",
+    "type": "short",
+    "title": "배열 슬라이싱: 메서드 이름 쓰기",
+    "description": "배열의 일부분을 잘라 새 배열로 만드는 메서드 이름을 쓰세요. (___ 자리에 들어갈 말)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "code": "const fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\"];\nconst part = fruits.___(1, 3);\nconsole.log(part);",
+      "answer": [
+        "slice",
+        ".slice"
+      ]
+    }
+  },
+  {
+    "id": "js-12-5-code-1",
+    "type": "code",
+    "title": "slice(1, 3) 으로 일부 복사하기",
+    "description": "slice(1, 3) 으로 fruits 의 일부분을 복사한 새 배열을 만들어 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-5",
+    "content": {
+      "starter_code": "const fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\"];\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "fruits\\s*\\.\\s*slice\\s*\\(",
+          "message": "fruits 에서 slice() 를 불러요"
+        },
+        {
+          "pattern": "\\.slice\\s*\\(\\s*1\\s*,\\s*3\\s*\\)",
+          "message": "slice(1, 3) 으로 잘라요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\"];\nconst part = fruits.slice(1, 3);\nconsole.log(part);"
+    }
+  },
+  {
+    "id": "js-12-6-mcq-1",
+    "type": "mcq",
+    "title": "배열 메서드 Part 3: map 이 돌려주는 것",
+    "description": "nums.map(콜백) 은 무엇을 돌려주나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "choices": [
+        "콜백이 돌려준 값으로 만든 새 배열",
+        "원래 배열 그대로",
+        "배열의 길이(숫자)",
+        "아무것도 돌려주지 않는다(undefined)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-6-mcq-2",
+    "type": "mcq",
+    "title": "배열 메서드 Part 3: 올바른 코드",
+    "description": "nums 의 각 숫자에 10 을 곱한 새 배열 result 를 만드는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "choices": [
+        "const result = nums.map(n * 10);",
+        "const result = map(nums, (n) => n * 10);",
+        "const result = nums.map((n) => { n * 10 });",
+        "const result = nums.map((n) => n * 10);"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-12-6-mcq-3",
+    "type": "mcq",
+    "title": "배열 메서드 Part 3: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [1, 2, 3];\nconst result = nums.map((n) => n + 1);\nconsole.log(result);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "choices": [
+        "[ 1, 2, 3 ]",
+        "[ 2, 3, 4 ]",
+        "[ 2, 4, 6 ]",
+        "9"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-12-6-parsons-1",
+    "type": "parsons",
+    "title": "map 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 nums 를 두 배로 만든 새 배열을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "fragments": [
+        "console.log(doubled);",
+        "const doubled = nums.map((n) => n * 2);",
+        "const nums = [1, 2, 3];"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-12-6-parsons-2",
+    "type": "parsons",
+    "title": "map 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 return 을 쓰는 콜백으로 nums 를 두 배로 만들어 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "fragments": [
+        "const doubled = nums.map((n) => {",
+        "console.log(doubled);",
+        "});",
+        "const nums = [1, 2, 3];",
+        "  return n * 2;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        4,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-12-6-parsons-3",
+    "type": "parsons",
+    "title": "map 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 각 가격에 10% 를 더한 새 배열 [ 110, 220, 330 ] 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "fragments": [
+        "const withTax = prices.map((p) => {",
+        "});",
+        "  const tax = p / 10;",
+        "const prices = [100, 200, 300];",
+        "console.log(withTax);",
+        "  return p + tax;"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        5,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-12-6-blank-1",
+    "type": "blank",
+    "title": "배열 메서드 Part 3: map 쓰기",
+    "description": "nums 의 각 요소를 두 배로 바꾼 새 배열을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "template": "const nums = [1, 2, 3];\nconst doubled = nums.{{1}}(n) => n * 2);\nconsole.log(doubled);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "map("
+          ],
+          "hint": "각 요소를 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-6-blank-2",
+    "type": "blank",
+    "title": "배열 메서드 Part 3: 화살표",
+    "description": "콜백을 화살표 함수로 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "template": "const nums = [1, 2, 3];\nconst doubled = nums.map((n) {{1}} n * 2);\nconsole.log(doubled);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "=>"
+          ],
+          "hint": "화살표 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-6-blank-3",
+    "type": "blank",
+    "title": "배열 메서드 Part 3: 새 배열 출력",
+    "description": "map 으로 만든 새 배열을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "template": "const nums = [1, 2, 3];\nconst doubled = nums.map((n) => n * 2);\n{{1}}doubled);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-6-code-1",
+    "type": "code",
+    "title": "map() 으로 두 배 만들기",
+    "description": "map() 으로 nums 의 모든 숫자를 두 배로 만든 새 배열을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-6",
+    "content": {
+      "starter_code": "const nums = [1, 2, 3, 4];\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "nums\\s*\\.\\s*map\\s*\\(",
+          "message": "nums.map( 을 써요"
+        },
+        {
+          "pattern": "\\*\\s*2\\b|\\b2\\s*\\*",
+          "message": "각 숫자에 2 를 곱해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const nums = [1, 2, 3, 4];\nconst doubled = nums.map((n) => n * 2);\nconsole.log(doubled);"
+    }
+  },
+  {
+    "id": "js-12-7-mcq-1",
+    "type": "mcq",
+    "title": "배열 메서드 Part 4: filter 의 결과",
+    "description": "nums.filter(콜백) 이 돌려주는 새 배열에는 어떤 요소가 담기나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "choices": [
+        "콜백이 false 를 돌려준 요소만",
+        "모든 요소",
+        "콜백이 true 를 돌려준 요소만",
+        "첫 번째 요소 하나만"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-12-7-mcq-2",
+    "type": "mcq",
+    "title": "배열 메서드 Part 4: 올바른 코드",
+    "description": "nums 에서 3 보다 큰 수만 모은 새 배열 big 을 만드는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "choices": [
+        "const big = nums.filter(n > 3);",
+        "const big = nums.filter((n) => n > 3);",
+        "const big = nums.filter((n) => { n > 3 });",
+        "const big = nums.map((n) => n > 3);"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-12-7-mcq-3",
+    "type": "mcq",
+    "title": "배열 메서드 Part 4: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [5, 12, 8, 20];\nconst big = nums.filter((n) => n >= 10);\nconsole.log(big);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "choices": [
+        "[ 5, 8 ]",
+        "[ false, true, false, true ]",
+        "2",
+        "[ 12, 20 ]"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-12-7-parsons-1",
+    "type": "parsons",
+    "title": "filter 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 nums 에서 짝수만 모은 새 배열을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "fragments": [
+        "const evens = nums.filter((n) => n % 2 === 0);",
+        "const nums = [1, 2, 3, 4, 5, 6];",
+        "console.log(evens);"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-7-parsons-2",
+    "type": "parsons",
+    "title": "filter 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 return 을 쓰는 콜백으로 짝수만 골라 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "fragments": [
+        "const evens = nums.filter((n) => {",
+        "  return n % 2 === 0;",
+        "});",
+        "console.log(evens);",
+        "const nums = [1, 2, 3, 4, 5, 6];"
+      ],
+      "answer_order": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-12-7-parsons-3",
+    "type": "parsons",
+    "title": "filter 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 60 점 이상인 점수만 모은 [ 80, 92 ] 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "fragments": [
+        "  const ok = s >= 60;",
+        "const passed = scores.filter((s) => {",
+        "console.log(passed);",
+        "const scores = [55, 80, 92, 40];",
+        "  return ok;",
+        "});"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        4,
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-12-7-blank-1",
+    "type": "blank",
+    "title": "배열 메서드 Part 4: filter 쓰기",
+    "description": "nums 에서 짝수만 골라 새 배열을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "template": "const nums = [1, 2, 3, 4, 5, 6];\nconst evens = nums.{{1}}(n) => n % 2 === 0);\nconsole.log(evens);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "filter("
+          ],
+          "hint": "골라 내는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-7-blank-2",
+    "type": "blank",
+    "title": "배열 메서드 Part 4: 짝수 조건",
+    "description": "2 로 나눈 나머지가 0 인 수(짝수)만 고르도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "template": "const nums = [1, 2, 3, 4, 5, 6];\nconst evens = nums.filter((n) => n {{1}} === 0);\nconsole.log(evens);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "% 2",
+            "%2"
+          ],
+          "hint": "나머지 연산자와 2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-7-blank-3",
+    "type": "blank",
+    "title": "배열 메서드 Part 4: 결과 출력",
+    "description": "filter 로 만든 새 배열을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "template": "const nums = [1, 2, 3, 4, 5, 6];\nconst evens = nums.filter((n) => n % 2 === 0);\n{{1}}evens);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-7-code-1",
+    "type": "code",
+    "title": "filter() 로 짝수만 고르기",
+    "description": "filter() 로 nums 에서 짝수만 골라 새 배열을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-7",
+    "content": {
+      "starter_code": "const nums = [1, 2, 3, 4, 5, 6, 7, 8];\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "nums\\s*\\.\\s*filter\\s*\\(",
+          "message": "nums.filter( 를 써요"
+        },
+        {
+          "pattern": "%\\s*2\\s*(===?\\s*0|!==?\\s*1)",
+          "message": "n % 2 === 0 으로 짝수인지 확인해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const nums = [1, 2, 3, 4, 5, 6, 7, 8];\nconst evens = nums.filter((n) => n % 2 === 0);\nconsole.log(evens);"
+    }
+  },
+  {
+    "id": "js-12-8-mcq-1",
+    "type": "mcq",
+    "title": "포함 여부 확인: includes 의 결과",
+    "description": "arr.includes(값) 은 무엇을 돌려주나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "choices": [
+        "값이 있으면 true, 없으면 false",
+        "값이 있는 위치(인덱스)",
+        "값을 뺀 새 배열",
+        "값이 들어 있는 개수"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-12-8-mcq-2",
+    "type": "mcq",
+    "title": "포함 여부 확인: 올바른 코드",
+    "description": "배열 fruits 에 \"kiwi\" 가 들어 있는지 확인하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "choices": [
+        "fruits.include(\"kiwi\")",
+        "fruits.includes == \"kiwi\"",
+        "includes(fruits, \"kiwi\")",
+        "fruits.includes(\"kiwi\")"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-12-8-mcq-3",
+    "type": "mcq",
+    "title": "포함 여부 확인: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [1, 2, 3];\nconsole.log(nums.includes(5));\nconsole.log(nums.includes(2));",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "choices": [
+        "true\nfalse",
+        "false\nfalse",
+        "false\ntrue",
+        "-1\n1"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-12-8-parsons-1",
+    "type": "parsons",
+    "title": "포함 여부 확인 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 이어 붙여 [1, 2, 3] 에 2 가 있는지 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "fragments": [
+        ");",
+        "console.log(",
+        "[1, 2, 3].includes(2)"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-12-8-parsons-2",
+    "type": "parsons",
+    "title": "포함 여부 확인 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 이어 붙여 [\"apple\", \"banana\"] 에 \"kiwi\" 가 있는지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "fragments": [
+        "[\"apple\", \"banana\"]",
+        ");",
+        ".includes(\"kiwi\")",
+        "console.log("
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-12-8-parsons-3",
+    "type": "parsons",
+    "title": "포함 여부 확인 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 이어 붙여 [10, 20, 30] 에 20 이 있는지 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "fragments": [
+        ");",
+        "[10, 20, 30]",
+        "20",
+        ".includes(",
+        "console.log(",
+        ")"
+      ],
+      "answer_order": [
+        4,
+        1,
+        3,
+        2,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-12-8-blank-1",
+    "type": "blank",
+    "title": "포함 여부 확인: 메서드 쓰기",
+    "description": "fruits 에 \"banana\" 가 있는지 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nconsole.log(fruits.{{1}}\"banana\"));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "includes("
+          ],
+          "hint": "포함 여부를 알려 주는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-8-blank-2",
+    "type": "blank",
+    "title": "포함 여부 확인: 결과 출력",
+    "description": "includes 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "template": "const fruits = [\"apple\", \"banana\", \"cherry\"];\n{{1}}fruits.includes(\"banana\"));",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-12-8-short-3",
+    "type": "short",
+    "title": "포함 여부 확인: 메서드 이름 쓰기",
+    "description": "배열에 어떤 값이 들어 있는지 true/false 로 알려 주는 메서드 이름을 쓰세요. (___ 자리에 들어갈 말)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "code": "const nums = [1, 2, 3];\nconsole.log(nums.___(2)); // true",
+      "answer": [
+        "includes",
+        ".includes"
+      ]
+    }
+  },
+  {
+    "id": "js-12-8-code-1",
+    "type": "code",
+    "title": "includes() 로 3 찾기",
+    "description": "includes() 로 nums 배열에 3 이 있는지 확인해 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-12-8",
+    "content": {
+      "starter_code": "const nums = [1, 2, 3, 4];\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "nums\\s*\\.\\s*includes\\s*\\(",
+          "message": "nums 에서 includes() 를 불러요"
+        },
+        {
+          "pattern": "\\.includes\\s*\\(\\s*3\\s*\\)",
+          "message": "includes(3) 으로 3 을 찾아요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const nums = [1, 2, 3, 4];\nconsole.log(nums.includes(3));"
+    }
+  },
+  {
+    "id": "js-13-1-mcq-1",
+    "type": "mcq",
+    "title": "프로젝트 개요: 관리기가 하는 일",
+    "description": "이번에 만드는 식료품 목록 관리기가 하는 일을 바르게 묶은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "choices": [
+        "항목 추가만",
+        "항목 추가, 항목 삭제, 목록 출력",
+        "목록 출력만",
+        "항목 삭제와 결제"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-13-1-mcq-2",
+    "type": "mcq",
+    "title": "프로젝트 개요: 올바른 코드",
+    "description": "Grocery List 를 화면에 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "choices": [
+        "console.log(\"Grocery List\");",
+        "console.log(Grocery List);",
+        "console.log(\"Grocery List\";",
+        "print(\"Grocery List\");"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-13-1-mcq-3",
+    "type": "mcq",
+    "title": "프로젝트 개요: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst list = [\"milk\", \"egg\"];\nconsole.log(\"Grocery List\");\nconsole.log(list.length);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "choices": [
+        "Grocery List\n1",
+        "\"Grocery List\"\n2",
+        "Grocery List\n[ 'milk', 'egg' ]",
+        "Grocery List\n2"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-13-1-parsons-1",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 이어 붙여 Grocery List 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "fragments": [
+        ");",
+        "\"Grocery List\"",
+        "console.log("
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-13-1-parsons-2",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 이어 붙여 두 문자열을 합친 Grocery List 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "fragments": [
+        ");",
+        "\"Grocery \"",
+        "+ \"List\"",
+        "console.log("
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-13-1-parsons-3",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 이어 붙여 Grocery List 를 출력하세요. (가운데 공백도 문자열로 합쳐요)",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "fragments": [
+        "\"Grocery\"",
+        "console.log(",
+        "+ \" \" +",
+        "\"List\"",
+        ");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-13-1-blank-1",
+    "type": "blank",
+    "title": "프로젝트 개요: 출력 함수",
+    "description": "Grocery List 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "template": "{{1}}\"Grocery List\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-1-blank-2",
+    "type": "blank",
+    "title": "프로젝트 개요: 제목 글자",
+    "description": "프로그램 제목 Grocery List 가 출력되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "template": "console.log(\"{{1}}\");",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Grocery List"
+          ],
+          "hint": "식료품 목록을 영어로"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-1-short-3",
+    "type": "short",
+    "title": "프로젝트 개요: 출력 명령 쓰기",
+    "description": "화면에 글자를 출력하는 명령을 쓰세요. (___ 자리에 들어갈 말)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "code": "___(\"Grocery List\");",
+      "answer": [
+        "console.log"
+      ]
+    }
+  },
+  {
+    "id": "js-13-1-code-1",
+    "type": "code",
+    "title": "Grocery List 출력하기",
+    "description": "console.log() 로 \"Grocery List\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-1",
+    "content": {
+      "starter_code": "// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(\\s*(\\\"Grocery List\\\"|'Grocery List'|`Grocery List`)\\s*\\)",
+          "message": "\"Grocery List\" 를 그대로 출력해요",
+          "in": "source"
+        }
+      ],
+      "solution": "console.log(\"Grocery List\");"
+    }
+  },
+  {
+    "id": "js-13-2-mcq-1",
+    "type": "mcq",
+    "title": "항목 추가: 함수로 감싸는 까닭",
+    "description": "list.push(item) 을 addItem 함수 안에 넣어 두면 좋은 점은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "choices": [
+        "addItem(\"milk\") 처럼 짧게 여러 번 다시 쓸 수 있다",
+        "배열이 자동으로 정렬된다",
+        "항목이 배열 맨 앞에 들어간다",
+        "list 배열을 만들 필요가 없어진다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-13-2-mcq-2",
+    "type": "mcq",
+    "title": "항목 추가: 올바른 코드",
+    "description": "받은 item 을 list 맨 뒤에 넣는 올바른 addItem 함수는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "choices": [
+        "function addItem(item) {\n  list.push();\n}",
+        "function addItem() {\n  list.push(item);\n}",
+        "function addItem(item) {\n  list.push(item);\n}",
+        "function addItem(item) {\n  item.push(list);\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-13-2-mcq-3",
+    "type": "mcq",
+    "title": "항목 추가: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst list = [];\nfunction addItem(item) {\n  list.push(item);\n}\naddItem(\"milk\");\naddItem(\"bread\");\nconsole.log(list);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "choices": [
+        "[ 'bread', 'milk' ]",
+        "[ 'milk', 'bread' ]",
+        "[ 'bread' ]",
+        "[]"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-13-2-parsons-1",
+    "type": "parsons",
+    "title": "항목 추가 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 addItem 으로 \"milk\" 를 추가한 뒤 목록을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "fragments": [
+        "}",
+        "addItem(\"milk\");",
+        "console.log(list);",
+        "const list = [];\nfunction addItem(item) {",
+        "  list.push(item);"
+      ],
+      "answer_order": [
+        3,
+        4,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-13-2-parsons-2",
+    "type": "parsons",
+    "title": "항목 추가 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 \"milk\", \"egg\" 를 차례로 추가한 뒤 [ 'milk', 'egg' ] 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "fragments": [
+        "  list.push(item);",
+        "const list = [];\nfunction addItem(item) {",
+        "console.log(list);",
+        "addItem(\"egg\");",
+        "}",
+        "addItem(\"milk\");"
+      ],
+      "answer_order": [
+        1,
+        0,
+        4,
+        5,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-13-2-parsons-3",
+    "type": "parsons",
+    "title": "항목 추가 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 항목을 넣을 때마다 \"개수: 1\", \"개수: 2\" 를 출력하고, 마지막에 [ 'milk', 'egg' ] 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "fragments": [
+        "addItem(\"milk\");",
+        "  console.log(\"개수: \" + list.length);",
+        "const list = [];\nfunction addItem(item) {",
+        "console.log(list);",
+        "  list.push(item);",
+        "}",
+        "addItem(\"egg\");"
+      ],
+      "answer_order": [
+        2,
+        4,
+        1,
+        5,
+        0,
+        6,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-13-2-blank-1",
+    "type": "blank",
+    "title": "항목 추가: 빈 목록 만들기",
+    "description": "항목을 담을 빈 배열 list 를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "template": "{{1}};\nfunction addItem(item) {\n  list.push(item);\n}\naddItem(\"milk\");\nconsole.log(list);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "const list = []",
+            "const list=[]",
+            "let list = []"
+          ],
+          "hint": "const 로 빈 배열 만들기"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-2-blank-2",
+    "type": "blank",
+    "title": "항목 추가: 함수 만들기",
+    "description": "item 을 받는 addItem 함수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "template": "const list = [];\n{{1}}item) {\n  list.push(item);\n}\naddItem(\"milk\");\nconsole.log(list);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "function addItem(",
+            "function addItem ("
+          ],
+          "hint": "function 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-2-blank-3",
+    "type": "blank",
+    "title": "항목 추가: 배열에 넣기",
+    "description": "item 을 list 맨 뒤에 넣도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "template": "const list = [];\nfunction addItem(item) {\n  list.{{1}}item);\n}\naddItem(\"milk\");\nconsole.log(list);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "push("
+          ],
+          "hint": "맨 뒤에 넣는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-2-code-1",
+    "type": "code",
+    "title": "addItem 함수로 항목 추가하기",
+    "description": "빈 배열 list 를 만들고, item 을 list 에 넣는 addItem 함수를 만든 뒤 addItem 으로 항목을 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-2",
+    "content": {
+      "starter_code": "// 1. 빈 배열 list 를 만드세요\n// 2. addItem 함수를 만드세요\n// 3. addItem 으로 항목을 추가하세요\n",
+      "checks": [
+        {
+          "pattern": "\\b(const|let)\\s+list\\s*=\\s*\\[\\s*\\]",
+          "message": "빈 배열 list 를 만들어요"
+        },
+        {
+          "pattern": "function\\s+addItem\\s*\\(\\s*\\w+\\s*\\)|(const|let)\\s+addItem\\s*=\\s*(\\(\\s*\\w+\\s*\\)|\\w+)\\s*=>",
+          "message": "item 을 받는 addItem 함수를 만들어요"
+        },
+        {
+          "pattern": "list\\s*\\.\\s*push\\s*\\(\\s*\\w+\\s*\\)",
+          "message": "함수 안에서 list.push(item) 으로 넣어요"
+        },
+        {
+          "pattern": "addItem\\s*\\(\\s*[\\\"'`]",
+          "message": "addItem(\"milk\") 처럼 함수를 불러 항목을 추가해요"
+        }
+      ],
+      "solution": "const list = [];\nfunction addItem(item) {\n  list.push(item);\n}\naddItem(\"milk\");\nconsole.log(list);"
+    }
+  },
+  {
+    "id": "js-13-3-mcq-1",
+    "type": "mcq",
+    "title": "항목 삭제: splice 의 뜻",
+    "description": "list.splice(1, 1) 은 어떤 일을 하나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "choices": [
+        "인덱스 1 에서 요소 1개를 지운다",
+        "인덱스 0 에서 요소 1개를 지운다",
+        "값이 1 인 요소를 모두 지운다",
+        "맨 뒤 요소 1개를 지운다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-13-3-mcq-2",
+    "type": "mcq",
+    "title": "항목 삭제: 올바른 코드",
+    "description": "list 에서 받은 item 을 찾아 하나 지우는 올바른 removeItem 함수는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "choices": [
+        "function removeItem(item) {\n  const index = list.indexOf(item);\n  list.splice(item, 1);\n}",
+        "function removeItem(item) {\n  const index = list.indexOf(item);\n  list.splice(index);\n}",
+        "function removeItem(item) {\n  const index = list.indexOf(item);\n  list.indexOf(index, 1);\n}",
+        "function removeItem(item) {\n  const index = list.indexOf(item);\n  list.splice(index, 1);\n}"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-13-3-mcq-3",
+    "type": "mcq",
+    "title": "항목 삭제: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst list = [\"milk\", \"egg\", \"bread\"];\nconst index = list.indexOf(\"egg\");\nlist.splice(index, 1);\nconsole.log(list);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "choices": [
+        "[ 'milk', 'egg' ]",
+        "[ 'egg' ]",
+        "[ 'milk', 'bread' ]",
+        "[ 'egg', 'bread' ]"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-13-3-parsons-1",
+    "type": "parsons",
+    "title": "항목 삭제 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 list 에서 \"egg\" 를 지운 뒤 목록을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "fragments": [
+        "list.splice(index, 1);",
+        "const index = list.indexOf(\"egg\");",
+        "console.log(list);",
+        "const list = [\"milk\", \"egg\", \"bread\"];"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-13-3-parsons-2",
+    "type": "parsons",
+    "title": "항목 삭제 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 removeItem 함수로 \"egg\" 를 지운 뒤 목록을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "fragments": [
+        "removeItem(\"egg\");",
+        "  list.splice(index, 1);",
+        "  const index = list.indexOf(item);",
+        "}",
+        "const list = [\"milk\", \"egg\", \"bread\"];\nfunction removeItem(item) {",
+        "console.log(list);"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        3,
+        0,
+        5
+      ]
+    }
+  },
+  {
+    "id": "js-13-3-parsons-3",
+    "type": "parsons",
+    "title": "항목 삭제 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 \"egg\" 를 지운 뒤 \"남은 개수: 2\" 를 출력하고, 마지막에 목록을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "fragments": [
+        "removeItem(\"egg\");",
+        "console.log(list);",
+        "  console.log(\"남은 개수: \" + list.length);",
+        "  list.splice(index, 1);",
+        "const list = [\"milk\", \"egg\", \"bread\"];\nfunction removeItem(item) {",
+        "  const index = list.indexOf(item);",
+        "}"
+      ],
+      "answer_order": [
+        4,
+        5,
+        3,
+        2,
+        6,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-13-3-blank-1",
+    "type": "blank",
+    "title": "항목 삭제: 함수 만들기",
+    "description": "item 을 받는 removeItem 함수를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "template": "const list = [\"milk\", \"egg\", \"bread\"];\n{{1}}item) {\n  const index = list.indexOf(item);\n  list.splice(index, 1);\n}\nremoveItem(\"egg\");\nconsole.log(list);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "function removeItem(",
+            "function removeItem ("
+          ],
+          "hint": "function 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-3-blank-2",
+    "type": "blank",
+    "title": "항목 삭제: 위치 찾기",
+    "description": "item 이 있는 위치(인덱스)를 찾도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "template": "const list = [\"milk\", \"egg\", \"bread\"];\nfunction removeItem(item) {\n  const index = list.{{1}}item);\n  list.splice(index, 1);\n}\nremoveItem(\"egg\");\nconsole.log(list);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "indexOf("
+          ],
+          "hint": "위치를 찾는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-3-blank-3",
+    "type": "blank",
+    "title": "항목 삭제: 요소 지우기",
+    "description": "찾은 위치에서 요소 1개를 지우도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "template": "const list = [\"milk\", \"egg\", \"bread\"];\nfunction removeItem(item) {\n  const index = list.indexOf(item);\n  list.{{1}}index, 1);\n}\nremoveItem(\"egg\");\nconsole.log(list);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "splice("
+          ],
+          "hint": "위치와 개수로 지우는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-3-code-1",
+    "type": "code",
+    "title": "removeItem 함수로 항목 삭제하기",
+    "description": "indexOf 로 위치를 찾고 splice 로 지우는 removeItem(item) 함수를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-3",
+    "content": {
+      "starter_code": "const list = [\"milk\", \"egg\", \"bread\"];\n// 여기에 removeItem 함수를 만드세요\n\nremoveItem(\"egg\");\nconsole.log(list);",
+      "checks": [
+        {
+          "pattern": "function\\s+removeItem\\s*\\(\\s*\\w+\\s*\\)|(const|let)\\s+removeItem\\s*=",
+          "message": "item 을 받는 removeItem 함수를 만들어요"
+        },
+        {
+          "pattern": "list\\s*\\.\\s*indexOf\\s*\\(\\s*\\w+\\s*\\)",
+          "message": "list.indexOf(item) 으로 위치를 찾아요"
+        },
+        {
+          "pattern": "list\\s*\\.\\s*splice\\s*\\(\\s*\\w+\\s*,\\s*1\\s*\\)",
+          "message": "list.splice(index, 1) 로 하나를 지워요"
+        }
+      ],
+      "solution": "const list = [\"milk\", \"egg\", \"bread\"];\nfunction removeItem(item) {\n  const index = list.indexOf(item);\n  list.splice(index, 1);\n}\n\nremoveItem(\"egg\");\nconsole.log(list);"
+    }
+  },
+  {
+    "id": "js-13-4-mcq-1",
+    "type": "mcq",
+    "title": "목록 보기: 두 번째 인자",
+    "description": "list.forEach((item, i) => { … }) 에서 i 에는 무엇이 들어가나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "choices": [
+        "현재 요소의 인덱스(0 부터)",
+        "현재 요소의 값",
+        "배열의 길이",
+        "1 부터 시작하는 번호"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-13-4-mcq-2",
+    "type": "mcq",
+    "title": "목록 보기: 올바른 코드",
+    "description": "list 의 항목을 \"1. milk\" 처럼 1 번부터 번호를 붙여 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "choices": [
+        "list.forEach((i, item) => {\n  console.log((i + 1) + \". \" + item);\n});",
+        "list.forEach((item, i) => {\n  console.log((i + 1) + \". \" + item);\n});",
+        "list.forEach((item, i) => {\n  console.log(i + \". \" + item);\n});",
+        "list.forEach((item, i) => {\n  console.log((i + 1) + \". \" + i);\n});"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-13-4-mcq-3",
+    "type": "mcq",
+    "title": "목록 보기: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst list = [\"milk\", \"egg\"];\nlist.forEach((item, i) => {\n  console.log(i + \": \" + item);\n});",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "choices": [
+        "1: milk\n2: egg",
+        "milk: 0\negg: 1",
+        "0: milk\n1: egg",
+        "0: milk"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-13-4-parsons-1",
+    "type": "parsons",
+    "title": "목록 보기 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 \"1. milk\" 처럼 번호와 함께 목록을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "fragments": [
+        "  console.log((i + 1) + \". \" + item);",
+        "const list = [\"milk\", \"egg\", \"bread\"];",
+        "list.forEach((item, i) => {",
+        "});"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-13-4-parsons-2",
+    "type": "parsons",
+    "title": "목록 보기 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 번호와 함께 목록을 출력하고, 마지막에 \"총 3개\" 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "fragments": [
+        "console.log(\"총 \" + list.length + \"개\");",
+        "});",
+        "const list = [\"milk\", \"egg\", \"bread\"];",
+        "  console.log((i + 1) + \". \" + item);",
+        "list.forEach((item, i) => {"
+      ],
+      "answer_order": [
+        2,
+        4,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-13-4-parsons-3",
+    "type": "parsons",
+    "title": "목록 보기 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 번호 no 를 만들어 \"1. milk\" 처럼 출력하고, 마지막에 \"총 3개\" 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "fragments": [
+        "console.log(\"총 \" + list.length + \"개\");",
+        "list.forEach((item, i) => {",
+        "});",
+        "  console.log(no + \". \" + item);",
+        "const list = [\"milk\", \"egg\", \"bread\"];",
+        "  const no = i + 1;"
+      ],
+      "answer_order": [
+        4,
+        1,
+        5,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-13-4-blank-1",
+    "type": "blank",
+    "title": "목록 보기: forEach 쓰기",
+    "description": "list 의 항목마다 번호와 함께 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "template": "const list = [\"milk\", \"egg\", \"bread\"];\nlist.{{1}}(item, i) => {\n  console.log((i + 1) + \". \" + item);\n});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "forEach("
+          ],
+          "hint": "요소마다 실행하는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-4-blank-2",
+    "type": "blank",
+    "title": "목록 보기: 번호와 항목 출력",
+    "description": "\"1. milk\" 처럼 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "template": "const list = [\"milk\", \"egg\", \"bread\"];\nlist.forEach((item, i) => {\n  {{1}}(i + 1) + \". \" + item);\n});",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-13-4-short-3",
+    "type": "short",
+    "title": "목록 보기: 인덱스 매개변수 쓰기",
+    "description": "콜백의 두 번째 매개변수 자리(___)에 들어갈 이름을 쓰세요. 아래 코드에서 인덱스로 쓰는 이름입니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "code": "const list = [\"milk\", \"egg\", \"bread\"];\nlist.forEach((item, ___) => {\n  console.log((i + 1) + \". \" + item);\n});",
+      "answer": [
+        "i"
+      ]
+    }
+  },
+  {
+    "id": "js-13-4-code-1",
+    "type": "code",
+    "title": "forEach 로 번호 붙여 목록 출력하기",
+    "description": "forEach 의 두 번째 인자(인덱스)를 사용해 \"1. milk\" 처럼 번호와 함께 목록을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-13-4",
+    "content": {
+      "starter_code": "const list = [\"milk\", \"egg\", \"bread\"];\n// 여기에 작성하세요 (예: 1. milk)\n",
+      "checks": [
+        {
+          "pattern": "list\\s*\\.\\s*forEach\\s*\\(",
+          "message": "list.forEach( 를 써요"
+        },
+        {
+          "pattern": "forEach\\s*\\(\\s*(\\(\\s*\\w+\\s*,\\s*\\w+\\s*\\)\\s*=>|function\\s*\\(\\s*\\w+\\s*,\\s*\\w+\\s*\\))",
+          "message": "콜백에서 (item, i) 처럼 두 번째 매개변수로 인덱스를 받아요"
+        },
+        {
+          "pattern": "\\w+\\s*\\+\\s*1\\b",
+          "message": "번호는 i + 1 로 1 부터 보여요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const list = [\"milk\", \"egg\", \"bread\"];\nlist.forEach((item, i) => {\n  console.log((i + 1) + \". \" + item);\n});"
+    }
+  },
+  {
+    "id": "js-14-1-mcq-1",
+    "type": "mcq",
+    "title": "숫자 피라미드: repeat 의 뜻",
+    "description": "\"*\".repeat(4) 의 결과는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "choices": [
+        "\"*4\"",
+        "\"* * * *\"",
+        "4",
+        "\"****\""
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-14-1-mcq-2",
+    "type": "mcq",
+    "title": "숫자 피라미드: 올바른 코드",
+    "description": "*, **, *** 를 한 줄씩 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "choices": [
+        "for (let i = 1; i <= 3; i++) {\n  console.log(\"*\".repeat(i));\n}",
+        "for (let i = 0; i < 3; i++) {\n  console.log(\"*\".repeat(i));\n}",
+        "for (let i = 1; i <= 3; i++) {\n  console.log(\"*\" * i);\n}",
+        "for (let i = 1; i <= 3; i++) {\n  console.log(i.repeat(\"*\"));\n}"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-14-1-mcq-3",
+    "type": "mcq",
+    "title": "숫자 피라미드: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfor (let i = 1; i <= 3; i++) {\n  console.log(\"#\".repeat(i * 2));\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "choices": [
+        "#\n##\n###",
+        "##\n####\n######",
+        "##\n###\n####",
+        "######"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-14-1-parsons-1",
+    "type": "parsons",
+    "title": "숫자 피라미드 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 *, **, *** 를 한 줄씩 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "fragments": [
+        "  console.log(\"*\".repeat(i));",
+        "for (let i = 1; i <= 3; i++) {",
+        "}"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-14-1-parsons-2",
+    "type": "parsons",
+    "title": "숫자 피라미드 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 별 줄을 stars 에 담아 *, **, *** 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "fragments": [
+        "  const stars = \"*\".repeat(i);",
+        "}",
+        "  console.log(stars);",
+        "for (let i = 1; i <= 3; i++) {"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "js-14-1-parsons-3",
+    "type": "parsons",
+    "title": "숫자 피라미드 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 앞에 공백을 넣은 높이 3 의 가운데 정렬 피라미드를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "fragments": [
+        "  const line = spaces + \"*\".repeat(2 * i - 1);",
+        "  const spaces = \" \".repeat(height - i);",
+        "}",
+        "  console.log(line);",
+        "const height = 3;",
+        "for (let i = 1; i <= height; i++) {"
+      ],
+      "answer_order": [
+        4,
+        5,
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-14-1-blank-1",
+    "type": "blank",
+    "title": "숫자 피라미드: 반복문 시작",
+    "description": "1 부터 3 까지 반복하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "template": "{{1}}let i = 1; i <= 3; i++) {\n  console.log(\"*\".repeat(i));\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-1-blank-2",
+    "type": "blank",
+    "title": "숫자 피라미드: 별 반복",
+    "description": "별을 i 번 이어 붙이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "template": "for (let i = 1; i <= 3; i++) {\n  console.log(\"*\".{{1}}i));\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "repeat("
+          ],
+          "hint": "문자열을 여러 번 이어 붙이는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-1-blank-3",
+    "type": "blank",
+    "title": "숫자 피라미드: 줄 출력",
+    "description": "만든 별 줄을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "template": "for (let i = 1; i <= 3; i++) {\n  {{1}}\"*\".repeat(i));\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-1-code-1",
+    "type": "code",
+    "title": "repeat() 로 별 피라미드 출력하기",
+    "description": "for 문과 repeat() 를 사용해 높이 3 의 별 피라미드(*, **, ***)를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-1",
+    "content": {
+      "starter_code": "// 높이 3 의 별 피라미드를 출력하세요\n// *\n// **\n// ***\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s*\\(",
+          "message": "for 문으로 줄을 반복해요"
+        },
+        {
+          "pattern": "[\\\"'`]\\*[\\\"'`]\\s*\\.\\s*repeat\\s*\\(",
+          "message": "\"*\".repeat(…) 로 별을 이어 붙여요",
+          "in": "source"
+        },
+        {
+          "pattern": "<=\\s*3\\b|<\\s*4\\b",
+          "message": "높이는 3 이에요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "for (let i = 1; i <= 3; i++) {\n  console.log(\"*\".repeat(i));\n}"
+    }
+  },
+  {
+    "id": "js-14-2-mcq-1",
+    "type": "mcq",
+    "title": "홀수 두 배: 이어 쓰기",
+    "description": "numbers.filter(…).map(…) 처럼 이어 쓰면 map 은 무엇을 받아 처리하나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "choices": [
+        "원래 numbers 배열 전체",
+        "filter 의 콜백 함수",
+        "filter 가 만든 새 배열",
+        "numbers 의 길이"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-14-2-mcq-2",
+    "type": "mcq",
+    "title": "홀수 두 배: 올바른 코드",
+    "description": "numbers 에서 홀수만 골라 두 배로 만든 새 배열을 얻는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "choices": [
+        "numbers.filter((n) => n % 2 === 0).map((n) => n * 2)",
+        "numbers.map((n) => n * 2).filter((n) => n % 2 === 1)",
+        "numbers.filter((n) => n * 2).map((n) => n % 2 === 1)",
+        "numbers.filter((n) => n % 2 === 1).map((n) => n * 2)"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-14-2-mcq-3",
+    "type": "mcq",
+    "title": "홀수 두 배: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst numbers = [3, 4, 7, 10];\nconst result = numbers.filter((n) => n % 2 === 1).map((n) => n * 2);\nconsole.log(result);",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "choices": [
+        "[ 6, 14 ]",
+        "[ 8, 20 ]",
+        "[ 3, 7 ]",
+        "[ 6, 8, 14, 20 ]"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "js-14-2-parsons-1",
+    "type": "parsons",
+    "title": "홀수 두 배 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 홀수만 두 배로 만든 [ 2, 6, 10 ] 을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "fragments": [
+        "console.log(result);",
+        "const result = numbers.filter((n) => n % 2 === 1).map((n) => n * 2);",
+        "const numbers = [1, 2, 3, 4, 5];"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-14-2-parsons-2",
+    "type": "parsons",
+    "title": "홀수 두 배 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 홀수를 먼저 odds 에 고른 뒤 두 배로 만들어 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "fragments": [
+        "const odds = numbers.filter((n) => n % 2 === 1);",
+        "const doubled = odds.map((n) => n * 2);",
+        "const numbers = [1, 2, 3, 4, 5];",
+        "console.log(doubled);"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "js-14-2-parsons-3",
+    "type": "parsons",
+    "title": "홀수 두 배 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 [ 2, 6, 10, 14 ] 를 출력한 뒤 그 길이 4 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "fragments": [
+        "const numbers = [1, 2, 3, 4, 5, 6, 7];",
+        "  .filter((n) => n % 2 === 1)",
+        "console.log(result.length);",
+        "  .map((n) => n * 2);",
+        "console.log(result);",
+        "const result = numbers"
+      ],
+      "answer_order": [
+        0,
+        5,
+        1,
+        3,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "js-14-2-blank-1",
+    "type": "blank",
+    "title": "홀수 두 배: 홀수 고르기",
+    "description": "홀수만 고르도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "template": "const numbers = [1, 2, 3, 4, 5];\nconst result = numbers.{{1}}(n) => n % 2 === 1).map((n) => n * 2);\nconsole.log(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "filter("
+          ],
+          "hint": "골라 내는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-2-blank-2",
+    "type": "blank",
+    "title": "홀수 두 배: 두 배 만들기",
+    "description": "고른 홀수를 두 배로 바꾸도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "template": "const numbers = [1, 2, 3, 4, 5];\nconst result = numbers.filter((n) => n % 2 === 1).{{1}}(n) => n * 2);\nconsole.log(result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "map("
+          ],
+          "hint": "각 요소를 바꾸는 메서드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-2-blank-3",
+    "type": "blank",
+    "title": "홀수 두 배: 결과 출력",
+    "description": "완성된 배열을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "template": "const numbers = [1, 2, 3, 4, 5];\nconst result = numbers.filter((n) => n % 2 === 1).map((n) => n * 2);\n{{1}}result);",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-2-code-1",
+    "type": "code",
+    "title": "홀수만 골라 두 배로 만들기",
+    "description": "filter 와 map 을 사용해 numbers 에서 홀수만 골라 두 배로 만든 배열을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-2",
+    "content": {
+      "starter_code": "const numbers = [1, 2, 3, 4, 5, 6];\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\.filter\\s*\\(",
+          "message": "filter() 로 홀수를 골라요"
+        },
+        {
+          "pattern": "%\\s*2\\s*(===?\\s*1|!==?\\s*0)",
+          "message": "n % 2 === 1 로 홀수인지 확인해요"
+        },
+        {
+          "pattern": "\\.map\\s*\\(",
+          "message": "map() 으로 두 배로 만들어요"
+        },
+        {
+          "pattern": "\\*\\s*2\\b|\\b2\\s*\\*",
+          "message": "각 수에 2 를 곱해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const numbers = [1, 2, 3, 4, 5, 6];\nconst result = numbers.filter((n) => n % 2 === 1).map((n) => n * 2);\nconsole.log(result);"
+    }
+  },
+  {
+    "id": "js-14-3-mcq-1",
+    "type": "mcq",
+    "title": "무엇을 살까: 고르는 조건",
+    "description": "prices 를 순회하며 budget 이하인 가격만 출력하려면 반복문 안에 어떤 조건을 써야 하나요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "choices": [
+        "if (price > budget)",
+        "if (price <= budget)",
+        "if (price === budget)",
+        "if (prices <= budget)"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "js-14-3-mcq-2",
+    "type": "mcq",
+    "title": "무엇을 살까: 올바른 코드",
+    "description": "prices 중 budget 이하인 가격만 하나씩 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "choices": [
+        "for (const price of prices) {\n  if (price >= budget) {\n    console.log(price);\n  }\n}",
+        "for (const price of prices) {\n  if (price <= budget) {\n    console.log(prices);\n  }\n}",
+        "for (const price of prices) {\n  if (price <= budget) {\n    console.log(price);\n  }\n}",
+        "for (const price of budget) {\n  if (price <= budget) {\n    console.log(price);\n  }\n}"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "js-14-3-mcq-3",
+    "type": "mcq",
+    "title": "무엇을 살까: 실행 결과",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst prices = [1200, 3500, 800, 5000];\nconst budget = 3000;\nfor (const price of prices) {\n  if (price <= budget) {\n    console.log(price);\n  }\n}",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "choices": [
+        "3500\n5000",
+        "1200\n3500\n800",
+        "800",
+        "1200\n800"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "js-14-3-parsons-1",
+    "type": "parsons",
+    "title": "무엇을 살까 순서 맞추기 1",
+    "description": "코드 블록을 올바른 순서로 놓아 budget 이하인 가격만 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "fragments": [
+        "}",
+        "  if (price <= budget) console.log(price);",
+        "for (const price of prices) {",
+        "const prices = [1200, 3500, 800, 5000];\nconst budget = 3000;"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "js-14-3-parsons-2",
+    "type": "parsons",
+    "title": "무엇을 살까 순서 맞추기 2",
+    "description": "코드 블록을 올바른 순서로 놓아 if 블록으로 budget 이하인 가격만 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "fragments": [
+        "    console.log(price);",
+        "const prices = [1200, 3500, 800, 5000];\nconst budget = 3000;",
+        "for (const price of prices) {",
+        "  if (price <= budget) {",
+        "  }\n}"
+      ],
+      "answer_order": [
+        1,
+        2,
+        3,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "js-14-3-parsons-3",
+    "type": "parsons",
+    "title": "무엇을 살까 순서 맞추기 3",
+    "description": "코드 블록을 올바른 순서로 놓아 budget 이하면 \"1200원: 살 수 있어요\", 넘으면 \"3500원: 너무 비싸요\" 처럼 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "fragments": [
+        "  } else {",
+        "    console.log(price + \"원: 살 수 있어요\");",
+        "    console.log(price + \"원: 너무 비싸요\");",
+        "  if (price <= budget) {",
+        "for (const price of prices) {",
+        "  }\n}",
+        "const prices = [1200, 3500, 800, 5000];\nconst budget = 3000;"
+      ],
+      "answer_order": [
+        6,
+        4,
+        3,
+        1,
+        0,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "id": "js-14-3-blank-1",
+    "type": "blank",
+    "title": "무엇을 살까: 반복문 시작",
+    "description": "prices 를 하나씩 살펴보도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "template": "const prices = [1200, 3500, 800, 5000];\nconst budget = 3000;\n{{1}}const price of prices) {\n  if (price <= budget) {\n    console.log(price);\n  }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for (",
+            "for("
+          ],
+          "hint": "반복문 키워드와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-3-blank-2",
+    "type": "blank",
+    "title": "무엇을 살까: 예산 조건",
+    "description": "가격이 budget 이하일 때만 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "template": "const prices = [1200, 3500, 800, 5000];\nconst budget = 3000;\nfor (const price of prices) {\n  if (price {{1}}) {\n    console.log(price);\n  }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<= budget",
+            "<=budget"
+          ],
+          "hint": "작거나 같음 기호와 예산 변수"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-3-blank-3",
+    "type": "blank",
+    "title": "무엇을 살까: 가격 출력",
+    "description": "조건에 맞는 가격을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "template": "const prices = [1200, 3500, 800, 5000];\nconst budget = 3000;\nfor (const price of prices) {\n  if (price <= budget) {\n    {{1}}price);\n  }\n}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "console.log("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "js-14-3-code-1",
+    "type": "code",
+    "title": "budget 이하 가격만 출력하기",
+    "description": "prices 중 budget 이하인 값만 하나씩 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "javascript",
+    "lessonId": "js-14-3",
+    "content": {
+      "starter_code": "const prices = [1200, 3500, 800, 5000, 2900];\nconst budget = 3000;\n// 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "\\bfor\\s*\\(|\\.forEach\\s*\\(|\\.filter\\s*\\(",
+          "message": "반복문으로 prices 를 하나씩 살펴봐요"
+        },
+        {
+          "pattern": "<=\\s*budget\\b|\\bbudget\\s*>=",
+          "message": "budget 이하인지 <= budget 으로 확인해요"
+        },
+        {
+          "pattern": "console\\.log\\s*\\(",
+          "message": "console.log() 로 출력해요"
+        }
+      ],
+      "solution": "const prices = [1200, 3500, 800, 5000, 2900];\nconst budget = 3000;\nfor (const price of prices) {\n  if (price <= budget) {\n    console.log(price);\n  }\n}"
+    }
+  }
+]

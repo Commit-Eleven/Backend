@@ -12,7 +12,8 @@
         "js-basics-mcq-2",
         "js-basics-blank-1",
         "js-basics-parsons-1",
-        "js-basics-short-1"
+        "js-basics-short-1",
+        "js-basics-code-1"
       ]
     },
     {
@@ -24,7 +25,8 @@
         "js-functions-conditions-mcq-2",
         "js-functions-conditions-blank-1",
         "js-functions-conditions-parsons-1",
-        "js-functions-conditions-short-1"
+        "js-functions-conditions-short-1",
+        "javascript-code-1"
       ]
     }
   ]

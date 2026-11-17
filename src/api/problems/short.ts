@@ -1,29 +1,43 @@
 import { Hono } from 'hono'
+import { STUDY_LEVEL } from '../../util/config/constants'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
-import { excludeSolved, filterByLanguage } from '../../util/problems'
+import {
+  excludeSolved,
+  filterByLanguage,
+  filterByLevel,
+  isStudyLevel,
+  levelOf,
+  loadProblems,
+  matchesAnswer,
+  type StudyLevel,
+} from '../../util/problems'
 
 type ShortProblem = {
   id: string
   type: 'short'
   title: string
   reward: number
+  difficulty?: number
+  level?: StudyLevel
+  lessonId?: string
   description?: string
   language?: string
+  caseSensitive?: boolean
   content: {
     code: string
     answer: string[]
   }
 }
 
-export const shortProblems = (await Bun.file('static/problems/short.json').json()) as ShortProblem[]
+export const shortProblems = await loadProblems<ShortProblem>('short')
 
 // 조회할 때 정답(answer)은 빼고 내려준다
-function toQuestion(p: ShortProblem) {
+export function toQuestion(p: ShortProblem) {
   const { answer, ...content } = p.content
   return {
     id: p.id,
@@ -31,6 +45,9 @@ function toQuestion(p: ShortProblem) {
     title: p.title,
     description: p.description,
     reward: p.reward,
+    language: p.language,
+    level: levelOf(p),
+    lessonId: p.lessonId,
     content,
   }
 }
@@ -47,9 +64,14 @@ short.get('', requireAuth, async (c) => {
   }
 
   const language = c.req.query('language')
-  const pool = filterByLanguage(shortProblems, language)
+  const level = c.req.query('level')
+  if (level !== undefined && !isStudyLevel(level)) {
+    return c.json({ message: `level 은 ${STUDY_LEVEL.join(', ')} 중 하나` }, 400)
+  }
+  const pool = filterByLevel(filterByLanguage(shortProblems, language), level)
   if (pool.length === 0) {
-    const message = language ? `${language} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
+    const label = [language, level].filter(Boolean).join(' ')
+    const message = label ? `${label} 문제가 아직 없습니다` : '문제 풀이 비어있습니다'
     return c.json({ message }, 404)
   }
 
@@ -84,12 +106,12 @@ short.post('', requireAuth, async (c) => {
 
   const userId = c.get('userId')
   const trimmed = answer.trim()
-  const isAnswer = problem.content.answer.includes(trimmed)
+  const isAnswer = matchesAnswer(trimmed, problem.content.answer, problem.caseSensitive)
   await submissions.create({ userId, problemId: problem.id, isCorrect: isAnswer, answer: trimmed })
 
   if (isAnswer) {
-    await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer }, 200)
+    const exp = await awardSolveExp(userId, problem.id, problem.reward)
+    return c.json({ isAnswer, ...exp }, 200)
   } else {
     // 프론트는 answer 를 문자열 하나로 보여 준다. 인정되는 답 전체는 answers 로
     return c.json(

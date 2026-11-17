@@ -1,0 +1,4083 @@
+[
+  {
+    "id": "py-9-1-mcq-1",
+    "type": "mcq",
+    "title": "함수 선언하기 개념 확인",
+    "description": "파이썬에서 함수를 만들고 부르는(호출하는) 방법으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "choices": [
+        "function 이름(): 으로 만들고 이름 으로 호출한다",
+        "def 이름(): 으로 만들고 이름() 으로 호출한다",
+        "def 이름: 으로 만들고 call 이름 으로 호출한다",
+        "이름 = def(): 로 만들고 이름[] 으로 호출한다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-9-1-mcq-2",
+    "type": "mcq",
+    "title": "함수 선언하기 올바른 코드 고르기",
+    "description": "\"Hi\" 를 출력하는 say_hi 함수를 올바르게 선언한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "choices": [
+        "def say_hi:\n    print(\"Hi\")",
+        "def say_hi()\n    print(\"Hi\")",
+        "def say_hi():\nprint(\"Hi\")",
+        "def say_hi():\n    print(\"Hi\")"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-9-1-mcq-3",
+    "type": "mcq",
+    "title": "함수 선언하기 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef say_hi():\n    print(\"Hi\")\n\nprint(\"Start\")\nsay_hi()",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "choices": [
+        "Start\nHi",
+        "Hi\nStart",
+        "Start",
+        "Hi"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-9-1-parsons-1",
+    "type": "parsons",
+    "title": "함수 선언하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 say_hi 함수를 만들고 호출해 Hi 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "fragments": [
+        "def say_hi():",
+        "say_hi()",
+        "    print(\"Hi\")"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-9-1-parsons-2",
+    "type": "parsons",
+    "title": "함수 선언하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Hi 다음에 Done 이 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "fragments": [
+        "def say_hi():",
+        "say_hi()",
+        "print(\"Done\")",
+        "    print(\"Hi\")"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-9-1-parsons-3",
+    "type": "parsons",
+    "title": "함수 선언하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Hi, Nice to meet you, Done 이 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "fragments": [
+        "    print(\"Nice to meet you\")",
+        "    print(\"Hi\")",
+        "print(\"Done\")",
+        "say_hi()",
+        "def say_hi():"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-9-1-blank-1",
+    "type": "blank",
+    "title": "say_hi 함수 선언 빈칸",
+    "description": "say_hi 함수를 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "template": "{{1}}):\n    print(\"Hi\")\n\nsay_hi()",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def say_hi(",
+            "def say_hi ("
+          ],
+          "hint": "함수를 만드는 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-1-blank-2",
+    "type": "blank",
+    "title": "say_hi 함수 호출 빈칸",
+    "description": "만든 say_hi 함수를 호출하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "template": "def say_hi():\n    print(\"Hi\")\n\n{{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "say_hi()"
+          ],
+          "hint": "함수 이름 뒤에 괄호를 붙여요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-1-short-3",
+    "type": "short",
+    "title": "함수 선언 키워드 쓰기",
+    "description": "함수를 만들 때 맨 앞에 쓰는 키워드를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "code": "___ say_hi():\n    print(\"Hi\")\n\nsay_hi()",
+      "answer": [
+        "def"
+      ]
+    }
+  },
+  {
+    "id": "py-9-1-code-1",
+    "type": "code",
+    "title": "say_hi 함수 만들고 호출하기",
+    "description": "say_hi 함수를 만들어 \"Hi\" 를 출력하고, 그 함수를 호출하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-1",
+    "content": {
+      "starter_code": "# say_hi 함수를 만들고 호출하세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+say_hi\\s*\\(\\s*\\)\\s*:",
+          "message": "def say_hi(): 로 함수를 선언해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+print\\s*\\(\\s*([\"'])Hi\\1\\s*\\)",
+          "message": "함수 안(들여쓰기)에서 print(\"Hi\") 로 출력해요",
+          "flags": "m",
+          "in": "source"
+        },
+        {
+          "pattern": "^def\\s+say_hi[\\s\\S]*^say_hi\\s*\\(\\s*\\)",
+          "message": "함수를 선언한 뒤, 함수 밖에서 say_hi() 로 호출해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "def say_hi():\n    print(\"Hi\")\n\nsay_hi()"
+    }
+  },
+  {
+    "id": "py-9-2-mcq-1",
+    "type": "mcq",
+    "title": "인수 개념 확인",
+    "description": "def greet(name): 에서 괄호 안의 name 은 어떤 역할을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "choices": [
+        "함수의 이름",
+        "함수가 돌려주는 결과값",
+        "함수를 부를 때 전달한 값을 받는 매개변수",
+        "함수를 끝내는 키워드"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-9-2-mcq-2",
+    "type": "mcq",
+    "title": "인수 올바른 코드 고르기",
+    "description": "이름을 받아 인사하는 greet 함수를 만들고 \"Mina\" 를 전달해 호출하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "choices": [
+        "def greet():\n    print(\"Hello,\", name)\n\ngreet(\"Mina\")",
+        "def greet(name):\n    print(\"Hello,\", name)\n\ngreet()",
+        "def greet(name)\n    print(\"Hello,\", name)\n\ngreet(\"Mina\")",
+        "def greet(name):\n    print(\"Hello,\", name)\n\ngreet(\"Mina\")"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-9-2-mcq-3",
+    "type": "mcq",
+    "title": "인수 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef greet(name):\n    print(\"Hello,\", name)\n\ngreet(\"Mina\")\ngreet(\"Jun\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "choices": [
+        "Hello, name\nHello, name",
+        "Hello, Mina\nHello, Jun",
+        "Hello, Mina",
+        "Hello, Jun\nHello, Mina"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-9-2-parsons-1",
+    "type": "parsons",
+    "title": "인수 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Hello, Mina 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "fragments": [
+        "greet(\"Mina\")",
+        "    print(\"Hello,\", name)",
+        "def greet(name):"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-9-2-parsons-2",
+    "type": "parsons",
+    "title": "인수 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Hello, Mina 다음에 Hello, Jun 이 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "fragments": [
+        "greet(\"Mina\")",
+        "    print(\"Hello,\", name)",
+        "def greet(name):",
+        "greet(\"Jun\")"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-9-2-parsons-3",
+    "type": "parsons",
+    "title": "인수 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 My name is Mina, I am 12, My name is Jun, I am 13 이 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "fragments": [
+        "    print(\"My name is\", name)",
+        "introduce(\"Mina\", 12)",
+        "introduce(\"Jun\", 13)",
+        "def introduce(name, age):",
+        "    print(\"I am\", age)"
+      ],
+      "answer_order": [
+        3,
+        0,
+        4,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-9-2-blank-1",
+    "type": "blank",
+    "title": "greet 매개변수 빈칸",
+    "description": "매개변수 name 을 받는 greet 함수를 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "template": "{{1}}):\n    print(\"Hello,\", name)\n\ngreet(\"Mina\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def greet(name"
+          ],
+          "hint": "함수 이름과 괄호 안의 매개변수"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-2-blank-2",
+    "type": "blank",
+    "title": "greet 인사 출력 빈칸",
+    "description": "함수 안에서 인사말을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "template": "def greet(name):\n    {{1}}\"Hello,\", name)\n\ngreet(\"Mina\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-2-blank-3",
+    "type": "blank",
+    "title": "greet 인수 전달 빈칸",
+    "description": "\"Mina\" 를 인수로 전달해 greet 함수를 호출하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "template": "def greet(name):\n    print(\"Hello,\", name)\n\n{{1}}\"Mina\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "greet("
+          ],
+          "hint": "함수 이름과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-2-code-1",
+    "type": "code",
+    "title": "greet 함수로 이름 인사하기",
+    "description": "매개변수 name 으로 이름을 받아 \"Hello, 이름\" 을 출력하는 greet 함수를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-2",
+    "content": {
+      "starter_code": "# greet 함수를 만드세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+greet\\s*\\(\\s*name\\s*\\)\\s*:",
+          "message": "def greet(name): 로 매개변수 name 을 받는 함수를 만들어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+print\\s*\\(\\s*(?:f([\"'])Hello, \\{name\\}\\1|([\"'])Hello,\\2\\s*,\\s*name|([\"'])Hello, \\3\\s*\\+\\s*name)\\s*\\)",
+          "message": "함수 안에서 print(\"Hello,\", name) 처럼 \"Hello, 이름\" 을 출력해요",
+          "flags": "m",
+          "in": "source"
+        }
+      ],
+      "solution": "def greet(name):\n    print(\"Hello,\", name)\n\ngreet(\"Mina\")"
+    }
+  },
+  {
+    "id": "py-9-3-mcq-1",
+    "type": "mcq",
+    "title": "반환 개념 확인",
+    "description": "함수 안에서 return 은 어떤 일을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "choices": [
+        "값을 화면에 바로 출력한다",
+        "함수를 처음부터 다시 실행한다",
+        "함수의 결과를 호출한 곳으로 돌려준다",
+        "함수의 이름을 바꾼다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-9-3-mcq-2",
+    "type": "mcq",
+    "title": "반환 올바른 코드 고르기",
+    "description": "두 수의 합을 돌려주는 add 함수를 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "choices": [
+        "def add(a, b):\n    return a + b",
+        "def add(a, b):\n    a + b = return",
+        "def add(a, b):\nreturn a + b",
+        "def add(a, b):\n    returns a + b"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-9-3-mcq-3",
+    "type": "mcq",
+    "title": "반환 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef add(a, b):\n    return a + b\n\nresult = add(3, 4)\nprint(result * 2)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "choices": [
+        "14",
+        "7",
+        "34",
+        "add(3, 4)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-9-3-parsons-1",
+    "type": "parsons",
+    "title": "반환 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 add(2, 3) 의 결과 5 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "fragments": [
+        "print(add(2, 3))",
+        "def add(a, b):",
+        "    return a + b"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-9-3-parsons-2",
+    "type": "parsons",
+    "title": "반환 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 add 함수가 돌려준 값을 result 에 담아 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "fragments": [
+        "result = add(2, 3)",
+        "    return a + b",
+        "print(result)",
+        "def add(a, b):"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-9-3-parsons-3",
+    "type": "parsons",
+    "title": "반환 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 add 를 두 번 사용해 15 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "fragments": [
+        "x = add(2, 3)",
+        "def add(a, b):",
+        "    return total",
+        "print(y)",
+        "y = add(x, 10)",
+        "    total = a + b"
+      ],
+      "answer_order": [
+        1,
+        5,
+        2,
+        0,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-9-3-blank-1",
+    "type": "blank",
+    "title": "add 함수 선언 빈칸",
+    "description": "두 수를 받는 add 함수를 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "template": "{{1}}a, b):\n    return a + b\n\nprint(add(2, 3))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def add("
+          ],
+          "hint": "함수를 만드는 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-3-blank-2",
+    "type": "blank",
+    "title": "합을 돌려주는 키워드 빈칸",
+    "description": "두 수의 합을 돌려주도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "template": "def add(a, b):\n    {{1}} a + b\n\nprint(add(2, 3))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "return"
+          ],
+          "hint": "결과를 돌려주는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-3-blank-3",
+    "type": "blank",
+    "title": "add 결과 출력 빈칸",
+    "description": "add(2, 3) 의 결과를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "template": "def add(a, b):\n    return a + b\n\n{{1}}2, 3))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print(add("
+          ],
+          "hint": "출력 함수 안에서 add 를 호출해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-3-code-1",
+    "type": "code",
+    "title": "add 함수로 합 반환하기",
+    "description": "두 수를 더해 반환하는 add 함수를 만들고, 그 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-3",
+    "content": {
+      "starter_code": "# add 함수를 만들고 결과를 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+add\\s*\\(\\s*\\w+\\s*,\\s*\\w+\\s*\\)\\s*:",
+          "message": "def add(a, b): 처럼 두 수를 받는 함수를 만들어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+return\\s+\\S",
+          "message": "return 으로 결과를 돌려줘요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+(?:return\\s+|\\w+\\s*=\\s*)\\w+\\s*\\+\\s*\\w+\\s*$",
+          "message": "함수 안에서 두 수를 + 로 더해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "print\\s*\\(\\s*add\\s*\\(|(\\w+)\\s*=\\s*add\\s*\\([\\s\\S]*print\\s*\\(\\s*\\1\\s*\\)",
+          "message": "add(...) 의 결과를 print() 로 출력해요"
+        }
+      ],
+      "solution": "def add(a, b):\n    return a + b\n\nprint(add(2, 3))"
+    }
+  },
+  {
+    "id": "py-9-4-mcq-1",
+    "type": "mcq",
+    "title": "시그마 함수 복습 개념 확인",
+    "description": "1부터 n까지 더하는 sigma 함수에서 return total 은 어디에 써야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "choices": [
+        "반복문 안에서 total += i 바로 다음에",
+        "함수를 선언하기 전에",
+        "반복문이 모두 끝난 뒤, 반복문 밖에",
+        "total = 0 바로 앞에"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-9-4-mcq-2",
+    "type": "mcq",
+    "title": "시그마 함수 복습 올바른 코드 고르기",
+    "description": "1부터 n까지의 합을 올바르게 돌려주는 sigma 함수는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "choices": [
+        "def sigma(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total",
+        "def sigma(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total",
+        "def sigma(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n        return total",
+        "def sigma(n):\n    for i in range(1, n + 1):\n        total = 0\n        total += i\n    return total"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-9-4-mcq-3",
+    "type": "mcq",
+    "title": "시그마 함수 복습 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef sigma(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total\n\nprint(sigma(4))",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "choices": [
+        "4",
+        "6",
+        "15",
+        "10"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-9-4-parsons-1",
+    "type": "parsons",
+    "title": "시그마 함수 복습 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 1부터 5까지의 합 15 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "fragments": [
+        "print(sigma(5))",
+        "    for i in range(1, n + 1):\n        total += i",
+        "def sigma(n):\n    total = 0",
+        "    return total"
+      ],
+      "answer_order": [
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-9-4-parsons-2",
+    "type": "parsons",
+    "title": "시그마 함수 복습 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 sigma(5) 의 결과 15 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "fragments": [
+        "        total += i",
+        "def sigma(n):",
+        "print(sigma(5))",
+        "    total = 0",
+        "    for i in range(1, n + 1):",
+        "    return total"
+      ],
+      "answer_order": [
+        1,
+        3,
+        4,
+        0,
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-9-4-parsons-3",
+    "type": "parsons",
+    "title": "시그마 함수 복습 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 1부터 10까지의 합을 \"합계: 55\" 로 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "fragments": [
+        "    for i in range(1, n + 1):",
+        "    total = 0",
+        "result = sigma(10)",
+        "        total += i",
+        "def sigma(n):",
+        "print(\"합계:\", result)",
+        "    return total"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        3,
+        6,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "id": "py-9-4-blank-1",
+    "type": "blank",
+    "title": "sigma 함수 선언 빈칸",
+    "description": "n 을 받는 sigma 함수를 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "template": "{{1}}n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total\n\nprint(sigma(5))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def sigma("
+          ],
+          "hint": "함수를 만드는 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-4-blank-2",
+    "type": "blank",
+    "title": "sigma 반복문 빈칸",
+    "description": "1부터 n까지 반복하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "template": "def sigma(n):\n    total = 0\n    {{1}} i in range(1, n + 1):\n        total += i\n    return total\n\nprint(sigma(5))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "정해진 범위를 반복하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-4-blank-3",
+    "type": "blank",
+    "title": "sigma 합 반환 빈칸",
+    "description": "반복이 끝난 뒤 누적한 합을 돌려주도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "template": "def sigma(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    {{1}}\n\nprint(sigma(5))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "return total"
+          ],
+          "hint": "return 과 누적한 변수 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-4-code-1",
+    "type": "code",
+    "title": "sigma 함수로 1부터 n까지 합 구하기",
+    "description": "1부터 n까지의 합을 반환하는 sigma 함수를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-4",
+    "content": {
+      "starter_code": "# sigma 함수를 만드세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+sigma\\s*\\(\\s*\\w+\\s*\\)\\s*:",
+          "message": "def sigma(n): 으로 함수를 만들어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+(?:for\\s+\\w+\\s+in\\s+range\\s*\\([^\\n]*\\w+\\s*\\+\\s*1\\s*\\)|while\\s+\\w+\\s*<=\\s*\\w+)\\s*:",
+          "message": "for i in range(1, n + 1): 처럼 n 까지 포함해 반복해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+\\w+\\s*(?:\\+=\\s*\\w+|=\\s*\\w+\\s*\\+\\s*\\w+)\\s*$",
+          "message": "total += i 처럼 값을 누적해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+return\\s+\\w+\\s*$",
+          "message": "return 으로 합을 돌려줘요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*\\n([ \\t]+)[^ \\t\\n][^\\n]*(?:\\+=|=[^\\n]*\\+)[^\\n]*\\n\\1return\\b)",
+          "message": "return 은 반복문이 끝난 뒤(반복문 밖)에 써요"
+        }
+      ],
+      "solution": "def sigma(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total\n\nprint(sigma(5))"
+    }
+  },
+  {
+    "id": "py-9-5-mcq-1",
+    "type": "mcq",
+    "title": "유효성 검사 함수 복습 개념 확인",
+    "description": "is_valid(5) 가 True 또는 False 를 돌려줄 때, 이 결과를 조건문에 쓰는 방법으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "choices": [
+        "if is_valid(5) == \"True\":",
+        "if is_valid(5):",
+        "if is_valid:",
+        "if (is_valid 5):"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-9-5-mcq-2",
+    "type": "mcq",
+    "title": "유효성 검사 함수 복습 올바른 코드 고르기",
+    "description": "숫자 n 이 1~10 사이이면 True 를 돌려주는 is_valid 함수를 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "choices": [
+        "def is_valid(n):\n    return \"n >= 1 and n <= 10\"",
+        "def is_valid(n):\n    return n >= 1 or n <= 10",
+        "def is_valid(n)\n    return n >= 1 and n <= 10",
+        "def is_valid(n):\n    return n >= 1 and n <= 10"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-9-5-mcq-3",
+    "type": "mcq",
+    "title": "유효성 검사 함수 복습 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef is_valid(n):\n    return n >= 1 and n <= 10\n\nif is_valid(15):\n    print(\"OK\")\nelse:\n    print(\"Error\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "choices": [
+        "Error",
+        "OK",
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-9-5-parsons-1",
+    "type": "parsons",
+    "title": "유효성 검사 함수 복습 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 is_valid(5) 의 결과 True 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "fragments": [
+        "print(is_valid(5))",
+        "def is_valid(n):",
+        "    return n >= 1 and n <= 10"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-9-5-parsons-2",
+    "type": "parsons",
+    "title": "유효성 검사 함수 복습 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 is_valid(5) 가 True 일 때 OK 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "fragments": [
+        "def is_valid(n):",
+        "if is_valid(5):",
+        "    return n >= 1 and n <= 10",
+        "    print(\"OK\")"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-9-5-parsons-3",
+    "type": "parsons",
+    "title": "유효성 검사 함수 복습 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 15 는 범위를 벗어났으므로 Error 가 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "fragments": [
+        "if is_valid(15):",
+        "else:",
+        "    return n >= 1 and n <= 10",
+        "    print(\"OK\")",
+        "def is_valid(n):",
+        "    print(\"Error\")"
+      ],
+      "answer_order": [
+        4,
+        2,
+        0,
+        3,
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "id": "py-9-5-blank-1",
+    "type": "blank",
+    "title": "is_valid 함수 선언 빈칸",
+    "description": "숫자 n 을 받는 is_valid 함수를 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "template": "{{1}}n):\n    return n >= 1 and n <= 10\n\nprint(is_valid(5))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def is_valid("
+          ],
+          "hint": "함수를 만드는 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-5-blank-2",
+    "type": "blank",
+    "title": "검사 결과 반환 빈칸",
+    "description": "검사 결과(True 또는 False)를 돌려주도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "template": "def is_valid(n):\n    {{1}} n >= 1 and n <= 10\n\nprint(is_valid(5))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "return"
+          ],
+          "hint": "결과를 돌려주는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-5-short-3",
+    "type": "short",
+    "title": "검사 함수와 쓰는 조건문 키워드",
+    "description": "함수가 돌려준 True/False 를 바로 조건으로 쓰려면 빈칸에 어떤 키워드를 써야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "code": "def is_valid(n):\n    return n >= 1 and n <= 10\n\n___ is_valid(5):\n    print(\"OK\")",
+      "answer": [
+        "if"
+      ]
+    }
+  },
+  {
+    "id": "py-9-5-code-1",
+    "type": "code",
+    "title": "is_valid 함수로 범위 검사하기",
+    "description": "숫자가 1~10 사이이면 True 를 반환하는 is_valid 함수를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-5",
+    "content": {
+      "starter_code": "# is_valid 함수를 만드세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+is_valid\\s*\\(\\s*\\w+\\s*\\)\\s*:",
+          "message": "def is_valid(n): 으로 함수를 만들어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+return\\s+(?:True\\b|[^\\n]*[<>])",
+          "message": "return 으로 True(또는 비교한 결과)를 돌려줘요",
+          "flags": "m"
+        },
+        {
+          "pattern": ">=\\s*1\\b|\\b1\\s*<=|>\\s*0\\b|\\b0\\s*<(?!=)",
+          "message": "1 이상인지 확인해요 (예: n >= 1)"
+        },
+        {
+          "pattern": "<=\\s*10\\b|\\b10\\s*>=|<\\s*11\\b|\\b11\\s*>(?!=)",
+          "message": "10 이하인지 확인해요 (예: n <= 10)"
+        },
+        {
+          "pattern": "\\band\\b|\\d\\s*<=?\\s*\\w+\\s*<=?\\s*\\d",
+          "message": "1 이상이면서 10 이하인지 and 로 함께 확인해요"
+        }
+      ],
+      "solution": "def is_valid(n):\n    return n >= 1 and n <= 10\n\nprint(is_valid(5))"
+    }
+  },
+  {
+    "id": "py-9-6-mcq-1",
+    "type": "mcq",
+    "title": "기본값 개념 확인",
+    "description": "def greet(name=\"friend\"): 로 만든 함수를 greet() 처럼 인수 없이 호출하면 name 에는 어떤 값이 들어갈까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "choices": [
+        "빈 문자열 \"\"",
+        "숫자 0",
+        "\"friend\"",
+        "아무 값도 없어서 오류가 난다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-9-6-mcq-2",
+    "type": "mcq",
+    "title": "기본값 올바른 코드 고르기",
+    "description": "매개변수 name 의 기본값을 \"friend\" 로 올바르게 정한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "choices": [
+        "def greet(name == \"friend\"):\n    print(\"Hello,\", name)",
+        "def greet(\"friend\" = name):\n    print(\"Hello,\", name)",
+        "def greet(name) = \"friend\":\n    print(\"Hello,\", name)",
+        "def greet(name=\"friend\"):\n    print(\"Hello,\", name)"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-9-6-mcq-3",
+    "type": "mcq",
+    "title": "기본값 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef greet(name=\"friend\"):\n    print(\"Hello,\", name)\n\ngreet()\ngreet(\"Mina\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "choices": [
+        "Hello, name\nHello, Mina",
+        "Hello, friend\nHello, Mina",
+        "Hello, Mina\nHello, Mina",
+        "Hello, friend\nHello, friend"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-9-6-parsons-1",
+    "type": "parsons",
+    "title": "기본값 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 기본값을 사용해 Hello, friend 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "fragments": [
+        "greet()",
+        "def greet(name=\"friend\"):",
+        "    print(\"Hello,\", name)"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-9-6-parsons-2",
+    "type": "parsons",
+    "title": "기본값 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Hello, friend 다음에 Hello, Mina 가 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "fragments": [
+        "def greet(name=\"friend\"):",
+        "greet(\"Mina\")",
+        "greet()",
+        "    print(\"Hello,\", name)"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-9-6-parsons-3",
+    "type": "parsons",
+    "title": "기본값 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Hello, friend 가 한 번, Hello, Mina 가 두 번 출력된 뒤 End 가 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "fragments": [
+        "print(\"End\")",
+        "greet(\"Mina\", 2)",
+        "    for i in range(times):",
+        "greet()",
+        "def greet(name=\"friend\", times=1):",
+        "        print(\"Hello,\", name)"
+      ],
+      "answer_order": [
+        4,
+        2,
+        5,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-9-6-blank-1",
+    "type": "blank",
+    "title": "name 기본값 빈칸",
+    "description": "name 의 기본값이 \"friend\" 가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "template": "{{1}}\"friend\"):\n    print(\"Hello,\", name)\n\ngreet()",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def greet(name="
+          ],
+          "hint": "매개변수 이름 뒤에 = 를 붙여 기본값을 정해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-6-blank-2",
+    "type": "blank",
+    "title": "기본값 인사 출력 빈칸",
+    "description": "함수 안에서 인사말을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "template": "def greet(name=\"friend\"):\n    {{1}}\"Hello,\", name)\n\ngreet()",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-9-6-short-3",
+    "type": "short",
+    "title": "기본값을 정하는 기호 쓰기",
+    "description": "매개변수에 기본값을 정할 때 매개변수 이름과 값 사이에 쓰는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "code": "def greet(name ___ \"friend\"):\n    print(\"Hello,\", name)\n\ngreet()",
+      "answer": [
+        "="
+      ]
+    }
+  },
+  {
+    "id": "py-9-6-code-1",
+    "type": "code",
+    "title": "기본값이 있는 greet 함수 만들기",
+    "description": "name 의 기본값이 \"friend\" 인 greet 함수를 만들고, 함수 안에서 name 을 넣어 인사말을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-9-6",
+    "content": {
+      "starter_code": "# greet 함수를 만드세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+greet\\s*\\(\\s*name\\s*=\\s*([\"'])\\1\\s*\\)\\s*:",
+          "message": "def greet(name=\"...\"): 처럼 매개변수에 기본값을 붙여요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^def\\s+greet\\s*\\(\\s*name\\s*=\\s*([\"'])friend\\1\\s*\\)",
+          "message": "기본값은 \"friend\" 로 정해요",
+          "flags": "m",
+          "in": "source"
+        },
+        {
+          "pattern": "^[ \\t]+print\\s*\\((?:[^\"'\\n]*\\bname\\b|[^\\n]*[\"']\\s*[,+]\\s*name\\b|\\s*f([\"'])[^\\n]*\\{\\s*name\\s*\\})",
+          "message": "함수 안에서 print() 로 name 을 출력해요",
+          "flags": "m",
+          "in": "source"
+        }
+      ],
+      "solution": "def greet(name=\"friend\"):\n    print(\"Hello,\", name)\n\ngreet()\ngreet(\"Mina\")"
+    }
+  },
+  {
+    "id": "py-10-1-mcq-1",
+    "type": "mcq",
+    "title": "게임 개요 개념 확인",
+    "description": "FizzBuzz 게임에서 15 를 말할 차례라면 무엇이라고 말해야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "choices": [
+        "Fizz",
+        "Buzz",
+        "FizzBuzz",
+        "15"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-10-1-mcq-2",
+    "type": "mcq",
+    "title": "게임 개요 올바른 코드 고르기",
+    "description": "FizzBuzz 규칙을 화면에 올바르게 출력하는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "choices": [
+        "print(\"3의 배수는 Fizz, 5의 배수는 Buzz\")",
+        "print(3의 배수는 Fizz, 5의 배수는 Buzz)",
+        "print(\"3의 배수는 Fizz, 5의 배수는 Buzz)",
+        "print[\"3의 배수는 Fizz, 5의 배수는 Buzz\"]"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-10-1-mcq-3",
+    "type": "mcq",
+    "title": "게임 개요 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nprint(\"Fizz\" + \"Buzz\")",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "choices": [
+        "FizzBuzz",
+        "Fizz Buzz",
+        "Fizz+Buzz",
+        "\"Fizz\" + \"Buzz\""
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-10-1-parsons-1",
+    "type": "parsons",
+    "title": "게임 개요 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 FizzBuzz 규칙을 한 줄로 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "fragments": [
+        ")",
+        "print(",
+        "\"3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다면 FizzBuzz\""
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-10-1-parsons-2",
+    "type": "parsons",
+    "title": "게임 개요 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 3의 배수는 Fizz 5의 배수는 Buzz 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "fragments": [
+        "\"3의 배수는 Fizz\"",
+        "print(",
+        ")",
+        ", \"5의 배수는 Buzz\""
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-10-1-parsons-3",
+    "type": "parsons",
+    "title": "게임 개요 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 3은 Fizz 5는 Buzz 15는 FizzBuzz 를 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "fragments": [
+        ", \"15는 FizzBuzz\"",
+        ", \"5는 Buzz\"",
+        "\"3은 Fizz\"",
+        "print(",
+        ")"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-10-1-blank-1",
+    "type": "blank",
+    "title": "FizzBuzz 규칙 출력 빈칸",
+    "description": "FizzBuzz 규칙을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "template": "{{1}}\"3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다면 FizzBuzz\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-1-blank-2",
+    "type": "blank",
+    "title": "3의 배수 단어 빈칸",
+    "description": "3의 배수일 때 말하는 단어로 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "template": "print(\"3의 배수는 {{1}}, 5의 배수는 Buzz, 둘 다면 FizzBuzz\")",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Fizz"
+          ],
+          "hint": "3의 배수일 때 말하는 단어 (F 로 시작)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-1-short-3",
+    "type": "short",
+    "title": "Fizz 와 Buzz 를 잇는 기호 쓰기",
+    "description": "두 문자열을 이어 붙여 FizzBuzz 를 출력하려면 빈칸에 어떤 기호를 써야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "code": "print(\"Fizz\" ___ \"Buzz\")",
+      "answer": [
+        "+"
+      ]
+    }
+  },
+  {
+    "id": "py-10-1-code-1",
+    "type": "code",
+    "title": "FizzBuzz 규칙 한 줄로 출력하기",
+    "description": "print() 한 줄로 FizzBuzz 규칙(3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다면 FizzBuzz)을 설명하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-1",
+    "content": {
+      "starter_code": "# FizzBuzz 규칙을 print() 한 줄로 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^print\\s*\\(\\s*f?[\"']",
+          "message": "print(\"...\") 로 문자열을 출력해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^print\\s*\\((?=[^\\n]*(?:3[^\\n]*Fizz|Fizz[^\\n]*3))(?=[^\\n]*(?:5[^\\n]*Buzz|Buzz[^\\n]*5))(?=[^\\n]*FizzBuzz)",
+          "message": "한 줄에 3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다면 FizzBuzz 규칙을 모두 넣어요",
+          "flags": "m",
+          "in": "source"
+        }
+      ],
+      "solution": "print(\"3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다면 FizzBuzz\")"
+    }
+  },
+  {
+    "id": "py-10-2-mcq-1",
+    "type": "mcq",
+    "title": "FizzBuzz 함수 개념 확인",
+    "description": "fizzbuzz 함수에서 15의 배수(n % 15 == 0)를 가장 먼저 검사하는 까닭은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "choices": [
+        "15 가 가장 큰 숫자라서 계산이 빨라지기 때문",
+        "파이썬은 조건을 큰 숫자부터 검사해야만 실행되기 때문",
+        "15의 배수는 3의 배수이기도 해서, 3을 먼저 검사하면 FizzBuzz 대신 Fizz 가 나오기 때문",
+        "15의 배수는 Buzz 를 반환해야 하기 때문"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-10-2-mcq-2",
+    "type": "mcq",
+    "title": "FizzBuzz 함수 올바른 코드 고르기",
+    "description": "규칙에 맞는 값을 올바르게 돌려주는 fizzbuzz 함수는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "choices": [
+        "def fizzbuzz(n):\n    if n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    elif n % 15 == 0:\n        return \"FizzBuzz\"\n    return n",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n",
+        "def fizzbuzz(n):\n    if n / 15 == 0:\n        return \"FizzBuzz\"\n    elif n / 3 == 0:\n        return \"Fizz\"\n    elif n / 5 == 0:\n        return \"Buzz\"\n    return n",
+        "def fizzbuzz(n):\n    if n % 15 = 0:\n        return \"FizzBuzz\"\n    elif n % 3 = 0:\n        return \"Fizz\"\n    elif n % 5 = 0:\n        return \"Buzz\"\n    return n"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-10-2-mcq-3",
+    "type": "mcq",
+    "title": "FizzBuzz 함수 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nprint(fizzbuzz(10), fizzbuzz(30))",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "choices": [
+        "Buzz Fizz",
+        "10 30",
+        "Fizz FizzBuzz",
+        "Buzz FizzBuzz"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-10-2-parsons-1",
+    "type": "parsons",
+    "title": "FizzBuzz 함수 순서 맞추기 1",
+    "description": "조각을 15 → 3 → 5 순서로 검사하도록 놓아 fizzbuzz(15) 의 결과 FizzBuzz 를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "fragments": [
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"",
+        "    elif n % 5 == 0:\n        return \"Buzz\"\n    return n",
+        "    elif n % 3 == 0:\n        return \"Fizz\"",
+        "print(fizzbuzz(15))"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-10-2-parsons-2",
+    "type": "parsons",
+    "title": "FizzBuzz 함수 순서 맞추기 2",
+    "description": "조각을 15 → 3 → 5 순서로 검사하도록 놓아 fizzbuzz(9) 의 결과 Fizz 를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "fragments": [
+        "    return n",
+        "    if n % 15 == 0:\n        return \"FizzBuzz\"",
+        "    elif n % 3 == 0:\n        return \"Fizz\"",
+        "print(fizzbuzz(9))",
+        "def fizzbuzz(n):",
+        "    elif n % 5 == 0:\n        return \"Buzz\""
+      ],
+      "answer_order": [
+        4,
+        1,
+        2,
+        5,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-10-2-parsons-3",
+    "type": "parsons",
+    "title": "FizzBuzz 함수 순서 맞추기 3",
+    "description": "조각을 15 → 3 → 5 순서로 검사하도록 놓아 Fizz, Buzz 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "fragments": [
+        "        return \"Fizz\"",
+        "    return n",
+        "def fizzbuzz(n):",
+        "        return \"FizzBuzz\"",
+        "print(fizzbuzz(10))",
+        "    elif n % 3 == 0:",
+        "    if n % 15 == 0:",
+        "    elif n % 5 == 0:",
+        "        return \"Buzz\"",
+        "print(fizzbuzz(9))"
+      ],
+      "answer_order": [
+        2,
+        6,
+        3,
+        5,
+        0,
+        7,
+        8,
+        1,
+        9,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-10-2-blank-1",
+    "type": "blank",
+    "title": "fizzbuzz 함수 선언 빈칸",
+    "description": "n 을 받는 fizzbuzz 함수를 선언하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "template": "{{1}}n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nprint(fizzbuzz(15))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "def fizzbuzz("
+          ],
+          "hint": "함수를 만드는 키워드, 함수 이름, 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-2-blank-2",
+    "type": "blank",
+    "title": "15의 배수 검사 빈칸",
+    "description": "15의 배수를 가장 먼저 검사하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n {{1}} == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nprint(fizzbuzz(30))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "% 15",
+            "%15"
+          ],
+          "hint": "15로 나눈 나머지를 구해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-2-blank-3",
+    "type": "blank",
+    "title": "3의 배수 검사 빈칸",
+    "description": "3의 배수이면 Fizz 를 돌려주도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n {{1}} == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nprint(fizzbuzz(9))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "% 3",
+            "%3"
+          ],
+          "hint": "3으로 나눈 나머지를 구해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-2-code-1",
+    "type": "code",
+    "title": "fizzbuzz 함수 만들기",
+    "description": "n 을 받아 15의 배수는 \"FizzBuzz\", 3의 배수는 \"Fizz\", 5의 배수는 \"Buzz\", 나머지는 n 을 반환하는 fizzbuzz 함수를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-2",
+    "content": {
+      "starter_code": "# fizzbuzz 함수를 만드세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+fizzbuzz\\s*\\(\\s*\\w+\\s*\\)\\s*:",
+          "message": "def fizzbuzz(n): 으로 함수를 만들어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^(?:(?!([\"'])(?:Fizz|Buzz)\\1)[\\s\\S])*?(?:%\\s*15\\s*==\\s*0|%\\s*3\\s*==\\s*0\\s+and\\s+\\w+\\s*%\\s*5\\s*==\\s*0|%\\s*5\\s*==\\s*0\\s+and\\s+\\w+\\s*%\\s*3\\s*==\\s*0)\\s*\\)?\\s*:\\s*\\n[ \\t]+return\\s+([\"'])FizzBuzz\\2",
+          "message": "15의 배수를 가장 먼저 검사해 \"FizzBuzz\" 를 반환해요",
+          "in": "source"
+        },
+        {
+          "pattern": "%\\s*3\\s*==\\s*0\\s*\\)?\\s*:\\s*\\n[ \\t]+return\\s+([\"'])Fizz\\1",
+          "message": "3의 배수이면 \"Fizz\" 를 반환해요",
+          "in": "source"
+        },
+        {
+          "pattern": "%\\s*5\\s*==\\s*0\\s*\\)?\\s*:\\s*\\n[ \\t]+return\\s+([\"'])Buzz\\1",
+          "message": "5의 배수이면 \"Buzz\" 를 반환해요",
+          "in": "source"
+        },
+        {
+          "pattern": "^[ \\t]+return\\s+(?:str\\s*\\(\\s*\\w+\\s*\\)|\\w+)\\s*$",
+          "message": "나머지 숫자는 return n 으로 그대로 돌려줘요",
+          "flags": "m"
+        }
+      ],
+      "solution": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nprint(fizzbuzz(15))"
+    }
+  },
+  {
+    "id": "py-10-3-mcq-1",
+    "type": "mcq",
+    "title": "숫자 반복하기 개념 확인",
+    "description": "1부터 15까지 각 숫자에 fizzbuzz 함수를 적용하려면 어떻게 해야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "choices": [
+        "for i in range(1, 15): 안에서 fizzbuzz(i) 를 출력한다",
+        "for i in range(1, 16): 안에서 fizzbuzz(i) 를 출력한다",
+        "fizzbuzz(1, 15) 를 한 번만 출력한다",
+        "for i in range(1, 16): 안에서 fizzbuzz(16) 을 출력한다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-10-3-mcq-2",
+    "type": "mcq",
+    "title": "숫자 반복하기 올바른 코드 고르기",
+    "description": "fizzbuzz 함수가 이미 있을 때, 1부터 15까지의 결과를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "choices": [
+        "for i in range(1, 16)\n    print(fizzbuzz(i))",
+        "for i in range(1, 16):\nprint(fizzbuzz(i))",
+        "for i in range(1, 16):\n    print(fizzbuzz)",
+        "for i in range(1, 16):\n    print(fizzbuzz(i))"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-10-3-mcq-3",
+    "type": "mcq",
+    "title": "숫자 반복하기 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nfor i in range(1, 6):\n    print(fizzbuzz(i))",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "choices": [
+        "1\n2\nFizz\n4\nBuzz",
+        "1\n2\n3\n4\n5",
+        "1\n2\nFizz\n4",
+        "Fizz\nBuzz"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-10-3-parsons-1",
+    "type": "parsons",
+    "title": "숫자 반복하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 1부터 15까지의 fizzbuzz 결과를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "fragments": [
+        "    print(fizzbuzz(i))",
+        "for i in range(1, 16):",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-10-3-parsons-2",
+    "type": "parsons",
+    "title": "숫자 반복하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 fizzbuzz(i) 의 결과를 result 에 담아 1부터 15까지 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "fragments": [
+        "for i in range(1, 16):",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n",
+        "    result = fizzbuzz(i)",
+        "    print(result)"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-10-3-parsons-3",
+    "type": "parsons",
+    "title": "숫자 반복하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 1부터 15까지의 fizzbuzz 결과를 출력한 뒤 끝! 을 출력하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "fragments": [
+        "for i in range(1, 16):",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"",
+        "    result = fizzbuzz(i)",
+        "    print(result)",
+        "print(\"끝!\")",
+        "    elif n % 5 == 0:\n        return \"Buzz\"\n    return n"
+      ],
+      "answer_order": [
+        1,
+        5,
+        0,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-10-3-blank-1",
+    "type": "blank",
+    "title": "숫자 반복 키워드 빈칸",
+    "description": "1부터 15까지 반복하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\n{{1}} i in range(1, 16):\n    print(fizzbuzz(i))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for"
+          ],
+          "hint": "정해진 범위를 반복하는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-3-blank-2",
+    "type": "blank",
+    "title": "1부터 15까지 range 빈칸",
+    "description": "i 가 1부터 15까지 바뀌도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nfor i in {{1}}:\n    print(fizzbuzz(i))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "range(1, 16)",
+            "range(1,16)"
+          ],
+          "hint": "끝 숫자 16 은 포함되지 않아요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-3-blank-3",
+    "type": "blank",
+    "title": "반복문 안 함수 호출 빈칸",
+    "description": "각 숫자 i 에 fizzbuzz 함수를 적용하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nfor i in range(1, 16):\n    print({{1}}i))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fizzbuzz("
+          ],
+          "hint": "함수 이름과 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-3-code-1",
+    "type": "code",
+    "title": "1부터 15까지 fizzbuzz 출력하기",
+    "description": "for 와 range 를 사용해 1부터 15까지 fizzbuzz(i) 의 결과를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-3",
+    "content": {
+      "starter_code": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\n# 여기에 1부터 15까지 fizzbuzz(i) 를 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+fizzbuzz\\s*\\(",
+          "message": "fizzbuzz 함수는 지우지 말고 그대로 둬요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^for\\s+\\w+\\s+in\\s+range\\s*\\(\\s*1\\s*,\\s*(?:16|15\\s*\\+\\s*1)\\s*\\)\\s*:",
+          "message": "for i in range(1, 16): 으로 1부터 15까지 반복해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+(?:print\\s*\\(\\s*fizzbuzz\\s*\\(\\s*\\w+\\s*\\)\\s*\\)|\\w+\\s*=\\s*fizzbuzz\\s*\\(\\s*\\w+\\s*\\))",
+          "message": "반복문 안에서 fizzbuzz(i) 를 불러요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^[ \\t]+print\\s*\\(",
+          "message": "반복문 안에서 print() 로 결과를 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nfor i in range(1, 16):\n    print(fizzbuzz(i))"
+    }
+  },
+  {
+    "id": "py-10-4-mcq-1",
+    "type": "mcq",
+    "title": "변형 추가하기 개념 확인",
+    "description": "fizzbuzz 함수에 새 규칙을 추가할 때 지켜야 할 점으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "choices": [
+        "새 규칙은 무조건 맨 위에 넣는다",
+        "새 규칙은 함수 밖에 따로 쓴다",
+        "기존 규칙과 겹치지 않도록 알맞은 순서에 넣는다",
+        "새 규칙을 넣으면 기존 규칙은 모두 지운다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-10-4-mcq-2",
+    "type": "mcq",
+    "title": "변형 추가하기 올바른 코드 고르기",
+    "description": "fizzbuzz 함수의 elif n % 5 == 0: 규칙 뒤에 7의 배수 규칙을 추가할 때, 넣을 코드로 올바른 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "choices": [
+        "elif n % 7 = 0:\n    return \"Bang\"",
+        "elif n % 7 == 0:\n    return Bang",
+        "elif n / 7 == 0:\n    return \"Bang\"",
+        "elif n % 7 == 0:\n    return \"Bang\""
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-10-4-mcq-3",
+    "type": "mcq",
+    "title": "변형 추가하기 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndef fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    elif n % 7 == 0:\n        return \"Bang\"\n    return n\n\nprint(fizzbuzz(14), fizzbuzz(21))",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "choices": [
+        "Bang Bang",
+        "Bang Fizz",
+        "14 21",
+        "Fizz Bang"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-10-4-parsons-1",
+    "type": "parsons",
+    "title": "변형 추가하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 7의 배수 규칙을 추가하고 fizzbuzz(7) 의 결과 Bang 을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "fragments": [
+        "    elif n % 7 == 0:",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"",
+        "    return n\n\nprint(fizzbuzz(7))",
+        "        return \"Bang\""
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-10-4-parsons-2",
+    "type": "parsons",
+    "title": "변형 추가하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 7의 배수 규칙을 기존 규칙 뒤에 추가하고 fizzbuzz(7) 의 결과 Bang 을 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "fragments": [
+        "        return \"Bang\"",
+        "    elif n % 7 == 0:",
+        "    return n",
+        "print(fizzbuzz(7))",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\""
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-10-4-parsons-3",
+    "type": "parsons",
+    "title": "변형 추가하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 7의 배수 규칙을 5의 배수 규칙 뒤에 추가하고, Bang 과 Buzz 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "fragments": [
+        "print(fizzbuzz(35))",
+        "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"",
+        "    elif n % 5 == 0:\n        return \"Buzz\"",
+        "print(fizzbuzz(7))",
+        "        return \"Bang\"",
+        "    elif n % 7 == 0:",
+        "    return n"
+      ],
+      "answer_order": [
+        1,
+        2,
+        5,
+        4,
+        6,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-10-4-blank-1",
+    "type": "blank",
+    "title": "7의 배수 검사 빈칸",
+    "description": "7의 배수를 검사하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    elif n {{1}} == 0:\n        return \"Bang\"\n    return n\n\nprint(fizzbuzz(14))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "% 7",
+            "%7"
+          ],
+          "hint": "7로 나눈 나머지를 구해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-4-blank-2",
+    "type": "blank",
+    "title": "7의 배수 단어 빈칸",
+    "description": "fizzbuzz(14) 가 Bang 을 돌려주도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    elif n % 7 == 0:\n        return \"{{1}}\"\n    return n\n\nprint(fizzbuzz(14))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Bang"
+          ],
+          "hint": "7의 배수에 쓰는 새 단어 (대소문자 주의)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-4-blank-3",
+    "type": "blank",
+    "title": "Bang 반환 키워드 빈칸",
+    "description": "7의 배수이면 \"Bang\" 을 돌려주도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "template": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    elif n % 7 == 0:\n        {{1}} \"Bang\"\n    return n\n\nprint(fizzbuzz(14))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "return"
+          ],
+          "hint": "값을 돌려주는 키워드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-10-4-code-1",
+    "type": "code",
+    "title": "fizzbuzz 에 Bang 규칙 추가하기",
+    "description": "7의 배수에는 \"Bang\" 을 반환하는 규칙을 fizzbuzz 함수의 기존 규칙 뒤(return n 앞)에 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-10-4",
+    "content": {
+      "starter_code": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    return n\n\nprint(fizzbuzz(7))\n",
+      "checks": [
+        {
+          "pattern": "^def\\s+fizzbuzz\\s*\\(",
+          "message": "fizzbuzz 함수 안에 규칙을 추가해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "%\\s*7\\s*==\\s*0\\s*\\)?\\s*:\\s*\\n[ \\t]+return\\s+([\"'])Bang\\1",
+          "message": "7의 배수이면 return \"Bang\" 으로 돌려줘요",
+          "in": "source"
+        },
+        {
+          "pattern": "%\\s*5\\s*==\\s*0[\\s\\S]*%\\s*7\\s*==\\s*0[\\s\\S]*^[ \\t]+return\\s+\\w+\\s*$",
+          "message": "7 규칙은 5의 배수 규칙 뒤, return n 앞에 넣어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "([\"'])FizzBuzz\\1[\\s\\S]*([\"'])Fizz\\2[\\s\\S]*([\"'])Buzz\\3",
+          "message": "기존 FizzBuzz, Fizz, Buzz 규칙은 그대로 둬요",
+          "in": "source"
+        }
+      ],
+      "solution": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    elif n % 7 == 0:\n        return \"Bang\"\n    return n\n\nprint(fizzbuzz(7))"
+    }
+  },
+  {
+    "id": "py-11-1-mcq-1",
+    "type": "mcq",
+    "title": "리스트 선언하기 개념 확인",
+    "description": "파이썬에서 리스트를 만드는 방법으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "choices": [
+        "중괄호 {} 안에 값을 띄어쓰기로 나열한다",
+        "따옴표 \"\" 안에 값을 붙여 쓴다",
+        "대괄호 [] 안에 값을 쉼표(,)로 나열한다",
+        "소괄호 () 안에 값을 마침표(.)로 나열한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-11-1-mcq-2",
+    "type": "mcq",
+    "title": "리스트 선언하기 올바른 코드 고르기",
+    "description": "과일 3개가 담긴 fruits 리스트를 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "choices": [
+        "fruits = [\"apple\", \"banana\", \"cherry\"]",
+        "fruits = [apple, banana, cherry]",
+        "fruits = [\"apple\"; \"banana\"; \"cherry\"]",
+        "fruits = <\"apple\", \"banana\", \"cherry\">"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-11-1-mcq-3",
+    "type": "mcq",
+    "title": "리스트 선언하기 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfruits = [\"apple\", \"banana\"]\nprint(fruits)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "choices": [
+        "['apple', 'banana']",
+        "apple banana",
+        "apple, banana",
+        "fruits"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-11-1-parsons-1",
+    "type": "parsons",
+    "title": "리스트 선언하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 fruits 리스트를 만들고 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "fragments": [
+        "fruits = [",
+        "]",
+        "    \"apple\", \"banana\", \"cherry\"",
+        "print(fruits)"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-11-1-parsons-2",
+    "type": "parsons",
+    "title": "리스트 선언하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 ['apple', 'banana', 'cherry'] 가 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "fragments": [
+        "]",
+        "    \"apple\",",
+        "    \"banana\",",
+        "print(fruits)",
+        "fruits = [",
+        "    \"cherry\""
+      ],
+      "answer_order": [
+        4,
+        1,
+        2,
+        5,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-11-1-parsons-3",
+    "type": "parsons",
+    "title": "리스트 선언하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 ['apple', 'banana', 'cherry'] 다음에 과일 3개 가 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "fragments": [
+        "print(\"과일 3개\")",
+        "    \"apple\",",
+        "fruits = [",
+        "    \"banana\",",
+        "    \"cherry\"",
+        "]",
+        "print(fruits)"
+      ],
+      "answer_order": [
+        2,
+        1,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-11-1-blank-1",
+    "type": "blank",
+    "title": "fruits 리스트 선언 빈칸",
+    "description": "과일 3개가 담긴 fruits 리스트를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "template": "{{1}}\"apple\", \"banana\", \"cherry\"]\nprint(fruits)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fruits = [",
+            "fruits=["
+          ],
+          "hint": "리스트 이름, 대입 기호, 여는 대괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-1-blank-2",
+    "type": "blank",
+    "title": "fruits 리스트 출력 빈칸",
+    "description": "만든 fruits 리스트를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\", \"cherry\"]\n{{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print(fruits)",
+            "print( fruits )"
+          ],
+          "hint": "print() 안에 리스트 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-1-short-3",
+    "type": "short",
+    "title": "리스트 값 구분 기호 쓰기",
+    "description": "리스트 안에서 값과 값 사이를 구분할 때 쓰는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "code": "fruits = [\"apple\" ___ \"banana\" ___ \"cherry\"]",
+      "answer": [
+        ","
+      ]
+    }
+  },
+  {
+    "id": "py-11-1-code-1",
+    "type": "code",
+    "title": "fruits 리스트 만들고 출력하기",
+    "description": "과일 3개가 담긴 fruits 리스트를 만들고 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-1",
+    "content": {
+      "starter_code": "# fruits 리스트를 만들고 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^fruits\\s*=\\s*\\[\\s*([\"'])\\1\\s*,\\s*([\"'])\\2\\s*,\\s*([\"'])\\3\\s*,?\\s*\\]",
+          "message": "fruits = [\"...\", \"...\", \"...\"] 처럼 과일 3개를 쉼표로 나열해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^fruits\\s*=\\s*\\[\\s*([\"'])[^\"'\\n]+\\1\\s*,\\s*([\"'])[^\"'\\n]+\\2\\s*,\\s*([\"'])[^\"'\\n]+\\3\\s*,?\\s*\\]",
+          "message": "과일 이름을 비워 두지 말고 써요",
+          "flags": "m",
+          "in": "source"
+        },
+        {
+          "pattern": "^fruits\\s*=[\\s\\S]*^print\\s*\\(\\s*fruits\\s*\\)",
+          "message": "리스트를 만든 뒤 print(fruits) 로 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits)"
+    }
+  },
+  {
+    "id": "py-11-2-mcq-1",
+    "type": "mcq",
+    "title": "리스트 요소에 접근하기 개념 확인",
+    "description": "리스트 인덱스에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "choices": [
+        "첫 번째 요소의 인덱스는 1 이고, -1 은 마지막 요소를 뜻한다",
+        "첫 번째 요소의 인덱스는 0 이고, -1 은 첫 번째 요소를 뜻한다",
+        "첫 번째 요소의 인덱스는 0 이고, -1 은 마지막 요소를 뜻한다",
+        "인덱스에는 음수를 쓸 수 없다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-11-2-mcq-2",
+    "type": "mcq",
+    "title": "리스트 요소에 접근하기 올바른 코드 고르기",
+    "description": "fruits = [\"apple\", \"banana\", \"cherry\"] 에서 두 번째 요소 banana 를 올바르게 출력하는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "choices": [
+        "print(fruits[2])",
+        "print(fruits[1])",
+        "print(fruits(1))",
+        "print(fruits.1)"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-11-2-mcq-3",
+    "type": "mcq",
+    "title": "리스트 요소에 접근하기 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[0], fruits[-1])",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "choices": [
+        "banana cherry",
+        "apple banana",
+        "cherry apple",
+        "apple cherry"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-11-2-parsons-1",
+    "type": "parsons",
+    "title": "리스트 요소에 접근하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 apple 다음에 cherry 가 출력되게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "fragments": [
+        "print(fruits[-1])",
+        "print(fruits[0])",
+        "fruits = [\"apple\", \"banana\", \"cherry\"]"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-11-2-parsons-2",
+    "type": "parsons",
+    "title": "리스트 요소에 접근하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 apple, banana, cherry 가 차례로 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "fragments": [
+        "print(fruits[0])",
+        "fruits = [\"apple\", \"banana\", \"cherry\"]",
+        "print(fruits[1])",
+        "print(fruits[-1])"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-11-2-parsons-3",
+    "type": "parsons",
+    "title": "리스트 요소에 접근하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 apple, banana, cherry 순서의 리스트를 만들고 apple 다음에 cherry 가 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "fragments": [
+        "    \"banana\",",
+        "fruits = [",
+        "    \"cherry\"",
+        "]",
+        "print(fruits[-1])",
+        "print(fruits[0])",
+        "    \"apple\","
+      ],
+      "answer_order": [
+        1,
+        6,
+        0,
+        2,
+        3,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-11-2-blank-1",
+    "type": "blank",
+    "title": "첫 번째 요소 접근 빈칸",
+    "description": "fruits 의 첫 번째 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint({{1}})",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fruits[0]"
+          ],
+          "hint": "첫 번째 요소의 인덱스는 0"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-2-blank-2",
+    "type": "blank",
+    "title": "마지막 요소 접근 빈칸",
+    "description": "fruits 의 마지막 요소를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint({{1}})",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fruits[-1]",
+            "fruits[2]"
+          ],
+          "hint": "마지막 요소는 음수 인덱스 -1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-2-short-3",
+    "type": "short",
+    "title": "두 번째 요소의 인덱스 쓰기",
+    "description": "fruits 에서 두 번째 요소 banana 를 꺼내려면 대괄호 안에 어떤 인덱스 숫자를 써야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[___])",
+      "answer": [
+        "1",
+        "-2"
+      ]
+    }
+  },
+  {
+    "id": "py-11-2-code-1",
+    "type": "code",
+    "title": "첫 번째와 마지막 과일 출력하기",
+    "description": "인덱스 0 과 -1 을 사용해 fruits 의 첫 번째와 마지막 요소를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-2",
+    "content": {
+      "starter_code": "fruits = [\"apple\", \"banana\", \"cherry\"]\n# 첫 번째와 마지막 요소를 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^fruits\\s*=\\s*\\[",
+          "message": "fruits 리스트는 지우지 말고 그대로 둬요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^print\\s*\\([^\\n]*\\bfruits\\s*\\[\\s*0\\s*\\]",
+          "message": "print(fruits[0]) 으로 첫 번째 요소를 출력해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^print\\s*\\([^\\n]*\\bfruits\\s*\\[\\s*-\\s*1\\s*\\]",
+          "message": "print(fruits[-1]) 로 마지막 요소를 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[0])\nprint(fruits[-1])"
+    }
+  },
+  {
+    "id": "py-11-3-mcq-1",
+    "type": "mcq",
+    "title": "리스트 수정하기 개념 확인",
+    "description": "fruits[1] = \"grape\" 는 어떤 일을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "choices": [
+        "첫 번째 요소를 \"grape\" 로 바꾼다",
+        "두 번째 요소를 \"grape\" 로 바꾼다",
+        "리스트 끝에 \"grape\" 를 추가한다",
+        "\"grape\" 가 몇 번째에 있는지 찾는다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-11-3-mcq-2",
+    "type": "mcq",
+    "title": "리스트 수정하기 올바른 코드 고르기",
+    "description": "fruits 의 첫 번째 요소를 \"kiwi\" 로 올바르게 바꾸는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "choices": [
+        "fruits[1] = \"kiwi\"",
+        "fruits(0) = \"kiwi\"",
+        "\"kiwi\" = fruits[0]",
+        "fruits[0] = \"kiwi\""
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-11-3-mcq-3",
+    "type": "mcq",
+    "title": "리스트 수정하기 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfruits = [\"apple\", \"banana\", \"cherry\"]\nfruits[1] = \"grape\"\nprint(fruits)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "choices": [
+        "['apple', 'grape', 'cherry']",
+        "['grape', 'banana', 'cherry']",
+        "['apple', 'banana', 'cherry']",
+        "['apple', 'banana', 'cherry', 'grape']"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-11-3-parsons-1",
+    "type": "parsons",
+    "title": "리스트 수정하기 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 banana 를 grape 로 바꾼 리스트를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "fragments": [
+        "print(fruits)",
+        "fruits = [\"apple\", \"banana\", \"cherry\"]",
+        "fruits[1] = \"grape\""
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-11-3-parsons-2",
+    "type": "parsons",
+    "title": "리스트 수정하기 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 바꾸기 전의 banana 를 먼저 출력하고, 바꾼 뒤의 리스트를 출력하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "fragments": [
+        "print(fruits[1])",
+        "print(fruits)",
+        "fruits[1] = \"grape\"",
+        "fruits = [\"apple\", \"banana\", \"cherry\"]"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-11-3-parsons-3",
+    "type": "parsons",
+    "title": "리스트 수정하기 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 banana 를 먼저 출력한 뒤 ['apple', 'grape', 'cherry'] 가 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "fragments": [
+        "    \"apple\",",
+        "fruits[1] = \"grape\"",
+        "fruits = [",
+        "print(fruits)",
+        "    \"banana\",",
+        "print(fruits[1])",
+        "    \"cherry\"",
+        "]"
+      ],
+      "answer_order": [
+        2,
+        0,
+        4,
+        6,
+        7,
+        5,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-11-3-blank-1",
+    "type": "blank",
+    "title": "두 번째 요소 바꾸기 빈칸",
+    "description": "fruits 의 두 번째 요소를 \"grape\" 로 바꾸도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\", \"cherry\"]\n{{1}} \"grape\"\nprint(fruits)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "fruits[1] =",
+            "fruits[1]="
+          ],
+          "hint": "바꿀 위치의 인덱스와 대입 기호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-3-blank-2",
+    "type": "blank",
+    "title": "바꾼 리스트 출력 빈칸",
+    "description": "바꾼 리스트를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits[1] = \"grape\"\n{{1}}fruits)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-3-short-3",
+    "type": "short",
+    "title": "바꿀 요소의 인덱스 쓰기",
+    "description": "fruits 의 마지막 요소 cherry 를 melon 으로 바꾸려면 대괄호 안에 어떤 인덱스를 써야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits[___] = \"melon\"",
+      "answer": [
+        "2",
+        "-1"
+      ]
+    }
+  },
+  {
+    "id": "py-11-3-code-1",
+    "type": "code",
+    "title": "fruits[1] 을 grape 로 바꾸기",
+    "description": "fruits[1] 을 \"grape\" 로 바꾸고 리스트 전체를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-3",
+    "content": {
+      "starter_code": "fruits = [\"apple\", \"banana\", \"cherry\"]\n# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "^fruits\\s*=\\s*\\[",
+          "message": "fruits 리스트는 그대로 둬요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^fruits\\s*\\[\\s*1\\s*\\]\\s*=\\s*[\"']",
+          "message": "fruits[1] = 으로 두 번째 요소에 새 값을 넣어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^fruits\\s*\\[\\s*1\\s*\\]\\s*=\\s*([\"'])grape\\1",
+          "message": "새 값은 \"grape\" 로 써요",
+          "flags": "m",
+          "in": "source"
+        },
+        {
+          "pattern": "^fruits\\s*\\[\\s*1\\s*\\]\\s*=[\\s\\S]*^print\\s*\\(\\s*fruits\\s*\\)",
+          "message": "바꾼 뒤에 print(fruits) 로 리스트를 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits[1] = \"grape\"\nprint(fruits)"
+    }
+  },
+  {
+    "id": "py-11-4-mcq-1",
+    "type": "mcq",
+    "title": "리스트 메서드 개념 확인",
+    "description": "append() 와 len() 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "choices": [
+        "append() 는 리스트 맨 앞에 요소를 추가하고, len() 은 마지막 요소를 알려 준다",
+        "append() 는 요소를 지우고, len() 은 요소 개수를 알려 준다",
+        "append() 는 리스트 끝에 요소를 추가하고, len() 은 요소 개수를 알려 준다",
+        "append() 는 리스트를 출력하고, len() 은 리스트를 뒤집는다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-11-4-mcq-2",
+    "type": "mcq",
+    "title": "리스트 메서드 올바른 코드 고르기",
+    "description": "fruits 리스트 끝에 \"kiwi\" 를 올바르게 추가하는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "choices": [
+        "fruits.append = \"kiwi\"",
+        "append(fruits, \"kiwi\")",
+        "fruits + append(\"kiwi\")",
+        "fruits.append(\"kiwi\")"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-11-4-mcq-3",
+    "type": "mcq",
+    "title": "리스트 메서드 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfruits = [\"apple\", \"banana\"]\nfruits.append(\"kiwi\")\nprint(len(fruits))",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "kiwi"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-11-4-parsons-1",
+    "type": "parsons",
+    "title": "리스트 메서드 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 kiwi 를 추가한 뒤 요소 개수 3 을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "fragments": [
+        "print(len(fruits))",
+        "fruits = [\"apple\", \"banana\"]",
+        "fruits.append(\"kiwi\")"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-11-4-parsons-2",
+    "type": "parsons",
+    "title": "리스트 메서드 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 3 다음에 ['apple', 'banana', 'kiwi'] 가 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "fragments": [
+        "print(len(fruits))",
+        "print(fruits)",
+        "fruits.append(\"kiwi\")",
+        "fruits = [\"apple\", \"banana\"]"
+      ],
+      "answer_order": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-11-4-parsons-3",
+    "type": "parsons",
+    "title": "리스트 메서드 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 2, ['apple', 'banana', 'kiwi', 'melon'], 개수: 4 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "fragments": [
+        "print(len(fruits))",
+        "print(fruits)",
+        "fruits.append(\"melon\")",
+        "fruits.append(\"kiwi\")",
+        "print(\"개수:\", len(fruits))",
+        "fruits = [\"apple\", \"banana\"]"
+      ],
+      "answer_order": [
+        5,
+        0,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "py-11-4-blank-1",
+    "type": "blank",
+    "title": "append 로 요소 추가 빈칸",
+    "description": "fruits 끝에 \"kiwi\" 를 추가하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\"]\nfruits.{{1}}\"kiwi\")\nprint(fruits)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "append("
+          ],
+          "hint": "리스트 끝에 요소를 추가하는 메서드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-4-blank-2",
+    "type": "blank",
+    "title": "len 으로 개수 세기 빈칸",
+    "description": "fruits 의 요소 개수를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "template": "fruits = [\"apple\", \"banana\", \"kiwi\"]\nprint({{1}}fruits))",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "len("
+          ],
+          "hint": "요소 개수를 알려 주는 함수"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-4-short-3",
+    "type": "short",
+    "title": "메서드를 부르는 기호 쓰기",
+    "description": "리스트 이름과 메서드 이름 사이에 쓰는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "code": "fruits = [\"apple\", \"banana\"]\nfruits___append(\"kiwi\")",
+      "answer": [
+        "."
+      ]
+    }
+  },
+  {
+    "id": "py-11-4-code-1",
+    "type": "code",
+    "title": "kiwi 추가하고 길이 출력하기",
+    "description": "append() 로 fruits 에 \"kiwi\" 를 추가하고, len() 으로 리스트 길이를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-4",
+    "content": {
+      "starter_code": "fruits = [\"apple\", \"banana\"]\n# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "^fruits\\.append\\s*\\(\\s*[\"']",
+          "message": "fruits.append() 로 요소를 추가해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^fruits\\.append\\s*\\(\\s*([\"'])kiwi\\1\\s*\\)",
+          "message": "\"kiwi\" 를 추가해요",
+          "flags": "m",
+          "in": "source"
+        },
+        {
+          "pattern": "^print\\s*\\([^\\n]*\\blen\\s*\\(\\s*fruits\\s*\\)",
+          "message": "print(len(fruits)) 로 길이를 출력해요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^fruits\\.append[\\s\\S]*^print\\s*\\([^\\n]*\\blen\\s*\\(\\s*fruits\\s*\\)",
+          "message": "추가한 뒤에 길이를 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "fruits = [\"apple\", \"banana\"]\nfruits.append(\"kiwi\")\nprint(len(fruits))"
+    }
+  },
+  {
+    "id": "py-11-5-mcq-1",
+    "type": "mcq",
+    "title": "상품 리스트 복습 개념 확인",
+    "description": "상품 리스트에 상품을 추가하고 그 결과를 확인하려면 어떤 순서로 코드를 써야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "choices": [
+        "print(items) → items = [] → items.append(\"pen\")",
+        "items.append(\"pen\") → items = [] → print(items)",
+        "items = [] → items.append(\"pen\") → print(items)",
+        "items = [] → print(items) → items.append(\"pen\")"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-11-5-mcq-2",
+    "type": "mcq",
+    "title": "상품 리스트 복습 올바른 코드 고르기",
+    "description": "상품 리스트 items 에 \"pen\" 을 추가하고 전체를 출력하는 올바른 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "choices": [
+        "items = [\"book\"]\nitems.append(\"pen\")\nprint(items)",
+        "items = [\"book\"]\nitems.append(pen)\nprint(items)",
+        "items = [\"book\"]\nappend.items(\"pen\")\nprint(items)",
+        "items = [\"book\"]\nitems.append(\"pen\")\nprint(item)"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-11-5-mcq-3",
+    "type": "mcq",
+    "title": "상품 리스트 복습 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nitems = [\"book\", \"pen\"]\nitems.append(\"bag\")\nitems.append(\"cup\")\nprint(items)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "choices": [
+        "['book', 'pen', 'bag', 'cup']",
+        "['bag', 'cup', 'book', 'pen']",
+        "['book', 'pen', 'cup', 'bag']",
+        "['book', 'pen']"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-11-5-parsons-1",
+    "type": "parsons",
+    "title": "상품 리스트 복습 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 bag 을 추가한 상품 리스트를 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "fragments": [
+        "items.append(\"bag\")",
+        "print(items)",
+        "items = [\"book\", \"pen\"]"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-11-5-parsons-2",
+    "type": "parsons",
+    "title": "상품 리스트 복습 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 ['book', 'pen', 'bag', 'cup'] 이 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "fragments": [
+        "items.append(\"bag\")",
+        "print(items)",
+        "items.append(\"cup\")",
+        "items = [\"book\", \"pen\"]"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-11-5-parsons-3",
+    "type": "parsons",
+    "title": "상품 리스트 복습 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 ['book', 'pen', 'bag'] 다음에 상품 수: 3 이 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "fragments": [
+        "items.append(\"pen\")",
+        "print(\"상품 수:\", len(items))",
+        "items = []",
+        "print(items)",
+        "items.append(\"book\")",
+        "items.append(\"bag\")"
+      ],
+      "answer_order": [
+        2,
+        4,
+        0,
+        5,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-11-5-blank-1",
+    "type": "blank",
+    "title": "items 리스트 선언 빈칸",
+    "description": "상품이 담긴 items 리스트를 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "template": "{{1}}\"book\", \"pen\"]\nitems.append(\"bag\")\nprint(items)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "items = [",
+            "items=["
+          ],
+          "hint": "리스트 이름, 대입 기호, 여는 대괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-5-blank-2",
+    "type": "blank",
+    "title": "상품 추가 빈칸",
+    "description": "items 에 \"bag\" 을 추가하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "template": "items = [\"book\", \"pen\"]\nitems.{{1}}\"bag\")\nprint(items)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "append("
+          ],
+          "hint": "리스트 끝에 요소를 추가하는 메서드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-5-blank-3",
+    "type": "blank",
+    "title": "상품 리스트 출력 빈칸",
+    "description": "상품 리스트 전체를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "template": "items = [\"book\", \"pen\"]\nitems.append(\"bag\")\n{{1}}items)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-5-code-1",
+    "type": "code",
+    "title": "상품 리스트에 상품 추가하기",
+    "description": "items 리스트를 만들고, append() 로 상품을 추가한 뒤 리스트 전체를 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-5",
+    "content": {
+      "starter_code": "# items 리스트를 만들고 상품을 추가해 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^items\\s*=\\s*\\[",
+          "message": "items = [ ] 로 상품 리스트를 만들어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^items\\.append\\s*\\(\\s*([\"'])[^\"'\\n]+\\1\\s*\\)",
+          "message": "items.append(\"상품\") 으로 상품을 추가해요",
+          "flags": "m",
+          "in": "source"
+        },
+        {
+          "pattern": "^items\\s*=[\\s\\S]*^items\\.append\\s*\\([\\s\\S]*^print\\s*\\(\\s*items\\s*\\)",
+          "message": "상품을 추가한 뒤 print(items) 로 전체를 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "items = [\"book\", \"pen\"]\nitems.append(\"bag\")\nprint(items)"
+    }
+  },
+  {
+    "id": "py-11-6-mcq-1",
+    "type": "mcq",
+    "title": "역순 리스트 복습 개념 확인",
+    "description": "numbers.reverse() 를 실행하면 어떻게 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "choices": [
+        "numbers 는 그대로 두고, 뒤집힌 결과를 화면에 출력한다",
+        "numbers 의 마지막 요소가 지워진다",
+        "numbers 리스트 자체의 순서가 거꾸로 바뀐다",
+        "numbers 가 작은 수부터 크기 순서대로 정렬된다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "py-11-6-mcq-2",
+    "type": "mcq",
+    "title": "역순 리스트 복습 올바른 코드 고르기",
+    "description": "numbers 리스트의 순서를 올바르게 뒤집는 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "choices": [
+        "numbers.reverse",
+        "numbers.reverse()",
+        "reverse(numbers)",
+        "numbers = reverse()"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-11-6-mcq-3",
+    "type": "mcq",
+    "title": "역순 리스트 복습 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\nnumbers = [1, 2, 3, 4]\nnumbers.reverse()\nprint(numbers)",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "choices": [
+        "[1, 2, 3, 4]",
+        "None",
+        "[4, 1, 2, 3]",
+        "[4, 3, 2, 1]"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-11-6-parsons-1",
+    "type": "parsons",
+    "title": "역순 리스트 복습 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 [3, 2, 1] 을 출력하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "fragments": [
+        "print(numbers)",
+        "numbers = [1, 2, 3]",
+        "numbers.reverse()"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "py-11-6-parsons-2",
+    "type": "parsons",
+    "title": "역순 리스트 복습 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 뒤집기 전의 [1, 2, 3] 과 뒤집은 뒤의 첫 요소 3 이 차례로 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "fragments": [
+        "print(numbers)",
+        "numbers = [1, 2, 3]",
+        "print(numbers[0])",
+        "numbers.reverse()"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-11-6-parsons-3",
+    "type": "parsons",
+    "title": "역순 리스트 복습 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 [1, 2, 3], 뒤집은 결과: [4, 3, 2, 1], 첫 번째: 4 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "fragments": [
+        "numbers.reverse()",
+        "numbers = [1, 2, 3]",
+        "print(\"첫 번째:\", numbers[0])",
+        "print(\"뒤집은 결과:\", numbers)",
+        "print(numbers)",
+        "numbers.append(4)"
+      ],
+      "answer_order": [
+        1,
+        4,
+        5,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-11-6-blank-1",
+    "type": "blank",
+    "title": "reverse 로 뒤집기 빈칸",
+    "description": "numbers 의 순서를 뒤집도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "template": "numbers = [1, 2, 3]\nnumbers.{{1}}\nprint(numbers)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "reverse()"
+          ],
+          "hint": "순서를 거꾸로 뒤집는 메서드"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-6-blank-2",
+    "type": "blank",
+    "title": "뒤집은 리스트 출력 빈칸",
+    "description": "뒤집은 numbers 를 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "template": "numbers = [1, 2, 3]\nnumbers.reverse()\n{{1}}numbers)",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "print("
+          ],
+          "hint": "출력 함수와 여는 괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-6-short-3",
+    "type": "short",
+    "title": "메서드 실행에 붙이는 괄호 쓰기",
+    "description": "reverse 메서드를 실제로 실행하려면 이름 뒤 빈칸에 어떤 기호를 붙여야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "code": "numbers = [1, 2, 3]\nnumbers.reverse___\nprint(numbers)",
+      "answer": [
+        "()"
+      ]
+    }
+  },
+  {
+    "id": "py-11-6-code-1",
+    "type": "code",
+    "title": "numbers 뒤집어 출력하기",
+    "description": "reverse() 로 numbers 리스트를 뒤집은 뒤 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-6",
+    "content": {
+      "starter_code": "numbers = [1, 2, 3, 4, 5]\n# 여기에 작성하세요\n",
+      "checks": [
+        {
+          "pattern": "^numbers\\s*=\\s*\\[",
+          "message": "numbers 리스트는 그대로 둬요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^numbers\\.reverse\\s*\\(\\s*\\)",
+          "message": "numbers.reverse() 로 리스트를 뒤집어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^numbers\\.reverse\\s*\\(\\s*\\)[\\s\\S]*^print\\s*\\(\\s*numbers\\s*\\)",
+          "message": "뒤집은 뒤에 print(numbers) 로 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "numbers = [1, 2, 3, 4, 5]\nnumbers.reverse()\nprint(numbers)"
+    }
+  },
+  {
+    "id": "py-11-7-mcq-1",
+    "type": "mcq",
+    "title": "튜플 개념 확인",
+    "description": "튜플에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "choices": [
+        "대괄호 [] 로 만들고, 요소를 자유롭게 바꿀 수 있다",
+        "소괄호 () 로 만들고, 만든 뒤에는 요소를 바꿀 수 없다",
+        "소괄호 () 로 만들고, append() 로 요소를 추가할 수 있다",
+        "중괄호 {} 로 만들고, 값을 하나만 담을 수 있다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "py-11-7-mcq-2",
+    "type": "mcq",
+    "title": "튜플 올바른 코드 고르기",
+    "description": "값 두 개가 든 point 튜플을 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "choices": [
+        "point = (3 5)",
+        "point = [3, 5]",
+        "point = (3; 5)",
+        "point = (3, 5)"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "py-11-7-mcq-3",
+    "type": "mcq",
+    "title": "튜플 실행 결과 고르기",
+    "description": "다음 코드를 실행하면 무엇이 출력될까요?\npoint = (3, 5)\nprint(point[0] + point[1])",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "choices": [
+        "8",
+        "35",
+        "(3, 5)",
+        "오류가 난다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "py-11-7-parsons-1",
+    "type": "parsons",
+    "title": "튜플 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 3 다음에 5 가 출력되게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "fragments": [
+        "print(point[0])",
+        "print(point[1])",
+        "point = (3, 5)"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "py-11-7-parsons-2",
+    "type": "parsons",
+    "title": "튜플 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 (3, 5), 3, 5 가 차례로 출력되게 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "fragments": [
+        "print(point)",
+        "print(point[0])",
+        "print(point[1])",
+        "point = (3, 5)"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "py-11-7-parsons-3",
+    "type": "parsons",
+    "title": "튜플 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 (3, 5), 3, 5, 8, 2 가 차례로 출력되게 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "fragments": [
+        "print(point[1])",
+        "print(point)",
+        "print(point[0])",
+        "print(len(point))",
+        "print(point[0] + point[1])",
+        "point = (3, 5)"
+      ],
+      "answer_order": [
+        5,
+        1,
+        2,
+        0,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "py-11-7-blank-1",
+    "type": "blank",
+    "title": "point 튜플 선언 빈칸",
+    "description": "값 3 과 5 가 든 point 튜플을 만들도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "template": "{{1}}3, 5)\nprint(point[0])",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "point = (",
+            "point=("
+          ],
+          "hint": "튜플 이름, 대입 기호, 여는 소괄호"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-7-blank-2",
+    "type": "blank",
+    "title": "튜플 첫 값 꺼내기 빈칸",
+    "description": "point 의 첫 번째 값을 출력하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "template": "point = (3, 5)\nprint({{1}})",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "point[0]",
+            "point[-2]"
+          ],
+          "hint": "첫 번째 값의 인덱스는 0"
+        }
+      ]
+    }
+  },
+  {
+    "id": "py-11-7-short-3",
+    "type": "short",
+    "title": "튜플 값의 인덱스 쓰기",
+    "description": "point 튜플에서 5 를 꺼내려면 대괄호 안에 어떤 인덱스 숫자를 써야 할까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "code": "point = (3, 5)\nprint(point[___])",
+      "answer": [
+        "1",
+        "-1"
+      ]
+    }
+  },
+  {
+    "id": "py-11-7-code-1",
+    "type": "code",
+    "title": "point 튜플 만들고 첫 값 출력하기",
+    "description": "값 두 개가 든 point 튜플을 소괄호로 만들고, 첫 번째 값을 출력하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "python",
+    "lessonId": "py-11-7",
+    "content": {
+      "starter_code": "# point 튜플을 만들고 첫 값을 출력하세요\n",
+      "checks": [
+        {
+          "pattern": "^point\\s*=\\s*\\(\\s*[^,()\\s][^,()\\n]*,\\s*[^,()\\s][^,()\\n]*\\)",
+          "message": "point = (값1, 값2) 처럼 소괄호 안에 값 두 개를 넣어요",
+          "flags": "m"
+        },
+        {
+          "pattern": "^point\\s*=[\\s\\S]*^print\\s*\\([^\\n]*\\bpoint\\s*\\[\\s*0\\s*\\]",
+          "message": "튜플을 만든 뒤 print(point[0]) 으로 첫 값을 출력해요",
+          "flags": "m"
+        }
+      ],
+      "solution": "point = (3, 5)\nprint(point[0])"
+    }
+  }
+]
