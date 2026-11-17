@@ -1,0 +1,33 @@
+{
+  "courseId": "javascript-basic",
+  "title": "JavaScript 기초",
+  "language": "javascript",
+  "units": [
+    {
+      "unitId": "js-basics",
+      "title": "변수와 출력",
+      "order": 1,
+      "problemIds": [
+        "js-basics-mcq-1",
+        "js-basics-mcq-2",
+        "js-basics-blank-1",
+        "js-basics-parsons-1",
+        "js-basics-short-1",
+        "js-basics-code-1"
+      ]
+    },
+    {
+      "unitId": "js-functions-conditions",
+      "title": "함수와 조건문",
+      "order": 2,
+      "problemIds": [
+        "js-functions-conditions-mcq-1",
+        "js-functions-conditions-mcq-2",
+        "js-functions-conditions-blank-1",
+        "js-functions-conditions-parsons-1",
+        "js-functions-conditions-short-1",
+        "javascript-code-1"
+      ]
+    }
+  ]
+}

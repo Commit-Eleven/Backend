@@ -1,5 +1,6 @@
 import { readdirSync } from 'node:fs'
 import { STUDY_LEVEL } from './config/constants'
+import { submissions } from './db/submissions'
 
 // 문제 원본(static/problems/*.json)의 공통 메타데이터 모음.
 // 제출 이력 등에서 problemId로 title/type 같은 정보를 붙여줄 때 쓴다.
@@ -120,4 +121,14 @@ export function problemsOfLesson(lessonId: string): ProblemMeta[] {
         LESSON_TYPE_ORDER[a.type] - LESSON_TYPE_ORDER[b.type] ||
         numberSuffix(a.id) - numberSuffix(b.id),
     )
+}
+
+// 이미 맞힌(정답으로 푼) 문제는 다시 안 나오게 제외한다.
+// 고른 문제를 수준에 맞추려면 맞힌 id 목록도 같이 필요해서 함께 돌려준다
+export async function excludeSolved<T extends { id: string }>(
+  list: T[],
+  userId: number,
+): Promise<{ unsolved: T[]; solved: Set<string> }> {
+  const solved = new Set(await submissions.findSolvedProblemIds(userId))
+  return { unsolved: list.filter((problem) => !solved.has(problem.id)), solved }
 }

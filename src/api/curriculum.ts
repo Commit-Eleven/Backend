@@ -1,25 +1,8 @@
 import { Hono } from 'hono'
 import { STUDY_LANGUAGE } from '../util/config/constants'
+import { type Course, curriculumData } from '../util/curriculum'
 import { type AuthEnv, requireAuth } from '../util/http/auth'
 import { Errors } from '../util/http/response'
-
-type Unit = {
-  unitId: string
-  title: string
-  order: number
-  problemIds: string[]
-}
-
-type Course = {
-  courseId: string
-  title: string
-  language: (typeof STUDY_LANGUAGE)[number]
-  units: Unit[]
-}
-
-export const curriculumData = (await Bun.file(
-  'static/curriculum/curriculum.json',
-).json()) as Course[]
 
 export const curriculum = new Hono<AuthEnv>()
 
