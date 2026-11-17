@@ -1,0 +1,3578 @@
+[
+  {
+    "id": "html-5-1-mcq-1",
+    "type": "mcq",
+    "title": "HTML 속성 개념 확인",
+    "description": "HTML 속성에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "choices": [
+        "속성은 닫는 태그 안에 쓴다.",
+        "속성은 여는 태그 안에 이름=\"값\" 형태로 써서 요소에 추가 정보를 준다.",
+        "속성은 태그 밖, 내용 뒤에 쓴다.",
+        "속성은 요소 하나에 하나만 쓸 수 있다."
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-5-1-mcq-2",
+    "type": "mcq",
+    "title": "HTML 속성 올바른 코드",
+    "description": "p 요소에 id 속성을 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "choices": [
+        "<p>id=\"intro\" 안녕하세요</p>",
+        "<p id:\"intro\">안녕하세요</p>",
+        "<p id=\"intro\">안녕하세요</p>",
+        "<p>안녕하세요</p id=\"intro\">"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-5-1-mcq-3",
+    "type": "mcq",
+    "title": "HTML 속성 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<p title=\"인사\">안녕하세요</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "choices": [
+        "안녕하세요",
+        "인사",
+        "title=\"인사\" 안녕하세요",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-5-1-parsons-1",
+    "type": "parsons",
+    "title": "HTML 속성 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 id 가 intro 인 p 요소 <p id=\"intro\">안녕하세요</p> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "fragments": [
+        "</p>",
+        "<p id=\"intro\">",
+        "안녕하세요"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-5-1-parsons-2",
+    "type": "parsons",
+    "title": "HTML 속성 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 id 가 intro 인 p 요소 <p id=\"intro\">안녕하세요</p> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "fragments": [
+        "<p",
+        "안녕하세요",
+        "</p>",
+        "id=\"intro\">"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-5-1-parsons-3",
+    "type": "parsons",
+    "title": "HTML 속성 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 id 가 intro 인 p 요소 <p id=\"intro\">안녕하세요</p> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "fragments": [
+        "\"intro\">",
+        "</p>",
+        "id=",
+        "안녕하세요",
+        "<p"
+      ],
+      "answer_order": [
+        4,
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-5-1-blank-1",
+    "type": "blank",
+    "title": "id 속성 빈칸",
+    "description": "p 요소에 값이 intro 인 id 속성이 붙도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p {{1}}intro\">안녕하세요</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "id=\""
+          ],
+          "hint": "속성 이름 id 와 = 기호, 여는 따옴표"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-1-short-2",
+    "type": "short",
+    "title": "HTML 속성 화면 글자 쓰기",
+    "description": "다음 코드를 브라우저에서 열면 화면에 보이는 글자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<p id=\"hello\">반가워요</p>",
+      "answer": [
+        "반가워요"
+      ]
+    }
+  },
+  {
+    "id": "html-5-1-short-3",
+    "type": "short",
+    "title": "속성 이름과 값 사이 기호 쓰기",
+    "description": "속성 이름과 값 사이(밑줄 자리)에 들어가는 기호를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<p id___\"intro\">안녕하세요</p>",
+      "answer": [
+        "="
+      ]
+    }
+  },
+  {
+    "id": "html-5-1-code-1",
+    "type": "code",
+    "title": "id 속성이 있는 p 요소 만들기",
+    "description": "id 속성이 있는 p 요소를 작성하세요. (예: id=\"intro\")",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-1",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<p\\b[^>]*\\bid\\s*=\\s*(\\\"[^\\\"\\s]+\\\"|'[^'\\s]+'|[^\\s>\\\"']+)[^>]*>",
+          "message": "p 여는 태그 안에 id=\"값\" 속성을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p\\b[^>]*>[\\s\\S]*</p\\s*>",
+          "message": "p 요소를 </p> 로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<p id=\"intro\">안녕하세요</p>"
+    }
+  },
+  {
+    "id": "html-5-2-mcq-1",
+    "type": "mcq",
+    "title": "링크 개념 확인",
+    "description": "링크를 눌렀을 때 이동할 주소는 a 요소의 어느 속성에 적을까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "choices": [
+        "src",
+        "alt",
+        "id",
+        "href"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-5-2-mcq-2",
+    "type": "mcq",
+    "title": "링크 올바른 코드",
+    "description": "https://example.com 으로 이동하는 링크를 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "choices": [
+        "<a src=\"https://example.com\">Visit</a>",
+        "<a>https://example.com Visit</a>",
+        "<a href=\"https://example.com\">Visit</a>",
+        "<a href=\"https://example.com\">Visit<a>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-5-2-mcq-3",
+    "type": "mcq",
+    "title": "링크 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 어떻게 될까요?\n<a href=\"https://example.com\">Visit</a>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "choices": [
+        "Visit 글자가 링크로 보이고, 누르면 https://example.com 으로 이동한다.",
+        "https://example.com 이라는 글자만 보인다.",
+        "Visit 글자가 보이지만 눌러도 아무 일도 없다.",
+        "아무것도 보이지 않는다."
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-5-2-parsons-1",
+    "type": "parsons",
+    "title": "링크 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 <a href=\"https://example.com\">Visit</a> 링크를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "fragments": [
+        "Visit",
+        "<a href=\"https://example.com\">",
+        "</a>"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-5-2-parsons-2",
+    "type": "parsons",
+    "title": "링크 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 <a href=\"https://example.com\">Visit</a> 링크를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "fragments": [
+        "<a",
+        "Visit",
+        "</a>",
+        "href=\"https://example.com\">"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-5-2-parsons-3",
+    "type": "parsons",
+    "title": "링크 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 <a href=\"https://example.com\">Visit</a> 링크를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "fragments": [
+        "Visit",
+        "\"https://example.com\">",
+        "<a",
+        "href=",
+        "</a>"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-5-2-blank-1",
+    "type": "blank",
+    "title": "a 여는 태그 빈칸",
+    "description": "링크를 만드는 a 여는 태그가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}} href=\"https://example.com\">Visit</a>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<a"
+          ],
+          "hint": "a 태그의 시작 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-2-blank-2",
+    "type": "blank",
+    "title": "href 주소 빈칸",
+    "description": "링크가 https://example.com 으로 이동하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<a {{1}}>Visit</a>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "href=\"https://example.com\"",
+            "href='https://example.com'",
+            "href=https://example.com"
+          ],
+          "hint": "href 속성에 주소를 따옴표로 감싸 적어요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-2-blank-3",
+    "type": "blank",
+    "title": "링크 글자 빈칸",
+    "description": "화면에 보이는 링크 글자가 Visit 이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<a href=\"https://example.com\">{{1}}</a>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Visit"
+          ],
+          "hint": "화면에 보일 링크 글자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-2-code-1",
+    "type": "code",
+    "title": "Visit 링크 만들기",
+    "description": "href 가 \"https://example.com\" 인 a 요소에 \"Visit\" 을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-2",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<a\\b[^>]*\\bhref\\s*=\\s*[\\\"']?https://example\\.com/?[\\\"']?[^>]*>",
+          "message": "a 태그에 href=\"https://example.com\" 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<a\\b[^>]*>\\s*Visit\\s*</a\\s*>",
+          "message": "링크 글자 Visit 을 쓰고 </a> 로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<a href=\"https://example.com\">Visit</a>"
+    }
+  },
+  {
+    "id": "html-5-3-mcq-1",
+    "type": "mcq",
+    "title": "새 페이지 링크 개념 확인",
+    "description": "링크를 새 탭에서 열리게 하려면 a 태그에 무엇을 넣어야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "choices": [
+        "href=\"_blank\"",
+        "target=\"_self\"",
+        "new=\"tab\"",
+        "target=\"_blank\""
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-5-3-mcq-2",
+    "type": "mcq",
+    "title": "새 페이지 링크 올바른 코드",
+    "description": "새 탭에서 열리는 링크를 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "choices": [
+        "<a href=\"https://example.com\" target=\"blank_\">Visit</a>",
+        "<a href=\"https://example.com\" target=\"_blank\">Visit</a>",
+        "<a target=\"https://example.com\" href=\"_blank\">Visit</a>",
+        "<a href=\"https://example.com\">target=\"_blank\" Visit</a>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-5-3-mcq-3",
+    "type": "mcq",
+    "title": "새 페이지 링크 화면 결과",
+    "description": "다음 링크를 누르면 어떻게 될까요?\n<a href=\"https://example.com\" target=\"_blank\">Visit</a>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "choices": [
+        "새 탭이 열리고 그 탭에 https://example.com 이 보인다.",
+        "지금 탭이 https://example.com 으로 바뀐다.",
+        "아무 일도 일어나지 않는다.",
+        "화면에 _blank 라는 글자가 보인다."
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-5-3-parsons-1",
+    "type": "parsons",
+    "title": "새 페이지 링크 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 새 탭에서 열리는 링크 <a href=\"https://example.com\" target=\"_blank\">Visit</a> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "fragments": [
+        "Visit",
+        "<a href=\"https://example.com\" target=\"_blank\">",
+        "</a>"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-5-3-parsons-2",
+    "type": "parsons",
+    "title": "새 페이지 링크 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 새 탭에서 열리는 링크 <a href=\"https://example.com\" target=\"_blank\">Visit</a> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "fragments": [
+        "target=\"_blank\">",
+        "<a href=\"https://example.com\"",
+        "</a>",
+        "Visit"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-5-3-parsons-3",
+    "type": "parsons",
+    "title": "새 페이지 링크 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 새 탭에서 열리는 링크 <a href=\"https://example.com\" target=\"_blank\">Visit</a> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "fragments": [
+        "href=\"https://example.com\"",
+        "Visit",
+        "<a",
+        "target=\"_blank\">",
+        "</a>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-5-3-blank-1",
+    "type": "blank",
+    "title": "target 속성 빈칸",
+    "description": "링크가 새 탭에서 열리도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<a href=\"https://example.com\" {{1}}>Visit</a>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "target=\"_blank\"",
+            "target='_blank'",
+            "target=_blank"
+          ],
+          "hint": "target 속성과 새 탭을 뜻하는 값"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-3-short-2",
+    "type": "short",
+    "title": "새 탭 링크 화면 글자 쓰기",
+    "description": "다음 코드를 브라우저에서 열면 화면에 보이는 링크 글자를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<a href=\"https://news.com\" target=\"_blank\">뉴스 보기</a>",
+      "answer": [
+        "뉴스 보기",
+        "뉴스보기"
+      ]
+    }
+  },
+  {
+    "id": "html-5-3-short-3",
+    "type": "short",
+    "title": "target 값 쓰기",
+    "description": "링크를 새 탭에서 열리게 하는 target 속성의 값(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<a href=\"https://example.com\" target=\"___\">Visit</a>",
+      "answer": [
+        "_blank"
+      ]
+    }
+  },
+  {
+    "id": "html-5-3-code-1",
+    "type": "code",
+    "title": "새 탭에서 열리는 링크 만들기",
+    "description": "target=\"_blank\" 를 넣어 새 탭에서 열리는 링크를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-3",
+    "content": {
+      "starter_code": "<a href=\"https://example.com\">Visit</a>\n",
+      "checks": [
+        {
+          "pattern": "<a\\b[^>]*\\bhref\\s*=\\s*[\\\"']?[^\\\"'\\s>]+",
+          "message": "a 태그에 href 로 이동할 주소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<a\\b[^>]*\\btarget\\s*=\\s*[\\\"']?_blank\\b",
+          "message": "target=\"_blank\" 를 넣어 새 탭에서 열리게 해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<a\\b[^>]*>[^<]*[^<\\s][^<]*</a\\s*>",
+          "message": "링크 글자를 쓰고 </a> 로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<a href=\"https://example.com\" target=\"_blank\">Visit</a>"
+    }
+  },
+  {
+    "id": "html-5-4-mcq-1",
+    "type": "mcq",
+    "title": "이미지 개념 확인",
+    "description": "img 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "choices": [
+        "img 는 </img> 닫는 태그가 꼭 필요하다.",
+        "src 에는 대체 텍스트를 적는다.",
+        "img 는 닫는 태그가 없고, src 는 이미지 주소, alt 는 대체 텍스트다.",
+        "alt 에는 이미지 주소를 적는다."
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-5-4-mcq-2",
+    "type": "mcq",
+    "title": "이미지 올바른 코드",
+    "description": "cat.jpg 이미지를 대체 텍스트 \"고양이\" 와 함께 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "choices": [
+        "<img alt=\"cat.jpg\" src=\"고양이\">",
+        "<img src=\"cat.jpg\" alt=\"고양이\">",
+        "<img href=\"cat.jpg\" alt=\"고양이\">",
+        "<img>cat.jpg</img>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-5-4-mcq-3",
+    "type": "mcq",
+    "title": "이미지 화면 결과",
+    "description": "이미지 파일 nofile.jpg 가 없을 때, 다음 코드는 화면에 무엇을 보여 줄까요?\n<img src=\"nofile.jpg\" alt=\"고양이 사진\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "choices": [
+        "\"nofile.jpg\" 라는 글자",
+        "\"src\" 라는 글자",
+        "\"img\" 라는 글자",
+        "대체 텍스트인 \"고양이 사진\""
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-5-4-parsons-1",
+    "type": "parsons",
+    "title": "이미지 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 cat.jpg 이미지를 대체 텍스트 \"고양이\" 와 함께 넣는 <img src=\"cat.jpg\" alt=\"고양이\"> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "fragments": [
+        "alt=\"고양이\">",
+        "<img",
+        "src=\"cat.jpg\""
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-5-4-parsons-2",
+    "type": "parsons",
+    "title": "이미지 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 cat.jpg 이미지를 대체 텍스트 \"고양이\" 와 함께 넣는 <img src=\"cat.jpg\" alt=\"고양이\"> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "fragments": [
+        "src=",
+        "\"cat.jpg\"",
+        "alt=\"고양이\">",
+        "<img"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-5-4-parsons-3",
+    "type": "parsons",
+    "title": "이미지 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 cat.jpg 이미지를 대체 텍스트 \"고양이\" 와 함께 넣는 <img src=\"cat.jpg\" alt=\"고양이\"> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "fragments": [
+        "src=",
+        "<img",
+        "\"cat.jpg\"",
+        "\"고양이\">",
+        "alt="
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-5-4-blank-1",
+    "type": "blank",
+    "title": "img 여는 태그 빈칸",
+    "description": "이미지를 넣는 태그가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}} src=\"cat.jpg\" alt=\"고양이\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<img"
+          ],
+          "hint": "이미지 태그의 시작 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-4-blank-2",
+    "type": "blank",
+    "title": "src 속성 빈칸",
+    "description": "이미지 주소가 cat.jpg 가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<img {{1}}cat.jpg\" alt=\"고양이\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "src=\""
+          ],
+          "hint": "이미지 주소를 적는 속성 이름과 =\""
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-4-blank-3",
+    "type": "blank",
+    "title": "alt 속성 빈칸",
+    "description": "대체 텍스트가 고양이 가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<img src=\"cat.jpg\" {{1}}고양이\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "alt=\""
+          ],
+          "hint": "대체 텍스트를 적는 속성 이름과 =\""
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-4-code-1",
+    "type": "code",
+    "title": "src 와 alt 로 이미지 넣기",
+    "description": "img 요소에 src(이미지 주소)와 alt(대체 텍스트)를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-4",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<img\\b[^>]*\\bsrc\\s*=\\s*[\\\"']?[^\\\"'\\s>]+",
+          "message": "img 태그에 src 로 이미지 주소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<img\\b[^>]*\\balt\\s*=\\s*(\\\"[^\\\"]*[^\\\"\\s][^\\\"]*\\\"|'[^']*[^'\\s][^']*'|[^\\s>\\\"']+)",
+          "message": "img 태그에 alt 로 대체 텍스트를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "^(?![\\s\\S]*</img)",
+          "message": "img 는 닫는 태그 </img> 를 쓰지 않아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<img src=\"cat.jpg\" alt=\"고양이\">"
+    }
+  },
+  {
+    "id": "html-5-5-mcq-1",
+    "type": "mcq",
+    "title": "이미지 속성 개념 확인",
+    "description": "이미지의 크기(가로, 세로)를 정할 때 쓰는 속성은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "choices": [
+        "src 와 alt",
+        "href 와 target",
+        "size 와 length",
+        "width 와 height"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-5-5-mcq-2",
+    "type": "mcq",
+    "title": "이미지 속성 올바른 코드",
+    "description": "가로 200, 세로 100 크기로 이미지를 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "choices": [
+        "<img src=\"cat.jpg\" alt=\"고양이\" width=\"200\" height=\"100\">",
+        "<img src=\"cat.jpg\" alt=\"고양이\" width=\"100\" height=\"200\">",
+        "<img src=\"cat.jpg\" alt=\"고양이\" size=\"200x100\">",
+        "<img src=\"cat.jpg\" alt=\"고양이\">width=\"200\" height=\"100\""
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-5-5-mcq-3",
+    "type": "mcq",
+    "title": "이미지 속성 화면 결과",
+    "description": "다음 이미지는 화면에 어떤 크기로 보일까요?\n<img src=\"cat.jpg\" alt=\"고양이\" width=\"300\" height=\"150\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "choices": [
+        "가로 150픽셀, 세로 300픽셀",
+        "원래 크기의 300배",
+        "가로 300픽셀, 세로 150픽셀",
+        "width 와 height 글자가 함께 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-5-5-parsons-1",
+    "type": "parsons",
+    "title": "이미지 속성 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 가로 200, 세로 100 크기의 이미지 <img src=\"cat.jpg\" alt=\"고양이\" width=\"200\" height=\"100\"> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "fragments": [
+        "width=\"200\"",
+        "height=\"100\">",
+        "<img src=\"cat.jpg\" alt=\"고양이\""
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-5-5-parsons-2",
+    "type": "parsons",
+    "title": "이미지 속성 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 가로 200, 세로 100 크기의 이미지 <img src=\"cat.jpg\" alt=\"고양이\" width=\"200\" height=\"100\"> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "fragments": [
+        "height=\"100\">",
+        "width=",
+        "<img src=\"cat.jpg\" alt=\"고양이\"",
+        "\"200\""
+      ],
+      "answer_order": [
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-5-5-parsons-3",
+    "type": "parsons",
+    "title": "이미지 속성 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 가로 200, 세로 100 크기의 이미지 <img src=\"cat.jpg\" alt=\"고양이\" width=\"200\" height=\"100\"> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "fragments": [
+        "\"200\"",
+        "height=",
+        "<img src=\"cat.jpg\" alt=\"고양이\"",
+        "\"100\">",
+        "width="
+      ],
+      "answer_order": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-5-5-blank-1",
+    "type": "blank",
+    "title": "width 속성 빈칸",
+    "description": "이미지의 가로 크기가 200 이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<img src=\"cat.jpg\" alt=\"고양이\" {{1}}200\" height=\"100\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "width=\""
+          ],
+          "hint": "가로 크기를 정하는 속성 이름과 =\""
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-5-blank-2",
+    "type": "blank",
+    "title": "height 속성 빈칸",
+    "description": "이미지의 세로 크기가 100 이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<img src=\"cat.jpg\" alt=\"고양이\" width=\"200\" {{1}}100\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "height=\""
+          ],
+          "hint": "세로 크기를 정하는 속성 이름과 =\""
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-5-5-short-3",
+    "type": "short",
+    "title": "가로 크기 속성 이름 쓰기",
+    "description": "이미지의 가로 크기를 정하는 속성 이름(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "caseSensitive": false,
+    "content": {
+      "code": "<img src=\"cat.jpg\" alt=\"고양이\" ___=\"200\">",
+      "answer": [
+        "width"
+      ]
+    }
+  },
+  {
+    "id": "html-5-5-code-1",
+    "type": "code",
+    "title": "width 와 height 지정하기",
+    "description": "img 에 width 와 height 속성으로 이미지 크기를 지정하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-5-5",
+    "content": {
+      "starter_code": "<img src=\"cat.jpg\" alt=\"고양이\">\n",
+      "checks": [
+        {
+          "pattern": "<img\\b[^>]*\\bsrc\\s*=\\s*[\\\"']?[^\\\"'\\s>]+",
+          "message": "img 태그에 src 로 이미지 주소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<img\\b[^>]*\\bwidth\\s*=\\s*[\\\"']?\\d+",
+          "message": "width 로 가로 크기를 숫자로 정해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<img\\b[^>]*\\bheight\\s*=\\s*[\\\"']?\\d+",
+          "message": "height 로 세로 크기를 숫자로 정해요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<img src=\"cat.jpg\" alt=\"고양이\" width=\"200\" height=\"100\">"
+    }
+  },
+  {
+    "id": "html-6-1-mcq-1",
+    "type": "mcq",
+    "title": "디비전 개념 확인",
+    "description": "div 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "choices": [
+        "글자를 굵게 만든다.",
+        "특별한 의미 없이 여러 요소를 하나의 블록 영역으로 묶는다.",
+        "다른 페이지로 가는 링크를 만든다.",
+        "이미지를 넣는다."
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-6-1-mcq-2",
+    "type": "mcq",
+    "title": "디비전 올바른 코드",
+    "description": "제목과 문단을 div 로 바르게 묶은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "choices": [
+        "<div>\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n<div>",
+        "</div>\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n<div>",
+        "<div>\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n</div>",
+        "<div>\n  <h2>공지</div>\n  <p>내일은 쉽니다.</p>\n</h2>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-6-1-mcq-3",
+    "type": "mcq",
+    "title": "디비전 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<p>A</p>\n<div>B</div>\n<p>C</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "choices": [
+        "A B C 가 한 줄에 이어서 보인다.",
+        "B 만 보인다.",
+        "A 와 C 만 보이고 B 는 보이지 않는다.",
+        "A, B, C 가 각각 다른 줄에 차례대로 보인다."
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-6-1-parsons-1",
+    "type": "parsons",
+    "title": "디비전 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 div 안에 제목 \"공지\" 와 그 아래 문단 \"내일은 쉽니다.\" 가 오도록 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "fragments": [
+        "  <p>내일은 쉽니다.</p>",
+        "  <h2>공지</h2>",
+        "<div>",
+        "</div>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-6-1-parsons-2",
+    "type": "parsons",
+    "title": "디비전 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 div 안에 제목 \"공지\", 문단 \"내일은 쉽니다.\", 문단 \"모레 만나요.\" 가 차례대로 오도록 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "fragments": [
+        "  <h2>공지</h2>",
+        "<div>",
+        "  <p>내일은 쉽니다.</p>",
+        "  <p>모레 만나요.</p>",
+        "</div>"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-6-1-parsons-3",
+    "type": "parsons",
+    "title": "디비전 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 div 안에 제목 \"공지\", 문단 \"내일은 쉽니다.\", 문단 \"모레 만나요.\", 링크 \"자세히 보기\" 가 차례대로 오도록 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "fragments": [
+        "  <a href=\"notice.html\">자세히 보기</a>",
+        "  <h2>공지</h2>",
+        "</div>",
+        "<div>",
+        "  <p>내일은 쉽니다.</p>",
+        "  <p>모레 만나요.</p>"
+      ],
+      "answer_order": [
+        3,
+        1,
+        4,
+        5,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-6-1-blank-1",
+    "type": "blank",
+    "title": "div 여는 태그 빈칸",
+    "description": "제목과 문단을 하나로 묶는 div 가 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n</div>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<div>"
+          ],
+          "hint": "영역을 여는 div 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-1-blank-2",
+    "type": "blank",
+    "title": "div 닫는 태그 빈칸",
+    "description": "div 영역이 끝나도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<div>\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n{{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "</div>"
+          ],
+          "hint": "영역을 닫는 div 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-1-short-3",
+    "type": "short",
+    "title": "블록 묶음 태그 이름 쓰기",
+    "description": "제목과 문단을 하나의 블록 영역으로 묶을 때 쓰는 태그 이름(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n</___>",
+      "answer": [
+        "div",
+        "<div>"
+      ]
+    }
+  },
+  {
+    "id": "html-6-1-code-1",
+    "type": "code",
+    "title": "div 로 내용 묶기",
+    "description": "아래 h2 제목과 p 문단을 div 요소로 감싸 하나로 묶으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-1",
+    "content": {
+      "starter_code": "<h2>공지</h2>\n<p>내일은 쉽니다.</p>\n",
+      "checks": [
+        {
+          "pattern": "<div\\b[^>]*>[\\s\\S]*<h2\\b[\\s\\S]*</div\\s*>",
+          "message": "h2 제목을 div 안에 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<div\\b[^>]*>[\\s\\S]*<p\\b[\\s\\S]*</div\\s*>",
+          "message": "p 문단을 div 안에 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<div>\n  <h2>공지</h2>\n  <p>내일은 쉽니다.</p>\n</div>"
+    }
+  },
+  {
+    "id": "html-6-2-mcq-1",
+    "type": "mcq",
+    "title": "인라인 스팬 개념 확인",
+    "description": "span 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "choices": [
+        "줄 안에서 일부 텍스트를 묶는 인라인 요소다.",
+        "새 줄에서 시작하는 큰 블록 영역을 만든다.",
+        "이미지를 넣는 요소다.",
+        "다른 페이지로 가는 링크를 만든다."
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-6-2-mcq-2",
+    "type": "mcq",
+    "title": "인라인 스팬 올바른 코드",
+    "description": "문장 속 \"맑음\" 만 span 으로 바르게 묶은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "choices": [
+        "<p>오늘은 <span>맑음<span>입니다.</p>",
+        "<p>오늘은 <span>맑음</span>입니다.</p>",
+        "<span><p>오늘은 맑음입니다.</span></p>",
+        "<p>오늘은 </span>맑음<span>입니다.</p>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-6-2-mcq-3",
+    "type": "mcq",
+    "title": "인라인 스팬 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<p>나는 <span>사과</span>를 좋아해요.</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "choices": [
+        "\"사과\" 만 다음 줄로 내려가 따로 보인다.",
+        "\"나는 사과를 좋아해요.\" 가 한 줄에 이어서 보인다.",
+        "\"사과\" 만 보이고 나머지는 사라진다.",
+        "span 이라는 글자가 함께 보인다."
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-6-2-parsons-1",
+    "type": "parsons",
+    "title": "인라인 스팬 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 <p>오늘은 <span>맑음</span>입니다.</p> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "fragments": [
+        "<span>맑음</span>",
+        "입니다.</p>",
+        "<p>오늘은"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-6-2-parsons-2",
+    "type": "parsons",
+    "title": "인라인 스팬 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 <p>오늘은 <span>맑음</span>입니다.</p> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "fragments": [
+        "</span>",
+        "맑음",
+        "<span>",
+        "입니다.</p>",
+        "<p>오늘은"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-6-2-parsons-3",
+    "type": "parsons",
+    "title": "인라인 스팬 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 <p>오늘은 <span>맑음</span>입니다.</p> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "fragments": [
+        "오늘은",
+        "</span>",
+        "입니다.",
+        "<span>",
+        "맑음",
+        "</p>",
+        "<p>"
+      ],
+      "answer_order": [
+        6,
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-6-2-blank-1",
+    "type": "blank",
+    "title": "span 여는 태그 빈칸",
+    "description": "\"맑음\" 을 span 으로 묶도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>오늘은 {{1}}맑음</span>입니다.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<span>"
+          ],
+          "hint": "줄 안의 글자를 묶는 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-2-blank-2",
+    "type": "blank",
+    "title": "span 닫는 태그 빈칸",
+    "description": "\"맑음\" 을 묶은 span 을 닫도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>오늘은 <span>맑음{{1}}입니다.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "</span>"
+          ],
+          "hint": "span 을 닫는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-2-short-3",
+    "type": "short",
+    "title": "인라인 묶음 태그 이름 쓰기",
+    "description": "줄 안에서 일부 글자만 묶을 때 쓰는 태그 이름(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<p>오늘은 <___>맑음</___>입니다.</p>",
+      "answer": [
+        "span",
+        "<span>"
+      ]
+    }
+  },
+  {
+    "id": "html-6-2-code-1",
+    "type": "code",
+    "title": "span 으로 일부 글자 감싸기",
+    "description": "p 문장 안의 일부 글자(예: 맑음)만 span 으로 감싸세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-2",
+    "content": {
+      "starter_code": "<p>오늘은 맑음입니다.</p>\n",
+      "checks": [
+        {
+          "pattern": "<p\\b[^>]*>[\\s\\S]*<span\\b[^>]*>[^<]*[^<\\s][^<]*</span\\s*>[\\s\\S]*</p\\s*>",
+          "message": "p 안에서 글자를 <span> 과 </span> 으로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p\\b[^>]*>[^<]*[^<\\s][^<]*<span\\b|</span\\s*>[^<]*[^<\\s][^<]*</p\\s*>",
+          "message": "문장 전체가 아니라 일부 글자만 span 으로 감싸요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<p>오늘은 <span>맑음</span>입니다.</p>"
+    }
+  },
+  {
+    "id": "html-6-3-mcq-1",
+    "type": "mcq",
+    "title": "시맨틱 태그 개념 확인",
+    "description": "header, nav, main, footer 같은 시맨틱 태그의 역할로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "choices": [
+        "그 영역이 어떤 의미(머리말, 메뉴, 본문, 꼬리말)인지 알려 준다.",
+        "글자 색을 바꾼다.",
+        "이미지를 넣는다.",
+        "링크를 새 탭에서 연다."
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-6-3-mcq-2",
+    "type": "mcq",
+    "title": "시맨틱 태그 올바른 코드",
+    "description": "페이지 아래쪽 꼬리말 영역을 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "choices": [
+        "<header>저작권 정보</footer>",
+        "<foot>저작권 정보</foot>",
+        "<footer>저작권 정보<footer>",
+        "<footer>저작권 정보</footer>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-6-3-mcq-3",
+    "type": "mcq",
+    "title": "시맨틱 태그 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<header>제목</header>\n<main>본문</main>\n<footer>끝</footer>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "choices": [
+        "끝, 본문, 제목 순서로 거꾸로 보인다.",
+        "header, main, footer 라는 글자가 보인다.",
+        "제목, 본문, 끝 이 각각 다른 줄에 차례대로 보인다.",
+        "본문 만 보인다."
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-6-3-parsons-1",
+    "type": "parsons",
+    "title": "시맨틱 태그 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 위에서부터 머리말(header), 본문(main), 꼬리말(footer) 순서의 페이지를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "fragments": [
+        "<main>본문 내용</main>",
+        "<header>사이트 제목</header>",
+        "<footer>저작권 정보</footer>"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-6-3-parsons-2",
+    "type": "parsons",
+    "title": "시맨틱 태그 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 위에서부터 header, nav, main, footer 순서의 페이지를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "fragments": [
+        "<main>본문 내용</main>",
+        "<header>사이트 제목</header>",
+        "<nav>메뉴</nav>",
+        "<footer>저작권 정보</footer>"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-6-3-parsons-3",
+    "type": "parsons",
+    "title": "시맨틱 태그 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 header, nav 다음에 문단이 든 main, 마지막에 footer 가 오는 페이지를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "fragments": [
+        "<nav>메뉴</nav>",
+        "<footer>저작권 정보</footer>",
+        "<header>사이트 제목</header>",
+        "  <p>본문 내용</p>",
+        "</main>",
+        "<main>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        5,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-6-3-blank-1",
+    "type": "blank",
+    "title": "header 태그 빈칸",
+    "description": "맨 위 머리말 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}사이트 제목</header>\n<main>본문 내용</main>\n<footer>저작권 정보</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<header>"
+          ],
+          "hint": "머리말 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-3-blank-2",
+    "type": "blank",
+    "title": "main 태그 빈칸",
+    "description": "본문 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>사이트 제목</header>\n{{1}}본문 내용</main>\n<footer>저작권 정보</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<main>"
+          ],
+          "hint": "본문 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-3-blank-3",
+    "type": "blank",
+    "title": "footer 태그 빈칸",
+    "description": "맨 아래 꼬리말 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>사이트 제목</header>\n<main>본문 내용</main>\n{{1}}저작권 정보</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<footer>"
+          ],
+          "hint": "꼬리말 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-3-code-1",
+    "type": "code",
+    "title": "header, main, footer 쓰기",
+    "description": "header, main, footer 를 차례대로 사용해 페이지를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-3",
+    "content": {
+      "starter_code": "<!-- header, main, footer 를 차례대로 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*?</header\\s*>",
+          "message": "header 로 머리말 영역을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<main\\b[^>]*>[\\s\\S]*?</main\\s*>",
+          "message": "main 으로 본문 영역을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<footer\\b[^>]*>[\\s\\S]*?</footer\\s*>",
+          "message": "footer 로 꼬리말 영역을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</header\\s*>[\\s\\S]*<main\\b[\\s\\S]*</main\\s*>[\\s\\S]*<footer\\b",
+          "message": "header, main, footer 순서로 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<header>사이트 제목</header>\n<main>본문 내용</main>\n<footer>저작권 정보</footer>"
+    }
+  },
+  {
+    "id": "html-6-4-mcq-1",
+    "type": "mcq",
+    "title": "섹션과 아티클 개념 확인",
+    "description": "section 과 article 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "choices": [
+        "section 은 이미지, article 은 링크를 넣는 요소다.",
+        "둘 다 글자를 굵게 만든다.",
+        "section 은 주제별 영역이고, article 은 혼자 떼어 읽어도 되는 독립적인 글이다.",
+        "article 은 section 안에 넣을 수 없다."
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-6-4-mcq-2",
+    "type": "mcq",
+    "title": "섹션과 아티클 올바른 코드",
+    "description": "section 안에 article 을 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "choices": [
+        "<section>\n  <h2>블로그</h2>\n  <article>첫 번째 글</section>\n</article>",
+        "<section>\n  <h2>블로그</h2>\n  <article>첫 번째 글</article>\n</section>",
+        "<article>\n  <h2>블로그</h2>\n  <section>첫 번째 글</article>\n</section>",
+        "<section>\n  <h2>블로그</h2>\n  <article>첫 번째 글<article>\n</section>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-6-4-mcq-3",
+    "type": "mcq",
+    "title": "섹션과 아티클 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<section>\n  <h2>블로그</h2>\n  <article>첫 번째 글</article>\n  <article>두 번째 글</article>\n</section>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "choices": [
+        "블로그, 첫 번째 글, 두 번째 글 이 각각 다른 줄에 차례대로 보인다.",
+        "첫 번째 글과 두 번째 글이 한 줄에 이어서 보인다.",
+        "section, article 이라는 글자가 함께 보인다.",
+        "블로그 제목만 보인다."
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-6-4-parsons-1",
+    "type": "parsons",
+    "title": "섹션과 아티클 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 section 안에 제목 \"블로그\" 와 그 아래 article \"첫 번째 글\" 이 오도록 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "fragments": [
+        "</section>",
+        "  <h2>블로그</h2>",
+        "<section>",
+        "  <article>첫 번째 글</article>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-6-4-parsons-2",
+    "type": "parsons",
+    "title": "섹션과 아티클 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 section 안에 제목 \"블로그\", article \"첫 번째 글\", article \"두 번째 글\" 이 차례대로 오도록 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "fragments": [
+        "<section>",
+        "  <article>첫 번째 글</article>",
+        "  <article>두 번째 글</article>",
+        "  <h2>블로그</h2>",
+        "</section>"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-6-4-parsons-3",
+    "type": "parsons",
+    "title": "섹션과 아티클 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 section 안에 제목 \"블로그\" 가 오고, 그 아래 article 안에 h3 \"첫 번째 글\" 과 문단 \"안녕하세요.\" 가 차례대로 오도록 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "fragments": [
+        "    <h3>첫 번째 글</h3>",
+        "</section>",
+        "<section>",
+        "  <article>",
+        "  </article>",
+        "    <p>안녕하세요.</p>",
+        "  <h2>블로그</h2>"
+      ],
+      "answer_order": [
+        2,
+        6,
+        3,
+        0,
+        5,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-6-4-blank-1",
+    "type": "blank",
+    "title": "section 태그 빈칸",
+    "description": "주제 영역을 묶는 section 이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <h2>블로그</h2>\n  <article>첫 번째 글</article>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<section>"
+          ],
+          "hint": "주제 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-4-blank-2",
+    "type": "blank",
+    "title": "article 태그 빈칸",
+    "description": "독립적인 글 하나가 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<section>\n  <h2>블로그</h2>\n  {{1}}첫 번째 글</article>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<article>"
+          ],
+          "hint": "독립적인 글을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-4-short-3",
+    "type": "short",
+    "title": "독립적인 글 태그 이름 쓰기",
+    "description": "혼자 떼어 읽어도 되는 독립적인 글을 묶는 태그 이름(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "caseSensitive": false,
+    "content": {
+      "code": "<section>\n  <h2>블로그</h2>\n  <___>첫 번째 글</___>\n</section>",
+      "answer": [
+        "article",
+        "<article>"
+      ]
+    }
+  },
+  {
+    "id": "html-6-4-code-1",
+    "type": "code",
+    "title": "section 안에 article 넣기",
+    "description": "section 안에 article 을 넣어 글을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-4",
+    "content": {
+      "starter_code": "<section>\n  <h2>블로그</h2>\n  <!-- 여기에 article 을 넣으세요 -->\n</section>\n",
+      "checks": [
+        {
+          "pattern": "<section\\b[^>]*>[\\s\\S]*<article\\b[^>]*>[\\s\\S]*</article\\s*>[\\s\\S]*</section\\s*>",
+          "message": "section 안에 article 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<article\\b[^>]*>(?!\\s*</article)",
+          "message": "article 안에 글 내용을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<section>\n  <h2>블로그</h2>\n  <article>첫 번째 글</article>\n</section>"
+    }
+  },
+  {
+    "id": "html-6-5-mcq-1",
+    "type": "mcq",
+    "title": "레이아웃 정리 개념 확인",
+    "description": "시맨틱 요소로 페이지 뼈대를 만들 때, 위에서 아래로 알맞은 순서는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "choices": [
+        "footer → main → nav → header",
+        "main → header → footer → nav",
+        "nav → footer → header → main",
+        "header → nav → main → footer"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-6-5-mcq-2",
+    "type": "mcq",
+    "title": "레이아웃 정리 올바른 코드",
+    "description": "태그 짝이 맞게 페이지 뼈대를 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "choices": [
+        "<header>내 사이트</header>\n<main>\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>",
+        "<header>내 사이트</header>\n<main>\n  <section>환영합니다</main>\n</section>\n<footer>© 2026</footer>",
+        "<header>내 사이트<header>\n<main>\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>",
+        "<header>내 사이트</header>\n<main>\n  <section>환영합니다</section>\n</main>\n</footer>© 2026<footer>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-6-5-mcq-3",
+    "type": "mcq",
+    "title": "레이아웃 정리 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 위에서부터 어떤 순서로 보일까요?\n<header>내 사이트</header>\n<nav>홈 | 소개</nav>\n<main>\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "choices": [
+        "© 2026 → 환영합니다 → 홈 | 소개 → 내 사이트",
+        "환영합니다 만 보인다",
+        "header → nav → main → footer 라는 글자가 보인다",
+        "내 사이트 → 홈 | 소개 → 환영합니다 → © 2026"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-6-5-parsons-1",
+    "type": "parsons",
+    "title": "레이아웃 정리 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 위에서부터 header, nav, main, footer 순서의 페이지 뼈대를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "fragments": [
+        "<footer>© 2026</footer>",
+        "<main>환영합니다</main>",
+        "<header>내 사이트</header>",
+        "<nav>홈 | 소개</nav>"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-6-5-parsons-2",
+    "type": "parsons",
+    "title": "레이아웃 정리 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 header, nav 다음에 section 이 든 main, 마지막에 footer 가 오는 페이지를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "fragments": [
+        "</main>",
+        "<nav>홈 | 소개</nav>",
+        "<footer>© 2026</footer>",
+        "  <section>환영합니다</section>",
+        "<header>내 사이트</header>",
+        "<main>"
+      ],
+      "answer_order": [
+        4,
+        1,
+        5,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-6-5-parsons-3",
+    "type": "parsons",
+    "title": "레이아웃 정리 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 header, nav 다음에 main 안의 section(제목 \"환영합니다\" 와 그 아래 문단), 마지막에 footer 가 오는 페이지를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "fragments": [
+        "<header>내 사이트</header>",
+        "</main>",
+        "<nav>홈 | 소개</nav>",
+        "<main>",
+        "  <section>",
+        "    <p>제 사이트에 오신 것을 환영해요.</p>",
+        "    <h2>환영합니다</h2>",
+        "<footer>© 2026</footer>",
+        "  </section>"
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        5,
+        8,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "id": "html-6-5-blank-1",
+    "type": "blank",
+    "title": "페이지 머리말 header 빈칸",
+    "description": "페이지 맨 위 머리말 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}내 사이트</header>\n<nav>홈 | 소개</nav>\n<main>\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<header>"
+          ],
+          "hint": "머리말 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-5-blank-2",
+    "type": "blank",
+    "title": "메뉴 nav 빈칸",
+    "description": "메뉴 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>내 사이트</header>\n{{1}}홈 | 소개</nav>\n<main>\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<nav>"
+          ],
+          "hint": "메뉴 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-5-blank-3",
+    "type": "blank",
+    "title": "페이지 본문 main 빈칸",
+    "description": "section 을 담는 본문 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>내 사이트</header>\n<nav>홈 | 소개</nav>\n{{1}}\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<main>"
+          ],
+          "hint": "본문 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-6-5-code-1",
+    "type": "code",
+    "title": "시맨틱 요소로 페이지 구성하기",
+    "description": "header, nav, main(안에 section), footer 로 페이지를 구성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-6-5",
+    "content": {
+      "starter_code": "<!-- header, nav, main(section), footer 로 페이지를 구성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*?</header\\s*>",
+          "message": "header 로 머리말 영역을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<nav\\b[^>]*>[\\s\\S]*?</nav\\s*>",
+          "message": "nav 로 메뉴 영역을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<main\\b[^>]*>[\\s\\S]*<section\\b[^>]*>[\\s\\S]*</section\\s*>[\\s\\S]*</main\\s*>",
+          "message": "main 안에 section 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<footer\\b[^>]*>[\\s\\S]*?</footer\\s*>",
+          "message": "footer 로 꼬리말 영역을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<header\\b[\\s\\S]*<nav\\b[\\s\\S]*<main\\b[\\s\\S]*<footer\\b",
+          "message": "header → nav → main → footer 순서로 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<header>내 사이트</header>\n<nav>홈 | 소개</nav>\n<main>\n  <section>환영합니다</section>\n</main>\n<footer>© 2026</footer>"
+    }
+  },
+  {
+    "id": "html-7-1-mcq-1",
+    "type": "mcq",
+    "title": "프로젝트 개요 개념 확인",
+    "description": "이번 프로젝트에서 만들 프로필 페이지에 들어가는 내용으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "choices": [
+        "날씨, 지도, 시계, 계산기",
+        "이름, 사진, 소개, 링크",
+        "게임 점수와 순위표",
+        "장바구니와 결제 버튼"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-7-1-mcq-2",
+    "type": "mcq",
+    "title": "프로젝트 개요 올바른 코드",
+    "description": "프로필 페이지 맨 위에 이름 Jane Doe 를 가장 큰 제목으로 바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "choices": [
+        "<h6>Jane Doe</h6>",
+        "<h1>Jane Doe<h1>",
+        "<h1>Jane Doe</h1>",
+        "<h1>Jane Doe</h2>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-7-1-mcq-3",
+    "type": "mcq",
+    "title": "프로젝트 개요 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>Jane Doe</h1>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "choices": [
+        "Jane Doe 가 작은 보통 글자로 보인다.",
+        "<h1>Jane Doe</h1> 가 그대로 보인다.",
+        "아무것도 보이지 않는다.",
+        "Jane Doe 가 크고 굵은 제목 글자로 보인다."
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-7-1-parsons-1",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 가장 큰 제목 <h1>Jane Doe</h1> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "fragments": [
+        "Jane Doe",
+        "</h1>",
+        "<h1>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-7-1-parsons-2",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 가장 큰 제목 <h1>Jane Doe</h1> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "fragments": [
+        "</h1>",
+        "Jane",
+        "Doe",
+        "<h1>"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-7-1-parsons-3",
+    "type": "parsons",
+    "title": "프로젝트 개요 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 가장 큰 제목 <h1>안녕하세요, 저는 Jane Doe 입니다.</h1> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "fragments": [
+        "안녕하세요,",
+        "저는",
+        "Jane Doe",
+        "입니다.",
+        "</h1>",
+        "<h1>"
+      ],
+      "answer_order": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-7-1-blank-1",
+    "type": "blank",
+    "title": "이름 제목 h1 빈칸",
+    "description": "이름이 가장 큰 제목으로 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Jane Doe</h1>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-1-blank-2",
+    "type": "blank",
+    "title": "프로필 이름 빈칸",
+    "description": "제목에 이름 Jane Doe 가 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>{{1}}</h1>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Jane Doe"
+          ],
+          "hint": "프로필 주인의 이름"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-1-short-3",
+    "type": "short",
+    "title": "가장 큰 제목 태그 이름 쓰기",
+    "description": "가장 큰 제목을 만드는 태그 이름(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>Jane Doe</___>",
+      "answer": [
+        "h1",
+        "<h1>"
+      ]
+    }
+  },
+  {
+    "id": "html-7-1-code-1",
+    "type": "code",
+    "title": "h1 으로 이름 쓰기",
+    "description": "h1 요소로 \"Jane Doe\" 를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-1",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1\\b[^>]*>",
+          "message": "h1 여는 태그가 필요해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<h1\\b[^>]*>\\s*Jane\\s+Doe\\s*</h1\\s*>",
+          "message": "<h1>Jane Doe</h1> 처럼 이름을 쓰고 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Jane Doe</h1>"
+    }
+  },
+  {
+    "id": "html-7-2-mcq-1",
+    "type": "mcq",
+    "title": "헤더 섹션 개념 확인",
+    "description": "프로필 페이지 맨 위의 이름과 직함 부분을 감쌀 때 알맞은 태그는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "choices": [
+        "<footer>",
+        "<head>",
+        "<header>",
+        "<span>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-7-2-mcq-2",
+    "type": "mcq",
+    "title": "헤더 섹션 올바른 코드",
+    "description": "이름과 직함을 모두 header 안에 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "choices": [
+        "<header>\n  <h1>Jane Doe</h1>\n</header>\n<p>웹 개발자</p>",
+        "<header>\n  <h1>Jane Doe</h1>\n  <p>웹 개발자</p>\n</header>",
+        "<header>\n  <h1>Jane Doe</h1>\n  <p>웹 개발자</p>\n<header>",
+        "<head>\n  <h1>Jane Doe</h1>\n  <p>웹 개발자</p>\n</head>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-7-2-mcq-3",
+    "type": "mcq",
+    "title": "헤더 섹션 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<header>\n  <h1>Jane Doe</h1>\n  <p>웹 개발자</p>\n</header>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "choices": [
+        "Jane Doe 가 큰 제목으로 보이고, 그 아래 줄에 웹 개발자 가 보통 글자로 보인다.",
+        "웹 개발자 가 위에 큰 제목으로, Jane Doe 가 아래에 보인다.",
+        "Jane Doe 와 웹 개발자 가 같은 크기로 한 줄에 보인다.",
+        "header 라는 글자가 맨 위에 보인다."
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-7-2-parsons-1",
+    "type": "parsons",
+    "title": "헤더 섹션 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 header 안에 이름(h1) \"Jane Doe\" 와 그 아래 직함(p) \"웹 개발자\" 가 오도록 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "fragments": [
+        "  <p>웹 개발자</p>",
+        "  <h1>Jane Doe</h1>",
+        "<header>",
+        "</header>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-7-2-parsons-2",
+    "type": "parsons",
+    "title": "헤더 섹션 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 header 안에 이름 \"Jane Doe\", 직함 \"웹 개발자\", 문단 \"서울에 살아요\" 가 차례대로 오도록 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "fragments": [
+        "<header>",
+        "  <p>웹 개발자</p>",
+        "  <p>서울에 살아요</p>",
+        "</header>",
+        "  <h1>Jane Doe</h1>"
+      ],
+      "answer_order": [
+        0,
+        4,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-7-2-parsons-3",
+    "type": "parsons",
+    "title": "헤더 섹션 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 이름과 직함이 든 header 가 먼저 오고, 그 아래 문단 \"환영합니다\" 가 든 main 이 오도록 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "fragments": [
+        "<header>",
+        "</header>",
+        "</main>",
+        "<main>",
+        "  <p>웹 개발자</p>",
+        "  <h1>Jane Doe</h1>",
+        "  <p>환영합니다</p>"
+      ],
+      "answer_order": [
+        0,
+        5,
+        4,
+        1,
+        3,
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-7-2-blank-1",
+    "type": "blank",
+    "title": "프로필 header 빈칸",
+    "description": "이름과 직함을 감싸는 머리말 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <h1>Jane Doe</h1>\n  <p>웹 개발자</p>\n</header>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<header>"
+          ],
+          "hint": "페이지 상단을 감싸는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-2-blank-2",
+    "type": "blank",
+    "title": "헤더 이름 h1 빈칸",
+    "description": "header 안의 이름이 가장 큰 제목이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>\n  {{1}}Jane Doe</h1>\n  <p>웹 개발자</p>\n</header>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-2-blank-3",
+    "type": "blank",
+    "title": "헤더 직함 p 빈칸",
+    "description": "직함 \"웹 개발자\" 가 문단이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<header>\n  <h1>Jane Doe</h1>\n  {{1}}웹 개발자</p>\n</header>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "문단을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-2-code-1",
+    "type": "code",
+    "title": "header 에 이름과 직함 넣기",
+    "description": "header 안에 h1 으로 이름, p 로 직함을 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-2",
+    "content": {
+      "starter_code": "<header>\n  <!-- 여기에 이름(h1)과 직함(p)을 넣으세요 -->\n</header>\n",
+      "checks": [
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*</header\\s*>",
+          "message": "header 로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*<h1\\b[^>]*>[^<]*[^<\\s][^<]*</h1\\s*>[\\s\\S]*</header\\s*>",
+          "message": "header 안에 h1 으로 이름을 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<header\\b[^>]*>[\\s\\S]*<p\\b[^>]*>[^<]*[^<\\s][^<]*</p\\s*>[\\s\\S]*</header\\s*>",
+          "message": "header 안에 p 로 직함을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<header>\n  <h1>Jane Doe</h1>\n  <p>웹 개발자</p>\n</header>"
+    }
+  },
+  {
+    "id": "html-7-3-mcq-1",
+    "type": "mcq",
+    "title": "프로필 사진 개념 확인",
+    "description": "프로필 사진에 alt 텍스트를 넣는 까닭으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "choices": [
+        "사진을 볼 수 없을 때 사진 내용을 글로 알려 주려고",
+        "사진을 더 크게 보이게 하려고",
+        "사진을 새 탭에서 열리게 하려고",
+        "사진 파일의 주소를 정하려고"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-7-3-mcq-2",
+    "type": "mcq",
+    "title": "프로필 사진 올바른 코드",
+    "description": "alt 텍스트가 있는 프로필 사진 코드로 바른 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "choices": [
+        "<img src=\"profile.jpg\">Jane Doe 프로필 사진</img>",
+        "<img src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\">",
+        "<img alt=\"profile.jpg\" src=\"Jane Doe 프로필 사진\">",
+        "<img src=\"profile.jpg\" title=\"Jane Doe 프로필 사진\">"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-7-3-mcq-3",
+    "type": "mcq",
+    "title": "프로필 사진 화면 결과",
+    "description": "profile.jpg 파일이 잘 있을 때, 다음 코드는 화면에 어떻게 보일까요?\n<img src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "choices": [
+        "사진과 alt 글자가 함께 보인다.",
+        "alt 글자만 보인다.",
+        "프로필 사진만 보이고 alt 글자는 보이지 않는다.",
+        "profile.jpg 라는 글자가 보인다."
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-7-3-parsons-1",
+    "type": "parsons",
+    "title": "프로필 사진 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 대체 텍스트가 있는 프로필 사진 <img src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\"> 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "fragments": [
+        "src=\"profile.jpg\"",
+        "<img",
+        "alt=\"Jane Doe 프로필 사진\">"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-7-3-parsons-2",
+    "type": "parsons",
+    "title": "프로필 사진 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 대체 텍스트가 있는 프로필 사진 <img src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\"> 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "fragments": [
+        "<img",
+        "alt=",
+        "src=\"profile.jpg\"",
+        "\"Jane Doe 프로필 사진\">"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-7-3-parsons-3",
+    "type": "parsons",
+    "title": "프로필 사진 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 대체 텍스트가 있는 프로필 사진 <img src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\"> 를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "fragments": [
+        "src=",
+        "\"profile.jpg\"",
+        "\"Jane Doe 프로필 사진\">",
+        "<img",
+        "alt="
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-7-3-blank-1",
+    "type": "blank",
+    "title": "프로필 img 태그 빈칸",
+    "description": "프로필 사진을 넣는 태그가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}} src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<img"
+          ],
+          "hint": "이미지 태그의 시작 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-3-blank-2",
+    "type": "blank",
+    "title": "프로필 alt 빈칸",
+    "description": "사진 대신 보여 줄 글이 들어가도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<img src=\"profile.jpg\" {{1}}\"Jane Doe 프로필 사진\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "alt="
+          ],
+          "hint": "대체 텍스트 속성 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-3-short-3",
+    "type": "short",
+    "title": "대체 텍스트 속성 이름 쓰기",
+    "description": "사진 대신 보여 줄 글(대체 텍스트)을 적는 속성 이름(밑줄 자리)을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<img src=\"profile.jpg\" ___=\"Jane Doe 프로필 사진\">",
+      "answer": [
+        "alt"
+      ]
+    }
+  },
+  {
+    "id": "html-7-3-code-1",
+    "type": "code",
+    "title": "alt 있는 프로필 사진 넣기",
+    "description": "header 안에 alt 가 있는 img 로 프로필 사진을 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-3",
+    "content": {
+      "starter_code": "<header>\n  <h1>Jane Doe</h1>\n  <!-- 여기에 프로필 사진(img)을 넣으세요 -->\n</header>\n",
+      "checks": [
+        {
+          "pattern": "<img\\b[^>]*\\bsrc\\s*=\\s*[\\\"']?[^\\\"'\\s>]+",
+          "message": "img 태그에 src 로 사진 주소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<img\\b[^>]*\\balt\\s*=\\s*(\\\"[^\\\"]*[^\\\"\\s][^\\\"]*\\\"|'[^']*[^'\\s][^']*'|[^\\s>\\\"']+)",
+          "message": "alt 에 사진을 설명하는 글을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<header>\n  <h1>Jane Doe</h1>\n  <img src=\"profile.jpg\" alt=\"Jane Doe 프로필 사진\">\n</header>"
+    }
+  },
+  {
+    "id": "html-7-4-mcq-1",
+    "type": "mcq",
+    "title": "자기소개 섹션 개념 확인",
+    "description": "프로필 페이지의 자기소개 부분을 하나의 주제 영역으로 묶을 때 알맞은 태그는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "choices": [
+        "<img>",
+        "<a>",
+        "<span>",
+        "<section>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-7-4-mcq-2",
+    "type": "mcq",
+    "title": "자기소개 섹션 올바른 코드",
+    "description": "자기소개 섹션을 태그 짝이 맞게 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "choices": [
+        "<section>\n  <h2>About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n<section>",
+        "<section>\n  <h2>About me</p>\n  <p>저는 웹 개발을 배우고 있어요.</h2>\n</section>",
+        "<section>\n  <h2>About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n</section>",
+        "</section>\n  <h2>About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n<section>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-7-4-mcq-3",
+    "type": "mcq",
+    "title": "자기소개 섹션 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<section>\n  <h2>About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n</section>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "choices": [
+        "소개 문장만 보이고 About me 는 보이지 않는다.",
+        "section 이라는 글자가 맨 위에 보인다.",
+        "About me 와 소개 문장이 한 줄에 이어서 보인다.",
+        "About me 가 제목으로 보이고, 그 아래 줄에 소개 문장이 보인다."
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-7-4-parsons-1",
+    "type": "parsons",
+    "title": "자기소개 섹션 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 section 안에 제목 \"About me\" 와 그 아래 소개 문단이 오도록 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "fragments": [
+        "  <h2>About me</h2>",
+        "  <p>저는 웹 개발을 배우고 있어요.</p>",
+        "</section>",
+        "<section>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-7-4-parsons-2",
+    "type": "parsons",
+    "title": "자기소개 섹션 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 section 안에 제목 \"About me\", 문단 \"저는 웹 개발을 배우고 있어요.\", 문단 \"취미는 그림 그리기예요.\" 가 차례대로 오도록 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "fragments": [
+        "  <p>저는 웹 개발을 배우고 있어요.</p>",
+        "  <h2>About me</h2>",
+        "  <p>취미는 그림 그리기예요.</p>",
+        "<section>",
+        "</section>"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-7-4-parsons-3",
+    "type": "parsons",
+    "title": "자기소개 섹션 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 main 안에 section 을 두고, section 안에 제목 \"About me\", 문단 \"저는 웹 개발을 배우고 있어요.\", 문단 \"취미는 그림 그리기예요.\" 가 차례대로 오도록 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "fragments": [
+        "    <p>저는 웹 개발을 배우고 있어요.</p>",
+        "  <section>",
+        "    <p>취미는 그림 그리기예요.</p>",
+        "    <h2>About me</h2>",
+        "<main>",
+        "</main>",
+        "  </section>"
+      ],
+      "answer_order": [
+        4,
+        1,
+        3,
+        0,
+        2,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-7-4-blank-1",
+    "type": "blank",
+    "title": "자기소개 section 빈칸",
+    "description": "자기소개 영역이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <h2>About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<section>"
+          ],
+          "hint": "주제 영역을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-4-blank-2",
+    "type": "blank",
+    "title": "자기소개 제목 h2 빈칸",
+    "description": "About me 가 소제목(h2)이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<section>\n  {{1}}About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h2>"
+          ],
+          "hint": "두 번째로 큰 제목을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-4-blank-3",
+    "type": "blank",
+    "title": "자기소개 문단 p 빈칸",
+    "description": "소개 문장이 문단이 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<section>\n  <h2>About me</h2>\n  {{1}}저는 웹 개발을 배우고 있어요.</p>\n</section>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "문단을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-4-code-1",
+    "type": "code",
+    "title": "About me 섹션 만들기",
+    "description": "section 안에 h2 \"About me\" 와 소개글 p 를 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-4",
+    "content": {
+      "starter_code": "<!-- 여기에 자기소개 섹션을 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<section\\b[^>]*>[\\s\\S]*</section\\s*>",
+          "message": "section 으로 자기소개를 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<section\\b[^>]*>[\\s\\S]*<h2\\b[^>]*>\\s*About\\s+me\\s*</h2\\s*>[\\s\\S]*</section\\s*>",
+          "message": "section 안에 <h2>About me</h2> 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<section\\b[^>]*>[\\s\\S]*<p\\b[^>]*>[^<]*[^<\\s][^<]*</p\\s*>[\\s\\S]*</section\\s*>",
+          "message": "section 안에 p 로 소개글을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<section>\n  <h2>About me</h2>\n  <p>저는 웹 개발을 배우고 있어요.</p>\n</section>"
+    }
+  },
+  {
+    "id": "html-7-5-mcq-1",
+    "type": "mcq",
+    "title": "소셜 링크 개념 확인",
+    "description": "소셜 링크 목록을 만드는 방법으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "choices": [
+        "a 안에 ul 과 li 를 넣는다.",
+        "ul 과 li 로 목록을 만들고, li 안에 a 를 넣는다.",
+        "img 안에 a 를 넣는다.",
+        "li 없이 ul 안에 a 만 넣는다."
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-7-5-mcq-2",
+    "type": "mcq",
+    "title": "소셜 링크 올바른 코드",
+    "description": "GitHub 링크를 목록 항목으로 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "choices": [
+        "<ul>\n  <li><a href=\"https://github.com\">GitHub</a></li>\n</ul>",
+        "<ul>\n  <a><li href=\"https://github.com\">GitHub</li></a>\n</ul>",
+        "<ul>\n  <li><a href=\"https://github.com\">GitHub</li></a>\n</ul>",
+        "<li>\n  <ul><a href=\"https://github.com\">GitHub</a></ul>\n</li>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-7-5-mcq-3",
+    "type": "mcq",
+    "title": "소셜 링크 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<ul>\n  <li><a href=\"https://github.com\">GitHub</a></li>\n  <li><a href=\"https://blog.com\">Blog</a></li>\n</ul>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "choices": [
+        "GitHub 와 Blog 가 번호(1, 2)가 붙은 목록으로 보인다.",
+        "GitHub 와 Blog 가 점(•)이 붙은 목록으로 각각 다른 줄에 링크로 보인다.",
+        "https://github.com 같은 주소 글자가 보인다.",
+        "GitHub 와 Blog 가 링크가 아닌 보통 글자로 보인다."
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-7-5-parsons-1",
+    "type": "parsons",
+    "title": "소셜 링크 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 GitHub 링크 다음에 Blog 링크가 오는 목록을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "fragments": [
+        "</ul>",
+        "  <li><a href=\"https://github.com\">GitHub</a></li>",
+        "  <li><a href=\"https://blog.com\">Blog</a></li>",
+        "<ul>"
+      ],
+      "answer_order": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-7-5-parsons-2",
+    "type": "parsons",
+    "title": "소셜 링크 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 GitHub, Blog, YouTube 링크가 차례대로 오는 목록을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "fragments": [
+        "</ul>",
+        "  <li><a href=\"https://blog.com\">Blog</a></li>",
+        "  <li><a href=\"https://github.com\">GitHub</a></li>",
+        "  <li><a href=\"https://youtube.com\">YouTube</a></li>",
+        "<ul>"
+      ],
+      "answer_order": [
+        4,
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-7-5-parsons-3",
+    "type": "parsons",
+    "title": "소셜 링크 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 GitHub, Blog, YouTube 링크가 차례대로 오는 목록을 만드세요. 첫 번째 li 는 여러 줄로 나뉘어 있어요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "fragments": [
+        "    <a href=\"https://github.com\">GitHub</a>",
+        "  <li><a href=\"https://blog.com\">Blog</a></li>",
+        "  <li><a href=\"https://youtube.com\">YouTube</a></li>",
+        "  <li>",
+        "</ul>",
+        "  </li>",
+        "<ul>"
+      ],
+      "answer_order": [
+        6,
+        3,
+        0,
+        5,
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-7-5-blank-1",
+    "type": "blank",
+    "title": "링크 목록 ul 빈칸",
+    "description": "점이 붙은 목록이 시작되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <li><a href=\"https://github.com\">GitHub</a></li>\n  <li><a href=\"https://blog.com\">Blog</a></li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "순서 없는 목록을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-5-blank-2",
+    "type": "blank",
+    "title": "목록 속 a 태그 빈칸",
+    "description": "첫 번째 목록 항목 안에 링크가 들어가도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ul>\n  <li>{{1}} href=\"https://github.com\">GitHub</a></li>\n  <li><a href=\"https://blog.com\">Blog</a></li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<a"
+          ],
+          "hint": "링크 태그의 시작 부분"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-5-blank-3",
+    "type": "blank",
+    "title": "목록 속 href 빈칸",
+    "description": "Blog 링크가 https://blog.com 으로 이동하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ul>\n  <li><a href=\"https://github.com\">GitHub</a></li>\n  <li><a {{1}}\"https://blog.com\">Blog</a></li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "href="
+          ],
+          "hint": "이동할 주소를 적는 속성 이름과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-7-5-code-1",
+    "type": "code",
+    "title": "ul/li 로 소셜 링크 두 개 만들기",
+    "description": "ul 과 li 를 사용해 a 링크 두 개를 목록으로 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-7-5",
+    "content": {
+      "starter_code": "<ul>\n  <!-- 여기에 링크 두 개를 li 로 넣으세요 -->\n</ul>\n",
+      "checks": [
+        {
+          "pattern": "<ul\\b[^>]*>[\\s\\S]*</ul\\s*>",
+          "message": "ul 로 목록을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li\\b[^>]*>\\s*<a\\b[^>]*\\bhref\\s*=\\s*[\\\"']?[^\\\"'\\s>]+[^>]*>[^<]*[^<\\s][^<]*</a\\s*>\\s*</li\\s*>[\\s\\S]*<li\\b[^>]*>\\s*<a\\b[^>]*\\bhref\\s*=\\s*[\\\"']?[^\\\"'\\s>]+[^>]*>[^<]*[^<\\s][^<]*</a\\s*>\\s*</li\\s*>",
+          "message": "li 안에 href 가 있는 a 링크를 두 개 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ul\\b[^>]*>\\s*<li\\b[\\s\\S]*</li\\s*>\\s*</ul\\s*>",
+          "message": "li 들을 ul 안에 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<ul>\n  <li><a href=\"https://github.com\">GitHub</a></li>\n  <li><a href=\"https://blog.com\">Blog</a></li>\n</ul>"
+    }
+  }
+]
