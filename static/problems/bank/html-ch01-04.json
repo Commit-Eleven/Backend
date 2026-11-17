@@ -1,0 +1,4647 @@
+[
+  {
+    "id": "html-1-1-mcq-1",
+    "type": "mcq",
+    "title": "HTML이란? 개념 확인",
+    "description": "HTML 은 어떤 언어일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "choices": [
+        "숫자를 계산하는 계산기 프로그램",
+        "웹 페이지의 구조를 만드는 마크업 언어",
+        "그림을 그리는 그림판 프로그램",
+        "인터넷 속도를 빠르게 하는 장치"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-1-1-mcq-2",
+    "type": "mcq",
+    "title": "HTML이란? 태그를 읽는 프로그램",
+    "description": "HTML 태그를 읽어서 화면에 보여 주는 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "choices": [
+        "키보드",
+        "프린터",
+        "마우스",
+        "브라우저"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-1-1-mcq-3",
+    "type": "mcq",
+    "title": "HTML이란? 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<p>Hello HTML</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "choices": [
+        "Hello HTML 이라는 글자가 보인다",
+        "<p>Hello HTML</p> 가 그대로 보인다",
+        "<p> 만 보인다",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-1-1-parsons-1",
+    "type": "parsons",
+    "title": "HTML이란? 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Hello HTML 을 보여 주는 p 요소를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "fragments": [
+        "<p>",
+        "</p>",
+        "Hello HTML"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-1-parsons-2",
+    "type": "parsons",
+    "title": "HTML이란? 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 body 안에 p 요소 Hello HTML 을 넣으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "fragments": [
+        "<body>",
+        "</body>",
+        "<p>Hello HTML</p>"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-1-parsons-3",
+    "type": "parsons",
+    "title": "HTML이란? 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 body 안에 p 요소 Hello HTML 을 넣으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "fragments": [
+        "</p>",
+        "Hello HTML",
+        "<p>",
+        "<body>",
+        "</body>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-1-1-blank-1",
+    "type": "blank",
+    "title": "HTML이란? 여는 태그 빈칸",
+    "description": "Hello HTML 을 문단으로 보여 주도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Hello HTML</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "p 요소의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-1-blank-2",
+    "type": "blank",
+    "title": "HTML이란? 내용 빈칸",
+    "description": "화면에 Hello HTML 이 보이도록 빈칸에 내용을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>{{1}}</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Hello HTML"
+          ],
+          "hint": "화면에 보일 글자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-1-blank-3",
+    "type": "blank",
+    "title": "HTML이란? 닫는 태그 빈칸",
+    "description": "p 요소가 끝나도록 빈칸에 닫는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>Hello HTML{{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "</p>"
+          ],
+          "hint": "p 요소의 닫는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-1-code-1",
+    "type": "code",
+    "title": "HTML이란? Hello HTML 쓰기",
+    "description": "body 안에 p 요소로 \"Hello HTML\"을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-1",
+    "content": {
+      "starter_code": "<body>\n  <!-- 여기에 작성하세요 -->\n</body>\n",
+      "checks": [
+        {
+          "pattern": "<body(\\s[^>]*)?>[\\s\\S]*<p(\\s[^>]*)?>[\\s\\S]*</p>[\\s\\S]*</body>",
+          "message": "body 안에 p 요소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*Hello HTML\\s*</p>",
+          "message": "p 요소에 Hello HTML 을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<body>\n  <p>Hello HTML</p>\n</body>\n"
+    }
+  },
+  {
+    "id": "html-1-2-mcq-1",
+    "type": "mcq",
+    "title": "기본 구조 개념 확인",
+    "description": "HTML 문서의 기본 구조에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "choices": [
+        "head 안에 화면에 보이는 내용을 쓴다",
+        "body 는 html 요소 바깥에 쓴다",
+        "html 요소 안에 head(정보)와 body(화면에 보이는 내용)가 들어간다",
+        "head 와 body 중 하나만 골라 써야 한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-1-2-mcq-2",
+    "type": "mcq",
+    "title": "기본 구조 올바른 코드",
+    "description": "HTML 문서의 기본 구조를 바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "choices": [
+        "<head>\n  <html></html>\n  <body></body>\n</head>",
+        "<body>\n  <head></head>\n</body>\n<html></html>",
+        "<html>\n  <head></head>\n  <body></body>\n</html>",
+        "<html>\n  <head></body>\n  <body></head>\n</html>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-1-2-mcq-3",
+    "type": "mcq",
+    "title": "기본 구조 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<html>\n  <head>\n  </head>\n  <body>\n    <h1>My Page</h1>\n  </body>\n</html>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "choices": [
+        "My Page 가 큰 제목으로 보인다",
+        "html, head, body 글자가 보인다",
+        "<h1>My Page</h1> 가 그대로 보인다",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-1-2-parsons-1",
+    "type": "parsons",
+    "title": "기본 구조 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 html 안에 head 와 body 가 있는 기본 문서를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "fragments": [
+        "<html>",
+        "  <body></body>",
+        "</html>",
+        "  <head></head>"
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-1-2-parsons-2",
+    "type": "parsons",
+    "title": "기본 구조 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 html 안에 head, 그 다음 body 가 오는 기본 문서를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "fragments": [
+        "  <head>",
+        "</html>",
+        "<html>",
+        "  </body>",
+        "  </head>",
+        "  <body>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        4,
+        5,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-2-parsons-3",
+    "type": "parsons",
+    "title": "기본 구조 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 body 에 h1 제목 My Page 가 있는 기본 문서를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "fragments": [
+        "  </head>",
+        "  </body>",
+        "  <body>",
+        "</html>",
+        "  <head>",
+        "    <h1>My Page</h1>",
+        "<html>"
+      ],
+      "answer_order": [
+        6,
+        4,
+        0,
+        2,
+        5,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-1-2-blank-1",
+    "type": "blank",
+    "title": "기본 구조 html 빈칸",
+    "description": "문서 전체를 감싸도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <head>\n  </head>\n  <body>\n    <h1>My Page</h1>\n  </body>\n</html>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<html>"
+          ],
+          "hint": "문서 전체를 감싸는 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-2-blank-2",
+    "type": "blank",
+    "title": "기본 구조 head 빈칸",
+    "description": "문서의 정보를 담는 부분이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<html>\n  {{1}}\n  </head>\n  <body>\n    <h1>My Page</h1>\n  </body>\n</html>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<head>"
+          ],
+          "hint": "정보를 담는 요소, 화면에는 안 보여요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-2-blank-3",
+    "type": "blank",
+    "title": "기본 구조 body 빈칸",
+    "description": "화면에 보이는 내용을 담는 부분이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<html>\n  <head>\n  </head>\n  {{1}}\n    <h1>My Page</h1>\n  </body>\n</html>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<body>"
+          ],
+          "hint": "화면에 보이는 내용을 담는 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-2-code-1",
+    "type": "code",
+    "title": "기본 구조 My Page 문서 만들기",
+    "description": "html, head, body로 이루어진 기본 문서를 만들고 body에 h1 \"My Page\"를 쓰세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-2",
+    "content": {
+      "starter_code": "<!-- 여기에 기본 구조를 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<html(\\s[^>]*)?>[\\s\\S]*</html>",
+          "message": "html 요소로 문서 전체를 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<head(\\s[^>]*)?>[\\s\\S]*</head>",
+          "message": "head 요소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</head>[\\s\\S]*<body(\\s[^>]*)?>",
+          "message": "head 다음에 body 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<body(\\s[^>]*)?>[\\s\\S]*<h1(\\s[^>]*)?>\\s*My Page\\s*</h1>[\\s\\S]*</body>",
+          "message": "body 안에 h1 으로 My Page 를 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<html>\n  <head>\n  </head>\n  <body>\n    <h1>My Page</h1>\n  </body>\n</html>\n"
+    }
+  },
+  {
+    "id": "html-1-3-mcq-1",
+    "type": "mcq",
+    "title": "태그와 요소 개념 확인",
+    "description": "요소를 이루는 순서로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "choices": [
+        "닫는 태그 → 내용 → 여는 태그",
+        "내용 → 여는 태그 → 닫는 태그",
+        "여는 태그 → 닫는 태그 → 내용",
+        "여는 태그 → 내용 → 닫는 태그"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-1-3-mcq-2",
+    "type": "mcq",
+    "title": "태그와 요소 올바른 코드",
+    "description": "여는 태그와 닫는 태그를 바르게 쓴 p 요소는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "choices": [
+        "<p>Tags wrap content<p>",
+        "<p>Tags wrap content</p>",
+        "</p>Tags wrap content</p>",
+        "<p>Tags wrap content</>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-1-3-mcq-3",
+    "type": "mcq",
+    "title": "태그와 요소 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<p>Tags wrap content</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "choices": [
+        "<p>Tags wrap content</p> 가 그대로 보인다",
+        "Tags wrap content 만 보인다",
+        "p Tags wrap content p 가 보인다",
+        "Tags wrap content</p> 가 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-1-3-parsons-1",
+    "type": "parsons",
+    "title": "태그와 요소 순서 맞추기 1",
+    "description": "조각을 여는 태그, 내용, 닫는 태그 순서로 놓아 p 요소를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "fragments": [
+        "Tags wrap content",
+        "</p>",
+        "<p>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-3-parsons-2",
+    "type": "parsons",
+    "title": "태그와 요소 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 body 안에 p 요소 Tags wrap content 를 넣으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "fragments": [
+        "<body>",
+        "</body>",
+        "<p>",
+        "</p>",
+        "Tags wrap content"
+      ],
+      "answer_order": [
+        0,
+        2,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-3-parsons-3",
+    "type": "parsons",
+    "title": "태그와 요소 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 body 안에 h1 제목 Tags 를 쓰고, 그 아래에 p 요소 Tags wrap content 를 넣으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "fragments": [
+        "<p>",
+        "</p>",
+        "<h1>Tags</h1>",
+        "<body>",
+        "</body>",
+        "Tags wrap content"
+      ],
+      "answer_order": [
+        3,
+        2,
+        0,
+        5,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-1-3-blank-1",
+    "type": "blank",
+    "title": "태그와 요소 여는 태그 빈칸",
+    "description": "요소가 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Tags wrap content</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "꺾쇠 안에 p"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-3-blank-2",
+    "type": "blank",
+    "title": "태그와 요소 닫는 태그 빈칸",
+    "description": "요소가 끝나도록 빈칸에 닫는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>Tags wrap content{{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "</p>"
+          ],
+          "hint": "여는 태그에 / 를 더해요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-3-blank-3",
+    "type": "blank",
+    "title": "태그와 요소 내용 빈칸",
+    "description": "태그 사이에 들어갈 내용 Tags wrap content 를 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>{{1}}</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Tags wrap content"
+          ],
+          "hint": "두 태그 사이의 내용"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-3-code-1",
+    "type": "code",
+    "title": "태그와 요소 p 요소 쓰기",
+    "description": "p 요소에 \"Tags wrap content\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-3",
+    "content": {
+      "starter_code": "<!-- 여기에 p 요소를 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<p(\\s[^>]*)?>",
+          "message": "여는 태그 <p> 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</p>",
+          "message": "닫는 태그 </p> 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*Tags wrap content\\s*</p>",
+          "message": "p 요소에 Tags wrap content 를 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<p>Tags wrap content</p>\n"
+    }
+  },
+  {
+    "id": "html-1-4-mcq-1",
+    "type": "mcq",
+    "title": "중첩과 닫는 태그 개념 확인",
+    "description": "요소 안에 다른 요소를 넣었을 때, 닫는 순서로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "choices": [
+        "바깥 요소를 먼저 닫고 안쪽 요소를 나중에 닫는다",
+        "닫는 순서는 아무렇게나 해도 된다",
+        "안에 넣은 요소는 닫지 않아도 된다",
+        "안쪽 요소를 먼저 닫고 바깥 요소를 나중에 닫는다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-1-4-mcq-2",
+    "type": "mcq",
+    "title": "중첩과 닫는 태그 올바른 코드",
+    "description": "div 안에 p 를 바르게 중첩한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "choices": [
+        "<div><p>Hello</p></div>",
+        "<div><p>Hello</div></p>",
+        "<p><div>Hello</p></div>",
+        "<div><p>Hello</div>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-1-4-mcq-3",
+    "type": "mcq",
+    "title": "중첩과 닫는 태그 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<div>\n  <p>Inside div</p>\n</div>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "choices": [
+        "<p>Inside div</p> 가 그대로 보인다",
+        "div Inside div 가 보인다",
+        "Inside div 라는 글자가 보인다",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-1-4-parsons-1",
+    "type": "parsons",
+    "title": "중첩과 닫는 태그 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 div 안에 p 를 넣으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "fragments": [
+        "<div>",
+        "</div>",
+        "  <p>Inside div</p>"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-4-parsons-2",
+    "type": "parsons",
+    "title": "중첩과 닫는 태그 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 div 안에 p 를 넣고, 안쪽 요소부터 닫으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "fragments": [
+        "    Inside div",
+        "  <p>",
+        "</div>",
+        "<div>",
+        "  </p>"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-1-4-parsons-3",
+    "type": "parsons",
+    "title": "중첩과 닫는 태그 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 body 안에 div, div 안에 p 를 넣고 안쪽 요소부터 닫으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "fragments": [
+        "    </p>",
+        "    <p>",
+        "      Inside div",
+        "</body>",
+        "<body>",
+        "  <div>",
+        "  </div>"
+      ],
+      "answer_order": [
+        4,
+        5,
+        1,
+        2,
+        0,
+        6,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-1-4-blank-1",
+    "type": "blank",
+    "title": "중첩 바깥 div 빈칸",
+    "description": "바깥 요소 div 가 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <p>Inside div</p>\n</div>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<div>"
+          ],
+          "hint": "바깥 요소 div 의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-4-blank-2",
+    "type": "blank",
+    "title": "중첩 안쪽 p 빈칸",
+    "description": "div 안에 들어가는 안쪽 요소 p 가 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<div>\n  {{1}}Inside div</p>\n</div>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "안쪽 요소 p 의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-4-blank-3",
+    "type": "blank",
+    "title": "중첩 마지막 닫는 태그 빈칸",
+    "description": "안쪽 p 를 닫은 뒤, 바깥 요소를 닫도록 빈칸에 닫는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<div>\n  <p>Inside div</p>\n{{1}}",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "</div>"
+          ],
+          "hint": "바깥 요소는 마지막에 닫아요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-4-code-1",
+    "type": "code",
+    "title": "중첩 div 안에 p 넣기",
+    "description": "div 안에 p를 중첩해 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-4",
+    "content": {
+      "starter_code": "<!-- 여기에 div 안에 p 를 넣으세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<div(\\s[^>]*)?>[\\s\\S]*<p(\\s[^>]*)?>[\\s\\S]*</p>[\\s\\S]*</div>",
+          "message": "div 안에 p 요소를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</p>",
+          "message": "p 요소 안에 내용을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<div>\n  <p>Inside div</p>\n</div>\n"
+    }
+  },
+  {
+    "id": "html-1-5-mcq-1",
+    "type": "mcq",
+    "title": "HTML 주석 개념 확인",
+    "description": "HTML 주석에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "choices": [
+        "화면에 굵은 글씨로 보인다",
+        "브라우저가 큰 제목으로 보여 준다",
+        "화면에 보이지 않는 메모이다",
+        "주석을 쓰면 오류가 난다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-1-5-mcq-2",
+    "type": "mcq",
+    "title": "HTML 주석 쓰는 법",
+    "description": "HTML 주석을 바르게 쓴 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "choices": [
+        "<!-- 메모 -->",
+        "// 메모",
+        "# 메모",
+        "<-- 메모 -->"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-1-5-mcq-3",
+    "type": "mcq",
+    "title": "HTML 주석 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<!-- 인사말 문단 -->\n<p>Hello</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "choices": [
+        "인사말 문단 만 보인다",
+        "인사말 문단 과 Hello 가 모두 보인다",
+        "<!-- 인사말 문단 --> 이 그대로 보인다",
+        "Hello 만 보인다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-1-5-parsons-1",
+    "type": "parsons",
+    "title": "HTML 주석 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 주석 <!-- 인사말 문단 --> 을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "fragments": [
+        "인사말 문단",
+        "<!--",
+        "-->"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-1-5-parsons-2",
+    "type": "parsons",
+    "title": "HTML 주석 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 주석을 먼저 쓰고, 그 아래에 p 요소를 쓰세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "fragments": [
+        "<p>Hello</p>",
+        "-->",
+        "인사말 문단",
+        "<!--"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-1-5-parsons-3",
+    "type": "parsons",
+    "title": "HTML 주석 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 주석을 먼저 쓰고, 그 아래에 p 요소 Hello 를 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "fragments": [
+        "Hello",
+        "</p>",
+        "<!--",
+        "-->",
+        "인사말 문단",
+        "<p>"
+      ],
+      "answer_order": [
+        2,
+        4,
+        3,
+        5,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-1-5-blank-1",
+    "type": "blank",
+    "title": "HTML 주석 여는 기호 빈칸",
+    "description": "주석이 시작되도록 빈칸에 주석을 여는 기호를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}} 인사말 문단 -->\n<p>Hello</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<!--"
+          ],
+          "hint": "< 다음에 ! 와 - 두 개"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-5-blank-2",
+    "type": "blank",
+    "title": "HTML 주석 닫는 기호 빈칸",
+    "description": "주석이 끝나도록 빈칸에 주석을 닫는 기호를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<!-- 인사말 문단 {{1}}\n<p>Hello</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "-->"
+          ],
+          "hint": "- 두 개 다음에 >"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-5-blank-3",
+    "type": "blank",
+    "title": "HTML 주석 아래 p 빈칸",
+    "description": "주석 아래에 문단이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<!-- 인사말 문단 -->\n{{1}}Hello</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "문단 요소의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-1-5-code-1",
+    "type": "code",
+    "title": "HTML 주석과 p 쓰기",
+    "description": "<!-- --> 주석과 p 요소를 함께 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-1-5",
+    "content": {
+      "starter_code": "<!-- 여기에 주석과 p 요소를 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<p(\\s[^>]*)?>",
+          "message": "p 요소의 여는 태그를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</p>",
+          "message": "p 요소 안에 내용을 쓰고 </p> 로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<!-- 인사말 문단 -->\n<p>Hello</p>\n"
+    }
+  },
+  {
+    "id": "html-2-1-mcq-1",
+    "type": "mcq",
+    "title": "제목 요소 종류",
+    "description": "HTML 의 제목 요소가 아닌 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "choices": [
+        "h1",
+        "h7",
+        "h3",
+        "h6"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-2-1-mcq-2",
+    "type": "mcq",
+    "title": "가장 중요한 제목",
+    "description": "가장 중요한(가장 큰) 제목을 만드는 요소는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "choices": [
+        "h6",
+        "h1",
+        "h3",
+        "p"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-2-1-mcq-3",
+    "type": "mcq",
+    "title": "제목 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>Welcome to our pizza restaurant!</h1>\n<h2>Our Menu</h2>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "choices": [
+        "Our Menu 가 더 크게 보인다",
+        "두 제목이 한 줄에 같은 크기로 보인다",
+        "<h1>, <h2> 글자가 그대로 보인다",
+        "Welcome to our pizza restaurant! 가 더 크게, 그 아래 Our Menu 가 조금 작게 보인다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-2-1-parsons-1",
+    "type": "parsons",
+    "title": "제목 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 h1 제목 Welcome to our pizza restaurant! 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "fragments": [
+        "Welcome to our pizza restaurant!",
+        "</h1>",
+        "<h1>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-2-1-parsons-2",
+    "type": "parsons",
+    "title": "제목 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 h1 제목 아래에 h2 제목 Our Menu 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "fragments": [
+        "</h2>",
+        "<h2>",
+        "<h1>Welcome to our pizza restaurant!</h1>",
+        "Our Menu"
+      ],
+      "answer_order": [
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-1-parsons-3",
+    "type": "parsons",
+    "title": "제목 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h1 에 Welcome to our pizza restaurant!, 그 아래 h2 에 Our Menu 를 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "fragments": [
+        "</h2>",
+        "<h1>",
+        "Our Menu",
+        "Welcome to our pizza restaurant!",
+        "<h2>",
+        "</h1>"
+      ],
+      "answer_order": [
+        1,
+        3,
+        5,
+        4,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-1-blank-1",
+    "type": "blank",
+    "title": "제목 h1 빈칸",
+    "description": "가장 큰 제목이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Welcome to our pizza restaurant!</h1>\n<h2>Our Menu</h2>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 중요한 제목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-1-blank-2",
+    "type": "blank",
+    "title": "제목 h2 빈칸",
+    "description": "두 번째로 큰 제목이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>Welcome to our pizza restaurant!</h1>\n{{1}}Our Menu</h2>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h2>"
+          ],
+          "hint": "두 번째 크기 제목의 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-1-blank-3",
+    "type": "blank",
+    "title": "제목 내용 빈칸",
+    "description": "h2 제목에 Our Menu 가 보이도록 빈칸에 내용을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>Welcome to our pizza restaurant!</h1>\n<h2>{{1}}</h2>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Our Menu"
+          ],
+          "hint": "메뉴를 뜻하는 영어 제목"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-1-code-1",
+    "type": "code",
+    "title": "제목 h1과 h2 쓰기",
+    "description": "h1 \"Welcome to our pizza restaurant!\"와 h2 \"Our Menu\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-1",
+    "content": {
+      "starter_code": "<!-- 여기에 h1 과 h2 를 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1(\\s[^>]*)?>\\s*Welcome to our pizza restaurant!\\s*</h1>",
+          "message": "h1 에 Welcome to our pizza restaurant! 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<h2(\\s[^>]*)?>\\s*Our Menu\\s*</h2>",
+          "message": "h2 에 Our Menu 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</h1>[\\s\\S]*<h2(\\s[^>]*)?>",
+          "message": "h1 아래에 h2 를 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Welcome to our pizza restaurant!</h1>\n<h2>Our Menu</h2>\n"
+    }
+  },
+  {
+    "id": "html-2-2-mcq-1",
+    "type": "mcq",
+    "title": "단락 개념 확인",
+    "description": "p 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "choices": [
+        "문단을 만들고 위아래에 여백이 생긴다",
+        "글자를 가장 큰 제목으로 만든다",
+        "화면에 보이지 않는 메모이다",
+        "문서 정보만 담고 화면에는 안 보인다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-2-2-mcq-2",
+    "type": "mcq",
+    "title": "단락 올바른 코드",
+    "description": "두 문장을 각각 문단으로 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "choices": [
+        "<p>Welcome to our pizza restaurant!<p>\n<p>Explore our menu today.<p>",
+        "<p>Welcome to our pizza restaurant!</p>\n</p>Explore our menu today.<p>",
+        "<p>Welcome to our pizza restaurant!</p>\n<p>Explore our menu today.</p>",
+        "p Welcome to our pizza restaurant! p\np Explore our menu today. p"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-2-2-mcq-3",
+    "type": "mcq",
+    "title": "단락 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<p>Welcome to our pizza restaurant!</p>\n<p>Explore our menu today.</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "choices": [
+        "두 문장이 한 줄에 이어서 보인다",
+        "첫 번째 문장만 보인다",
+        "두 문장이 각각 다른 문단으로, 사이에 여백을 두고 보인다",
+        "<p> 태그 글자가 함께 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-2-2-parsons-1",
+    "type": "parsons",
+    "title": "단락 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 문단 Welcome to our pizza restaurant! 를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "fragments": [
+        "<p>",
+        "</p>",
+        "Welcome to our pizza restaurant!"
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-2-2-parsons-2",
+    "type": "parsons",
+    "title": "단락 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 첫 문단 아래에 두 번째 문단 Explore our menu today. 를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "fragments": [
+        "</p>",
+        "Explore our menu today.",
+        "<p>",
+        "<p>Welcome to our pizza restaurant!</p>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-2-parsons-3",
+    "type": "parsons",
+    "title": "단락 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h1 Pizza House 아래에 Welcome to our pizza restaurant!, Explore our menu today. 문단을 차례로 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "fragments": [
+        "Welcome to our pizza restaurant!",
+        "</p>",
+        "<p>",
+        "<p>Explore our menu today.</p>",
+        "<h1>Pizza House</h1>"
+      ],
+      "answer_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-2-2-blank-1",
+    "type": "blank",
+    "title": "단락 여는 태그 빈칸",
+    "description": "첫 번째 문단이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Welcome to our pizza restaurant!</p>\n<p>Explore our menu today.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "문단을 만드는 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-2-blank-2",
+    "type": "blank",
+    "title": "단락 첫 문장 빈칸",
+    "description": "첫 번째 문단에 Welcome to our pizza restaurant! 가 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>{{1}}</p>\n<p>Explore our menu today.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Welcome to our pizza restaurant!"
+          ],
+          "hint": "피자 가게에 온 것을 환영하는 문장"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-2-blank-3",
+    "type": "blank",
+    "title": "단락 둘째 문장 빈칸",
+    "description": "두 번째 문단에 Explore our menu today. 가 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>Welcome to our pizza restaurant!</p>\n<p>{{1}}</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Explore our menu today."
+          ],
+          "hint": "마침표까지 써요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-2-code-1",
+    "type": "code",
+    "title": "단락 두 문단 쓰기",
+    "description": "두 개의 p 요소에 \"Welcome to our pizza restaurant!\"와 \"Explore our menu today.\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-2",
+    "content": {
+      "starter_code": "<!-- 여기에 p 요소 두 개를 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*Welcome to our pizza restaurant!\\s*</p>",
+          "message": "첫 번째 p 에 Welcome to our pizza restaurant! 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*Explore our menu today\\.\\s*</p>",
+          "message": "두 번째 p 에 Explore our menu today. 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "restaurant!\\s*</p>[\\s\\S]*<p(\\s[^>]*)?>\\s*Explore",
+          "message": "두 문단을 차례로 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<p>Welcome to our pizza restaurant!</p>\n<p>Explore our menu today.</p>\n"
+    }
+  },
+  {
+    "id": "html-2-3-mcq-1",
+    "type": "mcq",
+    "title": "줄 바꿈 개념 확인",
+    "description": "br 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "choices": [
+        "줄만 바꾸고 닫는 태그가 없다",
+        "새 문단을 만들고 </br> 로 꼭 닫아야 한다",
+        "글자를 굵게 만든다",
+        "화면에 br 이라는 글자를 보여 준다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-2-3-mcq-2",
+    "type": "mcq",
+    "title": "줄 바꿈 올바른 코드",
+    "description": "Open daily 와 11 AM - 10 PM 사이에서 줄을 바꾸는 코드로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "choices": [
+        "<p>Open daily</br>11 AM - 10 PM</p>",
+        "<p>Open daily<br>11 AM - 10 PM</br></p>",
+        "<p>Open daily br 11 AM - 10 PM</p>",
+        "<p>Open daily<br>11 AM - 10 PM</p>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-2-3-mcq-3",
+    "type": "mcq",
+    "title": "줄 바꿈 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<p>Open daily<br>11 AM - 10 PM</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "choices": [
+        "두 글이 한 줄에 이어서 보인다",
+        "Open daily 가 첫 줄, 11 AM - 10 PM 이 둘째 줄에 보인다",
+        "Open daily<br>11 AM - 10 PM 이 그대로 보인다",
+        "11 AM - 10 PM 만 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-2-3-parsons-1",
+    "type": "parsons",
+    "title": "줄 바꿈 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Open daily 다음 줄에 11 AM - 10 PM 이 보이게 하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "fragments": [
+        "<br>",
+        "11 AM - 10 PM</p>",
+        "<p>Open daily"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-2-3-parsons-2",
+    "type": "parsons",
+    "title": "줄 바꿈 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 p 안에서 Open daily 와 11 AM - 10 PM 사이의 줄을 바꾸세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "fragments": [
+        "<br>",
+        "Open daily",
+        "</p>",
+        "11 AM - 10 PM",
+        "<p>"
+      ],
+      "answer_order": [
+        4,
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-2-3-parsons-3",
+    "type": "parsons",
+    "title": "줄 바꿈 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h2 Hours 아래 문단에서 Open daily 와 11 AM - 10 PM 사이의 줄을 바꾸세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "fragments": [
+        "</p>",
+        "11 AM - 10 PM",
+        "<p>",
+        "<br>",
+        "<h2>Hours</h2>",
+        "Open daily"
+      ],
+      "answer_order": [
+        4,
+        2,
+        5,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-3-blank-1",
+    "type": "blank",
+    "title": "줄 바꿈 br 빈칸",
+    "description": "Open daily 다음에 줄이 바뀌도록 빈칸에 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>Open daily{{1}}11 AM - 10 PM</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<br>",
+            "<br/>",
+            "<br />"
+          ],
+          "hint": "줄을 바꾸는 태그, 닫는 태그 없음"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-3-blank-2",
+    "type": "blank",
+    "title": "줄 바꿈 첫 줄 빈칸",
+    "description": "첫 줄에 Open daily 가 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>{{1}}<br>11 AM - 10 PM</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Open daily"
+          ],
+          "hint": "매일 연다는 뜻"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-3-blank-3",
+    "type": "blank",
+    "title": "줄 바꿈 둘째 줄 빈칸",
+    "description": "둘째 줄에 11 AM - 10 PM 이 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<p>Open daily<br>{{1}}</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "11 AM - 10 PM"
+          ],
+          "hint": "여는 시간 - 닫는 시간"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-3-code-1",
+    "type": "code",
+    "title": "줄 바꿈 영업시간 쓰기",
+    "description": "p 안에 \"Open daily\"와 \"11 AM - 10 PM\"을 쓰고 둘 사이에 br을 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-3",
+    "content": {
+      "starter_code": "<p>\n  <!-- 여기에 작성하세요 -->\n</p>\n",
+      "checks": [
+        {
+          "pattern": "Open daily\\s*<br\\s*/?>\\s*11 AM - 10 PM",
+          "message": "두 글 사이에 <br> 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>\\s*Open daily[\\s\\S]*11 AM - 10 PM\\s*</p>",
+          "message": "p 안에 Open daily 와 11 AM - 10 PM 을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<p>Open daily<br>11 AM - 10 PM</p>\n"
+    }
+  },
+  {
+    "id": "html-2-4-mcq-1",
+    "type": "mcq",
+    "title": "굵게와 기울임 개념 확인",
+    "description": "strong 과 em 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "choices": [
+        "strong 은 기울임꼴, em 은 굵게 보인다",
+        "strong 은 중요한 글(굵게), em 은 강조(기울임꼴)이다",
+        "둘 다 글자를 가장 큰 제목으로 만든다",
+        "둘 다 화면에 보이지 않는다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-2-4-mcq-2",
+    "type": "mcq",
+    "title": "굵게와 기울임 올바른 코드",
+    "description": "Fresh pizza 를 중요한 글(굵게)로 바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "choices": [
+        "<strong>Fresh pizza</em>",
+        "<em>Fresh pizza</em>",
+        "<strong>Fresh pizza<strong>",
+        "<strong>Fresh pizza</strong>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-2-4-mcq-3",
+    "type": "mcq",
+    "title": "굵게와 기울임 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<strong>Fresh pizza</strong>\n<em>Made daily</em>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "choices": [
+        "Fresh pizza 는 굵게, Made daily 는 기울어진 글씨로 보인다",
+        "Fresh pizza 는 기울어지고, Made daily 는 굵게 보인다",
+        "두 글 모두 보통 글씨로 보인다",
+        "<strong> 과 <em> 글자가 그대로 보인다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-2-4-parsons-1",
+    "type": "parsons",
+    "title": "굵게와 기울임 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Fresh pizza 를 굵게 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "fragments": [
+        "</strong>",
+        "<strong>",
+        "Fresh pizza"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-4-parsons-2",
+    "type": "parsons",
+    "title": "굵게와 기울임 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 굵은 Fresh pizza 다음에 기울어진 Made daily 를 쓰세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "fragments": [
+        "<em>",
+        "<strong>Fresh pizza</strong>",
+        "</em>",
+        "Made daily"
+      ],
+      "answer_order": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-2-4-parsons-3",
+    "type": "parsons",
+    "title": "굵게와 기울임 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 strong 에 Fresh pizza, 그 다음 em 에 Made daily 를 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "fragments": [
+        "Made daily",
+        "<em>",
+        "Fresh pizza",
+        "</em>",
+        "</strong>",
+        "<strong>"
+      ],
+      "answer_order": [
+        5,
+        2,
+        4,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-2-4-blank-1",
+    "type": "blank",
+    "title": "굵게 strong 빈칸",
+    "description": "Fresh pizza 가 굵게 보이도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Fresh pizza</strong>\n<em>Made daily</em>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<strong>"
+          ],
+          "hint": "중요한 글을 나타내는 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-4-blank-2",
+    "type": "blank",
+    "title": "기울임 em 빈칸",
+    "description": "Made daily 가 기울어져 보이도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<strong>Fresh pizza</strong>\n{{1}}Made daily</em>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<em>"
+          ],
+          "hint": "강조를 나타내는 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-4-short-3",
+    "type": "short",
+    "title": "기울임 닫는 태그 쓰기",
+    "description": "em 요소를 닫는 태그를 쓰세요. (___ 자리에 들어갈 태그)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "caseSensitive": false,
+    "content": {
+      "code": "<em>Made daily___",
+      "answer": [
+        "</em>"
+      ]
+    }
+  },
+  {
+    "id": "html-2-4-code-1",
+    "type": "code",
+    "title": "굵게와 기울임 함께 쓰기",
+    "description": "strong에 \"Fresh pizza\", em에 \"Made daily\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-4",
+    "content": {
+      "starter_code": "<!-- 여기에 strong 과 em 을 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<strong(\\s[^>]*)?>\\s*Fresh pizza\\s*</strong>",
+          "message": "strong 에 Fresh pizza 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<em(\\s[^>]*)?>\\s*Made daily\\s*</em>",
+          "message": "em 에 Made daily 를 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<strong>Fresh pizza</strong>\n<em>Made daily</em>\n"
+    }
+  },
+  {
+    "id": "html-2-5-mcq-1",
+    "type": "mcq",
+    "title": "서식 중첩 개념 확인",
+    "description": "굵으면서 기울어진 글씨를 만드는 방법으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "choices": [
+        "strong 과 em 은 함께 쓸 수 없다",
+        "br 을 두 번 쓴다",
+        "strong 안에 em 을 중첩한다",
+        "p 를 두 번 쓴다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-2-5-mcq-2",
+    "type": "mcq",
+    "title": "서식 중첩 올바른 코드",
+    "description": "strong 안에 em 을 바르게 중첩한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "choices": [
+        "<strong><em>Sale</strong></em>",
+        "<em><strong>Sale</em></strong>",
+        "<strong><em>Sale</em></strong>",
+        "<strong><em>Sale</em>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-2-5-mcq-3",
+    "type": "mcq",
+    "title": "서식 중첩 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<strong><em>Sale</em></strong>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "choices": [
+        "Sale 이 굵고 기울어진 글씨로 보인다",
+        "Sale 이 굵게만 보인다",
+        "Sale 이 기울어지게만 보인다",
+        "Sale 이 보통 글씨로 보인다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-2-5-parsons-1",
+    "type": "parsons",
+    "title": "서식 중첩 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 strong 안에 em 요소 Sale 을 넣으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "fragments": [
+        "</strong>",
+        "<em>Sale</em>",
+        "<strong>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-5-parsons-2",
+    "type": "parsons",
+    "title": "서식 중첩 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 strong 안에 em 을 넣고 Sale 을 쓰세요. 안쪽부터 닫아요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "fragments": [
+        "</em>",
+        "</strong>",
+        "<strong>",
+        "<em>",
+        "Sale"
+      ],
+      "answer_order": [
+        2,
+        3,
+        4,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-2-5-parsons-3",
+    "type": "parsons",
+    "title": "서식 중첩 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 p 안에 strong, strong 안에 em 을 넣고 Sale 을 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "fragments": [
+        "</p>",
+        "<p>",
+        "Sale",
+        "<em>",
+        "<strong>",
+        "</strong>",
+        "</em>"
+      ],
+      "answer_order": [
+        1,
+        4,
+        3,
+        2,
+        6,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-5-blank-1",
+    "type": "blank",
+    "title": "서식 중첩 바깥 빈칸",
+    "description": "바깥쪽에서 글자를 굵게 만들도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}<em>Sale</em></strong>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<strong>"
+          ],
+          "hint": "바깥쪽 굵게 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-5-blank-2",
+    "type": "blank",
+    "title": "서식 중첩 안쪽 빈칸",
+    "description": "안쪽에서 글자를 기울이도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<strong>{{1}}Sale</em></strong>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<em>"
+          ],
+          "hint": "안쪽 기울임 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-5-blank-3",
+    "type": "blank",
+    "title": "서식 중첩 내용 빈칸",
+    "description": "굵고 기울어진 글씨로 Sale 이 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<strong><em>{{1}}</em></strong>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Sale"
+          ],
+          "hint": "할인을 뜻하는 영어 단어"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-5-code-1",
+    "type": "code",
+    "title": "서식 중첩 Sale 쓰기",
+    "description": "strong 안에 em을 중첩해 \"Sale\"을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-5",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<strong(\\s[^>]*)?>\\s*<em(\\s[^>]*)?>",
+          "message": "strong 안에 em 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<em(\\s[^>]*)?>\\s*Sale\\s*</em>\\s*</strong>",
+          "message": "em 안에 Sale 을 쓰고 em, strong 순서로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<strong><em>Sale</em></strong>\n"
+    }
+  },
+  {
+    "id": "html-2-6-mcq-1",
+    "type": "mcq",
+    "title": "서식 요약 요소 짝짓기",
+    "description": "요소와 쓰임을 바르게 짝지은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "choices": [
+        "h1 - 문단, p - 제목, strong - 기울임",
+        "br - 굵게, em - 줄 바꿈, p - 제목",
+        "strong - 제목, h1 - 기울임, em - 문단",
+        "h1 - 제목, p - 문단, strong - 굵게"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-2-6-mcq-2",
+    "type": "mcq",
+    "title": "서식 요약 올바른 코드",
+    "description": "제목과 문단, 굵은 글씨를 바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "choices": [
+        "<h1>About Me</p>\n<p>I love <strong>pizza</strong>.</h1>",
+        "<h1>About Me</h1>\n<p>I love <strong>pizza</strong>.</p>",
+        "<h1>About Me</h1>\n<p>I love <strong>pizza</p>.</strong>",
+        "<h1>About Me<h1>\n<p>I love <strong>pizza</strong>.</p>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-2-6-mcq-3",
+    "type": "mcq",
+    "title": "서식 요약 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>About Me</h1>\n<p>I love <em>pizza</em>.</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "choices": [
+        "About Me 와 문단이 같은 크기로 보인다",
+        "About Me 가 큰 제목으로 보이고, 아래 문단에서 pizza 만 기울어져 보인다",
+        "문단 전체가 기울어져 보인다",
+        "pizza 만 큰 제목으로 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-2-6-parsons-1",
+    "type": "parsons",
+    "title": "서식 요약 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 h1 About Me 아래에 문단 I love pizza. 를 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "fragments": [
+        "</p>",
+        "I love <strong>pizza</strong>.",
+        "<p>",
+        "<h1>About Me</h1>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-2-6-parsons-2",
+    "type": "parsons",
+    "title": "서식 요약 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 h1 아래 문단에 I love pizza. 를 쓰고, 줄을 바꿔 Come visit! 을 기울여 쓰세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "fragments": [
+        "I love <strong>pizza</strong>.",
+        "<em>Come visit!</em>",
+        "<h1>About Me</h1>",
+        "<br>",
+        "</p>",
+        "<p>"
+      ],
+      "answer_order": [
+        2,
+        5,
+        0,
+        3,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-2-6-parsons-3",
+    "type": "parsons",
+    "title": "서식 요약 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h1 About Me 를 만들고, 문단에 I love pizza. 를 쓴 뒤 줄을 바꿔 Come visit! 을 기울여 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "fragments": [
+        "</h1>",
+        "<p>",
+        "</p>",
+        "I love <strong>pizza</strong>.",
+        "<br>",
+        "<h1>",
+        "About Me",
+        "<em>Come visit!</em>"
+      ],
+      "answer_order": [
+        5,
+        6,
+        0,
+        1,
+        3,
+        4,
+        7,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-2-6-blank-1",
+    "type": "blank",
+    "title": "서식 요약 제목 빈칸",
+    "description": "About Me 가 가장 큰 제목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}About Me</h1>\n<p>I love <strong>pizza</strong>.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-6-blank-2",
+    "type": "blank",
+    "title": "서식 요약 문단 빈칸",
+    "description": "소개 문장이 문단이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>About Me</h1>\n{{1}}I love <strong>pizza</strong>.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "문단 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-6-blank-3",
+    "type": "blank",
+    "title": "서식 요약 굵게 빈칸",
+    "description": "pizza 가 굵게 보이도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>About Me</h1>\n<p>I love {{1}}pizza</strong>.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<strong>"
+          ],
+          "hint": "중요한 글(굵게) 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-2-6-code-1",
+    "type": "code",
+    "title": "서식 요약 소개글 쓰기",
+    "description": "h1, p, strong, em, br을 모두 사용해 간단한 소개글을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-2-6",
+    "content": {
+      "starter_code": "<!-- 여기에 h1, p, strong, em, br 을 사용해 소개글을 쓰세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</h1>",
+          "message": "h1 으로 제목을 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<p(\\s[^>]*)?>[\\s\\S]*?</p>",
+          "message": "p 로 문단을 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<strong(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</strong>",
+          "message": "strong 으로 굵은 글을 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<em(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</em>",
+          "message": "em 으로 기울인 글을 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<br\\s*/?>",
+          "message": "br 로 줄을 바꿔요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>About Me</h1>\n<p>I am <strong>Mina</strong>.<br><em>I love pizza</em></p>\n"
+    }
+  },
+  {
+    "id": "html-3-1-mcq-1",
+    "type": "mcq",
+    "title": "순서 없는 리스트 개념 확인",
+    "description": "ul 과 li 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "choices": [
+        "ul 은 번호가 붙는 목록이다",
+        "li 는 목록 전체를 감싸는 요소이다",
+        "ul 은 줄만 바꾸는 요소이다",
+        "ul 은 점(•)이 붙는 순서 없는 목록, li 는 목록의 각 항목이다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-3-1-mcq-2",
+    "type": "mcq",
+    "title": "순서 없는 리스트 올바른 코드",
+    "description": "Apple, Banana 를 순서 없는 목록으로 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "choices": [
+        "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n</ul>",
+        "<li>\n  <ul>Apple</ul>\n  <ul>Banana</ul>\n</li>",
+        "<ul>\n  <li>Apple</ul>\n  <li>Banana</ul>\n</li>",
+        "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n<ul>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-3-1-mcq-3",
+    "type": "mcq",
+    "title": "순서 없는 리스트 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n</ul>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "choices": [
+        "1. Apple, 2. Banana 처럼 번호가 붙어 보인다",
+        "Apple Banana 가 한 줄에 이어서 보인다",
+        "Apple, Banana 앞에 점(•)이 붙은 목록으로 보인다",
+        "<li> 글자가 함께 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-3-1-parsons-1",
+    "type": "parsons",
+    "title": "순서 없는 리스트 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Apple, Banana 순서의 순서 없는 목록을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "fragments": [
+        "<ul>",
+        "</ul>",
+        "  <li>Banana</li>",
+        "  <li>Apple</li>"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-3-1-parsons-2",
+    "type": "parsons",
+    "title": "순서 없는 리스트 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Apple, Banana, Cherry 순서의 순서 없는 목록을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "fragments": [
+        "</ul>",
+        "  <li>Cherry</li>",
+        "  <li>Apple</li>",
+        "<ul>",
+        "  <li>Banana</li>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        4,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-3-1-parsons-3",
+    "type": "parsons",
+    "title": "순서 없는 리스트 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h2 Fruits 아래에 Apple, Banana, Cherry 순서의 목록을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "fragments": [
+        "  <li>Cherry</li>",
+        "<ul>",
+        "<h2>Fruits</h2>",
+        "</ul>",
+        "  <li>Banana</li>",
+        "  <li>Apple</li>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        5,
+        4,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-3-1-blank-1",
+    "type": "blank",
+    "title": "순서 없는 리스트 ul 빈칸",
+    "description": "점이 붙는 목록이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <li>Apple</li>\n  <li>Banana</li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "순서 없는 목록 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-1-blank-2",
+    "type": "blank",
+    "title": "순서 없는 리스트 li 빈칸",
+    "description": "Apple 이 목록의 항목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ul>\n  {{1}}Apple</li>\n  <li>Banana</li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-1-blank-3",
+    "type": "blank",
+    "title": "순서 없는 리스트 항목 빈칸",
+    "description": "첫 번째 항목에 Apple 이 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ul>\n  <li>{{1}}</li>\n  <li>Banana</li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Apple"
+          ],
+          "hint": "사과를 뜻하는 영어 단어"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-1-code-1",
+    "type": "code",
+    "title": "순서 없는 리스트 과일 목록",
+    "description": "ul 안에 li \"Apple\", \"Banana\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-1",
+    "content": {
+      "starter_code": "<!-- 여기에 ul 목록을 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<ul(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>[\\s\\S]*</li>\\s*</ul>",
+          "message": "ul 안에 li 항목을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li(\\s[^>]*)?>\\s*Apple\\s*</li>",
+          "message": "li 에 Apple 을 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li(\\s[^>]*)?>\\s*Banana\\s*</li>",
+          "message": "li 에 Banana 를 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n</ul>\n"
+    }
+  },
+  {
+    "id": "html-3-2-mcq-1",
+    "type": "mcq",
+    "title": "순서 있는 리스트 개념 확인",
+    "description": "ol 요소로 목록을 만들면 각 항목 앞에 무엇이 붙을까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "choices": [
+        "점(•)",
+        "아무것도 붙지 않는다",
+        "1, 2, 3 같은 번호",
+        "ol 이라는 글자"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-3-2-mcq-2",
+    "type": "mcq",
+    "title": "순서 있는 리스트 올바른 코드",
+    "description": "번호가 붙는 목록을 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "choices": [
+        "<ol>\n  <li>Boil water</li>\n  <li>Add pasta</li>\n</ol>",
+        "<ol>\n  <li>Boil water</li>\n  <li>Add pasta</li>\n</ul>",
+        "<li>\n  <ol>Boil water</ol>\n  <ol>Add pasta</ol>\n</li>",
+        "<ol>\n  <li>Boil water</ol>\n  <li>Add pasta</ol>\n</li>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-3-2-mcq-3",
+    "type": "mcq",
+    "title": "순서 있는 리스트 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<ol>\n  <li>Boil water</li>\n  <li>Add pasta</li>\n</ol>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "choices": [
+        "두 항목 앞에 점(•)이 붙어 보인다",
+        "Add pasta 앞에 1. 이 붙어 보인다",
+        "번호 없이 한 줄에 이어서 보인다",
+        "Boil water 앞에 1., Add pasta 앞에 2. 가 붙어 보인다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-3-2-parsons-1",
+    "type": "parsons",
+    "title": "순서 있는 리스트 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Boil water, Add pasta 순서의 번호 목록을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "fragments": [
+        "  <li>Add pasta</li>",
+        "</ol>",
+        "  <li>Boil water</li>",
+        "<ol>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-3-2-parsons-2",
+    "type": "parsons",
+    "title": "순서 있는 리스트 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Boil water, Add pasta, Cook for 10 minutes 순서의 번호 목록을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "fragments": [
+        "  <li>Add pasta</li>",
+        "  <li>Cook for 10 minutes</li>",
+        "  <li>Boil water</li>",
+        "</ol>",
+        "<ol>"
+      ],
+      "answer_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-3-2-parsons-3",
+    "type": "parsons",
+    "title": "순서 있는 리스트 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h2 Pasta 아래에 Boil water, Add pasta, Cook for 10 minutes 순서의 번호 목록을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "fragments": [
+        "  <li>Cook for 10 minutes</li>",
+        "  <li>Add pasta</li>",
+        "<ol>",
+        "</ol>",
+        "  <li>Boil water</li>",
+        "<h2>Pasta</h2>"
+      ],
+      "answer_order": [
+        5,
+        2,
+        4,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-3-2-blank-1",
+    "type": "blank",
+    "title": "순서 있는 리스트 ol 빈칸",
+    "description": "번호가 붙는 목록이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <li>Boil water</li>\n  <li>Add pasta</li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ol>"
+          ],
+          "hint": "순서 있는 목록 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-2-blank-2",
+    "type": "blank",
+    "title": "순서 있는 리스트 li 빈칸",
+    "description": "Boil water 가 목록의 항목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ol>\n  {{1}}Boil water</li>\n  <li>Add pasta</li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-2-blank-3",
+    "type": "blank",
+    "title": "순서 있는 리스트 항목 빈칸",
+    "description": "첫 번째 단계에 Boil water 가 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ol>\n  <li>{{1}}</li>\n  <li>Add pasta</li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Boil water"
+          ],
+          "hint": "물을 끓이라는 뜻"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-2-code-1",
+    "type": "code",
+    "title": "순서 있는 리스트 요리 단계",
+    "description": "ol 안에 li \"Boil water\", \"Add pasta\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-2",
+    "content": {
+      "starter_code": "<!-- 여기에 ol 목록을 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<ol(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>[\\s\\S]*</li>\\s*</ol>",
+          "message": "ol 안에 li 항목을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li(\\s[^>]*)?>\\s*Boil water\\s*</li>",
+          "message": "li 에 Boil water 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li(\\s[^>]*)?>\\s*Add pasta\\s*</li>",
+          "message": "li 에 Add pasta 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "Boil water\\s*</li>[\\s\\S]*Add pasta",
+          "message": "Boil water 다음에 Add pasta 를 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<ol>\n  <li>Boil water</li>\n  <li>Add pasta</li>\n</ol>\n"
+    }
+  },
+  {
+    "id": "html-3-3-mcq-1",
+    "type": "mcq",
+    "title": "중첩 리스트 개념 확인",
+    "description": "목록 안에 하위 목록을 만드는 방법으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "choices": [
+        "ul 바깥에 li 를 따로 쓴다",
+        "li 안에 ul 이나 ol 을 넣는다",
+        "li 안에 br 을 넣는다",
+        "ul 을 두 번 이어서 쓴다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-3-3-mcq-2",
+    "type": "mcq",
+    "title": "중첩 리스트 올바른 코드",
+    "description": "Fruits 아래에 Apple 하위 목록을 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "choices": [
+        "<ul>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n  </li>\n    </ul>\n</ul>",
+        "<ul>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ul>",
+        "<ul>\n  <li>Fruits\n    <li>\n      <ul>Apple</ul>\n    </li>\n  </li>\n</ul>",
+        "<ul>\n  <li>Fruits</ul>\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</li>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-3-3-mcq-3",
+    "type": "mcq",
+    "title": "중첩 리스트 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<ul>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ul>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "choices": [
+        "Fruits 와 Apple 이 한 줄에 이어서 보인다",
+        "Apple 이 Fruits 보다 위에 보인다",
+        "Apple 은 화면에 보이지 않는다",
+        "Fruits 아래에 Apple 이 한 칸 들여 쓴 하위 항목으로 보인다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-3-3-parsons-1",
+    "type": "parsons",
+    "title": "중첩 리스트 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Fruits 항목 안에 Apple 하위 목록을 넣으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "fragments": [
+        "<ul>",
+        "  <li>Fruits",
+        "  </li>",
+        "    <ul><li>Apple</li></ul>",
+        "</ul>"
+      ],
+      "answer_order": [
+        0,
+        1,
+        3,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-3-3-parsons-2",
+    "type": "parsons",
+    "title": "중첩 리스트 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Fruits 항목 안에 번호가 붙는 하위 목록 Apple 을 넣으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "fragments": [
+        "  </li>",
+        "    </ol>",
+        "  <li>Fruits",
+        "</ul>",
+        "<ul>",
+        "    <ol>",
+        "      <li>Apple</li>"
+      ],
+      "answer_order": [
+        4,
+        2,
+        5,
+        6,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-3-3-parsons-3",
+    "type": "parsons",
+    "title": "중첩 리스트 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 Fruits 안에 Apple, Banana 하위 목록을 넣고, 그 다음 항목으로 Vegetables 를 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "fragments": [
+        "    </ol>",
+        "  <li>Fruits",
+        "<ul>",
+        "  <li>Vegetables</li>",
+        "  </li>",
+        "      <li>Banana</li>",
+        "</ul>",
+        "    <ol>",
+        "      <li>Apple</li>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        7,
+        8,
+        5,
+        0,
+        4,
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "id": "html-3-3-blank-1",
+    "type": "blank",
+    "title": "중첩 리스트 바깥 ul 빈칸",
+    "description": "바깥 목록이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "바깥 순서 없는 목록"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-3-blank-2",
+    "type": "blank",
+    "title": "중첩 리스트 안쪽 ul 빈칸",
+    "description": "Fruits 항목 안에 하위 목록이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ul>\n  <li>Fruits\n    {{1}}\n      <li>Apple</li>\n    </ul>\n  </li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "li 안에 넣는 하위 목록, 닫는 태그를 보세요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-3-blank-3",
+    "type": "blank",
+    "title": "중첩 리스트 하위 항목 빈칸",
+    "description": "Apple 이 하위 목록의 항목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<ul>\n  <li>Fruits\n    <ul>\n      {{1}}Apple</li>\n    </ul>\n  </li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-3-code-1",
+    "type": "code",
+    "title": "중첩 리스트 하위 목록 만들기",
+    "description": "ul 안의 li 안에 다시 ul을 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-3",
+    "content": {
+      "starter_code": "<ul>\n  <li>Fruits</li>\n</ul>\n",
+      "checks": [
+        {
+          "pattern": "<ul(\\s[^>]*)?>[\\s\\S]*<li(\\s[^>]*)?>((?!</li>)[\\s\\S])*<ul(\\s[^>]*)?>",
+          "message": "ul 의 li 안에 다시 ul 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li(\\s[^>]*)?>((?!</li>)[\\s\\S])*<ul(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>[\\s\\S]*?</li>",
+          "message": "안쪽 ul 에도 li 항목을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</ul>\\s*</li>",
+          "message": "안쪽 ul 을 닫은 뒤 li 를 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<ul>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ul>\n"
+    }
+  },
+  {
+    "id": "html-3-4-mcq-1",
+    "type": "mcq",
+    "title": "리스트 요약 개념 확인",
+    "description": "리스트 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "choices": [
+        "ol 의 li 안에 ul 을 넣어 하위 목록을 만들 수 있다",
+        "ul 은 번호가 붙는 목록이다",
+        "li 는 ul 이나 ol 없이 혼자 쓴다",
+        "ol 과 ul 은 함께 쓸 수 없다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-3-4-mcq-2",
+    "type": "mcq",
+    "title": "리스트 요약 올바른 코드",
+    "description": "번호 목록의 Fruits 항목 안에 점 목록 Apple 을 바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "choices": [
+        "<ol>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ol>\n  </li>\n</ul>",
+        "<ol>\n  <ul>Fruits\n    <li>Apple</li>\n  </ul>\n</ol>",
+        "<ol>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ol>",
+        "<ol>\n  <li>Fruits</li>\n    <ul>\n      <li>Apple</li>\n  </li>\n</ol>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-3-4-mcq-3",
+    "type": "mcq",
+    "title": "리스트 요약 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h2>Shopping</h2>\n<ol>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ol>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "choices": [
+        "Fruits 앞에 점, Apple 앞에 1. 이 붙어 보인다",
+        "Fruits 와 Apple 앞에 모두 번호가 붙어 보인다",
+        "Shopping 제목 아래 1. Fruits 가 있고, 그 아래에 점(•)이 붙은 Apple 이 들여 써져 보인다",
+        "Apple 이 Shopping 보다 위에 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-3-4-parsons-1",
+    "type": "parsons",
+    "title": "리스트 요약 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 번호 목록의 Fruits 항목 안에 Apple 점 목록을 넣으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "fragments": [
+        "    <ul><li>Apple</li></ul>",
+        "  </li>",
+        "<ol>",
+        "</ol>",
+        "  <li>Fruits"
+      ],
+      "answer_order": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-3-4-parsons-2",
+    "type": "parsons",
+    "title": "리스트 요약 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 h2 Shopping 아래 번호 목록을 만들고, Fruits 안에 Apple 점 목록을 넣으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "fragments": [
+        "</ol>",
+        "      <li>Apple</li>",
+        "  </li>",
+        "<h2>Shopping</h2>",
+        "    </ul>",
+        "    <ul>",
+        "<ol>",
+        "  <li>Fruits"
+      ],
+      "answer_order": [
+        3,
+        6,
+        7,
+        5,
+        1,
+        4,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-3-4-parsons-3",
+    "type": "parsons",
+    "title": "리스트 요약 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h2 Shopping 아래 번호 목록에 Fruits(안에 Apple, Banana 점 목록)와 Milk 를 차례로 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "fragments": [
+        "<ol>",
+        "    <ul>",
+        "</ol>",
+        "<h2>Shopping</h2>",
+        "    </ul>",
+        "      <li>Apple</li>",
+        "      <li>Banana</li>",
+        "  <li>Milk</li>",
+        "  </li>",
+        "  <li>Fruits"
+      ],
+      "answer_order": [
+        3,
+        0,
+        9,
+        1,
+        5,
+        6,
+        4,
+        8,
+        7,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-3-4-blank-1",
+    "type": "blank",
+    "title": "리스트 요약 ol 빈칸",
+    "description": "번호가 붙는 바깥 목록이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Shopping</h2>\n{{1}}\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ol>"
+          ],
+          "hint": "순서 있는 목록, 닫는 태그를 보세요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-4-blank-2",
+    "type": "blank",
+    "title": "리스트 요약 ul 빈칸",
+    "description": "Fruits 안에 점이 붙는 하위 목록이 시작되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Shopping</h2>\n<ol>\n  <li>Fruits\n    {{1}}\n      <li>Apple</li>\n    </ul>\n  </li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "순서 없는 목록, 닫는 태그를 보세요"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-4-blank-3",
+    "type": "blank",
+    "title": "리스트 요약 li 빈칸",
+    "description": "Apple 이 하위 목록의 항목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Shopping</h2>\n<ol>\n  <li>Fruits\n    <ul>\n      {{1}}Apple</li>\n    </ul>\n  </li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-3-4-code-1",
+    "type": "code",
+    "title": "리스트 요약 ul과 ol 함께 쓰기",
+    "description": "ul과 ol을 모두 사용하고 하나는 중첩하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-3-4",
+    "content": {
+      "starter_code": "<!-- 여기에 ul 과 ol 을 사용한 목록을 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<ul(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>",
+          "message": "ul 목록을 사용해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ol(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>",
+          "message": "ol 목록을 사용해요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<li(\\s[^>]*)?>((?!</li>)[\\s\\S])*<(ul|ol)(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>",
+          "message": "li 안에 목록 하나를 중첩해요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<ol>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n    </ul>\n  </li>\n</ol>\n"
+    }
+  },
+  {
+    "id": "html-4-1-mcq-1",
+    "type": "mcq",
+    "title": "레시피 카드 개요 확인",
+    "description": "이번에 만드는 레시피 카드에 들어갈 내용으로 알맞게 묶은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "choices": [
+        "제목, 재료, 조리 단계",
+        "제목, 동영상, 결제 버튼",
+        "재료, 지도, 회원 가입",
+        "조리 단계, 게임 점수, 날씨"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-4-1-mcq-2",
+    "type": "mcq",
+    "title": "레시피 카드 제목 올바른 코드",
+    "description": "레시피 제목 Pancakes 를 가장 큰 제목으로 바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "choices": [
+        "<h1>Pancakes</h6>",
+        "<h7>Pancakes</h7>",
+        "<h1>Pancakes<h1>",
+        "<h1>Pancakes</h1>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-4-1-mcq-3",
+    "type": "mcq",
+    "title": "레시피 카드 제목 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>Pancakes</h1>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "choices": [
+        "Pancakes 가 작은 보통 글씨로 보인다",
+        "Pancakes 가 가장 큰 제목으로 보인다",
+        "<h1>Pancakes</h1> 가 그대로 보인다",
+        "Pancakes 앞에 점(•)이 붙어 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-4-1-parsons-1",
+    "type": "parsons",
+    "title": "레시피 카드 제목 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 레시피 제목 Pancakes 를 h1 으로 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "fragments": [
+        "</h1>",
+        "Pancakes",
+        "<h1>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-4-1-parsons-2",
+    "type": "parsons",
+    "title": "레시피 카드 제목 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 body 안에 h1 제목 Pancakes 를 넣으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "fragments": [
+        "<body>",
+        "</body>",
+        "Pancakes",
+        "</h1>",
+        "<h1>"
+      ],
+      "answer_order": [
+        0,
+        4,
+        2,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-4-1-parsons-3",
+    "type": "parsons",
+    "title": "레시피 카드 제목 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 html 과 body 안에 h1 제목 Pancakes 를 넣으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "fragments": [
+        "</h1>",
+        "<h1>",
+        "Pancakes",
+        "<body>",
+        "<html>",
+        "</html>",
+        "</body>"
+      ],
+      "answer_order": [
+        4,
+        3,
+        1,
+        2,
+        0,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-4-1-blank-1",
+    "type": "blank",
+    "title": "레시피 카드 h1 빈칸",
+    "description": "레시피 제목이 가장 큰 제목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Pancakes</h1>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-1-blank-2",
+    "type": "blank",
+    "title": "레시피 카드 제목 내용 빈칸",
+    "description": "레시피 제목에 Pancakes 가 보이도록 빈칸에 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>{{1}}</h1>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Pancakes"
+          ],
+          "hint": "팬케이크를 뜻하는 영어 단어"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-1-short-3",
+    "type": "short",
+    "title": "레시피 카드 제목 닫는 태그 쓰기",
+    "description": "레시피 제목 h1 요소를 닫는 태그를 쓰세요. (___ 자리에 들어갈 태그)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<h1>Pancakes___",
+      "answer": [
+        "</h1>"
+      ]
+    }
+  },
+  {
+    "id": "html-4-1-code-1",
+    "type": "code",
+    "title": "레시피 카드 제목 쓰기",
+    "description": "h1 \"Pancakes\"를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-1",
+    "content": {
+      "starter_code": "<!-- 여기에 레시피 제목을 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1(\\s[^>]*)?>",
+          "message": "h1 여는 태그를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<h1(\\s[^>]*)?>\\s*Pancakes\\s*</h1>",
+          "message": "h1 에 Pancakes 를 쓰고 </h1> 로 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Pancakes</h1>\n"
+    }
+  },
+  {
+    "id": "html-4-2-mcq-1",
+    "type": "mcq",
+    "title": "레시피 설명 요소 고르기",
+    "description": "레시피 제목 아래에 한 줄 설명을 붙일 때 쓰기 알맞은 요소는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "choices": [
+        "h1",
+        "p",
+        "br",
+        "li"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-4-2-mcq-2",
+    "type": "mcq",
+    "title": "레시피 설명 올바른 코드",
+    "description": "제목 Pancakes 와 그 아래 설명을 바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "choices": [
+        "<p>Pancakes</p>\n<h1>Soft and fluffy pancakes for breakfast.</h1>",
+        "<h1>Pancakes</p>\n<p>Soft and fluffy pancakes for breakfast.</h1>",
+        "<h1>Pancakes</h1>\n<p>Soft and fluffy pancakes for breakfast.<p>",
+        "<h1>Pancakes</h1>\n<p>Soft and fluffy pancakes for breakfast.</p>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-4-2-mcq-3",
+    "type": "mcq",
+    "title": "레시피 설명 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h1>Pancakes</h1>\n<p>Soft and fluffy pancakes for breakfast.</p>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "choices": [
+        "Pancakes 가 큰 제목으로, 그 아래에 설명이 보통 글씨로 보인다",
+        "설명이 제목보다 크게 보인다",
+        "제목과 설명이 한 줄에 이어서 보인다",
+        "설명은 화면에 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-4-2-parsons-1",
+    "type": "parsons",
+    "title": "레시피 설명 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 제목 Pancakes 아래에 설명 문단을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "fragments": [
+        "<h1>Pancakes</h1>",
+        "</p>",
+        "Soft and fluffy pancakes for breakfast.",
+        "<p>"
+      ],
+      "answer_order": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-4-2-parsons-2",
+    "type": "parsons",
+    "title": "레시피 설명 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 h1 제목 Pancakes 아래에 p 설명을 쓰세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "fragments": [
+        "Soft and fluffy pancakes for breakfast.",
+        "</h1>",
+        "</p>",
+        "Pancakes",
+        "<h1>",
+        "<p>"
+      ],
+      "answer_order": [
+        4,
+        3,
+        1,
+        5,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-4-2-parsons-3",
+    "type": "parsons",
+    "title": "레시피 설명 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 div 카드 안에 h1 제목 Pancakes 와 그 아래 p 설명을 넣으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "fragments": [
+        "  </h1>",
+        "  <h1>",
+        "    Pancakes",
+        "</div>",
+        "  </p>",
+        "<div>",
+        "  <p>",
+        "    Soft and fluffy pancakes for breakfast."
+      ],
+      "answer_order": [
+        5,
+        1,
+        2,
+        0,
+        6,
+        7,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-4-2-blank-1",
+    "type": "blank",
+    "title": "레시피 설명 제목 빈칸",
+    "description": "레시피 제목이 가장 큰 제목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Pancakes</h1>\n<p>Soft and fluffy pancakes for breakfast.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h1>"
+          ],
+          "hint": "가장 큰 제목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-2-blank-2",
+    "type": "blank",
+    "title": "레시피 설명 문단 빈칸",
+    "description": "제목 아래 설명이 문단이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h1>Pancakes</h1>\n{{1}}Soft and fluffy pancakes for breakfast.</p>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<p>"
+          ],
+          "hint": "문단 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-2-short-3",
+    "type": "short",
+    "title": "레시피 설명 닫는 태그 쓰기",
+    "description": "설명 문단을 닫는 태그를 쓰세요. (___ 자리에 들어갈 태그)",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<h1>Pancakes</h1>\n<p>Soft and fluffy pancakes for breakfast.___",
+      "answer": [
+        "</p>"
+      ]
+    }
+  },
+  {
+    "id": "html-4-2-code-1",
+    "type": "code",
+    "title": "레시피 설명 추가하기",
+    "description": "h1 아래에 p 설명을 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-2",
+    "content": {
+      "starter_code": "<h1>Pancakes</h1>\n<!-- 여기에 p 설명을 추가하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h1(\\s[^>]*)?>\\s*Pancakes\\s*</h1>",
+          "message": "h1 제목 Pancakes 를 그대로 둬요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</h1>\\s*<p(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</p>",
+          "message": "h1 바로 아래에 p 로 설명을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Pancakes</h1>\n<p>Soft and fluffy pancakes for breakfast.</p>\n"
+    }
+  },
+  {
+    "id": "html-4-3-mcq-1",
+    "type": "mcq",
+    "title": "재료 목록 요소 고르기",
+    "description": "재료 목록을 ul 로 만드는 까닭으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "choices": [
+        "재료에 꼭 번호를 붙여야 하기 때문이다",
+        "ul 은 글자를 굵게 만들기 때문이다",
+        "재료는 순서가 필요 없기 때문이다",
+        "ul 은 화면에 보이지 않기 때문이다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-4-3-mcq-2",
+    "type": "mcq",
+    "title": "재료 목록 올바른 코드",
+    "description": "Ingredients 제목 아래 재료 목록을 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "choices": [
+        "<h2>Ingredients</h2>\n<ul>\n  <li>2 eggs</ul>\n  <li>1 cup of milk</ul>\n</li>",
+        "<h2>Ingredients</h2>\n<li>\n  <ul>2 eggs</ul>\n  <ul>1 cup of milk</ul>\n</li>",
+        "<h2>Ingredients</h2>\n<ul>\n  <li>2 eggs</li>\n  <li>1 cup of milk</li>\n</ul>",
+        "<h2>Ingredients</h2>\n<ul>\n  <li>2 eggs</li>\n  <li>1 cup of milk</li>\n<ul>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-4-3-mcq-3",
+    "type": "mcq",
+    "title": "재료 목록 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h2>Ingredients</h2>\n<ul>\n  <li>2 eggs</li>\n  <li>1 cup of milk</li>\n</ul>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "choices": [
+        "Ingredients 제목 아래에 2 eggs, 1 cup of milk 가 점(•)이 붙은 목록으로 보인다",
+        "두 재료 앞에 1., 2. 번호가 붙어 보인다",
+        "두 재료가 한 줄에 이어서 보인다",
+        "Ingredients 제목만 보이고 재료는 안 보인다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-4-3-parsons-1",
+    "type": "parsons",
+    "title": "재료 목록 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 2 eggs, 1 cup of milk 순서의 재료 목록을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "fragments": [
+        "  <li>2 eggs</li>",
+        "  <li>1 cup of milk</li>",
+        "</ul>",
+        "<ul>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-4-3-parsons-2",
+    "type": "parsons",
+    "title": "재료 목록 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 h2 Ingredients 아래에 2 eggs, 1 cup of milk 순서의 목록을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "fragments": [
+        "</ul>",
+        "  <li>2 eggs</li>",
+        "<h2>Ingredients</h2>",
+        "  <li>1 cup of milk</li>",
+        "<ul>"
+      ],
+      "answer_order": [
+        2,
+        4,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-4-3-parsons-3",
+    "type": "parsons",
+    "title": "재료 목록 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h1 Pancakes, h2 Ingredients 아래에 2 eggs, 1 cup of milk, 1 cup of flour 순서의 목록을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "fragments": [
+        "<ul>",
+        "</ul>",
+        "<h1>Pancakes</h1>",
+        "  <li>1 cup of milk</li>",
+        "<h2>Ingredients</h2>",
+        "  <li>2 eggs</li>",
+        "  <li>1 cup of flour</li>"
+      ],
+      "answer_order": [
+        2,
+        4,
+        0,
+        5,
+        3,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-4-3-blank-1",
+    "type": "blank",
+    "title": "재료 목록 h2 빈칸",
+    "description": "Ingredients 가 작은 제목(두 번째 크기)이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Ingredients</h2>\n<ul>\n  <li>2 eggs</li>\n  <li>1 cup of milk</li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h2>"
+          ],
+          "hint": "두 번째 크기 제목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-3-blank-2",
+    "type": "blank",
+    "title": "재료 목록 ul 빈칸",
+    "description": "재료가 순서 없는 목록이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Ingredients</h2>\n{{1}}\n  <li>2 eggs</li>\n  <li>1 cup of milk</li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ul>"
+          ],
+          "hint": "순서 없는 목록 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-3-blank-3",
+    "type": "blank",
+    "title": "재료 목록 li 빈칸",
+    "description": "2 eggs 가 목록의 항목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Ingredients</h2>\n<ul>\n  {{1}}2 eggs</li>\n  <li>1 cup of milk</li>\n</ul>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-3-code-1",
+    "type": "code",
+    "title": "재료 목록 추가하기",
+    "description": "h2 \"Ingredients\"와 ul/li 재료 목록을 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-3",
+    "content": {
+      "starter_code": "<h1>Pancakes</h1>\n<!-- 여기에 재료 제목과 목록을 추가하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h2(\\s[^>]*)?>\\s*Ingredients\\s*</h2>",
+          "message": "h2 에 Ingredients 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</h2>\\s*<ul(\\s[^>]*)?>",
+          "message": "제목 아래에 ul 목록을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ul(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</li>",
+          "message": "ul 안에 li 로 재료를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</li>\\s*<li(\\s[^>]*)?>",
+          "message": "재료를 두 개 이상 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Pancakes</h1>\n<h2>Ingredients</h2>\n<ul>\n  <li>2 eggs</li>\n  <li>1 cup of milk</li>\n</ul>\n"
+    }
+  },
+  {
+    "id": "html-4-4-mcq-1",
+    "type": "mcq",
+    "title": "조리 단계 요소 고르기",
+    "description": "조리 단계를 ol 로 만드는 까닭으로 알맞은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "choices": [
+        "조리 단계는 순서가 상관없기 때문이다",
+        "ol 은 글자를 기울이기 때문이다",
+        "ol 은 줄만 바꾸는 요소이기 때문이다",
+        "조리는 순서가 중요해서 번호가 필요하기 때문이다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-4-4-mcq-2",
+    "type": "mcq",
+    "title": "조리 단계 올바른 코드",
+    "description": "Steps 제목 아래 조리 단계를 번호 목록으로 바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "choices": [
+        "<h2>Steps</h2>\n<ol>\n  <li>Mix the flour and eggs.</ol>\n  <li>Cook on a hot pan.</ol>\n</li>",
+        "<h2>Steps</h2>\n<ol>\n  <li>Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ol>",
+        "<h2>Steps</h2>\n<ol>\n  <li>Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ul>",
+        "<h2>Steps</h2>\n<li>\n  <ol>Mix the flour and eggs.</ol>\n  <ol>Cook on a hot pan.</ol>\n</li>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-4-4-mcq-3",
+    "type": "mcq",
+    "title": "조리 단계 화면 결과",
+    "description": "다음 HTML 코드를 브라우저에서 열면 화면에 어떻게 보일까요?\n<h2>Steps</h2>\n<ol>\n  <li>Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ol>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "choices": [
+        "두 단계 앞에 점(•)이 붙어 보인다",
+        "Steps 제목 아래에 1. Mix the flour and eggs. 2. Cook on a hot pan. 처럼 번호가 붙어 보인다",
+        "Cook on a hot pan. 앞에 1. 이 붙어 보인다",
+        "Steps 제목만 보이고 단계는 안 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-4-4-parsons-1",
+    "type": "parsons",
+    "title": "조리 단계 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Mix the flour and eggs., Cook on a hot pan. 순서의 번호 목록을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "fragments": [
+        "</ol>",
+        "  <li>Cook on a hot pan.</li>",
+        "  <li>Mix the flour and eggs.</li>",
+        "<ol>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-4-4-parsons-2",
+    "type": "parsons",
+    "title": "조리 단계 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 h2 Steps 아래에 두 조리 단계를 차례로 쓰세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "fragments": [
+        "  <li>Mix the flour and eggs.</li>",
+        "</ol>",
+        "  <li>Cook on a hot pan.</li>",
+        "<ol>",
+        "<h2>Steps</h2>"
+      ],
+      "answer_order": [
+        4,
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-4-4-parsons-3",
+    "type": "parsons",
+    "title": "조리 단계 순서 맞추기 3",
+    "description": "조각을 올바른 순서로 놓아 h2 Steps 아래에 Mix, Cook, Serve 단계를 차례로 쓰세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "fragments": [
+        "<ol>",
+        "  <li>Cook on a hot pan.</li>",
+        "</ol>",
+        "  <li>Serve with syrup.</li>",
+        "<h2>Steps</h2>",
+        "  <li>Mix the flour and eggs.</li>"
+      ],
+      "answer_order": [
+        4,
+        0,
+        5,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-4-4-blank-1",
+    "type": "blank",
+    "title": "조리 단계 h2 빈칸",
+    "description": "Steps 가 작은 제목(두 번째 크기)이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Steps</h2>\n<ol>\n  <li>Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<h2>"
+          ],
+          "hint": "두 번째 크기 제목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-4-blank-2",
+    "type": "blank",
+    "title": "조리 단계 ol 빈칸",
+    "description": "조리 단계에 번호가 붙도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Steps</h2>\n{{1}}\n  <li>Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<ol>"
+          ],
+          "hint": "순서 있는 목록 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-4-blank-3",
+    "type": "blank",
+    "title": "조리 단계 li 빈칸",
+    "description": "첫 번째 단계가 목록의 항목이 되도록 빈칸에 여는 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<h2>Steps</h2>\n<ol>\n  {{1}}Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ol>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<li>"
+          ],
+          "hint": "목록 항목 요소"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-4-4-code-1",
+    "type": "code",
+    "title": "조리 단계 추가하기",
+    "description": "h2 \"Steps\"와 ol/li 단계 목록을 추가하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-4-4",
+    "content": {
+      "starter_code": "<h1>Pancakes</h1>\n<!-- 여기에 조리 단계 제목과 목록을 추가하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<h2(\\s[^>]*)?>\\s*Steps\\s*</h2>",
+          "message": "h2 에 Steps 를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</h2>\\s*<ol(\\s[^>]*)?>",
+          "message": "제목 아래에 ol 목록을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<ol(\\s[^>]*)?>\\s*<li(\\s[^>]*)?>\\s*[^<\\s][\\s\\S]*?</li>",
+          "message": "ol 안에 li 로 단계를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "</li>\\s*<li(\\s[^>]*)?>",
+          "message": "단계를 두 개 이상 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<h1>Pancakes</h1>\n<h2>Steps</h2>\n<ol>\n  <li>Mix the flour and eggs.</li>\n  <li>Cook on a hot pan.</li>\n</ol>\n"
+    }
+  }
+]
