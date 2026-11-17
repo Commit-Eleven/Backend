@@ -28,6 +28,10 @@ import { userProfile } from './users/profile'
 
 await runMigrations()
 
+if (env.devTokenEnabled) {
+  console.warn('[auth] 개발용 토큰 엔드포인트가 열려 있습니다: /api/social/login/dev-token')
+}
+
 const app = new Hono()
 
 app.use('*', logger())

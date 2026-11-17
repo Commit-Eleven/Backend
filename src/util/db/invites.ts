@@ -1,5 +1,6 @@
 import { and, count, desc, eq, inArray, sql } from 'drizzle-orm'
 import { db } from './connection'
+import { notify } from './notifications'
 import { groupMember, notification, studyGroup, user } from './schema'
 
 // 그룹 초대는 따로 테이블 없이 notification(type=group_invite) 한 줄로 저장한다.
@@ -15,7 +16,15 @@ export type AcceptResult = 'joined' | 'no_group' | 'already_member' | 'full'
 
 export type InviteResult =
   | { status: 'invited'; inviteId: number }
-  | { status: 'no_group' | 'not_member' | 'already_member' | 'already_invited' | 'full' }
+  | {
+      status:
+        | 'no_group'
+        | 'not_member'
+        | 'already_member'
+        | 'already_invited'
+        | 'full'
+        | 'invite_blocked'
+    }
 
 export const invites = {
   // 내가 받은 초대 목록. 그룹이 없어진 초대는 뺀다
@@ -117,6 +126,14 @@ export const invites = {
 
       await tx.insert(groupMember).values({ groupId: group.id, userId: invite.userId })
       await tx.delete(notification).where(eq(notification.id, invite.id))
+      // 방장에게 가입 알림. 방장이 직접 들어온 경우는 알리지 않는다
+      if (group.ownerId !== invite.userId) {
+        await notify(tx, {
+          userId: group.ownerId,
+          type: 'group_joined',
+          payload: { groupId: group.id, userId: invite.userId },
+        })
+      }
       return 'joined'
     })
   },
@@ -153,11 +170,14 @@ export const invites = {
         .limit(1)
       if (pending) return { status: 'already_invited' }
 
-      const [inserted] = await tx
-        .insert(notification)
-        .values({ userId: targetId, type: 'group_invite', payload: { groupId, inviterId } })
-        .$returningId()
-      return { status: 'invited', inviteId: inserted.id }
+      // 초대는 알림으로 전달되므로, 초대 알림을 꺼 둔 사람에게는 초대를 만들지 않는다
+      const inviteId = await notify(tx, {
+        userId: targetId,
+        type: 'group_invite',
+        payload: { groupId, inviterId },
+      })
+      if (inviteId === undefined) return { status: 'invite_blocked' }
+      return { status: 'invited', inviteId }
     })
   },
 }

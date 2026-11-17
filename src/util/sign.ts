@@ -1,3 +1,4 @@
+import { isDuplicateKey } from './db/errors'
 import { type UserRow, users } from './db/users'
 import { Errors } from './http/response'
 
@@ -78,32 +79,56 @@ const pick = <T>(arr: readonly T[]) => arr[Math.floor(Math.random() * arr.length
 
 const randomNickname = () => `${pick(ADJECTIVES)}${pick(NOUNS)}`
 
-const randomTag = () =>
-  String(Math.floor(Math.random() * 10 ** NICKNAME_TAG_LENGTH)).padStart(NICKNAME_TAG_LENGTH, '0')
+const TAG_RANGE = 10 ** NICKNAME_TAG_LENGTH
 
+// 4자리 태그. Math.random 대신 crypto 로 뽑고, 범위를 넘는 값은 버려서 편향을 없앤다
+const randomTag = () => {
+  const limit = Math.floor(0x1_0000_0000 / TAG_RANGE) * TAG_RANGE
+  const buf = new Uint32Array(1)
+  let value = 0
+  do {
+    crypto.getRandomValues(buf)
+    value = buf[0] as number
+  } while (value >= limit)
+  return String(value % TAG_RANGE).padStart(NICKNAME_TAG_LENGTH, '0')
+}
+
+// 유니크 제약은 (nickname, tag) 조합이라 태그 하나만으로 겹치지 않아도 된다.
+// 그래서 전역 태그 조회 없이, 실제 insert 가 충돌할 때만 다시 뽑는다.
 export async function withFreeTag<T>(fn: (tag: string) => Promise<T>): Promise<T> {
   for (let i = 0; i < MAX_TAG_RETRY; i++) {
-    const tag = randomTag()
-    if (await users.existsByTag(tag)) continue
     try {
-      return await fn(tag)
+      return await fn(randomTag())
     } catch (e) {
-      if ((e as { code?: string }).code === 'ER_DUP_ENTRY') continue
-      throw e
+      if (!isDuplicateKey(e)) throw e
     }
   }
-  throw Errors.internal('태그를 생성하는데 실패했습니다 (중복)')
+  throw Errors.internal('닉네임 태그를 생성하는데 실패했습니다 (중복)')
 }
 
 export async function findOrCreateUser(profile: { sub: string; email: string }): Promise<UserRow> {
+  const email = profile.email.toLowerCase()
   const existing = await users.findByProviderId(profile.sub)
   if (existing) return existing
-  return withFreeTag((tag) =>
-    users.create({
-      email: profile.email.toLowerCase(),
-      nickname: randomNickname(),
-      tag,
-      providerId: profile.sub,
-    }),
-  )
+
+  for (let i = 0; i < MAX_TAG_RETRY; i++) {
+    try {
+      return await users.create({
+        email,
+        nickname: randomNickname(),
+        tag: randomTag(),
+        providerId: profile.sub,
+      })
+    } catch (e) {
+      if (!isDuplicateKey(e)) throw e
+      // 중복은 태그뿐 아니라 providerId/email 충돌일 수도 있다.
+      // 같은 계정으로 동시에 로그인해 먼저 만들어진 경우 그 계정을 그대로 쓴다.
+      const raced = await users.findByProviderId(profile.sub)
+      if (raced) return raced
+      const sameEmail = await users.findByEmail(email)
+      if (sameEmail) return sameEmail
+      // 태그만 겹친 경우는 다음 반복에서 새 태그로 다시 시도한다
+    }
+  }
+  throw Errors.internal('계정을 만드는데 실패했습니다 (중복)')
 }

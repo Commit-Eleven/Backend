@@ -86,6 +86,24 @@ export const refreshToken = mysqlTable(
   }),
 )
 
+// OAuth 콜백에서 프론트로 넘기는 일회용 코드. URL 에 액세스 토큰을 싣지 않기 위해
+// 짧게 살아 있는 코드만 주고, 프론트가 /exchange 로 토큰을 받아 간다.
+export const loginCode = mysqlTable(
+  'login_code',
+  {
+    id: pk(),
+    userId: bigint('user_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    codeHash: char('code_hash', { length: 64 }).notNull(),
+    expiresAt: timestamp('expires_at').notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => ({
+    uqHash: unique('uq_login_code_hash').on(t.codeHash),
+  }),
+)
+
 // 레슨 완료 기록. lessonId 는 프론트가 정한 문자열이라 서버의 문제·단원 id 와 별개
 export const lessonProgress = mysqlTable(
   'lesson_progress',

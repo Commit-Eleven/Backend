@@ -2,6 +2,7 @@ import { and, desc, eq, inArray, or } from 'drizzle-orm'
 import { Hono } from 'hono'
 import { SEARCH_RESULT_LIMIT } from '../../util/config/constants'
 import { db } from '../../util/db/connection'
+import { notify } from '../../util/db/notifications'
 import { friend } from '../../util/db/schema'
 import { users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
@@ -95,6 +96,11 @@ async function sendRequest(requesterId: number, addresseeId: number) {
 
   const [inserted] = await db.insert(friend).values({ requesterId, addresseeId }).$returningId()
   const [created] = await db.select().from(friend).where(eq(friend.id, inserted.id))
+  await notify(db, {
+    userId: addresseeId,
+    type: 'friend_request',
+    payload: { friendshipId: created.id, requesterId },
+  })
   return { friendshipId: created.id, status: created.status }
 }
 
@@ -114,6 +120,11 @@ async function acceptRequest(userId: number, friendshipId: number) {
         eq(friend.status, 'pending'),
       ),
     )
+  await notify(db, {
+    userId: f.requesterId,
+    type: 'friend_accepted',
+    payload: { friendshipId, addresseeId: userId },
+  })
   return { friendshipId, status: 'accepted' as const }
 }
 

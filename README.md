@@ -8,9 +8,11 @@ docker compose up -d
 bun run dev
 ```
 
-기본 서버 주소는 http://localhost:3000 이며, API 문서는 `/swagger`에서 확인합니다.
+기본 서버 주소는 `.env`의 `PORT`(예: `http://localhost:8899`)이며, API 문서 엔드포인트는
+아직 제공하지 않습니다. 라우트 목록은 아래 표와 `src/api/index.ts`를 참고하세요.
 구글 로그인과 DB 연결 설정은 `.env.example`을 참고해 `.env`에 지정합니다.
-구글 로그인이 끝나면 백엔드는 `FRONTEND_URL/auth/callback`으로 토큰을 전달합니다. 로컬 개발은
+구글 로그인이 끝나면 백엔드는 `FRONTEND_URL/auth/callback?code=...`으로 일회용 코드를 전달하고,
+프론트엔드가 `POST /api/social/login/exchange`로 토큰을 받아 갑니다. 로컬 개발은
 `http://127.0.0.1:5173`, 운영은 프론트엔드 배포 주소(기본값 `https://codegram.me`)를 사용하세요.
 Google OAuth의 승인된 리디렉션 URI에는 프론트 주소가 아니라
 `https://codegram.me/api/social/login/google/callback` 같은 백엔드 콜백 주소를 등록해야 합니다.
@@ -21,45 +23,59 @@ src/
 │   ├── index.ts              # 서버 진입점, 라우트 등록
 │   ├── health.ts             # DB 연결 상태
 │   ├── curriculum.ts         # 커리큘럼 조회
+│   ├── units.ts              # 단원 상세·진행률
+│   ├── lessons.ts            # 레슨 완료 저장
+│   ├── ranking.ts            # 경험치 랭킹
+│   ├── tags.ts               # 태그 목록
+│   ├── groups.ts             # 그룹 생성·조회·참여·초대·삭제
+│   ├── group-invites.ts      # 받은 그룹 초대 수락·거절
+│   ├── notifications.ts      # 알림 생성·조회·설정
 │   ├── social/
-│   │   ├── login.ts          # 소셜 로그인, 토큰, 로그아웃
-│   │   └── sign.ts           # 최초 가입, 닉네임·태그 생성
+│   │   └── login.ts          # 구글 로그인, 토큰 교환·갱신, 로그아웃
 │   ├── users/
-│   │   ├── me.ts             # 내 닉네임 변경
+│   │   ├── me.ts             # 내 정보·학습 설정·통계·제출·오답노트
+│   │   ├── onboarding.ts     # 온보딩
+│   │   ├── avatar.ts         # 프로필 사진 변경
+│   │   ├── profile.ts        # 다른 사용자 프로필
 │   │   └── friends.ts        # 사용자 검색, 친구 신청·수락·삭제
 │   └── problems/
-│       ├── mcq.ts            # 객관식 데이터와 API
-│       ├── blank.ts          # 빈칸 문제 데이터
-│       ├── parsons.ts        # 코드 순서 배열 문제 데이터
-│       ├── short.ts          # 단답형 문제 데이터
-│       ├── spaghetti.ts      # 코드 정리 문제 데이터
-│       ├── catalog.ts        # 문제 요약 인덱스
-│       └── learning.ts       # 학습 통계, 단원 진행률
+│       ├── mcq.ts            # 객관식
+│       ├── blank.ts          # 빈칸
+│       ├── parsons.ts        # 코드 순서 배열
+│       ├── short.ts          # 단답형
+│       └── code.ts           # 코드 작성
 └── util/
     ├── config/
-    │   ├── env.ts            # 환경 설정
+    │   ├── env.ts            # 환경 설정 (필수 값 검증 포함)
     │   └── constants.ts      # 공통 상수
     ├── db/
     │   ├── connection.ts     # DB 연결
     │   ├── schema.ts         # DB 스키마
+    │   ├── migrate.ts        # 기동 시 마이그레이션
     │   ├── users.ts          # 공통 사용자 조회·저장
-    │   └── submissions.ts    # 제출 기록 저장·조회
+    │   ├── submissions.ts    # 제출 기록 저장·조회
+    │   ├── notifications.ts  # 알림 생성(설정 반영)
+    │   ├── invites.ts        # 그룹 초대
+    │   └── errors.ts         # DB 오류 판별
+    ├── curriculum.ts         # 커리큘럼 파일 로딩
+    ├── learning.ts           # 단원 진행률 계산
+    ├── problems.ts           # 문제 데이터 로딩
+    ├── sign.ts               # 최초 가입, 닉네임·태그 생성
     └── http/
         ├── auth.ts           # JWT 인증 미들웨어
+        ├── body.ts           # 요청 본문 검사
         ├── case.ts           # 요청·응답 필드명 변환
         └── response.ts       # 공통 응답과 오류
 ```
 
 관련 파일을 `api`와 `util` 각각의 역할별 폴더에 모으고, 개별 파일의 책임은 유지합니다.
 각 API 파일은 해당 기능의 요청 처리와 SQL·로직을 담당하고, 공통 코드는 `util`에 둡니다. 문제 원본은 `static/problems`, 커리큘럼은 `static/curriculum`에 둡니다.
-문제 유형의 코드 파일과 데이터 파일 이름은 `mcq`, `blank`, `parsons`, `short`, `spaghetti`로 맞춥니다.
+문제 유형의 코드 파일과 데이터 파일 이름은 `mcq`, `blank`, `parsons`, `short`, `code`로 맞춥니다.
 예를 들어 `src/api/problems/mcq.ts`는 `static/problems/mcq.json`을 읽습니다.
 객관식 조회·채점 API와 커리큘럼은 `static/problems/mcq.json`의 동일한 문제 목록을 사용합니다.
-별도 파일에 있던 문제 3개도 옮겨 총 6개를 보존했습니다. 문제 ID는 `mc-001` 같은 문자열입니다.
-이전 숫자 ID `1`, `2`, `3`은 각각 `mc-004`, `mc-005`, `mc-006`으로 변경했습니다.
-채점 요청 예시는 `{"id":"mc-001","choice":0}`이며, 조회 응답은 `{ id, title, choices }`입니다.
-정답 인덱스는 데이터 파일의 `content.answer_index`에만 보관하고 조회 응답에는 포함하지 않습니다.
-현재 문제 HTTP API는 객관식만 제공하며, 나머지 네 유형은 학습 현황에서 사용합니다.
+문제 ID는 `mcq1`, `python-code-1` 같은 문자열입니다.
+채점 요청 예시는 `{"id":"mcq1","answer":0}`이며, 조회 응답의 `content`에는 `choices`만 들어갑니다.
+정답(`content.answer`)과 해설(`content.explanation`)은 데이터 파일에만 보관하고 조회 응답에는 포함하지 않습니다.
 구글 최초 로그인 시 자동 가입하므로 별도 회원가입 엔드포인트는 없습니다.
 
 API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합니다.
@@ -71,9 +87,10 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 커리큘럼 조회 | `GET /api/curriculum` |
 | 구글 로그인·자동 가입 | `GET /api/social/login/google` |
 | 구글 콜백 | `GET /api/social/login/google/callback` |
+| 로그인 코드 교환 | `POST /api/social/login/exchange` (body `{ code }`) |
 | 토큰 갱신 | `POST /api/social/login/refresh` |
 | 로그아웃 | `POST /api/social/login/logout` |
-| 개발용 토큰 | `GET /api/social/login/dev-token` |
+| 개발용 토큰 | `GET /api/social/login/dev-token` (`NODE_ENV=development` + `ENABLE_DEV_TOKEN=true` 일 때만) |
 | 닉네임 변경 | `PATCH /api/users/me/nickname` |
 | 내 그룹 목록 | `GET /api/me/groups` |
 | 그룹 목록·참여·방장 위임 | `GET /api/groups`, `POST /api/groups/join`, `POST /api/groups/:id/owner` |
@@ -84,8 +101,8 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 친구 수락·삭제 | `POST /api/users/friends/:id/accept`, `DELETE /api/users/friends/:id` |
 | 그룹 랭킹 | `GET /api/groups/:id/ranking` |
 | 그룹 삭제 | `DELETE /api/groups/:id` |
-| 학습 통계 | `GET /api/problems/learning/stats` |
-| 단원 진행률 | `GET /api/problems/learning/units/:unit_id` |
+| 학습 통계 | `GET /api/users/me/stats` |
+| 단원 진행률 | `GET /api/users/me/progress?language=html`, `GET /api/units/:unitId` |
 | 문제 조회·채점 | `GET /api/problems/{mcq,blank,parsons,short,code}?id=`, `POST /api/problems/{유형}` (body `{ id, answer }`) |
 | 코스를 언어로 거르기 | `GET /api/curriculum?language=html` |
 | 레슨 완료 저장 | `POST /api/lessons/:lessonId/complete` (body `{ language }`) |
@@ -99,7 +116,7 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 
 기존 `/auth/*`, `/friends`, `/me/*`, `/units/*`, `/users/search`, `/health` 주소는 새 경로로 변경했습니다.
 프론트엔드의 호출 주소와 구글 OAuth의 승인된 리디렉션 URI도 새 콜백 주소로 맞춰야 합니다.
-API 문서 주소 `/swagger`, `/doc`와 프론트엔드 로그인 완료 주소 `/auth/callback`은 유지합니다.
+API 문서(`/swagger`, `/doc`)는 제공하지 않으며, 프론트엔드 로그인 완료 주소는 `FRONTEND_URL/auth/callback`입니다.
 
 ## 프론트 요청 반영 메모
 

@@ -420,6 +420,7 @@ const INVITE_ERRORS = {
   already_member: () => Errors.duplicate('이미 그룹 멤버'),
   already_invited: () => Errors.duplicate('이미 초대함'),
   full: () => Errors.duplicate('그룹 정원이 찼음'),
+  invite_blocked: () => Errors.forbidden('상대가 그룹 초대 알림을 받지 않도록 설정했습니다'),
 }
 
 // 그룹 초대하기. 그룹 멤버면 누구나 초대할 수 있고, 받은 사람에게 group_invite 알림이 간다

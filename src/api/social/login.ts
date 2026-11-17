@@ -1,10 +1,13 @@
-import { eq } from 'drizzle-orm'
+import { and, eq, lt } from 'drizzle-orm'
 import { type Context, Hono } from 'hono'
 import { deleteCookie, getCookie, getSignedCookie, setCookie, setSignedCookie } from 'hono/cookie'
 import { sign, verifyWithJwks } from 'hono/jwt'
 import { env } from '../../util/config/env'
 import { db } from '../../util/db/connection'
-import { refreshToken as refreshTokenTable } from '../../util/db/schema'
+import {
+  loginCode as loginCodeTable,
+  refreshToken as refreshTokenTable,
+} from '../../util/db/schema'
 import { type UserRow, users } from '../../util/db/users'
 import { type AuthEnv, requireAuth } from '../../util/http/auth'
 import { readJsonBody } from '../../util/http/body'
@@ -86,6 +89,8 @@ async function verifyIdToken(idToken: string, nonce: string): Promise<GoogleProf
 
 const ACCESS_TOKEN_TTL = 60 * 15
 const REFRESH_TOKEN_TTL = 60 * 60 * 24 * 14
+// OAuth 콜백에서 프론트로 넘기는 일회용 코드의 수명. 프론트가 바로 교환한다.
+const LOGIN_CODE_TTL = 60
 const tokenHash = async (raw: string) =>
   Buffer.from(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw))).toString('hex')
 
@@ -95,9 +100,29 @@ function accessToken(u: UserRow) {
   return sign({ sub: u.id, tier: u.tier, iat, exp: iat + ACCESS_TOKEN_TTL }, env.jwtSecret, 'HS256')
 }
 
+// 콜백 URL 에 실을 일회용 코드. 원문은 URL 로만 나가고 DB 에는 해시만 남긴다.
+async function newLoginCode(userId: number) {
+  const raw = Buffer.from(crypto.getRandomValues(new Uint8Array(32))).toString('base64url')
+  const now = new Date()
+  await db
+    .delete(loginCodeTable)
+    .where(and(eq(loginCodeTable.userId, userId), lt(loginCodeTable.expiresAt, now)))
+  await db.insert(loginCodeTable).values({
+    userId,
+    codeHash: await tokenHash(raw),
+    expiresAt: new Date(now.getTime() + LOGIN_CODE_TTL * 1000),
+  })
+  return raw
+}
+
 async function newRefreshToken(userId: number) {
   const raw = Buffer.from(crypto.getRandomValues(new Uint8Array(48))).toString('base64url')
-  const expiresAt = new Date(Date.now() + REFRESH_TOKEN_TTL * 1000)
+  const now = new Date()
+  const expiresAt = new Date(now.getTime() + REFRESH_TOKEN_TTL * 1000)
+  // 만료된 토큰은 새로 발급할 때 같이 정리한다
+  await db
+    .delete(refreshTokenTable)
+    .where(and(eq(refreshTokenTable.userId, userId), lt(refreshTokenTable.expiresAt, now)))
   await db.insert(refreshTokenTable).values({ userId, tokenHash: await tokenHash(raw), expiresAt })
   return raw
 }
@@ -112,18 +137,27 @@ async function issueTokens(u: UserRow) {
   }
 }
 
-// 한 번 쓴 리프레시 토큰은 지우고 새로 발급
+// 한 번 쓴 리프레시 토큰은 지우고 새로 발급. 동시에 같은 토큰을 보내도
+// 행을 잠그고 지우기 때문에 하나만 성공한다.
 async function rotate(raw: string) {
   const invalid = () => Errors.unauthorized('리프레시 토큰 만료 또는 무효')
-  const [row] = await db
-    .select()
-    .from(refreshTokenTable)
-    .where(eq(refreshTokenTable.tokenHash, await tokenHash(raw)))
-  if (!row) throw invalid()
-  await db.delete(refreshTokenTable).where(eq(refreshTokenTable.id, row.id))
-  if (row.expiresAt.getTime() < Date.now()) throw invalid()
+  const hash = await tokenHash(raw)
 
-  const u = await users.findById(row.userId)
+  const userId = await db.transaction(async (tx) => {
+    const [row] = await tx
+      .select()
+      .from(refreshTokenTable)
+      .where(eq(refreshTokenTable.tokenHash, hash))
+      .for('update')
+    if (!row) return undefined
+
+    await tx.delete(refreshTokenTable).where(eq(refreshTokenTable.id, row.id))
+    if (row.expiresAt.getTime() < Date.now()) return undefined
+    return row.userId
+  })
+  if (userId === undefined) throw invalid()
+
+  const u = await users.findById(userId)
   if (!u) throw invalid()
   const [token, refreshToken] = await Promise.all([accessToken(u), newRefreshToken(u.id)])
   return { token, refreshToken }
@@ -179,10 +213,41 @@ login.get('/google/callback', async (c) => {
   if (!profile.emailVerified) return fail(c, 'FORBIDDEN', '인증 안 된 구글 이메일', 403)
 
   const u = await findOrCreateUser(profile)
-  const { token, refreshToken } = await issueTokens(u)
-  setRefreshCookie(c, refreshToken)
+  // 액세스 토큰을 URL 에 싣지 않는다. 일회용 코드만 넘기고 프론트가 곧바로 교환한다.
+  const loginCode = await newLoginCode(u.id)
 
-  return c.redirect(`${env.frontendUrl}/auth/callback?token=${encodeURIComponent(token)}`, 302)
+  return c.redirect(`${env.frontendUrl}/auth/callback?code=${encodeURIComponent(loginCode)}`, 302)
+})
+
+// 콜백이 넘긴 일회용 코드를 액세스·리프레시 토큰으로 바꾼다.
+// 코드는 한 번 쓰면 지워지고 1분 뒤 만료된다.
+login.post('/exchange', async (c) => {
+  const body = await readJsonBody(c)
+  const raw = typeof body.code === 'string' ? body.code.trim() : ''
+  if (!raw) return fail(c, 'INVALID_INPUT', 'code 가 필요합니다', 400)
+
+  const hash = await tokenHash(raw)
+  const row = await db.transaction(async (tx) => {
+    const [found] = await tx
+      .select()
+      .from(loginCodeTable)
+      .where(eq(loginCodeTable.codeHash, hash))
+      .for('update')
+    if (!found) return undefined
+
+    await tx.delete(loginCodeTable).where(eq(loginCodeTable.id, found.id))
+    return found
+  })
+  if (!row || row.expiresAt.getTime() < Date.now()) {
+    throw Errors.unauthorized('만료되었거나 잘못된 코드입니다')
+  }
+
+  const u = await users.findById(row.userId)
+  if (!u) throw Errors.unauthorized('없는 사용자')
+
+  const { token, refreshToken, user } = await issueTokens(u)
+  setRefreshCookie(c, refreshToken)
+  return ok(c, { token, user })
 })
 
 // body에 refreshToken(refresh_token) 없으면 쿠키에서
@@ -203,14 +268,18 @@ login.post('/logout', requireAuth, async (c) => {
   return c.body(null, 204)
 })
 
-// 테스트용. 구글 없이 주소만 쳐서 토큰 받기. ENABLE_DEV_TOKEN="true" 일 때만 열림
+// 테스트용. 구글 없이 주소만 쳐서 토큰 받기. NODE_ENV=development 이고
+// ENABLE_DEV_TOKEN="true" 일 때만 열림
 // ?user_id=1 이면 그 유저, 없으면 테스트 계정(dev-user) 하나 만들어서 씀
 login.get('/dev-token', async (c) => {
   if (!env.devTokenEnabled) return fail(c, 'NOT_FOUND', '없는 경로', 404)
 
-  const userId = c.req.query('user_id')
-  const u = userId
-    ? await users.findById(Number(userId))
+  const rawId = c.req.query('user_id')
+  if (rawId !== undefined && !/^[1-9]\d*$/.test(rawId)) {
+    return fail(c, 'INVALID_INPUT', 'user_id 는 양의 정수여야 합니다', 400)
+  }
+  const u = rawId
+    ? await users.findById(Number(rawId))
     : await findOrCreateUser({
         sub: 'dev-user',
         email: 'dev-user@codegram.local',

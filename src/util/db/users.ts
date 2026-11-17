@@ -76,9 +76,9 @@ export const users = {
     return rows[0]
   },
 
-  async existsByTag(tag: string): Promise<boolean> {
-    const rows = await db.select({ id: user.id }).from(user).where(eq(user.tag, tag))
-    return rows.length > 0
+  async findByEmail(email: string): Promise<UserRow | undefined> {
+    const rows = await db.select().from(user).where(eq(user.email, email))
+    return rows[0]
   },
 
   async create(data: NewUser): Promise<UserRow> {

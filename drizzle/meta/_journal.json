@@ -43,6 +43,13 @@
       "when": 1794308861750,
       "tag": "0005_redundant_tana_nile",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1794905875414,
+      "tag": "0006_thick_the_liberteens",
+      "breakpoints": true
     }
   ]
 }

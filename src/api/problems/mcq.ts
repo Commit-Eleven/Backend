@@ -22,16 +22,16 @@ type McqProblem = {
 
 export const mcqProblems = (await Bun.file('static/problems/mcq.json').json()) as McqProblem[]
 
-// 조회할 때 정답(answer)은 빼고 내려준다
+// 조회할 때 정답(answer)과 해설(explanation)은 내려주지 않는다.
+// 해설에 정답이 그대로 적힌 문제가 있어서 필드를 지우는 대신 허용할 필드만 고른다.
 function toQuestion(p: McqProblem) {
-  const { answer, ...content } = p.content
   return {
     id: p.id,
     type: p.type,
     title: p.title,
     description: p.description,
     reward: p.reward,
-    content,
+    content: { choices: p.content.choices },
   }
 }
 

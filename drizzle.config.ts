@@ -1,5 +1,8 @@
 import { defineConfig } from 'drizzle-kit'
 
+const database = process.env.DB_DATABASE
+if (!database) throw new Error('DB_DATABASE 환경변수가 필요합니다')
+
 export default defineConfig({
   dialect: 'mysql',
   schema: './src/util/db/schema.ts',
@@ -9,6 +12,6 @@ export default defineConfig({
     port: Number(process.env.DB_PORT ?? 3306),
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE!,
+    database,
   },
 })
