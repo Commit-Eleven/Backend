@@ -1,6 +1,5 @@
 import { Hono } from 'hono'
 import { STUDY_LEVEL } from '../../util/config/constants'
-import { gradeShortAnswer } from '../../util/ai/grader'
 import { awardSolveExp } from '../../util/db/exp'
 import { submissions } from '../../util/db/submissions'
 import { users } from '../../util/db/users'
@@ -107,17 +106,7 @@ short.post('', requireAuth, async (c) => {
 
   const userId = c.get('userId')
   const trimmed = answer.trim()
-  let isAnswer = matchesAnswer(trimmed, problem.content.answer, problem.caseSensitive)
-  if (!isAnswer) {
-    const aiGrade = await gradeShortAnswer({
-      question: problem.title,
-      description: problem.description,
-      code: problem.content.code,
-      answer: trimmed,
-      acceptedAnswers: problem.content.answer,
-    })
-    if (aiGrade === true) isAnswer = true
-  }
+  const isAnswer = matchesAnswer(trimmed, problem.content.answer, problem.caseSensitive)
   await submissions.create({ userId, problemId: problem.id, isCorrect: isAnswer, answer: trimmed })
 
   if (isAnswer) {
