@@ -1,0 +1,4066 @@
+[
+  {
+    "id": "html-8-1-mcq-1",
+    "type": "mcq",
+    "title": "폼의 기초 개념",
+    "description": "form 요소는 어떤 역할을 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "choices": [
+        "표를 만드는 영역",
+        "사용자가 입력한 내용을 모아 보내는 영역",
+        "글자를 굵게 꾸미는 영역",
+        "그림을 넣는 영역"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-8-1-mcq-2",
+    "type": "mcq",
+    "title": "폼의 기초 올바른 코드",
+    "description": "Send 버튼이 든 폼을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "choices": [
+        "<form><button>Send</form></button>",
+        "<from><button>Send</button></from>",
+        "<form><button>Send</button></form>",
+        "<form><button>Send<button></form>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-8-1-mcq-3",
+    "type": "mcq",
+    "title": "폼의 기초 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<form>\n  <button>Send</button>\n</form>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "choices": [
+        "Send 라고 적힌 버튼 하나",
+        "글자를 쓸 수 있는 입력칸 하나",
+        "Send 라는 굵은 제목",
+        "아무것도 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-8-1-parsons-1",
+    "type": "parsons",
+    "title": "폼의 기초 순서 맞추기 1",
+    "description": "조각을 올바른 순서로 놓아 Send 버튼이 든 폼을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "fragments": [
+        "</form>",
+        "  <button>Send</button>",
+        "<form>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-8-1-parsons-2",
+    "type": "parsons",
+    "title": "폼의 기초 순서 맞추기 2",
+    "description": "조각을 올바른 순서로 놓아 Send 버튼이 든 폼을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "fragments": [
+        "  </button>",
+        "</form>",
+        "    Send",
+        "  <button>",
+        "<form>"
+      ],
+      "answer_order": [
+        4,
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-1-parsons-3",
+    "type": "parsons",
+    "title": "폼의 기초 순서 맞추기 3",
+    "description": "Contact 제목 아래에 Send 버튼이 든 폼이 오도록 조각을 순서대로 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "fragments": [
+        "    Send",
+        "  <button>",
+        "</form>",
+        "  </button>",
+        "<h2>Contact</h2>",
+        "<form>"
+      ],
+      "answer_order": [
+        4,
+        5,
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-8-1-blank-1",
+    "type": "blank",
+    "title": "폼의 기초 빈칸 1",
+    "description": "폼을 시작하도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <button>Send</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<form>"
+          ],
+          "hint": "폼을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-1-blank-2",
+    "type": "blank",
+    "title": "폼의 기초 빈칸 2",
+    "description": "폼 안에 Send 버튼이 생기도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  {{1}}Send</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<button>"
+          ],
+          "hint": "버튼을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-1-short-3",
+    "type": "short",
+    "title": "폼의 기초 문법 쓰기",
+    "description": "사용자 입력을 모아 보내는 영역을 만드는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>\n  <button>Send</button>\n</___>",
+      "answer": [
+        "form",
+        "<form>"
+      ]
+    }
+  },
+  {
+    "id": "html-8-1-code-1",
+    "type": "code",
+    "title": "폼의 기초 직접 만들기",
+    "description": "form 안에 \"Send\" 라고 적힌 button 을 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-1",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*</form>",
+          "message": "form 태그를 열고 닫아요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<button\\b[^>]*>\\s*Send\\s*</button>[\\s\\S]*</form>",
+          "message": "form 안에 <button>Send</button> 을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<form>\n  <button>Send</button>\n</form>"
+    }
+  },
+  {
+    "id": "html-8-2-mcq-1",
+    "type": "mcq",
+    "title": "텍스트 입력 요소 개념",
+    "description": "input 요소의 입력칸 모양은 무엇에 따라 달라질까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "choices": [
+        "name 속성",
+        "id 속성",
+        "class 속성",
+        "type 속성"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-8-2-mcq-2",
+    "type": "mcq",
+    "title": "텍스트 입력 요소 올바른 코드",
+    "description": "글자를 한 줄 쓸 수 있는 입력칸을 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "choices": [
+        "<input type=\"text\">",
+        "<input type:\"text\">",
+        "<input>text</input>",
+        "<text input>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-8-2-mcq-3",
+    "type": "mcq",
+    "title": "텍스트 입력 요소 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<input type=\"text\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "choices": [
+        "text 라는 글자",
+        "글자를 쓸 수 있는 빈 입력칸",
+        "클릭할 수 있는 버튼",
+        "체크 표시를 하는 네모 상자"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-8-2-parsons-1",
+    "type": "parsons",
+    "title": "텍스트 입력 요소 순서 맞추기 1",
+    "description": "조각을 이어 붙여 type 이 text 인 input 을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "fragments": [
+        "<input",
+        ">",
+        " type=\"text\""
+      ],
+      "answer_order": [
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-2-parsons-2",
+    "type": "parsons",
+    "title": "텍스트 입력 요소 순서 맞추기 2",
+    "description": "조각을 이어 붙여 type 이 text 인 input 을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "fragments": [
+        "<input",
+        "\"text\"",
+        ">",
+        " type="
+      ],
+      "answer_order": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-8-2-parsons-3",
+    "type": "parsons",
+    "title": "텍스트 입력 요소 순서 맞추기 3",
+    "description": "조각을 이어 붙여 type 이 text 인 input 을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "fragments": [
+        "<",
+        ">",
+        "\"text\"",
+        " type=",
+        "input"
+      ],
+      "answer_order": [
+        0,
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-2-blank-1",
+    "type": "blank",
+    "title": "텍스트 입력 요소 빈칸 1",
+    "description": "글자 입력칸이 되도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}} type=\"text\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<input"
+          ],
+          "hint": "입력칸 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-2-blank-2",
+    "type": "blank",
+    "title": "텍스트 입력 요소 빈칸 2",
+    "description": "한 줄 글자 입력칸이 되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input {{1}}>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"text\"",
+            "type='text'",
+            "type=text"
+          ],
+          "hint": "글자 입력칸 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-2-short-3",
+    "type": "short",
+    "title": "텍스트 입력 요소 문법 쓰기",
+    "description": "입력칸의 종류를 정하는 속성 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<input ___=\"text\">",
+      "answer": [
+        "type"
+      ]
+    }
+  },
+  {
+    "id": "html-8-2-code-1",
+    "type": "code",
+    "title": "텍스트 입력 요소 직접 만들기",
+    "description": "type 이 \"text\" 인 input 을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-2",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<input\\b",
+          "message": "input 태그를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<input\\b[^>]*\\btype\\s*=\\s*[\"']?text[\"']?(\\s[^>]*)?/?>",
+          "message": "type=\"text\" 를 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<input type=\"text\">"
+    }
+  },
+  {
+    "id": "html-8-3-mcq-1",
+    "type": "mcq",
+    "title": "Input 속성 개념",
+    "description": "input 의 name 과 placeholder 속성에 대한 설명으로 옳은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "choices": [
+        "name 은 안내 문구, placeholder 는 데이터 이름이다",
+        "둘 다 입력칸의 색을 정한다",
+        "name 은 데이터 이름, placeholder 는 입력칸에 보이는 안내 문구다",
+        "둘 다 입력칸의 크기를 정한다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-8-3-mcq-2",
+    "type": "mcq",
+    "title": "Input 속성 올바른 코드",
+    "description": "name 이 user 이고 안내 문구가 Name 인 입력칸을 올바르게 쓴 코드는?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "choices": [
+        "<input name=\"Name\" placeholder=\"user\">",
+        "<input name=\"user\" placeholder=\"Name\">",
+        "<input name:\"user\" placeholder:\"Name\">",
+        "<input placeholder>Name</input>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-8-3-mcq-3",
+    "type": "mcq",
+    "title": "Input 속성 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 어떻게 보일까요?\n<input type=\"text\" placeholder=\"Name\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "choices": [
+        "Name 이라는 굵은 글자만 보인다",
+        "Name 이라고 적힌 버튼이 보인다",
+        "아무것도 보이지 않는다",
+        "빈 입력칸 안에 Name 이 흐리게 보이고, 글자를 쓰면 사라진다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-8-3-parsons-1",
+    "type": "parsons",
+    "title": "Input 속성 순서 맞추기 1",
+    "description": "name 은 user, placeholder 는 Name 이 되도록 조각을 놓으세요. name 속성을 먼저 씁니다.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "fragments": [
+        " name=\"user\"",
+        ">",
+        " placeholder=\"Name\"",
+        "<input"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-3-parsons-2",
+    "type": "parsons",
+    "title": "Input 속성 순서 맞추기 2",
+    "description": "name 은 user, placeholder 는 Name 이 되도록 조각을 놓으세요. name 속성을 먼저 씁니다.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "fragments": [
+        "\"user\"",
+        " placeholder=\"Name\"",
+        ">",
+        "<input",
+        " name="
+      ],
+      "answer_order": [
+        3,
+        4,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-8-3-parsons-3",
+    "type": "parsons",
+    "title": "Input 속성 순서 맞추기 3",
+    "description": "name 은 user, placeholder 는 Name 이 되도록 조각을 놓으세요. name 속성을 먼저 씁니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "fragments": [
+        " name=",
+        "\"user\"",
+        "\"Name\"",
+        " placeholder=",
+        ">",
+        "<input"
+      ],
+      "answer_order": [
+        5,
+        0,
+        1,
+        3,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-8-3-blank-1",
+    "type": "blank",
+    "title": "Input 속성 빈칸 1",
+    "description": "입력값의 데이터 이름이 user 가 되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input {{1}}user\" placeholder=\"Name\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "name=\""
+          ],
+          "hint": "데이터 이름 속성과 =\" "
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-3-blank-2",
+    "type": "blank",
+    "title": "Input 속성 빈칸 2",
+    "description": "입력칸에 Name 이라는 안내 문구가 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input name=\"user\" {{1}}Name\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "placeholder=\""
+          ],
+          "hint": "안내 문구 속성과 =\" "
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-3-short-3",
+    "type": "short",
+    "title": "Input 속성 문법 쓰기",
+    "description": "입력칸 안에 흐리게 보이는 안내 문구를 넣는 속성 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<input name=\"user\" ___=\"Name\">",
+      "answer": [
+        "placeholder"
+      ]
+    }
+  },
+  {
+    "id": "html-8-3-code-1",
+    "type": "code",
+    "title": "Input 속성 직접 만들기",
+    "description": "name 과 placeholder 속성이 모두 있는 input 을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-3",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<input\\b[^>]*\\bname\\s*=\\s*(\"[^\"]+\"|\\'[^\\']+\\'|[^\"\\'\\s>]+)",
+          "message": "input 에 name 속성을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<input\\b[^>]*\\bplaceholder\\s*=\\s*(\"[^\"]+\"|\\'[^\\']+\\'|[^\"\\'\\s>]+)",
+          "message": "input 에 placeholder 속성을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<input type=\"text\" name=\"user\" placeholder=\"Name\">"
+    }
+  },
+  {
+    "id": "html-8-4-mcq-1",
+    "type": "mcq",
+    "title": "비밀번호 필드 개념",
+    "description": "type 이 password 인 입력칸에 글자를 쓰면 어떻게 보일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "choices": [
+        "글자가 점으로 가려져 보인다",
+        "글자가 크게 보인다",
+        "글자가 빨간색으로 보인다",
+        "글자를 쓸 수 없다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-8-4-mcq-2",
+    "type": "mcq",
+    "title": "비밀번호 필드 올바른 코드",
+    "description": "비밀번호 입력칸을 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "choices": [
+        "<password>",
+        "<input type:\"password\">",
+        "<input type=\"password\">",
+        "<input>password</input>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-8-4-mcq-3",
+    "type": "mcq",
+    "title": "비밀번호 필드 화면 결과",
+    "description": "다음 입력칸에 abc 를 입력하면 입력칸에 어떻게 보일까요?\n<input type=\"password\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "choices": [
+        "abc",
+        "점 3개 (●●●)",
+        "ABC",
+        "password"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-8-4-parsons-1",
+    "type": "parsons",
+    "title": "비밀번호 필드 순서 맞추기 1",
+    "description": "조각을 이어 붙여 비밀번호 입력칸을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "fragments": [
+        " type=\"password\"",
+        "<input",
+        ">"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-8-4-parsons-2",
+    "type": "parsons",
+    "title": "비밀번호 필드 순서 맞추기 2",
+    "description": "조각을 이어 붙여 비밀번호 입력칸을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "fragments": [
+        ">",
+        "\"password\"",
+        " type=",
+        "<input"
+      ],
+      "answer_order": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-8-4-parsons-3",
+    "type": "parsons",
+    "title": "비밀번호 필드 순서 맞추기 3",
+    "description": "조각을 이어 붙여 비밀번호 입력칸을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "fragments": [
+        "<",
+        ">",
+        "input",
+        " type=",
+        "\"password\""
+      ],
+      "answer_order": [
+        0,
+        2,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-4-blank-1",
+    "type": "blank",
+    "title": "비밀번호 필드 빈칸 1",
+    "description": "입력한 글자가 점으로 가려지도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input {{1}}>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"password\"",
+            "type='password'",
+            "type=password"
+          ],
+          "hint": "점으로 가려지는 입력칸 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-4-short-2",
+    "type": "short",
+    "title": "비밀번호 필드 결과 쓰기",
+    "description": "다음 입력칸에 1234 를 입력하면 점이 몇 개 보일까요? 숫자로 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "caseSensitive": false,
+    "content": {
+      "code": "<input type=\"password\">",
+      "answer": [
+        "4",
+        "4개"
+      ]
+    }
+  },
+  {
+    "id": "html-8-4-short-3",
+    "type": "short",
+    "title": "비밀번호 필드 문법 쓰기",
+    "description": "입력한 글자를 점으로 가리는 type 값을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "caseSensitive": false,
+    "content": {
+      "code": "<input type=\"___\">",
+      "answer": [
+        "password"
+      ]
+    }
+  },
+  {
+    "id": "html-8-4-code-1",
+    "type": "code",
+    "title": "비밀번호 필드 직접 만들기",
+    "description": "type 이 \"password\" 인 input 을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-4",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<input\\b",
+          "message": "input 태그를 써요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<input\\b[^>]*\\btype\\s*=\\s*[\"']?password[\"']?(\\s[^>]*)?/?>",
+          "message": "type=\"password\" 를 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<input type=\"password\">"
+    }
+  },
+  {
+    "id": "html-8-5-mcq-1",
+    "type": "mcq",
+    "title": "Input을 위한 Label 개념",
+    "description": "label 과 input 이 서로 연결되려면 어떻게 해야 할까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "choices": [
+        "label 의 name 과 input 의 type 을 같게 한다",
+        "label 을 반드시 input 아래에 쓴다",
+        "label 과 input 의 글자 색을 같게 한다",
+        "label 의 for 값과 input 의 id 값을 같게 한다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-8-5-mcq-2",
+    "type": "mcq",
+    "title": "Input을 위한 Label 올바른 코드",
+    "description": "Name 글자와 입력칸을 올바르게 연결한 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "choices": [
+        "<label for=\"user\">Name</label>\n<input type=\"text\" id=\"name\">",
+        "<label id=\"user\">Name</label>\n<input type=\"text\" for=\"user\">",
+        "<label for=\"user\">Name</label>\n<input type=\"text\" id=\"user\">",
+        "<label for=\"user\">Name<label>\n<input type=\"text\" id=\"user\">"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-8-5-mcq-3",
+    "type": "mcq",
+    "title": "Input을 위한 Label 화면 결과",
+    "description": "다음 코드를 열고 Name 글자를 클릭하면 어떻게 될까요?\n<label for=\"user\">Name</label>\n<input type=\"text\" id=\"user\">",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "choices": [
+        "아무 일도 일어나지 않는다",
+        "입력칸이 선택되어 바로 글자를 쓸 수 있다",
+        "Name 글자가 사라진다",
+        "새 페이지로 이동한다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-8-5-parsons-1",
+    "type": "parsons",
+    "title": "Input을 위한 Label 순서 맞추기 1",
+    "description": "Name 글자가 입력칸 앞에 오도록 조각을 순서대로 놓아 label 과 input 을 연결하세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "fragments": [
+        "<input type=\"text\" id=\"user\">",
+        "Name</label>",
+        "<label for=\"user\">"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-8-5-parsons-2",
+    "type": "parsons",
+    "title": "Input을 위한 Label 순서 맞추기 2",
+    "description": "Name 글자가 입력칸 앞에 오도록 조각을 순서대로 놓아 label 과 input 을 연결하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "fragments": [
+        "</label>",
+        "<input type=\"text\" id=\"user\">",
+        "<label for=\"user\">",
+        "Name"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-5-parsons-3",
+    "type": "parsons",
+    "title": "Input을 위한 Label 순서 맞추기 3",
+    "description": "Name 글자가 입력칸 앞에 오도록 조각을 순서대로 놓아 label 과 input 을 연결하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "fragments": [
+        "<label",
+        "<input",
+        "Name",
+        "</label>",
+        " for=\"user\">",
+        " type=\"text\" id=\"user\">"
+      ],
+      "answer_order": [
+        0,
+        4,
+        2,
+        3,
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-8-5-blank-1",
+    "type": "blank",
+    "title": "Input을 위한 Label 빈칸 1",
+    "description": "입력칸의 이름표가 되도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}} for=\"user\">Name</label>\n<input type=\"text\" id=\"user\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<label"
+          ],
+          "hint": "이름표 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-5-blank-2",
+    "type": "blank",
+    "title": "Input을 위한 Label 빈칸 2",
+    "description": "label 이 id 가 user 인 입력칸과 연결되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<label {{1}}user\">Name</label>\n<input type=\"text\" id=\"user\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "for=\""
+          ],
+          "hint": "연결할 input 의 id 를 적는 속성"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-5-blank-3",
+    "type": "blank",
+    "title": "Input을 위한 Label 빈칸 3",
+    "description": "input 이 label 과 연결되도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<label for=\"user\">Name</label>\n<input type=\"text\" {{1}}user\">",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "id=\""
+          ],
+          "hint": "label 의 for 와 같은 값을 적는 속성"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-5-code-1",
+    "type": "code",
+    "title": "Input을 위한 Label 직접 만들기",
+    "description": "label 의 for 와 input 의 id 를 같은 값으로 써서 둘을 연결하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-5",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<label\\b[^>]*>[\\s\\S]*?</label>",
+          "message": "label 태그를 열고 닫아요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<input\\b[^>]*\\bid\\s*=",
+          "message": "input 에 id 를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<label\\b[^>]*\\bfor\\s*=\\s*[\"']?([\\w-]+)[\\s\\S]*<input\\b[^>]*\\bid\\s*=\\s*[\"']?\\1(?![\\w-])|<input\\b[^>]*\\bid\\s*=\\s*[\"']?([\\w-]+)[\\s\\S]*<label\\b[^>]*\\bfor\\s*=\\s*[\"']?\\2(?![\\w-])",
+          "message": "label 의 for 값과 input 의 id 값을 같게 해요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<label for=\"user\">Name</label>\n<input type=\"text\" id=\"user\">"
+    }
+  },
+  {
+    "id": "html-8-6-mcq-1",
+    "type": "mcq",
+    "title": "요약 - 기본 폼 개념",
+    "description": "폼 요소와 그 역할을 바르게 짝지은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "choices": [
+        "label - 글자를 쓰는 입력칸",
+        "input - 클릭하는 버튼",
+        "form - 입력 내용을 모아 보내는 영역",
+        "button - 입력칸의 이름표"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-8-6-mcq-2",
+    "type": "mcq",
+    "title": "요약 - 기본 폼 올바른 코드",
+    "description": "아이디 입력칸과 Login 버튼이 든 폼을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "choices": [
+        "<form>\n  <input type=\"text\" name=\"id\">\n  <button>Login</form>\n</button>",
+        "<form>\n  <input type=\"text\" name=\"id\">\n  <button>Login</button>\n</form>",
+        "<form>\n  <input type=\"text\" name=\"id\">\n  <button>Login</button>\n<form>",
+        "<form>\n  <input type:\"text\" name:\"id\">\n  <button>Login</button>\n</form>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-8-6-mcq-3",
+    "type": "mcq",
+    "title": "요약 - 기본 폼 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<form>\n  <label for=\"pw\">Password</label>\n  <input type=\"password\" id=\"pw\">\n  <button>Login</button>\n</form>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "choices": [
+        "Password 글자와 Login 글자만 보인다",
+        "입력칸 두 개만 보인다",
+        "Login 버튼만 보인다",
+        "Password 글자, 입력하면 점으로 가려지는 입력칸, Login 버튼"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-8-6-parsons-1",
+    "type": "parsons",
+    "title": "요약 - 기본 폼 순서 맞추기 1",
+    "description": "아이디 입력칸 다음에 Login 버튼이 오도록 조각을 놓아 폼을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "fragments": [
+        "  <input type=\"text\" name=\"id\">",
+        "</form>",
+        "  <button>Login</button>",
+        "<form>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-8-6-parsons-2",
+    "type": "parsons",
+    "title": "요약 - 기본 폼 순서 맞추기 2",
+    "description": "ID 이름표, 아이디 입력칸, Login 버튼 순서로 조각을 놓아 폼을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "fragments": [
+        "  <button>Login</button>",
+        "<form>",
+        "</form>",
+        "  <label for=\"id\">ID</label>",
+        "  <input type=\"text\" id=\"id\" name=\"id\">"
+      ],
+      "answer_order": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-8-6-parsons-3",
+    "type": "parsons",
+    "title": "요약 - 기본 폼 순서 맞추기 3",
+    "description": "ID 칸(이름표, 입력칸), Password 칸(이름표, 입력칸), Login 버튼 순서로 로그인 폼을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "fragments": [
+        "  <input type=\"password\" id=\"pw\" name=\"pw\">",
+        "  <input type=\"text\" id=\"id\" name=\"id\">",
+        "  <button>Login</button>",
+        "<form>",
+        "  <label for=\"pw\">Password</label>",
+        "</form>",
+        "  <label for=\"id\">ID</label>"
+      ],
+      "answer_order": [
+        3,
+        6,
+        1,
+        4,
+        0,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-8-6-blank-1",
+    "type": "blank",
+    "title": "요약 - 기본 폼 빈칸 1",
+    "description": "로그인 폼이 시작되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <label for=\"id\">ID</label>\n  <input type=\"text\" id=\"id\" name=\"id\">\n  <label for=\"pw\">Password</label>\n  <input type=\"password\" id=\"pw\" name=\"pw\">\n  <button>Login</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<form>"
+          ],
+          "hint": "폼을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-6-blank-2",
+    "type": "blank",
+    "title": "요약 - 기본 폼 빈칸 2",
+    "description": "ID 입력칸의 이름표가 되도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  {{1}} for=\"id\">ID</label>\n  <input type=\"text\" id=\"id\" name=\"id\">\n  <label for=\"pw\">Password</label>\n  <input type=\"password\" id=\"pw\" name=\"pw\">\n  <button>Login</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<label"
+          ],
+          "hint": "이름표 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-6-blank-3",
+    "type": "blank",
+    "title": "요약 - 기본 폼 빈칸 3",
+    "description": "비밀번호 입력칸이 되도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <label for=\"id\">ID</label>\n  <input type=\"text\" id=\"id\" name=\"id\">\n  <label for=\"pw\">Password</label>\n  {{1}} type=\"password\" id=\"pw\" name=\"pw\">\n  <button>Login</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<input"
+          ],
+          "hint": "입력칸 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-8-6-code-1",
+    "type": "code",
+    "title": "요약 - 기본 폼 직접 만들기",
+    "description": "label, input, button 이 모두 있는 로그인 폼을 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-8-6",
+    "content": {
+      "starter_code": "<form>\n  <!-- 여기에 작성하세요 -->\n</form>\n",
+      "checks": [
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*</form>",
+          "message": "form 으로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<label\\b[^>]*>[\\s\\S]*?</label>[\\s\\S]*</form>",
+          "message": "form 안에 label 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<input\\b[^>]*>[\\s\\S]*</form>",
+          "message": "form 안에 input 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<button\\b[^>]*>[\\s\\S]*?</button>[\\s\\S]*</form>",
+          "message": "form 안에 button 을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<form>\n  <label for=\"id\">ID</label>\n  <input type=\"text\" id=\"id\" name=\"id\">\n  <label for=\"pw\">Password</label>\n  <input type=\"password\" id=\"pw\" name=\"pw\">\n  <button>Login</button>\n</form>"
+    }
+  },
+  {
+    "id": "html-9-1-mcq-1",
+    "type": "mcq",
+    "title": "라디오 버튼 개념",
+    "description": "name 이 같은 radio 버튼이 여러 개 있을 때 옳은 설명은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "choices": [
+        "모두 한꺼번에 선택할 수 있다",
+        "그중 하나만 선택할 수 있다",
+        "아무것도 선택할 수 없다",
+        "선택하면 페이지가 바로 바뀐다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-9-1-mcq-2",
+    "type": "mcq",
+    "title": "라디오 버튼 올바른 코드",
+    "description": "S 와 L 중 하나만 고를 수 있게 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "choices": [
+        "<input type=\"radio\" name=\"s\"> S\n<input type=\"radio\" name=\"l\"> L",
+        "<input type=\"checkbox\" name=\"size\"> S\n<input type=\"checkbox\" name=\"size\"> L",
+        "<radio name=\"size\"> S\n<radio name=\"size\"> L",
+        "<input type=\"radio\" name=\"size\"> S\n<input type=\"radio\" name=\"size\"> L"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-9-1-mcq-3",
+    "type": "mcq",
+    "title": "라디오 버튼 화면 결과",
+    "description": "다음 코드를 열고 S 버튼을 클릭한 다음 L 버튼을 클릭하면 어떻게 될까요?\n<input type=\"radio\" name=\"size\"> S\n<input type=\"radio\" name=\"size\"> L",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "choices": [
+        "S 와 L 이 모두 선택된다",
+        "S 만 선택된 채로 남는다",
+        "L 만 선택되고 S 는 선택이 풀린다",
+        "둘 다 선택이 풀린다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-1-parsons-1",
+    "type": "parsons",
+    "title": "라디오 버튼 순서 맞추기 1",
+    "description": "Size 글자 아래에 S, L 순서로 라디오 버튼이 오도록 조각을 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "fragments": [
+        "<input type=\"radio\" name=\"size\" value=\"S\"> S",
+        "<p>Size</p>",
+        "<input type=\"radio\" name=\"size\" value=\"L\"> L"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-1-parsons-2",
+    "type": "parsons",
+    "title": "라디오 버튼 순서 맞추기 2",
+    "description": "Size 글자 아래에 S, L 순서로 라디오 버튼을 놓고, 각 버튼 바로 뒤에 그 글자가 오도록 하세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "fragments": [
+        "<p>Size</p>",
+        "<input type=\"radio\" name=\"size\" value=\"S\">",
+        "L",
+        "S",
+        "<input type=\"radio\" name=\"size\" value=\"L\">"
+      ],
+      "answer_order": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-1-parsons-3",
+    "type": "parsons",
+    "title": "라디오 버튼 순서 맞추기 3",
+    "description": "Size 글자 아래에 S, M, L 순서로 라디오 버튼을 놓고, 각 버튼 바로 뒤에 그 글자가 오도록 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "fragments": [
+        "<input type=\"radio\" name=\"size\" value=\"L\">",
+        "L",
+        "<input type=\"radio\" name=\"size\" value=\"S\">",
+        "M",
+        "<p>Size</p>",
+        "<input type=\"radio\" name=\"size\" value=\"M\">",
+        "S"
+      ],
+      "answer_order": [
+        4,
+        2,
+        6,
+        5,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-9-1-blank-1",
+    "type": "blank",
+    "title": "라디오 버튼 빈칸 1",
+    "description": "하나만 고르는 동그란 버튼이 되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input {{1}} name=\"size\" value=\"S\"> S\n<input type=\"radio\" name=\"size\" value=\"L\"> L",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"radio\"",
+            "type='radio'",
+            "type=radio"
+          ],
+          "hint": "하나만 고르는 버튼 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-1-blank-2",
+    "type": "blank",
+    "title": "라디오 버튼 빈칸 2",
+    "description": "S 와 L 중 하나만 고를 수 있도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input type=\"radio\" {{1}} value=\"S\"> S\n<input type=\"radio\" name=\"size\" value=\"L\"> L",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "name=\"size\"",
+            "name='size'",
+            "name=size"
+          ],
+          "hint": "아래 버튼과 같은 name"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-1-short-3",
+    "type": "short",
+    "title": "라디오 버튼 문법 쓰기",
+    "description": "여러 개 중 하나만 고르는 동그란 버튼을 만드는 type 값을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "caseSensitive": false,
+    "content": {
+      "code": "<input type=\"___\" name=\"size\"> S\n<input type=\"___\" name=\"size\"> L",
+      "answer": [
+        "radio"
+      ]
+    }
+  },
+  {
+    "id": "html-9-1-code-1",
+    "type": "code",
+    "title": "라디오 버튼 직접 만들기",
+    "description": "name 이 같은 radio input 두 개를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-1",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "(<input\\b[^>]*\\btype\\s*=\\s*[\"']?radio\\b[^>]*>[\\s\\S]*){2}",
+          "message": "type=\"radio\" 인 input 을 두 개 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<input\\b(?=[^>]*\\btype\\s*=\\s*[\"']?radio\\b)[^>]*\\bname\\s*=\\s*[\"']?([\\w-]+)[\\s\\S]*<input\\b(?=[^>]*\\btype\\s*=\\s*[\"']?radio\\b)[^>]*\\bname\\s*=\\s*[\"']?\\1(?![\\w-])",
+          "message": "두 radio 의 name 을 같게 해요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<input type=\"radio\" name=\"size\" value=\"S\"> S\n<input type=\"radio\" name=\"size\" value=\"L\"> L"
+    }
+  },
+  {
+    "id": "html-9-2-mcq-1",
+    "type": "mcq",
+    "title": "체크박스 개념",
+    "description": "체크박스는 언제 쓰면 좋을까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "choices": [
+        "켜고 끄는 선택을 할 때",
+        "긴 글을 쓸 때",
+        "표를 만들 때",
+        "그림을 넣을 때"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-9-2-mcq-2",
+    "type": "mcq",
+    "title": "체크박스 올바른 코드",
+    "description": "체크박스를 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "choices": [
+        "<checkbox>",
+        "<input type:\"checkbox\">",
+        "<input type=\"checkbox\">",
+        "<input>checkbox</input>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-2-mcq-3",
+    "type": "mcq",
+    "title": "체크박스 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<input type=\"checkbox\" id=\"agree\">\n<label for=\"agree\">I agree</label>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "choices": [
+        "동그란 선택 버튼과 I agree 글자",
+        "체크할 수 있는 작은 네모 상자와 I agree 글자",
+        "I agree 라고 적힌 버튼",
+        "글자를 쓰는 입력칸"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-9-2-parsons-1",
+    "type": "parsons",
+    "title": "체크박스 순서 맞추기 1",
+    "description": "체크 상자 뒤에 I agree 글자가 오도록 조각을 순서대로 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "fragments": [
+        "<label for=\"agree\">",
+        "<input type=\"checkbox\" id=\"agree\">",
+        "I agree</label>"
+      ],
+      "answer_order": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-2-parsons-2",
+    "type": "parsons",
+    "title": "체크박스 순서 맞추기 2",
+    "description": "체크 상자 뒤에 I agree 글자가 오도록 조각을 순서대로 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "fragments": [
+        "I agree",
+        "</label>",
+        "<input type=\"checkbox\" id=\"agree\">",
+        "<label for=\"agree\">"
+      ],
+      "answer_order": [
+        2,
+        3,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-9-2-parsons-3",
+    "type": "parsons",
+    "title": "체크박스 순서 맞추기 3",
+    "description": "체크 상자 뒤에 I agree 글자가 오도록 조각을 순서대로 놓으세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "fragments": [
+        "<input",
+        "I agree",
+        "<label",
+        "</label>",
+        " for=\"agree\">",
+        " type=\"checkbox\" id=\"agree\">"
+      ],
+      "answer_order": [
+        0,
+        5,
+        2,
+        4,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-9-2-blank-1",
+    "type": "blank",
+    "title": "체크박스 빈칸 1",
+    "description": "켜고 끄는 네모 상자가 되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input {{1}} id=\"agree\">\n<label for=\"agree\">I agree</label>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"checkbox\"",
+            "type='checkbox'",
+            "type=checkbox"
+          ],
+          "hint": "체크 상자 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-2-blank-2",
+    "type": "blank",
+    "title": "체크박스 빈칸 2",
+    "description": "체크 상자 옆 글자가 이름표가 되도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<input type=\"checkbox\" id=\"agree\">\n{{1}} for=\"agree\">I agree</label>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<label"
+          ],
+          "hint": "이름표 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-2-short-3",
+    "type": "short",
+    "title": "체크박스 문법 쓰기",
+    "description": "켜고 끄는 네모 상자를 만드는 type 값을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<input type=\"___\" id=\"agree\">\n<label for=\"agree\">I agree</label>",
+      "answer": [
+        "checkbox"
+      ]
+    }
+  },
+  {
+    "id": "html-9-2-code-1",
+    "type": "code",
+    "title": "체크박스 직접 만들기",
+    "description": "checkbox input 과 label 을 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-2",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<input\\b[^>]*\\btype\\s*=\\s*[\"']?checkbox[\"']?(\\s[^>]*)?/?>",
+          "message": "type=\"checkbox\" 인 input 을 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<label\\b[^>]*>[\\s\\S]*?</label>",
+          "message": "label 태그를 열고 닫아요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<input type=\"checkbox\" id=\"agree\">\n<label for=\"agree\">I agree</label>"
+    }
+  },
+  {
+    "id": "html-9-3-mcq-1",
+    "type": "mcq",
+    "title": "드롭다운 개념",
+    "description": "select 와 option 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "choices": [
+        "select 는 선택지, option 은 드롭다운 메뉴다",
+        "둘 다 버튼을 만든다",
+        "둘 다 표를 만든다",
+        "select 는 드롭다운 메뉴, option 은 그 안의 선택지다"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-9-3-mcq-2",
+    "type": "mcq",
+    "title": "드롭다운 올바른 코드",
+    "description": "Red, Blue 를 고르는 드롭다운을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "choices": [
+        "<select>\n  <option>Red</option>\n  <option>Blue</option>\n</select>",
+        "<option>\n  <select>Red</select>\n  <select>Blue</select>\n</option>",
+        "<select>\n  <option>Red</option>\n  <option>Blue</option>\n<select>",
+        "<select>\n  <li>Red</li>\n  <li>Blue</li>\n</select>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-9-3-mcq-3",
+    "type": "mcq",
+    "title": "드롭다운 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 처음에 무엇이 보일까요?\n<select>\n  <option>Red</option>\n  <option>Blue</option>\n</select>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "choices": [
+        "Red 와 Blue 버튼 두 개",
+        "Red, Blue 가 점 목록으로 보인다",
+        "Red 가 보이는 드롭다운 상자 하나 (누르면 Blue 도 보인다)",
+        "글자를 쓰는 입력칸"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-3-parsons-1",
+    "type": "parsons",
+    "title": "드롭다운 순서 맞추기 1",
+    "description": "Red, Blue 순서로 선택지가 있는 드롭다운을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "fragments": [
+        "  <option>Blue</option>",
+        "<select>",
+        "  <option>Red</option>",
+        "</select>"
+      ],
+      "answer_order": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-9-3-parsons-2",
+    "type": "parsons",
+    "title": "드롭다운 순서 맞추기 2",
+    "description": "Red, Green, Blue 순서로 선택지가 있는 드롭다운을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "fragments": [
+        "  <option>Blue</option>",
+        "  <option>Green</option>",
+        "</select>",
+        "<select>",
+        "  <option>Red</option>"
+      ],
+      "answer_order": [
+        3,
+        4,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-3-parsons-3",
+    "type": "parsons",
+    "title": "드롭다운 순서 맞추기 3",
+    "description": "Color 이름표 다음에 Red, Green, Blue 순서로 선택지가 있는 드롭다운이 오도록 하세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "fragments": [
+        "  <option>Blue</option>",
+        "<label for=\"color\">Color</label>",
+        "  <option>Red</option>",
+        "  <option>Green</option>",
+        "<select id=\"color\">",
+        "</select>"
+      ],
+      "answer_order": [
+        1,
+        4,
+        2,
+        3,
+        0,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-9-3-blank-1",
+    "type": "blank",
+    "title": "드롭다운 빈칸 1",
+    "description": "드롭다운 메뉴가 시작되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <option>Red</option>\n  <option>Blue</option>\n</select>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<select>"
+          ],
+          "hint": "드롭다운 메뉴를 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-3-blank-2",
+    "type": "blank",
+    "title": "드롭다운 빈칸 2",
+    "description": "Red 선택지가 생기도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<select>\n  {{1}}Red</option>\n  <option>Blue</option>\n</select>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<option>"
+          ],
+          "hint": "선택지를 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-3-short-3",
+    "type": "short",
+    "title": "드롭다운 문법 쓰기",
+    "description": "드롭다운 안의 선택지 하나를 만드는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<select>\n  <___>Red</___>\n  <___>Blue</___>\n</select>",
+      "answer": [
+        "option",
+        "<option>"
+      ]
+    }
+  },
+  {
+    "id": "html-9-3-code-1",
+    "type": "code",
+    "title": "드롭다운 직접 만들기",
+    "description": "select 안에 option 두 개를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-3",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<select\\b[^>]*>[\\s\\S]*</select>",
+          "message": "select 태그를 열고 닫아요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<select\\b[^>]*>[\\s\\S]*?(<option\\b[^>]*>[\\s\\S]*?</option>[\\s\\S]*?){2}</select>",
+          "message": "select 안에 option 을 두 개 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<select>\n  <option>Red</option>\n  <option>Blue</option>\n</select>"
+    }
+  },
+  {
+    "id": "html-9-4-mcq-1",
+    "type": "mcq",
+    "title": "버튼 개념",
+    "description": "button 요소는 무엇을 만들까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "choices": [
+        "클릭할 수 있는 버튼",
+        "글자를 쓰는 입력칸",
+        "표의 한 칸",
+        "점 목록"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-9-4-mcq-2",
+    "type": "mcq",
+    "title": "버튼 올바른 코드",
+    "description": "Click 이라고 적힌 버튼을 올바르게 만든 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "choices": [
+        "<button>Click<button>",
+        "<btn>Click</btn>",
+        "<button>Click</button>",
+        "<button>Click</botton>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-4-mcq-3",
+    "type": "mcq",
+    "title": "버튼 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<button>Click</button>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "choices": [
+        "Click 이라는 파란 링크 글자",
+        "글자를 쓰는 입력칸",
+        "아무것도 보이지 않는다",
+        "Click 이라고 적힌 버튼"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-9-4-parsons-1",
+    "type": "parsons",
+    "title": "버튼 순서 맞추기 1",
+    "description": "조각을 이어 붙여 Click 이라고 적힌 버튼을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "fragments": [
+        "</button>",
+        "Click",
+        "<button>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-9-4-parsons-2",
+    "type": "parsons",
+    "title": "버튼 순서 맞추기 2",
+    "description": "조각을 이어 붙여 Click 이라고 적힌 버튼을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "fragments": [
+        "</button>",
+        "Click",
+        "<button",
+        ">"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-9-4-parsons-3",
+    "type": "parsons",
+    "title": "버튼 순서 맞추기 3",
+    "description": "조각을 이어 붙여 Click 이라고 적힌 버튼을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "fragments": [
+        "button",
+        "Click",
+        ">",
+        "</button>",
+        "<"
+      ],
+      "answer_order": [
+        4,
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-9-4-blank-1",
+    "type": "blank",
+    "title": "버튼 빈칸 1",
+    "description": "버튼이 시작되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}Click</button>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<button>"
+          ],
+          "hint": "버튼을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-4-blank-2",
+    "type": "blank",
+    "title": "버튼 빈칸 2",
+    "description": "버튼에 Click 이라는 글자가 보이도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<button>{{1}}</button>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "Click"
+          ],
+          "hint": "버튼에 보일 글자"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-4-short-3",
+    "type": "short",
+    "title": "버튼 문법 쓰기",
+    "description": "클릭할 수 있는 버튼을 만드는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "caseSensitive": false,
+    "content": {
+      "code": "<___>Click</___>",
+      "answer": [
+        "button",
+        "<button>"
+      ]
+    }
+  },
+  {
+    "id": "html-9-4-code-1",
+    "type": "code",
+    "title": "버튼 직접 만들기",
+    "description": "\"Click\" 이라고 적힌 button 요소를 작성하세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-4",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<button\\b[^>]*>[\\s\\S]*?</button>",
+          "message": "button 태그를 열고 닫아요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<button\\b[^>]*>\\s*Click\\s*</button>",
+          "message": "버튼 안에 Click 을 써요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<button>Click</button>"
+    }
+  },
+  {
+    "id": "html-9-5-mcq-1",
+    "type": "mcq",
+    "title": "폼 내부의 버튼 개념",
+    "description": "form 안에 있는 type=\"submit\" 버튼을 누르면 어떻게 될까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "choices": [
+        "입력칸이 모두 사라진다",
+        "폼이 제출(전송)된다",
+        "버튼 글자가 바뀐다",
+        "버튼이 체크 상자로 바뀐다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-9-5-mcq-2",
+    "type": "mcq",
+    "title": "폼 내부의 버튼 올바른 코드",
+    "description": "폼을 제출하는 버튼을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "choices": [
+        "<form>\n  <button type=\"submit\">Send</form>\n</button>",
+        "<form>\n  <submit>Send</submit>\n</form>",
+        "<form>\n  <button type=\"submit\">Send<button>\n</form>",
+        "<form>\n  <button type=\"submit\">Send</button>\n</form>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-9-5-mcq-3",
+    "type": "mcq",
+    "title": "폼 내부의 버튼 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<form>\n  <input type=\"text\" name=\"q\">\n  <button type=\"submit\">Search</button>\n</form>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "choices": [
+        "Search 라는 글자만 보인다",
+        "입력칸 두 개가 보인다",
+        "입력칸 하나와 Search 버튼이 보인다",
+        "submit 이라고 적힌 버튼이 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-5-parsons-1",
+    "type": "parsons",
+    "title": "폼 내부의 버튼 순서 맞추기 1",
+    "description": "조각을 순서대로 놓아 제출 버튼이 든 폼을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "fragments": [
+        "  <button type=\"submit\">Send</button>",
+        "</form>",
+        "<form>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-9-5-parsons-2",
+    "type": "parsons",
+    "title": "폼 내부의 버튼 순서 맞추기 2",
+    "description": "입력칸 다음에 제출 버튼이 오도록 조각을 놓아 폼을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "fragments": [
+        "  <button type=\"submit\">Send</button>",
+        "</form>",
+        "  <input type=\"text\" name=\"msg\">",
+        "<form>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-9-5-parsons-3",
+    "type": "parsons",
+    "title": "폼 내부의 버튼 순서 맞추기 3",
+    "description": "입력칸 다음에 Send 제출 버튼이 오도록 조각을 놓아 폼을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "fragments": [
+        "<form>",
+        "    Send",
+        "</form>",
+        "  <button type=\"submit\">",
+        "  </button>",
+        "  <input type=\"text\" name=\"msg\">"
+      ],
+      "answer_order": [
+        0,
+        5,
+        3,
+        1,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-5-blank-1",
+    "type": "blank",
+    "title": "폼 내부의 버튼 빈칸 1",
+    "description": "이 버튼을 누르면 폼이 제출되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <button {{1}}>Send</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"submit\"",
+            "type='submit'",
+            "type=submit"
+          ],
+          "hint": "폼을 제출하는 버튼 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-5-short-2",
+    "type": "short",
+    "title": "폼 내부의 버튼 결과 쓰기",
+    "description": "다음 코드를 열면 버튼에 어떤 글자가 보일까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "caseSensitive": false,
+    "content": {
+      "code": "<form>\n  <button type=\"submit\">Send</button>\n</form>",
+      "answer": [
+        "Send"
+      ]
+    }
+  },
+  {
+    "id": "html-9-5-short-3",
+    "type": "short",
+    "title": "폼 내부의 버튼 문법 쓰기",
+    "description": "폼을 제출하는 버튼으로 만드는 type 값을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "caseSensitive": false,
+    "content": {
+      "code": "<form>\n  <button type=\"___\">Send</button>\n</form>",
+      "answer": [
+        "submit"
+      ]
+    }
+  },
+  {
+    "id": "html-9-5-code-1",
+    "type": "code",
+    "title": "폼 내부의 버튼 직접 만들기",
+    "description": "form 안에 type=\"submit\" 인 button 을 넣으세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-5",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*</form>",
+          "message": "form 태그를 열고 닫아요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<button\\b[^>]*\\btype\\s*=\\s*[\"']?submit\\b[^>]*>[\\s\\S]*?</button>[\\s\\S]*</form>",
+          "message": "form 안에 type=\"submit\" 인 button 을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<form>\n  <button type=\"submit\">Send</button>\n</form>"
+    }
+  },
+  {
+    "id": "html-9-6-mcq-1",
+    "type": "mcq",
+    "title": "요약 - 폼 #1 개념",
+    "description": "\"하나만 고르기\", \"여러 개 고르기\", \"제출하기\" 에 알맞은 요소를 차례대로 짝지은 것은?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "choices": [
+        "checkbox - radio - button",
+        "radio - checkbox - button",
+        "button - radio - checkbox",
+        "radio - button - checkbox"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-9-6-mcq-2",
+    "type": "mcq",
+    "title": "요약 - 폼 #1 올바른 코드",
+    "description": "크기 radio, 얼음 checkbox, 주문 버튼이 든 폼을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "choices": [
+        "<form>\n  <input type=\"radio\" name=\"size\"> S\n  <input type=\"checkbox\" name=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n<form>",
+        "<form>\n  <radio name=\"size\"> S\n  <checkbox name=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>",
+        "<form>\n  <input type=\"radio\" name=\"size\"> S\n  <input type=\"checkbox\" name=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>",
+        "<form>\n  <input type=\"radio\" name=\"size\"> S\n  <input type=\"checkbox\" name=\"ice\"> Ice\n  <button type=\"submit\">Order</form>\n</button>"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-6-mcq-3",
+    "type": "mcq",
+    "title": "요약 - 폼 #1 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 보이는 것으로 알맞은 것은?\n<form>\n  <input type=\"radio\" name=\"size\" value=\"S\"> S\n  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "choices": [
+        "네모 체크 상자 두 개와 Order 글자",
+        "S, Ice, Order 글자만 보인다",
+        "입력칸 세 개",
+        "동그란 선택 버튼(S), 네모 체크 상자(Ice), Order 버튼"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-9-6-parsons-1",
+    "type": "parsons",
+    "title": "요약 - 폼 #1 순서 맞추기 1",
+    "description": "S 라디오 버튼 다음에 Order 버튼이 오도록 조각을 놓아 폼을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "fragments": [
+        "  <input type=\"radio\" name=\"size\" value=\"S\"> S",
+        "</form>",
+        "  <button type=\"submit\">Order</button>",
+        "<form>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-9-6-parsons-2",
+    "type": "parsons",
+    "title": "요약 - 폼 #1 순서 맞추기 2",
+    "description": "S 라디오 버튼, Ice 체크 상자, Order 버튼 순서로 조각을 놓아 폼을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "fragments": [
+        "  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice",
+        "  <input type=\"radio\" name=\"size\" value=\"S\"> S",
+        "<form>",
+        "</form>",
+        "  <button type=\"submit\">Order</button>"
+      ],
+      "answer_order": [
+        2,
+        1,
+        0,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-9-6-parsons-3",
+    "type": "parsons",
+    "title": "요약 - 폼 #1 순서 맞추기 3",
+    "description": "S, L 라디오 버튼, Ice 체크 상자, Order 버튼 순서로 조각을 놓아 폼을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "fragments": [
+        "  <button type=\"submit\">",
+        "  <input type=\"radio\" name=\"size\" value=\"S\"> S",
+        "  </button>",
+        "    Order",
+        "</form>",
+        "<form>",
+        "  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice",
+        "  <input type=\"radio\" name=\"size\" value=\"L\"> L"
+      ],
+      "answer_order": [
+        5,
+        1,
+        7,
+        6,
+        0,
+        3,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "html-9-6-blank-1",
+    "type": "blank",
+    "title": "요약 - 폼 #1 빈칸 1",
+    "description": "S 가 하나만 고르는 동그란 버튼이 되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <input {{1}} name=\"size\" value=\"S\"> S\n  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"radio\"",
+            "type='radio'",
+            "type=radio"
+          ],
+          "hint": "하나만 고르는 버튼 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-6-blank-2",
+    "type": "blank",
+    "title": "요약 - 폼 #1 빈칸 2",
+    "description": "Ice 가 켜고 끄는 네모 상자가 되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <input type=\"radio\" name=\"size\" value=\"S\"> S\n  <input {{1}} name=\"extra\" value=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"checkbox\"",
+            "type='checkbox'",
+            "type=checkbox"
+          ],
+          "hint": "체크 상자 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-6-blank-3",
+    "type": "blank",
+    "title": "요약 - 폼 #1 빈칸 3",
+    "description": "Order 버튼이 만들어지도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <input type=\"radio\" name=\"size\" value=\"S\"> S\n  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n  {{1}} type=\"submit\">Order</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<button"
+          ],
+          "hint": "버튼 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-6-code-1",
+    "type": "code",
+    "title": "요약 - 폼 #1 직접 만들기",
+    "description": "radio, checkbox, button 이 모두 있는 폼을 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-6",
+    "content": {
+      "starter_code": "<form>\n  <!-- 여기에 작성하세요 -->\n</form>\n",
+      "checks": [
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*</form>",
+          "message": "form 으로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<input\\b[^>]*\\btype\\s*=\\s*[\"']?radio\\b[\\s\\S]*</form>",
+          "message": "form 안에 type=\"radio\" 인 input 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<input\\b[^>]*\\btype\\s*=\\s*[\"']?checkbox\\b[\\s\\S]*</form>",
+          "message": "form 안에 type=\"checkbox\" 인 input 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<button\\b[^>]*>[\\s\\S]*?</button>[\\s\\S]*</form>",
+          "message": "form 안에 button 을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<form>\n  <input type=\"radio\" name=\"size\" value=\"S\"> S\n  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>"
+    }
+  },
+  {
+    "id": "html-9-7-mcq-1",
+    "type": "mcq",
+    "title": "요약 - 폼 #2 개념",
+    "description": "폼 요소와 그 쓰임을 바르게 짝지은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "choices": [
+        "type=\"number\" - 비밀번호를 점으로 가리는 칸",
+        "button - 글자를 쓰는 칸",
+        "select - 여러 선택지 중 하나를 고르는 드롭다운",
+        "checkbox - 하나만 고르는 동그란 버튼"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-9-7-mcq-2",
+    "type": "mcq",
+    "title": "요약 - 폼 #2 올바른 코드",
+    "description": "메뉴 드롭다운, 수량 숫자 칸, 주문 버튼이 든 폼을 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "choices": [
+        "<form>\n  <select>\n    <option>Pizza</option>\n  </select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>",
+        "<form>\n  <select>\n    <option>Pizza</select>\n  </option>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>",
+        "<form>\n  <option>\n    <select>Pizza</select>\n  </option>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>",
+        "<form>\n  <select>\n    <option>Pizza</option>\n  </select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n<form>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-9-7-mcq-3",
+    "type": "mcq",
+    "title": "요약 - 폼 #2 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 보이는 것으로 알맞은 것은?\n<form>\n  <select><option>Pizza</option><option>Pasta</option></select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "choices": [
+        "Pizza, Pasta 버튼 두 개와 Order 버튼",
+        "Pizza 가 보이는 드롭다운, 숫자 입력칸, Order 버튼",
+        "체크 상자 두 개와 숫자 입력칸",
+        "Order 버튼만 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-9-7-parsons-1",
+    "type": "parsons",
+    "title": "요약 - 폼 #2 순서 맞추기 1",
+    "description": "메뉴 드롭다운 다음에 Order 버튼이 오도록 조각을 놓아 주문 폼을 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "fragments": [
+        "  <select><option>Pizza</option><option>Pasta</option></select>",
+        "</form>",
+        "<form>",
+        "  <button type=\"submit\">Order</button>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-9-7-parsons-2",
+    "type": "parsons",
+    "title": "요약 - 폼 #2 순서 맞추기 2",
+    "description": "메뉴 드롭다운, 수량 숫자 칸, Order 버튼 순서로 조각을 놓아 주문 폼을 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "fragments": [
+        "  <button type=\"submit\">Order</button>",
+        "<form>",
+        "</form>",
+        "  <input type=\"number\" name=\"count\">",
+        "  <select><option>Pizza</option><option>Pasta</option></select>"
+      ],
+      "answer_order": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-7-parsons-3",
+    "type": "parsons",
+    "title": "요약 - 폼 #2 순서 맞추기 3",
+    "description": "메뉴 드롭다운(Pizza, Pasta 순서), 수량 숫자 칸, Order 버튼 순서로 주문 폼을 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "fragments": [
+        "  <input type=\"number\" name=\"count\">",
+        "<form>",
+        "</form>",
+        "  <select>",
+        "  </select>",
+        "    <option>Pasta</option>",
+        "  <button type=\"submit\">Order</button>",
+        "    <option>Pizza</option>"
+      ],
+      "answer_order": [
+        1,
+        3,
+        7,
+        5,
+        4,
+        0,
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-9-7-blank-1",
+    "type": "blank",
+    "title": "요약 - 폼 #2 빈칸 1",
+    "description": "메뉴 드롭다운이 시작되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  {{1}}<option>Pizza</option><option>Pasta</option></select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<select>"
+          ],
+          "hint": "드롭다운 메뉴를 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-7-blank-2",
+    "type": "blank",
+    "title": "요약 - 폼 #2 빈칸 2",
+    "description": "수량 칸이 숫자만 입력하는 칸이 되도록 빈칸에 알맞은 속성을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <select><option>Pizza</option><option>Pasta</option></select>\n  <input {{1}} name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "type=\"number\"",
+            "type='number'",
+            "type=number"
+          ],
+          "hint": "숫자 입력칸 종류"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-7-blank-3",
+    "type": "blank",
+    "title": "요약 - 폼 #2 빈칸 3",
+    "description": "Order 버튼이 만들어지도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "caseSensitive": false,
+    "content": {
+      "template": "<form>\n  <select><option>Pizza</option><option>Pasta</option></select>\n  <input type=\"number\" name=\"count\">\n  {{1}} type=\"submit\">Order</button>\n</form>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<button"
+          ],
+          "hint": "버튼 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-9-7-code-1",
+    "type": "code",
+    "title": "요약 - 폼 #2 직접 만들기",
+    "description": "select 를 포함한 주문 폼을 만드세요. (option 이 든 select 와 주문 button 을 form 안에 넣으세요.)",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-9-7",
+    "content": {
+      "starter_code": "<form>\n  <!-- 여기에 작성하세요 -->\n</form>\n",
+      "checks": [
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*</form>",
+          "message": "form 으로 감싸요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<select\\b[^>]*>[\\s\\S]*?<option\\b[^>]*>[\\s\\S]*?</option>[\\s\\S]*?</select>[\\s\\S]*</form>",
+          "message": "form 안에 option 이 든 select 를 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<form\\b[^>]*>[\\s\\S]*<button\\b[^>]*>[\\s\\S]*?</button>[\\s\\S]*</form>",
+          "message": "form 안에 주문 button 을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<form>\n  <select>\n    <option>Pizza</option>\n    <option>Pasta</option>\n  </select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>"
+    }
+  },
+  {
+    "id": "html-10-1-mcq-1",
+    "type": "mcq",
+    "title": "테이블 기초 개념",
+    "description": "표를 만드는 요소에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "choices": [
+        "tr 은 한 칸, td 는 한 행이다",
+        "tr 은 한 행(가로줄), td 와 th 는 그 안의 칸이다",
+        "td 는 표 전체를 감싼다",
+        "th 는 table 바깥에 쓴다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-10-1-mcq-2",
+    "type": "mcq",
+    "title": "테이블 기초 th 개념",
+    "description": "th 요소는 표에서 무엇을 나타낼까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "choices": [
+        "표 전체",
+        "한 행(가로줄)",
+        "제목 칸",
+        "표 아래 설명"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-10-1-mcq-3",
+    "type": "mcq",
+    "title": "테이블 기초 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "choices": [
+        "2행 2열 표: 첫 행의 Name, Age 는 굵은 제목 칸, 둘째 행은 Tom, 12",
+        "1행 4열 표: Name, Age, Tom, 12",
+        "Name Age Tom 12 가 표 없이 한 줄 글자로",
+        "4행 1열 표"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-10-1-parsons-1",
+    "type": "parsons",
+    "title": "테이블 기초 순서 맞추기 1",
+    "description": "제목 행(Name, Age)이 먼저 오도록 조각을 놓아 표를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "fragments": [
+        "</table>",
+        "<table>",
+        "  <tr><td>Tom</td><td>12</td></tr>",
+        "  <tr><th>Name</th><th>Age</th></tr>"
+      ],
+      "answer_order": [
+        1,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-10-1-parsons-2",
+    "type": "parsons",
+    "title": "테이블 기초 순서 맞추기 2",
+    "description": "제목 행(Name, Age)이 먼저 오도록 조각을 놓아 표를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "fragments": [
+        "  <tr><td>Tom</td><td>12</td></tr>",
+        "</table>",
+        "  <tr>",
+        "<table>",
+        "    <th>Name</th><th>Age</th>",
+        "  </tr>"
+      ],
+      "answer_order": [
+        3,
+        2,
+        4,
+        5,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-10-1-parsons-3",
+    "type": "parsons",
+    "title": "테이블 기초 순서 맞추기 3",
+    "description": "제목 행(Name, Age 순서)이 먼저 오도록 조각을 놓아 표를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "fragments": [
+        "</table>",
+        "  <tr><td>Tom</td><td>12</td></tr>",
+        "<table>",
+        "  <tr>",
+        "    <th>Name</th>",
+        "  </tr>",
+        "    <th>Age</th>"
+      ],
+      "answer_order": [
+        2,
+        3,
+        4,
+        6,
+        5,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-10-1-blank-1",
+    "type": "blank",
+    "title": "테이블 기초 빈칸 1",
+    "description": "표가 시작되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "{{1}}\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<table>"
+          ],
+          "hint": "표를 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-1-blank-2",
+    "type": "blank",
+    "title": "테이블 기초 빈칸 2",
+    "description": "제목 행이 시작되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  {{1}}<th>Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<tr>"
+          ],
+          "hint": "행(가로줄)을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-1-blank-3",
+    "type": "blank",
+    "title": "테이블 기초 빈칸 3",
+    "description": "Name 이 제목 칸이 되도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  <tr>{{1}}Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<th>"
+          ],
+          "hint": "제목 칸을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-1-code-1",
+    "type": "code",
+    "title": "테이블 기초 직접 만들기",
+    "description": "table, tr, th, td 로 표를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-1",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*</table>",
+          "message": "table 태그를 열고 닫아요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<tr\\b[^>]*>[\\s\\S]*?</tr>[\\s\\S]*</table>",
+          "message": "table 안에 행(tr)을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<th\\b[^>]*>[\\s\\S]*?</th>[\\s\\S]*</table>",
+          "message": "제목 칸(th)을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<td\\b[^>]*>[\\s\\S]*?</td>[\\s\\S]*</table>",
+          "message": "칸(td)을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>"
+    }
+  },
+  {
+    "id": "html-10-2-mcq-1",
+    "type": "mcq",
+    "title": "캡션 추가하기 개념",
+    "description": "caption 요소는 표에서 무엇을 나타낼까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "choices": [
+        "표의 한 칸",
+        "표의 제목",
+        "표의 테두리",
+        "표의 한 행"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-10-2-mcq-2",
+    "type": "mcq",
+    "title": "캡션 추가하기 올바른 코드",
+    "description": "Scores 라는 표 제목을 올바르게 넣은 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "choices": [
+        "<caption>\n  <table>Scores</table>\n  <tr><td>Tom</td></tr>\n</caption>",
+        "<table>\n  <title>Scores</title>\n  <tr><td>Tom</td></tr>\n</table>",
+        "<table>\n  <caption>Scores<caption>\n  <tr><td>Tom</td></tr>\n</table>",
+        "<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td></tr>\n</table>"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-10-2-mcq-3",
+    "type": "mcq",
+    "title": "캡션 추가하기 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 Scores 는 어디에 보일까요?\n<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "choices": [
+        "표 위 가운데에 표 제목으로",
+        "표의 첫 번째 칸 안에",
+        "표 오른쪽 옆에",
+        "화면에 보이지 않는다"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-10-2-parsons-1",
+    "type": "parsons",
+    "title": "캡션 추가하기 순서 맞추기 1",
+    "description": "표 제목 Scores 가 table 바로 안 맨 앞에 오도록 조각을 놓으세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "fragments": [
+        "  <tr><td>Tom</td><td>90</td></tr>",
+        "  <caption>Scores</caption>",
+        "</table>",
+        "<table>"
+      ],
+      "answer_order": [
+        3,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-10-2-parsons-2",
+    "type": "parsons",
+    "title": "캡션 추가하기 순서 맞추기 2",
+    "description": "표 제목 Scores 가 table 바로 안 맨 앞에 오도록 조각을 놓으세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "fragments": [
+        "<table>",
+        "  <tr>",
+        "  </tr>",
+        "    <td>Tom</td><td>90</td>",
+        "  <caption>Scores</caption>",
+        "</table>"
+      ],
+      "answer_order": [
+        0,
+        4,
+        1,
+        3,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-10-2-parsons-3",
+    "type": "parsons",
+    "title": "캡션 추가하기 순서 맞추기 3",
+    "description": "표 제목 Scores 가 table 바로 안 맨 앞에 오도록 조각을 놓으세요. 칸은 Tom, 90 순서입니다.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "fragments": [
+        "  <caption>Scores</caption>",
+        "    <td>90</td>",
+        "  <tr>",
+        "<table>",
+        "    <td>Tom</td>",
+        "</table>",
+        "  </tr>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        2,
+        4,
+        1,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "id": "html-10-2-blank-1",
+    "type": "blank",
+    "title": "캡션 추가하기 빈칸 1",
+    "description": "표에 Scores 라는 제목이 붙도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  {{1}}Scores</caption>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<caption>"
+          ],
+          "hint": "표 제목을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-2-short-2",
+    "type": "short",
+    "title": "캡션 추가하기 결과 쓰기",
+    "description": "다음 코드를 열면 표 제목으로 어떤 글자가 보일까요?",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>",
+      "answer": [
+        "Scores"
+      ]
+    }
+  },
+  {
+    "id": "html-10-2-short-3",
+    "type": "short",
+    "title": "캡션 추가하기 문법 쓰기",
+    "description": "표의 제목을 넣는 태그 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "caseSensitive": false,
+    "content": {
+      "code": "<table>\n  <___>Scores</___>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>",
+      "answer": [
+        "caption",
+        "<caption>"
+      ]
+    }
+  },
+  {
+    "id": "html-10-2-code-1",
+    "type": "code",
+    "title": "캡션 추가하기 직접 만들기",
+    "description": "아래 table 에 caption 을 추가하세요. caption 은 table 바로 안 맨 앞에 넣어요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-2",
+    "content": {
+      "starter_code": "<table>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>\n",
+      "checks": [
+        {
+          "pattern": "<table\\b[^>]*>\\s*<caption\\b[^>]*>[\\s\\S]*?</caption>",
+          "message": "table 바로 안 맨 앞에 caption 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<tr\\b[^>]*>[\\s\\S]*</table>",
+          "message": "표에 행(tr)도 있어야 해요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>"
+    }
+  },
+  {
+    "id": "html-10-3-mcq-1",
+    "type": "mcq",
+    "title": "행과 열 병합하기 개념",
+    "description": "colspan 과 rowspan 에 대한 설명으로 옳은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "choices": [
+        "colspan 은 세로로, rowspan 은 가로로 칸을 합친다",
+        "둘 다 칸의 글자 색을 바꾼다",
+        "colspan 은 가로로, rowspan 은 세로로 칸을 합친다",
+        "둘 다 표의 제목을 만든다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-10-3-mcq-2",
+    "type": "mcq",
+    "title": "행과 열 병합하기 올바른 코드",
+    "description": "한 칸이 가로로 2칸 너비를 차지하게 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "choices": [
+        "<td colspan=\"2\">Total</td>",
+        "<td rowspan=\"2\">Total</td>",
+        "<td colspan>2</td>",
+        "<td colspan=\"2\">Total<td>"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": "html-10-3-mcq-3",
+    "type": "mcq",
+    "title": "행과 열 병합하기 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 무엇이 보일까요?\n<table>\n  <tr><td colspan=\"2\">Total</td></tr>\n  <tr><td>A</td><td>B</td></tr>\n</table>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "choices": [
+        "첫 행에 Total 이 두 번 보인다",
+        "첫 행은 Total 한 칸이 두 칸 너비를 차지하고, 둘째 행은 A, B 두 칸이다",
+        "Total 이 세로로 두 칸을 차지한다",
+        "Total, A, B 가 한 줄에 세 칸으로 보인다"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-10-3-parsons-1",
+    "type": "parsons",
+    "title": "행과 열 병합하기 순서 맞추기 1",
+    "description": "Total 행이 먼저, A·B 행이 나중에 오도록 조각을 놓아 표를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "fragments": [
+        "  <tr><td colspan=\"2\">Total</td></tr>",
+        "</table>",
+        "<table>",
+        "  <tr><td>A</td><td>B</td></tr>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "html-10-3-parsons-2",
+    "type": "parsons",
+    "title": "행과 열 병합하기 순서 맞추기 2",
+    "description": "Total 행이 먼저, A·B 행이 나중에 오도록 조각을 놓아 표를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "fragments": [
+        "  <tr>",
+        "  </tr>",
+        "</table>",
+        "<table>",
+        "  <tr><td>A</td><td>B</td></tr>",
+        "    <td colspan=\"2\">Total</td>"
+      ],
+      "answer_order": [
+        3,
+        0,
+        5,
+        1,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "html-10-3-parsons-3",
+    "type": "parsons",
+    "title": "행과 열 병합하기 순서 맞추기 3",
+    "description": "Total 행이 먼저, A·B 행이 나중에 오도록 조각을 놓아 표를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "fragments": [
+        "  <tr><td>A</td><td>B</td></tr>",
+        "<table>",
+        " colspan=\"2\">",
+        "</table>",
+        "  <tr>",
+        "    <td",
+        "  </tr>",
+        "Total</td>"
+      ],
+      "answer_order": [
+        1,
+        4,
+        5,
+        2,
+        7,
+        6,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-10-3-blank-1",
+    "type": "blank",
+    "title": "행과 열 병합하기 빈칸 1",
+    "description": "Total 칸이 가로로 2칸을 차지하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  <tr><td {{1}}2\">Total</td></tr>\n  <tr><td>A</td><td>B</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "colspan=\""
+          ],
+          "hint": "가로로 칸을 합치는 속성과 =\""
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-3-short-2",
+    "type": "short",
+    "title": "행과 열 병합하기 결과 쓰기",
+    "description": "다음 표의 첫 행에는 칸이 몇 개 보일까요? 숫자로 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<table>\n  <tr><td colspan=\"2\">Total</td></tr>\n  <tr><td>A</td><td>B</td></tr>\n</table>",
+      "answer": [
+        "1",
+        "1개"
+      ]
+    }
+  },
+  {
+    "id": "html-10-3-short-3",
+    "type": "short",
+    "title": "행과 열 병합하기 문법 쓰기",
+    "description": "칸을 세로로 합치는 속성 이름을 쓰세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "caseSensitive": false,
+    "content": {
+      "code": "<table>\n  <tr><td ___=\"2\">Total</td><td>A</td></tr>\n  <tr><td>B</td></tr>\n</table>",
+      "answer": [
+        "rowspan"
+      ]
+    }
+  },
+  {
+    "id": "html-10-3-code-1",
+    "type": "code",
+    "title": "행과 열 병합하기 직접 만들기",
+    "description": "colspan 이나 rowspan 으로 칸을 병합한 표를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-3",
+    "content": {
+      "starter_code": "<!-- 여기에 작성하세요 -->\n",
+      "checks": [
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<tr\\b[^>]*>[\\s\\S]*</table>",
+          "message": "table 과 행(tr)으로 표를 만들어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<t[dh]\\b[^>]*\\b(colspan|rowspan)\\s*=\\s*[\"']?([2-9]|[1-9]\\d+)\\b",
+          "message": "td 나 th 에 colspan 이나 rowspan 을 2 이상으로 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<table>\n  <tr><td colspan=\"2\">Total</td></tr>\n  <tr><td>A</td><td>B</td></tr>\n</table>"
+    }
+  },
+  {
+    "id": "html-10-4-mcq-1",
+    "type": "mcq",
+    "title": "테이블 요약 개념",
+    "description": "표 요소와 그 역할을 바르게 짝지은 것은 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "choices": [
+        "tr - 제목 칸",
+        "th - 표 전체",
+        "colspan - 세로로 칸 합치기",
+        "caption - 표의 제목"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": "html-10-4-mcq-2",
+    "type": "mcq",
+    "title": "테이블 요약 올바른 코드",
+    "description": "표 제목(caption)과 제목 칸(th)이 있는 표를 올바르게 쓴 코드는 무엇일까요?",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "choices": [
+        "<table>\n  <caption>Menu</caption>\n  <th><tr>Food</tr><tr>Price</tr></th>\n</table>",
+        "<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n</table>",
+        "<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n<table>",
+        "<table>\n  <caption>Menu<caption>\n  <tr><th>Food</th><th>Price</th></tr>\n</table>"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": "html-10-4-mcq-3",
+    "type": "mcq",
+    "title": "테이블 요약 화면 결과",
+    "description": "다음 코드를 브라우저에서 열면 화면에 보이는 표로 알맞은 것은?\n<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td colspan=\"2\">Thanks</td></tr>\n</table>",
+    "reward": 10,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "choices": [
+        "Menu 가 표의 첫 칸 안에 보인다",
+        "Thanks 가 두 칸에 한 번씩 두 번 보인다",
+        "위에 Menu 제목, 굵은 Food·Price 제목 칸, Pizza·5000 행, 두 칸 너비의 Thanks 칸",
+        "모든 글자가 표 없이 한 줄로 보인다"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": "html-10-4-parsons-1",
+    "type": "parsons",
+    "title": "테이블 요약 순서 맞추기 1",
+    "description": "표 제목, 제목 행, Pizza 행 순서로 조각을 놓아 표를 만드세요.",
+    "reward": 30,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "fragments": [
+        "</table>",
+        "  <tr><th>Food</th><th>Price</th></tr>",
+        "<table>",
+        "  <caption>Menu</caption>",
+        "  <tr><td>Pizza</td><td>5000</td></tr>"
+      ],
+      "answer_order": [
+        2,
+        3,
+        1,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "html-10-4-parsons-2",
+    "type": "parsons",
+    "title": "테이블 요약 순서 맞추기 2",
+    "description": "표 제목, 제목 행, Pizza 행, Thanks 행 순서로 조각을 놓아 표를 만드세요.",
+    "reward": 35,
+    "difficulty": 2,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "fragments": [
+        "  <caption>Menu</caption>",
+        "  <tr><td>Pizza</td><td>5000</td></tr>",
+        "  <tr><td colspan=\"2\">Thanks</td></tr>",
+        "</table>",
+        "<table>",
+        "  <tr><th>Food</th><th>Price</th></tr>"
+      ],
+      "answer_order": [
+        4,
+        0,
+        5,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "html-10-4-parsons-3",
+    "type": "parsons",
+    "title": "테이블 요약 순서 맞추기 3",
+    "description": "표 제목, 제목 행(Food, Price), Pizza 행, Thanks 행 순서로 조각을 놓아 표를 만드세요.",
+    "reward": 40,
+    "difficulty": 3,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "fragments": [
+        "  <caption>Menu</caption>",
+        "  <tr>",
+        "<table>",
+        "  <tr><td colspan=\"2\">Thanks</td></tr>",
+        "  <tr><td>Pizza</td><td>5000</td></tr>",
+        "    <th>Food</th><th>Price</th>",
+        "  </tr>",
+        "</table>"
+      ],
+      "answer_order": [
+        2,
+        0,
+        1,
+        5,
+        6,
+        4,
+        3,
+        7
+      ]
+    }
+  },
+  {
+    "id": "html-10-4-blank-1",
+    "type": "blank",
+    "title": "테이블 요약 빈칸 1",
+    "description": "표에 Menu 라는 제목이 붙도록 빈칸에 알맞은 태그를 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  {{1}}Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td colspan=\"2\">Thanks</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<caption>"
+          ],
+          "hint": "표 제목을 여는 태그"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-4-blank-2",
+    "type": "blank",
+    "title": "테이블 요약 빈칸 2",
+    "description": "Food 가 제목 칸이 되도록 빈칸에 태그의 시작 부분을 쓰세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  <caption>Menu</caption>\n  <tr>{{1}}>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td colspan=\"2\">Thanks</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "<th"
+          ],
+          "hint": "제목 칸 태그의 시작"
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-4-blank-3",
+    "type": "blank",
+    "title": "테이블 요약 빈칸 3",
+    "description": "Thanks 칸이 가로로 2칸을 차지하도록 빈칸을 채우세요.",
+    "reward": 20,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "caseSensitive": false,
+    "content": {
+      "template": "<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td {{1}}\"2\">Thanks</td></tr>\n</table>",
+      "blanks": [
+        {
+          "no": 1,
+          "answer": [
+            "colspan="
+          ],
+          "hint": "가로로 칸을 합치는 속성과 ="
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-10-4-code-1",
+    "type": "code",
+    "title": "테이블 요약 직접 만들기",
+    "description": "caption, th, td, colspan 을 모두 사용한 표를 만드세요.",
+    "reward": 40,
+    "difficulty": 1,
+    "level": "beginner",
+    "language": "html",
+    "lessonId": "html-10-4",
+    "content": {
+      "starter_code": "<table>\n  <!-- 여기에 작성하세요 -->\n</table>\n",
+      "checks": [
+        {
+          "pattern": "<table\\b[^>]*>\\s*<caption\\b[^>]*>[\\s\\S]*?</caption>",
+          "message": "table 바로 안 맨 앞에 caption 을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<th\\b[^>]*>[\\s\\S]*?</th>[\\s\\S]*</table>",
+          "message": "제목 칸(th)을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<table\\b[^>]*>[\\s\\S]*<td\\b[^>]*>[\\s\\S]*?</td>[\\s\\S]*</table>",
+          "message": "칸(td)을 넣어요",
+          "flags": "i"
+        },
+        {
+          "pattern": "<t[dh]\\b[^>]*\\bcolspan\\s*=\\s*[\"']?\\d+",
+          "message": "td 나 th 에 colspan 을 넣어요",
+          "flags": "i"
+        }
+      ],
+      "solution": "<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td colspan=\"2\">Thanks</td></tr>\n</table>"
+    }
+  }
+]
