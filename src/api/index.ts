@@ -5,7 +5,6 @@ import { MAX_BODY_BYTES } from '../util/config/constants'
 import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
-import { ai } from './ai'
 import { curriculum } from './curriculum'
 import { groupInvites } from './group-invites'
 import { groups, myGroups } from './groups'
@@ -63,7 +62,6 @@ app.route('/api/groups', groups)
 app.route('/api/group-invites', groupInvites)
 app.route('/api/notifications', notifications)
 
-app.route('/api/ai', ai)
 app.route('/api/problems/blank', blank)
 app.route('/api/problems/mcq', mcq)
 app.route('/api/problems/parsons', parsons)
