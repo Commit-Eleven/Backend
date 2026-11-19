@@ -1,0 +1,58 @@
+[
+  {
+    "id": "weekly-report",
+    "name": "주간 보고서",
+    "kind": "report",
+    "title": "주간 보고서",
+    "body": "## 이번 주 한 일\n- \n\n## 배운 점\n- \n\n## 어려웠던 점\n- \n\n## 다음 주 계획\n- \n"
+  },
+  {
+    "id": "assignment-report",
+    "name": "과제 보고서",
+    "kind": "report",
+    "title": "과제 보고서",
+    "body": "## 과제 내용\n\n## 풀이 과정\n\n## 결과\n\n## 느낀 점\n"
+  },
+  {
+    "id": "project-report",
+    "name": "프로젝트 진행 보고서",
+    "kind": "report",
+    "title": "프로젝트 진행 보고서",
+    "body": "## 진행 상황\n\n## 완료한 작업\n- \n\n## 남은 작업\n- \n\n## 이슈와 요청 사항\n- \n"
+  },
+  {
+    "id": "study-log",
+    "name": "학습 일지",
+    "kind": "note",
+    "title": "학습 일지",
+    "body": "## 오늘 공부한 것\n- \n\n## 이해한 것\n- \n\n## 헷갈린 것\n- \n\n## 내일 할 것\n- \n"
+  },
+  {
+    "id": "wrong-note",
+    "name": "오답 정리",
+    "kind": "note",
+    "title": "오답 정리",
+    "body": "## 문제\n\n## 내가 쓴 답\n\n## 정답\n\n## 틀린 이유\n\n## 다음에 기억할 것\n"
+  },
+  {
+    "id": "meeting-notes",
+    "name": "회의록",
+    "kind": "wiki",
+    "title": "회의록",
+    "body": "## 일시\n\n## 참석자\n\n## 안건\n- \n\n## 결정 사항\n- \n\n## 할 일\n- [ ] \n"
+  },
+  {
+    "id": "study-plan",
+    "name": "스터디 계획서",
+    "kind": "wiki",
+    "title": "스터디 계획서",
+    "body": "## 목표\n\n## 일정\n\n## 규칙\n- \n\n## 진행 방식\n"
+  },
+  {
+    "id": "cheatsheet",
+    "name": "치트시트",
+    "kind": "wiki",
+    "title": "치트시트",
+    "body": "## 문법 정리\n\n```\n\n```\n\n## 자주 하는 실수\n- \n"
+  }
+]

@@ -2,7 +2,7 @@ export const USER_TIER = ['normal', 'creator', 'admin'] as const
 
 export const FRIEND_STATUS = ['pending', 'accepted'] as const
 
-export const GROUP_ROLE = ['owner', 'member'] as const
+export const GROUP_ROLE = ['owner', 'manager', 'member'] as const
 
 export const EXP_REASON = ['solve', 'bonus', 'event'] as const
 
@@ -11,6 +11,9 @@ export const NOTIFICATION_TYPE = [
   'friend_accepted',
   'group_invite',
   'group_joined',
+  'document_submitted',
+  'document_reviewed',
+  'document_comment',
   'system',
 ] as const
 
@@ -52,3 +55,20 @@ export const HOME_RECOMMEND_LIMIT = 3
 // 요청 본문 한도
 export const MAX_BODY_BYTES = 100 * 1024
 export const MAX_JSON_DEPTH = 8
+
+// 문서
+export const DOCUMENT_KIND = ['note', 'wiki', 'report'] as const
+export const REPORT_STATUS = ['draft', 'pending', 'approved', 'rejected'] as const
+export const REVIEW_DECISION = ['approved', 'rejected'] as const
+export const DOCUMENT_TITLE_MAX = 100
+export const DOCUMENT_BODY_MAX = 25000
+export const DOCUMENT_COMMENT_MAX = 1000
+export const REVIEW_COMMENT_MAX = 500
+export const DOCUMENT_EXCERPT_LENGTH = 120
+export const DOCUMENT_PAGE_SIZE = 20
+export const DOCUMENT_PAGE_SIZE_MAX = 50
+// 문서마다 남겨 두는 이전 버전 수
+export const REVISION_KEEP = 30
+export const BOOKMARK_MAX = 200
+// 한 사람이 만들 수 있는 문서 수
+export const DOCUMENT_LIMIT_PER_USER = 500
