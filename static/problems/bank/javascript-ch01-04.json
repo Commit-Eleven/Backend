@@ -17,7 +17,8 @@
         "컴퓨터를 켜고 끄는 버튼 이름이다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "JavaScript는 웹에서 동작을 만드는 언어입니다."
   },
   {
     "id": "js-1-1-mcq-2",
@@ -37,7 +38,8 @@
         "괄호 안의 값을 콘솔에 출력한다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "console.log()는 값을 콘솔에 출력합니다."
   },
   {
     "id": "js-1-1-mcq-3",
@@ -57,7 +59,8 @@
         "오류가 난다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"I love JavaScript\"예요. JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다."
   },
   {
     "id": "js-1-1-parsons-1",
@@ -80,7 +83,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다.\n\n올바른 순서:\n1) console.log(\n2) \"JavaScript\"\n3) );"
   },
   {
     "id": "js-1-1-parsons-2",
@@ -107,7 +111,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다.\n\n올바른 순서:\n1) console\n2) .log\n3) (\n4) \"Hello, JavaScript\"\n5) );"
   },
   {
     "id": "js-1-1-parsons-3",
@@ -138,7 +143,8 @@
         1,
         4
       ]
-    }
+    },
+    "explanation": "JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다.\n\n올바른 순서:\n1) console\n2) .\n3) log\n4) (\n5) \"I love JavaScript\"\n6) )\n7) ;"
   },
   {
     "id": "js-1-1-blank-1",
@@ -161,7 +167,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다."
   },
   {
     "id": "js-1-1-blank-2",
@@ -184,7 +191,8 @@
           "hint": "출력할 언어 이름 (대소문자 주의)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"JavaScript\"예요. (출력할 언어 이름 (대소문자 주의)) JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다."
   },
   {
     "id": "js-1-1-short-3",
@@ -201,7 +209,8 @@
       "answer": [
         "log"
       ]
-    }
+    },
+    "explanation": "정답은 \"log\"예요. JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다."
   },
   {
     "id": "js-1-1-code-1",
@@ -227,7 +236,8 @@
         }
       ],
       "solution": "console.log(\"JavaScript\");"
-    }
+    },
+    "explanation": "JavaScript는 웹에서 동작을 만드는 언어입니다. console.log()는 값을 콘솔에 출력합니다.\n\n모범 답안:\nconsole.log(\"JavaScript\");"
   },
   {
     "id": "js-1-2-mcq-1",
@@ -247,7 +257,8 @@
         "문자열은 중괄호로 감싸고, 문장 끝에는 쉼표(,)를 붙인다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다."
   },
   {
     "id": "js-1-2-mcq-2",
@@ -267,7 +278,8 @@
         "console.log(\"Hello, World!\";"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"console.log(\"Hello, World!\");\"예요. 문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다."
   },
   {
     "id": "js-1-2-mcq-3",
@@ -287,7 +299,8 @@
         "Hello World"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"Hello, World!\"예요. 문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다."
   },
   {
     "id": "js-1-2-parsons-1",
@@ -310,7 +323,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다.\n\n올바른 순서:\n1) console.log(\n2) \"Hello, World!\"\n3) );"
   },
   {
     "id": "js-1-2-parsons-2",
@@ -337,7 +351,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다.\n\n올바른 순서:\n1) console\n2) .log(\n3) \"Hello, World!\"\n4) )\n5) ;"
   },
   {
     "id": "js-1-2-parsons-3",
@@ -368,7 +383,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다.\n\n올바른 순서:\n1) console\n2) .\n3) log\n4) (\n5) \"Hello, World!\"\n6) )\n7) ;"
   },
   {
     "id": "js-1-2-blank-1",
@@ -391,7 +407,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) 문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다."
   },
   {
     "id": "js-1-2-blank-2",
@@ -414,7 +431,8 @@
           "hint": "쉼표와 느낌표까지 정확히 써요"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"Hello, World!\"예요. (쉼표와 느낌표까지 정확히 써요) 문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다."
   },
   {
     "id": "js-1-2-short-3",
@@ -433,7 +451,8 @@
         "'",
         "`"
       ]
-    }
+    },
+    "explanation": "정답은 \"\"\"예요. 문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다."
   },
   {
     "id": "js-1-2-code-1",
@@ -459,7 +478,8 @@
         }
       ],
       "solution": "console.log(\"Hello, World!\");"
-    }
+    },
+    "explanation": "문자열은 따옴표로 감싸고 문장 끝에는 세미콜론을 붙입니다.\n\n모범 답안:\nconsole.log(\"Hello, World!\");"
   },
   {
     "id": "js-1-3-mcq-1",
@@ -479,7 +499,8 @@
         "// 는 한 줄 주석, /* */ 는 여러 줄 주석이다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "// 는 한 줄 주석, /* */ 는 여러 줄 주석입니다."
   },
   {
     "id": "js-1-3-mcq-2",
@@ -499,7 +520,8 @@
         "<! 인사를 출력해요\nconsole.log(\"Hi\");"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. // 는 한 줄 주석, /* */ 는 여러 줄 주석입니다."
   },
   {
     "id": "js-1-3-mcq-3",
@@ -519,7 +541,8 @@
         "A"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. // 는 한 줄 주석, /* */ 는 여러 줄 주석입니다."
   },
   {
     "id": "js-1-3-parsons-1",
@@ -542,7 +565,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "// 는 한 줄 주석, /* */ 는 여러 줄 주석입니다.\n\n올바른 순서:\n1) // 인사를 출력해요\n2) console.log(\"Hi\");\n3) console.log(\"Bye\");"
   },
   {
     "id": "js-1-3-parsons-2",
@@ -567,7 +591,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "// 는 한 줄 주석, /* */ 는 여러 줄 주석입니다.\n\n올바른 순서:\n1) /*\n2)   인사 프로그램\n3) */\n4) console.log(\"Hi\");"
   },
   {
     "id": "js-1-3-parsons-3",
@@ -594,7 +619,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "// 는 한 줄 주석, /* */ 는 여러 줄 주석입니다.\n\n올바른 순서:\n1) /*\n2)   인사 프로그램\n3) */\n4) // Hi 를 출력해요\n5) console.log(\"Hi\");"
   },
   {
     "id": "js-1-3-blank-1",
@@ -617,7 +643,8 @@
           "hint": "한 줄 주석 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"//\"예요. (한 줄 주석 기호) // 는 한 줄 주석, /* */ 는 여러 줄 주석입니다."
   },
   {
     "id": "js-1-3-blank-2",
@@ -640,7 +667,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) // 는 한 줄 주석, /* */ 는 여러 줄 주석입니다."
   },
   {
     "id": "js-1-3-short-3",
@@ -657,7 +685,8 @@
       "answer": [
         "*/"
       ]
-    }
+    },
+    "explanation": "정답은 \"*/\"예요. // 는 한 줄 주석, /* */ 는 여러 줄 주석입니다."
   },
   {
     "id": "js-1-3-code-1",
@@ -680,10 +709,16 @@
           "pattern": "console\\.log\\s*\\(\\s*([\"'`])Hi\\1\\s*\\)",
           "message": "console.log(\"Hi\") 로 Hi 를 출력해요",
           "in": "source"
+        },
+        {
+          "pattern": "\\S",
+          "message": "// 로 주석을 써요",
+          "in": "comment"
         }
       ],
       "solution": "// 인사를 출력해요\nconsole.log(\"Hi\");"
-    }
+    },
+    "explanation": "// 는 한 줄 주석, /* */ 는 여러 줄 주석입니다.\n\n모범 답안:\n// 인사를 출력해요\nconsole.log(\"Hi\");"
   },
   {
     "id": "js-1-4-mcq-1",
@@ -703,7 +738,8 @@
         "위에서 아래로 한 문장씩 실행되고, 문장 끝에 세미콜론(;)을 쓴다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다."
   },
   {
     "id": "js-1-4-mcq-2",
@@ -723,7 +759,8 @@
         "console.log(\"하나\";)\nconsole.log(\"둘\";)"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. 코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다."
   },
   {
     "id": "js-1-4-mcq-3",
@@ -743,7 +780,8 @@
         "첫째"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다."
   },
   {
     "id": "js-1-4-parsons-1",
@@ -766,7 +804,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다.\n\n올바른 순서:\n1) console.log(\"1번 문장\");\n2) console.log(\"2번 문장\");\n3) console.log(\"3번 문장\");"
   },
   {
     "id": "js-1-4-parsons-2",
@@ -791,7 +830,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다.\n\n올바른 순서:\n1) console.log(\"아침\");\n2) console.log(\"점심\");\n3) console.log(\"저녁\");\n4) console.log(\"잘 자요\");"
   },
   {
     "id": "js-1-4-parsons-3",
@@ -818,7 +858,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다.\n\n올바른 순서:\n1) console.log(\"물을 끓여요\");\n2) console.log(\"면을 넣어요\");\n3) console.log(\"스프를 넣어요\");\n4) console.log(\"3분 기다려요\");\n5) console.log(\"맛있게 먹어요\");"
   },
   {
     "id": "js-1-4-blank-1",
@@ -841,7 +882,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) 코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다."
   },
   {
     "id": "js-1-4-blank-2",
@@ -864,7 +906,8 @@
           "hint": "문장 끝에 붙이는 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \";\"예요. (문장 끝에 붙이는 기호) 코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다."
   },
   {
     "id": "js-1-4-short-3",
@@ -881,7 +924,8 @@
       "answer": [
         ";"
       ]
-    }
+    },
+    "explanation": "정답은 \";\"예요. 코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다."
   },
   {
     "id": "js-1-4-code-1",
@@ -906,7 +950,8 @@
         }
       ],
       "solution": "console.log(\"첫째\");\nconsole.log(\"둘째\");"
-    }
+    },
+    "explanation": "코드는 위에서 아래로 한 문장씩 실행되며 문장 끝에 세미콜론을 씁니다.\n\n모범 답안:\nconsole.log(\"첫째\");\nconsole.log(\"둘째\");"
   },
   {
     "id": "js-2-1-mcq-1",
@@ -926,7 +971,8 @@
         "let 은 주석을 만드는 기호이다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "let 으로 값을 바꿀 수 있는 변수를 만듭니다."
   },
   {
     "id": "js-2-1-mcq-2",
@@ -946,7 +992,8 @@
         "둘 다 string 이다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정수와 소수는 모두 number입니다."
   },
   {
     "id": "js-2-1-mcq-3",
@@ -966,7 +1013,8 @@
         "26"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"26\"예요. let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다."
   },
   {
     "id": "js-2-1-parsons-1",
@@ -989,7 +1037,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다.\n\n올바른 순서:\n1) let age = 25;\n2) age = 26;\n3) console.log(age);"
   },
   {
     "id": "js-2-1-parsons-2",
@@ -1014,7 +1063,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다.\n\n올바른 순서:\n1) let price = 1000;\n2) console.log(price);\n3) price = 1500;\n4) console.log(\"바뀐 가격:\", price);"
   },
   {
     "id": "js-2-1-parsons-3",
@@ -1043,7 +1093,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다.\n\n올바른 순서:\n1) let count = 1;\n2) console.log(\"첫째:\", count);\n3) count = 2;\n4) console.log(\"둘째:\", count);\n5) count = 3.5;\n6) console.log(\"셋째:\", count);"
   },
   {
     "id": "js-2-1-blank-1",
@@ -1067,7 +1118,8 @@
           "hint": "let 변수이름 = 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let age = 25\"예요. (let 변수이름 = 값) let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다."
   },
   {
     "id": "js-2-1-blank-2",
@@ -1090,7 +1142,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(age)\"예요. (console.log() 안에 변수 이름) let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다."
   },
   {
     "id": "js-2-1-short-3",
@@ -1107,7 +1160,8 @@
       "answer": [
         "let"
       ]
-    }
+    },
+    "explanation": "정답은 \"let\"예요. let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다."
   },
   {
     "id": "js-2-1-code-1",
@@ -1132,7 +1186,8 @@
         }
       ],
       "solution": "let age = 25;\nconsole.log(age);"
-    }
+    },
+    "explanation": "let 으로 값을 바꿀 수 있는 변수를 만듭니다. 정수와 소수는 모두 number입니다.\n\n모범 답안:\nlet age = 25;\nconsole.log(age);"
   },
   {
     "id": "js-2-2-mcq-1",
@@ -1152,7 +1207,8 @@
         "슬래시 / / 만"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다."
   },
   {
     "id": "js-2-2-mcq-2",
@@ -1172,7 +1228,8 @@
         "let name = (Coddy);"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"let name = 'Coddy';\"예요. 문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다."
   },
   {
     "id": "js-2-2-mcq-3",
@@ -1192,7 +1249,8 @@
         "Coddy\nname"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. 문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다."
   },
   {
     "id": "js-2-2-parsons-1",
@@ -1215,7 +1273,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다.\n\n올바른 순서:\n1) let name = \"Coddy\";\n2) console.log(name);\n3) console.log(\"반가워요!\");"
   },
   {
     "id": "js-2-2-parsons-2",
@@ -1240,7 +1299,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다.\n\n올바른 순서:\n1) let greeting = \"안녕\";\n2) console.log(greeting);\n3) greeting = 'Hello';\n4) console.log(\"바뀐 인사:\", greeting);"
   },
   {
     "id": "js-2-2-parsons-3",
@@ -1269,7 +1329,8 @@
         4,
         3
       ]
-    }
+    },
+    "explanation": "문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다.\n\n올바른 순서:\n1) let word = \"하나\";\n2) console.log(\"1:\", word);\n3) word = '둘';\n4) console.log(\"2:\", word);\n5) word = `셋`;\n6) console.log(\"3:\", word);"
   },
   {
     "id": "js-2-2-blank-1",
@@ -1292,7 +1353,8 @@
           "hint": "let 과 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let name\"예요. (let 과 변수 이름) 문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다."
   },
   {
     "id": "js-2-2-blank-2",
@@ -1315,7 +1377,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(name)\"예요. (console.log() 안에 변수 이름) 문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다."
   },
   {
     "id": "js-2-2-short-3",
@@ -1332,7 +1395,8 @@
       "answer": [
         "`"
       ]
-    }
+    },
+    "explanation": "정답은 \"`\"예요. 문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다."
   },
   {
     "id": "js-2-2-code-1",
@@ -1362,7 +1426,8 @@
         }
       ],
       "solution": "let name = \"Coddy\";\nconsole.log(name);"
-    }
+    },
+    "explanation": "문자열은 큰따옴표, 작은따옴표, 백틱으로 감쌀 수 있습니다.\n\n모범 답안:\nlet name = \"Coddy\";\nconsole.log(name);"
   },
   {
     "id": "js-2-3-mcq-1",
@@ -1382,7 +1447,8 @@
         "0 부터 9 까지의 숫자이다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "boolean 값은 true 또는 false이며 소문자로 씁니다."
   },
   {
     "id": "js-2-3-mcq-2",
@@ -1402,7 +1468,8 @@
         "let isReady = TRUE;"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"let isReady = true;\"예요. boolean 값은 true 또는 false이며 소문자로 씁니다."
   },
   {
     "id": "js-2-3-mcq-3",
@@ -1422,7 +1489,8 @@
         "True"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"true\"예요. boolean 값은 true 또는 false이며 소문자로 씁니다."
   },
   {
     "id": "js-2-3-parsons-1",
@@ -1445,7 +1513,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "boolean 값은 true 또는 false이며 소문자로 씁니다.\n\n올바른 순서:\n1) let isReady = false;\n2) isReady = true;\n3) console.log(isReady);"
   },
   {
     "id": "js-2-3-parsons-2",
@@ -1470,7 +1539,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "boolean 값은 true 또는 false이며 소문자로 씁니다.\n\n올바른 순서:\n1) let isLogin = false;\n2) console.log(isLogin);\n3) isLogin = true;\n4) console.log(\"로그인:\", isLogin);"
   },
   {
     "id": "js-2-3-parsons-3",
@@ -1499,7 +1569,8 @@
         4,
         0
       ]
-    }
+    },
+    "explanation": "boolean 값은 true 또는 false이며 소문자로 씁니다.\n\n올바른 순서:\n1) let isOn = false;\n2) console.log(\"처음:\", isOn);\n3) isOn = true;\n4) console.log(\"켬:\", isOn);\n5) isOn = false;\n6) console.log(\"끔:\", isOn);"
   },
   {
     "id": "js-2-3-blank-1",
@@ -1523,7 +1594,8 @@
           "hint": "let 변수이름 = true"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let isReady = true\"예요. (let 변수이름 = true) boolean 값은 true 또는 false이며 소문자로 씁니다."
   },
   {
     "id": "js-2-3-blank-2",
@@ -1546,7 +1618,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(isReady)\"예요. (console.log() 안에 변수 이름) boolean 값은 true 또는 false이며 소문자로 씁니다."
   },
   {
     "id": "js-2-3-short-3",
@@ -1563,7 +1636,8 @@
       "answer": [
         "false"
       ]
-    }
+    },
+    "explanation": "정답은 \"false\"예요. boolean 값은 true 또는 false이며 소문자로 씁니다."
   },
   {
     "id": "js-2-3-code-1",
@@ -1588,7 +1662,8 @@
         }
       ],
       "solution": "let isReady = true;\nconsole.log(isReady);"
-    }
+    },
+    "explanation": "boolean 값은 true 또는 false이며 소문자로 씁니다.\n\n모범 답안:\nlet isReady = true;\nconsole.log(isReady);"
   },
   {
     "id": "js-2-4-mcq-1",
@@ -1608,7 +1683,8 @@
         "USERNAME"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다."
   },
   {
     "id": "js-2-4-mcq-2",
@@ -1628,7 +1704,8 @@
         "1score"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "숫자로 시작할 수 없습니다."
   },
   {
     "id": "js-2-4-mcq-3",
@@ -1648,7 +1725,8 @@
         "오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"kim\"예요. 변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다."
   },
   {
     "id": "js-2-4-parsons-1",
@@ -1671,7 +1749,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다.\n\n올바른 순서:\n1) let userName = \"kim\";\n2) userName = \"lee\";\n3) console.log(userName);"
   },
   {
     "id": "js-2-4-parsons-2",
@@ -1696,7 +1775,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다.\n\n올바른 순서:\n1) let favoriteFood = \"피자\";\n2) console.log(favoriteFood);\n3) favoriteFood = \"치킨\";\n4) console.log(\"바뀐 음식:\", favoriteFood);"
   },
   {
     "id": "js-2-4-parsons-3",
@@ -1723,7 +1803,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다.\n\n올바른 순서:\n1) let myScore = 70;\n2) let bestScore = myScore;\n3) myScore = 90;\n4) console.log(\"새 점수:\", myScore);\n5) console.log(\"이전 점수:\", bestScore);"
   },
   {
     "id": "js-2-4-blank-1",
@@ -1746,7 +1827,8 @@
           "hint": "let 과 camelCase 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let userName\"예요. (let 과 camelCase 변수 이름) 변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다."
   },
   {
     "id": "js-2-4-blank-2",
@@ -1769,7 +1851,8 @@
           "hint": "console.log() 안에 변수 이름 (대소문자 주의)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(userName)\"예요. (console.log() 안에 변수 이름 (대소문자 주의)) 변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다."
   },
   {
     "id": "js-2-4-short-3",
@@ -1786,7 +1869,8 @@
       "answer": [
         "userAge"
       ]
-    }
+    },
+    "explanation": "정답은 \"userAge\"예요. 변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다."
   },
   {
     "id": "js-2-4-code-1",
@@ -1816,7 +1900,8 @@
         }
       ],
       "solution": "let userName = \"kim\";\nconsole.log(userName);"
-    }
+    },
+    "explanation": "변수 이름은 camelCase(첫 단어 소문자, 이후 단어 첫 글자 대문자)를 씁니다. 숫자로 시작할 수 없습니다.\n\n모범 답안:\nlet userName = \"kim\";\nconsole.log(userName);"
   },
   {
     "id": "js-2-5-mcq-1",
@@ -1836,7 +1921,8 @@
         "false"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "값 없이 선언한 변수의 값은 undefined입니다."
   },
   {
     "id": "js-2-5-mcq-2",
@@ -1856,7 +1942,8 @@
         "let result;"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"let result;\"예요. 값 없이 선언한 변수의 값은 undefined입니다."
   },
   {
     "id": "js-2-5-mcq-3",
@@ -1876,7 +1963,8 @@
         "오류가 난다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. 값 없이 선언한 변수의 값은 undefined입니다."
   },
   {
     "id": "js-2-5-parsons-1",
@@ -1899,7 +1987,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "값 없이 선언한 변수의 값은 undefined입니다.\n\n올바른 순서:\n1) let result;\n2) console.log(result);\n3) console.log(\"값이 아직 없어요\");"
   },
   {
     "id": "js-2-5-parsons-2",
@@ -1924,7 +2013,8 @@
         1,
         3
       ]
-    }
+    },
+    "explanation": "값 없이 선언한 변수의 값은 undefined입니다.\n\n올바른 순서:\n1) let result;\n2) console.log(result);\n3) result = 10;\n4) console.log(\"새 값:\", result);"
   },
   {
     "id": "js-2-5-parsons-3",
@@ -1951,7 +2041,8 @@
         2,
         3
       ]
-    }
+    },
+    "explanation": "값 없이 선언한 변수의 값은 undefined입니다.\n\n올바른 순서:\n1) let answer;\n2) console.log(\"처음:\", answer);\n3) answer = \"정답\";\n4) console.log(\"나중:\", answer);\n5) console.log(\"끝!\");"
   },
   {
     "id": "js-2-5-blank-1",
@@ -1974,7 +2065,8 @@
           "hint": "let 과 변수 이름만 (값 없이)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let result\"예요. (let 과 변수 이름만 (값 없이)) 값 없이 선언한 변수의 값은 undefined입니다."
   },
   {
     "id": "js-2-5-blank-2",
@@ -1997,7 +2089,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(result)\"예요. (console.log() 안에 변수 이름) 값 없이 선언한 변수의 값은 undefined입니다."
   },
   {
     "id": "js-2-5-short-3",
@@ -2014,7 +2107,8 @@
       "answer": [
         "undefined"
       ]
-    }
+    },
+    "explanation": "정답은 \"undefined\"예요. 값 없이 선언한 변수의 값은 undefined입니다."
   },
   {
     "id": "js-2-5-code-1",
@@ -2043,7 +2137,8 @@
         }
       ],
       "solution": "let result;\nconsole.log(result);"
-    }
+    },
+    "explanation": "값 없이 선언한 변수의 값은 undefined입니다.\n\n모범 답안:\nlet result;\nconsole.log(result);"
   },
   {
     "id": "js-2-6-mcq-1",
@@ -2063,7 +2158,8 @@
         "let 으로 만든 변수의 값은 바꿀 수 없다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "변수를 선언하고 값을 사용해 보는 복습입니다."
   },
   {
     "id": "js-2-6-mcq-2",
@@ -2083,7 +2179,8 @@
         "let 10 = x;\nconsole.log(x);"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 변수를 선언하고 값을 사용해 보는 복습입니다."
   },
   {
     "id": "js-2-6-mcq-3",
@@ -2103,7 +2200,8 @@
         "x"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"20\"예요. 변수를 선언하고 값을 사용해 보는 복습입니다."
   },
   {
     "id": "js-2-6-parsons-1",
@@ -2128,7 +2226,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "변수를 선언하고 값을 사용해 보는 복습입니다.\n\n올바른 순서:\n1) let x = 10;\n2) console.log(\"x:\", x);\n3) x = 20;\n4) console.log(\"새 x:\", x);"
   },
   {
     "id": "js-2-6-parsons-2",
@@ -2155,7 +2254,8 @@
         2,
         3
       ]
-    }
+    },
+    "explanation": "변수를 선언하고 값을 사용해 보는 복습입니다.\n\n올바른 순서:\n1) let x = 10;\n2) let y = x;\n3) x = 30;\n4) console.log(\"x:\", x);\n5) console.log(\"y:\", y);"
   },
   {
     "id": "js-2-6-parsons-3",
@@ -2186,7 +2286,8 @@
         4,
         1
       ]
-    }
+    },
+    "explanation": "변수를 선언하고 값을 사용해 보는 복습입니다.\n\n올바른 순서:\n1) let x;\n2) console.log(\"처음 x:\", x);\n3) x = 10;\n4) let y = x;\n5) x = 20;\n6) console.log(\"x:\", x);\n7) console.log(\"y:\", y);"
   },
   {
     "id": "js-2-6-blank-1",
@@ -2210,7 +2311,8 @@
           "hint": "let 으로 x 에 10 저장"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let x = 10\"예요. (let 으로 x 에 10 저장) 변수를 선언하고 값을 사용해 보는 복습입니다."
   },
   {
     "id": "js-2-6-blank-2",
@@ -2234,7 +2336,8 @@
           "hint": "let 으로 y 에 20 저장"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let y = 20\"예요. (let 으로 y 에 20 저장) 변수를 선언하고 값을 사용해 보는 복습입니다."
   },
   {
     "id": "js-2-6-blank-3",
@@ -2257,7 +2360,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(x)\"예요. (console.log() 안에 변수 이름) 변수를 선언하고 값을 사용해 보는 복습입니다."
   },
   {
     "id": "js-2-6-code-1",
@@ -2290,7 +2394,8 @@
         }
       ],
       "solution": "let x = 10;\nlet y = 20;\nconsole.log(x);\nconsole.log(y);"
-    }
+    },
+    "explanation": "변수를 선언하고 값을 사용해 보는 복습입니다.\n\n모범 답안:\nlet x = 10;\nlet y = 20;\nconsole.log(x);\nconsole.log(y);"
   },
   {
     "id": "js-2-7-mcq-1",
@@ -2310,7 +2415,8 @@
         "한 번 값을 넣으면 다시 대입할 수 없다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "const 로 만든 상수는 다시 대입할 수 없습니다."
   },
   {
     "id": "js-2-7-mcq-2",
@@ -2330,7 +2436,8 @@
         "constant PI = 3.14;\nconsole.log(PI);"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. const 로 만든 상수는 다시 대입할 수 없습니다."
   },
   {
     "id": "js-2-7-mcq-3",
@@ -2350,7 +2457,8 @@
         "95\n95"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. const 로 만든 상수는 다시 대입할 수 없습니다."
   },
   {
     "id": "js-2-7-parsons-1",
@@ -2373,7 +2481,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "const 로 만든 상수는 다시 대입할 수 없습니다.\n\n올바른 순서:\n1) const PI = 3.14;\n2) console.log(PI);\n3) console.log(\"PI 는 바꿀 수 없어요\");"
   },
   {
     "id": "js-2-7-parsons-2",
@@ -2398,7 +2507,8 @@
         3,
         1
       ]
-    }
+    },
+    "explanation": "const 로 만든 상수는 다시 대입할 수 없습니다.\n\n올바른 순서:\n1) const PI = 3.14;\n2) let myPi = PI;\n3) myPi = 3;\n4) console.log(PI, myPi);"
   },
   {
     "id": "js-2-7-parsons-3",
@@ -2427,7 +2537,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "const 로 만든 상수는 다시 대입할 수 없습니다.\n\n올바른 순서:\n1) const GREETING = \"안녕\";\n2) let message = GREETING;\n3) console.log(message);\n4) message = \"잘 가\";\n5) console.log(message, GREETING);\n6) console.log(\"상수는 그대로:\", GREETING);"
   },
   {
     "id": "js-2-7-blank-1",
@@ -2451,7 +2562,8 @@
           "hint": "const 상수이름 = 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"const PI = 3.14\"예요. (const 상수이름 = 값) const 로 만든 상수는 다시 대입할 수 없습니다."
   },
   {
     "id": "js-2-7-blank-2",
@@ -2474,7 +2586,8 @@
           "hint": "console.log() 안에 상수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(PI)\"예요. (console.log() 안에 상수 이름) const 로 만든 상수는 다시 대입할 수 없습니다."
   },
   {
     "id": "js-2-7-short-3",
@@ -2491,7 +2604,8 @@
       "answer": [
         "const"
       ]
-    }
+    },
+    "explanation": "정답은 \"const\"예요. const 로 만든 상수는 다시 대입할 수 없습니다."
   },
   {
     "id": "js-2-7-code-1",
@@ -2516,7 +2630,8 @@
         }
       ],
       "solution": "const PI = 3.14;\nconsole.log(PI);"
-    }
+    },
+    "explanation": "const 로 만든 상수는 다시 대입할 수 없습니다.\n\n모범 답안:\nconst PI = 3.14;\nconsole.log(PI);"
   },
   {
     "id": "js-3-1-mcq-1",
@@ -2536,7 +2651,8 @@
         "+, -, *, /, ** 는 각각 더하기, 빼기, 곱하기, 나누기, 거듭제곱이다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "+, -, *, /, ** 로 계산합니다."
   },
   {
     "id": "js-3-1-mcq-2",
@@ -2556,7 +2672,8 @@
         "console.log(2 * * 3);"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"console.log(2 ** 3);\"예요. +, -, *, /, ** 로 계산합니다."
   },
   {
     "id": "js-3-1-mcq-3",
@@ -2576,7 +2693,8 @@
         "2.0"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"2.5\"예요. +, -, *, /, ** 로 계산합니다."
   },
   {
     "id": "js-3-1-parsons-1",
@@ -2599,7 +2717,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "+, -, *, /, ** 로 계산합니다.\n\n올바른 순서:\n1) console.log(\n2) 7 + 3\n3) );"
   },
   {
     "id": "js-3-1-parsons-2",
@@ -2624,7 +2743,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "+, -, *, /, ** 로 계산합니다.\n\n올바른 순서:\n1) let n = 2;\n2) n = n * 5;\n3) n = n - 3;\n4) console.log(n);"
   },
   {
     "id": "js-3-1-parsons-3",
@@ -2655,7 +2775,8 @@
         1,
         4
       ]
-    }
+    },
+    "explanation": "+, -, *, /, ** 로 계산합니다.\n\n올바른 순서:\n1) let n = 2;\n2) n = n ** 3;\n3) console.log(\"거듭제곱:\", n);\n4) n = n / 4;\n5) console.log(\"나누기:\", n);\n6) n = n - 1;\n7) console.log(\"빼기:\", n);"
   },
   {
     "id": "js-3-1-blank-1",
@@ -2678,7 +2799,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) +, -, *, /, ** 로 계산합니다."
   },
   {
     "id": "js-3-1-blank-2",
@@ -2701,7 +2823,8 @@
           "hint": "더하기 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"+\"예요. (더하기 기호) +, -, *, /, ** 로 계산합니다."
   },
   {
     "id": "js-3-1-short-3",
@@ -2718,7 +2841,8 @@
       "answer": [
         "**"
       ]
-    }
+    },
+    "explanation": "정답은 \"**\"예요. +, -, *, /, ** 로 계산합니다."
   },
   {
     "id": "js-3-1-code-1",
@@ -2743,7 +2867,8 @@
         }
       ],
       "solution": "console.log(7 + 3);"
-    }
+    },
+    "explanation": "+, -, *, /, ** 로 계산합니다.\n\n모범 답안:\nconsole.log(7 + 3);"
   },
   {
     "id": "js-3-2-mcq-1",
@@ -2763,7 +2888,8 @@
         "거듭제곱"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "% 는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "js-3-2-mcq-2",
@@ -2783,7 +2909,8 @@
         "console.log(10 %% 3);"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"console.log(10 % 3);\"예요. % 는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "js-3-2-mcq-3",
@@ -2803,7 +2930,8 @@
         "2\n0"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. % 는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "js-3-2-parsons-1",
@@ -2826,7 +2954,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "% 는 나눗셈의 나머지를 구합니다.\n\n올바른 순서:\n1) console.log(\n2) 17 % 5\n3) );"
   },
   {
     "id": "js-3-2-parsons-2",
@@ -2851,7 +2980,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "% 는 나눗셈의 나머지를 구합니다.\n\n올바른 순서:\n1) let n = 29;\n2) n = n % 10;\n3) console.log(\"일의 자리:\", n);\n4) console.log(\"2로 나눈 나머지:\", n % 2);"
   },
   {
     "id": "js-3-2-parsons-3",
@@ -2880,7 +3010,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "% 는 나눗셈의 나머지를 구합니다.\n\n올바른 순서:\n1) let n = 47;\n2) console.log(\"처음 수:\", n);\n3) n = n % 10;\n4) console.log(\"일의 자리:\", n);\n5) n = n % 4;\n6) console.log(\"4로 나눈 나머지:\", n);"
   },
   {
     "id": "js-3-2-blank-1",
@@ -2903,7 +3034,8 @@
           "hint": "나머지 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"%\"예요. (나머지 연산자) % 는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "js-3-2-blank-2",
@@ -2926,7 +3058,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) % 는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "js-3-2-short-3",
@@ -2943,7 +3076,8 @@
       "answer": [
         "%"
       ]
-    }
+    },
+    "explanation": "정답은 \"%\"예요. % 는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "js-3-2-code-1",
@@ -2968,7 +3102,8 @@
         }
       ],
       "solution": "console.log(17 % 5);"
-    }
+    },
+    "explanation": "% 는 나눗셈의 나머지를 구합니다.\n\n모범 답안:\nconsole.log(17 % 5);"
   },
   {
     "id": "js-3-3-mcq-1",
@@ -2988,7 +3123,8 @@
         "x-- 는 x 를 0 으로 만든다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "+=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다."
   },
   {
     "id": "js-3-3-mcq-2",
@@ -3008,7 +3144,8 @@
         "count ++ 1;"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"count++;\"예요. +=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다."
   },
   {
     "id": "js-3-3-mcq-3",
@@ -3028,7 +3165,8 @@
         "13"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"13\"예요. +=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다."
   },
   {
     "id": "js-3-3-parsons-1",
@@ -3051,7 +3189,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "+=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다.\n\n올바른 순서:\n1) let count = 0;\n2) count += 5;\n3) console.log(count);"
   },
   {
     "id": "js-3-3-parsons-2",
@@ -3078,7 +3217,8 @@
         4,
         0
       ]
-    }
+    },
+    "explanation": "+=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다.\n\n올바른 순서:\n1) let count = 0;\n2) count += 5;\n3) console.log(\"더한 뒤:\", count);\n4) count -= 2;\n5) console.log(\"뺀 뒤:\", count);"
   },
   {
     "id": "js-3-3-parsons-3",
@@ -3109,7 +3249,8 @@
         5,
         2
       ]
-    }
+    },
+    "explanation": "+=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다.\n\n올바른 순서:\n1) let count = 0;\n2) count += 10;\n3) console.log(\"+= 10:\", count);\n4) count++;\n5) console.log(\"++:\", count);\n6) count -= 4;\n7) console.log(\"-= 4:\", count);"
   },
   {
     "id": "js-3-3-blank-1",
@@ -3133,7 +3274,8 @@
           "hint": "let 으로 count 를 0 으로"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let count = 0\"예요. (let 으로 count 를 0 으로) +=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다."
   },
   {
     "id": "js-3-3-blank-2",
@@ -3156,7 +3298,8 @@
           "hint": "더해서 다시 넣는 줄임 표기"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"+=\"예요. (더해서 다시 넣는 줄임 표기) +=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다."
   },
   {
     "id": "js-3-3-blank-3",
@@ -3179,7 +3322,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(count)\"예요. (console.log() 안에 변수 이름) +=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다."
   },
   {
     "id": "js-3-3-code-1",
@@ -3208,7 +3352,8 @@
         }
       ],
       "solution": "let count = 0;\ncount += 5;\nconsole.log(count);"
-    }
+    },
+    "explanation": "+=, -=, ++, -- 는 값을 갱신하는 줄임 표기입니다.\n\n모범 답안:\nlet count = 0;\ncount += 5;\nconsole.log(count);"
   },
   {
     "id": "js-3-4-mcq-1",
@@ -3228,7 +3373,8 @@
         "undefined"
       ],
       "answer": 0
-    }
+    },
+    "explanation": ">, <, >=, <= 는 비교 결과를 boolean으로 만듭니다."
   },
   {
     "id": "js-3-4-mcq-2",
@@ -3248,7 +3394,8 @@
         "console.log(a ≥ b);"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"console.log(a >= b);\"예요. >, <, >=, <= 는 비교 결과를 boolean으로 만듭니다."
   },
   {
     "id": "js-3-4-mcq-3",
@@ -3268,7 +3415,8 @@
         "true\nfalse"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. >, <, >=, <= 는 비교 결과를 boolean으로 만듭니다."
   },
   {
     "id": "js-3-4-parsons-1",
@@ -3291,7 +3439,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": ">, <, >=, <= 는 비교 결과를 boolean으로 만듭니다.\n\n올바른 순서:\n1) console.log(\n2) 10 > 5\n3) );"
   },
   {
     "id": "js-3-4-parsons-2",
@@ -3316,7 +3465,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": ">, <, >=, <= 는 비교 결과를 boolean으로 만듭니다.\n\n올바른 순서:\n1) let score = 75;\n2) console.log(score >= 60);\n3) score = 50;\n4) console.log(\"다시:\", score >= 60);"
   },
   {
     "id": "js-3-4-parsons-3",
@@ -3345,7 +3495,8 @@
         4,
         3
       ]
-    }
+    },
+    "explanation": ">, <, >=, <= 는 비교 결과를 boolean으로 만듭니다.\n\n올바른 순서:\n1) let x = 3;\n2) console.log(x, \"< 5:\", x < 5);\n3) x = 5;\n4) console.log(x, \"<= 5:\", x <= 5);\n5) x = 8;\n6) console.log(x, \"> 5:\", x > 5);"
   },
   {
     "id": "js-3-4-blank-1",
@@ -3368,7 +3519,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) >, <, >=, <= 는 비교 결과를 boolean으로 만듭니다."
   },
   {
     "id": "js-3-4-blank-2",
@@ -3391,7 +3543,8 @@
           "hint": "크다 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \">\"예요. (크다 기호) >, <, >=, <= 는 비교 결과를 boolean으로 만듭니다."
   },
   {
     "id": "js-3-4-short-3",
@@ -3408,7 +3561,8 @@
       "answer": [
         ">="
       ]
-    }
+    },
+    "explanation": "정답은 \">=\"예요. >, <, >=, <= 는 비교 결과를 boolean으로 만듭니다."
   },
   {
     "id": "js-3-4-code-1",
@@ -3433,7 +3587,8 @@
         }
       ],
       "solution": "console.log(10 > 5);"
-    }
+    },
+    "explanation": ">, <, >=, <= 는 비교 결과를 boolean으로 만듭니다.\n\n모범 답안:\nconsole.log(10 > 5);"
   },
   {
     "id": "js-3-5-mcq-1",
@@ -3453,7 +3608,8 @@
         "=== 는 값을 대입하는 연산자이다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "=== 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다."
   },
   {
     "id": "js-3-5-mcq-2",
@@ -3473,7 +3629,8 @@
         "==="
       ],
       "answer": 3
-    }
+    },
+    "explanation": "보통 ===를 씁니다."
   },
   {
     "id": "js-3-5-mcq-3",
@@ -3493,7 +3650,8 @@
         "false\nfalse"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. === 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다."
   },
   {
     "id": "js-3-5-parsons-1",
@@ -3516,7 +3674,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "=== 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다.\n\n올바른 순서:\n1) let n = 5;\n2) console.log(n === \"5\");\n3) console.log(n == \"5\");"
   },
   {
     "id": "js-3-5-parsons-2",
@@ -3541,7 +3700,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "=== 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다.\n\n올바른 순서:\n1) let num = 10;\n2) console.log(\"=== :\", num === \"10\");\n3) console.log(\"== :\", num == \"10\");\n4) console.log(\"숫자끼리 === :\", num === 10);"
   },
   {
     "id": "js-3-5-parsons-3",
@@ -3570,7 +3730,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "=== 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다.\n\n올바른 순서:\n1) let value = 1;\n2) console.log(\"숫자 1 과 같다:\", value === 1);\n3) console.log(\"문자 1 과 같다:\", value === \"1\");\n4) value = \"1\";\n5) console.log(\"바뀐 뒤 숫자 1 과 같다:\", value === 1);\n6) console.log(\"느슨하게 같다:\", value == 1);"
   },
   {
     "id": "js-3-5-blank-1",
@@ -3593,7 +3754,8 @@
           "hint": "엄격한 비교 (= 세 개)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"===\"예요. (엄격한 비교 (= 세 개)) === 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다."
   },
   {
     "id": "js-3-5-blank-2",
@@ -3616,7 +3778,8 @@
           "hint": "느슨한 비교 (= 두 개)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"==\"예요. (느슨한 비교 (= 두 개)) === 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다."
   },
   {
     "id": "js-3-5-blank-3",
@@ -3639,7 +3802,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) === 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다."
   },
   {
     "id": "js-3-5-code-1",
@@ -3666,7 +3830,8 @@
         }
       ],
       "solution": "console.log(5 === \"5\");\nconsole.log(5 == \"5\");"
-    }
+    },
+    "explanation": "=== 는 자료형까지 같아야 true, == 는 자료형을 바꿔 비교합니다. 보통 ===를 씁니다.\n\n모범 답안:\nconsole.log(5 === \"5\");\nconsole.log(5 == \"5\");"
   },
   {
     "id": "js-3-6-mcq-1",
@@ -3686,7 +3851,8 @@
         "곱셈과 뺄셈은 함께 쓸 수 없다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "곱셈이 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "js-3-6-mcq-2",
@@ -3706,7 +3872,8 @@
         "console.log((8 + 2) * 3);"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"console.log((8 + 2) * 3);\"예요. 곱셈이 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "js-3-6-mcq-3",
@@ -3726,7 +3893,8 @@
         "6"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"2\"예요. 곱셈이 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "js-3-6-parsons-1",
@@ -3751,7 +3919,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "곱셈이 뺄셈보다 먼저 계산됩니다.\n\n올바른 순서:\n1) let a = 8;\n2) let b = a - 5;\n3) let result = a * b - 4;\n4) console.log(result);"
   },
   {
     "id": "js-3-6-parsons-2",
@@ -3778,7 +3947,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "곱셈이 뺄셈보다 먼저 계산됩니다.\n\n올바른 순서:\n1) let a = 8;\n2) let b = a - 5;\n3) let result = a * b - 4;\n4) console.log(\"결과:\", result);\n5) console.log(\"두 배:\", result * 2);"
   },
   {
     "id": "js-3-6-parsons-3",
@@ -3809,7 +3979,8 @@
         5,
         1
       ]
-    }
+    },
+    "explanation": "곱셈이 뺄셈보다 먼저 계산됩니다.\n\n올바른 순서:\n1) let a = 8;\n2) let b = a - 5;\n3) let result = a * b - 4;\n4) console.log(\"결과:\", result);\n5) result = (a - b) * 2;\n6) console.log(\"괄호 먼저:\", result);\n7) console.log(\"나머지:\", result % 3);"
   },
   {
     "id": "js-3-6-blank-1",
@@ -3832,7 +4003,8 @@
           "hint": "let 과 결과를 담을 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let result\"예요. (let 과 결과를 담을 변수 이름) 곱셈이 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "js-3-6-blank-2",
@@ -3855,7 +4027,8 @@
           "hint": "곱하기 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"*\"예요. (곱하기 기호) 곱셈이 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "js-3-6-blank-3",
@@ -3878,7 +4051,8 @@
           "hint": "console.log() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(result)\"예요. (console.log() 안에 변수 이름) 곱셈이 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "js-3-6-code-1",
@@ -3911,7 +4085,8 @@
         }
       ],
       "solution": "let a = 8;\nlet b = 3;\nlet result = a * b - 4;\nconsole.log(result);"
-    }
+    },
+    "explanation": "곱셈이 뺄셈보다 먼저 계산됩니다.\n\n모범 답안:\nlet a = 8;\nlet b = 3;\nlet result = a * b - 4;\nconsole.log(result);"
   },
   {
     "id": "js-4-1-mcq-1",
@@ -3931,7 +4106,8 @@
         "언제나 true 이다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "&& 는 양쪽이 모두 true일 때만 true입니다."
   },
   {
     "id": "js-4-1-mcq-2",
@@ -3951,7 +4127,8 @@
         "console.log(age > 10 || age < 20);"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"console.log(age > 10 && age < 20);\"예요. && 는 양쪽이 모두 true일 때만 true입니다."
   },
   {
     "id": "js-4-1-mcq-3",
@@ -3971,7 +4148,8 @@
         "false\ntrue"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. && 는 양쪽이 모두 true일 때만 true입니다."
   },
   {
     "id": "js-4-1-parsons-1",
@@ -3994,7 +4172,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "&& 는 양쪽이 모두 true일 때만 true입니다.\n\n올바른 순서:\n1) console.log(\n2) true && false\n3) );"
   },
   {
     "id": "js-4-1-parsons-2",
@@ -4019,7 +4198,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "&& 는 양쪽이 모두 true일 때만 true입니다.\n\n올바른 순서:\n1) let age = 15;\n2) console.log(age > 10 && age < 20);\n3) age = 25;\n4) console.log(\"다시:\", age > 10 && age < 20);"
   },
   {
     "id": "js-4-1-parsons-3",
@@ -4048,7 +4228,8 @@
         2,
         3
       ]
-    }
+    },
+    "explanation": "&& 는 양쪽이 모두 true일 때만 true입니다.\n\n올바른 순서:\n1) let score = 85;\n2) let passed = score >= 60 && score <= 100;\n3) console.log(\"합격:\", passed);\n4) score = 40;\n5) passed = score >= 60 && score <= 100;\n6) console.log(\"다시 합격:\", passed);"
   },
   {
     "id": "js-4-1-blank-1",
@@ -4071,7 +4252,8 @@
           "hint": "그리고(AND) 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"&&\"예요. (그리고(AND) 연산자) && 는 양쪽이 모두 true일 때만 true입니다."
   },
   {
     "id": "js-4-1-blank-2",
@@ -4094,7 +4276,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) && 는 양쪽이 모두 true일 때만 true입니다."
   },
   {
     "id": "js-4-1-short-3",
@@ -4111,7 +4294,8 @@
       "answer": [
         "&&"
       ]
-    }
+    },
+    "explanation": "정답은 \"&&\"예요. && 는 양쪽이 모두 true일 때만 true입니다."
   },
   {
     "id": "js-4-1-code-1",
@@ -4136,7 +4320,8 @@
         }
       ],
       "solution": "console.log(true && false);"
-    }
+    },
+    "explanation": "&& 는 양쪽이 모두 true일 때만 true입니다.\n\n모범 답안:\nconsole.log(true && false);"
   },
   {
     "id": "js-4-2-mcq-1",
@@ -4156,7 +4341,8 @@
         "양쪽 중 하나라도 true 일 때"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "|| 는 하나라도 true이면 true입니다."
   },
   {
     "id": "js-4-2-mcq-2",
@@ -4176,7 +4362,8 @@
         "console.log(isWeekend && isHoliday);"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"console.log(isWeekend || isHoliday);\"예요. || 는 하나라도 true이면 true입니다."
   },
   {
     "id": "js-4-2-mcq-3",
@@ -4196,7 +4383,8 @@
         "false\ntrue"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. || 는 하나라도 true이면 true입니다."
   },
   {
     "id": "js-4-2-parsons-1",
@@ -4219,7 +4407,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "|| 는 하나라도 true이면 true입니다.\n\n올바른 순서:\n1) console.log(\n2) true || false\n3) );"
   },
   {
     "id": "js-4-2-parsons-2",
@@ -4244,7 +4433,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "|| 는 하나라도 true이면 true입니다.\n\n올바른 순서:\n1) let day = \"토\";\n2) console.log(day === \"토\" || day === \"일\");\n3) day = \"월\";\n4) console.log(\"다시:\", day === \"토\" || day === \"일\");"
   },
   {
     "id": "js-4-2-parsons-3",
@@ -4273,7 +4463,8 @@
         2,
         4
       ]
-    }
+    },
+    "explanation": "|| 는 하나라도 true이면 true입니다.\n\n올바른 순서:\n1) let hour = 7;\n2) let isClosed = hour < 9 || hour > 18;\n3) console.log(\"7시 문 닫음:\", isClosed);\n4) hour = 12;\n5) isClosed = hour < 9 || hour > 18;\n6) console.log(\"12시 문 닫음:\", isClosed);"
   },
   {
     "id": "js-4-2-blank-1",
@@ -4296,7 +4487,8 @@
           "hint": "또는(OR) 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"||\"예요. (또는(OR) 연산자) || 는 하나라도 true이면 true입니다."
   },
   {
     "id": "js-4-2-blank-2",
@@ -4319,7 +4511,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) || 는 하나라도 true이면 true입니다."
   },
   {
     "id": "js-4-2-short-3",
@@ -4336,7 +4529,8 @@
       "answer": [
         "||"
       ]
-    }
+    },
+    "explanation": "정답은 \"||\"예요. || 는 하나라도 true이면 true입니다."
   },
   {
     "id": "js-4-2-code-1",
@@ -4361,7 +4555,8 @@
         }
       ],
       "solution": "console.log(true || false);"
-    }
+    },
+    "explanation": "|| 는 하나라도 true이면 true입니다.\n\n모범 답안:\nconsole.log(true || false);"
   },
   {
     "id": "js-4-3-mcq-1",
@@ -4381,7 +4576,8 @@
         "age >= 18 && age < 30"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "비교와 논리 연산을 조합해 범위를 검사합니다."
   },
   {
     "id": "js-4-3-mcq-2",
@@ -4401,7 +4597,8 @@
         "console.log(0 <= score <= 100);"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"console.log(score >= 0 && score <= 100);\"예요. 비교와 논리 연산을 조합해 범위를 검사합니다."
   },
   {
     "id": "js-4-3-mcq-3",
@@ -4421,7 +4618,8 @@
         "false\nfalse"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 비교와 논리 연산을 조합해 범위를 검사합니다."
   },
   {
     "id": "js-4-3-parsons-1",
@@ -4444,7 +4642,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "비교와 논리 연산을 조합해 범위를 검사합니다.\n\n올바른 순서:\n1) let age = 20;\n2) let inRange = age >= 18 && age < 30;\n3) console.log(inRange);"
   },
   {
     "id": "js-4-3-parsons-2",
@@ -4469,7 +4668,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "비교와 논리 연산을 조합해 범위를 검사합니다.\n\n올바른 순서:\n1) let age = 20;\n2) console.log(age >= 18 && age < 30);\n3) age = 40;\n4) console.log(\"40살:\", age >= 18 && age < 30);"
   },
   {
     "id": "js-4-3-parsons-3",
@@ -4498,7 +4698,8 @@
         1,
         5
       ]
-    }
+    },
+    "explanation": "비교와 논리 연산을 조합해 범위를 검사합니다.\n\n올바른 순서:\n1) let temp = 25;\n2) let isGood = temp >= 20 && temp <= 26;\n3) console.log(\"25도 좋음:\", isGood);\n4) temp = 30;\n5) isGood = temp >= 20 && temp <= 26;\n6) console.log(\"30도 좋음:\", isGood);"
   },
   {
     "id": "js-4-3-blank-1",
@@ -4522,7 +4723,8 @@
           "hint": "let 으로 age 를 20 으로"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"let age = 20\"예요. (let 으로 age 를 20 으로) 비교와 논리 연산을 조합해 범위를 검사합니다."
   },
   {
     "id": "js-4-3-blank-2",
@@ -4545,7 +4747,8 @@
           "hint": "두 조건이 모두 참이어야 해요"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"&&\"예요. (두 조건이 모두 참이어야 해요) 비교와 논리 연산을 조합해 범위를 검사합니다."
   },
   {
     "id": "js-4-3-blank-3",
@@ -4568,7 +4771,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) 비교와 논리 연산을 조합해 범위를 검사합니다."
   },
   {
     "id": "js-4-3-code-1",
@@ -4593,7 +4797,8 @@
         }
       ],
       "solution": "let age = 20;\nconsole.log(age >= 18 && age < 30);"
-    }
+    },
+    "explanation": "비교와 논리 연산을 조합해 범위를 검사합니다.\n\n모범 답안:\nlet age = 20;\nconsole.log(age >= 18 && age < 30);"
   },
   {
     "id": "js-4-4-mcq-1",
@@ -4613,7 +4818,8 @@
         "?"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "!"
   },
   {
     "id": "js-4-4-mcq-2",
@@ -4633,7 +4839,8 @@
         "두 값이 같은지 비교한다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "는 boolean 값을 반대로 뒤집습니다."
   },
   {
     "id": "js-4-4-mcq-3",
@@ -4653,7 +4860,8 @@
         "true\nfalse"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. ! 는 boolean 값을 반대로 뒤집습니다."
   },
   {
     "id": "js-4-4-parsons-1",
@@ -4676,7 +4884,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "! 는 boolean 값을 반대로 뒤집습니다.\n\n올바른 순서:\n1) console.log(\n2) !true\n3) );"
   },
   {
     "id": "js-4-4-parsons-2",
@@ -4701,7 +4910,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "! 는 boolean 값을 반대로 뒤집습니다.\n\n올바른 순서:\n1) let isOn = true;\n2) console.log(\"처음:\", isOn);\n3) isOn = !isOn;\n4) console.log(\"뒤집은 뒤:\", isOn);"
   },
   {
     "id": "js-4-4-parsons-3",
@@ -4730,7 +4940,8 @@
         4,
         5
       ]
-    }
+    },
+    "explanation": "! 는 boolean 값을 반대로 뒤집습니다.\n\n올바른 순서:\n1) let isOn = false;\n2) console.log(\"처음:\", isOn);\n3) isOn = !isOn;\n4) console.log(\"뒤집기:\", isOn);\n5) isOn = !(3 > 1);\n6) console.log(\"!(3 > 1):\", isOn);"
   },
   {
     "id": "js-4-4-blank-1",
@@ -4753,7 +4964,8 @@
           "hint": "! 와 true"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"!true\"예요. (! 와 true) ! 는 boolean 값을 반대로 뒤집습니다."
   },
   {
     "id": "js-4-4-blank-2",
@@ -4776,7 +4988,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) ! 는 boolean 값을 반대로 뒤집습니다."
   },
   {
     "id": "js-4-4-short-3",
@@ -4793,7 +5006,8 @@
       "answer": [
         "!"
       ]
-    }
+    },
+    "explanation": "정답은 \"!\"예요. ! 는 boolean 값을 반대로 뒤집습니다."
   },
   {
     "id": "js-4-4-code-1",
@@ -4818,7 +5032,8 @@
         }
       ],
       "solution": "console.log(!true);"
-    }
+    },
+    "explanation": "! 는 boolean 값을 반대로 뒤집습니다.\n\n모범 답안:\nconsole.log(!true);"
   },
   {
     "id": "js-4-5-mcq-1",
@@ -4838,7 +5053,8 @@
         "모든 값은 자동으로 boolean 이 된다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "연산자에 따라 자료형이 자동으로 바뀝니다."
   },
   {
     "id": "js-4-5-mcq-2",
@@ -4858,7 +5074,8 @@
         "* 와 + 모두 오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "* 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다."
   },
   {
     "id": "js-4-5-mcq-3",
@@ -4878,7 +5095,8 @@
         "12\n34"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. 연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다."
   },
   {
     "id": "js-4-5-parsons-1",
@@ -4901,7 +5119,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다.\n\n올바른 순서:\n1) let text = \"5\";\n2) console.log(text * 2);\n3) console.log(text + 2);"
   },
   {
     "id": "js-4-5-parsons-2",
@@ -4926,7 +5145,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다.\n\n올바른 순서:\n1) let text = \"5\";\n2) let num = text * 2;\n3) console.log(num);\n4) console.log(text + 2);"
   },
   {
     "id": "js-4-5-parsons-3",
@@ -4955,7 +5175,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다.\n\n올바른 순서:\n1) let value = \"8\";\n2) console.log(\"처음:\", value + 1);\n3) value = value * 2;\n4) console.log(\"곱한 뒤:\", value);\n5) value = value + \"1\";\n6) console.log(\"붙인 뒤:\", value);"
   },
   {
     "id": "js-4-5-blank-1",
@@ -4981,7 +5202,8 @@
           "hint": "문자열 \"5\" 와 곱하기 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"\"5\" * 2\"예요. (문자열 \"5\" 와 곱하기 연산자) 연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다."
   },
   {
     "id": "js-4-5-blank-2",
@@ -5007,7 +5229,8 @@
           "hint": "문자열 \"5\" 와 더하기 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"\"5\" + 2\"예요. (문자열 \"5\" 와 더하기 연산자) 연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다."
   },
   {
     "id": "js-4-5-blank-3",
@@ -5030,7 +5253,8 @@
           "hint": "콘솔에 출력하는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"console.log(\"예요. (콘솔에 출력하는 함수와 여는 괄호) 연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다."
   },
   {
     "id": "js-4-5-code-1",
@@ -5057,6 +5281,7 @@
         }
       ],
       "solution": "console.log(\"5\" * 2);\nconsole.log(\"5\" + 2);"
-    }
+    },
+    "explanation": "연산자에 따라 자료형이 자동으로 바뀝니다. * 는 숫자로, + 는 문자열 이어 붙이기로 처리됩니다.\n\n모범 답안:\nconsole.log(\"5\" * 2);\nconsole.log(\"5\" + 2);"
   }
 ]

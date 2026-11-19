@@ -28,9 +28,11 @@ type CodeProblem = {
   lessonId?: string
   description?: string
   language?: string
+  explanation?: string
   content: {
     starter_code: string
     checks: CodeCheck[]
+    solution?: string
   }
 }
 
@@ -50,10 +52,19 @@ export function toQuestion(p: CodeProblem) {
     reward: p.reward,
     language: p.language,
     level: levelOf(p),
+    difficulty: p.difficulty,
     lessonId: p.lessonId,
     content: { starter_code: p.content.starter_code },
   }
 }
+
+// 해설이 없는 문제는 모범 답안, 그것도 없으면 채점 기준으로 대신한다.
+// 틀렸을 때는 답안을 베끼지 않게 주지 않는다
+const explanationOf = (p: CodeProblem) =>
+  p.explanation ??
+  (p.content.solution
+    ? `모범 답안:\n${p.content.solution}`
+    : `풀이: ${p.content.checks.map((check) => check.message).join(', ')}`)
 
 export const code = new Hono<AuthEnv>()
 
@@ -140,7 +151,7 @@ code.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, passed, total, ...exp }, 200)
+    return c.json({ isAnswer, passed, total, ...exp, explanation: explanationOf(problem) }, 200)
   }
   return c.json({ isAnswer, passed, total, failed, ...(syntaxError ? { syntaxError } : {}) }, 200)
 })

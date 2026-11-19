@@ -17,7 +17,8 @@
         "그림을 넣는 영역"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "form은 사용자 입력을 모아 보내는 영역입니다."
   },
   {
     "id": "html-8-1-mcq-2",
@@ -37,7 +38,8 @@
         "<form><button>Send<button></form>"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"<form><button>Send</button></form>\"예요. form은 사용자 입력을 모아 보내는 영역입니다."
   },
   {
     "id": "html-8-1-mcq-3",
@@ -57,7 +59,8 @@
         "아무것도 보이지 않는다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"Send 라고 적힌 버튼 하나\"예요. form은 사용자 입력을 모아 보내는 영역입니다."
   },
   {
     "id": "html-8-1-parsons-1",
@@ -80,7 +83,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "form은 사용자 입력을 모아 보내는 영역입니다.\n\n올바른 순서:\n1) <form>\n2)   <button>Send</button>\n3) </form>"
   },
   {
     "id": "html-8-1-parsons-2",
@@ -107,7 +111,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "form은 사용자 입력을 모아 보내는 영역입니다.\n\n올바른 순서:\n1) <form>\n2)   <button>\n3)     Send\n4)   </button>\n5) </form>"
   },
   {
     "id": "html-8-1-parsons-3",
@@ -136,7 +141,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "form은 사용자 입력을 모아 보내는 영역입니다.\n\n올바른 순서:\n1) <h2>Contact</h2>\n2) <form>\n3)   <button>\n4)     Send\n5)   </button>\n6) </form>"
   },
   {
     "id": "html-8-1-blank-1",
@@ -160,7 +166,8 @@
           "hint": "폼을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<form>\"예요. (폼을 여는 태그) form은 사용자 입력을 모아 보내는 영역입니다."
   },
   {
     "id": "html-8-1-blank-2",
@@ -184,7 +191,8 @@
           "hint": "버튼을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<button>\"예요. (버튼을 여는 태그) form은 사용자 입력을 모아 보내는 영역입니다."
   },
   {
     "id": "html-8-1-short-3",
@@ -203,7 +211,8 @@
         "form",
         "<form>"
       ]
-    }
+    },
+    "explanation": "정답은 \"form\"예요. form은 사용자 입력을 모아 보내는 영역입니다."
   },
   {
     "id": "html-8-1-code-1",
@@ -230,7 +239,8 @@
         }
       ],
       "solution": "<form>\n  <button>Send</button>\n</form>"
-    }
+    },
+    "explanation": "form은 사용자 입력을 모아 보내는 영역입니다.\n\n모범 답안:\n<form>\n  <button>Send</button>\n</form>"
   },
   {
     "id": "html-8-2-mcq-1",
@@ -250,7 +260,8 @@
         "type 속성"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다."
   },
   {
     "id": "html-8-2-mcq-2",
@@ -270,7 +281,8 @@
         "<text input>"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"<input type=\"text\">\"예요. input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다."
   },
   {
     "id": "html-8-2-mcq-3",
@@ -290,7 +302,8 @@
         "체크 표시를 하는 네모 상자"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"글자를 쓸 수 있는 빈 입력칸\"예요. input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다."
   },
   {
     "id": "html-8-2-parsons-1",
@@ -313,7 +326,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다.\n\n올바른 순서:\n1) <input\n2)  type=\"text\"\n3) >"
   },
   {
     "id": "html-8-2-parsons-2",
@@ -338,7 +352,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다.\n\n올바른 순서:\n1) <input\n2)  type=\n3) \"text\"\n4) >"
   },
   {
     "id": "html-8-2-parsons-3",
@@ -365,7 +380,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다.\n\n올바른 순서:\n1) <\n2) input\n3)  type=\n4) \"text\"\n5) >"
   },
   {
     "id": "html-8-2-blank-1",
@@ -389,7 +405,8 @@
           "hint": "입력칸 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<input\"예요. (입력칸 태그의 시작) input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다."
   },
   {
     "id": "html-8-2-blank-2",
@@ -415,7 +432,8 @@
           "hint": "글자 입력칸 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"text\"\"예요. (글자 입력칸 종류) input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다."
   },
   {
     "id": "html-8-2-short-3",
@@ -433,7 +451,8 @@
       "answer": [
         "type"
       ]
-    }
+    },
+    "explanation": "정답은 \"type\"예요. input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다."
   },
   {
     "id": "html-8-2-code-1",
@@ -460,7 +479,8 @@
         }
       ],
       "solution": "<input type=\"text\">"
-    }
+    },
+    "explanation": "input 요소는 type 속성에 따라 입력칸의 모양이 달라집니다.\n\n모범 답안:\n<input type=\"text\">"
   },
   {
     "id": "html-8-3-mcq-1",
@@ -480,7 +500,8 @@
         "둘 다 입력칸의 크기를 정한다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "name은 데이터 이름, placeholder는 안내 문구입니다."
   },
   {
     "id": "html-8-3-mcq-2",
@@ -500,7 +521,8 @@
         "<input placeholder>Name</input>"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"<input name=\"user\" placeholder=\"Name\">\"예요. name은 데이터 이름, placeholder는 안내 문구입니다."
   },
   {
     "id": "html-8-3-mcq-3",
@@ -520,7 +542,8 @@
         "빈 입력칸 안에 Name 이 흐리게 보이고, 글자를 쓰면 사라진다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"빈 입력칸 안에 Name 이 흐리게 보이고, 글자를 쓰면 사라진다\"예요. name은 데이터 이름, placeholder는 안내 문구입니다."
   },
   {
     "id": "html-8-3-parsons-1",
@@ -545,7 +568,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "name은 데이터 이름, placeholder는 안내 문구입니다.\n\n올바른 순서:\n1) <input\n2)  name=\"user\"\n3)  placeholder=\"Name\"\n4) >"
   },
   {
     "id": "html-8-3-parsons-2",
@@ -572,7 +596,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "name은 데이터 이름, placeholder는 안내 문구입니다.\n\n올바른 순서:\n1) <input\n2)  name=\n3) \"user\"\n4)  placeholder=\"Name\"\n5) >"
   },
   {
     "id": "html-8-3-parsons-3",
@@ -601,7 +626,8 @@
         2,
         4
       ]
-    }
+    },
+    "explanation": "name은 데이터 이름, placeholder는 안내 문구입니다.\n\n올바른 순서:\n1) <input\n2)  name=\n3) \"user\"\n4)  placeholder=\n5) \"Name\"\n6) >"
   },
   {
     "id": "html-8-3-blank-1",
@@ -625,7 +651,8 @@
           "hint": "데이터 이름 속성과 =\" "
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"name=\"\"예요. (데이터 이름 속성과 =\" ) name은 데이터 이름, placeholder는 안내 문구입니다."
   },
   {
     "id": "html-8-3-blank-2",
@@ -649,7 +676,8 @@
           "hint": "안내 문구 속성과 =\" "
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"placeholder=\"\"예요. (안내 문구 속성과 =\" ) name은 데이터 이름, placeholder는 안내 문구입니다."
   },
   {
     "id": "html-8-3-short-3",
@@ -667,7 +695,8 @@
       "answer": [
         "placeholder"
       ]
-    }
+    },
+    "explanation": "정답은 \"placeholder\"예요. name은 데이터 이름, placeholder는 안내 문구입니다."
   },
   {
     "id": "html-8-3-code-1",
@@ -694,7 +723,8 @@
         }
       ],
       "solution": "<input type=\"text\" name=\"user\" placeholder=\"Name\">"
-    }
+    },
+    "explanation": "name은 데이터 이름, placeholder는 안내 문구입니다.\n\n모범 답안:\n<input type=\"text\" name=\"user\" placeholder=\"Name\">"
   },
   {
     "id": "html-8-4-mcq-1",
@@ -714,7 +744,8 @@
         "글자를 쓸 수 없다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "password 타입은 입력 내용을 점으로 가립니다."
   },
   {
     "id": "html-8-4-mcq-2",
@@ -734,7 +765,8 @@
         "<input>password</input>"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"<input type=\"password\">\"예요. password 타입은 입력 내용을 점으로 가립니다."
   },
   {
     "id": "html-8-4-mcq-3",
@@ -754,7 +786,8 @@
         "password"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"점 3개 (●●●)\"예요. password 타입은 입력 내용을 점으로 가립니다."
   },
   {
     "id": "html-8-4-parsons-1",
@@ -777,7 +810,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "password 타입은 입력 내용을 점으로 가립니다.\n\n올바른 순서:\n1) <input\n2)  type=\"password\"\n3) >"
   },
   {
     "id": "html-8-4-parsons-2",
@@ -802,7 +836,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "password 타입은 입력 내용을 점으로 가립니다.\n\n올바른 순서:\n1) <input\n2)  type=\n3) \"password\"\n4) >"
   },
   {
     "id": "html-8-4-parsons-3",
@@ -829,7 +864,8 @@
         4,
         1
       ]
-    }
+    },
+    "explanation": "password 타입은 입력 내용을 점으로 가립니다.\n\n올바른 순서:\n1) <\n2) input\n3)  type=\n4) \"password\"\n5) >"
   },
   {
     "id": "html-8-4-blank-1",
@@ -855,7 +891,8 @@
           "hint": "점으로 가려지는 입력칸 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"password\"\"예요. (점으로 가려지는 입력칸 종류) password 타입은 입력 내용을 점으로 가립니다."
   },
   {
     "id": "html-8-4-short-2",
@@ -874,7 +911,8 @@
         "4",
         "4개"
       ]
-    }
+    },
+    "explanation": "정답은 \"4\"예요. password 타입은 입력 내용을 점으로 가립니다."
   },
   {
     "id": "html-8-4-short-3",
@@ -892,7 +930,8 @@
       "answer": [
         "password"
       ]
-    }
+    },
+    "explanation": "정답은 \"password\"예요. password 타입은 입력 내용을 점으로 가립니다."
   },
   {
     "id": "html-8-4-code-1",
@@ -919,7 +958,8 @@
         }
       ],
       "solution": "<input type=\"password\">"
-    }
+    },
+    "explanation": "password 타입은 입력 내용을 점으로 가립니다.\n\n모범 답안:\n<input type=\"password\">"
   },
   {
     "id": "html-8-5-mcq-1",
@@ -939,7 +979,8 @@
         "label 의 for 값과 input 의 id 값을 같게 한다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "label의 for와 input의 id가 같으면 서로 연결됩니다."
   },
   {
     "id": "html-8-5-mcq-2",
@@ -959,7 +1000,8 @@
         "<label for=\"user\">Name<label>\n<input type=\"text\" id=\"user\">"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. label의 for와 input의 id가 같으면 서로 연결됩니다."
   },
   {
     "id": "html-8-5-mcq-3",
@@ -979,7 +1021,8 @@
         "새 페이지로 이동한다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"입력칸이 선택되어 바로 글자를 쓸 수 있다\"예요. label의 for와 input의 id가 같으면 서로 연결됩니다."
   },
   {
     "id": "html-8-5-parsons-1",
@@ -1002,7 +1045,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "label의 for와 input의 id가 같으면 서로 연결됩니다.\n\n올바른 순서:\n1) <label for=\"user\">\n2) Name</label>\n3) <input type=\"text\" id=\"user\">"
   },
   {
     "id": "html-8-5-parsons-2",
@@ -1027,7 +1071,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "label의 for와 input의 id가 같으면 서로 연결됩니다.\n\n올바른 순서:\n1) <label for=\"user\">\n2) Name\n3) </label>\n4) <input type=\"text\" id=\"user\">"
   },
   {
     "id": "html-8-5-parsons-3",
@@ -1056,7 +1101,8 @@
         1,
         5
       ]
-    }
+    },
+    "explanation": "label의 for와 input의 id가 같으면 서로 연결됩니다.\n\n올바른 순서:\n1) <label\n2)  for=\"user\">\n3) Name\n4) </label>\n5) <input\n6)  type=\"text\" id=\"user\">"
   },
   {
     "id": "html-8-5-blank-1",
@@ -1080,7 +1126,8 @@
           "hint": "이름표 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<label\"예요. (이름표 태그의 시작) label의 for와 input의 id가 같으면 서로 연결됩니다."
   },
   {
     "id": "html-8-5-blank-2",
@@ -1104,7 +1151,8 @@
           "hint": "연결할 input 의 id 를 적는 속성"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for=\"\"예요. (연결할 input 의 id 를 적는 속성) label의 for와 input의 id가 같으면 서로 연결됩니다."
   },
   {
     "id": "html-8-5-blank-3",
@@ -1128,7 +1176,8 @@
           "hint": "label 의 for 와 같은 값을 적는 속성"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"id=\"\"예요. (label 의 for 와 같은 값을 적는 속성) label의 for와 input의 id가 같으면 서로 연결됩니다."
   },
   {
     "id": "html-8-5-code-1",
@@ -1160,7 +1209,8 @@
         }
       ],
       "solution": "<label for=\"user\">Name</label>\n<input type=\"text\" id=\"user\">"
-    }
+    },
+    "explanation": "label의 for와 input의 id가 같으면 서로 연결됩니다.\n\n모범 답안:\n<label for=\"user\">Name</label>\n<input type=\"text\" id=\"user\">"
   },
   {
     "id": "html-8-6-mcq-1",
@@ -1180,7 +1230,8 @@
         "button - 입력칸의 이름표"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "폼 요소를 종합합니다."
   },
   {
     "id": "html-8-6-mcq-2",
@@ -1200,7 +1251,8 @@
         "<form>\n  <input type:\"text\" name:\"id\">\n  <button>Login</button>\n</form>"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. 폼 요소를 종합합니다."
   },
   {
     "id": "html-8-6-mcq-3",
@@ -1220,7 +1272,8 @@
         "Password 글자, 입력하면 점으로 가려지는 입력칸, Login 버튼"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"Password 글자, 입력하면 점으로 가려지는 입력칸, Login 버튼\"예요. 폼 요소를 종합합니다."
   },
   {
     "id": "html-8-6-parsons-1",
@@ -1245,7 +1298,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "폼 요소를 종합합니다.\n\n올바른 순서:\n1) <form>\n2)   <input type=\"text\" name=\"id\">\n3)   <button>Login</button>\n4) </form>"
   },
   {
     "id": "html-8-6-parsons-2",
@@ -1272,7 +1326,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "폼 요소를 종합합니다.\n\n올바른 순서:\n1) <form>\n2)   <label for=\"id\">ID</label>\n3)   <input type=\"text\" id=\"id\" name=\"id\">\n4)   <button>Login</button>\n5) </form>"
   },
   {
     "id": "html-8-6-parsons-3",
@@ -1303,7 +1358,8 @@
         2,
         5
       ]
-    }
+    },
+    "explanation": "폼 요소를 종합합니다.\n\n올바른 순서:\n1) <form>\n2)   <label for=\"id\">ID</label>\n3)   <input type=\"text\" id=\"id\" name=\"id\">\n4)   <label for=\"pw\">Password</label>\n5)   <input type=\"password\" id=\"pw\" name=\"pw\">\n6)   <button>Login</button>\n7) </form>"
   },
   {
     "id": "html-8-6-blank-1",
@@ -1327,7 +1383,8 @@
           "hint": "폼을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<form>\"예요. (폼을 여는 태그) 폼 요소를 종합합니다."
   },
   {
     "id": "html-8-6-blank-2",
@@ -1351,7 +1408,8 @@
           "hint": "이름표 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<label\"예요. (이름표 태그의 시작) 폼 요소를 종합합니다."
   },
   {
     "id": "html-8-6-blank-3",
@@ -1375,7 +1433,8 @@
           "hint": "입력칸 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<input\"예요. (입력칸 태그의 시작) 폼 요소를 종합합니다."
   },
   {
     "id": "html-8-6-code-1",
@@ -1412,7 +1471,8 @@
         }
       ],
       "solution": "<form>\n  <label for=\"id\">ID</label>\n  <input type=\"text\" id=\"id\" name=\"id\">\n  <label for=\"pw\">Password</label>\n  <input type=\"password\" id=\"pw\" name=\"pw\">\n  <button>Login</button>\n</form>"
-    }
+    },
+    "explanation": "폼 요소를 종합합니다.\n\n모범 답안:\n<form>\n  <label for=\"id\">ID</label>\n  <input type=\"text\" id=\"id\" name=\"id\">\n  <label for=\"pw\">Password</label>\n  <input type=\"password\" id=\"pw\" name=\"pw\">\n  <button>Login</button>\n</form>"
   },
   {
     "id": "html-9-1-mcq-1",
@@ -1432,7 +1492,8 @@
         "선택하면 페이지가 바로 바뀐다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "같은 name을 가진 radio 중 하나만 선택할 수 있습니다."
   },
   {
     "id": "html-9-1-mcq-2",
@@ -1452,7 +1513,8 @@
         "<input type=\"radio\" name=\"size\"> S\n<input type=\"radio\" name=\"size\"> L"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. 같은 name을 가진 radio 중 하나만 선택할 수 있습니다."
   },
   {
     "id": "html-9-1-mcq-3",
@@ -1472,7 +1534,8 @@
         "둘 다 선택이 풀린다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"L 만 선택되고 S 는 선택이 풀린다\"예요. 같은 name을 가진 radio 중 하나만 선택할 수 있습니다."
   },
   {
     "id": "html-9-1-parsons-1",
@@ -1495,7 +1558,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "같은 name을 가진 radio 중 하나만 선택할 수 있습니다.\n\n올바른 순서:\n1) <p>Size</p>\n2) <input type=\"radio\" name=\"size\" value=\"S\"> S\n3) <input type=\"radio\" name=\"size\" value=\"L\"> L"
   },
   {
     "id": "html-9-1-parsons-2",
@@ -1522,7 +1586,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "같은 name을 가진 radio 중 하나만 선택할 수 있습니다.\n\n올바른 순서:\n1) <p>Size</p>\n2) <input type=\"radio\" name=\"size\" value=\"S\">\n3) S\n4) <input type=\"radio\" name=\"size\" value=\"L\">\n5) L"
   },
   {
     "id": "html-9-1-parsons-3",
@@ -1553,7 +1618,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "같은 name을 가진 radio 중 하나만 선택할 수 있습니다.\n\n올바른 순서:\n1) <p>Size</p>\n2) <input type=\"radio\" name=\"size\" value=\"S\">\n3) S\n4) <input type=\"radio\" name=\"size\" value=\"M\">\n5) M\n6) <input type=\"radio\" name=\"size\" value=\"L\">\n7) L"
   },
   {
     "id": "html-9-1-blank-1",
@@ -1579,7 +1645,8 @@
           "hint": "하나만 고르는 버튼 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"radio\"\"예요. (하나만 고르는 버튼 종류) 같은 name을 가진 radio 중 하나만 선택할 수 있습니다."
   },
   {
     "id": "html-9-1-blank-2",
@@ -1605,7 +1672,8 @@
           "hint": "아래 버튼과 같은 name"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"name=\"size\"\"예요. (아래 버튼과 같은 name) 같은 name을 가진 radio 중 하나만 선택할 수 있습니다."
   },
   {
     "id": "html-9-1-short-3",
@@ -1623,7 +1691,8 @@
       "answer": [
         "radio"
       ]
-    }
+    },
+    "explanation": "정답은 \"radio\"예요. 같은 name을 가진 radio 중 하나만 선택할 수 있습니다."
   },
   {
     "id": "html-9-1-code-1",
@@ -1650,7 +1719,8 @@
         }
       ],
       "solution": "<input type=\"radio\" name=\"size\" value=\"S\"> S\n<input type=\"radio\" name=\"size\" value=\"L\"> L"
-    }
+    },
+    "explanation": "같은 name을 가진 radio 중 하나만 선택할 수 있습니다.\n\n모범 답안:\n<input type=\"radio\" name=\"size\" value=\"S\"> S\n<input type=\"radio\" name=\"size\" value=\"L\"> L"
   },
   {
     "id": "html-9-2-mcq-1",
@@ -1670,7 +1740,8 @@
         "그림을 넣을 때"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "체크박스는 켜고 끄는 선택에 사용합니다."
   },
   {
     "id": "html-9-2-mcq-2",
@@ -1690,7 +1761,8 @@
         "<input>checkbox</input>"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"<input type=\"checkbox\">\"예요. 체크박스는 켜고 끄는 선택에 사용합니다."
   },
   {
     "id": "html-9-2-mcq-3",
@@ -1710,7 +1782,8 @@
         "글자를 쓰는 입력칸"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"체크할 수 있는 작은 네모 상자와 I agree 글자\"예요. 체크박스는 켜고 끄는 선택에 사용합니다."
   },
   {
     "id": "html-9-2-parsons-1",
@@ -1733,7 +1806,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "체크박스는 켜고 끄는 선택에 사용합니다.\n\n올바른 순서:\n1) <input type=\"checkbox\" id=\"agree\">\n2) <label for=\"agree\">\n3) I agree</label>"
   },
   {
     "id": "html-9-2-parsons-2",
@@ -1758,7 +1832,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "체크박스는 켜고 끄는 선택에 사용합니다.\n\n올바른 순서:\n1) <input type=\"checkbox\" id=\"agree\">\n2) <label for=\"agree\">\n3) I agree\n4) </label>"
   },
   {
     "id": "html-9-2-parsons-3",
@@ -1787,7 +1862,8 @@
         1,
         3
       ]
-    }
+    },
+    "explanation": "체크박스는 켜고 끄는 선택에 사용합니다.\n\n올바른 순서:\n1) <input\n2)  type=\"checkbox\" id=\"agree\">\n3) <label\n4)  for=\"agree\">\n5) I agree\n6) </label>"
   },
   {
     "id": "html-9-2-blank-1",
@@ -1813,7 +1889,8 @@
           "hint": "체크 상자 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"checkbox\"\"예요. (체크 상자 종류) 체크박스는 켜고 끄는 선택에 사용합니다."
   },
   {
     "id": "html-9-2-blank-2",
@@ -1837,7 +1914,8 @@
           "hint": "이름표 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<label\"예요. (이름표 태그의 시작) 체크박스는 켜고 끄는 선택에 사용합니다."
   },
   {
     "id": "html-9-2-short-3",
@@ -1855,7 +1933,8 @@
       "answer": [
         "checkbox"
       ]
-    }
+    },
+    "explanation": "정답은 \"checkbox\"예요. 체크박스는 켜고 끄는 선택에 사용합니다."
   },
   {
     "id": "html-9-2-code-1",
@@ -1882,7 +1961,8 @@
         }
       ],
       "solution": "<input type=\"checkbox\" id=\"agree\">\n<label for=\"agree\">I agree</label>"
-    }
+    },
+    "explanation": "체크박스는 켜고 끄는 선택에 사용합니다.\n\n모범 답안:\n<input type=\"checkbox\" id=\"agree\">\n<label for=\"agree\">I agree</label>"
   },
   {
     "id": "html-9-3-mcq-1",
@@ -1902,7 +1982,8 @@
         "select 는 드롭다운 메뉴, option 은 그 안의 선택지다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "select는 드롭다운 메뉴, option은 선택지입니다."
   },
   {
     "id": "html-9-3-mcq-2",
@@ -1922,7 +2003,8 @@
         "<select>\n  <li>Red</li>\n  <li>Blue</li>\n</select>"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. select는 드롭다운 메뉴, option은 선택지입니다."
   },
   {
     "id": "html-9-3-mcq-3",
@@ -1942,7 +2024,8 @@
         "글자를 쓰는 입력칸"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"Red 가 보이는 드롭다운 상자 하나 (누르면 Blue 도 보인다)\"예요. select는 드롭다운 메뉴, option은 선택지입니다."
   },
   {
     "id": "html-9-3-parsons-1",
@@ -1967,7 +2050,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "select는 드롭다운 메뉴, option은 선택지입니다.\n\n올바른 순서:\n1) <select>\n2)   <option>Red</option>\n3)   <option>Blue</option>\n4) </select>"
   },
   {
     "id": "html-9-3-parsons-2",
@@ -1994,7 +2078,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "select는 드롭다운 메뉴, option은 선택지입니다.\n\n올바른 순서:\n1) <select>\n2)   <option>Red</option>\n3)   <option>Green</option>\n4)   <option>Blue</option>\n5) </select>"
   },
   {
     "id": "html-9-3-parsons-3",
@@ -2023,7 +2108,8 @@
         0,
         5
       ]
-    }
+    },
+    "explanation": "select는 드롭다운 메뉴, option은 선택지입니다.\n\n올바른 순서:\n1) <label for=\"color\">Color</label>\n2) <select id=\"color\">\n3)   <option>Red</option>\n4)   <option>Green</option>\n5)   <option>Blue</option>\n6) </select>"
   },
   {
     "id": "html-9-3-blank-1",
@@ -2047,7 +2133,8 @@
           "hint": "드롭다운 메뉴를 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<select>\"예요. (드롭다운 메뉴를 여는 태그) select는 드롭다운 메뉴, option은 선택지입니다."
   },
   {
     "id": "html-9-3-blank-2",
@@ -2071,7 +2158,8 @@
           "hint": "선택지를 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<option>\"예요. (선택지를 여는 태그) select는 드롭다운 메뉴, option은 선택지입니다."
   },
   {
     "id": "html-9-3-short-3",
@@ -2090,7 +2178,8 @@
         "option",
         "<option>"
       ]
-    }
+    },
+    "explanation": "정답은 \"option\"예요. select는 드롭다운 메뉴, option은 선택지입니다."
   },
   {
     "id": "html-9-3-code-1",
@@ -2117,7 +2206,8 @@
         }
       ],
       "solution": "<select>\n  <option>Red</option>\n  <option>Blue</option>\n</select>"
-    }
+    },
+    "explanation": "select는 드롭다운 메뉴, option은 선택지입니다.\n\n모범 답안:\n<select>\n  <option>Red</option>\n  <option>Blue</option>\n</select>"
   },
   {
     "id": "html-9-4-mcq-1",
@@ -2137,7 +2227,8 @@
         "점 목록"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "button은 클릭할 수 있는 버튼입니다."
   },
   {
     "id": "html-9-4-mcq-2",
@@ -2157,7 +2248,8 @@
         "<button>Click</botton>"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"<button>Click</button>\"예요. button은 클릭할 수 있는 버튼입니다."
   },
   {
     "id": "html-9-4-mcq-3",
@@ -2177,7 +2269,8 @@
         "Click 이라고 적힌 버튼"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"Click 이라고 적힌 버튼\"예요. button은 클릭할 수 있는 버튼입니다."
   },
   {
     "id": "html-9-4-parsons-1",
@@ -2200,7 +2293,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "button은 클릭할 수 있는 버튼입니다.\n\n올바른 순서:\n1) <button>\n2) Click\n3) </button>"
   },
   {
     "id": "html-9-4-parsons-2",
@@ -2225,7 +2319,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "button은 클릭할 수 있는 버튼입니다.\n\n올바른 순서:\n1) <button\n2) >\n3) Click\n4) </button>"
   },
   {
     "id": "html-9-4-parsons-3",
@@ -2252,7 +2347,8 @@
         1,
         3
       ]
-    }
+    },
+    "explanation": "button은 클릭할 수 있는 버튼입니다.\n\n올바른 순서:\n1) <\n2) button\n3) >\n4) Click\n5) </button>"
   },
   {
     "id": "html-9-4-blank-1",
@@ -2276,7 +2372,8 @@
           "hint": "버튼을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<button>\"예요. (버튼을 여는 태그) button은 클릭할 수 있는 버튼입니다."
   },
   {
     "id": "html-9-4-blank-2",
@@ -2300,7 +2397,8 @@
           "hint": "버튼에 보일 글자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"Click\"예요. (버튼에 보일 글자) button은 클릭할 수 있는 버튼입니다."
   },
   {
     "id": "html-9-4-short-3",
@@ -2319,7 +2417,8 @@
         "button",
         "<button>"
       ]
-    }
+    },
+    "explanation": "정답은 \"button\"예요. button은 클릭할 수 있는 버튼입니다."
   },
   {
     "id": "html-9-4-code-1",
@@ -2346,7 +2445,8 @@
         }
       ],
       "solution": "<button>Click</button>"
-    }
+    },
+    "explanation": "button은 클릭할 수 있는 버튼입니다.\n\n모범 답안:\n<button>Click</button>"
   },
   {
     "id": "html-9-5-mcq-1",
@@ -2366,7 +2466,8 @@
         "버튼이 체크 상자로 바뀐다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "submit 버튼은 폼을 제출합니다."
   },
   {
     "id": "html-9-5-mcq-2",
@@ -2386,7 +2487,8 @@
         "<form>\n  <button type=\"submit\">Send</button>\n</form>"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. submit 버튼은 폼을 제출합니다."
   },
   {
     "id": "html-9-5-mcq-3",
@@ -2406,7 +2508,8 @@
         "submit 이라고 적힌 버튼이 보인다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"입력칸 하나와 Search 버튼이 보인다\"예요. submit 버튼은 폼을 제출합니다."
   },
   {
     "id": "html-9-5-parsons-1",
@@ -2429,7 +2532,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "submit 버튼은 폼을 제출합니다.\n\n올바른 순서:\n1) <form>\n2)   <button type=\"submit\">Send</button>\n3) </form>"
   },
   {
     "id": "html-9-5-parsons-2",
@@ -2454,7 +2558,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "submit 버튼은 폼을 제출합니다.\n\n올바른 순서:\n1) <form>\n2)   <input type=\"text\" name=\"msg\">\n3)   <button type=\"submit\">Send</button>\n4) </form>"
   },
   {
     "id": "html-9-5-parsons-3",
@@ -2483,7 +2588,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "submit 버튼은 폼을 제출합니다.\n\n올바른 순서:\n1) <form>\n2)   <input type=\"text\" name=\"msg\">\n3)   <button type=\"submit\">\n4)     Send\n5)   </button>\n6) </form>"
   },
   {
     "id": "html-9-5-blank-1",
@@ -2509,7 +2615,8 @@
           "hint": "폼을 제출하는 버튼 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"submit\"\"예요. (폼을 제출하는 버튼 종류) submit 버튼은 폼을 제출합니다."
   },
   {
     "id": "html-9-5-short-2",
@@ -2527,7 +2634,8 @@
       "answer": [
         "Send"
       ]
-    }
+    },
+    "explanation": "정답은 \"Send\"예요. submit 버튼은 폼을 제출합니다."
   },
   {
     "id": "html-9-5-short-3",
@@ -2545,7 +2653,8 @@
       "answer": [
         "submit"
       ]
-    }
+    },
+    "explanation": "정답은 \"submit\"예요. submit 버튼은 폼을 제출합니다."
   },
   {
     "id": "html-9-5-code-1",
@@ -2572,7 +2681,8 @@
         }
       ],
       "solution": "<form>\n  <button type=\"submit\">Send</button>\n</form>"
-    }
+    },
+    "explanation": "submit 버튼은 폼을 제출합니다.\n\n모범 답안:\n<form>\n  <button type=\"submit\">Send</button>\n</form>"
   },
   {
     "id": "html-9-6-mcq-1",
@@ -2592,7 +2702,8 @@
         "radio - button - checkbox"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "여러 입력 요소를 조합합니다."
   },
   {
     "id": "html-9-6-mcq-2",
@@ -2612,7 +2723,8 @@
         "<form>\n  <input type=\"radio\" name=\"size\"> S\n  <input type=\"checkbox\" name=\"ice\"> Ice\n  <button type=\"submit\">Order</form>\n</button>"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 여러 입력 요소를 조합합니다."
   },
   {
     "id": "html-9-6-mcq-3",
@@ -2632,7 +2744,8 @@
         "동그란 선택 버튼(S), 네모 체크 상자(Ice), Order 버튼"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"동그란 선택 버튼(S), 네모 체크 상자(Ice), Order 버튼\"예요. 여러 입력 요소를 조합합니다."
   },
   {
     "id": "html-9-6-parsons-1",
@@ -2657,7 +2770,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "여러 입력 요소를 조합합니다.\n\n올바른 순서:\n1) <form>\n2)   <input type=\"radio\" name=\"size\" value=\"S\"> S\n3)   <button type=\"submit\">Order</button>\n4) </form>"
   },
   {
     "id": "html-9-6-parsons-2",
@@ -2684,7 +2798,8 @@
         4,
         3
       ]
-    }
+    },
+    "explanation": "여러 입력 요소를 조합합니다.\n\n올바른 순서:\n1) <form>\n2)   <input type=\"radio\" name=\"size\" value=\"S\"> S\n3)   <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n4)   <button type=\"submit\">Order</button>\n5) </form>"
   },
   {
     "id": "html-9-6-parsons-3",
@@ -2717,7 +2832,8 @@
         2,
         4
       ]
-    }
+    },
+    "explanation": "여러 입력 요소를 조합합니다.\n\n올바른 순서:\n1) <form>\n2)   <input type=\"radio\" name=\"size\" value=\"S\"> S\n3)   <input type=\"radio\" name=\"size\" value=\"L\"> L\n4)   <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n5)   <button type=\"submit\">\n6)     Order\n7)   </button>\n8) </form>"
   },
   {
     "id": "html-9-6-blank-1",
@@ -2743,7 +2859,8 @@
           "hint": "하나만 고르는 버튼 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"radio\"\"예요. (하나만 고르는 버튼 종류) 여러 입력 요소를 조합합니다."
   },
   {
     "id": "html-9-6-blank-2",
@@ -2769,7 +2886,8 @@
           "hint": "체크 상자 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"checkbox\"\"예요. (체크 상자 종류) 여러 입력 요소를 조합합니다."
   },
   {
     "id": "html-9-6-blank-3",
@@ -2793,7 +2911,8 @@
           "hint": "버튼 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<button\"예요. (버튼 태그의 시작) 여러 입력 요소를 조합합니다."
   },
   {
     "id": "html-9-6-code-1",
@@ -2830,7 +2949,8 @@
         }
       ],
       "solution": "<form>\n  <input type=\"radio\" name=\"size\" value=\"S\"> S\n  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>"
-    }
+    },
+    "explanation": "여러 입력 요소를 조합합니다.\n\n모범 답안:\n<form>\n  <input type=\"radio\" name=\"size\" value=\"S\"> S\n  <input type=\"checkbox\" name=\"extra\" value=\"ice\"> Ice\n  <button type=\"submit\">Order</button>\n</form>"
   },
   {
     "id": "html-9-7-mcq-1",
@@ -2850,7 +2970,8 @@
         "checkbox - 하나만 고르는 동그란 버튼"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "입력 요소를 더 많이 조합합니다."
   },
   {
     "id": "html-9-7-mcq-2",
@@ -2870,7 +2991,8 @@
         "<form>\n  <select>\n    <option>Pizza</option>\n  </select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n<form>"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. 입력 요소를 더 많이 조합합니다."
   },
   {
     "id": "html-9-7-mcq-3",
@@ -2890,7 +3012,8 @@
         "Order 버튼만 보인다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"Pizza 가 보이는 드롭다운, 숫자 입력칸, Order 버튼\"예요. 입력 요소를 더 많이 조합합니다."
   },
   {
     "id": "html-9-7-parsons-1",
@@ -2915,7 +3038,8 @@
         3,
         1
       ]
-    }
+    },
+    "explanation": "입력 요소를 더 많이 조합합니다.\n\n올바른 순서:\n1) <form>\n2)   <select><option>Pizza</option><option>Pasta</option></select>\n3)   <button type=\"submit\">Order</button>\n4) </form>"
   },
   {
     "id": "html-9-7-parsons-2",
@@ -2942,7 +3066,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "입력 요소를 더 많이 조합합니다.\n\n올바른 순서:\n1) <form>\n2)   <select><option>Pizza</option><option>Pasta</option></select>\n3)   <input type=\"number\" name=\"count\">\n4)   <button type=\"submit\">Order</button>\n5) </form>"
   },
   {
     "id": "html-9-7-parsons-3",
@@ -2975,7 +3100,8 @@
         6,
         2
       ]
-    }
+    },
+    "explanation": "입력 요소를 더 많이 조합합니다.\n\n올바른 순서:\n1) <form>\n2)   <select>\n3)     <option>Pizza</option>\n4)     <option>Pasta</option>\n5)   </select>\n6)   <input type=\"number\" name=\"count\">\n7)   <button type=\"submit\">Order</button>\n8) </form>"
   },
   {
     "id": "html-9-7-blank-1",
@@ -2999,7 +3125,8 @@
           "hint": "드롭다운 메뉴를 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<select>\"예요. (드롭다운 메뉴를 여는 태그) 입력 요소를 더 많이 조합합니다."
   },
   {
     "id": "html-9-7-blank-2",
@@ -3025,7 +3152,8 @@
           "hint": "숫자 입력칸 종류"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"type=\"number\"\"예요. (숫자 입력칸 종류) 입력 요소를 더 많이 조합합니다."
   },
   {
     "id": "html-9-7-blank-3",
@@ -3049,7 +3177,8 @@
           "hint": "버튼 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<button\"예요. (버튼 태그의 시작) 입력 요소를 더 많이 조합합니다."
   },
   {
     "id": "html-9-7-code-1",
@@ -3081,7 +3210,8 @@
         }
       ],
       "solution": "<form>\n  <select>\n    <option>Pizza</option>\n    <option>Pasta</option>\n  </select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>"
-    }
+    },
+    "explanation": "입력 요소를 더 많이 조합합니다.\n\n모범 답안:\n<form>\n  <select>\n    <option>Pizza</option>\n    <option>Pasta</option>\n  </select>\n  <input type=\"number\" name=\"count\">\n  <button type=\"submit\">Order</button>\n</form>"
   },
   {
     "id": "html-10-1-mcq-1",
@@ -3101,7 +3231,8 @@
         "th 는 table 바깥에 쓴다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다."
   },
   {
     "id": "html-10-1-mcq-2",
@@ -3121,7 +3252,8 @@
         "표 아래 설명"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "th는 제목 칸입니다."
   },
   {
     "id": "html-10-1-mcq-3",
@@ -3141,7 +3273,8 @@
         "4행 1열 표"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다."
   },
   {
     "id": "html-10-1-parsons-1",
@@ -3166,7 +3299,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다.\n\n올바른 순서:\n1) <table>\n2)   <tr><th>Name</th><th>Age</th></tr>\n3)   <tr><td>Tom</td><td>12</td></tr>\n4) </table>"
   },
   {
     "id": "html-10-1-parsons-2",
@@ -3195,7 +3329,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다.\n\n올바른 순서:\n1) <table>\n2)   <tr>\n3)     <th>Name</th><th>Age</th>\n4)   </tr>\n5)   <tr><td>Tom</td><td>12</td></tr>\n6) </table>"
   },
   {
     "id": "html-10-1-parsons-3",
@@ -3226,7 +3361,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다.\n\n올바른 순서:\n1) <table>\n2)   <tr>\n3)     <th>Name</th>\n4)     <th>Age</th>\n5)   </tr>\n6)   <tr><td>Tom</td><td>12</td></tr>\n7) </table>"
   },
   {
     "id": "html-10-1-blank-1",
@@ -3250,7 +3386,8 @@
           "hint": "표를 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<table>\"예요. (표를 여는 태그) table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다."
   },
   {
     "id": "html-10-1-blank-2",
@@ -3274,7 +3411,8 @@
           "hint": "행(가로줄)을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<tr>\"예요. (행(가로줄)을 여는 태그) table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다."
   },
   {
     "id": "html-10-1-blank-3",
@@ -3298,7 +3436,8 @@
           "hint": "제목 칸을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<th>\"예요. (제목 칸을 여는 태그) table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다."
   },
   {
     "id": "html-10-1-code-1",
@@ -3335,7 +3474,8 @@
         }
       ],
       "solution": "<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>"
-    }
+    },
+    "explanation": "table 안에 행(tr)과 칸(td/th)을 넣어 표를 만듭니다. th는 제목 칸입니다.\n\n모범 답안:\n<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Tom</td><td>12</td></tr>\n</table>"
   },
   {
     "id": "html-10-2-mcq-1",
@@ -3355,7 +3495,8 @@
         "표의 한 행"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "caption은 표의 제목을 나타냅니다."
   },
   {
     "id": "html-10-2-mcq-2",
@@ -3375,7 +3516,8 @@
         "<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td></tr>\n</table>"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. caption은 표의 제목을 나타냅니다."
   },
   {
     "id": "html-10-2-mcq-3",
@@ -3395,7 +3537,8 @@
         "화면에 보이지 않는다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"표 위 가운데에 표 제목으로\"예요. caption은 표의 제목을 나타냅니다."
   },
   {
     "id": "html-10-2-parsons-1",
@@ -3420,7 +3563,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "caption은 표의 제목을 나타냅니다.\n\n올바른 순서:\n1) <table>\n2)   <caption>Scores</caption>\n3)   <tr><td>Tom</td><td>90</td></tr>\n4) </table>"
   },
   {
     "id": "html-10-2-parsons-2",
@@ -3449,7 +3593,8 @@
         2,
         5
       ]
-    }
+    },
+    "explanation": "caption은 표의 제목을 나타냅니다.\n\n올바른 순서:\n1) <table>\n2)   <caption>Scores</caption>\n3)   <tr>\n4)     <td>Tom</td><td>90</td>\n5)   </tr>\n6) </table>"
   },
   {
     "id": "html-10-2-parsons-3",
@@ -3480,7 +3625,8 @@
         6,
         5
       ]
-    }
+    },
+    "explanation": "caption은 표의 제목을 나타냅니다.\n\n올바른 순서:\n1) <table>\n2)   <caption>Scores</caption>\n3)   <tr>\n4)     <td>Tom</td>\n5)     <td>90</td>\n6)   </tr>\n7) </table>"
   },
   {
     "id": "html-10-2-blank-1",
@@ -3504,7 +3650,8 @@
           "hint": "표 제목을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<caption>\"예요. (표 제목을 여는 태그) caption은 표의 제목을 나타냅니다."
   },
   {
     "id": "html-10-2-short-2",
@@ -3522,7 +3669,8 @@
       "answer": [
         "Scores"
       ]
-    }
+    },
+    "explanation": "정답은 \"Scores\"예요. caption은 표의 제목을 나타냅니다."
   },
   {
     "id": "html-10-2-short-3",
@@ -3541,7 +3689,8 @@
         "caption",
         "<caption>"
       ]
-    }
+    },
+    "explanation": "정답은 \"caption\"예요. caption은 표의 제목을 나타냅니다."
   },
   {
     "id": "html-10-2-code-1",
@@ -3568,7 +3717,8 @@
         }
       ],
       "solution": "<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>"
-    }
+    },
+    "explanation": "caption은 표의 제목을 나타냅니다.\n\n모범 답안:\n<table>\n  <caption>Scores</caption>\n  <tr><td>Tom</td><td>90</td></tr>\n</table>"
   },
   {
     "id": "html-10-3-mcq-1",
@@ -3588,7 +3738,8 @@
         "둘 다 표의 제목을 만든다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "colspan은 가로, rowspan은 세로로 칸을 합칩니다."
   },
   {
     "id": "html-10-3-mcq-2",
@@ -3608,7 +3759,8 @@
         "<td colspan=\"2\">Total<td>"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"<td colspan=\"2\">Total</td>\"예요. colspan은 가로, rowspan은 세로로 칸을 합칩니다."
   },
   {
     "id": "html-10-3-mcq-3",
@@ -3628,7 +3780,8 @@
         "Total, A, B 가 한 줄에 세 칸으로 보인다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. colspan은 가로, rowspan은 세로로 칸을 합칩니다."
   },
   {
     "id": "html-10-3-parsons-1",
@@ -3653,7 +3806,8 @@
         3,
         1
       ]
-    }
+    },
+    "explanation": "colspan은 가로, rowspan은 세로로 칸을 합칩니다.\n\n올바른 순서:\n1) <table>\n2)   <tr><td colspan=\"2\">Total</td></tr>\n3)   <tr><td>A</td><td>B</td></tr>\n4) </table>"
   },
   {
     "id": "html-10-3-parsons-2",
@@ -3682,7 +3836,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "colspan은 가로, rowspan은 세로로 칸을 합칩니다.\n\n올바른 순서:\n1) <table>\n2)   <tr>\n3)     <td colspan=\"2\">Total</td>\n4)   </tr>\n5)   <tr><td>A</td><td>B</td></tr>\n6) </table>"
   },
   {
     "id": "html-10-3-parsons-3",
@@ -3715,7 +3870,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "colspan은 가로, rowspan은 세로로 칸을 합칩니다.\n\n올바른 순서:\n1) <table>\n2)   <tr>\n3)     <td\n4)  colspan=\"2\">\n5) Total</td>\n6)   </tr>\n7)   <tr><td>A</td><td>B</td></tr>\n8) </table>"
   },
   {
     "id": "html-10-3-blank-1",
@@ -3739,7 +3895,8 @@
           "hint": "가로로 칸을 합치는 속성과 =\""
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"colspan=\"\"예요. (가로로 칸을 합치는 속성과 =\") colspan은 가로, rowspan은 세로로 칸을 합칩니다."
   },
   {
     "id": "html-10-3-short-2",
@@ -3758,7 +3915,8 @@
         "1",
         "1개"
       ]
-    }
+    },
+    "explanation": "정답은 \"1\"예요. colspan은 가로, rowspan은 세로로 칸을 합칩니다."
   },
   {
     "id": "html-10-3-short-3",
@@ -3776,7 +3934,8 @@
       "answer": [
         "rowspan"
       ]
-    }
+    },
+    "explanation": "정답은 \"rowspan\"예요. colspan은 가로, rowspan은 세로로 칸을 합칩니다."
   },
   {
     "id": "html-10-3-code-1",
@@ -3803,7 +3962,8 @@
         }
       ],
       "solution": "<table>\n  <tr><td colspan=\"2\">Total</td></tr>\n  <tr><td>A</td><td>B</td></tr>\n</table>"
-    }
+    },
+    "explanation": "colspan은 가로, rowspan은 세로로 칸을 합칩니다.\n\n모범 답안:\n<table>\n  <tr><td colspan=\"2\">Total</td></tr>\n  <tr><td>A</td><td>B</td></tr>\n</table>"
   },
   {
     "id": "html-10-4-mcq-1",
@@ -3823,7 +3983,8 @@
         "caption - 표의 제목"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "표 요소를 종합합니다."
   },
   {
     "id": "html-10-4-mcq-2",
@@ -3843,7 +4004,8 @@
         "<table>\n  <caption>Menu<caption>\n  <tr><th>Food</th><th>Price</th></tr>\n</table>"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. 표 요소를 종합합니다."
   },
   {
     "id": "html-10-4-mcq-3",
@@ -3863,7 +4025,8 @@
         "모든 글자가 표 없이 한 줄로 보인다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 표 요소를 종합합니다."
   },
   {
     "id": "html-10-4-parsons-1",
@@ -3890,7 +4053,8 @@
         4,
         0
       ]
-    }
+    },
+    "explanation": "표 요소를 종합합니다.\n\n올바른 순서:\n1) <table>\n2)   <caption>Menu</caption>\n3)   <tr><th>Food</th><th>Price</th></tr>\n4)   <tr><td>Pizza</td><td>5000</td></tr>\n5) </table>"
   },
   {
     "id": "html-10-4-parsons-2",
@@ -3919,7 +4083,8 @@
         2,
         3
       ]
-    }
+    },
+    "explanation": "표 요소를 종합합니다.\n\n올바른 순서:\n1) <table>\n2)   <caption>Menu</caption>\n3)   <tr><th>Food</th><th>Price</th></tr>\n4)   <tr><td>Pizza</td><td>5000</td></tr>\n5)   <tr><td colspan=\"2\">Thanks</td></tr>\n6) </table>"
   },
   {
     "id": "html-10-4-parsons-3",
@@ -3952,7 +4117,8 @@
         3,
         7
       ]
-    }
+    },
+    "explanation": "표 요소를 종합합니다.\n\n올바른 순서:\n1) <table>\n2)   <caption>Menu</caption>\n3)   <tr>\n4)     <th>Food</th><th>Price</th>\n5)   </tr>\n6)   <tr><td>Pizza</td><td>5000</td></tr>\n7)   <tr><td colspan=\"2\">Thanks</td></tr>\n8) </table>"
   },
   {
     "id": "html-10-4-blank-1",
@@ -3976,7 +4142,8 @@
           "hint": "표 제목을 여는 태그"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<caption>\"예요. (표 제목을 여는 태그) 표 요소를 종합합니다."
   },
   {
     "id": "html-10-4-blank-2",
@@ -4000,7 +4167,8 @@
           "hint": "제목 칸 태그의 시작"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"<th\"예요. (제목 칸 태그의 시작) 표 요소를 종합합니다."
   },
   {
     "id": "html-10-4-blank-3",
@@ -4024,7 +4192,8 @@
           "hint": "가로로 칸을 합치는 속성과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"colspan=\"예요. (가로로 칸을 합치는 속성과 =) 표 요소를 종합합니다."
   },
   {
     "id": "html-10-4-code-1",
@@ -4061,6 +4230,7 @@
         }
       ],
       "solution": "<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td colspan=\"2\">Thanks</td></tr>\n</table>"
-    }
+    },
+    "explanation": "표 요소를 종합합니다.\n\n모범 답안:\n<table>\n  <caption>Menu</caption>\n  <tr><th>Food</th><th>Price</th></tr>\n  <tr><td>Pizza</td><td>5000</td></tr>\n  <tr><td colspan=\"2\">Thanks</td></tr>\n</table>"
   }
 ]

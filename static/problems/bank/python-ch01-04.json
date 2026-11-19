@@ -17,7 +17,8 @@
         "괄호 안의 값을 파일로 저장한다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "print() 함수는 괄호 안의 값을 화면에 출력합니다."
   },
   {
     "id": "py-1-1-mcq-2",
@@ -37,7 +38,8 @@
         "아무것도 감싸지 않는다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "문자열은 따옴표로 감쌉니다."
   },
   {
     "id": "py-1-1-mcq-3",
@@ -57,7 +59,8 @@
         "Hello, World!"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"Hello, World!\"예요. print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다."
   },
   {
     "id": "py-1-1-parsons-1",
@@ -80,7 +83,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다.\n\n올바른 순서:\n1) print(\n2) \"Hello, World!\"\n3) )"
   },
   {
     "id": "py-1-1-parsons-2",
@@ -105,7 +109,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다.\n\n올바른 순서:\n1) print\n2) (\n3) \"Hello, World!\"\n4) )"
   },
   {
     "id": "py-1-1-parsons-3",
@@ -132,7 +137,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다.\n\n올바른 순서:\n1) print\n2) (\n3) \"Hello, \n4) World!\"\n5) )"
   },
   {
     "id": "py-1-1-blank-1",
@@ -156,7 +162,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다."
   },
   {
     "id": "py-1-1-blank-2",
@@ -179,7 +186,8 @@
           "hint": "쉼표와 느낌표까지 정확히 써요"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"Hello, World!\"예요. (쉼표와 느낌표까지 정확히 써요) print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다."
   },
   {
     "id": "py-1-1-short-3",
@@ -196,7 +204,8 @@
       "answer": [
         "print"
       ]
-    }
+    },
+    "explanation": "정답은 \"print\"예요. print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다."
   },
   {
     "id": "py-1-1-code-1",
@@ -222,7 +231,8 @@
         }
       ],
       "solution": "print(\"Hello, World!\")"
-    }
+    },
+    "explanation": "print() 함수는 괄호 안의 값을 화면에 출력합니다. 문자열은 따옴표로 감쌉니다.\n\n모범 답안:\nprint(\"Hello, World!\")"
   },
   {
     "id": "py-1-2-mcq-1",
@@ -242,7 +252,8 @@
         "두 번 실행된다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "# 뒤의 내용은 실행되지 않는 주석입니다."
   },
   {
     "id": "py-1-2-mcq-2",
@@ -262,7 +273,8 @@
         "코드에 설명을 남기려고"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "코드 설명에 사용합니다."
   },
   {
     "id": "py-1-2-mcq-3",
@@ -282,7 +294,8 @@
         "아무것도 출력되지 않는다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"B\"예요. # 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다."
   },
   {
     "id": "py-1-2-parsons-1",
@@ -305,7 +318,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "# 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다.\n\n올바른 순서:\n1) # Hi를 출력해요\n2) print(\"Hi\")\n3) print(\"Bye\")"
   },
   {
     "id": "py-1-2-parsons-2",
@@ -330,7 +344,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "# 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다.\n\n올바른 순서:\n1) # Hi를 출력해요\n2) print(\"Hi\")\n3) # Bye를 출력해요\n4) print(\"Bye\")"
   },
   {
     "id": "py-1-2-parsons-3",
@@ -359,7 +374,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "# 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다.\n\n올바른 순서:\n1) # Hi를 출력해요\n2) print(\"Hi\")\n3) # Bye를 출력해요\n4) print(\"Bye\")\n5) # Ok를 출력해요\n6) print(\"Ok\")"
   },
   {
     "id": "py-1-2-blank-1",
@@ -382,7 +398,8 @@
           "hint": "주석을 시작하는 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"#\"예요. (주석을 시작하는 기호) # 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다."
   },
   {
     "id": "py-1-2-blank-2",
@@ -406,7 +423,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) # 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다."
   },
   {
     "id": "py-1-2-short-3",
@@ -423,7 +441,8 @@
       "answer": [
         "#"
       ]
-    }
+    },
+    "explanation": "정답은 \"#\"예요. # 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다."
   },
   {
     "id": "py-1-2-code-1",
@@ -446,10 +465,16 @@
           "pattern": "print\\s*\\(\\s*(\"Hi\"|'Hi')\\s*\\)",
           "message": "print(\"Hi\") 로 Hi 를 출력해요",
           "in": "source"
+        },
+        {
+          "pattern": "\\S",
+          "message": "# 로 주석을 한 줄 써요",
+          "in": "comment"
         }
       ],
       "solution": "# 인사를 출력합니다\nprint(\"Hi\")"
-    }
+    },
+    "explanation": "# 뒤의 내용은 실행되지 않는 주석입니다. 코드 설명에 사용합니다.\n\n모범 답안:\n# 인사를 출력합니다\nprint(\"Hi\")"
   },
   {
     "id": "py-2-1-mcq-1",
@@ -469,7 +494,8 @@
         "이름 : 값"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "변수는 이름 = 값 형태로 만듭니다."
   },
   {
     "id": "py-2-1-mcq-2",
@@ -489,7 +515,8 @@
         "age = \"스물다섯\""
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정수는 따옴표 없이 씁니다."
   },
   {
     "id": "py-2-1-mcq-3",
@@ -509,7 +536,8 @@
         "25"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"25\"예요. 변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다."
   },
   {
     "id": "py-2-1-parsons-1",
@@ -532,7 +560,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다.\n\n올바른 순서:\n1) age = 25\n2) print(age)\n3) print(100)"
   },
   {
     "id": "py-2-1-parsons-2",
@@ -557,7 +586,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다.\n\n올바른 순서:\n1) age = 25\n2) my_age = age\n3) print(my_age)\n4) print(100)"
   },
   {
     "id": "py-2-1-parsons-3",
@@ -584,7 +614,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다.\n\n올바른 순서:\n1) age = 25\n2) print(age)\n3) age = 26\n4) my_age = age\n5) print(my_age)"
   },
   {
     "id": "py-2-1-blank-1",
@@ -608,7 +639,8 @@
           "hint": "변수 이름 = 값 (따옴표 없이)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"age = 25\"예요. (변수 이름 = 값 (따옴표 없이)) 변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다."
   },
   {
     "id": "py-2-1-blank-2",
@@ -631,7 +663,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(age)\"예요. (print() 안에 변수 이름) 변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다."
   },
   {
     "id": "py-2-1-short-3",
@@ -648,7 +681,8 @@
       "answer": [
         "="
       ]
-    }
+    },
+    "explanation": "정답은 \"=\"예요. 변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다."
   },
   {
     "id": "py-2-1-code-1",
@@ -678,7 +712,8 @@
         }
       ],
       "solution": "age = 25\nprint(age)"
-    }
+    },
+    "explanation": "변수는 이름 = 값 형태로 만듭니다. 정수는 따옴표 없이 씁니다.\n\n모범 답안:\nage = 25\nprint(age)"
   },
   {
     "id": "py-2-2-mcq-1",
@@ -698,7 +733,8 @@
         "괄호 ( ) 로 감싼 값이다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다."
   },
   {
     "id": "py-2-2-mcq-2",
@@ -718,7 +754,8 @@
         "name = \"Coddy\""
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"name = \"Coddy\"\"예요. 문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다."
   },
   {
     "id": "py-2-2-mcq-3",
@@ -738,7 +775,8 @@
         "오류가 난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"name\"예요. 문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다."
   },
   {
     "id": "py-2-2-parsons-1",
@@ -761,7 +799,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다.\n\n올바른 순서:\n1) name = \"Coddy\"\n2) print(name)\n3) print(\"반가워요\")"
   },
   {
     "id": "py-2-2-parsons-2",
@@ -786,7 +825,8 @@
         3,
         1
       ]
-    }
+    },
+    "explanation": "문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다.\n\n올바른 순서:\n1) name = \"Coddy\"\n2) my_name = name\n3) print(my_name)\n4) print(\"반가워요\")"
   },
   {
     "id": "py-2-2-parsons-3",
@@ -815,7 +855,8 @@
         4,
         1
       ]
-    }
+    },
+    "explanation": "문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다.\n\n올바른 순서:\n1) name = \"Coddy\"\n2) print(name)\n3) name = \"Kim\"\n4) friend = name\n5) print(friend)\n6) print(\"반가워요\")"
   },
   {
     "id": "py-2-2-blank-1",
@@ -839,7 +880,8 @@
           "hint": "변수 이름과 = 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"name =\"예요. (변수 이름과 = 기호) 문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다."
   },
   {
     "id": "py-2-2-blank-2",
@@ -862,7 +904,8 @@
           "hint": "따옴표 없이 변수 이름을 넣어요"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(name)\"예요. (따옴표 없이 변수 이름을 넣어요) 문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다."
   },
   {
     "id": "py-2-2-short-3",
@@ -880,7 +923,8 @@
         "\"",
         "'"
       ]
-    }
+    },
+    "explanation": "정답은 \"\"\"예요. 문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다."
   },
   {
     "id": "py-2-2-code-1",
@@ -911,7 +955,8 @@
         }
       ],
       "solution": "name = \"Coddy\"\nprint(name)"
-    }
+    },
+    "explanation": "문자열은 큰따옴표나 작은따옴표로 감싼 글자 값입니다.\n\n모범 답안:\nname = \"Coddy\"\nprint(name)"
   },
   {
     "id": "py-2-3-mcq-1",
@@ -931,7 +976,8 @@
         "True 또는 False"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "불리언은 True 또는 False 두 값만 가집니다."
   },
   {
     "id": "py-2-3-mcq-2",
@@ -951,7 +997,8 @@
         "\"true\""
       ],
       "answer": 0
-    }
+    },
+    "explanation": "첫 글자는 대문자입니다."
   },
   {
     "id": "py-2-3-mcq-3",
@@ -971,7 +1018,8 @@
         "오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"False\"예요. 불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다."
   },
   {
     "id": "py-2-3-parsons-1",
@@ -994,7 +1042,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다.\n\n올바른 순서:\n1) is_ready = True\n2) print(is_ready)\n3) print(False)"
   },
   {
     "id": "py-2-3-parsons-2",
@@ -1019,7 +1068,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다.\n\n올바른 순서:\n1) is_ready = True\n2) is_open = is_ready\n3) print(is_open)\n4) print(False)"
   },
   {
     "id": "py-2-3-parsons-3",
@@ -1046,7 +1096,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다.\n\n올바른 순서:\n1) is_ready = True\n2) print(is_ready)\n3) is_ready = False\n4) result = is_ready\n5) print(result)"
   },
   {
     "id": "py-2-3-blank-1",
@@ -1070,7 +1121,8 @@
           "hint": "True 의 첫 글자는 대문자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"is_ready = True\"예요. (True 의 첫 글자는 대문자) 불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다."
   },
   {
     "id": "py-2-3-blank-2",
@@ -1093,7 +1145,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(is_ready)\"예요. (print() 안에 변수 이름) 불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다."
   },
   {
     "id": "py-2-3-short-3",
@@ -1110,7 +1163,8 @@
       "answer": [
         "False"
       ]
-    }
+    },
+    "explanation": "정답은 \"False\"예요. 불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다."
   },
   {
     "id": "py-2-3-code-1",
@@ -1140,7 +1194,8 @@
         }
       ],
       "solution": "is_ready = True\nprint(is_ready)"
-    }
+    },
+    "explanation": "불리언은 True 또는 False 두 값만 가집니다. 첫 글자는 대문자입니다.\n\n모범 답안:\nis_ready = True\nprint(is_ready)"
   },
   {
     "id": "py-2-4-mcq-1",
@@ -1160,7 +1215,8 @@
         "user-name"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다."
   },
   {
     "id": "py-2-4-mcq-2",
@@ -1180,7 +1236,8 @@
         "USERNAME"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "파이썬은 소문자와 밑줄(snake_case)을 권장합니다."
   },
   {
     "id": "py-2-4-mcq-3",
@@ -1200,7 +1257,8 @@
         "오류가 난다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"3\"예요. 변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다."
   },
   {
     "id": "py-2-4-parsons-1",
@@ -1223,7 +1281,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다.\n\n올바른 순서:\n1) first_name = \"kim\"\n2) user_name = first_name\n3) print(user_name)"
   },
   {
     "id": "py-2-4-parsons-2",
@@ -1248,7 +1307,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다.\n\n올바른 순서:\n1) first_name = \"kim\"\n2) user_name = first_name\n3) print(user_name)\n4) print(\"환영합니다\")"
   },
   {
     "id": "py-2-4-parsons-3",
@@ -1275,7 +1335,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다.\n\n올바른 순서:\n1) user_name = \"kim\"\n2) print(user_name)\n3) user_name = \"lee\"\n4) best_friend = user_name\n5) print(best_friend)"
   },
   {
     "id": "py-2-4-blank-1",
@@ -1299,7 +1360,8 @@
           "hint": "단어 사이를 밑줄로 이은 이름과 = 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"user_name =\"예요. (단어 사이를 밑줄로 이은 이름과 = 기호) 변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다."
   },
   {
     "id": "py-2-4-blank-2",
@@ -1322,7 +1384,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(user_name)\"예요. (print() 안에 변수 이름) 변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다."
   },
   {
     "id": "py-2-4-short-3",
@@ -1339,7 +1402,8 @@
       "answer": [
         "_"
       ]
-    }
+    },
+    "explanation": "정답은 \"_\"예요. 변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다."
   },
   {
     "id": "py-2-4-code-1",
@@ -1370,7 +1434,8 @@
         }
       ],
       "solution": "user_name = \"kim\"\nprint(user_name)"
-    }
+    },
+    "explanation": "변수 이름은 문자와 밑줄로 시작하고 공백을 쓸 수 없습니다. 파이썬은 소문자와 밑줄(snake_case)을 권장합니다.\n\n모범 답안:\nuser_name = \"kim\"\nprint(user_name)"
   },
   {
     "id": "py-2-5-mcq-1",
@@ -1390,7 +1455,8 @@
         "값이 없음을 나타내는 특별한 값"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "None은 \"값이 없음\"을 나타내는 특별한 값입니다."
   },
   {
     "id": "py-2-5-mcq-2",
@@ -1410,7 +1476,8 @@
         "None = result"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "나중에 값을 채울 변수에 씁니다."
   },
   {
     "id": "py-2-5-mcq-3",
@@ -1430,7 +1497,8 @@
         "오류가 난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"None\"예요. None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다."
   },
   {
     "id": "py-2-5-parsons-1",
@@ -1453,7 +1521,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다.\n\n올바른 순서:\n1) result = None\n2) print(result)\n3) print(\"아직 값이 없어요\")"
   },
   {
     "id": "py-2-5-parsons-2",
@@ -1480,7 +1549,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다.\n\n올바른 순서:\n1) result = None\n2) print(result)\n3) result = 10\n4) score = result\n5) print(score)"
   },
   {
     "id": "py-2-5-parsons-3",
@@ -1509,7 +1579,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다.\n\n올바른 순서:\n1) result = None\n2) print(result)\n3) result = 10\n4) score = result\n5) print(score)\n6) print(\"끝\")"
   },
   {
     "id": "py-2-5-blank-1",
@@ -1533,7 +1604,8 @@
           "hint": "값이 없음을 뜻하는 None (첫 글자 대문자)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"result = None\"예요. (값이 없음을 뜻하는 None (첫 글자 대문자)) None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다."
   },
   {
     "id": "py-2-5-blank-2",
@@ -1556,7 +1628,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(result)\"예요. (print() 안에 변수 이름) None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다."
   },
   {
     "id": "py-2-5-short-3",
@@ -1573,7 +1646,8 @@
       "answer": [
         "None"
       ]
-    }
+    },
+    "explanation": "정답은 \"None\"예요. None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다."
   },
   {
     "id": "py-2-5-code-1",
@@ -1603,7 +1677,8 @@
         }
       ],
       "solution": "result = None\nprint(result)"
-    }
+    },
+    "explanation": "None은 \"값이 없음\"을 나타내는 특별한 값입니다. 나중에 값을 채울 변수에 씁니다.\n\n모범 답안:\nresult = None\nprint(result)"
   },
   {
     "id": "py-2-6-mcq-1",
@@ -1623,7 +1698,8 @@
         "변수는 만든 뒤 값을 바꿀 수 없다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다."
   },
   {
     "id": "py-2-6-mcq-2",
@@ -1643,7 +1719,8 @@
         "score = 90"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"score = 90\"예요. 여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다."
   },
   {
     "id": "py-2-6-mcq-3",
@@ -1663,7 +1740,8 @@
         "오류가 난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"20\"예요. 여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다."
   },
   {
     "id": "py-2-6-parsons-1",
@@ -1688,7 +1766,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다.\n\n올바른 순서:\n1) x = 10\n2) y = x\n3) z = y\n4) print(z)"
   },
   {
     "id": "py-2-6-parsons-2",
@@ -1715,7 +1794,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다.\n\n올바른 순서:\n1) x = 10\n2) print(x)\n3) x = 20\n4) y = x\n5) print(y)"
   },
   {
     "id": "py-2-6-parsons-3",
@@ -1744,7 +1824,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다.\n\n올바른 순서:\n1) x = 10\n2) y = x\n3) x = 20\n4) print(x)\n5) print(y)\n6) print(\"끝\")"
   },
   {
     "id": "py-2-6-blank-1",
@@ -1768,7 +1849,8 @@
           "hint": "변수 이름 = 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"x = 10\"예요. (변수 이름 = 값) 여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다."
   },
   {
     "id": "py-2-6-blank-2",
@@ -1792,7 +1874,8 @@
           "hint": "변수 이름 = 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"y = 20\"예요. (변수 이름 = 값) 여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다."
   },
   {
     "id": "py-2-6-blank-3",
@@ -1815,7 +1898,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(x)\"예요. (print() 안에 변수 이름) 여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다."
   },
   {
     "id": "py-2-6-code-1",
@@ -1850,7 +1934,8 @@
         }
       ],
       "solution": "x = 10\ny = 20\nprint(x)\nprint(y)"
-    }
+    },
+    "explanation": "여러 변수를 만들고 값을 사용해 보며 변수 사용을 복습합니다.\n\n모범 답안:\nx = 10\ny = 20\nprint(x)\nprint(y)"
   },
   {
     "id": "py-3-1-mcq-1",
@@ -1870,7 +1955,8 @@
         "* : 곱하기"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "+, -, *, / 로 사칙연산을 합니다."
   },
   {
     "id": "py-3-1-mcq-2",
@@ -1890,7 +1976,8 @@
         "// 는 거듭제곱, ** 는 나눗셈의 몫"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "// 는 몫, ** 는 거듭제곱입니다."
   },
   {
     "id": "py-3-1-mcq-3",
@@ -1910,7 +1997,8 @@
         "14"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"3\"예요. +, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다."
   },
   {
     "id": "py-3-1-parsons-1",
@@ -1933,7 +2021,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "+, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다.\n\n올바른 순서:\n1) print(\n2) 7 + 3\n3) )"
   },
   {
     "id": "py-3-1-parsons-2",
@@ -1958,7 +2047,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "+, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다.\n\n올바른 순서:\n1) print(\n2) 6\n3)  * 2\n4) )"
   },
   {
     "id": "py-3-1-parsons-3",
@@ -1985,7 +2075,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "+, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다.\n\n올바른 순서:\n1) print(\n2) 10\n3)  - \n4) 4\n5) )"
   },
   {
     "id": "py-3-1-blank-1",
@@ -2009,7 +2100,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) +, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다."
   },
   {
     "id": "py-3-1-blank-2",
@@ -2032,7 +2124,8 @@
           "hint": "더하기 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"+\"예요. (더하기 기호) +, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다."
   },
   {
     "id": "py-3-1-short-3",
@@ -2049,7 +2142,8 @@
       "answer": [
         "**"
       ]
-    }
+    },
+    "explanation": "정답은 \"**\"예요. +, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다."
   },
   {
     "id": "py-3-1-code-1",
@@ -2078,7 +2172,8 @@
         }
       ],
       "solution": "print(7 + 3)"
-    }
+    },
+    "explanation": "+, -, *, / 로 사칙연산을 합니다. // 는 몫, ** 는 거듭제곱입니다.\n\n모범 답안:\nprint(7 + 3)"
   },
   {
     "id": "py-3-2-mcq-1",
@@ -2098,7 +2193,8 @@
         "거듭제곱"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "% 연산자는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "py-3-2-mcq-2",
@@ -2118,7 +2214,8 @@
         "print(10 % 3)"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"print(10 % 3)\"예요. % 연산자는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "py-3-2-mcq-3",
@@ -2138,7 +2235,8 @@
         "56"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"2\"예요. % 연산자는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "py-3-2-parsons-1",
@@ -2161,7 +2259,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "% 연산자는 나눗셈의 나머지를 구합니다.\n\n올바른 순서:\n1) print(\n2) 10 % 3\n3) )"
   },
   {
     "id": "py-3-2-parsons-2",
@@ -2186,7 +2285,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "% 연산자는 나눗셈의 나머지를 구합니다.\n\n올바른 순서:\n1) print(\n2) 10\n3)  % 3\n4) )"
   },
   {
     "id": "py-3-2-parsons-3",
@@ -2213,7 +2313,8 @@
         1,
         3
       ]
-    }
+    },
+    "explanation": "% 연산자는 나눗셈의 나머지를 구합니다.\n\n올바른 순서:\n1) print(\n2) 10\n3)  % \n4) 3\n5) )"
   },
   {
     "id": "py-3-2-blank-1",
@@ -2236,7 +2337,8 @@
           "hint": "나머지를 구하는 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"%\"예요. (나머지를 구하는 기호) % 연산자는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "py-3-2-blank-2",
@@ -2260,7 +2362,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) % 연산자는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "py-3-2-short-3",
@@ -2277,7 +2380,8 @@
       "answer": [
         "%"
       ]
-    }
+    },
+    "explanation": "정답은 \"%\"예요. % 연산자는 나눗셈의 나머지를 구합니다."
   },
   {
     "id": "py-3-2-code-1",
@@ -2306,7 +2410,8 @@
         }
       ],
       "solution": "print(17 % 5)"
-    }
+    },
+    "explanation": "% 연산자는 나눗셈의 나머지를 구합니다.\n\n모범 답안:\nprint(17 % 5)"
   },
   {
     "id": "py-3-3-mcq-1",
@@ -2326,7 +2431,8 @@
         "x 에서 3 을 뺀다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "+=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다."
   },
   {
     "id": "py-3-3-mcq-2",
@@ -2346,7 +2452,8 @@
         "10 += score"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"score += 10\"예요. +=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다."
   },
   {
     "id": "py-3-3-mcq-3",
@@ -2366,7 +2473,8 @@
         "14"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"14\"예요. +=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다."
   },
   {
     "id": "py-3-3-parsons-1",
@@ -2389,7 +2497,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "+=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다.\n\n올바른 순서:\n1) count = 0\n2) count += 5\n3) print(count)"
   },
   {
     "id": "py-3-3-parsons-2",
@@ -2414,7 +2523,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "+=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다.\n\n올바른 순서:\n1) count = 0\n2) count += 5\n3) count *= 2\n4) print(count)"
   },
   {
     "id": "py-3-3-parsons-3",
@@ -2441,7 +2551,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "+=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다.\n\n올바른 순서:\n1) count = 0\n2) count += 5\n3) count *= 3\n4) count -= 4\n5) print(count)"
   },
   {
     "id": "py-3-3-blank-1",
@@ -2465,7 +2576,8 @@
           "hint": "변수 이름 = 처음 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"count = 0\"예요. (변수 이름 = 처음 값) +=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다."
   },
   {
     "id": "py-3-3-blank-2",
@@ -2488,7 +2600,8 @@
           "hint": "더하고 저장하는 기호 두 개"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"+=\"예요. (더하고 저장하는 기호 두 개) +=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다."
   },
   {
     "id": "py-3-3-blank-3",
@@ -2511,7 +2624,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(count)\"예요. (print() 안에 변수 이름) +=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다."
   },
   {
     "id": "py-3-3-code-1",
@@ -2545,7 +2659,8 @@
         }
       ],
       "solution": "count = 0\ncount += 5\nprint(count)"
-    }
+    },
+    "explanation": "+=, -=, *= 는 계산 후 같은 변수에 다시 저장하는 줄임 표현입니다.\n\n모범 답안:\ncount = 0\ncount += 5\nprint(count)"
   },
   {
     "id": "py-3-4-mcq-1",
@@ -2565,7 +2680,8 @@
         "계산할 수 없어서 오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "py-3-4-mcq-2",
@@ -2585,7 +2701,8 @@
         "print(2 * 3 + 4)"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"print((2 + 3) * 4)\"예요. 연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "py-3-4-mcq-3",
@@ -2605,7 +2722,8 @@
         "2"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"2\"예요. 연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "py-3-4-parsons-1",
@@ -2630,7 +2748,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다.\n\n올바른 순서:\n1) a = 8\n2) b = a - 5\n3) result = a * b - 4\n4) print(result)"
   },
   {
     "id": "py-3-4-parsons-2",
@@ -2657,7 +2776,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다.\n\n올바른 순서:\n1) a = 8\n2) b = a - 5\n3) result = a * b\n4) result -= 4\n5) print(result)"
   },
   {
     "id": "py-3-4-parsons-3",
@@ -2686,7 +2806,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다.\n\n올바른 순서:\n1) a = 8\n2) b = a - 5\n3) result = a * b\n4) result -= 4\n5) print(result)\n6) print(result // b)"
   },
   {
     "id": "py-3-4-blank-1",
@@ -2710,7 +2831,8 @@
           "hint": "결과를 담을 변수 이름과 = 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"result =\"예요. (결과를 담을 변수 이름과 = 기호) 연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "py-3-4-blank-2",
@@ -2733,7 +2855,8 @@
           "hint": "곱하기 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"*\"예요. (곱하기 기호) 연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "py-3-4-blank-3",
@@ -2756,7 +2879,8 @@
           "hint": "print() 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(result)\"예요. (print() 안에 변수 이름) 연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다."
   },
   {
     "id": "py-3-4-code-1",
@@ -2796,7 +2920,8 @@
         }
       ],
       "solution": "a = 8\nb = 3\nresult = a * b - 4\nprint(result)"
-    }
+    },
+    "explanation": "연산자 우선순위: 곱셈과 나눗셈이 덧셈과 뺄셈보다 먼저 계산됩니다.\n\n모범 답안:\na = 8\nb = 3\nresult = a * b - 4\nprint(result)"
   },
   {
     "id": "py-3-5-mcq-1",
@@ -2816,7 +2941,8 @@
         "항상 문자열"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다."
   },
   {
     "id": "py-3-5-mcq-2",
@@ -2836,7 +2962,8 @@
         "print(x =! 5)"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"print(x == 5)\"예요. ==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다."
   },
   {
     "id": "py-3-5-mcq-3",
@@ -2856,7 +2983,8 @@
         "False"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"False\"예요. ==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다."
   },
   {
     "id": "py-3-5-parsons-1",
@@ -2879,7 +3007,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다.\n\n올바른 순서:\n1) print(\n2) 8 >= 3\n3) )"
   },
   {
     "id": "py-3-5-parsons-2",
@@ -2904,7 +3033,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다.\n\n올바른 순서:\n1) print(\n2) 8\n3)  >= 3\n4) )"
   },
   {
     "id": "py-3-5-parsons-3",
@@ -2931,7 +3061,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다.\n\n올바른 순서:\n1) print(\n2) 8\n3)  >= \n4) 3\n5) )"
   },
   {
     "id": "py-3-5-blank-1",
@@ -2955,7 +3086,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) ==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다."
   },
   {
     "id": "py-3-5-blank-2",
@@ -2978,7 +3110,8 @@
           "hint": "'크다'를 뜻하는 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \">\"예요. ('크다'를 뜻하는 기호) ==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다."
   },
   {
     "id": "py-3-5-short-3",
@@ -2995,7 +3128,8 @@
       "answer": [
         "=="
       ]
-    }
+    },
+    "explanation": "정답은 \"==\"예요. ==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다."
   },
   {
     "id": "py-3-5-code-1",
@@ -3024,7 +3158,8 @@
         }
       ],
       "solution": "print(10 > 5)"
-    }
+    },
+    "explanation": "==, !=, <, >, <=, >= 는 비교 후 True 또는 False를 만듭니다.\n\n모범 답안:\nprint(10 > 5)"
   },
   {
     "id": "py-4-1-mcq-1",
@@ -3044,7 +3179,8 @@
         "항상 True 이다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "and 는 양쪽이 모두 True일 때만 True입니다."
   },
   {
     "id": "py-4-1-mcq-2",
@@ -3064,7 +3200,8 @@
         "print(and a b)"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"print(a and b)\"예요. and 는 양쪽이 모두 True일 때만 True입니다."
   },
   {
     "id": "py-4-1-mcq-3",
@@ -3084,7 +3221,8 @@
         "오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"False\"예요. and 는 양쪽이 모두 True일 때만 True입니다."
   },
   {
     "id": "py-4-1-parsons-1",
@@ -3107,7 +3245,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "and 는 양쪽이 모두 True일 때만 True입니다.\n\n올바른 순서:\n1) print(\n2) True and False\n3) )"
   },
   {
     "id": "py-4-1-parsons-2",
@@ -3132,7 +3271,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "and 는 양쪽이 모두 True일 때만 True입니다.\n\n올바른 순서:\n1) print(\n2) True and \n3) False\n4) )"
   },
   {
     "id": "py-4-1-parsons-3",
@@ -3159,7 +3299,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "and 는 양쪽이 모두 True일 때만 True입니다.\n\n올바른 순서:\n1) print(\n2) True \n3) and \n4) False\n5) )"
   },
   {
     "id": "py-4-1-blank-1",
@@ -3182,7 +3323,8 @@
           "hint": "'그리고'를 뜻하는 영어 단어"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"and\"예요. ('그리고'를 뜻하는 영어 단어) and 는 양쪽이 모두 True일 때만 True입니다."
   },
   {
     "id": "py-4-1-blank-2",
@@ -3206,7 +3348,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) and 는 양쪽이 모두 True일 때만 True입니다."
   },
   {
     "id": "py-4-1-short-3",
@@ -3223,7 +3366,8 @@
       "answer": [
         "and"
       ]
-    }
+    },
+    "explanation": "정답은 \"and\"예요. and 는 양쪽이 모두 True일 때만 True입니다."
   },
   {
     "id": "py-4-1-code-1",
@@ -3252,7 +3396,8 @@
         }
       ],
       "solution": "print(True and False)"
-    }
+    },
+    "explanation": "and 는 양쪽이 모두 True일 때만 True입니다.\n\n모범 답안:\nprint(True and False)"
   },
   {
     "id": "py-4-2-mcq-1",
@@ -3272,7 +3417,8 @@
         "양쪽이 모두 False 일 때"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "or 는 둘 중 하나라도 True이면 True입니다."
   },
   {
     "id": "py-4-2-mcq-2",
@@ -3292,7 +3438,8 @@
         "print(a or)"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"print(a or b)\"예요. or 는 둘 중 하나라도 True이면 True입니다."
   },
   {
     "id": "py-4-2-mcq-3",
@@ -3312,7 +3459,8 @@
         "오류가 난다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"False\"예요. or 는 둘 중 하나라도 True이면 True입니다."
   },
   {
     "id": "py-4-2-parsons-1",
@@ -3335,7 +3483,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "or 는 둘 중 하나라도 True이면 True입니다.\n\n올바른 순서:\n1) print(\n2) False or True\n3) )"
   },
   {
     "id": "py-4-2-parsons-2",
@@ -3360,7 +3509,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "or 는 둘 중 하나라도 True이면 True입니다.\n\n올바른 순서:\n1) print(\n2) False or \n3) True\n4) )"
   },
   {
     "id": "py-4-2-parsons-3",
@@ -3387,7 +3537,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "or 는 둘 중 하나라도 True이면 True입니다.\n\n올바른 순서:\n1) print(\n2) False \n3) or \n4) True\n5) )"
   },
   {
     "id": "py-4-2-blank-1",
@@ -3410,7 +3561,8 @@
           "hint": "'또는'을 뜻하는 영어 단어"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"or\"예요. ('또는'을 뜻하는 영어 단어) or 는 둘 중 하나라도 True이면 True입니다."
   },
   {
     "id": "py-4-2-blank-2",
@@ -3434,7 +3586,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) or 는 둘 중 하나라도 True이면 True입니다."
   },
   {
     "id": "py-4-2-short-3",
@@ -3451,7 +3604,8 @@
       "answer": [
         "or"
       ]
-    }
+    },
+    "explanation": "정답은 \"or\"예요. or 는 둘 중 하나라도 True이면 True입니다."
   },
   {
     "id": "py-4-2-code-1",
@@ -3480,7 +3634,8 @@
         }
       ],
       "solution": "print(True or False)"
-    }
+    },
+    "explanation": "or 는 둘 중 하나라도 True이면 True입니다.\n\n모범 답안:\nprint(True or False)"
   },
   {
     "id": "py-4-3-mcq-1",
@@ -3500,7 +3655,8 @@
         "\"age >= 13\""
       ],
       "answer": 1
-    }
+    },
+    "explanation": "비교 연산과 논리 연산을 함께 써서 조건을 만듭니다."
   },
   {
     "id": "py-4-3-mcq-2",
@@ -3520,7 +3676,8 @@
         "print(score >= 60 and score <= 100)"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"print(score >= 60 and score <= 100)\"예요. 비교 연산과 논리 연산을 함께 써서 조건을 만듭니다."
   },
   {
     "id": "py-4-3-mcq-3",
@@ -3540,7 +3697,8 @@
         "오류가 난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"False\"예요. 비교 연산과 논리 연산을 함께 써서 조건을 만듭니다."
   },
   {
     "id": "py-4-3-parsons-1",
@@ -3563,7 +3721,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "비교 연산과 논리 연산을 함께 써서 조건을 만듭니다.\n\n올바른 순서:\n1) age = 20\n2) is_adult = age >= 18\n3) print(is_adult and age < 30)"
   },
   {
     "id": "py-4-3-parsons-2",
@@ -3588,7 +3747,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "비교 연산과 논리 연산을 함께 써서 조건을 만듭니다.\n\n올바른 순서:\n1) age = 20\n2) ok = age >= 18 and age < 30\n3) print(ok)\n4) print(age < 18 or age > 60)"
   },
   {
     "id": "py-4-3-parsons-3",
@@ -3615,7 +3775,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "비교 연산과 논리 연산을 함께 써서 조건을 만듭니다.\n\n올바른 순서:\n1) age = 20\n2) print(age >= 18 and age < 30)\n3) age = 35\n4) ok = age >= 18 and age < 30\n5) print(ok)"
   },
   {
     "id": "py-4-3-blank-1",
@@ -3639,7 +3800,8 @@
           "hint": "변수 이름 = 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"age = 20\"예요. (변수 이름 = 값) 비교 연산과 논리 연산을 함께 써서 조건을 만듭니다."
   },
   {
     "id": "py-4-3-blank-2",
@@ -3662,7 +3824,8 @@
           "hint": "두 조건이 모두 맞아야 해요"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"and\"예요. (두 조건이 모두 맞아야 해요) 비교 연산과 논리 연산을 함께 써서 조건을 만듭니다."
   },
   {
     "id": "py-4-3-blank-3",
@@ -3686,7 +3849,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) 비교 연산과 논리 연산을 함께 써서 조건을 만듭니다."
   },
   {
     "id": "py-4-3-code-1",
@@ -3724,7 +3888,8 @@
         }
       ],
       "solution": "age = 20\nprint(age >= 18 and age < 30)"
-    }
+    },
+    "explanation": "비교 연산과 논리 연산을 함께 써서 조건을 만듭니다.\n\n모범 답안:\nage = 20\nprint(age >= 18 and age < 30)"
   },
   {
     "id": "py-4-4-mcq-1",
@@ -3744,7 +3909,8 @@
         "값을 지운다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "not 은 불리언 값을 반대로 뒤집습니다."
   },
   {
     "id": "py-4-4-mcq-2",
@@ -3764,7 +3930,8 @@
         "print(not is_open)"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"print(not is_open)\"예요. not 은 불리언 값을 반대로 뒤집습니다."
   },
   {
     "id": "py-4-4-mcq-3",
@@ -3784,7 +3951,8 @@
         "오류가 난다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"True\"예요. not 은 불리언 값을 반대로 뒤집습니다."
   },
   {
     "id": "py-4-4-parsons-1",
@@ -3807,7 +3975,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "not 은 불리언 값을 반대로 뒤집습니다.\n\n올바른 순서:\n1) print(\n2) not False\n3) )"
   },
   {
     "id": "py-4-4-parsons-2",
@@ -3832,7 +4001,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "not 은 불리언 값을 반대로 뒤집습니다.\n\n올바른 순서:\n1) print(\n2) not \n3) False\n4) )"
   },
   {
     "id": "py-4-4-parsons-3",
@@ -3859,7 +4029,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "not 은 불리언 값을 반대로 뒤집습니다.\n\n올바른 순서:\n1) is_open = True\n2) print(not is_open)\n3) is_open = False\n4) result = not is_open\n5) print(result)"
   },
   {
     "id": "py-4-4-blank-1",
@@ -3882,7 +4053,8 @@
           "hint": "반대로 뒤집는 영어 단어"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"not\"예요. (반대로 뒤집는 영어 단어) not 은 불리언 값을 반대로 뒤집습니다."
   },
   {
     "id": "py-4-4-blank-2",
@@ -3906,7 +4078,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) not 은 불리언 값을 반대로 뒤집습니다."
   },
   {
     "id": "py-4-4-short-3",
@@ -3923,7 +4096,8 @@
       "answer": [
         "not"
       ]
-    }
+    },
+    "explanation": "정답은 \"not\"예요. not 은 불리언 값을 반대로 뒤집습니다."
   },
   {
     "id": "py-4-4-code-1",
@@ -3952,7 +4126,8 @@
         }
       ],
       "solution": "print(not True)"
-    }
+    },
+    "explanation": "not 은 불리언 값을 반대로 뒤집습니다.\n\n모범 답안:\nprint(not True)"
   },
   {
     "id": "py-4-5-mcq-1",
@@ -3972,7 +4147,8 @@
         "왼쪽에 있는 것부터"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "not이 and, or보다 먼저 계산됩니다."
   },
   {
     "id": "py-4-5-mcq-2",
@@ -3992,7 +4168,8 @@
         "아무 역할도 하지 않는다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "괄호로 순서를 분명히 할 수 있습니다."
   },
   {
     "id": "py-4-5-mcq-3",
@@ -4012,7 +4189,8 @@
         "False"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"False\"예요. not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다."
   },
   {
     "id": "py-4-5-parsons-1",
@@ -4035,7 +4213,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다.\n\n올바른 순서:\n1) a = True\n2) b = not a\n3) print(not a or b)"
   },
   {
     "id": "py-4-5-parsons-2",
@@ -4060,7 +4239,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다.\n\n올바른 순서:\n1) a = True\n2) b = not a\n3) print(not a or b)\n4) print(not (a and b))"
   },
   {
     "id": "py-4-5-parsons-3",
@@ -4087,7 +4267,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다.\n\n올바른 순서:\n1) a = True\n2) b = not a\n3) c = not a or b\n4) print(c)\n5) print(not (a and b))"
   },
   {
     "id": "py-4-5-blank-1",
@@ -4110,7 +4291,8 @@
           "hint": "값을 반대로 뒤집는 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"not\"예요. (값을 반대로 뒤집는 연산자) not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다."
   },
   {
     "id": "py-4-5-blank-2",
@@ -4133,7 +4315,8 @@
           "hint": "둘 중 하나만 True 여도 True"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"or\"예요. (둘 중 하나만 True 여도 True) not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다."
   },
   {
     "id": "py-4-5-blank-3",
@@ -4157,7 +4340,8 @@
           "hint": "출력 함수 이름과 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수 이름과 여는 괄호) not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다."
   },
   {
     "id": "py-4-5-code-1",
@@ -4196,6 +4380,7 @@
         }
       ],
       "solution": "a = True\nb = False\nprint(not a or b)"
-    }
+    },
+    "explanation": "not이 and, or보다 먼저 계산됩니다. 괄호로 순서를 분명히 할 수 있습니다.\n\n모범 답안:\na = True\nb = False\nprint(not a or b)"
   }
 ]

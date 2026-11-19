@@ -28,6 +28,7 @@ type ShortProblem = {
   description?: string
   language?: string
   caseSensitive?: boolean
+  explanation?: string
   content: {
     code: string
     answer: string[]
@@ -47,10 +48,14 @@ export function toQuestion(p: ShortProblem) {
     reward: p.reward,
     language: p.language,
     level: levelOf(p),
+    difficulty: p.difficulty,
     lessonId: p.lessonId,
     content,
   }
 }
+
+// 해설이 없는 문제는 정답으로 대신한다
+const explanationOf = (p: ShortProblem) => p.explanation ?? `정답은 "${p.content.answer[0]}"예요.`
 
 export const short = new Hono<AuthEnv>()
 
@@ -111,11 +116,16 @@ short.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
     // 프론트는 answer 를 문자열 하나로 보여 준다. 인정되는 답 전체는 answers 로
     return c.json(
-      { isAnswer, answer: problem.content.answer[0], answers: problem.content.answer },
+      {
+        isAnswer,
+        answer: problem.content.answer[0],
+        answers: problem.content.answer,
+        explanation: explanationOf(problem),
+      },
       200,
     )
   }

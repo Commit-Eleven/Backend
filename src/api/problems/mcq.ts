@@ -26,6 +26,7 @@ type McqProblem = {
   lessonId?: string
   description?: string
   language?: string
+  explanation?: string
   content: {
     choices: string[]
     answer: number
@@ -45,10 +46,15 @@ export function toQuestion(p: McqProblem) {
     reward: p.reward,
     language: p.language,
     level: levelOf(p),
+    difficulty: p.difficulty,
     lessonId: p.lessonId,
     content: { choices: p.content.choices },
   }
 }
+
+// 해설이 없는 문제는 정답 보기로 대신한다
+const explanationOf = (p: McqProblem) =>
+  p.explanation ?? `정답은 "${p.content.choices[p.content.answer]}"예요.`
 
 export const mcq = new Hono<AuthEnv>()
 
@@ -104,9 +110,17 @@ mcq.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
     const { answer: correct, choices } = problem.content
-    return c.json({ isAnswer, answer: correct, answerText: choices[correct] }, 200)
+    return c.json(
+      {
+        isAnswer,
+        answer: correct,
+        answerText: choices[correct],
+        explanation: explanationOf(problem),
+      },
+      200,
+    )
   }
 })

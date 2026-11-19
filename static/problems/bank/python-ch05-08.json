@@ -17,7 +17,8 @@
         "프로그램이 끝날 때 한 번 실행된다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다."
   },
   {
     "id": "py-5-1-mcq-2",
@@ -37,7 +38,8 @@
         "If x > 10:\n    print(\"big\")"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다."
   },
   {
     "id": "py-5-1-mcq-3",
@@ -57,7 +59,8 @@
         "아무것도 출력되지 않는다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"B\"예요. if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다."
   },
   {
     "id": "py-5-1-parsons-1",
@@ -80,7 +83,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다.\n\n올바른 순서:\n1) score = 95\n2) if score >= 90:\n3)     print(\"Great\")"
   },
   {
     "id": "py-5-1-parsons-2",
@@ -105,7 +109,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다.\n\n올바른 순서:\n1) score = 95\n2) if score >= 90:\n3)     print(\"Great\")\n4) print(\"Done\")"
   },
   {
     "id": "py-5-1-parsons-3",
@@ -134,7 +139,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다.\n\n올바른 순서:\n1) score = 95\n2) if score >= 90:\n3)     print(\"Great\")\n4)     print(\"You passed\")\n5) print(\"Score:\")\n6) print(score)"
   },
   {
     "id": "py-5-1-blank-1",
@@ -157,7 +163,8 @@
           "hint": "조건을 검사하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"if\"예요. (조건을 검사하는 키워드) if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다."
   },
   {
     "id": "py-5-1-blank-2",
@@ -180,7 +187,8 @@
           "hint": "조건 줄 끝에 붙는 기호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \":\"예요. (조건 줄 끝에 붙는 기호) if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다."
   },
   {
     "id": "py-5-1-blank-3",
@@ -203,7 +211,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다."
   },
   {
     "id": "py-5-1-code-1",
@@ -229,7 +238,8 @@
         }
       ],
       "solution": "score = 95\nif score >= 90:\n    print(\"Great\")"
-    }
+    },
+    "explanation": "if 조건: 뒤에 들여쓴 코드는 조건이 True일 때만 실행됩니다.\n\n모범 답안:\nscore = 95\nif score >= 90:\n    print(\"Great\")"
   },
   {
     "id": "py-5-2-mcq-1",
@@ -249,7 +259,8 @@
         "if 아래 코드가 실행된 바로 다음에"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "else 는 if 조건이 False일 때 실행할 코드를 정합니다."
   },
   {
     "id": "py-5-2-mcq-2",
@@ -269,7 +280,8 @@
         "if n > 0:\n    print(\"plus\")\nelse:\n    print(\"minus\")"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. else 는 if 조건이 False일 때 실행할 코드를 정합니다."
   },
   {
     "id": "py-5-2-mcq-3",
@@ -289,7 +301,8 @@
         "오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"odd\"예요. else 는 if 조건이 False일 때 실행할 코드를 정합니다."
   },
   {
     "id": "py-5-2-parsons-1",
@@ -316,7 +329,8 @@
         2,
         4
       ]
-    }
+    },
+    "explanation": "else 는 if 조건이 False일 때 실행할 코드를 정합니다.\n\n올바른 순서:\n1) age = 12\n2) if age >= 13:\n3)     print(\"Teen\")\n4) else:\n5)     print(\"Child\")"
   },
   {
     "id": "py-5-2-parsons-2",
@@ -345,7 +359,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "else 는 if 조건이 False일 때 실행할 코드를 정합니다.\n\n올바른 순서:\n1) age = 12\n2) if age >= 13:\n3)     print(\"Teen\")\n4) else:\n5)     print(\"Child\")\n6) print(\"Bye\")"
   },
   {
     "id": "py-5-2-parsons-3",
@@ -376,7 +391,8 @@
         2,
         3
       ]
-    }
+    },
+    "explanation": "else 는 if 조건이 False일 때 실행할 코드를 정합니다.\n\n올바른 순서:\n1) age = 12\n2) age += 2\n3) if age >= 13:\n4)     print(\"Teen\")\n5) else:\n6)     print(\"Child\")\n7) print(age)"
   },
   {
     "id": "py-5-2-blank-1",
@@ -399,7 +415,8 @@
           "hint": "조건을 검사하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"if\"예요. (조건을 검사하는 키워드) else 는 if 조건이 False일 때 실행할 코드를 정합니다."
   },
   {
     "id": "py-5-2-blank-2",
@@ -422,7 +439,8 @@
           "hint": "조건이 False일 때를 뜻하는 키워드와 콜론"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"else:\"예요. (조건이 False일 때를 뜻하는 키워드와 콜론) else 는 if 조건이 False일 때 실행할 코드를 정합니다."
   },
   {
     "id": "py-5-2-blank-3",
@@ -445,7 +463,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) else 는 if 조건이 False일 때 실행할 코드를 정합니다."
   },
   {
     "id": "py-5-2-code-1",
@@ -480,7 +499,8 @@
         }
       ],
       "solution": "n = 7\nif n % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")"
-    }
+    },
+    "explanation": "else 는 if 조건이 False일 때 실행할 코드를 정합니다.\n\n모범 답안:\nn = 7\nif n % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")"
   },
   {
     "id": "py-5-3-mcq-1",
@@ -500,7 +520,8 @@
         "코드에 설명을 적어 둔다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다."
   },
   {
     "id": "py-5-3-mcq-2",
@@ -520,7 +541,8 @@
         "if \"op\" == \"+\":\n    print(a + b)"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. 조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다."
   },
   {
     "id": "py-5-3-mcq-3",
@@ -540,7 +562,8 @@
         "오류가 난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"6\"예요. 조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다."
   },
   {
     "id": "py-5-3-parsons-1",
@@ -567,7 +590,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다.\n\n올바른 순서:\n1) op = \"+\"\n2) if op == \"+\":\n3)     print(7 + 3)\n4) else:\n5)     print(7 - 3)"
   },
   {
     "id": "py-5-3-parsons-2",
@@ -596,7 +620,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다.\n\n올바른 순서:\n1) op = \"-\"\n2) if op == \"+\":\n3)     result = 7 + 3\n4) else:\n5)     result = 7 - 3\n6) print(result)"
   },
   {
     "id": "py-5-3-parsons-3",
@@ -627,7 +652,8 @@
         4,
         3
       ]
-    }
+    },
+    "explanation": "조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다.\n\n올바른 순서:\n1) op = \"-\"\n2) if op == \"+\":\n3)     result = 7 + 3\n4) else:\n5)     result = 7 - 3\n6) print(result)\n7) print(\"Done\")"
   },
   {
     "id": "py-5-3-blank-1",
@@ -651,7 +677,8 @@
           "hint": "if, 변수 이름, 같은지 비교하는 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"if op ==\"예요. (if, 변수 이름, 같은지 비교하는 연산자) 조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다."
   },
   {
     "id": "py-5-3-blank-2",
@@ -674,7 +701,8 @@
           "hint": "그 밖의 경우를 뜻하는 키워드와 콜론"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"else:\"예요. (그 밖의 경우를 뜻하는 키워드와 콜론) 조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다."
   },
   {
     "id": "py-5-3-blank-3",
@@ -697,7 +725,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) 조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다."
   },
   {
     "id": "py-5-3-code-1",
@@ -727,7 +756,8 @@
         }
       ],
       "solution": "a = 10\nb = 3\nop = \"+\"\nif op == \"+\":\n    print(a + b)\nelse:\n    print(a - b)"
-    }
+    },
+    "explanation": "조건문으로 사용자의 선택에 따라 다른 계산을 수행합니다.\n\n모범 답안:\na = 10\nb = 3\nop = \"+\"\nif op == \"+\":\n    print(a + b)\nelse:\n    print(a - b)"
   },
   {
     "id": "py-5-4-mcq-1",
@@ -747,7 +777,8 @@
         "elif로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계로 판단할 수 있다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다."
   },
   {
     "id": "py-5-4-mcq-2",
@@ -767,7 +798,8 @@
         "if n > 0:\n    print(\"plus\")\nelif n = 0:\n    print(\"zero\")\nelse:\n    print(\"minus\")"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다."
   },
   {
     "id": "py-5-4-mcq-3",
@@ -787,7 +819,8 @@
         "아무것도 출력되지 않는다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"Teen\"예요. elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다."
   },
   {
     "id": "py-5-4-parsons-1",
@@ -814,7 +847,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다.\n\n올바른 순서:\n1) score = 85\n2) if score >= 90:\n3)     print(\"A\")\n4) elif score >= 80:\n5)     print(\"B\")"
   },
   {
     "id": "py-5-4-parsons-2",
@@ -845,7 +879,8 @@
         6,
         2
       ]
-    }
+    },
+    "explanation": "elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다.\n\n올바른 순서:\n1) score = 85\n2) if score >= 90:\n3)     print(\"A\")\n4) elif score >= 80:\n5)     print(\"B\")\n6) else:\n7)     print(\"C\")"
   },
   {
     "id": "py-5-4-parsons-3",
@@ -880,7 +915,8 @@
         5,
         0
       ]
-    }
+    },
+    "explanation": "elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다.\n\n올바른 순서:\n1) age = 15\n2) if age >= 13:\n3)     if age >= 18:\n4)         print(\"Adult\")\n5)     else:\n6)         print(\"Teen\")\n7) else:\n8)     print(\"Child\")\n9) print(\"Done\")"
   },
   {
     "id": "py-5-4-blank-1",
@@ -903,7 +939,8 @@
           "hint": "첫 번째 조건을 검사하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"if\"예요. (첫 번째 조건을 검사하는 키워드) elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다."
   },
   {
     "id": "py-5-4-blank-2",
@@ -926,7 +963,8 @@
           "hint": "조건을 이어 붙이는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"elif\"예요. (조건을 이어 붙이는 키워드) elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다."
   },
   {
     "id": "py-5-4-blank-3",
@@ -949,7 +987,8 @@
           "hint": "나머지 경우를 뜻하는 키워드와 콜론"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"else:\"예요. (나머지 경우를 뜻하는 키워드와 콜론) elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다."
   },
   {
     "id": "py-5-4-code-1",
@@ -989,7 +1028,8 @@
         }
       ],
       "solution": "score = 85\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")"
-    }
+    },
+    "explanation": "elif 로 조건을 이어 붙이거나 if 안에 if를 넣어 여러 단계를 판단합니다.\n\n모범 답안:\nscore = 85\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelse:\n    print(\"C\")"
   },
   {
     "id": "py-6-1-mcq-1",
@@ -1009,7 +1049,8 @@
         "다음 출력을 같은 줄에 이어 붙인다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "print()는 출력 후 자동으로 줄을 바꿉니다."
   },
   {
     "id": "py-6-1-mcq-2",
@@ -1029,7 +1070,8 @@
         "4줄"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "여러 번 호출하면 여러 줄이 됩니다."
   },
   {
     "id": "py-6-1-mcq-3",
@@ -1049,7 +1091,8 @@
         "Hi\nPython"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다."
   },
   {
     "id": "py-6-1-parsons-1",
@@ -1072,7 +1115,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다.\n\n올바른 순서:\n1) print(\"Hello\")\n2) print(\"World\")\n3) print(\"Python\")"
   },
   {
     "id": "py-6-1-parsons-2",
@@ -1097,7 +1141,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다.\n\n올바른 순서:\n1) print(\"1. Wake up\")\n2) print(\"2. Wash\")\n3) print(\"3. Eat\")\n4) print(\"4. Go to school\")"
   },
   {
     "id": "py-6-1-parsons-3",
@@ -1126,7 +1171,8 @@
         3,
         5
       ]
-    }
+    },
+    "explanation": "print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다.\n\n올바른 순서:\n1) print(\"Name: Kim\")\n2) print(\"Age: 15\")\n3) print(\"City: Seoul\")\n4) print()\n5) print(\"Hobby: Coding\")\n6) print(\"Bye!\")"
   },
   {
     "id": "py-6-1-blank-1",
@@ -1149,7 +1195,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다."
   },
   {
     "id": "py-6-1-blank-2",
@@ -1172,7 +1219,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다."
   },
   {
     "id": "py-6-1-short-3",
@@ -1189,7 +1237,8 @@
       "answer": [
         "print"
       ]
-    }
+    },
+    "explanation": "정답은 \"print\"예요. print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다."
   },
   {
     "id": "py-6-1-code-1",
@@ -1221,7 +1270,8 @@
         }
       ],
       "solution": "print(\"Hello\")\nprint(\"Python\")"
-    }
+    },
+    "explanation": "print()는 출력 후 자동으로 줄을 바꿉니다. 여러 번 호출하면 여러 줄이 됩니다.\n\n모범 답안:\nprint(\"Hello\")\nprint(\"Python\")"
   },
   {
     "id": "py-6-2-mcq-1",
@@ -1241,7 +1291,8 @@
         "항상 오류가 난다"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다."
   },
   {
     "id": "py-6-2-mcq-2",
@@ -1261,7 +1312,8 @@
         "print(f\"I am (age)\")"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"print(f\"I am {age}\")\"예요. f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다."
   },
   {
     "id": "py-6-2-mcq-3",
@@ -1281,7 +1333,8 @@
         "I live in Seoul"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"I live in Seoul\"예요. f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다."
   },
   {
     "id": "py-6-2-parsons-1",
@@ -1304,7 +1357,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다.\n\n올바른 순서:\n1) name = \"Kim\"\n2) print(f\"Hello, {name}!\")\n3) print(\"Nice to meet you\")"
   },
   {
     "id": "py-6-2-parsons-2",
@@ -1329,7 +1383,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다.\n\n올바른 순서:\n1) name = \"Lee\"\n2) print(f\"Hello, {name}!\")\n3) name = \"Park\"\n4) print(f\"Bye, {name}!\")"
   },
   {
     "id": "py-6-2-parsons-3",
@@ -1358,7 +1413,8 @@
         5,
         4
       ]
-    }
+    },
+    "explanation": "f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다.\n\n올바른 순서:\n1) age = 15\n2) print(f\"Age: {age}\")\n3) age += 1\n4) print(f\"Next year: {age}\")\n5) age += 2\n6) print(f\"In 3 years: {age}\")"
   },
   {
     "id": "py-6-2-blank-1",
@@ -1382,7 +1438,8 @@
           "hint": "변수 이름과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"name =\"예요. (변수 이름과 =) f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다."
   },
   {
     "id": "py-6-2-blank-2",
@@ -1406,7 +1463,8 @@
           "hint": "f와 여는 큰따옴표"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"f\"\"예요. (f와 여는 큰따옴표) f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다."
   },
   {
     "id": "py-6-2-blank-3",
@@ -1430,7 +1488,8 @@
           "hint": "중괄호 안에 변수 이름"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"{name}\"예요. (중괄호 안에 변수 이름) f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다."
   },
   {
     "id": "py-6-2-code-1",
@@ -1460,7 +1519,8 @@
         }
       ],
       "solution": "name = \"Kim\"\nprint(f\"Hello, {name}!\")"
-    }
+    },
+    "explanation": "f\"...\" 문자열 안의 {변수}는 값으로 바뀝니다.\n\n모범 답안:\nname = \"Kim\"\nprint(f\"Hello, {name}!\")"
   },
   {
     "id": "py-6-3-mcq-1",
@@ -1480,7 +1540,8 @@
         "코드에 설명을 적는 기능이다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "input()은 사용자가 입력한 글자를 문자열로 돌려줍니다."
   },
   {
     "id": "py-6-3-mcq-2",
@@ -1500,7 +1561,8 @@
         "food = input()"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"food = input()\"예요. input()은 사용자가 입력한 글자를 문자열로 돌려줍니다."
   },
   {
     "id": "py-6-3-mcq-3",
@@ -1520,7 +1582,8 @@
         "Hi, Mina"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"Hi, Mina\"예요. input()은 사용자가 입력한 글자를 문자열로 돌려줍니다."
   },
   {
     "id": "py-6-3-parsons-1",
@@ -1543,7 +1606,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "input()은 사용자가 입력한 글자를 문자열로 돌려줍니다.\n\n올바른 순서:\n1) name = input()\n2) print(name)\n3) print(\"Bye\")"
   },
   {
     "id": "py-6-3-parsons-2",
@@ -1568,7 +1632,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "input()은 사용자가 입력한 글자를 문자열로 돌려줍니다.\n\n올바른 순서:\n1) name = input()\n2) msg = f\"Hi, {name}!\"\n3) print(msg)\n4) print(\"Bye\")"
   },
   {
     "id": "py-6-3-parsons-3",
@@ -1595,7 +1660,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "input()은 사용자가 입력한 글자를 문자열로 돌려줍니다.\n\n올바른 순서:\n1) name = input()\n2) msg = f\"Hi, {name}!\"\n3) print(msg)\n4) print(f\"{name} likes Python\")\n5) print(\"Bye\")"
   },
   {
     "id": "py-6-3-blank-1",
@@ -1618,7 +1684,8 @@
           "hint": "입력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"input(\"예요. (입력 함수와 여는 괄호) input()은 사용자가 입력한 글자를 문자열로 돌려줍니다."
   },
   {
     "id": "py-6-3-blank-2",
@@ -1641,7 +1708,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) input()은 사용자가 입력한 글자를 문자열로 돌려줍니다."
   },
   {
     "id": "py-6-3-short-3",
@@ -1658,7 +1726,8 @@
       "answer": [
         "input"
       ]
-    }
+    },
+    "explanation": "정답은 \"input\"예요. input()은 사용자가 입력한 글자를 문자열로 돌려줍니다."
   },
   {
     "id": "py-6-3-code-1",
@@ -1687,7 +1756,8 @@
         }
       ],
       "solution": "name = input()\nprint(name)"
-    }
+    },
+    "explanation": "input()은 사용자가 입력한 글자를 문자열로 돌려줍니다.\n\n모범 답안:\nname = input()\nprint(name)"
   },
   {
     "id": "py-6-4-mcq-1",
@@ -1707,7 +1777,8 @@
         "print()"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "int(), float(), str()로 값의 자료형을 바꿉니다."
   },
   {
     "id": "py-6-4-mcq-2",
@@ -1727,7 +1798,8 @@
         "불리언 True"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "input()은 항상 문자열입니다."
   },
   {
     "id": "py-6-4-mcq-3",
@@ -1747,7 +1819,8 @@
         "8"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"8\"예요. int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다."
   },
   {
     "id": "py-6-4-parsons-1",
@@ -1770,7 +1843,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다.\n\n올바른 순서:\n1) text = input()\n2) number = int(text)\n3) print(number * 2)"
   },
   {
     "id": "py-6-4-parsons-2",
@@ -1795,7 +1869,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다.\n\n올바른 순서:\n1) text = input()\n2) number = int(text)\n3) double = number * 2\n4) print(double)"
   },
   {
     "id": "py-6-4-parsons-3",
@@ -1822,7 +1897,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다.\n\n올바른 순서:\n1) text = input()\n2) number = int(text)\n3) double = number * 2\n4) result = str(double)\n5) print(result + \"!\")"
   },
   {
     "id": "py-6-4-blank-1",
@@ -1845,7 +1921,8 @@
           "hint": "정수로 바꾸는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"int(\"예요. (정수로 바꾸는 함수와 여는 괄호) int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다."
   },
   {
     "id": "py-6-4-blank-2",
@@ -1868,7 +1945,8 @@
           "hint": "입력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"input(\"예요. (입력 함수와 여는 괄호) int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다."
   },
   {
     "id": "py-6-4-blank-3",
@@ -1892,7 +1970,8 @@
           "hint": "곱하기 기호와 숫자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"* 2\"예요. (곱하기 기호와 숫자) int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다."
   },
   {
     "id": "py-6-4-code-1",
@@ -1921,7 +2000,8 @@
         }
       ],
       "solution": "number = int(input())\nprint(number * 2)"
-    }
+    },
+    "explanation": "int(), float(), str()로 값의 자료형을 바꿉니다. input()은 항상 문자열입니다.\n\n모범 답안:\nnumber = int(input())\nprint(number * 2)"
   },
   {
     "id": "py-6-5-mcq-1",
@@ -1941,7 +2021,8 @@
         "n * (n - 1)"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다."
   },
   {
     "id": "py-6-5-mcq-2",
@@ -1961,7 +2042,8 @@
         "n = 120\nprint(n + (n + 1) // 2)"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. 반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다."
   },
   {
     "id": "py-6-5-mcq-3",
@@ -1981,7 +2063,8 @@
         "10"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"55\"예요. 반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다."
   },
   {
     "id": "py-6-5-parsons-1",
@@ -2004,7 +2087,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다.\n\n올바른 순서:\n1) n = 120\n2) total = n * (n + 1) // 2\n3) print(total)"
   },
   {
     "id": "py-6-5-parsons-2",
@@ -2029,7 +2113,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다.\n\n올바른 순서:\n1) n = 120\n2) total = n * (n + 1)\n3) total = total // 2\n4) print(total)"
   },
   {
     "id": "py-6-5-parsons-3",
@@ -2058,7 +2143,8 @@
         4,
         1
       ]
-    }
+    },
+    "explanation": "반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다.\n\n올바른 순서:\n1) n = 120\n2) big = n + 1\n3) product = n * big\n4) total = product // 2\n5) print(total)\n6) print(\"Done\")"
   },
   {
     "id": "py-6-5-blank-1",
@@ -2081,7 +2167,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) 반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다."
   },
   {
     "id": "py-6-5-blank-2",
@@ -2104,7 +2191,8 @@
           "hint": "합을 구할 마지막 숫자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"120\"예요. (합을 구할 마지막 숫자) 반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다."
   },
   {
     "id": "py-6-5-short-3",
@@ -2121,7 +2209,8 @@
       "answer": [
         "//"
       ]
-    }
+    },
+    "explanation": "정답은 \"//\"예요. 반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다."
   },
   {
     "id": "py-6-5-code-1",
@@ -2154,7 +2243,8 @@
         }
       ],
       "solution": "n = 120\nprint(n * (n + 1) // 2)"
-    }
+    },
+    "explanation": "반복문 대신 합 공식 n*(n+1)//2 도 쓸 수 있습니다.\n\n모범 답안:\nn = 120\nprint(n * (n + 1) // 2)"
   },
   {
     "id": "py-6-6-mcq-1",
@@ -2174,7 +2264,8 @@
         "항상 None"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "비교 결과는 곧바로 불리언 값입니다."
   },
   {
     "id": "py-6-6-mcq-2",
@@ -2194,7 +2285,8 @@
         "answer = input()\nprint(answer == yes)"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 비교 결과는 곧바로 불리언 값입니다."
   },
   {
     "id": "py-6-6-mcq-3",
@@ -2214,7 +2306,8 @@
         "False"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"False\"예요. 비교 결과는 곧바로 불리언 값입니다."
   },
   {
     "id": "py-6-6-parsons-1",
@@ -2237,7 +2330,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "비교 결과는 곧바로 불리언 값입니다.\n\n올바른 순서:\n1) answer = input()\n2) result = answer == \"yes\"\n3) print(result)"
   },
   {
     "id": "py-6-6-parsons-2",
@@ -2262,7 +2356,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "비교 결과는 곧바로 불리언 값입니다.\n\n올바른 순서:\n1) text = input()\n2) number = int(text)\n3) result = number > 10\n4) print(result)"
   },
   {
     "id": "py-6-6-parsons-3",
@@ -2289,7 +2384,8 @@
         4,
         1
       ]
-    }
+    },
+    "explanation": "비교 결과는 곧바로 불리언 값입니다.\n\n올바른 순서:\n1) text = input()\n2) number = int(text)\n3) is_even = number % 2 == 0\n4) print(is_even)\n5) print(not is_even)"
   },
   {
     "id": "py-6-6-blank-1",
@@ -2312,7 +2408,8 @@
           "hint": "입력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"input(\"예요. (입력 함수와 여는 괄호) 비교 결과는 곧바로 불리언 값입니다."
   },
   {
     "id": "py-6-6-blank-2",
@@ -2335,7 +2432,8 @@
           "hint": "같은지 비교하는 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"==\"예요. (같은지 비교하는 연산자) 비교 결과는 곧바로 불리언 값입니다."
   },
   {
     "id": "py-6-6-blank-3",
@@ -2358,7 +2456,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) 비교 결과는 곧바로 불리언 값입니다."
   },
   {
     "id": "py-6-6-code-1",
@@ -2388,7 +2487,8 @@
         }
       ],
       "solution": "answer = input()\nprint(answer == \"yes\")"
-    }
+    },
+    "explanation": "비교 결과는 곧바로 불리언 값입니다.\n\n모범 답안:\nanswer = input()\nprint(answer == \"yes\")"
   },
   {
     "id": "py-7-1-mcq-1",
@@ -2408,7 +2508,8 @@
         "코드에 쓰지 않아도 자동으로 나온다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "프로그램 시작 시 환영 메시지를 보여 줍니다."
   },
   {
     "id": "py-7-1-mcq-2",
@@ -2428,7 +2529,8 @@
         "print(\"Bill Splitter\")"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"print(\"Bill Splitter\")\"예요. 프로그램 시작 시 환영 메시지를 보여 줍니다."
   },
   {
     "id": "py-7-1-mcq-3",
@@ -2448,7 +2550,8 @@
         "Welcome to Bill Splitter"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"Welcome to Bill Splitter\"예요. 프로그램 시작 시 환영 메시지를 보여 줍니다."
   },
   {
     "id": "py-7-1-parsons-1",
@@ -2471,7 +2574,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "프로그램 시작 시 환영 메시지를 보여 줍니다.\n\n올바른 순서:\n1) print(\n2) \"Bill Splitter\"\n3) )"
   },
   {
     "id": "py-7-1-parsons-2",
@@ -2496,7 +2600,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "프로그램 시작 시 환영 메시지를 보여 줍니다.\n\n올바른 순서:\n1) print\n2) (\n3) \"Bill Splitter\"\n4) )"
   },
   {
     "id": "py-7-1-parsons-3",
@@ -2525,7 +2630,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "프로그램 시작 시 환영 메시지를 보여 줍니다.\n\n올바른 순서:\n1) print\n2) (\n3) \"Welcome to \"\n4) +\n5) \"Bill Splitter\"\n6) )"
   },
   {
     "id": "py-7-1-blank-1",
@@ -2548,7 +2654,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) 프로그램 시작 시 환영 메시지를 보여 줍니다."
   },
   {
     "id": "py-7-1-blank-2",
@@ -2571,7 +2678,8 @@
           "hint": "프로그램 이름 (대소문자와 띄어쓰기 주의)"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"Bill Splitter\"예요. (프로그램 이름 (대소문자와 띄어쓰기 주의)) 프로그램 시작 시 환영 메시지를 보여 줍니다."
   },
   {
     "id": "py-7-1-short-3",
@@ -2589,7 +2697,8 @@
         "\"",
         "'"
       ]
-    }
+    },
+    "explanation": "정답은 \"\"\"예요. 프로그램 시작 시 환영 메시지를 보여 줍니다."
   },
   {
     "id": "py-7-1-code-1",
@@ -2615,7 +2724,8 @@
         }
       ],
       "solution": "print(\"Bill Splitter\")"
-    }
+    },
+    "explanation": "프로그램 시작 시 환영 메시지를 보여 줍니다.\n\n모범 답안:\nprint(\"Bill Splitter\")"
   },
   {
     "id": "py-7-2-mcq-1",
@@ -2635,7 +2745,8 @@
         "int()는 \"12.5\" 같은 소수점 글자를 바꾸지 못해 오류가 나기 때문"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "소수가 필요하면 float()로 변환합니다."
   },
   {
     "id": "py-7-2-mcq-2",
@@ -2655,7 +2766,8 @@
         "bill = float(input())"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"bill = float(input())\"예요. 소수가 필요하면 float()로 변환합니다."
   },
   {
     "id": "py-7-2-mcq-3",
@@ -2675,7 +2787,8 @@
         "오류가 난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"25.0\"예요. 소수가 필요하면 float()로 변환합니다."
   },
   {
     "id": "py-7-2-parsons-1",
@@ -2700,7 +2813,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "소수가 필요하면 float()로 변환합니다.\n\n올바른 순서:\n1) bill = \n2) float(\n3) input()\n4) )"
   },
   {
     "id": "py-7-2-parsons-2",
@@ -2727,7 +2841,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "소수가 필요하면 float()로 변환합니다.\n\n올바른 순서:\n1) bill\n2)  = \n3) float(\n4) input(\n5) ))"
   },
   {
     "id": "py-7-2-parsons-3",
@@ -2756,7 +2871,8 @@
         0,
         5
       ]
-    }
+    },
+    "explanation": "소수가 필요하면 float()로 변환합니다.\n\n올바른 순서:\n1) bill\n2)  = \n3) float(\n4) input(\n5) \"Bill: \"\n6) ))"
   },
   {
     "id": "py-7-2-blank-1",
@@ -2780,7 +2896,8 @@
           "hint": "변수 이름과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"bill =\"예요. (변수 이름과 =) 소수가 필요하면 float()로 변환합니다."
   },
   {
     "id": "py-7-2-blank-2",
@@ -2803,7 +2920,8 @@
           "hint": "실수로 바꾸는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"float(\"예요. (실수로 바꾸는 함수와 여는 괄호) 소수가 필요하면 float()로 변환합니다."
   },
   {
     "id": "py-7-2-blank-3",
@@ -2826,7 +2944,8 @@
           "hint": "입력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"input(\"예요. (입력 함수와 여는 괄호) 소수가 필요하면 float()로 변환합니다."
   },
   {
     "id": "py-7-2-code-1",
@@ -2851,7 +2970,8 @@
         }
       ],
       "solution": "bill = float(input())\nprint(bill)"
-    }
+    },
+    "explanation": "소수가 필요하면 float()로 변환합니다.\n\n모범 답안:\nbill = float(input())\nprint(bill)"
   },
   {
     "id": "py-7-3-mcq-1",
@@ -2871,7 +2991,8 @@
         "금액 - 10"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "퍼센트는 비율을 곱해서 계산합니다."
   },
   {
     "id": "py-7-3-mcq-2",
@@ -2891,7 +3012,8 @@
         "0.15"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "15% = 0.15"
   },
   {
     "id": "py-7-3-mcq-3",
@@ -2911,7 +3033,8 @@
         "35.0"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"23.0\"예요. 퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15"
   },
   {
     "id": "py-7-3-parsons-1",
@@ -2936,7 +3059,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15\n\n올바른 순서:\n1) bill = 40\n2) tip = bill * 0.15\n3) total = bill + tip\n4) print(total)"
   },
   {
     "id": "py-7-3-parsons-2",
@@ -2963,7 +3087,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15\n\n올바른 순서:\n1) bill = 40\n2) tip = bill * 0.15\n3) total = bill + tip\n4) print(f\"Total: {total}\")\n5) print(f\"Tip: {tip}\")"
   },
   {
     "id": "py-7-3-parsons-3",
@@ -2994,7 +3119,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15\n\n올바른 순서:\n1) text = input()\n2) bill = float(text)\n3) tip = bill * 0.15\n4) total = bill + tip\n5) print(f\"Total: {total}\")\n6) print(f\"Tip: {tip}\")\n7) print(\"Thank you!\")"
   },
   {
     "id": "py-7-3-blank-1",
@@ -3018,7 +3144,8 @@
           "hint": "팁을 저장할 변수 이름과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"tip =\"예요. (팁을 저장할 변수 이름과 =) 퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15"
   },
   {
     "id": "py-7-3-blank-2",
@@ -3042,7 +3169,8 @@
           "hint": "15%를 소수로 바꾼 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"0.15\"예요. (15%를 소수로 바꾼 값) 퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15"
   },
   {
     "id": "py-7-3-blank-3",
@@ -3066,7 +3194,8 @@
           "hint": "총액을 저장할 변수 이름과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"total =\"예요. (총액을 저장할 변수 이름과 =) 퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15"
   },
   {
     "id": "py-7-3-code-1",
@@ -3091,7 +3220,8 @@
         }
       ],
       "solution": "bill = 40\ntip = bill * 0.15\ntotal = bill + tip\nprint(total)"
-    }
+    },
+    "explanation": "퍼센트는 비율을 곱해서 계산합니다. 15% = 0.15\n\n모범 답안:\nbill = 40\ntip = bill * 0.15\ntotal = bill + tip\nprint(total)"
   },
   {
     "id": "py-7-4-mcq-1",
@@ -3111,7 +3241,8 @@
         "숫자를 문자열로 바꿔 준다"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "/ 는 항상 소수 결과를 돌려줍니다."
   },
   {
     "id": "py-7-4-mcq-2",
@@ -3131,7 +3262,8 @@
         "total / people = per_person"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"per_person = total / people\"예요. / 는 항상 소수 결과를 돌려줍니다."
   },
   {
     "id": "py-7-4-mcq-3",
@@ -3151,7 +3283,8 @@
         "2.0"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"11.5\"예요. / 는 항상 소수 결과를 돌려줍니다."
   },
   {
     "id": "py-7-4-parsons-1",
@@ -3174,7 +3307,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "/ 는 항상 소수 결과를 돌려줍니다.\n\n올바른 순서:\n1) people = int(input())\n2) per_person = 60 / people\n3) print(per_person)"
   },
   {
     "id": "py-7-4-parsons-2",
@@ -3199,7 +3333,8 @@
         0,
         3
       ]
-    }
+    },
+    "explanation": "/ 는 항상 소수 결과를 돌려줍니다.\n\n올바른 순서:\n1) total = float(input())\n2) people = int(input())\n3) per_person = total / people\n4) print(per_person)"
   },
   {
     "id": "py-7-4-parsons-3",
@@ -3228,7 +3363,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "/ 는 항상 소수 결과를 돌려줍니다.\n\n올바른 순서:\n1) total = float(input())\n2) text = input()\n3) people = int(text)\n4) per_person = total / people\n5) print(per_person)\n6) print(\"Split done!\")"
   },
   {
     "id": "py-7-4-blank-1",
@@ -3252,7 +3388,8 @@
           "hint": "사람 수를 저장할 변수 이름과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"people =\"예요. (사람 수를 저장할 변수 이름과 =) / 는 항상 소수 결과를 돌려줍니다."
   },
   {
     "id": "py-7-4-blank-2",
@@ -3275,7 +3412,8 @@
           "hint": "정수로 바꾸는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"int(\"예요. (정수로 바꾸는 함수와 여는 괄호) / 는 항상 소수 결과를 돌려줍니다."
   },
   {
     "id": "py-7-4-blank-3",
@@ -3299,7 +3437,8 @@
           "hint": "1인당 금액 변수 이름과 ="
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"per_person =\"예요. (1인당 금액 변수 이름과 =) / 는 항상 소수 결과를 돌려줍니다."
   },
   {
     "id": "py-7-4-code-1",
@@ -3324,7 +3463,8 @@
         }
       ],
       "solution": "total = 60.0\npeople = int(input())\nper_person = total / people\nprint(per_person)"
-    }
+    },
+    "explanation": "/ 는 항상 소수 결과를 돌려줍니다.\n\n모범 답안:\ntotal = 60.0\npeople = int(input())\nper_person = total / people\nprint(per_person)"
   },
   {
     "id": "py-7-5-mcq-1",
@@ -3344,7 +3484,8 @@
         "소수 둘째 자리까지 반올림한다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다."
   },
   {
     "id": "py-7-5-mcq-2",
@@ -3364,7 +3505,8 @@
         "print(round(per_person, 2))"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 \"print(round(per_person, 2))\"예요. round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다."
   },
   {
     "id": "py-7-5-mcq-3",
@@ -3384,7 +3526,8 @@
         "15.3"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"15.33\"예요. round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다."
   },
   {
     "id": "py-7-5-parsons-1",
@@ -3409,7 +3552,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다.\n\n올바른 순서:\n1) print(\n2) round(\n3) 15.3333, 2\n4) ))"
   },
   {
     "id": "py-7-5-parsons-2",
@@ -3436,7 +3580,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다.\n\n올바른 순서:\n1) total = float(input())\n2) people = int(input())\n3) per_person = total / people\n4) rounded = round(per_person, 2)\n5) print(rounded)"
   },
   {
     "id": "py-7-5-parsons-3",
@@ -3465,7 +3610,8 @@
         5,
         2
       ]
-    }
+    },
+    "explanation": "round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다.\n\n올바른 순서:\n1) total = float(input())\n2) people = int(input())\n3) per_person = total / people\n4) rounded = round(per_person, 2)\n5) print(f\"Each person pays {rounded}\")\n6) print(\"Thank you!\")"
   },
   {
     "id": "py-7-5-blank-1",
@@ -3488,7 +3634,8 @@
           "hint": "반올림 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"round(\"예요. (반올림 함수와 여는 괄호) round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다."
   },
   {
     "id": "py-7-5-blank-2",
@@ -3511,7 +3658,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다."
   },
   {
     "id": "py-7-5-short-3",
@@ -3528,7 +3676,8 @@
       "answer": [
         "2"
       ]
-    }
+    },
+    "explanation": "정답은 \"2\"예요. round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다."
   },
   {
     "id": "py-7-5-code-1",
@@ -3553,7 +3702,8 @@
         }
       ],
       "solution": "per_person = 46.0 / 3\nprint(round(per_person, 2))"
-    }
+    },
+    "explanation": "round(값, 자릿수)는 지정한 소수 자릿수로 반올림합니다.\n\n모범 답안:\nper_person = 46.0 / 3\nprint(round(per_person, 2))"
   },
   {
     "id": "py-8-1-mcq-1",
@@ -3573,7 +3723,8 @@
         "4 하나만"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다."
   },
   {
     "id": "py-8-1-mcq-2",
@@ -3593,7 +3744,8 @@
         "for i in range(3):\nprint(\"Hi\")"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다."
   },
   {
     "id": "py-8-1-mcq-3",
@@ -3613,7 +3765,8 @@
         "3"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"6\"예요. range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다."
   },
   {
     "id": "py-8-1-parsons-1",
@@ -3636,7 +3789,8 @@
         0,
         1
       ]
-    }
+    },
+    "explanation": "range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다.\n\n올바른 순서:\n1) for i in range(3):\n2)     print(i)\n3) print(\"End\")"
   },
   {
     "id": "py-8-1-parsons-2",
@@ -3661,7 +3815,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다.\n\n올바른 순서:\n1) total = 0\n2) for i in range(5):\n3)     total += i\n4) print(total)"
   },
   {
     "id": "py-8-1-parsons-3",
@@ -3688,7 +3843,8 @@
         1,
         3
       ]
-    }
+    },
+    "explanation": "range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다.\n\n올바른 순서:\n1) total = 0\n2) for i in range(5):\n3)     total += i\n4)     print(total)\n5) print(\"Done\")"
   },
   {
     "id": "py-8-1-blank-1",
@@ -3711,7 +3867,8 @@
           "hint": "반복을 시작하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for\"예요. (반복을 시작하는 키워드) range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다."
   },
   {
     "id": "py-8-1-blank-2",
@@ -3734,7 +3891,8 @@
           "hint": "숫자 범위를 만드는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"range(\"예요. (숫자 범위를 만드는 함수와 여는 괄호) range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다."
   },
   {
     "id": "py-8-1-blank-3",
@@ -3757,7 +3915,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다."
   },
   {
     "id": "py-8-1-code-1",
@@ -3782,7 +3941,8 @@
         }
       ],
       "solution": "for i in range(5):\n    print(i)"
-    }
+    },
+    "explanation": "range(n)은 0부터 n-1까지의 수를 만들고, for는 하나씩 꺼내 반복합니다.\n\n모범 답안:\nfor i in range(5):\n    print(i)"
   },
   {
     "id": "py-8-2-mcq-1",
@@ -3802,7 +3962,8 @@
         "조건이 True인 동안 계속"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "while 조건: 은 조건이 True인 동안 반복합니다."
   },
   {
     "id": "py-8-2-mcq-2",
@@ -3822,7 +3983,8 @@
         "0이 3번 출력되고 끝난다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "조건을 바꾸지 않으면 무한 반복됩니다."
   },
   {
     "id": "py-8-2-mcq-3",
@@ -3842,7 +4004,8 @@
         "64"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"32\"예요. while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다."
   },
   {
     "id": "py-8-2-parsons-1",
@@ -3867,7 +4030,8 @@
         3,
         0
       ]
-    }
+    },
+    "explanation": "while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다.\n\n올바른 순서:\n1) count = 0\n2) while count < 3:\n3)     print(count)\n4)     count += 1"
   },
   {
     "id": "py-8-2-parsons-2",
@@ -3894,7 +4058,8 @@
         0,
         4
       ]
-    }
+    },
+    "explanation": "while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다.\n\n올바른 순서:\n1) count = 0\n2) while count < 3:\n3)     print(count)\n4)     count += 1\n5) print(\"Done\")"
   },
   {
     "id": "py-8-2-parsons-3",
@@ -3923,7 +4088,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다.\n\n올바른 순서:\n1) count = 0\n2) while count < 5:\n3)     if count % 2 == 0:\n4)         print(count)\n5)     count += 1\n6) print(\"Done\")"
   },
   {
     "id": "py-8-2-blank-1",
@@ -3946,7 +4112,8 @@
           "hint": "조건이 True인 동안 반복하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"while\"예요. (조건이 True인 동안 반복하는 키워드) while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다."
   },
   {
     "id": "py-8-2-blank-2",
@@ -3971,7 +4138,8 @@
           "hint": "count에 1을 더해 저장하는 줄임 표현"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"count += 1\"예요. (count에 1을 더해 저장하는 줄임 표현) while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다."
   },
   {
     "id": "py-8-2-blank-3",
@@ -3994,7 +4162,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다."
   },
   {
     "id": "py-8-2-code-1",
@@ -4023,7 +4192,8 @@
         }
       ],
       "solution": "count = 0\nwhile count < 3:\n    print(count)\n    count += 1"
-    }
+    },
+    "explanation": "while 조건: 은 조건이 True인 동안 반복합니다. 조건을 바꾸지 않으면 무한 반복됩니다.\n\n모범 답안:\ncount = 0\nwhile count < 3:\n    print(count)\n    count += 1"
   },
   {
     "id": "py-8-3-mcq-1",
@@ -4043,7 +4213,8 @@
         "반복문을 바로 끝내고 빠져나온다"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "break 는 반복문을 즉시 끝냅니다."
   },
   {
     "id": "py-8-3-mcq-2",
@@ -4063,7 +4234,8 @@
         "for i in range(10):\n    if i == 5:\n        stop\n    print(i)"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 1번 보기예요. break 는 반복문을 즉시 끝냅니다."
   },
   {
     "id": "py-8-3-mcq-3",
@@ -4083,7 +4255,8 @@
         "4"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 \"6\"예요. break 는 반복문을 즉시 끝냅니다."
   },
   {
     "id": "py-8-3-parsons-1",
@@ -4108,7 +4281,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "break 는 반복문을 즉시 끝냅니다.\n\n올바른 순서:\n1) for i in range(10):\n2)     if i == 3:\n3)         break\n4)     print(i)"
   },
   {
     "id": "py-8-3-parsons-2",
@@ -4135,7 +4309,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "break 는 반복문을 즉시 끝냅니다.\n\n올바른 순서:\n1) for i in range(10):\n2)     if i == 3:\n3)         break\n4)     print(i)\n5) print(\"Stop\")"
   },
   {
     "id": "py-8-3-parsons-3",
@@ -4164,7 +4339,8 @@
         3,
         2
       ]
-    }
+    },
+    "explanation": "break 는 반복문을 즉시 끝냅니다.\n\n올바른 순서:\n1) n = 0\n2) while n < 10:\n3)     n += 1\n4)     if n == 4:\n5)         break\n6)     print(n)"
   },
   {
     "id": "py-8-3-blank-1",
@@ -4187,7 +4363,8 @@
           "hint": "반복을 시작하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for\"예요. (반복을 시작하는 키워드) break 는 반복문을 즉시 끝냅니다."
   },
   {
     "id": "py-8-3-blank-2",
@@ -4210,7 +4387,8 @@
           "hint": "반복문을 즉시 끝내는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"break\"예요. (반복문을 즉시 끝내는 키워드) break 는 반복문을 즉시 끝냅니다."
   },
   {
     "id": "py-8-3-blank-3",
@@ -4233,7 +4411,8 @@
           "hint": "조건을 검사하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"if\"예요. (조건을 검사하는 키워드) break 는 반복문을 즉시 끝냅니다."
   },
   {
     "id": "py-8-3-code-1",
@@ -4262,7 +4441,8 @@
         }
       ],
       "solution": "for i in range(10):\n    if i == 3:\n        break\n    print(i)"
-    }
+    },
+    "explanation": "break 는 반복문을 즉시 끝냅니다.\n\n모범 답안:\nfor i in range(10):\n    if i == 3:\n        break\n    print(i)"
   },
   {
     "id": "py-8-4-mcq-1",
@@ -4282,7 +4462,8 @@
         "같은 반복을 한 번 더 실행한다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다."
   },
   {
     "id": "py-8-4-mcq-2",
@@ -4302,7 +4483,8 @@
         "for i in range(5):\n    if i == 3:\n        continue\n    print(i)"
       ],
       "answer": 3
-    }
+    },
+    "explanation": "정답은 4번 보기예요. continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다."
   },
   {
     "id": "py-8-4-mcq-3",
@@ -4322,7 +4504,8 @@
         "0"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"9\"예요. continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다."
   },
   {
     "id": "py-8-4-parsons-1",
@@ -4347,7 +4530,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다.\n\n올바른 순서:\n1) for i in range(5):\n2)     if i == 2:\n3)         continue\n4)     print(i)"
   },
   {
     "id": "py-8-4-parsons-2",
@@ -4374,7 +4558,8 @@
         4,
         2
       ]
-    }
+    },
+    "explanation": "continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다.\n\n올바른 순서:\n1) for i in range(5):\n2)     if i == 2:\n3)         continue\n4)     print(i)\n5) print(\"Done\")"
   },
   {
     "id": "py-8-4-parsons-3",
@@ -4403,7 +4588,8 @@
         2,
         3
       ]
-    }
+    },
+    "explanation": "continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다.\n\n올바른 순서:\n1) count = 0\n2) for i in range(6):\n3)     if i % 2 == 0:\n4)         continue\n5)     count += 1\n6) print(count)"
   },
   {
     "id": "py-8-4-blank-1",
@@ -4426,7 +4612,8 @@
           "hint": "반복을 시작하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for\"예요. (반복을 시작하는 키워드) continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다."
   },
   {
     "id": "py-8-4-blank-2",
@@ -4449,7 +4636,8 @@
           "hint": "이번 반복을 건너뛰는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"continue\"예요. (이번 반복을 건너뛰는 키워드) continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다."
   },
   {
     "id": "py-8-4-blank-3",
@@ -4472,7 +4660,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다."
   },
   {
     "id": "py-8-4-code-1",
@@ -4501,7 +4690,8 @@
         }
       ],
       "solution": "for i in range(5):\n    if i == 2:\n        continue\n    print(i)"
-    }
+    },
+    "explanation": "continue 는 이번 반복을 건너뛰고 다음 반복으로 넘어갑니다.\n\n모범 답안:\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i)"
   },
   {
     "id": "py-8-5-mcq-1",
@@ -4521,7 +4711,8 @@
         "4"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "팩토리얼은 1부터 n까지의 곱입니다."
   },
   {
     "id": "py-8-5-mcq-2",
@@ -4541,7 +4732,8 @@
         "1로 시작하면 반복이 더 빨라지기 때문"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "곱 누적 변수는 1에서 시작합니다."
   },
   {
     "id": "py-8-5-mcq-3",
@@ -4561,7 +4753,8 @@
         "6"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"24\"예요. 팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다."
   },
   {
     "id": "py-8-5-parsons-1",
@@ -4586,7 +4779,8 @@
         0,
         2
       ]
-    }
+    },
+    "explanation": "팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다.\n\n올바른 순서:\n1) factorial = 1\n2) for i in range(5):\n3)     factorial *= i + 1\n4) print(factorial)"
   },
   {
     "id": "py-8-5-parsons-2",
@@ -4613,7 +4807,8 @@
         4,
         0
       ]
-    }
+    },
+    "explanation": "팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다.\n\n올바른 순서:\n1) factorial = 1\n2) for i in range(5):\n3)     factorial *= i + 1\n4)     print(factorial)\n5) print(\"Done\")"
   },
   {
     "id": "py-8-5-parsons-3",
@@ -4642,7 +4837,8 @@
         1,
         2
       ]
-    }
+    },
+    "explanation": "팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다.\n\n올바른 순서:\n1) factorial = 1\n2) for i in range(5):\n3)     number = i + 1\n4)     factorial *= number\n5)     print(factorial)\n6) print(\"Done\")"
   },
   {
     "id": "py-8-5-blank-1",
@@ -4666,7 +4862,8 @@
           "hint": "곱 누적 변수와 시작값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"factorial = 1\"예요. (곱 누적 변수와 시작값) 팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다."
   },
   {
     "id": "py-8-5-blank-2",
@@ -4689,7 +4886,8 @@
           "hint": "반복을 시작하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for\"예요. (반복을 시작하는 키워드) 팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다."
   },
   {
     "id": "py-8-5-blank-3",
@@ -4712,7 +4910,8 @@
           "hint": "곱한 뒤 다시 저장하는 줄임 연산자"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"*=\"예요. (곱한 뒤 다시 저장하는 줄임 연산자) 팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다."
   },
   {
     "id": "py-8-5-code-1",
@@ -4745,7 +4944,8 @@
         }
       ],
       "solution": "factorial = 1\nfor i in range(5):\n    factorial *= i + 1\nprint(factorial)"
-    }
+    },
+    "explanation": "팩토리얼은 1부터 n까지의 곱입니다. 곱 누적 변수는 1에서 시작합니다.\n\n모범 답안:\nfactorial = 1\nfor i in range(5):\n    factorial *= i + 1\nprint(factorial)"
   },
   {
     "id": "py-8-6-mcq-1",
@@ -4765,7 +4965,8 @@
         "2, 3, 4, 5"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다."
   },
   {
     "id": "py-8-6-mcq-2",
@@ -4785,7 +4986,8 @@
         "for i in range(1, 10):\n    print(i)"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다."
   },
   {
     "id": "py-8-6-mcq-3",
@@ -4805,7 +5007,8 @@
         "10"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"15\"예요. range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다."
   },
   {
     "id": "py-8-6-parsons-1",
@@ -4828,7 +5031,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다.\n\n올바른 순서:\n1) for i in range(0, 10, 2):\n2)     print(i)\n3) print(\"End\")"
   },
   {
     "id": "py-8-6-parsons-2",
@@ -4853,7 +5057,8 @@
         3,
         1
       ]
-    }
+    },
+    "explanation": "range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다.\n\n올바른 순서:\n1) total = 0\n2) for i in range(1, 6):\n3)     total += i\n4) print(total)"
   },
   {
     "id": "py-8-6-parsons-3",
@@ -4880,7 +5085,8 @@
         4,
         0
       ]
-    }
+    },
+    "explanation": "range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다.\n\n올바른 순서:\n1) total = 0\n2) for i in range(0, 10, 2):\n3)     total += i\n4)     print(total)\n5) print(\"Done\")"
   },
   {
     "id": "py-8-6-blank-1",
@@ -4904,7 +5110,8 @@
           "hint": "range 함수와 시작 값"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"range(0\"예요. (range 함수와 시작 값) range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다."
   },
   {
     "id": "py-8-6-blank-2",
@@ -4928,7 +5135,8 @@
           "hint": "쉼표, 간격 값, 닫는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \", 2)\"예요. (쉼표, 간격 값, 닫는 괄호) range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다."
   },
   {
     "id": "py-8-6-blank-3",
@@ -4951,7 +5159,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다."
   },
   {
     "id": "py-8-6-code-1",
@@ -4976,7 +5185,8 @@
         }
       ],
       "solution": "for i in range(0, 11, 2):\n    print(i)"
-    }
+    },
+    "explanation": "range(시작, 끝, 간격)에서 끝 값은 포함되지 않습니다.\n\n모범 답안:\nfor i in range(0, 11, 2):\n    print(i)"
   },
   {
     "id": "py-8-7-mcq-1",
@@ -4996,7 +5206,8 @@
         "2번"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다."
   },
   {
     "id": "py-8-7-mcq-2",
@@ -5016,7 +5227,8 @@
         "for i in range(2)\n    for j in range(3)\n        print(\"*\")"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 3번 보기예요. 반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다."
   },
   {
     "id": "py-8-7-mcq-3",
@@ -5036,7 +5248,8 @@
         "3"
       ],
       "answer": 0
-    }
+    },
+    "explanation": "정답은 \"12\"예요. 반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다."
   },
   {
     "id": "py-8-7-parsons-1",
@@ -5059,7 +5272,8 @@
         2,
         1
       ]
-    }
+    },
+    "explanation": "반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다.\n\n올바른 순서:\n1) for i in range(2):\n2)     for j in range(3):\n3)         print(\"*\")"
   },
   {
     "id": "py-8-7-parsons-2",
@@ -5084,7 +5298,8 @@
         1,
         0
       ]
-    }
+    },
+    "explanation": "반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다.\n\n올바른 순서:\n1) for i in range(2):\n2)     for j in range(3):\n3)         print(\"*\")\n4)     print(\"-\")"
   },
   {
     "id": "py-8-7-parsons-3",
@@ -5113,7 +5328,8 @@
         4,
         3
       ]
-    }
+    },
+    "explanation": "반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다.\n\n올바른 순서:\n1) for i in range(3):\n2)     line = \"\"\n3)     for j in range(i + 1):\n4)         line += \"*\"\n5)     print(line)\n6) print(\"Done\")"
   },
   {
     "id": "py-8-7-blank-1",
@@ -5136,7 +5352,8 @@
           "hint": "반복을 시작하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for\"예요. (반복을 시작하는 키워드) 반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다."
   },
   {
     "id": "py-8-7-blank-2",
@@ -5159,7 +5376,8 @@
           "hint": "안쪽 반복을 시작하는 키워드"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"for\"예요. (안쪽 반복을 시작하는 키워드) 반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다."
   },
   {
     "id": "py-8-7-blank-3",
@@ -5182,7 +5400,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) 반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다."
   },
   {
     "id": "py-8-7-code-1",
@@ -5212,7 +5431,8 @@
         }
       ],
       "solution": "for i in range(2):\n    for j in range(3):\n        print(\"*\")"
-    }
+    },
+    "explanation": "반복문 안에 반복문을 넣으면 안쪽 반복이 바깥 반복마다 다시 실행됩니다.\n\n모범 답안:\nfor i in range(2):\n    for j in range(3):\n        print(\"*\")"
   },
   {
     "id": "py-8-8-mcq-1",
@@ -5232,7 +5452,8 @@
         "입력한 글자 수만큼 반복한다"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "입력값으로 반복 횟수를 정할 수 있습니다."
   },
   {
     "id": "py-8-8-mcq-2",
@@ -5252,7 +5473,8 @@
         "n = int(input())\nfor i in range(n)\n    print(\"Hi\")"
       ],
       "answer": 1
-    }
+    },
+    "explanation": "정답은 2번 보기예요. 입력값으로 반복 횟수를 정할 수 있습니다."
   },
   {
     "id": "py-8-8-mcq-3",
@@ -5272,7 +5494,8 @@
         "15"
       ],
       "answer": 2
-    }
+    },
+    "explanation": "정답은 \"10\"예요. 입력값으로 반복 횟수를 정할 수 있습니다."
   },
   {
     "id": "py-8-8-parsons-1",
@@ -5295,7 +5518,8 @@
         2,
         0
       ]
-    }
+    },
+    "explanation": "입력값으로 반복 횟수를 정할 수 있습니다.\n\n올바른 순서:\n1) n = int(input())\n2) for i in range(1, n + 1):\n3)     print(i)"
   },
   {
     "id": "py-8-8-parsons-2",
@@ -5320,7 +5544,8 @@
         3,
         1
       ]
-    }
+    },
+    "explanation": "입력값으로 반복 횟수를 정할 수 있습니다.\n\n올바른 순서:\n1) n = int(input())\n2) for i in range(1, n + 1):\n3)     print(i)\n4) print(\"Done\")"
   },
   {
     "id": "py-8-8-parsons-3",
@@ -5349,7 +5574,8 @@
         3,
         5
       ]
-    }
+    },
+    "explanation": "입력값으로 반복 횟수를 정할 수 있습니다.\n\n올바른 순서:\n1) start = int(input())\n2) end = int(input())\n3) for i in range(start, end + 1):\n4)     if i % 2 == 0:\n5)         print(i)\n6) print(\"Done\")"
   },
   {
     "id": "py-8-8-blank-1",
@@ -5372,7 +5598,8 @@
           "hint": "정수 변환 함수와 입력 함수"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"int(input(\"예요. (정수 변환 함수와 입력 함수) 입력값으로 반복 횟수를 정할 수 있습니다."
   },
   {
     "id": "py-8-8-blank-2",
@@ -5395,7 +5622,8 @@
           "hint": "숫자 범위를 만드는 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"range(\"예요. (숫자 범위를 만드는 함수와 여는 괄호) 입력값으로 반복 횟수를 정할 수 있습니다."
   },
   {
     "id": "py-8-8-blank-3",
@@ -5418,7 +5646,8 @@
           "hint": "출력 함수와 여는 괄호"
         }
       ]
-    }
+    },
+    "explanation": "빈칸에 들어갈 답은 \"print(\"예요. (출력 함수와 여는 괄호) 입력값으로 반복 횟수를 정할 수 있습니다."
   },
   {
     "id": "py-8-8-code-1",
@@ -5447,6 +5676,7 @@
         }
       ],
       "solution": "n = int(input())\nfor i in range(1, n + 1):\n    print(i)"
-    }
+    },
+    "explanation": "입력값으로 반복 횟수를 정할 수 있습니다.\n\n모범 답안:\nn = int(input())\nfor i in range(1, n + 1):\n    print(i)"
   }
 ]

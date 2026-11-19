@@ -28,6 +28,7 @@ type BlankProblem = {
   description?: string
   language?: string
   caseSensitive?: boolean
+  explanation?: string
   content: {
     template: string
     blanks: { no: number; answer: string[]; hint?: string }[]
@@ -47,10 +48,16 @@ export function toQuestion(p: BlankProblem) {
     reward: p.reward,
     language: p.language,
     level: levelOf(p),
+    difficulty: p.difficulty,
     lessonId: p.lessonId,
     content: { ...p.content, blanks },
   }
 }
+
+// 해설이 없는 문제는 빈칸 정답으로 대신한다
+const explanationOf = (p: BlankProblem) =>
+  p.explanation ??
+  `빈칸에 들어갈 답은 ${p.content.blanks.map((b) => `"${b.answer[0]}"`).join(', ')}예요.`
 
 export const blank = new Hono<AuthEnv>()
 
@@ -136,10 +143,10 @@ blank.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
     // 프론트는 정답을 answers 로 읽어서 같은 값을 answers 로도 준다
     const answer = problem.content.blanks.map((blank) => ({ ...blank, answers: blank.answer }))
-    return c.json({ isAnswer, answer }, 200)
+    return c.json({ isAnswer, answer, explanation: explanationOf(problem) }, 200)
   }
 })
