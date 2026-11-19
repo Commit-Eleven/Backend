@@ -13,6 +13,7 @@ import { lessonsApi } from './lessons'
 import { notifications } from './notifications'
 import { blank } from './problems/blank'
 import { code } from './problems/code'
+import { problemDetail } from './problems/detail'
 import { mcq } from './problems/mcq'
 import { parsons } from './problems/parsons'
 import { short } from './problems/short'
@@ -80,6 +81,7 @@ app.route('/api/problems/mcq', mcq)
 app.route('/api/problems/parsons', parsons)
 app.route('/api/problems/short', short)
 app.route('/api/problems/code', code)
+app.route('/api/problems', problemDetail)
 
 app.notFound((c) => fail(c, 'NotFound', '존재하지 않는 경로', 404))
 
