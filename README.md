@@ -105,6 +105,7 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 그룹 삭제 | `DELETE /api/groups/:id` |
 | 학습 통계 | `GET /api/users/me/stats` |
 | 단원 진행률 | `GET /api/users/me/progress?language=html`, `GET /api/units/:unitId` |
+| 문제 id로 조회 (유형 상관없음) | `GET /api/problems/:id` |
 | 문제 조회·채점 | `GET /api/problems/{mcq,blank,parsons,short,code}?id=`, `POST /api/problems/{유형}` (body `{ id, answer }`) |
 | 코스를 언어로 거르기 | `GET /api/curriculum?language=html` |
 | 레슨 완료 저장 | `POST /api/lessons/:lessonId/complete` (body `{ language }`) |
