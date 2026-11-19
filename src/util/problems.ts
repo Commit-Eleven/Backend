@@ -103,6 +103,36 @@ export function matchesAnswer(
   return accepted.some((answer) => normalize(answer) === target)
 }
 
+type ExplainContent = {
+  explanation?: string
+  choices?: string[]
+  answer?: number | string[]
+  blanks?: { no: number; answer: string[] }[]
+  fragments?: string[]
+  answer_order?: number[]
+}
+
+// 정답 해설. 문제 파일에 explanation 이 있으면 그것을, 없으면 정답으로 만든 설명을 준다
+export function explanationOf(problem: { type: string; content: unknown }): string | null {
+  const content = problem.content as ExplainContent
+  if (content.explanation) return content.explanation
+
+  if (problem.type === 'mcq' && typeof content.answer === 'number') {
+    return `정답은 "${content.choices?.[content.answer]}"입니다.`
+  }
+  if (problem.type === 'blank' && content.blanks) {
+    return `빈칸 정답: ${content.blanks.map((blank) => `${blank.no}번 ${blank.answer[0]}`).join(', ')}`
+  }
+  if (problem.type === 'parsons' && content.fragments && content.answer_order) {
+    const order = content.answer_order.map((index) => content.fragments?.[index])
+    return `올바른 순서는 다음과 같습니다.\n${order.join('\n')}`
+  }
+  if (problem.type === 'short' && Array.isArray(content.answer)) {
+    return `정답은 ${content.answer[0]}입니다.`
+  }
+  return null
+}
+
 // 레슨 안 문제 순서: 객관식 → 파슨스 → 단답(빈칸·단답형, 번호 순) → 서술형
 const LESSON_TYPE_ORDER: Record<string, number> = {
   mcq: 0,

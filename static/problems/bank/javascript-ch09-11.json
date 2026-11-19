@@ -6,7 +6,7 @@
     "description": "자바스크립트에서 함수를 만들고 부르는 방법으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -26,7 +26,7 @@
     "description": "sayHi 함수를 올바르게 선언한 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -46,7 +46,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction cheer() {\n  console.log(\"Go!\");\n}\ncheer();\ncheer();",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -66,7 +66,7 @@
     "description": "함수 sayHi 를 먼저 선언한 다음 호출해서 Hi 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -91,7 +91,7 @@
     "description": "함수 sayHi 를 먼저 선언하고 호출해서 Hi → Nice to meet you 순서로 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -118,7 +118,7 @@
     "description": "함수 sayHi 를 먼저 선언하고, Start → Hi → Welcome → End 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -149,7 +149,7 @@
     "description": "sayHi 함수를 선언하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -173,7 +173,7 @@
     "description": "만든 sayHi 함수를 호출하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -197,7 +197,7 @@
     "description": "함수를 선언할 때 맨 앞에 쓰는 키워드를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -214,7 +214,7 @@
     "description": "sayHi 함수를 만들어 \"Hi\" 를 출력하고, 그 함수를 호출하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-1",
     "content": {
@@ -245,7 +245,7 @@
     "description": "function greet(name) { } 에서 name 은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -265,7 +265,7 @@
     "description": "greet(\"Mina\"); 처럼 함수를 호출할 때 괄호 안에 넣는 값 \"Mina\" 를 무엇이라고 할까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -285,7 +285,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction greet(name) {\n  console.log(\"Hi, \" + name);\n}\ngreet(\"Tom\");",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -305,7 +305,7 @@
     "description": "greet 함수를 먼저 선언한 다음 \"Mina\" 를 인자로 넣어 호출하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -330,7 +330,7 @@
     "description": "greet 함수를 먼저 선언하고 Hello, Mina → Hello, Jun 순서로 출력되게 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -357,7 +357,7 @@
     "description": "introduce 함수를 먼저 선언하고 Name: Mina → Age: 15 → Name: Jun → Age: 14 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -386,7 +386,7 @@
     "description": "name 을 매개변수로 받는 greet 함수를 선언하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -410,7 +410,7 @@
     "description": "매개변수 name 을 써서 인사를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -433,7 +433,7 @@
     "description": "\"Mina\" 를 인자로 넣어 greet 함수를 호출하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -457,7 +457,7 @@
     "description": "name 을 매개변수로 받아 \"Hello, \" + name 을 출력하는 greet 함수를 만들고 greet(\"Mina\") 로 호출하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-2",
     "content": {
@@ -489,7 +489,7 @@
     "description": "return 에 대한 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -509,7 +509,7 @@
     "description": "두 수의 합을 돌려주는 add 함수로 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -529,7 +529,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction timesTwo(n) {\n  return n * 2;\n  console.log(\"끝\");\n}\nconsole.log(timesTwo(4));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -549,7 +549,7 @@
     "description": "add 함수를 먼저 선언하고 add(2, 3) 의 결과 5 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -574,7 +574,7 @@
     "description": "합을 sum 에 담아 돌려주는 add 함수를 먼저 선언하고 add(2, 3) 의 결과를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -601,7 +601,7 @@
     "description": "add 함수를 먼저 선언하고, 돌려받은 값을 result 에 담아 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -630,7 +630,7 @@
     "description": "두 수를 받는 add 함수를 선언하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -654,7 +654,7 @@
     "description": "a + b 를 돌려주도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -677,7 +677,7 @@
     "description": "add(2, 3) 의 결과를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -700,7 +700,7 @@
     "description": "두 수 a, b 를 받아 합을 반환하는 add 함수를 만들고, add(2, 3) 의 결과를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-3",
     "content": {
@@ -729,7 +729,7 @@
     "description": "1부터 n 까지의 합을 돌려주는 sigma 함수는 어떻게 만들까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -749,7 +749,7 @@
     "description": "1부터 n 까지의 합을 돌려주는 sigma 함수로 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -769,7 +769,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction sigma(n) {\n  let total = 0;\n  for (let i = 1; i <= n; i++) {\n    total += i;\n  }\n  return total;\n}\nconsole.log(sigma(4));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -789,7 +789,7 @@
     "description": "1부터 n 까지 더한 값을 돌려주는 sigma 함수를 완성하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -820,7 +820,7 @@
     "description": "sigma 함수를 먼저 선언하고 sigma(5) 의 결과 15 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -853,7 +853,7 @@
     "description": "sigma 함수를 먼저 선언하고, sigma(10) 의 결과를 result 에 담아 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -888,7 +888,7 @@
     "description": "n 을 받는 sigma 함수를 선언하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -912,7 +912,7 @@
     "description": "1부터 n 까지 반복하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -936,7 +936,7 @@
     "description": "누적한 합을 돌려주도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -959,7 +959,7 @@
     "description": "1부터 n 까지의 합을 반환하는 sigma 함수를 만들고, sigma(10) 의 결과를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-4",
     "content": {
@@ -996,7 +996,7 @@
     "description": "함수 표현식에 대한 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1016,7 +1016,7 @@
     "description": "함수를 변수 double 에 담는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1036,7 +1036,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst triple = function (n) {\n  return n * 3;\n};\nconsole.log(triple(4));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1056,7 +1056,7 @@
     "description": "함수를 변수 double 에 담은 다음 double(5) 의 결과를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1081,7 +1081,7 @@
     "description": "n * 2 를 result 에 담아 돌려주는 함수를 double 에 담고, double(5) 의 결과를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1108,7 +1108,7 @@
     "description": "함수를 double 에 담고, double(5) 의 결과를 answer 에 담아 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1137,7 +1137,7 @@
     "description": "함수를 변수 double 에 담도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1161,7 +1161,7 @@
     "description": "n * 2 를 돌려주도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1184,7 +1184,7 @@
     "description": "변수 double 에 담긴 함수를 5 로 호출하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1208,7 +1208,7 @@
     "description": "숫자 n 을 받아 n * 2 를 반환하는 함수를 변수 double 에 저장하고, double(5) 의 결과를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-5",
     "content": {
@@ -1237,7 +1237,7 @@
     "description": "function greet(name = \"friend\") { } 를 greet() 처럼 인자 없이 호출하면 name 의 값은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1257,7 +1257,7 @@
     "description": "name 의 기본값을 \"friend\" 로 정한 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1277,7 +1277,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction greet(name = \"friend\") {\n  console.log(\"Hi, \" + name);\n}\ngreet();\ngreet(\"Mina\");",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1297,7 +1297,7 @@
     "description": "기본값이 있는 greet 함수를 먼저 선언하고 인자 없이 호출해서 Hello, friend 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1322,7 +1322,7 @@
     "description": "greet 함수를 먼저 선언하고 Hello, friend → Hello, Mina 순서로 출력되게 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1349,7 +1349,7 @@
     "description": "order 함수를 먼저 선언하고 pizza 1개 → burger 3개 → 주문 끝 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1378,7 +1378,7 @@
     "description": "name 의 기본값을 \"friend\" 로 정하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1402,7 +1402,7 @@
     "description": "인사말을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1425,7 +1425,7 @@
     "description": "매개변수에 기본값을 정할 때 매개변수 이름 바로 뒤에 쓰는 기호를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1442,7 +1442,7 @@
     "description": "name 의 기본값이 \"friend\" 인 greet 함수를 만들어 \"Hello, \" + name 을 출력하고, 인자 없이 greet() 로 호출하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-6",
     "content": {
@@ -1474,7 +1474,7 @@
     "description": "화살표 함수에 대한 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1494,7 +1494,7 @@
     "description": "x 의 두 배를 돌려주는 화살표 함수로 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1514,7 +1514,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst add = (a, b) => a + b;\nconsole.log(add(3, 4));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1534,7 +1534,7 @@
     "description": "화살표 함수 square 를 먼저 만들고 square(4) 의 결과를 result 에 담아 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1557,7 +1557,7 @@
     "description": "square 를 먼저 만들고 square(3) 에 1 을 더한 10 이 출력되게 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1582,7 +1582,7 @@
     "description": "중괄호를 쓰는 화살표 함수 square 를 먼저 만들고 9 → 25 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1611,7 +1611,7 @@
     "description": "화살표 함수가 되도록 빈칸에 알맞은 기호를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1634,7 +1634,7 @@
     "description": "화살표 함수를 변수 square 에 담도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1658,7 +1658,7 @@
     "description": "square(4) 의 결과를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1681,7 +1681,7 @@
     "description": "화살표 함수로 x * x 를 돌려주는 square 를 만들고, square(4) 의 결과를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-7",
     "content": {
@@ -1710,7 +1710,7 @@
     "description": "true 나 false 를 돌려주는 isValid 함수를 조건문에서 쓰는 알맞은 방법은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1730,7 +1730,7 @@
     "description": "숫자가 1 이상 10 이하일 때만 true 를 돌려주는 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1750,7 +1750,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction isValid(n) {\n  return n >= 1 && n <= 10;\n}\nif (isValid(7)) {\n  console.log(\"OK\");\n} else {\n  console.log(\"NO\");\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1770,7 +1770,7 @@
     "description": "isValid 함수를 먼저 선언하고 isValid(5) 의 결과 true 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1795,7 +1795,7 @@
     "description": "isValid 함수를 먼저 선언하고, isValid(5) 의 결과를 ok 에 담아 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1822,7 +1822,7 @@
     "description": "if 문으로 1~10 이면 true, 아니면 false 를 돌려주는 isValid 를 먼저 선언하고 true → false 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1855,7 +1855,7 @@
     "description": "n 을 받는 isValid 함수를 선언하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1879,7 +1879,7 @@
     "description": "조건의 결과(true/false)를 돌려주도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1902,7 +1902,7 @@
     "description": "두 조건이 모두 참일 때 true 가 되도록 빈칸에 알맞은 연산자를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1925,7 +1925,7 @@
     "description": "숫자 n 이 1 이상 10 이하이면 true 를, 아니면 false 를 반환하는 isValid 함수를 만드세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-9-8",
     "content": {
@@ -1962,7 +1962,7 @@
     "description": "FizzBuzz 게임 규칙은 3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다의 배수면 FizzBuzz 입니다. 15 차례에는 무엇이라고 말해야 할까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -1982,7 +1982,7 @@
     "description": "숫자 n 이 3의 배수인지 확인하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2002,7 +2002,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst n = 9;\nif (n % 3 === 0) {\n  console.log(\"Fizz\");\n} else {\n  console.log(n);\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2022,7 +2022,7 @@
     "description": "조각을 이어 붙여 FizzBuzz 를 출력하는 한 줄 코드를 만드세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2045,7 +2045,7 @@
     "description": "조각을 이어 붙여 3의 배수는 Fizz 를 출력하는 한 줄 코드를 만드세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2070,7 +2070,7 @@
     "description": "조각을 이어 붙여 3의 배수는 Fizz, 5의 배수는 Buzz 를 출력하는 한 줄 코드를 만드세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2099,7 +2099,7 @@
     "description": "FizzBuzz 규칙을 화면에 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2122,7 +2122,7 @@
     "description": "3의 배수일 때 출력할 말을 빈칸에 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2145,7 +2145,7 @@
     "description": "배수인지 알아보려고 나머지를 구할 때 쓰는 연산자 기호를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2162,7 +2162,7 @@
     "description": "console.log 로 \"3의 배수는 Fizz, 5의 배수는 Buzz, 둘 다면 FizzBuzz\" 를 한 줄로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-1",
     "content": {
@@ -2188,7 +2188,7 @@
     "description": "fizzbuzz 함수에서 15의 배수를 가장 먼저 검사하는 까닭은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2208,7 +2208,7 @@
     "description": "fizzbuzz(n) 함수 안의 코드로 올바른 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2228,7 +2228,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction fizzbuzz(n) {\n  if (n % 15 === 0) return \"FizzBuzz\";\n  if (n % 3 === 0) return \"Fizz\";\n  if (n % 5 === 0) return \"Buzz\";\n  return n;\n}\nconsole.log(fizzbuzz(10));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2248,7 +2248,7 @@
     "description": "15 → 3 → 5 순서로 검사하고, 아무것도 아니면 n 을 돌려주는 fizzbuzz 함수를 완성하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2277,7 +2277,7 @@
     "description": "15 → 3 → 5 순서로 검사하는 fizzbuzz 함수를 먼저 선언하고 fizzbuzz(15) 의 결과를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2308,7 +2308,7 @@
     "description": "if / else if 로 15 → 3 → 5 순서로 검사하는 fizzbuzz 함수를 먼저 선언하고 fizzbuzz(9) 의 결과를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2347,7 +2347,7 @@
     "description": "n 을 받는 fizzbuzz 함수를 선언하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2371,7 +2371,7 @@
     "description": "15의 배수인지 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2395,7 +2395,7 @@
     "description": "3의 배수인지 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2419,7 +2419,7 @@
     "description": "n 이 15의 배수면 \"FizzBuzz\", 3의 배수면 \"Fizz\", 5의 배수면 \"Buzz\" 를, 아니면 n 을 반환하는 fizzbuzz 함수를 만드세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-2",
     "content": {
@@ -2458,7 +2458,7 @@
     "description": "1부터 15까지 각 숫자마다 fizzbuzz 함수를 부르는 가장 알맞은 방법은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2478,7 +2478,7 @@
     "description": "1부터 15까지 fizzbuzz(i) 의 결과를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2498,7 +2498,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction fizzbuzz(n) {\n  if (n % 15 === 0) return \"FizzBuzz\";\n  if (n % 3 === 0) return \"Fizz\";\n  if (n % 5 === 0) return \"Buzz\";\n  return n;\n}\nfor (let i = 1; i <= 5; i++) {\n  console.log(fizzbuzz(i));\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2518,7 +2518,7 @@
     "description": "fizzbuzz 함수는 이미 있어요. 1부터 15까지 fizzbuzz(i) 의 결과를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2541,7 +2541,7 @@
     "description": "fizzbuzz 함수는 이미 있어요. 반복문 안에서 결과를 result 에 담아 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2566,7 +2566,7 @@
     "description": "fizzbuzz 함수는 이미 있어요. 게임 시작 → 1부터 15까지의 결과 → 게임 끝 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2595,7 +2595,7 @@
     "description": "fizzbuzz 함수는 이미 있어요. 1부터 15까지 반복하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2619,7 +2619,7 @@
     "description": "fizzbuzz 함수는 이미 있어요. 반복할 때마다 fizzbuzz 를 i 로 호출하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2643,7 +2643,7 @@
     "description": "fizzbuzz 함수는 이미 있어요. 결과를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2666,7 +2666,7 @@
     "description": "for 반복문으로 1부터 15까지 fizzbuzz(i) 의 결과를 출력하세요. (fizzbuzz 함수는 이미 있어요)",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-3",
     "content": {
@@ -2691,7 +2691,7 @@
     "description": "7의 배수에 \"Bang\" 을 돌려주는 새 규칙을 fizzbuzz 함수에 넣을 때 알맞은 위치는 어디일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2711,7 +2711,7 @@
     "description": "7의 배수일 때 \"Bang\" 을 돌려주는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2731,7 +2731,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nfunction fizzbuzz(n) {\n  if (n % 15 === 0) return \"FizzBuzz\";\n  if (n % 3 === 0) return \"Fizz\";\n  if (n % 5 === 0) return \"Buzz\";\n  if (n % 7 === 0) return \"Bang\";\n  return n;\n}\nconsole.log(fizzbuzz(14));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2751,7 +2751,7 @@
     "description": "조각을 이어 붙여 7의 배수면 \"Bang\" 을 돌려주는 한 줄 규칙을 만드세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2774,7 +2774,7 @@
     "description": "조각을 이어 붙여 7의 배수면 \"Bang\" 을 돌려주는 한 줄 규칙을 만드세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2799,7 +2799,7 @@
     "description": "조각을 이어 붙여 7의 배수면 \"Bang\" 을 돌려주는 한 줄 규칙을 만드세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2828,7 +2828,7 @@
     "description": "7의 배수인지 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2852,7 +2852,7 @@
     "description": "7의 배수일 때 돌려줄 말을 빈칸에 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2875,7 +2875,7 @@
     "description": "7의 배수일 때 \"Bang\" 을 돌려주도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2898,7 +2898,7 @@
     "description": "fizzbuzz 함수에 7의 배수이면 \"Bang\" 을 반환하는 규칙을 return n; 보다 앞에 추가하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-10-4",
     "content": {
@@ -2933,7 +2933,7 @@
     "description": "자바스크립트에서 배열을 만드는 방법으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -2953,7 +2953,7 @@
     "description": "숫자 1, 2, 3 이 담긴 배열을 올바르게 만든 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -2973,7 +2973,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst colors = [\"red\", \"blue\"];\nconsole.log(colors);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -2993,7 +2993,7 @@
     "description": "과일 3개가 담긴 배열 fruits 를 여러 줄로 만들고 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3018,7 +3018,7 @@
     "description": "출력이 [ 'apple', 'banana', 'cherry' ] 가 되도록 배열 fruits 를 만들고 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3045,7 +3045,7 @@
     "description": "출력이 [ 'apple', 'banana', 'cherry' ] 가 되도록 값을 한 줄에 하나씩 써서 배열 fruits 를 만들고 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3074,7 +3074,7 @@
     "description": "과일이 담긴 배열 fruits 를 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3098,7 +3098,7 @@
     "description": "배열 fruits 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3122,7 +3122,7 @@
     "description": "배열 안의 값과 값 사이를 구분할 때 쓰는 기호를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3139,7 +3139,7 @@
     "description": "과일 이름 3개가 담긴 fruits 배열을 만들고 console.log 로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-1",
     "content": {
@@ -3165,7 +3165,7 @@
     "description": "배열의 인덱스와 length 에 대한 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3185,7 +3185,7 @@
     "description": "배열 fruits 의 첫 번째 요소를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3205,7 +3205,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst pets = [\"cat\", \"dog\", \"fish\"];\nconsole.log(pets[1]);\nconsole.log(pets.length);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3225,7 +3225,7 @@
     "description": "fruits 배열을 만들고 apple → 3 순서로 출력되게 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3248,7 +3248,7 @@
     "description": "fruits 배열을 만들고 apple → banana → 3 순서로 출력되게 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3273,7 +3273,7 @@
     "description": "fruits 배열을 만들고 apple → banana → cherry → 3 순서로 출력되게 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3300,7 +3300,7 @@
     "description": "fruits 의 첫 번째 요소 apple 을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3324,7 +3324,7 @@
     "description": "fruits 의 요소 개수 3 을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3347,7 +3347,7 @@
     "description": "배열의 요소 개수를 알려 주는 속성 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3364,7 +3364,7 @@
     "description": "fruits 배열의 첫 번째 요소와 length 를 차례로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-2",
     "content": {
@@ -3393,7 +3393,7 @@
     "description": "배열의 요소 하나를 다른 값으로 바꾸는 방법으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3413,7 +3413,7 @@
     "description": "const fruits = [\"apple\", \"banana\"]; 다음에 fruits[0] = \"kiwi\"; 를 실행하면 어떻게 될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3433,7 +3433,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [10, 20, 30];\nnums[2] = 99;\nconsole.log(nums);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3453,7 +3453,7 @@
     "description": "fruits 의 두 번째 요소를 \"grape\" 로 바꾼 뒤 배열을 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3476,7 +3476,7 @@
     "description": "출력이 [ 'apple', 'banana', 'cherry' ] → grape 순서가 되도록 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3501,7 +3501,7 @@
     "description": "출력이 banana → [ 'apple', 'grape', 'grape' ] 순서가 되도록 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3528,7 +3528,7 @@
     "description": "fruits 의 두 번째 요소를 \"grape\" 로 바꾸도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3552,7 +3552,7 @@
     "description": "바뀐 배열을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3575,7 +3575,7 @@
     "description": "fruits 의 두 번째 요소를 바꾸려면 대괄호 안에 어떤 인덱스 숫자를 써야 할까요?",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3592,7 +3592,7 @@
     "description": "fruits[1] 을 \"grape\" 로 바꾼 다음 fruits 배열을 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-3",
     "content": {
@@ -3622,7 +3622,7 @@
     "description": "push() 와 pop() 에 대한 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3642,7 +3642,7 @@
     "description": "\"kiwi\" 를 fruits 의 끝에 추가하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3662,7 +3662,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [1, 2, 3];\nnums.push(4);\nnums.pop();\nnums.pop();\nconsole.log(nums);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3682,7 +3682,7 @@
     "description": "\"kiwi\" 를 fruits 의 끝에 추가한 뒤 배열을 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3705,7 +3705,7 @@
     "description": "출력이 [ 'apple', 'banana', 'kiwi' ] → 3 순서가 되도록 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3730,7 +3730,7 @@
     "description": "출력이 [ 'apple', 'banana', 'kiwi' ] → 2 순서가 되도록 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3757,7 +3757,7 @@
     "description": "\"kiwi\" 를 끝에 추가하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3780,7 +3780,7 @@
     "description": "kiwi 를 추가한 배열을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3803,7 +3803,7 @@
     "description": "배열의 끝에서 요소를 하나 제거하는 메서드 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3820,7 +3820,7 @@
     "description": "push() 로 \"kiwi\" 를 fruits 의 끝에 추가한 다음 fruits 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-4",
     "content": {
@@ -3850,7 +3850,7 @@
     "description": "unshift() 와 shift() 에 대한 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -3870,7 +3870,7 @@
     "description": "\"kiwi\" 를 fruits 의 맨 앞에 추가하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -3890,7 +3890,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst nums = [2, 3];\nnums.unshift(1);\nnums.shift();\nnums.shift();\nconsole.log(nums);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -3910,7 +3910,7 @@
     "description": "\"kiwi\" 를 fruits 의 맨 앞에 추가한 뒤 배열을 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -3933,7 +3933,7 @@
     "description": "출력이 [ 'kiwi', 'apple', 'banana' ] → kiwi 순서가 되도록 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -3958,7 +3958,7 @@
     "description": "출력이 [ 'kiwi', 'apple', 'banana' ] → apple 순서가 되도록 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -3985,7 +3985,7 @@
     "description": "\"kiwi\" 를 맨 앞에 추가하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -4008,7 +4008,7 @@
     "description": "맨 앞 요소 kiwi 를 제거하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -4031,7 +4031,7 @@
     "description": "배열의 맨 앞에 요소를 추가하는 메서드 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -4048,7 +4048,7 @@
     "description": "unshift() 로 \"kiwi\" 를 fruits 맨 앞에 추가하고, shift() 로 맨 앞 요소를 제거한 다음 fruits 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-5",
     "content": {
@@ -4082,7 +4082,7 @@
     "description": "push 와 pop 을 함께 써서 배열을 가공하는 설명으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4102,7 +4102,7 @@
     "description": "numbers 끝에 5 를 추가한 다음 마지막 값을 제거하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4122,7 +4122,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconst numbers = [5, 6];\nnumbers.push(7);\nnumbers.push(8);\nnumbers.pop();\nconsole.log(numbers);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4142,7 +4142,7 @@
     "description": "4 를 추가한 다음 마지막 값을 제거해서 [ 1, 2, 3 ] 이 출력되게 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4167,7 +4167,7 @@
     "description": "출력이 [ 1, 2, 3, 4 ] → 3 순서가 되도록 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4194,7 +4194,7 @@
     "description": "출력이 5 → [ 1, 2, 3, 4 ] 순서가 되도록 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4223,7 +4223,7 @@
     "description": "numbers 끝에 4 를 추가하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4246,7 +4246,7 @@
     "description": "numbers 의 마지막 값을 제거하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4269,7 +4269,7 @@
     "description": "가공한 numbers 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {
@@ -4292,7 +4292,7 @@
     "description": "numbers 배열에 push() 로 값을 하나 추가하고, pop() 으로 마지막 값을 제거한 다음 numbers 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "advanced",
     "language": "javascript",
     "lessonId": "js-11-6",
     "content": {

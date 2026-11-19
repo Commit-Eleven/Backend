@@ -8,6 +8,7 @@ import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
 import {
   excludeSolved,
+  explanationOf,
   filterByLanguage,
   filterByLevel,
   isStudyLevel,
@@ -104,9 +105,17 @@ mcq.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
     const { answer: correct, choices } = problem.content
-    return c.json({ isAnswer, answer: correct, answerText: choices[correct] }, 200)
+    return c.json(
+      {
+        isAnswer,
+        answer: correct,
+        answerText: choices[correct],
+        explanation: explanationOf(problem),
+      },
+      200,
+    )
   }
 })

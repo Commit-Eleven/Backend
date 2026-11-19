@@ -8,6 +8,7 @@ import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
 import {
   excludeSolved,
+  explanationOf,
   filterByLanguage,
   filterByLevel,
   isStudyLevel,
@@ -111,11 +112,16 @@ short.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(userId, problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
     // 프론트는 answer 를 문자열 하나로 보여 준다. 인정되는 답 전체는 answers 로
     return c.json(
-      { isAnswer, answer: problem.content.answer[0], answers: problem.content.answer },
+      {
+        isAnswer,
+        answer: problem.content.answer[0],
+        answers: problem.content.answer,
+        explanation: explanationOf(problem),
+      },
       200,
     )
   }
