@@ -8,6 +8,7 @@ import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
 import {
   excludeSolved,
+  explanationOf,
   filterByLanguage,
   filterByLevel,
   isStudyLevel,
@@ -116,8 +117,8 @@ parsons.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
-    return c.json({ isAnswer, answer: answerOrder }, 200)
+    return c.json({ isAnswer, answer: answerOrder, explanation: explanationOf(problem) }, 200)
   }
 })

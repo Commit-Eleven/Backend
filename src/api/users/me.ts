@@ -340,6 +340,7 @@ me.get('/submissions', requireAuth, async (c) => {
         difficulty: meta?.difficulty ?? null,
         language: meta?.language ?? null,
         unitId: meta?.unitId ?? null,
+        lessonId: meta?.lessonId ?? null,
         isCorrect: row.isCorrect,
         answer: row.answer,
         runOutput: row.runOutput,
@@ -373,6 +374,7 @@ me.get('/wrong-notes', requireAuth, async (c) => {
         difficulty: meta?.difficulty ?? null,
         language: meta?.language ?? null,
         unitId: meta?.unitId ?? null,
+        lessonId: meta?.lessonId ?? null,
         myAnswer: row.answer,
         runOutput: row.runOutput,
         wrongAt: row.createdAt,
@@ -405,6 +407,7 @@ me.get('/wrong-notes/reviewed', requireAuth, async (c) => {
         difficulty: meta?.difficulty ?? null,
         language: meta?.language ?? null,
         unitId: meta?.unitId ?? null,
+        lessonId: meta?.lessonId ?? null,
         myAnswer: row.answer,
         reviewedAt: row.createdAt,
       }

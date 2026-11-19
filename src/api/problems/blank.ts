@@ -8,6 +8,7 @@ import { readJsonBody } from '../../util/http/body'
 import { pickProblemId } from '../../util/learning'
 import {
   excludeSolved,
+  explanationOf,
   filterByLanguage,
   filterByLevel,
   isStudyLevel,
@@ -136,10 +137,10 @@ blank.post('', requireAuth, async (c) => {
 
   if (isAnswer) {
     const exp = await awardSolveExp(c.get('userId'), problem.id, problem.reward)
-    return c.json({ isAnswer, ...exp }, 200)
+    return c.json({ isAnswer, ...exp, explanation: explanationOf(problem) }, 200)
   } else {
     // 프론트는 정답을 answers 로 읽어서 같은 값을 answers 로도 준다
     const answer = problem.content.blanks.map((blank) => ({ ...blank, answers: blank.answer }))
-    return c.json({ isAnswer, answer }, 200)
+    return c.json({ isAnswer, answer, explanation: explanationOf(problem) }, 200)
   }
 })

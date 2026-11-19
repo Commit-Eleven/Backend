@@ -1146,7 +1146,7 @@
     "description": "if (조건) { } 에 대한 설명으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1166,7 +1166,7 @@
     "description": "score 가 90 이상일 때 Great 를 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1186,7 +1186,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint score = 75;\nif (score >= 60) {\n    System.out.println(\"Pass\");\n}\nSystem.out.println(\"End\");",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1206,7 +1206,7 @@
     "description": "조각을 올바른 순서로 놓아 score 가 90 이상이면 Great 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1231,7 +1231,7 @@
     "description": "조각을 올바른 순서로 놓아 score 에 10 을 더한 뒤 90 이상이면 Great 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1258,7 +1258,7 @@
     "description": "조각을 올바른 순서로 놓아 보너스를 더한 점수가 90 이상이면 Great 를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1287,7 +1287,7 @@
     "description": "score 가 90 이상일 때 Great 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1311,7 +1311,7 @@
     "description": "score 가 90 이상일 때 Great 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1334,7 +1334,7 @@
     "description": "if 블록 안에서 Great 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1357,7 +1357,7 @@
     "description": "score 가 90 이상이면 \"Great\" 를 출력하는 if 문을 쓰세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-1",
     "content": {
@@ -1383,7 +1383,7 @@
     "description": "if-else 문에서 else 블록은 언제 실행될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1403,7 +1403,7 @@
     "description": "n 이 짝수면 even, 아니면 odd 를 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1423,7 +1423,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint n = 7;\nif (n > 10) {\n    System.out.println(\"big\");\n} else {\n    System.out.println(\"small\");\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1443,7 +1443,7 @@
     "description": "조각을 올바른 순서로 놓아 n 이 짝수면 even, 아니면 odd 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1468,7 +1468,7 @@
     "description": "조각을 올바른 순서로 놓아 n 이 짝수면 even, 아니면 odd 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1497,7 +1497,7 @@
     "description": "조각을 올바른 순서로 놓아 n 에 1 을 더한 뒤, 짝수면 even, 아니면 odd 를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1528,7 +1528,7 @@
     "description": "n 이 짝수인지 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1552,7 +1552,7 @@
     "description": "조건이 false일 때 odd 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1575,7 +1575,7 @@
     "description": "else 블록에서 odd 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1598,7 +1598,7 @@
     "description": "n 이 짝수면 \"even\", 아니면 \"odd\" 를 출력하는 if-else 문을 쓰세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-2",
     "content": {
@@ -1633,7 +1633,7 @@
     "description": "switch 문에 대한 설명으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1653,7 +1653,7 @@
     "description": "switch 문에서 각 case 끝에 break 를 두는 까닭은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1673,7 +1673,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Mon\");\n        break;\n    case 2:\n        System.out.println(\"Tue\");\n        break;\n    default:\n        System.out.println(\"Other\");\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1693,7 +1693,7 @@
     "description": "day 가 1이면 Mon, 2이면 Tue, 그 외는 Other 를 출력하는 switch 문을 case 1, case 2, default 순서로 완성하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1718,7 +1718,7 @@
     "description": "day 가 1이면 Mon, 2이면 Tue, 그 외는 Other 를 출력하는 switch 문을 case 1, case 2, default 순서로 완성하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1749,7 +1749,7 @@
     "description": "day 가 1이면 Mon, 2이면 Tue, 3이면 Wed, 그 외는 Other 를 출력하는 switch 문을 case 1, 2, 3, default 순서로 완성하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1788,7 +1788,7 @@
     "description": "day 값을 case 와 비교하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1812,7 +1812,7 @@
     "description": "day 가 1일 때 Mon 을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1835,7 +1835,7 @@
     "description": "Mon 을 출력한 뒤 switch 를 빠져나가도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1858,7 +1858,7 @@
     "description": "switch 문으로 day 가 1이면 \"Mon\", 2이면 \"Tue\", 그 외는 \"Other\" 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-3",
     "content": {
@@ -1898,7 +1898,7 @@
     "description": "삼항 연산자에서 조건 바로 뒤에 오는 기호는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -1918,7 +1918,7 @@
     "description": "조건 ? 참일때 : 거짓일때 에 대한 설명으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -1938,7 +1938,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint n = 5;\nString r = n > 3 ? \"big\" : \"small\";\nSystem.out.println(r);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -1958,7 +1958,7 @@
     "description": "조각을 올바른 순서로 놓아 삼항 연산자로 n 이 짝수인지 홀수인지 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -1981,7 +1981,7 @@
     "description": "조각을 올바른 순서로 놓아 n 에 1 을 더한 뒤 삼항 연산자로 짝수/홀수를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -2006,7 +2006,7 @@
     "description": "조각을 올바른 순서로 놓아 여러 줄로 나눈 삼항 연산자를 완성하고 result 를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -2035,7 +2035,7 @@
     "description": "조건 뒤에 알맞은 기호를 넣어 삼항 연산자를 완성하세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -2058,7 +2058,7 @@
     "description": "참일 때 값과 거짓일 때 값 사이에 알맞은 기호를 넣으세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -2081,7 +2081,7 @@
     "description": "삼항 연산자의 결과를 문자열 변수 result 에 저장하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -2104,7 +2104,7 @@
     "description": "삼항 연산자로 n 이 짝수면 \"even\", 아니면 \"odd\" 를 String result 에 저장하고 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-4",
     "content": {
@@ -2134,7 +2134,7 @@
     "description": "if-else 문으로 할 수 있는 일로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2154,7 +2154,7 @@
     "description": "age 가 18 이상이면 Adult, 아니면 Minor 를 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2174,7 +2174,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint age = 16;\nif (age >= 18) {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2194,7 +2194,7 @@
     "description": "조각을 올바른 순서로 놓아 age 가 18 이상이면 Adult, 아니면 Minor 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2219,7 +2219,7 @@
     "description": "조각을 올바른 순서로 놓아 age 가 18 이상이면 Adult, 아니면 Minor 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2248,7 +2248,7 @@
     "description": "조각을 올바른 순서로 놓아 age 에 3 을 더한 뒤, 18 이상이면 Adult, 아니면 Minor 를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2279,7 +2279,7 @@
     "description": "age 가 18 이상인지 검사하는 if 조건을 빈칸에 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2305,7 +2305,7 @@
     "description": "조건이 false일 때 Minor 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2328,7 +2328,7 @@
     "description": "else 블록에서 Minor 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2351,7 +2351,7 @@
     "description": "age 가 18 이상이면 \"Adult\", 아니면 \"Minor\" 를 출력하는 if-else 문을 쓰세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-5",
     "content": {
@@ -2386,7 +2386,7 @@
     "description": "else if 에 대한 설명으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2406,7 +2406,7 @@
     "description": "score 가 90 이상이면 A, 80 이상이면 B, 나머지는 C 를 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2426,7 +2426,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint score = 85;\nif (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2446,7 +2446,7 @@
     "description": "조각을 올바른 순서로 놓아 90 이상 A, 80 이상 B, 나머지 C 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2471,7 +2471,7 @@
     "description": "조각을 올바른 순서로 놓아 90 이상 A, 80 이상 B, 나머지 C 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2500,7 +2500,7 @@
     "description": "조각을 올바른 순서로 놓아 90 이상 A, 80 이상 B, 나머지 C 를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2533,7 +2533,7 @@
     "description": "첫 번째 조건을 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2557,7 +2557,7 @@
     "description": "앞 조건이 false일 때 다음 조건을 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2580,7 +2580,7 @@
     "description": "모든 조건이 false일 때 C 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2603,7 +2603,7 @@
     "description": "score 가 90 이상이면 \"A\", 80 이상이면 \"B\", 나머지는 \"C\" 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-6-6",
     "content": {
@@ -2637,7 +2637,7 @@
     "description": "print() 와 println() 의 차이로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2657,7 +2657,7 @@
     "description": "Hi 를 출력하고 줄을 바꾸는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2677,7 +2677,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nSystem.out.print(\"A\");\nSystem.out.print(\"B\");\nSystem.out.println(\"C\");\nSystem.out.println(\"D\");",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2697,7 +2697,7 @@
     "description": "조각을 올바른 순서로 놓아 첫 줄에 Hello, Java! 를, 둘째 줄에 Bye 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2720,7 +2720,7 @@
     "description": "조각을 올바른 순서로 놓아 첫 줄에 123 을, 둘째 줄에 end 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2745,7 +2745,7 @@
     "description": "조각을 올바른 순서로 놓아 I like Java, Me too, ! 를 세 줄로 차례로 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2774,7 +2774,7 @@
     "description": "줄을 바꾸지 않고 출력해서 Hello, Java 가 한 줄에 나오도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2797,7 +2797,7 @@
     "description": "Java 를 출력한 뒤 줄을 바꿔서 Bye 가 다음 줄에 나오도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2820,7 +2820,7 @@
     "description": "출력한 뒤 줄을 바꾸는 System.out 의 메서드 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2837,7 +2837,7 @@
     "description": "System.out.print() 와 System.out.println() 을 한 번씩 사용해 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-1",
     "content": {
@@ -2862,7 +2862,7 @@
     "description": "printf 의 형식 지정자에 대한 설명으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -2882,7 +2882,7 @@
     "description": "String name = \"Mina\", int age = 15 일 때 이름과 나이를 printf 로 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -2902,7 +2902,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\ndouble pi = 3.14159;\nSystem.out.printf(\"%.2f\", pi);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -2922,7 +2922,7 @@
     "description": "조각을 올바른 순서로 놓아 pi * 2 를 소수 둘째 자리까지 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -2945,7 +2945,7 @@
     "description": "조각을 올바른 순서로 놓아 a, b 와 평균을 printf 로 한 줄에 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -2970,7 +2970,7 @@
     "description": "조각을 올바른 순서로 놓아 b, 합계, 평균을 printf 로 한 줄에 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -2997,7 +2997,7 @@
     "description": "형식을 정해서 pi 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -3020,7 +3020,7 @@
     "description": "pi 를 소수 둘째 자리까지 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -3043,7 +3043,7 @@
     "description": "printf 에서 문자열이 들어갈 자리를 나타내는 형식 지정자를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -3060,7 +3060,7 @@
     "description": "printf 로 3.14159 를 소수 둘째 자리까지 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-2",
     "content": {
@@ -3090,7 +3090,7 @@
     "description": "Scanner 로 정수를 입력받는 방법으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3110,7 +3110,7 @@
     "description": "Scanner 를 만드는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3130,7 +3130,7 @@
     "description": "입력으로 5 를 넣었을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.println(n * 2);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3150,7 +3150,7 @@
     "description": "조각을 올바른 순서로 놓아 정수 하나를 입력받아 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3173,7 +3173,7 @@
     "description": "조각을 올바른 순서로 놓아 정수 하나를 입력받아 두 배 한 값을 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3198,7 +3198,7 @@
     "description": "조각을 올바른 순서로 놓아 Scanner 를 import 하고 정수 하나를 입력받아 출력하는 프로그램을 완성하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3231,7 +3231,7 @@
     "description": "입력을 읽는 객체를 만들도록 빈칸에 클래스 이름을 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3254,7 +3254,7 @@
     "description": "키보드 입력을 읽는 Scanner 를 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3277,7 +3277,7 @@
     "description": "정수 하나를 읽도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3300,7 +3300,7 @@
     "description": "Scanner 로 정수 하나를 입력받아 그대로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-3",
     "content": {
@@ -3333,7 +3333,7 @@
     "description": "1부터 n 까지의 합을 구하는 공식으로 옳은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3353,7 +3353,7 @@
     "description": "int n = 120; 일 때 1부터 n 까지의 합을 공식으로 계산하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3373,7 +3373,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint n = 120;\nint sum = n * (n + 1) / 2;\nSystem.out.println(sum);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3393,7 +3393,7 @@
     "description": "조각을 올바른 순서로 놓아 1부터 120까지의 합을 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3416,7 +3416,7 @@
     "description": "조각을 올바른 순서로 놓아 n + 1 을 먼저 구한 뒤 1부터 120까지의 합을 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3441,7 +3441,7 @@
     "description": "조각을 올바른 순서로 놓아 공식을 나누어 계산한 뒤 \"합: 7260\" 을 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3468,7 +3468,7 @@
     "description": "계산한 합 sum 을 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3491,7 +3491,7 @@
     "description": "1부터 120까지의 합을 구하도록 빈칸에 끝 수를 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3514,7 +3514,7 @@
     "description": "1부터 n 까지의 합 공식 n * (n + 1) ___ 2 에서 빈 자리에 들어갈 연산자 기호를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3531,7 +3531,7 @@
     "description": "1부터 120까지의 합을 계산해서 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-4",
     "content": {
@@ -3560,7 +3560,7 @@
     "description": "Java 에서 두 문자열의 내용이 같은지 비교할 때 쓰는 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3580,7 +3580,7 @@
     "description": "answer 가 \"yes\" 인지 비교하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3600,7 +3600,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nString answer = \"no\";\nSystem.out.println(answer.equals(\"yes\"));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3620,7 +3620,7 @@
     "description": "조각을 올바른 순서로 놓아 answer 가 \"yes\" 인지 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3643,7 +3643,7 @@
     "description": "조각을 올바른 순서로 놓아 answer 가 \"yes\" 가 아닌지 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3668,7 +3668,7 @@
     "description": "조각을 올바른 순서로 놓아 equals 로 비교한 결과를 \"결과: true\" 형식으로 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3695,7 +3695,7 @@
     "description": "answer 가 \"yes\" 와 같은지 비교하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3718,7 +3718,7 @@
     "description": "비교 결과를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3741,7 +3741,7 @@
     "description": "두 문자열의 내용이 같은지 비교하는 메서드 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3758,7 +3758,7 @@
     "description": "answer 가 \"yes\" 인지 equals 로 비교한 결과를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-7-5",
     "content": {
@@ -3788,7 +3788,7 @@
     "description": "계산기 프로그램을 시작할 때 환영 메시지를 출력하는 까닭으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3808,7 +3808,7 @@
     "description": "Calculator 를 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3828,7 +3828,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nSystem.out.println(\"=== Calculator ===\");\nSystem.out.println(\"Welcome!\");",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3848,7 +3848,7 @@
     "description": "조각을 올바른 순서로 놓아 === Calculator ===, Welcome!, Let's calculate. 를 차례로 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3871,7 +3871,7 @@
     "description": "조각을 올바른 순서로 놓아 **********, Calculator, Welcome!, ---------- 를 차례로 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3896,7 +3896,7 @@
     "description": "조각을 올바른 순서로 놓아 == Calculator ==, Welcome!, Version 1.0 을 차례로 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3923,7 +3923,7 @@
     "description": "환영 메시지 Calculator 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3946,7 +3946,7 @@
     "description": "계산기 이름 Calculator 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3969,7 +3969,7 @@
     "description": "System 다음에 오는, 화면 출력을 맡는 부분의 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -3986,7 +3986,7 @@
     "description": "System.out.println() 으로 \"Calculator\" 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-1",
     "content": {
@@ -4012,7 +4012,7 @@
     "description": "같은 Scanner 로 nextInt() 를 여러 번 호출하면 어떻게 될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4032,7 +4032,7 @@
     "description": "Scanner sc 가 이미 있을 때 두 정수 a, b 를 입력받는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4052,7 +4052,7 @@
     "description": "입력으로 3 4 를 넣었을 때, 다음 코드를 실행하면 무엇이 출력될까요?\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nSystem.out.println(b);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4072,7 +4072,7 @@
     "description": "조각을 올바른 순서로 놓아 첫 번째 정수는 a, 두 번째 정수는 b 에 입력받으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4095,7 +4095,7 @@
     "description": "조각을 올바른 순서로 놓아 첫 번째 정수는 a, 두 번째 정수는 b 에 입력받고 b 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4120,7 +4120,7 @@
     "description": "조각을 올바른 순서로 놓아 두 정수 a, b 를 차례로 입력받는 프로그램을 완성하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4153,7 +4153,7 @@
     "description": "입력을 읽는 객체를 만들도록 빈칸에 클래스 이름을 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4176,7 +4176,7 @@
     "description": "첫 번째 정수를 정수 변수 a 에 저장하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4199,7 +4199,7 @@
     "description": "두 번째 정수를 정수 변수 b 에 저장하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4222,7 +4222,7 @@
     "description": "Scanner 로 두 정수를 차례로 입력받아 a, b 에 저장하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-2",
     "content": {
@@ -4251,7 +4251,7 @@
     "description": "계산 결과를 변수에 저장해 두면 좋은 점은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4271,7 +4271,7 @@
     "description": "a 와 b 의 합을 sum 에 저장하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4291,7 +4291,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint a = 7;\nint b = 3;\nint sum = a + b;\nint diff = a - b;\nint product = a * b;\nSystem.out.println(product);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4311,7 +4311,7 @@
     "description": "조각을 올바른 순서로 놓아 합, 차, 곱을 변수에 저장한 뒤 10 4 21 을 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4334,7 +4334,7 @@
     "description": "조각을 올바른 순서로 놓아 합: 10, 차: 4, 곱: 21 을 세 줄로 차례로 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4361,7 +4361,7 @@
     "description": "입력이 7 3 일 때, 조각을 올바른 순서로 놓아 첫 수 a, 둘째 수 b 를 읽고 합: 10, 차: 4, 곱: 21 을 차례로 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4392,7 +4392,7 @@
     "description": "a 와 b 의 합을 정수 변수 sum 에 저장하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4415,7 +4415,7 @@
     "description": "a 와 b 의 차를 정수 변수 diff 에 저장하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4438,7 +4438,7 @@
     "description": "a 와 b 의 곱을 정수 변수 product 에 저장하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4461,7 +4461,7 @@
     "description": "a 와 b 의 합, 차, 곱을 각각 int 변수 sum, diff, product 에 저장하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-3",
     "content": {
@@ -4490,7 +4490,7 @@
     "description": "printf(\"합: %d\", sum) 에서 %d 자리에는 무엇이 들어갈까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4510,7 +4510,7 @@
     "description": "sum 의 값을 \"합: 값\" 형식으로 출력하는 올바른 코드를 고르세요.",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4530,7 +4530,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nint sum = 12;\nSystem.out.printf(\"합: %d\\n\", sum);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4550,7 +4550,7 @@
     "description": "조각을 올바른 순서로 이어 붙여 printf 로 합: 12 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4575,7 +4575,7 @@
     "description": "조각을 올바른 순서로 이어 붙여 printf 로 합: 12 를 출력하세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4602,7 +4602,7 @@
     "description": "조각을 올바른 순서로 이어 붙여 printf 로 합: 12 를 출력하세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4631,7 +4631,7 @@
     "description": "형식을 정해서 합: 12 를 출력하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4654,7 +4654,7 @@
     "description": "sum 의 정수 값이 들어갈 자리를 빈칸에 쓰세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4677,7 +4677,7 @@
     "description": "printf 로 출력한 뒤 줄을 바꾸려면 형식 문자열 끝에 무엇을 쓸까요? (역슬래시로 시작하는 두 글자)",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {
@@ -4695,7 +4695,7 @@
     "description": "printf 로 sum 의 값을 \"합: 값\" 형식으로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "java",
     "lessonId": "java-8-4",
     "content": {

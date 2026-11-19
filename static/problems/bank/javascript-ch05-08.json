@@ -1265,7 +1265,7 @@
     "description": "console.log() 를 두 번 호출하면 어떻게 출력될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1285,7 +1285,7 @@
     "description": "Hi 를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1305,7 +1305,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(3 + 4);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1325,7 +1325,7 @@
     "description": "조각을 올바른 순서로 놓아 Hello 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1348,7 +1348,7 @@
     "description": "안녕하세요, 저는, 코드그램, 학생입니다 가 한 줄씩 차례로 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1373,7 +1373,7 @@
     "description": "라면 끓이는 순서(1번부터 6번까지)가 한 줄씩 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1402,7 +1402,7 @@
     "description": "첫 줄에 Hello 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1425,7 +1425,7 @@
     "description": "둘째 줄에 World 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1448,7 +1448,7 @@
     "description": "화면에 값을 출력하는 함수 이름을 점(.)까지 포함해 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1465,7 +1465,7 @@
     "description": "console.log() 를 두 번 써서 원하는 내용을 두 줄로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-1",
     "content": {
@@ -1490,7 +1490,7 @@
     "description": "백틱(`)으로 감싼 문자열 안의 ${name} 은 어떻게 될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1510,7 +1510,7 @@
     "description": "name 에 \"Mina\" 가 들어 있을 때 Hi, Mina 를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1530,7 +1530,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet age = 12;\nconsole.log(`나는 ${age}살`);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1550,7 +1550,7 @@
     "description": "Hello, Mina! 가 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1573,7 +1573,7 @@
     "description": "템플릿 리터럴로 Hello, Mina! 가 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1598,7 +1598,7 @@
     "description": "Hi, Mina! 다음에 Bye, Jun! 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1627,7 +1627,7 @@
     "description": "템플릿 리터럴이 되도록 문자열을 여는 기호를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1650,7 +1650,7 @@
     "description": "문자열 안에 name 의 값이 들어가도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1674,7 +1674,7 @@
     "description": "Hello, Mina! 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1697,7 +1697,7 @@
     "description": "템플릿 리터럴(백틱과 ${name})을 써서 \"Hello, Mina!\" 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-2",
     "content": {
@@ -1723,7 +1723,7 @@
     "description": "Number() 함수는 어떤 일을 할까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1743,7 +1743,7 @@
     "description": "문자열 \"10\" 을 숫자로 바꿔 n 에 저장하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1763,7 +1763,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(Number(\"5\") + 1);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1783,7 +1783,7 @@
     "description": "문자열 \"42\" 를 숫자로 바꿔 43 이 출력되도록 조각을 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1806,7 +1806,7 @@
     "description": "Number() 로 바꾼 값에 1을 더해 43 이 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1831,7 +1831,7 @@
     "description": "먼저 101 (문자열 이어 붙이기), 그다음 15 (숫자 더하기)가 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1860,7 +1860,7 @@
     "description": "문자열을 숫자로 바꿔 43 이 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1883,7 +1883,7 @@
     "description": "숫자로 바꾼 num 에 1을 더한 값이 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1906,7 +1906,7 @@
     "description": "문자열을 숫자로 바꾸는 함수 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1923,7 +1923,7 @@
     "description": "Number(\"42\") 로 문자열을 숫자로 바꿔 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-3",
     "content": {
@@ -1953,7 +1953,7 @@
     "description": "String() 과 Boolean() 은 어떤 일을 할까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -1973,7 +1973,7 @@
     "description": "다음 중 Boolean() 으로 바꾸면 false 가 되는 값은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -1993,7 +1993,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(String(7) + 3);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2013,7 +2013,7 @@
     "description": "숫자 123 을 문자열로 바꾼 뒤 \"4\" 를 붙여 1234 가 출력되도록 조각을 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2036,7 +2036,7 @@
     "description": "0 을 불리언으로 바꿔 false 가 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2061,7 +2061,7 @@
     "description": "먼저 6 (숫자 더하기), 그다음 55 (문자열 이어 붙이기)가 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2090,7 +2090,7 @@
     "description": "숫자 123 을 문자열로 바꿔 1234 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2113,7 +2113,7 @@
     "description": "0 을 불리언으로 바꿔 false 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2136,7 +2136,7 @@
     "description": "빈 문자열을 불리언으로 바꾼 값(false)이 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2159,7 +2159,7 @@
     "description": "String(123) 과 Boolean(0) 의 결과를 console.log() 로 각각 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-4",
     "content": {
@@ -2188,7 +2188,7 @@
     "description": "1부터 n 까지의 합을 한 번에 구하는 공식은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2208,7 +2208,7 @@
     "description": "1부터 10까지의 합(55)을 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2228,7 +2228,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet n = 4;\nconsole.log(n * (n + 1) / 2);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2248,7 +2248,7 @@
     "description": "1부터 120까지의 합(7260)이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2271,7 +2271,7 @@
     "description": "합 공식을 console.log() 안에 넣어 7260 이 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2296,7 +2296,7 @@
     "description": "공식을 단계별로 계산해 7260 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2323,7 +2323,7 @@
     "description": "합 공식의 결과가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2346,7 +2346,7 @@
     "description": "1부터 120까지의 합을 구하도록 n 에 들어갈 값을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2369,7 +2369,7 @@
     "description": "합 공식 n * (n + 1) / 2 가 되도록 빈칸에 들어갈 연산자 기호를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2386,7 +2386,7 @@
     "description": "합 공식 n * (n + 1) / 2 를 써서 1부터 120까지의 합을 계산해 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-5",
     "content": {
@@ -2411,7 +2411,7 @@
     "description": "5 > 3 같은 비교식의 결과는 어떤 값일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2431,7 +2431,7 @@
     "description": "age 가 20 과 같은지 비교한 결과(true/false)를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2451,7 +2451,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet a = 7;\nconsole.log(a < 5);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2471,7 +2471,7 @@
     "description": "answer 가 \"yes\" 인지 비교해 true 가 출력되도록 조각을 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2494,7 +2494,7 @@
     "description": "비교식을 console.log() 안에 넣어 true 가 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2519,7 +2519,7 @@
     "description": "score 가 50 일 때 score < 60 의 결과, score 가 70 일 때 score >= 60 의 결과가 차례로 출력되도록(true, true) 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2548,7 +2548,7 @@
     "description": "answer 가 \"yes\" 와 같은지 비교해 true 가 출력되도록 연산자를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2571,7 +2571,7 @@
     "description": "비교 결과가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2594,7 +2594,7 @@
     "description": "아래 코드의 비교식 결과로 나오는 참 값을 영어 키워드로 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2611,7 +2611,7 @@
     "description": "answer 가 \"yes\" 인지 === 로 비교한 결과를 console.log() 로 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-6-6",
     "content": {
@@ -2637,7 +2637,7 @@
     "description": "프로그램을 시작할 때 환영 메시지를 출력하는 이유로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2657,7 +2657,7 @@
     "description": "Bill Splitter 를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2677,7 +2677,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nconsole.log(\"=== Bill Splitter ===\");",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2697,7 +2697,7 @@
     "description": "조각을 올바른 순서로 놓아 Bill Splitter 를 출력하세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2720,7 +2720,7 @@
     "description": "==========, Bill Splitter, ----------, Welcome! 이 한 줄씩 차례로 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2745,7 +2745,7 @@
     "description": "==========, Bill Splitter, ----------, Welcome! 이 한 줄씩 차례로 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2774,7 +2774,7 @@
     "description": "환영 메시지가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2797,7 +2797,7 @@
     "description": "프로그램 이름 Bill Splitter 가 출력되도록 따옴표 안을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2820,7 +2820,7 @@
     "description": "Bill Splitter 를 문자열로 만들려면 앞뒤에 어떤 기호를 써야 할까요? 기호 하나를 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2839,7 +2839,7 @@
     "description": "console.log() 로 \"Bill Splitter\" 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-1",
     "content": {
@@ -2865,7 +2865,7 @@
     "description": "금액의 15% 를 구하는 방법으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -2885,7 +2885,7 @@
     "description": "bill 의 10% 를 tip 에 저장하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -2905,7 +2905,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet bill = 80;\nlet tip = bill * 0.25;\nconsole.log(bill + tip);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -2925,7 +2925,7 @@
     "description": "bill → tip → total 순서로 계산되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -2948,7 +2948,7 @@
     "description": "팁(15%)과 총액을 계산한 뒤 total 을 출력하도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -2973,7 +2973,7 @@
     "description": "tip 에는 bill 의 15%, total 에는 bill + tip 이 들어가고 total 을 출력하도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -3002,7 +3002,7 @@
     "description": "bill 의 15% 를 저장할 변수 tip 을 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -3025,7 +3025,7 @@
     "description": "15% 팁을 구하도록 빈칸에 비율을 소수로 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -3051,7 +3051,7 @@
     "description": "bill 과 tip 을 더한 값을 저장할 변수 total 을 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -3074,7 +3074,7 @@
     "description": "bill 의 15% 를 tip 에, bill + tip 을 total 에 저장하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-2",
     "content": {
@@ -3099,7 +3099,7 @@
     "description": "JavaScript 에서 7 / 2 의 결과는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3119,7 +3119,7 @@
     "description": "total 을 people 명이 똑같이 나눈 금액을 구하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3139,7 +3139,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet total = 50;\nlet people = 4;\nconsole.log(total / people);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3159,7 +3159,7 @@
     "description": "100 을 4명이 나눈 금액 25 가 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3182,7 +3182,7 @@
     "description": "perPerson 에 total / people 을 저장해 25 가 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3207,7 +3207,7 @@
     "description": "total 을 people 로 나눈 값을 perPerson 에 저장해 25 가 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3236,7 +3236,7 @@
     "description": "사람 수를 저장할 변수 people 을 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3259,7 +3259,7 @@
     "description": "1인당 금액을 저장할 변수 perPerson 을 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3282,7 +3282,7 @@
     "description": "total 을 people 로 나누도록 연산자를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3305,7 +3305,7 @@
     "description": "people 을 4 로 만들고, perPerson = total / people 을 계산하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-3",
     "content": {
@@ -3330,7 +3330,7 @@
     "description": "toFixed(n) 은 무엇을 돌려줄까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3350,7 +3350,7 @@
     "description": "price 를 소수 둘째 자리까지 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3370,7 +3370,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet price = 12.5;\nconsole.log(price.toFixed(2));",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3390,7 +3390,7 @@
     "description": "price 를 소수 둘째 자리까지 표시해 12.50 이 출력되도록 조각을 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3415,7 +3415,7 @@
     "description": "price 뒤에 .toFixed(2) 를 붙여 12.50 이 출력되도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3442,7 +3442,7 @@
     "description": "50 을 4명이 나눈 금액을 소수 둘째 자리까지 표시해 12.50 이 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3471,7 +3471,7 @@
     "description": "price 가 소수 둘째 자리까지 12.50 으로 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3494,7 +3494,7 @@
     "description": "3.00 이 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3517,7 +3517,7 @@
     "description": "소수 자릿수를 정해서 문자열로 바꿔 주는 메서드 이름을 쓰세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3534,7 +3534,7 @@
     "description": "toFixed(2) 를 써서 perPerson 을 소수 둘째 자리까지 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-7-4",
     "content": {
@@ -3559,7 +3559,7 @@
     "description": "for (let i = 0; i < 3; i++) 에서 i < 3 은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3579,7 +3579,7 @@
     "description": "1부터 3까지 출력하는 올바른 for 문은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3599,7 +3599,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet sum = 0;\nfor (let i = 1; i <= 4; i++) {\n  sum += i;\n}\nconsole.log(sum);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3619,7 +3619,7 @@
     "description": "0부터 4까지 한 줄씩 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3642,7 +3642,7 @@
     "description": "0부터 4까지 더한 합계 10 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3669,7 +3669,7 @@
     "description": "누적 합 1, 3, 6, 10, 15 를 한 줄씩 출력한 뒤 마지막에 끝 을 출력하도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3698,7 +3698,7 @@
     "description": "0부터 4까지 반복하는 for 문이 되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3722,7 +3722,7 @@
     "description": "i 가 1씩 늘어나도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3748,7 +3748,7 @@
     "description": "반복할 때마다 i 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3771,7 +3771,7 @@
     "description": "for 문으로 0부터 4까지 한 줄씩 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-1",
     "content": {
@@ -3796,7 +3796,7 @@
     "description": "while (조건) 은 언제까지 반복할까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3816,7 +3816,7 @@
     "description": "n 이 3보다 작은 동안 n 을 출력하고 1씩 늘리는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3836,7 +3836,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet n = 1;\nwhile (n < 20) {\n  n = n * 2;\n}\nconsole.log(n);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3856,7 +3856,7 @@
     "description": "0, 1, 2 가 한 줄씩 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3881,7 +3881,7 @@
     "description": "0, 1, 2 가 한 줄씩 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3908,7 +3908,7 @@
     "description": "1부터 4까지 더한 합 10 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3937,7 +3937,7 @@
     "description": "count 가 3보다 작은 동안 반복하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3961,7 +3961,7 @@
     "description": "반복할 때마다 count 가 1씩 늘어나도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -3987,7 +3987,7 @@
     "description": "반복할 때마다 count 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -4010,7 +4010,7 @@
     "description": "while 문으로 count 가 3보다 작은 동안 count 를 출력하고 1씩 늘리세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-2",
     "content": {
@@ -4039,7 +4039,7 @@
     "description": "반복문 안에서 break 를 만나면 어떻게 될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4059,7 +4059,7 @@
     "description": "반복문 안에서 i 가 5가 되면 반복을 끝내는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4079,7 +4079,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet sum = 0;\nfor (let i = 1; i <= 10; i++) {\n  if (i === 4) break;\n  sum += i;\n}\nconsole.log(sum);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4099,7 +4099,7 @@
     "description": "0, 1, 2 까지만 출력하고 i 가 3이 되면 반복을 끝내도록 조각을 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4124,7 +4124,7 @@
     "description": "0, 1, 2 까지만 출력하고 i 가 3이 되면 반복을 끝내도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4151,7 +4151,7 @@
     "description": "i 가 4가 되면 반복을 끝내서 1 + 2 + 3 의 합 6 이 출력되도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4182,7 +4182,7 @@
     "description": "반복문이 시작되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4206,7 +4206,7 @@
     "description": "i 가 3이 되면 반복을 바로 끝내도록 빈칸에 키워드를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4229,7 +4229,7 @@
     "description": "i 가 3인지 검사하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4253,7 +4253,7 @@
     "description": "반복문 안에서 i 가 3이면 break 로 반복을 끝내세요. (0, 1, 2 만 출력돼요)",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-3",
     "content": {
@@ -4282,7 +4282,7 @@
     "description": "반복문 안에서 continue 를 만나면 어떻게 될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4302,7 +4302,7 @@
     "description": "1부터 5까지 중 짝수는 건너뛰고 홀수만 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4322,7 +4322,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet sum = 0;\nfor (let i = 1; i <= 5; i++) {\n  if (i === 3) continue;\n  sum += i;\n}\nconsole.log(sum);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4342,7 +4342,7 @@
     "description": "2 만 건너뛰고 0, 1, 3, 4 가 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4367,7 +4367,7 @@
     "description": "2 만 건너뛰고 0, 1, 3, 4 가 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4394,7 +4394,7 @@
     "description": "3 만 건너뛰고 1 + 2 + 4 + 5 의 합 12 가 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4425,7 +4425,7 @@
     "description": "반복문이 시작되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4449,7 +4449,7 @@
     "description": "i 가 2일 때 이번 반복만 건너뛰도록 빈칸에 키워드를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4472,7 +4472,7 @@
     "description": "건너뛰지 않은 i 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4495,7 +4495,7 @@
     "description": "반복문 안에서 i 가 2이면 continue 로 건너뛰고, 나머지 i 는 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-4",
     "content": {
@@ -4524,7 +4524,7 @@
     "description": "곱을 누적할 변수 factorial 은 처음에 어떤 값으로 시작해야 할까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4544,7 +4544,7 @@
     "description": "4! (1 × 2 × 3 × 4) 을 f 에 계산하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4564,7 +4564,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet f = 1;\nfor (let i = 1; i <= 4; i++) {\n  f *= i;\n}\nconsole.log(f);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4584,7 +4584,7 @@
     "description": "5! 을 계산해 120 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4609,7 +4609,7 @@
     "description": "5! 을 계산해 120 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4636,7 +4636,7 @@
     "description": "1! = 1 부터 5! = 120 까지 한 줄씩 출력한 뒤 끝 을 출력하도록 조각을 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4665,7 +4665,7 @@
     "description": "곱을 누적할 변수 factorial 을 알맞은 시작 값으로 만들도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4689,7 +4689,7 @@
     "description": "1부터 5까지 반복하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4713,7 +4713,7 @@
     "description": "factorial 에 i 를 곱해서 다시 저장하도록 연산자를 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4736,7 +4736,7 @@
     "description": "for 반복문으로 5! (1 × 2 × 3 × 4 × 5) 을 계산해 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-5",
     "content": {
@@ -4765,7 +4765,7 @@
     "description": "do { } while (조건) 문의 특징으로 알맞은 것은 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4785,7 +4785,7 @@
     "description": "i 가 3보다 작은 동안 i 를 출력하고 1씩 늘리는 올바른 do...while 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4805,7 +4805,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet n = 10;\ndo {\n  console.log(n);\n  n++;\n} while (n < 5);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4825,7 +4825,7 @@
     "description": "0, 1, 2 가 한 줄씩 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4850,7 +4850,7 @@
     "description": "0, 1, 2 가 한 줄씩 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4877,7 +4877,7 @@
     "description": "1 + 2 + 3 의 합 6 이 출력되도록 조각을 올바른 순서로 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4906,7 +4906,7 @@
     "description": "먼저 실행하고 나중에 조건을 검사하는 반복문이 되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4930,7 +4930,7 @@
     "description": "i 가 3보다 작은 동안 반복하도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4954,7 +4954,7 @@
     "description": "반복할 때마다 i 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -4977,7 +4977,7 @@
     "description": "do...while 문으로 i 를 출력하고 1씩 늘리세요. 조건은 i < 3 이에요. (조건과 상관없이 최소 한 번은 출력돼요)",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-6",
     "content": {
@@ -5006,7 +5006,7 @@
     "description": "중첩 반복문에서 안쪽 반복문은 어떻게 실행될까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5026,7 +5026,7 @@
     "description": "바깥 2번, 안쪽 2번 반복하며 i 와 j 를 출력하는 올바른 코드는 무엇일까요?",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5046,7 +5046,7 @@
     "description": "다음 코드를 실행하면 무엇이 출력될까요?\nlet count = 0;\nfor (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 4; j++) {\n    count++;\n  }\n}\nconsole.log(count);",
     "reward": 10,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5066,7 +5066,7 @@
     "description": "바깥 반복은 i, 안쪽 반복은 j 로 해서 i, j 를 출력하도록 조각을 놓으세요.",
     "reward": 30,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5091,7 +5091,7 @@
     "description": "바깥 반복(i)이 돌 때마다 먼저 줄 i 를 출력하고, 안쪽 반복(j)에서 i, j 를 출력하도록 조각을 놓으세요.",
     "reward": 35,
     "difficulty": 2,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5118,7 +5118,7 @@
     "description": "*** 가 두 줄 출력되도록(바깥 2번, 안쪽 3번) 조각을 올바른 순서로 놓으세요.",
     "reward": 40,
     "difficulty": 3,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5147,7 +5147,7 @@
     "description": "바깥 반복문이 시작되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5171,7 +5171,7 @@
     "description": "안쪽 반복문이 시작되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5195,7 +5195,7 @@
     "description": "안쪽 반복마다 * 가 출력되도록 빈칸을 채우세요.",
     "reward": 20,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
@@ -5218,7 +5218,7 @@
     "description": "중첩 for 문을 써서 바깥 2번, 안쪽 3번 반복하며 \"*\" 를 출력하세요.",
     "reward": 40,
     "difficulty": 1,
-    "level": "beginner",
+    "level": "intermediate",
     "language": "javascript",
     "lessonId": "js-8-7",
     "content": {
