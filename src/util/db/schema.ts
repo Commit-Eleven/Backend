@@ -7,6 +7,7 @@ import {
   index,
   int,
   json,
+  mediumtext,
   mysqlEnum,
   mysqlTable,
   primaryKey,
@@ -20,11 +21,14 @@ import {
   AVATAR_URL_MAX_LENGTH,
   DEFAULT_GROUP_CAPACITY,
   DEFAULT_STUDY_LANGUAGE,
+  DOCUMENT_KIND,
   EXP_REASON,
   FRIEND_STATUS,
   GROUP_ROLE,
   NOTIFICATION_TYPE,
   PROFILE_VISIBILITY,
+  REPORT_STATUS,
+  REVIEW_DECISION,
   STUDY_LEVEL,
   USER_TIER,
 } from '../config/constants'
@@ -243,5 +247,114 @@ export const notificationSetting = mysqlTable(
   },
   (t) => ({
     pk: primaryKey({ name: 'pk_noti_setting', columns: [t.userId, t.type] }),
+  }),
+)
+
+// 그룹에 붙이는 외부 연동. 지금은 디스코드 웹훅만 있다
+export const groupIntegration = mysqlTable('group_integration', {
+  groupId: bigint('group_id', { mode: 'number' })
+    .primaryKey()
+    .references(() => studyGroup.id, { onDelete: 'cascade' }),
+  discordWebhookUrl: varchar('discord_webhook_url', { length: 255 }),
+  updatedAt: updatedAt(),
+})
+
+// groupId 가 null 이면 개인 문서(note), 있으면 팀 문서(wiki, report). status 는 report 만 쓴다
+export const document = mysqlTable(
+  'document',
+  {
+    id: pk(),
+    groupId: bigint('group_id', { mode: 'number' }).references(() => studyGroup.id, {
+      onDelete: 'cascade',
+    }),
+    authorId: bigint('author_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    kind: mysqlEnum('kind', DOCUMENT_KIND).notNull(),
+    status: mysqlEnum('status', REPORT_STATUS),
+    title: varchar('title', { length: 100 }).notNull(),
+    body: mediumtext('body').notNull(),
+    pinned: boolean('pinned').default(false).notNull(),
+    version: int('version').default(1).notNull(),
+    createdAt: createdAt(),
+    updatedAt: updatedAt(),
+  },
+  (t) => ({
+    idxGroup: index('idx_doc_group').on(t.groupId, t.kind, t.updatedAt),
+    idxAuthor: index('idx_doc_author').on(t.authorId, t.updatedAt),
+  }),
+)
+
+// 내용을 바꾸기 직전 상태를 남긴다
+export const documentRevision = mysqlTable(
+  'document_revision',
+  {
+    id: pk(),
+    documentId: bigint('document_id', { mode: 'number' })
+      .notNull()
+      .references(() => document.id, { onDelete: 'cascade' }),
+    version: int('version').notNull(),
+    editorId: bigint('editor_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    title: varchar('title', { length: 100 }).notNull(),
+    body: mediumtext('body').notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => ({
+    uqVersion: unique('uq_doc_revision').on(t.documentId, t.version),
+  }),
+)
+
+export const documentReview = mysqlTable(
+  'document_review',
+  {
+    id: pk(),
+    documentId: bigint('document_id', { mode: 'number' })
+      .notNull()
+      .references(() => document.id, { onDelete: 'cascade' }),
+    reviewerId: bigint('reviewer_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    decision: mysqlEnum('decision', REVIEW_DECISION).notNull(),
+    comment: varchar('comment', { length: 500 }),
+    createdAt: createdAt(),
+  },
+  (t) => ({
+    idxDocument: index('idx_review_doc').on(t.documentId, t.createdAt),
+  }),
+)
+
+export const documentComment = mysqlTable(
+  'document_comment',
+  {
+    id: pk(),
+    documentId: bigint('document_id', { mode: 'number' })
+      .notNull()
+      .references(() => document.id, { onDelete: 'cascade' }),
+    authorId: bigint('author_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    body: varchar('body', { length: 1000 }).notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => ({
+    idxDocument: index('idx_comment_doc').on(t.documentId, t.createdAt),
+  }),
+)
+
+export const documentBookmark = mysqlTable(
+  'document_bookmark',
+  {
+    userId: bigint('user_id', { mode: 'number' })
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    documentId: bigint('document_id', { mode: 'number' })
+      .notNull()
+      .references(() => document.id, { onDelete: 'cascade' }),
+    createdAt: createdAt(),
+  },
+  (t) => ({
+    pk: primaryKey({ name: 'pk_doc_bookmark', columns: [t.userId, t.documentId] }),
   }),
 )

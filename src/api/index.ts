@@ -6,7 +6,11 @@ import { env } from '../util/config/env'
 import { runMigrations } from '../util/db/migrate'
 import { AppError, fail } from '../util/http/response'
 import { curriculum } from './curriculum'
+import { documentComments } from './document-comments'
+import { documentReports } from './document-reports'
+import { documentsApi } from './documents'
 import { groupInvites } from './group-invites'
+import { groupSettings } from './group-settings'
 import { groups, myGroups } from './groups'
 import { health } from './health'
 import { lessonsApi } from './lessons'
@@ -72,7 +76,11 @@ app.route('/api/users/friends', friends)
 app.route('/api/users', userProfile)
 
 app.route('/api/groups', groups)
+app.route('/api/groups', groupSettings)
 app.route('/api/group-invites', groupInvites)
+app.route('/api/documents', documentReports)
+app.route('/api/documents', documentComments)
+app.route('/api/documents', documentsApi)
 app.route('/api/notifications', notifications)
 
 app.route('/api/problems/blank', blank)

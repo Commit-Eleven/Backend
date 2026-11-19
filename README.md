@@ -115,6 +115,16 @@ API의 기본 경로는 `api/index.ts`에서 파일 위치에 맞춰 등록합�
 | 회원 탈퇴 | `DELETE /api/users/me` |
 | 친구 요청 허용·프로필 공개 범위 | `GET·PATCH /api/users/me/privacy` |
 | 오답노트 복습 완료 | `GET /api/users/me/wrong-notes/reviewed` |
+| 문서 목록·생성·조회·수정·삭제 | `GET·POST /api/documents`, `GET·PATCH·DELETE /api/documents/:id` |
+| 문서 템플릿 | `GET /api/documents/templates?kind=` |
+| 문서 복제·내보내기(.md) | `POST /api/documents/:id/duplicate`, `GET /api/documents/:id/export` |
+| 문서 이전 버전 | `GET /api/documents/:id/revisions`, `GET /api/documents/:id/revisions/:version`, `POST /api/documents/:id/revisions/:version/restore` |
+| 문서 북마크 | `PUT·DELETE /api/documents/:id/bookmark`, `GET /api/documents?bookmarked=true` |
+| 문서 댓글 | `GET·POST /api/documents/:id/comments`, `DELETE /api/documents/:id/comments/:commentId` |
+| 보고서 제출·회수·검토 | `POST /api/documents/:id/submit`, `/withdraw`, `/review` (body `{ decision, comment }`) |
+| 보고서 검토 이력·대기열·현황 | `GET /api/documents/:id/reviews`, `GET /api/documents/reviews`, `GET /api/documents/summary?group_id=` |
+| 그룹 멤버 역할 변경 | `PATCH /api/groups/:id/members/:userId` (body `{ role: manager \| member }`, 방장만) |
+| 디스코드 웹훅 연동 | `GET·PUT·DELETE /api/groups/:id/integrations/discord`, `POST .../test` (방장만) |
 
 기존 `/auth/*`, `/friends`, `/me/*`, `/units/*`, `/users/search`, `/health` 주소는 새 경로로 변경했습니다.
 프론트엔드의 호출 주소와 구글 OAuth의 승인된 리디렉션 URI도 새 콜백 주소로 맞춰야 합니다.
@@ -145,3 +155,15 @@ bun dist/index.js
 
 빌드 결과는 `dist/index.js`에 생성됩니다. 실행 시 `static` 아래의 문제·커리큘럼 파일과
 설치된 의존성이 필요합니다. 요청에 따라 테스트 코드와 테스트 실행 설정은 제거했습니다.
+
+## 문서
+- 종류: `note`(개인 노트), `wiki`(팀 문서), `report`(팀 보고서). 위키와 보고서는 `group_id`가 필요하다.
+- 위키는 팀원 모두가 보고, 쓴 사람과 관리자(방장, manager)가 고친다. 관리자는 위키를 상단에 고정(`pinned`)할 수 있다.
+- 보고서 흐름: `draft` → 제출 → `pending` → 승인(`approved`) 또는 반려(`rejected`). 반려하려면 `comment`가 필요하다.
+  - 제출하면 방장과 관리자에게 `document_submitted` 알림이 가고, 검토하면 작성자에게 `document_reviewed` 알림이 간다.
+  - 검토 중이거나 승인된 보고서는 고칠 수 없다. 반려된 보고서는 고치면 다시 초안이 된다.
+  - 보고서는 쓴 사람과 관리자만 보고, 승인된 뒤에는 팀원 모두가 본다.
+  - 관리자는 자기 보고서를 승인할 수 없고, 방장은 할 수 있다.
+- 수정할 때 `version`을 같이 보내면 그 사이 다른 사람이 고친 경우 409(`VERSION_CONFLICT`)를 준다. 내용이 바뀔 때마다 이전 버전이 30개까지 남는다.
+- 디스코드 웹훅을 등록하면 보고서가 승인될 때 그 채널에 올라간다. 주소는 `discord.com`의 웹훅 주소만 받고, 응답에는 가려서 준다.
+- 계정을 탈퇴하면 그 사람이 쓴 문서도 같이 지워진다.
