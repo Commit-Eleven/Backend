@@ -27,6 +27,7 @@ type ParsonsProblem = {
   lessonId?: string
   description?: string
   language?: string
+  explanation?: string
   content: {
     fragments: string[]
     answer_order: number[]
@@ -46,10 +47,16 @@ export function toQuestion(p: ParsonsProblem) {
     reward: p.reward,
     language: p.language,
     level: levelOf(p),
+    difficulty: p.difficulty,
     lessonId: p.lessonId,
     content,
   }
 }
+
+// 해설이 없는 문제는 올바른 순서로 대신한다
+const explanationOf = (p: ParsonsProblem) =>
+  p.explanation ??
+  `올바른 순서:\n${p.content.answer_order.map((i, n) => `${n + 1}) ${p.content.fragments[i]}`).join('\n')}`
 
 export const parsons = new Hono<AuthEnv>()
 

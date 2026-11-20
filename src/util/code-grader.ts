@@ -2,6 +2,8 @@
 // 1) 문법 검사로 틀린 코드를 걸러내고
 // 2) 주석은 지우고, 문자열 안의 글자는 비운 코드에 정규식을 대 본다
 //    그래서 print("if") 처럼 문자열 안에만 키워드가 있으면 통과하지 못한다
+// 3) source 에서 찾을 때도 문자열 안에서 시작하는 일치는 세지 않는다
+//    `console.log(5 === "5")` 처럼 정답 코드를 통째로 문자열에 넣어도 통과하지 못한다
 
 export type CodeCheck = {
   pattern: string
@@ -9,11 +11,15 @@ export type CodeCheck = {
   message: string
   // code: 주석을 지우고 문자열 안을 비운 코드에서 찾는다 (기본값)
   // source: 주석만 지운 코드에서 찾는다. 출력할 문자열("Hello")을 확인할 때 쓴다
-  in?: 'code' | 'source'
+  // comment: 주석 내용만 모은 글에서 찾는다. 주석을 쓰는 문제에서 쓴다
+  in?: 'code' | 'source' | 'comment'
 }
 
-type Views = { code: string; source: string }
-type Prepared = { ok: true; views: Views } | { ok: false; error: string }
+type Views = { code: string; source: string; comment: string }
+// strings: source 안에서 문자열 내용이 차지하는 [시작, 끝) 위치
+type Prepared =
+  | { ok: true; views: Views; strings: [number, number][] }
+  | { ok: false; error: string }
 
 const lineOf = (text: string, index: number) => text.slice(0, index).split('\n').length
 const blank = (text: string) => text.replace(/[^\n]/g, '') // 줄 번호가 안 밀리게 줄바꿈만 남긴다
@@ -33,11 +39,14 @@ function scan(src: string, language: ScriptLanguage): Prepared {
   const lineComment = language === 'python' ? '#' : '//'
   let code = ''
   let source = ''
+  let comment = ''
+  const strings: [number, number][] = []
   let i = 0
 
   while (i < src.length) {
     if (src.startsWith(lineComment, i)) {
       const end = src.indexOf('\n', i)
+      comment += `${src.slice(i + lineComment.length, end === -1 ? src.length : end)}\n`
       i = end === -1 ? src.length : end
       continue
     }
@@ -47,6 +56,7 @@ function scan(src: string, language: ScriptLanguage): Prepared {
       if (end === -1)
         return { ok: false, error: `${lineOf(src, i)}번째 줄: 주석 /* 이 닫히지 않았어요` }
       const kept = blank(src.slice(i, end + 2))
+      comment += `${src.slice(i + 2, end)}\n`
       code += kept
       source += kept
       i = end + 2
@@ -75,6 +85,7 @@ function scan(src: string, language: ScriptLanguage): Prepared {
       }
       const inner = src.slice(i + quote.length, j)
       code += quote + blank(inner) + quote
+      strings.push([source.length + quote.length, source.length + quote.length + inner.length])
       source += quote + inner + quote
       i = j + quote.length
       continue
@@ -85,7 +96,7 @@ function scan(src: string, language: ScriptLanguage): Prepared {
     i++
   }
 
-  return { ok: true, views: { code, source } }
+  return { ok: true, views: { code, source, comment }, strings }
 }
 
 const CLOSE_TO_OPEN: Record<string, string> = { ')': '(', ']': '[', '}': '{' }
@@ -215,15 +226,24 @@ function prepareHtml(src: string): Prepared {
   if (left)
     return { ok: false, error: `${left.line}번째 줄: <${left.name}> 태그가 닫히지 않았어요` }
 
-  return { ok: true, views: { code: source, source } }
+  const comment = [...src.matchAll(/<!--([\s\S]*?)-->/g)].map((m) => m[1]).join('\n')
+  return { ok: true, views: { code: source, source, comment }, strings: [] }
 }
 
 // ---------- 채점 ----------
 
-export type CompiledCheck = CodeCheck & { regex: RegExp }
+// all: 일치하는 곳을 모두 훑을 때 쓰는 g 버전
+export type CompiledCheck = CodeCheck & { regex: RegExp; all: RegExp }
 
 export const compileChecks = (checks: CodeCheck[]): CompiledCheck[] =>
-  checks.map((check) => ({ ...check, regex: new RegExp(check.pattern, check.flags) }))
+  checks.map((check) => {
+    const flags = (check.flags ?? '').replace('g', '')
+    return {
+      ...check,
+      regex: new RegExp(check.pattern, flags),
+      all: new RegExp(check.pattern, `${flags}g`),
+    }
+  })
 
 export type GradeResult = {
   isAnswer: boolean
@@ -244,7 +264,7 @@ export function gradeCode(
       ? prepareHtml(submitted)
       : language === 'javascript' || language === 'java' || language === 'python'
         ? prepareScript(submitted, language)
-        : { ok: true, views: { code: submitted, source: submitted } }
+        : { ok: true, views: { code: submitted, source: submitted, comment: '' }, strings: [] }
 
   if (!prepared.ok) {
     return {
@@ -256,8 +276,18 @@ export function gradeCode(
     }
   }
 
-  const failed = checks
-    .filter((check) => !check.regex.test(prepared.views[check.in ?? 'code']))
-    .map((check) => check.message)
+  const { views, strings } = prepared
+  const insideString = (index: number) =>
+    strings.some(([start, end]) => start <= index && index < end)
+  const passes = (check: CompiledCheck) => {
+    const where = check.in ?? 'code'
+    if (where !== 'source' || strings.length === 0) return check.regex.test(views[where])
+    for (const match of views.source.matchAll(check.all)) {
+      if (!insideString(match.index ?? 0)) return true
+    }
+    return false
+  }
+
+  const failed = checks.filter((check) => !passes(check)).map((check) => check.message)
   return { isAnswer: failed.length === 0, passed: total - failed.length, total, failed }
 }

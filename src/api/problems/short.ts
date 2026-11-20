@@ -29,6 +29,7 @@ type ShortProblem = {
   description?: string
   language?: string
   caseSensitive?: boolean
+  explanation?: string
   content: {
     code: string
     answer: string[]
@@ -48,10 +49,14 @@ export function toQuestion(p: ShortProblem) {
     reward: p.reward,
     language: p.language,
     level: levelOf(p),
+    difficulty: p.difficulty,
     lessonId: p.lessonId,
     content,
   }
 }
+
+// 해설이 없는 문제는 정답으로 대신한다
+const explanationOf = (p: ShortProblem) => p.explanation ?? `정답은 "${p.content.answer[0]}"예요.`
 
 export const short = new Hono<AuthEnv>()
 
